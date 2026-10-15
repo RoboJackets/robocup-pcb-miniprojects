@@ -41,9 +41,13 @@ Additional design specifications can be found in the Hardware Reference Manual (
     - Must fill out all sheet information in the right corner
         - Include an additional note for designer name
     - Symbol fields
-        - You must fill out all default fields of major components. Non-specialized passives just need footprint and value.
-        - You must add the field "Vender P/N" to every specific component with the value set to the Digikey part number
+        - You must fill out all default fields of major components. Non-specialized passives just need footprint and value
+        - You must add the field "Vendor P/N" to every specific component with the value set to the Digikey part number
     - When you need to make/import new symbols/footprints/3D models, add them to a new custom library called "local" and store their files if needed in [lib](./lib/)
+    - Maintain neatness and readability throughout the schematic
+        - General signal flow should go left to right
+        - Favor wire net labels over long track wires/grouped outputs
+        - Group components by relation/usage
 4. Power
     - Power must be able to come from both the USB port and the previous board's SPI line and they must never touch
         - See power MUXing

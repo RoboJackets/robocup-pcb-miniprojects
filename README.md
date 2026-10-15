@@ -9,7 +9,8 @@ This is the main repo for the 2026 onboarding season of Robojackets Robocup.
 Have ONE member of your team do this:
 
 ```sh
-git clone https://github.com/RoboJackets/robocup-pcb-miniproject
+git clone https://github.com/RoboJackets/robocup-pcb-miniprojects
+cd robocup-pcb-miniprojects
 git checkout -b <your-team-name>
 git push -u origin <your-team-name>
 ```
@@ -17,7 +18,8 @@ git push -u origin <your-team-name>
 Now ALL members can:
 
 ```sh
-git clone https://github.com/RoboJackets/robocup-pcb-miniproject
+git clone https://github.com/RoboJackets/robocup-pcb-miniprojects
+cd robocup-pcb-miniprojects
 git checkout <your-team-name>
 ```
 

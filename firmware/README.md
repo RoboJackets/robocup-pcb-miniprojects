@@ -28,7 +28,7 @@ You will be implementing the main control loop of your electrical team's PCB and
         - Data safety and control flow must be maintained between cores (i.e. Mutexes)
     - Limit polling as much as possible to lower power draw
     - You must document your implementation in some way and keep it in your team's drive folder
-    - In general have clean and easy to read code
+    - In general have clean and easy to read code and a solid git history
 
 
 ## Specifications

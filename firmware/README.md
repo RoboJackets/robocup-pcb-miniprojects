@@ -23,6 +23,17 @@ You will be implementing the main control loop of your electrical team's PCB and
 4. Overall
     - You must use the Pico SDK
     - No external libraries (you are allowed built in libraries such as hardware/i2c, pico/multicore, etc)
+    - You must format your file layout to match a traditional layout
+        - project folder
+            - CMakeList.txt
+            - src folder
+                - main.cpp
+                - etc
+            - lib
+                - driver folder
+                    - driver.hpp
+                    - driver.cpp
+                    - etc
     - You must utilize both of the cores
         - Recommended split is SPI on one core, devices on the other, but it is up to you
         - Data safety and control flow must be maintained between cores (i.e. Mutexes)

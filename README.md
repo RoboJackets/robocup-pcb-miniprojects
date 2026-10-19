@@ -45,6 +45,15 @@ All live documentation (Hardware Reference Manuals, Technical Overviews, etc) sh
 
 Start by copying the two template files from the project template folder [HERE](https://drive.google.com/drive/folders/1uaQHIUm1E482NEQLdI7As42oW3_wIS3i?usp=drive_link).
 
+## Sensor Assignments
+
+- nauvis: hall effect sensor
+- gleba: IMU
+- vulcanus: LED controller
+- fulgora: GPIO expander
+- taris: color sensor
+- aquilo: temperature sensor
+
 ## Additional Notes
 
 Project updates will be added here as needed

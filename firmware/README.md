@@ -31,9 +31,11 @@ You will be implementing the main control loop of your electrical team's PCB and
                 - etc
             - lib
                 - driver folder
+                    - CMakeList.txt
                     - driver.hpp
                     - driver.cpp
                     - etc
+    - Include a library CMakeList
     - You must utilize both of the cores
         - Recommended split is SPI on one core, devices on the other, but it is up to you
         - Data safety and control flow must be maintained between cores (i.e. Mutexes)

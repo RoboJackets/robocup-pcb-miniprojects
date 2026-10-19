@@ -95,10 +95,10 @@ These parts have already been selected for you
     - 1428-1152-2-ND
 - Color Sensor: VEML3328
     - 751-VEML3328TR-ND
-- Hall Effect Sensor: TMAG5273C1QDBVR
-    - 296-TMAG5273C1QDBVRTR-ND
+- Hall Effect Sensor: TMAG5273A2QDBVR
+    - 296-TMAG5273A2QDBVRTR-ND
 - Temperature Sensor: LM75ADP
-    - 1428-1152-2-ND
+    - 568-4227-1-ND
 - GPIO Expander: TCA9534PWR
     - 296-40574-2-ND
 - DIP Switch: DS01C-254-L-08BE

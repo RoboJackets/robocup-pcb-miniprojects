@@ -1,6 +1,12 @@
 {
   "board": {
     "3dviewports": [],
+    "design_settings": {
+      "diff_pair_dimensions": [],
+      "drc_exclusions": [],
+      "track_widths": [],
+      "via_dimensions": []
+    },
     "ipc2581": {
       "bom_rev": "",
       "dist": "",
@@ -27,8 +33,6 @@
   "cvpcb": {
     "equivalence_files": []
   },
-<<<<<<< HEAD
-=======
   "erc": {
     "erc_exclusions": [],
     "meta": {
@@ -239,7 +243,6 @@
       "pin_to_pin": "warning",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
-      "same_local_global_power": "warning",
       "similar_label_and_power": "warning",
       "similar_labels": "warning",
       "similar_power": "warning",
@@ -254,7 +257,7 @@
       "wire_dangling": "error"
     }
   },
->>>>>>> 05c599dc03ed120abccc66b46db6bdc5b5eef5f8
+  "legacy": [],
   "libraries": {
     "pinned_footprint_libs": [],
     "pinned_symbol_libs": []
@@ -288,13 +291,8 @@
     "meta": {
       "version": 5
     },
-<<<<<<< HEAD
     "net_colors": null,
     "netclass_assignments": null,
-=======
-    "net_colors": {},
-    "netclass_assignments": {},
->>>>>>> 05c599dc03ed120abccc66b46db6bdc5b5eef5f8
     "netclass_patterns": []
   },
   "pcbnew": {
@@ -309,14 +307,6 @@
     "page_layout_descr_file": ""
   },
   "schematic": {
-<<<<<<< HEAD
-    "bus_aliases": {},
-    "legacy_lib_dir": "",
-    "legacy_lib_list": [],
-    "top_level_sheets": []
-  },
-  "sheets": [],
-=======
     "annotate_start_num": 0,
     "annotation": {
       "method": 0,
@@ -420,14 +410,14 @@
       "intersheets_ref_show": false,
       "intersheets_ref_suffix": "",
       "junction_size_choice": 3,
-      "label_size_ratio": 0.375,
+      "label_size_ratio": 0.25,
       "operating_point_overlay_i_precision": 3,
       "operating_point_overlay_i_range": "~A",
       "operating_point_overlay_v_precision": 3,
       "operating_point_overlay_v_range": "~V",
       "overbar_offset_ratio": 1.23,
-      "pin_symbol_size": 25.0,
-      "text_offset_ratio": 0.15
+      "pin_symbol_size": 0.0,
+      "text_offset_ratio": 0.08
     },
     "legacy_lib_dir": "",
     "legacy_lib_list": [],
@@ -455,7 +445,6 @@
       "Root"
     ]
   ],
->>>>>>> 05c599dc03ed120abccc66b46db6bdc5b5eef5f8
   "text_variables": {},
   "tuning_profiles": {
     "meta": {

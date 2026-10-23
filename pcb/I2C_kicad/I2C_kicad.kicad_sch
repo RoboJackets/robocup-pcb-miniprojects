@@ -2,9 +2,290 @@
 	(version 20260306)
 	(generator "eeschema")
 	(generator_version "10.0")
-	(uuid bea423eb-63f4-4e89-a865-e0d766357363)
+	(uuid "bea423eb-63f4-4e89-a865-e0d766357363")
 	(paper "A4")
+	(title_block
+		(title "All 6 I2C Devices")
+		(company "RoboCup")
+		(comment 1 "Sean Hall")
+	)
 	(lib_symbols)
+	(sheet
+		(at 19.05 20.32)
+		(size 39.37 52.07)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "09b1c6c3-c097-4b90-b3b4-c6ce251a8c13")
+		(property "Sheetname" "IMU"
+			(at 19.05 19.6084 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "IMU.kicad_sch"
+			(at 19.05 72.9746 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "I2C_kicad"
+				(path "/bea423eb-63f4-4e89-a865-e0d766357363"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 20.32 100.33)
+		(size 38.1 55.88)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "3e4ee084-5f60-455a-bde6-4ccb5705ffb5")
+		(property "Sheetname" "Temperature Sensor"
+			(at 20.32 99.6184 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "TemperatureSensor.kicad_sch"
+			(at 20.32 156.7946 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "I2C_kicad"
+				(path "/bea423eb-63f4-4e89-a865-e0d766357363"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 113.03 100.33)
+		(size 41.91 55.88)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "6ee135fd-c7ca-4fef-bb96-a6409723a424")
+		(property "Sheetname" "GPIO expander"
+			(at 113.03 99.6184 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "GPIOexpander.kicad_sch"
+			(at 113.03 156.7946 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "I2C_kicad"
+				(path "/bea423eb-63f4-4e89-a865-e0d766357363"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 208.28 20.32)
+		(size 38.1 52.07)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "a483e119-e925-4b1f-adf6-c48d26119f2d")
+		(property "Sheetname" "Color Sensor"
+			(at 208.28 19.6084 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ColorSensor.kicad_sch"
+			(at 208.28 72.9746 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "I2C_kicad"
+				(path "/bea423eb-63f4-4e89-a865-e0d766357363"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 208.28 100.33)
+		(size 38.1 55.88)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "b6003882-b2fd-4c8b-b336-7a5a3786e80b")
+		(property "Sheetname" "LED PWM Controller"
+			(at 208.28 99.6184 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "LEDPWMController.kicad_sch"
+			(at 208.28 156.7946 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "I2C_kicad"
+				(path "/bea423eb-63f4-4e89-a865-e0d766357363"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 113.03 20.32)
+		(size 41.91 52.07)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "b6d6a4e4-5c3f-4909-ae7a-27e64bf3c001")
+		(property "Sheetname" "Hall Effect Sensor"
+			(at 113.03 19.6084 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "HallEffect.kicad_sch"
+			(at 113.03 72.9746 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "I2C_kicad"
+				(path "/bea423eb-63f4-4e89-a865-e0d766357363"
+					(page "4")
+				)
+			)
+		)
+	)
 	(sheet_instances
 		(path "/"
 			(page "1")

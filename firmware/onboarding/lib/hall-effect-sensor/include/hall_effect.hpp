@@ -123,7 +123,8 @@
  */
 #define DEVICE_STATUS 0x1C
 
-enum HALL_EFFECT_ERROR {
+enum HALL_EFFECT_STATUS {
+    GOOD,
     UNDERVOLTAGE,
     CRC_FAILURE, // Cyclical Redundancy Check (can be enabled)
     INT_PIN_ERROR,
@@ -145,6 +146,32 @@ enum HALL_EFFECT_MEASUREMENT_TYPE {
     Y,
     Z,
     XY,
+    YZ
+};
+
+enum HALL_EFFECT_UNITS {
+    T_CELSIUS, T_FARENHEIT,
+    M_MICROTESLA, M_TESLA,
+};
+
+/**
+ * @brief Keep Track of Hall Effect Results 
+ * 
+ */
+class HALL_EFFECT_RESULTS {
+public:
+    double x, y, z; // Magnetic Fields (in microtesla)
+    double t; // Temperature (in celsius)
+
+    HALL_EFFECT_RESULTS(
+        double x,
+        double y,
+        double z,
+        double t
+    ); 
+    double* getResults(); 
+
+    HALL_EFFECT_RESULTS(); 
 };
 
 /**
@@ -153,6 +180,7 @@ enum HALL_EFFECT_MEASUREMENT_TYPE {
  * @date Fall 2026
  */
 class Hall_Effect {
+public:
     /*
     All [ MSB LSB ]
     MagX - 2 Bytes 
@@ -184,7 +212,10 @@ class Hall_Effect {
      */
     bool temperatureSensorEnabled = false; 
 
+    HALL_EFFECT_RESULTS current_results; 
+
     Hall_Effect(uint8_t address, TMAG_TYPE type); 
+    Hall_Effect(); 
     /**
      * @brief Initalize Hall Effect sensor 
      * 
@@ -231,6 +262,8 @@ private:
     bool exit_sleep(); 
 
     HALL_EFFECT_MEASUREMENT_TYPE measurementType; 
+    HALL_EFFECT_MEASUREMENT_TYPE prev_measurementType; 
+    bool prev_temperatureSensorEnabled = false; 
 
     bool read_measurement(); 
 
@@ -281,5 +314,13 @@ private:
      * @return True if the operation was successful
      */
     bool write_bit(uint8_t address, uint8_t bit, uint8_t data);
+    /**
+     * @brief Write to given bits of an address provided
+     * 
+     * @param address The address to write to
+     * @param data The data to write into the bits MUST BE 8 IN LENGTH (Use -1 to not write to something+)
+     * @return True if the operation was successful
+     */
+    bool write_bits(uint8_t address, uint8_t (&data)[8]);
 };
 

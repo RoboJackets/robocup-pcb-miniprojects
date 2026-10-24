@@ -1,0 +1,17 @@
+{
+  "configurations": [
+    {
+      "name": "Pico",
+      "compileCommands": "${workspaceFolder}/build/compile_commands.json",
+      "compilerPath": "${userHome}/.pico-sdk/toolchain/15_2_Rel1/bin/arm-none-eabi-g++",
+      "cppStandard": "c++17",
+      "intelliSenseMode": "gcc-arm",
+      "includePath": [
+        "${workspaceFolder}/lib/hall-effect-sensor/include",
+        "${workspaceFolder}/build/generated/pico_base",
+        "${userHome}/.pico-sdk/sdk/2.3.1/src/**/include"
+      ]
+    }
+  ],
+  "version": 4
+}

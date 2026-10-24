@@ -4,6 +4,12 @@
 	(generator_version "10.0")
 	(uuid "afa6b164-3836-42c5-aa9a-2a666b9ae3c7")
 	(paper "A4")
+	(title_block
+		(title "Color Sensor")
+		(rev "1.0")
+		(company "RoboCup")
+		(comment 1 "Sean Hall")
+	)
 	(lib_symbols
 		(symbol "Device:C"
 			(pin_numbers
@@ -775,11 +781,69 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Place the Capsitor close to Vdd"
+		(exclude_from_sim no)
+		(at 45.72 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "2f29e0bd-ef22-4659-ba8e-5f68a6b1083d")
+	)
+	(text "These pull ups are \nfor the whole bus"
+		(exclude_from_sim no)
+		(at 139.7 109.855 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e4ff46a3-05cb-4a19-b96f-81e2281d26c0")
+	)
+	(junction
+		(at 129.54 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "116fafa3-51b4-425f-8453-ffc3f1cbd66e")
+	)
 	(junction
 		(at 63.5 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5c0f7ca1-87a7-48b5-8e07-e6a2a941b661")
+	)
+	(junction
+		(at 71.12 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "778a0a21-5a4d-43a3-be97-055239df9248")
+	)
+	(junction
+		(at 119.38 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b7f9818e-8933-4ef3-8b7b-1c20866f7e99")
+	)
+	(wire
+		(pts
+			(xy 129.54 88.9) (xy 135.89 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "081290ed-8ce1-426e-959e-664f2ec05b31")
+	)
+	(wire
+		(pts
+			(xy 129.54 88.9) (xy 129.54 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "116484cb-cddb-484d-88f6-ac0669a04937")
 	)
 	(wire
 		(pts
@@ -803,6 +867,26 @@
 	)
 	(wire
 		(pts
+			(xy 71.12 96.52) (xy 119.38 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e8084ea-bdc0-4b5e-9ab2-346e1e061e66")
+	)
+	(wire
+		(pts
+			(xy 119.38 107.95) (xy 119.38 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b209dce-3f25-4788-ba49-043323255968")
+	)
+	(wire
+		(pts
 			(xy 63.5 86.36) (xy 71.12 86.36)
 		)
 		(stroke
@@ -823,6 +907,56 @@
 	)
 	(wire
 		(pts
+			(xy 71.12 88.9) (xy 71.12 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a395427f-e080-4a2d-9bb4-83d1ccb25f5a")
+	)
+	(wire
+		(pts
+			(xy 119.38 104.14) (xy 119.38 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab9b0887-ef01-481e-b5e8-4f2d472162ad")
+	)
+	(wire
+		(pts
+			(xy 129.54 107.95) (xy 119.38 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb51809d-14ca-45c2-9e52-8e3de2825142")
+	)
+	(wire
+		(pts
+			(xy 111.76 88.9) (xy 129.54 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c585898f-89c7-4798-b395-22fef033b8d4")
+	)
+	(wire
+		(pts
+			(xy 129.54 104.14) (xy 129.54 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c97548ec-bb45-47f9-8598-76b4a87b44eb")
+	)
+	(wire
+		(pts
 			(xy 63.5 86.36) (xy 63.5 87.63)
 		)
 		(stroke
@@ -830,6 +964,16 @@
 			(type default)
 		)
 		(uuid "d3f0b880-c044-4ce1-959d-5f2d217fb8a7")
+	)
+	(wire
+		(pts
+			(xy 71.12 96.52) (xy 71.12 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e97c13b9-1b39-4002-b308-2ef161325a74")
 	)
 	(table
 		(column_count 2)
@@ -849,15 +993,13 @@
 				(type solid)
 			)
 		)
-		(column_widths 21.59 21.59)
-		(row_heights 2.54 2.54 2.54 2.54 2.54 2.54 2.54 2.54 2.54 2.54 2.54 2.54
-			2.54 2.54 2.54 2.54 2.54 2.54 2.54
-		)
+		(column_widths 21.59 45.72)
+		(row_heights 2.54 2.54 2.54 2.54 2.54 2.54 2.54 2.54 2.54 2.54 2.54)
 		(uuid "fe161b19-1af9-4d63-a309-99f03fb6ce17")
 		(cells
-			(table_cell "Voltage Range:"
+			(table_cell "Field:"
 				(exclude_from_sim no)
-				(at 223.52 53.34 0)
+				(at 152.4 73.66 0)
 				(size 21.59 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -872,10 +1014,10 @@
 				)
 				(uuid "52672425-ab50-46aa-87cd-41892fab9b6c")
 			)
-			(table_cell "2.6V to 3.6V"
+			(table_cell "Value:"
 				(exclude_from_sim no)
-				(at 245.11 53.34 0)
-				(size 21.59 2.54)
+				(at 173.99 73.66 0)
+				(size 45.72 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
 				(fill
@@ -889,9 +1031,9 @@
 				)
 				(uuid "7c997710-6196-4a89-9f21-a2231d9ae3b8")
 			)
-			(table_cell ""
+			(table_cell "Part "
 				(exclude_from_sim no)
-				(at 223.52 55.88 0)
+				(at 152.4 76.2 0)
 				(size 21.59 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -906,10 +1048,10 @@
 				)
 				(uuid "fe65ac89-b70c-4117-995d-3a8dab3e2755")
 			)
-			(table_cell ""
+			(table_cell "VEML3328"
 				(exclude_from_sim no)
-				(at 245.11 55.88 0)
-				(size 21.59 2.54)
+				(at 173.99 76.2 0)
+				(size 45.72 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
 				(fill
@@ -923,9 +1065,9 @@
 				)
 				(uuid "a84cb965-adb9-4806-8992-17242f2c67c8")
 			)
-			(table_cell ""
+			(table_cell "Function"
 				(exclude_from_sim no)
-				(at 223.52 58.42 0)
+				(at 152.4 78.74 0)
 				(size 21.59 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -940,10 +1082,10 @@
 				)
 				(uuid "45a971d3-4a17-49de-8c2e-1554e14f6414")
 			)
-			(table_cell ""
+			(table_cell "Color Sensor"
 				(exclude_from_sim no)
-				(at 245.11 58.42 0)
-				(size 21.59 2.54)
+				(at 173.99 78.74 0)
+				(size 45.72 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
 				(fill
@@ -957,9 +1099,9 @@
 				)
 				(uuid "034e3ecd-3901-4d9c-9da7-ff6d29a56b5e")
 			)
-			(table_cell ""
+			(table_cell "Supply Voltage"
 				(exclude_from_sim no)
-				(at 223.52 60.96 0)
+				(at 152.4 81.28 0)
 				(size 21.59 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -974,10 +1116,10 @@
 				)
 				(uuid "2a503126-a43d-4821-8a49-9bdcae0f89cd")
 			)
-			(table_cell ""
+			(table_cell "3.3V "
 				(exclude_from_sim no)
-				(at 245.11 60.96 0)
-				(size 21.59 2.54)
+				(at 173.99 81.28 0)
+				(size 45.72 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
 				(fill
@@ -991,9 +1133,9 @@
 				)
 				(uuid "c945b84f-df34-4d47-a348-971a7034028b")
 			)
-			(table_cell ""
+			(table_cell "Interface"
 				(exclude_from_sim no)
-				(at 223.52 63.5 0)
+				(at 152.4 83.82 0)
 				(size 21.59 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -1008,10 +1150,10 @@
 				)
 				(uuid "cee910e4-82a2-4c59-88c5-182e08b8ec4b")
 			)
-			(table_cell ""
+			(table_cell "I2C"
 				(exclude_from_sim no)
-				(at 245.11 63.5 0)
-				(size 21.59 2.54)
+				(at 173.99 83.82 0)
+				(size 45.72 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
 				(fill
@@ -1025,9 +1167,9 @@
 				)
 				(uuid "7d56a4aa-c837-4a98-b305-08a703584911")
 			)
-			(table_cell ""
+			(table_cell "I2C Address"
 				(exclude_from_sim no)
-				(at 223.52 66.04 0)
+				(at 152.4 86.36 0)
 				(size 21.59 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -1042,10 +1184,10 @@
 				)
 				(uuid "043ff014-5dcf-4256-add9-5e68a11077f9")
 			)
-			(table_cell ""
+			(table_cell "0x10"
 				(exclude_from_sim no)
-				(at 245.11 66.04 0)
-				(size 21.59 2.54)
+				(at 173.99 86.36 0)
+				(size 45.72 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
 				(fill
@@ -1059,9 +1201,9 @@
 				)
 				(uuid "4cc54b6d-fca1-4b4a-85d9-4232e9527eb9")
 			)
-			(table_cell ""
+			(table_cell "I2C speed range"
 				(exclude_from_sim no)
-				(at 223.52 68.58 0)
+				(at 152.4 88.9 0)
 				(size 21.59 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -1076,10 +1218,10 @@
 				)
 				(uuid "05e32167-6349-44e4-b307-26d0c61f0a4b")
 			)
-			(table_cell ""
+			(table_cell "10-400 kHz"
 				(exclude_from_sim no)
-				(at 245.11 68.58 0)
-				(size 21.59 2.54)
+				(at 173.99 88.9 0)
+				(size 45.72 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
 				(fill
@@ -1093,9 +1235,9 @@
 				)
 				(uuid "a1983e65-5a9f-4e26-afb3-f294045c0817")
 			)
-			(table_cell ""
+			(table_cell "Supply Current "
 				(exclude_from_sim no)
-				(at 223.52 71.12 0)
+				(at 152.4 91.44 0)
 				(size 21.59 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -1110,10 +1252,10 @@
 				)
 				(uuid "67b23fc4-2686-4c33-b8fd-7808c542e3e6")
 			)
-			(table_cell ""
+			(table_cell "500-1000 uA (580 = good)"
 				(exclude_from_sim no)
-				(at 245.11 71.12 0)
-				(size 21.59 2.54)
+				(at 173.99 91.44 0)
+				(size 45.72 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
 				(fill
@@ -1127,9 +1269,9 @@
 				)
 				(uuid "b306d178-ed37-4a1b-a723-88cc58cb2c97")
 			)
-			(table_cell ""
+			(table_cell "Opertating Temp"
 				(exclude_from_sim no)
-				(at 223.52 73.66 0)
+				(at 152.4 93.98 0)
 				(size 21.59 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -1144,10 +1286,10 @@
 				)
 				(uuid "9ce279cf-f5d9-4beb-bbb7-e1435920284a")
 			)
-			(table_cell ""
+			(table_cell "(-40 to 85) C"
 				(exclude_from_sim no)
-				(at 245.11 73.66 0)
-				(size 21.59 2.54)
+				(at 173.99 93.98 0)
+				(size 45.72 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
 				(fill
@@ -1161,9 +1303,9 @@
 				)
 				(uuid "021001d3-9184-4dae-a0ce-6aaa2de21ade")
 			)
-			(table_cell ""
+			(table_cell "Pull Ups"
 				(exclude_from_sim no)
-				(at 223.52 76.2 0)
+				(at 152.4 96.52 0)
 				(size 21.59 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -1178,10 +1320,10 @@
 				)
 				(uuid "c420e811-e1e7-405c-b018-9c029038caa6")
 			)
-			(table_cell ""
+			(table_cell "R1/R2 2.2kΩ (For the whole Bus)"
 				(exclude_from_sim no)
-				(at 245.11 76.2 0)
-				(size 21.59 2.54)
+				(at 173.99 96.52 0)
+				(size 45.72 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
 				(fill
@@ -1195,9 +1337,9 @@
 				)
 				(uuid "15e9c6e7-9424-4574-bf11-2830890b9d07")
 			)
-			(table_cell ""
+			(table_cell "Decoupling"
 				(exclude_from_sim no)
-				(at 223.52 78.74 0)
+				(at 152.4 99.06 0)
 				(size 21.59 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
@@ -1212,10 +1354,10 @@
 				)
 				(uuid "60fb2dbb-2633-45e5-8cd9-4e30de3cee0f")
 			)
-			(table_cell ""
+			(table_cell "C2 100nF"
 				(exclude_from_sim no)
-				(at 245.11 78.74 0)
-				(size 21.59 2.54)
+				(at 173.99 99.06 0)
+				(size 45.72 2.54)
 				(margins 0.9525 0.9525 0.9525 0.9525)
 				(span 1 1)
 				(fill
@@ -1229,282 +1371,10 @@
 				)
 				(uuid "0d9de482-a77c-48f7-b2de-6aa15c12e476")
 			)
-			(table_cell ""
-				(exclude_from_sim no)
-				(at 223.52 81.28 0)
-				(size 21.59 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-				(uuid "7d78e1a9-89b9-4554-b5aa-b712fdfd7d6a")
-			)
-			(table_cell ""
-				(exclude_from_sim no)
-				(at 245.11 81.28 0)
-				(size 21.59 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-				(uuid "b0accb42-15d4-40c1-a74e-932c53385b5f")
-			)
-			(table_cell ""
-				(exclude_from_sim no)
-				(at 223.52 83.82 0)
-				(size 21.59 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-				(uuid "5d3feef1-c7d9-47d4-85a5-7525dea04aa9")
-			)
-			(table_cell ""
-				(exclude_from_sim no)
-				(at 245.11 83.82 0)
-				(size 21.59 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-				(uuid "303c64b5-8ccc-40bb-af47-14264080e4a2")
-			)
-			(table_cell ""
-				(exclude_from_sim no)
-				(at 223.52 86.36 0)
-				(size 21.59 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-				(uuid "72e5eff2-5124-4267-8267-40ebc181a77c")
-			)
-			(table_cell ""
-				(exclude_from_sim no)
-				(at 245.11 86.36 0)
-				(size 21.59 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-				(uuid "8629f3b6-c56a-41b5-a277-88034ff115df")
-			)
-			(table_cell ""
-				(exclude_from_sim no)
-				(at 223.52 88.9 0)
-				(size 21.59 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-				(uuid "04db68bf-72a9-4f46-962f-3b38f2753d8e")
-			)
-			(table_cell ""
-				(exclude_from_sim no)
-				(at 245.11 88.9 0)
-				(size 21.59 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-				(uuid "7975d62d-c5da-42d7-a4d2-b6902122622d")
-			)
-			(table_cell ""
-				(exclude_from_sim no)
-				(at 223.52 91.44 0)
-				(size 21.59 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-				(uuid "5611b336-5d0f-4994-91b3-a5ea47a2500b")
-			)
-			(table_cell ""
-				(exclude_from_sim no)
-				(at 245.11 91.44 0)
-				(size 21.59 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-				(uuid "1bf47919-b3d2-419c-84fc-63e408ae6f00")
-			)
-			(table_cell ""
-				(exclude_from_sim no)
-				(at 223.52 93.98 0)
-				(size 21.59 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-				(uuid "09a640c3-f830-4779-9fd2-3d82930544c7")
-			)
-			(table_cell ""
-				(exclude_from_sim no)
-				(at 245.11 93.98 0)
-				(size 21.59 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-				(uuid "b077cf45-12ce-44ce-ac11-13557c3b39c0")
-			)
-			(table_cell ""
-				(exclude_from_sim no)
-				(at 223.52 96.52 0)
-				(size 21.59 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-				(uuid "d2e3fdf1-f3af-444e-90ae-73fe3cf7b5b5")
-			)
-			(table_cell ""
-				(exclude_from_sim no)
-				(at 245.11 96.52 0)
-				(size 21.59 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-				(uuid "2e05a94f-eddd-4daa-a991-6f4ce0ca8f38")
-			)
-			(table_cell ""
-				(exclude_from_sim no)
-				(at 223.52 99.06 0)
-				(size 21.59 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-				(uuid "e83f814e-6068-46af-bc44-edee6721810b")
-			)
-			(table_cell ""
-				(exclude_from_sim no)
-				(at 245.11 99.06 0)
-				(size 21.59 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-				(uuid "c8f9f313-df39-4eee-9a30-6821ed000ed2")
-			)
 		)
 	)
 	(label "~{SCL}"
-		(at 73.66 88.9 180)
+		(at 71.12 88.9 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1514,7 +1384,7 @@
 		(uuid "1deb5634-f45f-4ab8-89b2-45323fb74b50")
 	)
 	(label "V_{DD}"
-		(at 73.66 86.36 180)
+		(at 71.12 86.36 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1532,6 +1402,107 @@
 			(justify right bottom)
 		)
 		(uuid "a548f103-7c0f-4870-b559-a824785d0d32")
+	)
+	(hierarchical_label "SCL"
+		(shape input)
+		(at 71.12 102.87 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7bc5794b-9eb7-4ea0-8d2d-e28fdb032758")
+	)
+	(hierarchical_label "SDA"
+		(shape bidirectional)
+		(at 135.89 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ffc87b35-4ff0-4793-aa54-6267adb20453")
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 119.38 110.49 0)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "19b74f1e-5f7c-4133-b9b1-e9292f6e43e0")
+		(property "Reference" "#PWR04"
+			(at 119.38 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 119.38 115.57 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 119.38 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 119.38 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 119.38 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a528e9ff-a80a-483f-a4cc-0428df1314a6")
+		)
+		(instances
+			(project "I2C_kicad"
+				(path "/bea423eb-63f4-4e89-a865-e0d766357363/a483e119-e925-4b1f-adf6-c48d26119f2d"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -1807,7 +1778,8 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 105.41 107.95 0)
+		(at 129.54 100.33 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1818,7 +1790,7 @@
 		(fields_autoplaced yes)
 		(uuid "99417c72-ff61-4478-986d-29d2d93d05c9")
 		(property "Reference" "R1"
-			(at 107.95 106.6799 0)
+			(at 127 99.0599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1829,7 +1801,7 @@
 			)
 		)
 		(property "Value" "2.2kΩ"
-			(at 107.95 109.2199 0)
+			(at 127 101.5999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1840,7 +1812,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 103.632 107.95 90)
+			(at 131.318 100.33 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1851,7 +1823,7 @@
 			)
 		)
 		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
-			(at 105.41 107.95 0)
+			(at 129.54 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1862,7 +1834,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 105.41 107.95 0)
+			(at 129.54 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1873,7 +1845,7 @@
 			)
 		)
 		(property "Manufacturer P/N" "RC0603FR-072K2L"
-			(at 105.41 107.95 0)
+			(at 129.54 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1884,7 +1856,7 @@
 			)
 		)
 		(property "Vendor" "Digi Key"
-			(at 105.41 107.95 0)
+			(at 129.54 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1895,7 +1867,7 @@
 			)
 		)
 		(property "Vendor P/N" " 311-2.20KHRTR-ND"
-			(at 105.41 107.95 0)
+			(at 129.54 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1953,7 +1925,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SMD_L3328_VIS"
+		(property "Footprint" "VEML3328:SMD_L3328_VIS"
 			(at 111.76 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -1988,7 +1960,7 @@
 				)
 			)
 		)
-		(property "Manufacturer P/N" "751-VEML3328TR-ND "
+		(property "Manufacturer P/N" "VEML3328"
 			(at 111.76 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -2122,7 +2094,8 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 118.11 107.95 0)
+		(at 119.38 100.33 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2133,7 +2106,7 @@
 		(fields_autoplaced yes)
 		(uuid "ef831d28-3d4a-4f37-9d4d-f646b833beb9")
 		(property "Reference" "R2"
-			(at 120.65 106.6799 0)
+			(at 116.84 99.0599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2144,7 +2117,7 @@
 			)
 		)
 		(property "Value" "2.2kΩ"
-			(at 120.65 109.2199 0)
+			(at 116.84 101.5999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2155,7 +2128,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 116.332 107.95 90)
+			(at 121.158 100.33 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2166,7 +2139,7 @@
 			)
 		)
 		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
-			(at 118.11 107.95 0)
+			(at 119.38 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2177,7 +2150,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 118.11 107.95 0)
+			(at 119.38 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2188,7 +2161,7 @@
 			)
 		)
 		(property "Manufacturer P/N" "RC0603FR-072K2L"
-			(at 118.11 107.95 0)
+			(at 119.38 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2199,7 +2172,7 @@
 			)
 		)
 		(property "Vendor" "Digi Key"
-			(at 118.11 107.95 0)
+			(at 119.38 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2210,7 +2183,7 @@
 			)
 		)
 		(property "Vendor P/N" " 311-2.20KHRTR-ND"
-			(at 118.11 107.95 0)
+			(at 119.38 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

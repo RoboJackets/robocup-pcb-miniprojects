@@ -9,55 +9,37 @@
 #include <cstdint>
 
 /* 
- A2:A1 --> AD, A0 --> Read/Write
- AD connected to GND, AD = 00;
- AD connected to VCC, AD = 11;
- AD connected to SCL, AD = 01;
- AD connected to SDA, AD = 10; 
+LED Controller I2C Addresses
+
+ AD connected to GND, A2:A1 = 00;
+ AD connected to VCC, A2:A1 = 11;
+ AD connected to SCL, A2:A1 = 01;
+ AD connected to SDA, A2:A1 = 10; 
 */
-#define LED_CONTROLLER_ADDRESS 0b0110_0000
-
-//Power Control Register -- R/W
-#define CONTROL_REG 0x00
-
-//High Frequency PWM(HFP) Duty Register -- R/W
-//OUT [24:1] high frequency PWM register byte
-#define HFP_1 0x01
-#define HFP_1_end 0x0C
-#define HFP_2 0x19
-#define HFP_2_end 0x2A
-#define HFP_3 0x31
-#define HFP_3_end 0x3C
-#define HFP_4 0x43
-#define HFP_4_end 0x48
-
-//Low Frequency PWM(LFP) Duty Register -- R/W
-//OUT [24:1] low frequency PWM register byte
-#define LFP_1 0x49
-#define LFP_1_end 0x4E
-#define LFP_2 0x55
-#define LFP_2_end 0x5D
-#define LFP_3 0x61
-#define LFP_3_end 0x66
-#define LFP_4 0x6A
-#define LFP_4_end 0x6C
-
-//Update the HFP & LFP data -- W
-#define UPDATE_REG 0x6D
-
-//Global Current Control Registers -- R/W
-#define GLOBAL_CURCONTROL_R 0x6E
-#define GLOBAL_CURCONTROL_G 0x6F
-#define GLOBAL_CURCONTROL_B 0x70
-
-//Phase Delay and Clock Phase -- R/W
-#define PHASE_REG 0x71
+enum LEDControllerAddress {
+    AD_GND = 0b01100000,
+    AD_VCC = 0b01100110,
+    AD_SCL = 0b01100010,
+    AD_SDA = 0b01100100,
+};
 
 //Spread Spectrum -- R/W
 #define SPREAD_SPECTRUM_REG 0x72
 
 //Reset -- W
 #define RESET_REG 0x7F
+
+/*
+Power Control Register - R/W
++---------+-----+------+-------+-----+-------+-----+-----+
+| Bit     | D7  |  D6  | D5:D4 | D3  |  D2   | D1  | D0  |
++---------+-----+------+-------+-----+-------+-----+-----+
+| Name    |  -  | RGBM | HFPS  |  -  | 14B_E | PMS | SSD |
++---------+-----+------+-------+-----+-------+-----+-----+
+| Default | 0   |  0   |  00   |  0  |   0   |  0  |  0  |
++---------+-----+------+-------+-----+-------+-----+-----+
+*/
+#define CONTROL_REG 0x00
 
 /*
 Software Shutdown Mode - Control Register - Bit D0
@@ -124,6 +106,157 @@ enum RGBMode {
     M_24CH = 0,
     M_8RGB = 1
 };
+
+/*
+High Frequency PWM(HFP) Duty Register -- R/W
+OUT [24:1] high frequency PWM register byte
+
+Table 5-1 --> 10+4-bit mode disabled
++---------+-------------------------+----------------+
+|  Reg    |     02h (04h, 06h…)     | 01h (03h,05h…) |
++---------+-------+-------+---------+----------------+
+|  Bit    | D7:D4 | D3:D2 |  D1:D0  |     D7:D0      |
++---------+-------+-------+---------+----------------+
+|  Name   |   -   |  FMS  |  HFP_H* |     HFP_L      |
++---------+-------+-------+---------+----------------+
+| Default |  0000 |  00   |   00    |    0000 0000   |
++---------+-------+-------+---------+----------------+
+
+*Only enable in 10-bit mode
+
+Table 5-2 --> 10+4-bit mode enabled
++---------+------------------+----------------+
+|  Reg    | 02h (04h, 06h…)  | 01h (03h,05h…) |
++---------+-------+----------+----------------+
+|  Bit    | D7:D6 |  D5:D0   |     D7:D0      |
++---------+-------+----------+----------------+
+|  Name   |  FMS  | 14BIT_H* |    14Bit_L     |
++---------+-------+----------+----------------+
+| Default |  00   | 00 0000  |   0000 0000    |
++---------+-------+----------+----------------+
+
+*Only enable in 10+4-bit mode
+
+*/
+
+//TODO: organize this better
+#define HFP_1 0x01
+#define HFP_1_end 0x0C
+#define HFP_2 0x19
+#define HFP_2_end 0x2A
+#define HFP_3 0x31
+#define HFP_3_end 0x3C
+#define HFP_4 0x43
+#define HFP_4_end 0x48
+
+
+/*
+FMS - HFP Duty Register - 14B Disabled --> D3:D2, 14B Enabled --> D7:D6
+
+The FMS selects PWM Frequency Mode
+HFP_LFP --> HFP + LFP
+HFP_ONLY --> HFP only, LFP = 256
+DC_MODE --> no PWM, output always on
+CHANNEL_SHUTDOWN --> Channel shutdown mode
+
+In 10+4-bit mode, FMS defaults to HFP_ONLY when 00 or 01.
+*/
+enum FMSMode {
+    HFP_LFP = 0,
+    HFP_ONLY = 1,
+    DC_MODE = 2,
+    CHANNEL_SHUTDOWN = 3
+};
+
+
+/*
+Low Frequency PWM(LFP) Duty Register -- R/W
+OUT [24:1] low frequency PWM register byte
+
+Table 6
++---------+-----------+
+|   Bit   |  D7:D0    |
++---------+-----------+
+|  Name   |   LFP     |
++---------+-----------+
+| Default | 0000 0000 |
++---------+-----------+
+*/
+
+#define LFP_1 0x49
+#define LFP_1_end 0x4E
+#define LFP_2 0x55
+#define LFP_2_end 0x5D
+#define LFP_3 0x61
+#define LFP_3_end 0x66
+#define LFP_4 0x6A
+#define LFP_4_end 0x6C
+
+/*
+Update Register -- W
+
+Updates the HFP & LFP data 
+
+When SDB is high and SSDMode is disabled, a write of “0000 0000” to 6Dh is to update the PWM Register (01h~6Ch) values. 
+*/
+#define UPDATE_REG 0x6D
+
+/*
+Global Current Control Registers -- R/W
+
+Modulates all channels DC current in 256 steps.
+In 8RGB Mode, each color controls the respective color.
+In 24CH Mode, each color controls a third of the 24 channels 
+*/
+
+#define GCCR 0x6E
+#define GCCG 0x6F
+#define GCCB 0x70
+
+/*
+Phase Delay and Clock Phase Register - R/W
+
++---------+-----+-----+-----+-----+-----+-----+-----+-----+
+|   Bit   | D7  | D6  | D5  | D4  | D3  | D2  | D1  | D0  |
++---------+-----+-----+-----+-----+-----+-----+-----+-----+
+|  Name   | PDE | HLS | PS6 | PS5 | PS4 | PS3 | PS2 | PS1 |
++---------+-----+-----+-----+-----+-----+-----+-----+-----+
+| Default |  0  |  0  |  0  |  0  |  0  |  0  |  0  |  0  |
++---------+-----+-----+-----+-----+-----+-----+-----+-----+
+*/
+
+#define PHASE_REG 0x71
+
+/*
+Phase Delay Enable - Phase Delay and Clock Phase Register - D7
+
+IS31FL3254 features a 5 phase delay function. This bit enables or disables it.
+*/
+enum PDE {
+    DISABLE = 0,
+    ENABLE = 1,
+};
+
+/*
+Group Phase Delay Select - Phase Delay and Clock Phase Register - D6
+
+LFP --> 5 Group Phase Delay operate at low frequency PWM (LFP)
+HFP --> 5 Group Phase Delay operate at high frequency PWM (HFP) 
+*/
+enum HLF {
+    LFP = 0,
+    HFP = 1,
+};
+
+/*
+Clock Phase Select - Phase Delay and Clock Phase Register - D5:D0
+*/
+enum PSn {
+    DISABLE = 0,
+    ENABLE = 1
+};
+
+
 
 
 

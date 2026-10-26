@@ -50,7 +50,23 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "border_display_style": 2,
+          "border_hatch_pitch": 0.5,
+          "corner_radius": 0.0,
+          "corner_smoothing": 0,
+          "fill_mode": 0,
+          "hatch_gap": 1.5,
+          "hatch_orientation": 0.0,
+          "hatch_smoothing_level": 0,
+          "hatch_smoothing_value": 0.1,
+          "hatch_thickness": 1.0,
+          "min_clearance": 0.5,
+          "min_island_area": 10.0,
+          "min_thickness": 0.25,
+          "pad_connection": 1,
+          "remove_islands": 0,
+          "thermal_relief_gap": 0.5,
+          "thermal_relief_spoke_width": 0.5
         }
       },
       "diff_pair_dimensions": [
@@ -706,7 +722,7 @@
         "uuid": "5fd6e245-9295-49fb-811c-6efb339b53e4"
       }
     ],
-    "used_designators": "",
+    "used_designators": "LED1-8,IC1-2,R24-25,C21-26,#PWR60-81,U7-11",
     "variants": []
   },
   "sheets": [
@@ -737,6 +753,10 @@
     [
       "d57a223d-4598-4cd6-9410-304bb7e5c90b",
       "Indicator LEDs"
+    ],
+    [
+      "520bf39f-edd9-4a4f-87a7-fe31dec229a0",
+      "Sensors"
     ]
   ],
   "text_variables": {},

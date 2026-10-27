@@ -1,0 +1,27 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "25f01cb4-d476-430f-afc9-a23b57a107e0")
+	(paper "A4")
+	(title_block
+		(title "Sensor Suite - Daisy Chain SPI")
+		(date "2026-10-26")
+		(rev "1.0")
+		(company "RoboJackets RoboCup")
+		(comment 1 "Designers: Team Fulgora (names TBD)")
+		(comment 2 "Daisy-chain SPI input and output connectors")
+	)
+	(lib_symbols)
+	(text "Sheet: Daisy Chain SPI\n\nPurpose: Daisy-chain SPI input and output connectors\n\nPlanned contents:\n  - J: S6B-PH-K-S upstream connector (SPI in + power from previous board)\n  - J: S6B-PH-K-S downstream connector (SPI out + power to next board)\n  - ESD protection on every connector signal\n  - Series termination resistors on SPI lines (place near the driving pin)\n  - Pinout must match between boards so any board can follow any other"
+		(exclude_from_sim no)
+		(at 20.32 20.32 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left top)
+		)
+		(uuid "46134bca-2408-472b-8eea-2872da74431f")
+	)
+)

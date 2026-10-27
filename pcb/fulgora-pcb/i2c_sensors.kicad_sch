@@ -1,0 +1,27 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "52d9ab93-23e3-4103-a2e7-160b47d07366")
+	(paper "A4")
+	(title_block
+		(title "Sensor Suite - I2C Sensors")
+		(date "2026-10-26")
+		(rev "1.0")
+		(company "RoboJackets RoboCup")
+		(comment 1 "Designers: Team Fulgora (names TBD)")
+		(comment 2 "IMU, temperature, hall effect and color sensors")
+	)
+	(lib_symbols)
+	(text "Sheet: I2C Sensors\n\nPurpose: IMU, temperature, hall effect and color sensors\n\nPlanned contents:\n  - U: ICM-42605 IMU\n  - U: LM75ADP temperature sensor\n  - U: TMAG5273A2QDBVR hall effect sensor\n  - U: VEML3328 color sensor\n  - Each device on its own I2C address; bus pull-ups sized for bus capacitance\n  - Note placement needs (IMU near board centre, hall/color/temp exposed)"
+		(exclude_from_sim no)
+		(at 20.32 20.32 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left top)
+		)
+		(uuid "1f5a609f-4759-4090-acb3-a5540f6c79fc")
+	)
+)

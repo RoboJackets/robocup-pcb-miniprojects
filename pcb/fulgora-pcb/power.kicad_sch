@@ -1,0 +1,27 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "0cfcc981-b148-41c1-91e1-49b0f4f5bda2")
+	(paper "A4")
+	(title_block
+		(title "Sensor Suite - Power")
+		(date "2026-10-26")
+		(rev "1.0")
+		(company "RoboJackets RoboCup")
+		(comment 1 "Designers: Team Fulgora (names TBD)")
+		(comment 2 "Power input, OR-ing, protection and 3.3 V regulation")
+	)
+	(lib_symbols)
+	(text "Sheet: Power\n\nPurpose: Power input, OR-ing, protection and 3.3 V regulation\n\nPlanned contents:\n  - J: Micro USB 10118194-0001LF (VBUS, D+/D- routed to MCU sheet)\n  - Ideal-diode OR: LM66100DCKR x2 so USB VBUS and SPI-line power never touch\n  - Reverse-voltage, ESD and overcurrent/short protection (fuse or eFuse)\n  - U: AP2112K-3.3 LDO, 3.3 V rail for the whole board\n  - Power-good LED\n  - NOTE: board power budget and 6-board chain budget go here\n  -       (only one board's LED array active at a time)"
+		(exclude_from_sim no)
+		(at 20.32 20.32 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left top)
+		)
+		(uuid "e3fd1dee-62f3-4547-80ca-63a1465c4243")
+	)
+)

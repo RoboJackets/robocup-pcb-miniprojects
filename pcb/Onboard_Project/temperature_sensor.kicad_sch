@@ -916,6 +916,46 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Topher Fontana"
+		(exclude_from_sim no)
+		(at 191.77 173.482 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "0ba0b896-5e41-452a-b467-0b4e9d9018a9")
+	)
+	(text "LM75ADP Schematic"
+		(exclude_from_sim no)
+		(at 197.104 189.23 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "93e72d3a-77a2-4779-809e-295f02c68dfc")
+	)
+	(text "Rev 1"
+		(exclude_from_sim no)
+		(at 273.304 193.294 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a2fa2af2-8142-4211-955a-d04c406f4602")
+	)
+	(text "10/27/26"
+		(exclude_from_sim no)
+		(at 213.36 193.294 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "f36dbedc-dda9-4139-a62b-fb1de162d39a")
+	)
 	(junction
 		(at 161.29 81.28)
 		(diameter 0)
@@ -927,6 +967,10 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c74d789a-f67e-4b13-9ec2-b311e63aa545")
+	)
+	(no_connect
+		(at 172.72 165.1)
+		(uuid "cef2a7b8-9773-41de-a437-7b272dd73e1b")
 	)
 	(bus_entry
 		(at 168.91 54.61)
@@ -1224,6 +1268,12 @@
 			(uuid "07213e30-2baa-44d6-8dd6-daa280443c5d")
 		)
 		(instances
+			(project "temperature_sensor"
+				(path "/12ab8870-8aa2-4216-b652-4121a0b1f00c"
+					(reference "R7")
+					(unit 1)
+				)
+			)
 			(project "Onboadrd_Project"
 				(path "/c8ed4ef3-1d7f-4cb5-a0e2-1374e3f0f80e"
 					(reference "R7")
@@ -1302,6 +1352,12 @@
 			(uuid "65231b20-ba3f-4d7a-aa66-d6d1dba866d7")
 		)
 		(instances
+			(project "temperature_sensor"
+				(path "/12ab8870-8aa2-4216-b652-4121a0b1f00c"
+					(reference "#PWR060")
+					(unit 1)
+				)
+			)
 			(project "Onboadrd_Project"
 				(path "/c8ed4ef3-1d7f-4cb5-a0e2-1374e3f0f80e"
 					(reference "#PWR060")
@@ -1402,6 +1458,12 @@
 			(uuid "2c936a85-9e6e-4eb8-a8c2-699b0990a2c1")
 		)
 		(instances
+			(project "temperature_sensor"
+				(path "/12ab8870-8aa2-4216-b652-4121a0b1f00c"
+					(reference "U3")
+					(unit 1)
+				)
+			)
 			(project "Onboadrd_Project"
 				(path "/c8ed4ef3-1d7f-4cb5-a0e2-1374e3f0f80e"
 					(reference "U3")
@@ -1517,6 +1579,12 @@
 			(uuid "f7a52e9d-9c87-4a05-8615-29af50cb962b")
 		)
 		(instances
+			(project "temperature_sensor"
+				(path "/12ab8870-8aa2-4216-b652-4121a0b1f00c"
+					(reference "C18")
+					(unit 1)
+				)
+			)
 			(project "Onboadrd_Project"
 				(path "/c8ed4ef3-1d7f-4cb5-a0e2-1374e3f0f80e"
 					(reference "C18")
@@ -1596,6 +1664,12 @@
 			(uuid "bb56ad50-5c33-46d1-b019-eff9a117ad74")
 		)
 		(instances
+			(project "temperature_sensor"
+				(path "/12ab8870-8aa2-4216-b652-4121a0b1f00c"
+					(reference "#PWR058")
+					(unit 1)
+				)
+			)
 			(project "Onboadrd_Project"
 				(path "/c8ed4ef3-1d7f-4cb5-a0e2-1374e3f0f80e"
 					(reference "#PWR058")
@@ -1675,6 +1749,12 @@
 			(uuid "aa519db4-721b-4a35-97bb-94548626bafc")
 		)
 		(instances
+			(project "temperature_sensor"
+				(path "/12ab8870-8aa2-4216-b652-4121a0b1f00c"
+					(reference "#PWR063")
+					(unit 1)
+				)
+			)
 			(project "Onboadrd_Project"
 				(path "/c8ed4ef3-1d7f-4cb5-a0e2-1374e3f0f80e"
 					(reference "#PWR063")
@@ -1754,6 +1834,12 @@
 			(uuid "aabdeece-447a-420f-ab4e-15bf823f922e")
 		)
 		(instances
+			(project "temperature_sensor"
+				(path "/12ab8870-8aa2-4216-b652-4121a0b1f00c"
+					(reference "#PWR059")
+					(unit 1)
+				)
+			)
 			(project "Onboadrd_Project"
 				(path "/c8ed4ef3-1d7f-4cb5-a0e2-1374e3f0f80e"
 					(reference "#PWR059")
@@ -1832,6 +1918,12 @@
 			(uuid "480ac85a-9e4c-4dad-82e8-d745a14dbac4")
 		)
 		(instances
+			(project "temperature_sensor"
+				(path "/12ab8870-8aa2-4216-b652-4121a0b1f00c"
+					(reference "#PWR062")
+					(unit 1)
+				)
+			)
 			(project "Onboadrd_Project"
 				(path "/c8ed4ef3-1d7f-4cb5-a0e2-1374e3f0f80e"
 					(reference "#PWR062")
@@ -1911,6 +2003,12 @@
 			(uuid "a1ca9638-718c-4d17-a157-71fb882f77c3")
 		)
 		(instances
+			(project "temperature_sensor"
+				(path "/12ab8870-8aa2-4216-b652-4121a0b1f00c"
+					(reference "#PWR064")
+					(unit 1)
+				)
+			)
 			(project "Onboadrd_Project"
 				(path "/c8ed4ef3-1d7f-4cb5-a0e2-1374e3f0f80e"
 					(reference "#PWR064")
@@ -1988,6 +2086,12 @@
 			(uuid "edb56f98-85cf-4021-839f-10f8ae0ea245")
 		)
 		(instances
+			(project "temperature_sensor"
+				(path "/12ab8870-8aa2-4216-b652-4121a0b1f00c"
+					(reference "#PWR061")
+					(unit 1)
+				)
+			)
 			(project "Onboadrd_Project"
 				(path "/c8ed4ef3-1d7f-4cb5-a0e2-1374e3f0f80e"
 					(reference "#PWR061")
@@ -2001,4 +2105,5 @@
 			(page "4")
 		)
 	)
+	(embedded_fonts no)
 )

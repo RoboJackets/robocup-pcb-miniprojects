@@ -24,6 +24,26 @@
 	)
 	(bus
 		(pts
+			(xy 109.22 135.89) (xy 158.75 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4306db0f-fab6-4f17-82b3-d6fe1439e560")
+	)
+	(bus
+		(pts
+			(xy 162.56 124.46) (xy 165.1 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43381da0-fe7d-43a4-a31a-3ca5cb2ed4eb")
+	)
+	(bus
+		(pts
 			(xy 101.6 120.65) (xy 114.3 120.65)
 		)
 		(stroke
@@ -44,13 +64,73 @@
 	)
 	(bus
 		(pts
-			(xy 152.4 120.65) (xy 165.1 120.65)
+			(xy 107.95 152.4) (xy 162.56 152.4)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c872bd47-b8cd-4dc3-95cf-b3eccf22859d")
+		(uuid "90518c1a-9642-462a-b2de-e78f24676fd3")
+	)
+	(bus
+		(pts
+			(xy 158.75 121.92) (xy 165.1 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98bf93fb-841a-47fe-8247-42ff23739ac1")
+	)
+	(bus
+		(pts
+			(xy 101.6 100.33) (xy 109.22 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9fef3482-5cc2-4373-9e99-61d820edbb20")
+	)
+	(bus
+		(pts
+			(xy 152.4 119.38) (xy 165.1 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0d24a78-3f4b-4ec5-a613-306bb1774114")
+	)
+	(bus
+		(pts
+			(xy 109.22 100.33) (xy 109.22 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2560926-5ec0-4b7d-a900-7f51303f8396")
+	)
+	(bus
+		(pts
+			(xy 158.75 135.89) (xy 158.75 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c84fe364-ad0f-4389-b652-8d93ba2a6247")
+	)
+	(bus
+		(pts
+			(xy 162.56 124.46) (xy 162.56 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9a65268-8e24-4368-9dd5-37a5aefc11ee")
 	)
 	(sheet
 		(at 114.3 88.9)
@@ -120,9 +200,9 @@
 				(justify left)
 			)
 		)
-		(pin "ind_led[0..6]" output
-			(at 152.4 120.65 0)
-			(uuid "ad0f1619-48ec-4a1f-996a-44671d427284")
+		(pin "slave_power_led" output
+			(at 152.4 119.38 0)
+			(uuid "dad2546d-177a-441b-8809-c5b5a798e2a0")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -195,8 +275,8 @@
 		)
 	)
 	(sheet
-		(at 280.67 146.05)
-		(size 12.7 3.81)
+		(at 71.12 146.05)
+		(size 36.83 17.78)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -211,7 +291,7 @@
 		)
 		(uuid "520bf39f-edd9-4a4f-87a7-fe31dec229a0")
 		(property "Sheetname" "Sensors"
-			(at 280.67 145.3384 0)
+			(at 71.12 145.3384 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -222,7 +302,7 @@
 			)
 		)
 		(property "Sheetfile" "sensors.kicad_sch"
-			(at 280.67 150.4446 0)
+			(at 71.12 164.4146 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -230,6 +310,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "color_sensor_led" output
+			(at 107.95 152.4 0)
+			(uuid "430f01bb-2edc-4c1b-892d-51b26d0af64f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -298,6 +388,16 @@
 				(justify right)
 			)
 		)
+		(pin "usb_power_led" output
+			(at 101.6 100.33 0)
+			(uuid "a8200469-8376-4f01-8447-0ba2264ae76b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "rj-electrical-training"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4"
@@ -344,9 +444,29 @@
 				(justify left top)
 			)
 		)
-		(pin "ind_led[0..6]" input
-			(at 165.1 120.65 180)
-			(uuid "1dab1e84-cb56-4f22-bbc1-d57ce4a4ffba")
+		(pin "slave_power_led" input
+			(at 165.1 119.38 180)
+			(uuid "787bc650-7058-4641-b9e5-dab432a31f86")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "usb_power_led" input
+			(at 165.1 121.92 180)
+			(uuid "234d664e-667a-429e-9657-a125cb9ccb62")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "color_sensor_led" input
+			(at 165.1 124.46 180)
+			(uuid "8ced3c8a-7eed-4de6-8dab-fcbca95c739b")
 			(effects
 				(font
 					(size 1.27 1.27)

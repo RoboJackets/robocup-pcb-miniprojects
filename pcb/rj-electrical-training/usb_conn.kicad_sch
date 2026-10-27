@@ -2487,7 +2487,7 @@
 	)
 	(rectangle
 		(start 165.1 50.8)
-		(end 215.9 88.9)
+		(end 226.06 88.9)
 		(stroke
 			(width 0)
 			(type default)
@@ -2579,6 +2579,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "51d4757c-2f6e-473d-bf91-0c5a20d9b57b")
+	)
+	(junction
+		(at 203.2 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "58073ab5-0b93-4358-8470-552901faf8cc")
 	)
 	(junction
 		(at 102.87 72.39)
@@ -3080,6 +3086,16 @@
 	)
 	(wire
 		(pts
+			(xy 205.74 62.23) (xy 203.2 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c731ac85-fa1e-488f-ac28-d83b83970790")
+	)
+	(wire
+		(pts
 			(xy 78.74 80.01) (xy 81.28 80.01)
 		)
 		(stroke
@@ -3217,6 +3233,39 @@
 			(justify left bottom)
 		)
 		(uuid "ff0acb3c-491f-44db-914b-c0a6eb348150")
+	)
+	(hierarchical_label "usb_power_led"
+		(shape output)
+		(at 205.74 62.23 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "218a07eb-edb7-4522-90c3-624d567da55e")
+	)
+	(hierarchical_label "usb_power_led"
+		(shape output)
+		(at 0.3048 0.8096 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "330a3094-63d9-479c-b69e-33d154e7cb8d")
+	)
+	(hierarchical_label "usb_power_led"
+		(shape output)
+		(at 2.8448 3.3496 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c018f4e3-5ddc-4746-8f0b-86a3bdb9b8cf")
 	)
 	(hierarchical_label "USB{DM,DP}"
 		(shape output)

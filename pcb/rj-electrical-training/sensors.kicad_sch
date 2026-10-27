@@ -4,6 +4,13 @@
 	(generator_version "10.0")
 	(uuid "ba679fd0-9d9a-4303-a619-2e8c780757a7")
 	(paper "A4")
+	(title_block
+		(title "Sensors")
+		(date "2026-10-27")
+		(rev "V2")
+		(company "RoboJackets Mini Project")
+		(comment 1 "Isa Baig")
+	)
 	(lib_symbols
 		(symbol "2026-10-25_17-16-49:ICM-42605"
 			(pin_names
@@ -6875,6 +6882,12 @@
 		(uuid "dd603a2e-6744-42e8-830d-8706b241c3c3")
 	)
 	(junction
+		(at 233.68 29.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "deb47af8-9b45-47bb-b81a-9fec01aa03d8")
+	)
+	(junction
 		(at 232.41 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7205,6 +7218,16 @@
 			(type default)
 		)
 		(uuid "2cbe9fb0-46d5-4d20-a595-9495372cd7ee")
+	)
+	(wire
+		(pts
+			(xy 233.68 21.59) (xy 233.68 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d6ef2db-1bb9-4eb2-b6d9-847b644d5fbd")
 	)
 	(wire
 		(pts
@@ -7758,7 +7781,7 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 29.21) (xy 236.22 29.21)
+			(xy 218.44 29.21) (xy 233.68 29.21)
 		)
 		(stroke
 			(width 0)
@@ -7975,6 +7998,16 @@
 			(type default)
 		)
 		(uuid "87a8c628-99dd-45e1-82b9-be10eb228938")
+	)
+	(wire
+		(pts
+			(xy 233.68 29.21) (xy 236.22 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88a73459-6b16-4d4f-b80d-62f58b361fc9")
 	)
 	(wire
 		(pts
@@ -8966,6 +8999,17 @@
 		)
 		(uuid "d055ac7c-5718-42f5-9a3d-b0c8360f3eb2")
 	)
+	(hierarchical_label "color_sensor_led"
+		(shape output)
+		(at 233.68 21.59 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "17b69192-f5a8-4d97-bc0a-ed5777953f71")
+	)
 	(symbol
 		(lib_id "2026-10-25_23-53-28:CLMVC-FKA-CL1D1L71BB7C3C3")
 		(at 184.15 118.11 0)
@@ -8976,7 +9020,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "0177a036-e17d-495d-9dbb-54105c34bbb3")
 		(property "Reference" "LED5"
 			(at 194.31 107.95 0)
@@ -8989,7 +9032,7 @@
 			)
 		)
 		(property "Value" "CLMVC-FKA-CL1D1L71BB7C3C3"
-			(at 194.31 110.49 0)
+			(at 181.61 108.966 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12490,7 +12533,7 @@
 		(dnp no)
 		(uuid "94c0051d-3194-41e3-ad59-c50e16c83e6b")
 		(property "Reference" "LED2"
-			(at 194.31 100.33 0)
+			(at 178.054 104.14 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12500,7 +12543,7 @@
 			)
 		)
 		(property "Value" "CLMVC-FKA-CL1D1L71BB7C3C3"
-			(at 184.658 123.698 0)
+			(at 179.578 123.444 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

@@ -1612,145 +1612,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+3V3"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "+3V3"
-				(at 0 3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+3V3\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "+3V3_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+3V3_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:+5V"
 			(power global)
 			(pin_numbers
@@ -2007,12 +1868,6 @@
 		)
 	)
 	(junction
-		(at 162.56 76.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "33e143a3-2a14-4a43-92a7-734e36930323")
-	)
-	(junction
 		(at 143.51 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2025,12 +1880,6 @@
 		(uuid "8db909fe-8863-423c-aa0f-cc6341307d29")
 	)
 	(junction
-		(at 161.29 86.36)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b8e55b43-3b3f-4c43-a78f-4e3d1a466289")
-	)
-	(junction
 		(at 132.08 64.77)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2041,12 +1890,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cdb07222-d6ca-410e-8a78-3b9617bace25")
-	)
-	(junction
-		(at 163.83 88.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d8c05628-807a-4c19-b65e-3ce787cdb109")
 	)
 	(bus_entry
 		(at 149.86 86.36)
@@ -2680,7 +2523,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 88.9) (xy 163.83 88.9)
+			(xy 149.86 88.9) (xy 173.99 88.9)
 		)
 		(stroke
 			(width 0)
@@ -3190,16 +3033,6 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 76.2) (xy 163.83 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6f39851c-c877-431f-9b98-127ca663e00e")
-	)
-	(wire
-		(pts
 			(xy 167.64 154.94) (xy 167.64 146.05)
 		)
 		(stroke
@@ -3500,16 +3333,6 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 88.9) (xy 173.99 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a11fa4ff-1b4e-4ef9-9a1a-bd0b7b09ae26")
-	)
-	(wire
-		(pts
 			(xy 39.37 137.16) (xy 39.37 138.43)
 		)
 		(stroke
@@ -3607,16 +3430,6 @@
 			(type default)
 		)
 		(uuid "bb63456b-480c-427c-851a-5d2c5ef1e8d2")
-	)
-	(wire
-		(pts
-			(xy 161.29 76.2) (xy 162.56 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bd9da5e3-b90c-42b4-b93a-963fa6718d05")
 	)
 	(wire
 		(pts
@@ -3740,26 +3553,6 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 83.82) (xy 163.83 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d80efec6-6d2c-4785-97eb-5650b065aa46")
-	)
-	(wire
-		(pts
-			(xy 161.29 86.36) (xy 161.29 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d87f49b6-723a-443e-ac8e-69605d3d949d")
-	)
-	(wire
-		(pts
 			(xy 114.3 137.16) (xy 114.3 138.43)
 		)
 		(stroke
@@ -3780,23 +3573,13 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 86.36) (xy 161.29 86.36)
+			(xy 149.86 86.36) (xy 172.72 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "ddf3211e-944b-475d-ad5d-94ed58a99f41")
-	)
-	(wire
-		(pts
-			(xy 161.29 86.36) (xy 172.72 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ddf58a30-92d0-4e3f-a194-a793606c3afc")
 	)
 	(bus
 		(pts
@@ -4789,8 +4572,14 @@
 			(uuid "23124800-546d-424a-a32e-7d69708e8cc9")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "#PWR037")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "#PWR037")
 					(unit 1)
 				)
@@ -4867,8 +4656,14 @@
 			(uuid "36ed042d-d053-46fe-8d2c-975e43855344")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "#PWR043")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "#PWR043")
 					(unit 1)
 				)
@@ -4945,8 +4740,14 @@
 			(uuid "fb326165-6658-466a-aa26-562c445c1f28")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "#PWR040")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "#PWR040")
 					(unit 1)
 				)
@@ -5023,8 +4824,14 @@
 			(uuid "7d63bd8c-541f-436f-b5ac-296b18d4de10")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "#PWR054")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "#PWR054")
 					(unit 1)
 				)
@@ -5101,8 +4908,14 @@
 			(uuid "5553cbdb-86ab-4198-9043-64f769715121")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "#PWR024")
 					(unit 1)
 				)
@@ -5227,8 +5040,14 @@
 			(uuid "ce8d1744-1d02-4c3d-8ab6-f4145bcefd66")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "R17")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "R17")
 					(unit 1)
 				)
@@ -5305,8 +5124,14 @@
 			(uuid "67e09f7d-0903-4fb5-8709-27b8e4877a61")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "#PWR029")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "#PWR029")
 					(unit 1)
 				)
@@ -5429,8 +5254,14 @@
 			(uuid "002d8770-2f8f-41e5-8832-ecd31eb70373")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "R22")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "R22")
 					(unit 1)
 				)
@@ -5553,8 +5384,14 @@
 			(uuid "d976b1dc-6ce1-4823-a1ad-59b6cc4841ed")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "R19")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "R19")
 					(unit 1)
 				)
@@ -5677,8 +5514,14 @@
 			(uuid "cab1f6e9-0b12-4734-8d8b-a93303b637a0")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "R21")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "R21")
 					(unit 1)
 				)
@@ -5801,8 +5644,14 @@
 			(uuid "97c954b9-8912-4132-bf23-6e08dbf114c1")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "R16")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "R16")
 					(unit 1)
 				)
@@ -5879,8 +5728,14 @@
 			(uuid "6f200abe-6d07-46fa-8e36-c8c314a99853")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "#PWR035")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "#PWR035")
 					(unit 1)
 				)
@@ -5957,8 +5812,14 @@
 			(uuid "d6351f4b-a312-49b8-9f72-6794f5db2199")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "#PWR044")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "#PWR044")
 					(unit 1)
 				)
@@ -6083,8 +5944,14 @@
 			(uuid "b782225c-4208-4f6b-92bc-f59ace03aa09")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "R32")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "R32")
 					(unit 1)
 				)
@@ -6341,8 +6208,14 @@
 			(uuid "6d12d7ca-f0fe-48e0-90db-fc0f0da5a9ef")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "IC1")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "IC1")
 					(unit 1)
 				)
@@ -6419,8 +6292,14 @@
 			(uuid "b4db4d36-6662-46a9-93b2-964b9b33279f")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "#PWR055")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "#PWR055")
 					(unit 1)
 				)
@@ -6497,8 +6376,14 @@
 			(uuid "d7697140-8561-4d3e-a60c-bfed4af19221")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "#PWR052")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "#PWR052")
 					(unit 1)
 				)
@@ -6623,8 +6508,14 @@
 			(uuid "0f1231ef-e64f-4ec0-8145-d45258d8e20b")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "R26")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "R26")
 					(unit 1)
 				)
@@ -6749,8 +6640,14 @@
 			(uuid "397a2bc1-afdb-4467-aa3d-5f0ebc28a5db")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "R20")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "R20")
 					(unit 1)
 				)
@@ -6873,8 +6770,14 @@
 			(uuid "d3fcccfe-a38b-4ecf-8519-9c0cdf7942c1")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "R36")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "R36")
 					(unit 1)
 				)
@@ -6997,8 +6900,14 @@
 			(uuid "2f6b50c6-c931-48bc-be42-d9d40fb4705e")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "R25")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "R25")
 					(unit 1)
 				)
@@ -7075,8 +6984,14 @@
 			(uuid "aa288cce-a55f-4acc-b882-420d9f12762e")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "#PWR057")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "#PWR057")
 					(unit 1)
 				)
@@ -7199,8 +7114,14 @@
 			(uuid "e0242eb9-79ba-4424-bb97-b63ee2c4a3c4")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "R28")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "R28")
 					(unit 1)
 				)
@@ -7302,8 +7223,14 @@
 			(uuid "5c077ca8-cfd3-40ad-9967-ce3b5e79e645")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "D6")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "D6")
 					(unit 1)
 				)
@@ -7380,8 +7307,14 @@
 			(uuid "042fc550-8cb0-4a8c-988d-76e21d9140bb")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "#PWR041")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "#PWR041")
 					(unit 1)
 				)
@@ -7458,8 +7391,14 @@
 			(uuid "3915f146-9390-417d-9a86-68ead42ff9f9")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "#PWR048")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "#PWR048")
 					(unit 1)
 				)
@@ -7582,8 +7521,14 @@
 			(uuid "9459d072-e0fb-433f-baca-acee7fc2115b")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "R15")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "R15")
 					(unit 1)
 				)
@@ -7685,8 +7630,14 @@
 			(uuid "ca05f52c-eb47-4bdd-8117-b9b5ac434a45")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "D1")
 					(unit 1)
 				)
@@ -7763,8 +7714,14 @@
 			(uuid "50fe96ab-e951-49bc-a5b6-500486d6265e")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "#PWR046")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "#PWR046")
 					(unit 1)
 				)
@@ -7841,8 +7798,14 @@
 			(uuid "080e6477-560f-47f3-9952-f46c417597c1")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "#PWR032")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "#PWR032")
 					(unit 1)
 				)
@@ -7965,8 +7928,14 @@
 			(uuid "daabe332-72ac-4b0d-917c-2340bd03cabc")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "R18")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "R18")
 					(unit 1)
 				)
@@ -8068,8 +8037,14 @@
 			(uuid "763659d2-1808-4953-8e19-3e5f4375c807")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "D3")
 					(unit 1)
 				)
@@ -8192,8 +8167,14 @@
 			(uuid "74f7929c-6d7b-4e68-a96b-a02cf528ccff")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "R34")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "R34")
 					(unit 1)
 				)
@@ -8270,8 +8251,14 @@
 			(uuid "43006373-2493-49b8-9d05-87d0565f6c1e")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "#PWR042")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "#PWR042")
 					(unit 1)
 				)
@@ -8373,134 +8360,15 @@
 			(uuid "9947d1a7-8855-4b86-92df-8ba4a6832f1e")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
 					(reference "D8")
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 163.83 80.01 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7415842f-1c4a-4b71-bc7a-b6b383784bab")
-		(property "Reference" "R13"
-			(at 166.37 78.7399 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "2k"
-			(at 166.37 81.2799 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 162.052 80.01 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
-			(at 163.83 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "10 kOhms ±1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Moisture Resistant Thick Film"
-			(at 163.83 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer P/N" "RC0402FR-0710KL"
-			(at 163.83 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor" "DigiKey"
-			(at 163.83 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor P/N" "311-10.0KLRCT-ND"
-			(at 163.83 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufaturer PIN" ""
-			(at 163.83 80.01 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "eef3fa70-cc82-428e-8ce9-391bd8562e97")
-		)
-		(pin "2"
-			(uuid "13985a77-5200-48c0-99a1-110c87dd68ed")
-		)
-		(instances
-			(project "Onboadrd_Project"
-				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
-					(reference "R13")
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
+					(reference "D8")
 					(unit 1)
 				)
 			)
@@ -8576,8 +8444,14 @@
 			(uuid "007dada4-92a0-48ea-8f4d-e43ff52087e1")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "#PWR027")
 					(unit 1)
 				)
@@ -8702,8 +8576,14 @@
 			(uuid "bf5316bd-3293-476a-9899-6bd8a9f5f336")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "R23")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "R23")
 					(unit 1)
 				)
@@ -8826,8 +8706,14 @@
 			(uuid "98058b6f-622a-4981-a199-025813b368c8")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "R30")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "R30")
 					(unit 1)
 				)
@@ -8929,8 +8815,14 @@
 			(uuid "5ce19e57-c68b-4604-a5d8-8bf0e44c0c38")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "D2")
 					(unit 1)
 				)
@@ -9053,8 +8945,14 @@
 			(uuid "08d7c64c-ea34-4674-a8db-a70dcd7898f3")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "R27")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "R27")
 					(unit 1)
 				)
@@ -9144,8 +9042,14 @@
 			(uuid "b2167abd-69ee-412b-a33f-69bd05837f54")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "C16")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "C16")
 					(unit 1)
 				)
@@ -9222,8 +9126,14 @@
 			(uuid "6f93798f-15e2-4f4d-b71f-e4d6f1ff57c9")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "#PWR036")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "#PWR036")
 					(unit 1)
 				)
@@ -9300,8 +9210,14 @@
 			(uuid "b568825e-af75-413f-bedd-c2ad9739e9ee")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "#PWR038")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "#PWR038")
 					(unit 1)
 				)
@@ -9378,8 +9294,14 @@
 			(uuid "0ba8f5da-25a1-4be0-bf1b-0d05df7c1d48")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "#PWR049")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "#PWR049")
 					(unit 1)
 				)
@@ -9502,134 +9424,15 @@
 			(uuid "ca3edc8f-e922-4fc2-b6a5-fd4b9236153c")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
 					(reference "R24")
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 161.29 80.01 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "a1bf149f-98f4-451f-8166-175b5c487c39")
-		(property "Reference" "R12"
-			(at 158.75 78.7399 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "2k"
-			(at 158.75 81.2799 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 163.068 80.01 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
-			(at 161.29 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "10 kOhms ±1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Moisture Resistant Thick Film"
-			(at 161.29 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer P/N" "RC0402FR-0710KL"
-			(at 161.29 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor" "DigiKey"
-			(at 161.29 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor P/N" "311-10.0KLRCT-ND"
-			(at 161.29 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufaturer PIN" ""
-			(at 161.29 80.01 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "fe396424-b098-4b07-8e62-e3215332a177")
-		)
-		(pin "2"
-			(uuid "96cdc646-bb69-4979-82a5-3a60a8603608")
-		)
-		(instances
-			(project "Onboadrd_Project"
-				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
-					(reference "R12")
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
+					(reference "R24")
 					(unit 1)
 				)
 			)
@@ -9705,8 +9508,14 @@
 			(uuid "37919694-916a-4150-809c-cd7099a6f82d")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "#PWR053")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "#PWR053")
 					(unit 1)
 				)
@@ -9797,8 +9606,14 @@
 			(uuid "ad37f6bd-fdce-4a48-ad8f-fce248b9d578")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "C17")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "C17")
 					(unit 1)
 				)
@@ -9900,8 +9715,14 @@
 			(uuid "26ecbdac-f5ef-4a95-b836-f5d4b9c30e7d")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "D4")
 					(unit 1)
 				)
@@ -9978,8 +9799,14 @@
 			(uuid "06660843-094a-41d4-9b8e-dd95ddea7fb7")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "#PWR056")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "#PWR056")
 					(unit 1)
 				)
@@ -10056,8 +9883,14 @@
 			(uuid "f7f4dd80-9ad3-41da-bfe0-8adef278905a")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "#PWR025")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "#PWR025")
 					(unit 1)
 				)
@@ -10181,8 +10014,14 @@
 			(uuid "f19b239d-74f0-4a56-8e87-367655ad0955")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "R14")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "R14")
 					(unit 1)
 				)
@@ -10305,8 +10144,14 @@
 			(uuid "f8afb415-1e13-4f00-bac8-426d227293da")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "R31")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "R31")
 					(unit 1)
 				)
@@ -10431,8 +10276,14 @@
 			(uuid "eb6b2a80-9f39-4779-a585-8d1afafa7975")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "R35")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "R35")
 					(unit 1)
 				)
@@ -10509,8 +10360,14 @@
 			(uuid "e5cc12be-6094-4bfb-863b-8e5c26566796")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "#PWR033")
 					(unit 1)
 				)
@@ -10601,87 +10458,15 @@
 			(uuid "d0c447b8-015e-437c-a56b-ac8555442c2d")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
 					(reference "C15")
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 162.56 76.2 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c7f7cd78-6c69-4d0c-a666-9ca575f48145")
-		(property "Reference" "#PWR028"
-			(at 162.56 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 162.56 71.12 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 162.56 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 162.56 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 162.56 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "990634b0-0190-448c-91e0-7ae632a39953")
-		)
-		(instances
-			(project "Onboadrd_Project"
-				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
-					(reference "#PWR028")
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
+					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -10803,8 +10588,14 @@
 			(uuid "a2ec0291-fb97-407a-bb65-9e4166a3106f")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "R33")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "R33")
 					(unit 1)
 				)
@@ -10881,8 +10672,14 @@
 			(uuid "046e4152-a865-4b4b-974e-9fea6342269a")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "#PWR034")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "#PWR034")
 					(unit 1)
 				)
@@ -10959,8 +10756,14 @@
 			(uuid "073fbaaa-630a-4846-96c5-d6814b731004")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "#PWR047")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "#PWR047")
 					(unit 1)
 				)
@@ -11037,8 +10840,14 @@
 			(uuid "d9d17cbf-db8c-4d58-8723-b9ea292260ae")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "#PWR031")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "#PWR031")
 					(unit 1)
 				)
@@ -11162,8 +10971,14 @@
 			(uuid "258fb470-86da-4269-b31b-1c2c1012c7bc")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "R11")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "R11")
 					(unit 1)
 				)
@@ -11240,8 +11055,14 @@
 			(uuid "1d56fd78-afb8-41a0-ad28-70846aa1d7a9")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "#PWR026")
 					(unit 1)
 				)
@@ -11364,8 +11185,14 @@
 			(uuid "5038a34d-1575-463b-8192-9570cf41d7ce")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "R37")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "R37")
 					(unit 1)
 				)
@@ -11442,8 +11269,14 @@
 			(uuid "35973fd6-024b-419d-94a5-86d74bd1e16e")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "#PWR051")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "#PWR051")
 					(unit 1)
 				)
@@ -11520,8 +11353,14 @@
 			(uuid "673d7938-1c5f-46aa-bb29-6f43ae78fb49")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "#PWR050")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "#PWR050")
 					(unit 1)
 				)
@@ -11646,8 +11485,14 @@
 			(uuid "6e5fb6fc-3640-4019-a538-dd1046df0ba5")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "R38")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "R38")
 					(unit 1)
 				)
@@ -11749,8 +11594,14 @@
 			(uuid "8d7e43ce-c71f-4e02-8d78-6a99a01cb04b")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "D5")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "D5")
 					(unit 1)
 				)
@@ -11827,8 +11678,14 @@
 			(uuid "6073be81-95ee-4215-9250-c3c345398b3c")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "#PWR039")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "#PWR039")
 					(unit 1)
 				)
@@ -11953,8 +11810,14 @@
 			(uuid "18557804-fe3b-49d3-a06e-dfedc31e0ba6")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "R29")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "R29")
 					(unit 1)
 				)
@@ -12056,8 +11919,14 @@
 			(uuid "1ef9834f-6c2e-485a-89db-69a8c6323aaa")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "D7")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "D7")
 					(unit 1)
 				)
@@ -12134,8 +12003,14 @@
 			(uuid "6af13155-0bee-41fc-8063-cdacf9324486")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "#PWR045")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "#PWR045")
 					(unit 1)
 				)
@@ -12212,8 +12087,14 @@
 			(uuid "bad45bde-bbf1-43c3-8a23-c9f00b5a4439")
 		)
 		(instances
-			(project "Onboadrd_Project"
+			(project "Onboard_Project"
 				(path "/51b0e95b-30e2-4a45-ba14-b82662b9683e"
+					(reference "#PWR030")
+					(unit 1)
+				)
+			)
+			(project "led_controller"
+				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "#PWR030")
 					(unit 1)
 				)

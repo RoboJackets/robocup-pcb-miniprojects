@@ -789,12 +789,6 @@
 		(uuid "86652e6b-7e99-45ce-a7dc-05e31674a1c7")
 	)
 	(junction
-		(at 139.7 102.87)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "26db7489-ffab-4c98-b174-ca9c78a9157e")
-	)
-	(junction
 		(at 144.78 123.19)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -805,12 +799,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7b0dbdbb-02e7-4a17-b07a-1991a7e4b708")
-	)
-	(junction
-		(at 132.08 97.79)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "98106301-1a6c-42bc-9a7c-b80db06577fc")
 	)
 	(junction
 		(at 146.05 107.95)
@@ -869,16 +857,6 @@
 			(type default)
 		)
 		(uuid "1644339b-aba1-49a3-bb56-fc7ecb72205a")
-	)
-	(wire
-		(pts
-			(xy 139.7 73.66) (xy 139.7 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1e28afea-2ebd-4092-bcce-8ba92d575f2a")
 	)
 	(bus
 		(pts
@@ -939,16 +917,6 @@
 			(type default)
 		)
 		(uuid "410d6d2f-2deb-465d-b661-651efb25f00c")
-	)
-	(wire
-		(pts
-			(xy 139.7 83.82) (xy 139.7 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4ca1f883-3138-4080-ba6b-a789e13f4eec")
 	)
 	(wire
 		(pts
@@ -1032,16 +1000,6 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 92.71) (xy 132.08 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b64bfc21-61b3-4662-8014-4fd60ceaa11c")
-	)
-	(wire
-		(pts
 			(xy 144.78 119.38) (xy 144.78 123.19)
 		)
 		(stroke
@@ -1069,16 +1027,6 @@
 			(type default)
 		)
 		(uuid "d8d51486-70ff-4d3a-9cd2-e56987706d75")
-	)
-	(wire
-		(pts
-			(xy 132.08 82.55) (xy 132.08 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dae28e13-33f3-4f36-9240-c2f4c578843e")
 	)
 	(wire
 		(pts
@@ -1424,84 +1372,6 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 139.7 73.66 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9ab96484-108b-4a15-828f-1cc45b2eadf6")
-		(property "Reference" "#PWR028"
-			(at 139.7 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 139.7 68.58 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 139.7 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 139.7 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 139.7 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e7a7315d-5991-427d-948c-e5a4cd645fb2")
-		)
-		(instances
-			(project "GPIO_Expander"
-				(path "/17df1232-b180-49eb-a49c-63e4861e42e5"
-					(reference "#PWR028")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
 		(at 146.05 80.01 0)
 		(unit 1)
 		(body_style 1)
@@ -1702,84 +1572,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 132.08 82.55 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cfc62f63-0698-4247-8d2e-0e96345a896b")
-		(property "Reference" "#PWR029"
-			(at 132.08 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 132.08 77.47 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 132.08 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 132.08 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 132.08 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "467a5c2d-5240-4a11-bfb6-0e4443566dbb")
-		)
-		(instances
-			(project "GPIO_Expander"
-				(path "/17df1232-b180-49eb-a49c-63e4861e42e5"
-					(reference "#PWR029")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 163.83 132.08 0)
 		(unit 1)
@@ -1852,236 +1644,6 @@
 			(project "GPIO_Expander"
 				(path "/17df1232-b180-49eb-a49c-63e4861e42e5"
 					(reference "#PWR024")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 132.08 88.9 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f1bdbc83-8525-4a6c-a9dc-d653f2ef7c21")
-		(property "Reference" "R7"
-			(at 134.62 87.6299 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "2k"
-			(at 134.62 90.1699 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
-			(at 130.302 88.9 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 132.08 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 132.08 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer P/N" ""
-			(at 132.08 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor" ""
-			(at 132.08 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor P/N" ""
-			(at 132.08 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "5e22e964-bf73-4d29-ae88-8a940493b525")
-		)
-		(pin "1"
-			(uuid "0408e23c-b42f-494e-b61d-056c94e0b228")
-		)
-		(instances
-			(project "GPIO_Expander"
-				(path "/17df1232-b180-49eb-a49c-63e4861e42e5"
-					(reference "R7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 139.7 80.01 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fef30b63-c6cf-43d7-b0f1-5821a086cd9d")
-		(property "Reference" "R8"
-			(at 142.24 78.7399 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "2k"
-			(at 142.24 81.2799 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
-			(at 137.922 80.01 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 139.7 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 139.7 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer P/N" ""
-			(at 139.7 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor" ""
-			(at 139.7 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor P/N" ""
-			(at 139.7 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "2c93fd79-2d53-413d-a788-093e3f36a4b5")
-		)
-		(pin "1"
-			(uuid "cbc3d0ae-f150-421a-9de2-4f78bc0227dc")
-		)
-		(instances
-			(project "GPIO_Expander"
-				(path "/17df1232-b180-49eb-a49c-63e4861e42e5"
-					(reference "R8")
 					(unit 1)
 				)
 			)

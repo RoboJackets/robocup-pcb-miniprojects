@@ -163,146 +163,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:R"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "R"
-				(at 2.032 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R"
-				(at 0 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Resistor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "R res resistor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "R_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "ICM-42605_1"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -890,18 +750,6 @@
 		(uuid "60c70d26-6cb5-4c55-86dc-b299b8464b1f")
 	)
 	(junction
-		(at 137.16 100.33)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "071c76c6-42f1-4678-9ebe-abfb3c270a68")
-	)
-	(junction
-		(at 129.54 97.79)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "258bf644-b7dc-43cd-9087-af61ca381944")
-	)
-	(junction
 		(at 148.59 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -970,16 +818,6 @@
 			(type default)
 		)
 		(uuid "91b64853-33ec-4ea9-b630-7a6f3399203e")
-	)
-	(wire
-		(pts
-			(xy 137.16 92.71) (xy 137.16 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0205afa3-e0c6-46bc-a524-1fd819328e36")
 	)
 	(wire
 		(pts
@@ -1053,43 +891,13 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 78.74) (xy 137.16 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "44c15ca3-0601-4cb8-b559-2043c4944fa0")
-	)
-	(wire
-		(pts
-			(xy 129.54 97.79) (xy 152.4 97.79)
+			(xy 118.11 97.79) (xy 152.4 97.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "461e7378-3ff7-4bbc-8279-11137a45a9ac")
-	)
-	(wire
-		(pts
-			(xy 129.54 88.9) (xy 129.54 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "46a4963d-51a6-4bb8-b65e-bd764eeae1f3")
-	)
-	(wire
-		(pts
-			(xy 137.16 100.33) (xy 152.4 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4db77704-fdbd-4008-9a6c-491f11a42828")
 	)
 	(wire
 		(pts
@@ -1193,16 +1001,6 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 97.79) (xy 129.54 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b416abc8-b48a-47e7-915e-3c628d21b44d")
-	)
-	(wire
-		(pts
 			(xy 177.8 68.58) (xy 177.8 71.12)
 		)
 		(stroke
@@ -1260,16 +1058,6 @@
 			(type default)
 		)
 		(uuid "d0e8c35d-84df-4644-82e8-28a24ac7b653")
-	)
-	(wire
-		(pts
-			(xy 129.54 76.2) (xy 129.54 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d70f8d7b-e1df-4feb-bb54-db31a042d077")
 	)
 	(wire
 		(pts
@@ -1333,7 +1121,7 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 100.33) (xy 137.16 100.33)
+			(xy 118.11 100.33) (xy 152.4 100.33)
 		)
 		(stroke
 			(width 0)
@@ -1441,87 +1229,15 @@
 			(uuid "7dc00e03-d9ff-4b74-8bda-57c7d417c959")
 		)
 		(instances
-			(project "Onboadrd_Project"
-				(path "/8132bc40-ba4d-45d6-8351-d7de51b9e6bd"
+			(project "IMU_Sensor"
+				(path "/17df1232-b180-49eb-a49c-63e4861e42e5"
 					(reference "#PWR062")
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 137.16 78.74 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1ee0693a-bfca-400d-8f03-466a48452cfc")
-		(property "Reference" "#PWR066"
-			(at 137.16 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 137.16 73.66 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 137.16 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 137.16 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 137.16 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "bc90b10c-ef69-43ad-b86b-29309ade6fa0")
-		)
-		(instances
 			(project "Onboadrd_Project"
 				(path "/8132bc40-ba4d-45d6-8351-d7de51b9e6bd"
-					(reference "#PWR066")
+					(reference "#PWR062")
 					(unit 1)
 				)
 			)
@@ -1634,6 +1350,12 @@
 			(uuid "80e45b3a-96d1-4e1a-842b-23d51b4c6c42")
 		)
 		(instances
+			(project "IMU_Sensor"
+				(path "/17df1232-b180-49eb-a49c-63e4861e42e5"
+					(reference "C21")
+					(unit 1)
+				)
+			)
 			(project "Onboadrd_Project"
 				(path "/8132bc40-ba4d-45d6-8351-d7de51b9e6bd"
 					(reference "C21")
@@ -1711,6 +1433,12 @@
 			(uuid "727a2f65-635f-415e-a0b6-e29dee66409d")
 		)
 		(instances
+			(project "IMU_Sensor"
+				(path "/17df1232-b180-49eb-a49c-63e4861e42e5"
+					(reference "#PWR064")
+					(unit 1)
+				)
+			)
 			(project "Onboadrd_Project"
 				(path "/8132bc40-ba4d-45d6-8351-d7de51b9e6bd"
 					(reference "#PWR064")
@@ -1826,6 +1554,12 @@
 			(uuid "58d26bcb-9322-46ba-b8f8-0b6de7790a8d")
 		)
 		(instances
+			(project "IMU_Sensor"
+				(path "/17df1232-b180-49eb-a49c-63e4861e42e5"
+					(reference "U4")
+					(unit 1)
+				)
+			)
 			(project "Onboadrd_Project"
 				(path "/8132bc40-ba4d-45d6-8351-d7de51b9e6bd"
 					(reference "U4")
@@ -1903,6 +1637,12 @@
 			(uuid "adfb9e38-367a-4b8a-8ae1-0fe536d398ae")
 		)
 		(instances
+			(project "IMU_Sensor"
+				(path "/17df1232-b180-49eb-a49c-63e4861e42e5"
+					(reference "#PWR061")
+					(unit 1)
+				)
+			)
 			(project "Onboadrd_Project"
 				(path "/8132bc40-ba4d-45d6-8351-d7de51b9e6bd"
 					(reference "#PWR061")
@@ -1980,6 +1720,12 @@
 			(uuid "6b899784-7bee-4459-bbfc-2fb3e66f92f2")
 		)
 		(instances
+			(project "IMU_Sensor"
+				(path "/17df1232-b180-49eb-a49c-63e4861e42e5"
+					(reference "#PWR063")
+					(unit 1)
+				)
+			)
 			(project "Onboadrd_Project"
 				(path "/8132bc40-ba4d-45d6-8351-d7de51b9e6bd"
 					(reference "#PWR063")
@@ -2058,200 +1804,15 @@
 			(uuid "159f19fa-6ca2-402a-afb5-c5dde82958a8")
 		)
 		(instances
-			(project "Onboadrd_Project"
-				(path "/8132bc40-ba4d-45d6-8351-d7de51b9e6bd"
+			(project "IMU_Sensor"
+				(path "/17df1232-b180-49eb-a49c-63e4861e42e5"
 					(reference "#PWR060")
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 129.54 76.2 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a1981c96-a9c7-4c66-a921-ac6cd0275f60")
-		(property "Reference" "#PWR065"
-			(at 129.54 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 129.54 71.12 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 129.54 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 129.54 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 129.54 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "0ab0ed39-64db-4c95-8c56-b372262b66cc")
-		)
-		(instances
 			(project "Onboadrd_Project"
 				(path "/8132bc40-ba4d-45d6-8351-d7de51b9e6bd"
-					(reference "#PWR065")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 129.54 85.09 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "b024ffea-957c-4017-974f-9d475bae037f")
-		(property "Reference" "R24"
-			(at 125.73 83.82 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 125.73 86.36 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 131.318 85.09 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
-			(at 129.54 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "4.7 kOhms ±1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Moisture Resistant Thick Film"
-			(at 129.54 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer P/N" "RC0402FR-134K7L"
-			(at 129.54 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor" "DigiKey"
-			(at 129.54 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor P/N" "13-RC0402FR-134K7LCT-ND"
-			(at 129.54 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "7613c18f-fe40-4ea9-8f94-bf44c504369f")
-		)
-		(pin "1"
-			(uuid "93b3d63d-949f-4574-98ef-b688853649c6")
-		)
-		(instances
-			(project "Onboadrd_Project"
-				(path "/8132bc40-ba4d-45d6-8351-d7de51b9e6bd"
-					(reference "R24")
+					(reference "#PWR060")
 					(unit 1)
 				)
 			)
@@ -2364,6 +1925,12 @@
 			(uuid "4a1684cd-5a0c-4b4f-9d4e-16cab624d00b")
 		)
 		(instances
+			(project "IMU_Sensor"
+				(path "/17df1232-b180-49eb-a49c-63e4861e42e5"
+					(reference "C22")
+					(unit 1)
+				)
+			)
 			(project "Onboadrd_Project"
 				(path "/8132bc40-ba4d-45d6-8351-d7de51b9e6bd"
 					(reference "C22")
@@ -2479,122 +2046,15 @@
 			(uuid "71f5dbe2-a5aa-4b1f-ad50-f2317e9ec41a")
 		)
 		(instances
-			(project "Onboadrd_Project"
-				(path "/8132bc40-ba4d-45d6-8351-d7de51b9e6bd"
+			(project "IMU_Sensor"
+				(path "/17df1232-b180-49eb-a49c-63e4861e42e5"
 					(reference "C23")
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 137.16 88.9 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "e8feb1f3-3fde-40c6-9058-b52d9243665c")
-		(property "Reference" "R25"
-			(at 133.35 87.63 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 133.35 90.17 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 138.938 88.9 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
-			(at 137.16 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "4.7 kOhms ±1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Moisture Resistant Thick Film"
-			(at 137.16 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer P/N" "RC0402FR-134K7L"
-			(at 137.16 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor" "DigiKey"
-			(at 137.16 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor P/N" "13-RC0402FR-134K7LCT-ND"
-			(at 137.16 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "8049def0-2949-4881-bdd7-e1082f745cc5")
-		)
-		(pin "1"
-			(uuid "f8747807-2c30-41f4-ad72-53a3bfe7a884")
-		)
-		(instances
 			(project "Onboadrd_Project"
 				(path "/8132bc40-ba4d-45d6-8351-d7de51b9e6bd"
-					(reference "R25")
+					(reference "C23")
 					(unit 1)
 				)
 			)
@@ -2670,6 +2130,12 @@
 			(uuid "91676d05-a2e0-40ff-920d-c6fee12bed18")
 		)
 		(instances
+			(project "IMU_Sensor"
+				(path "/17df1232-b180-49eb-a49c-63e4861e42e5"
+					(reference "#PWR059")
+					(unit 1)
+				)
+			)
 			(project "Onboadrd_Project"
 				(path "/8132bc40-ba4d-45d6-8351-d7de51b9e6bd"
 					(reference "#PWR059")
@@ -2683,4 +2149,5 @@
 			(page "2")
 		)
 	)
+	(embedded_fonts no)
 )

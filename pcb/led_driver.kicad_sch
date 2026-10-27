@@ -1,0 +1,23 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 43670c73-eaa7-442e-bd75-3edb26656a48)
+
+  (paper "A4")
+
+  (title_block
+    (title "Sensor Suite - LED Driver")
+    (date "2026-10-26")
+    (rev "1.0")
+    (company "RoboJackets RoboCup")
+    (comment 1 "Designers: Team Fulgora (names TBD)")
+    (comment 2 "IS31FL3254 PWM LED controller driving 8 RGB LEDs")
+  )
+
+  (lib_symbols
+  )
+
+  (text "Sheet: LED Driver\n\nPurpose: IS31FL3254 PWM LED controller driving 8 RGB LEDs\n\nPlanned contents:\n  - U: IS31FL3254-QFLS4-TR LED controller\n  - D: 8x CLMVC-FKA-CL1D1L71BB7C3C3 RGB LEDs\n  - Current-set resistor, SDB/enable pin, decoupling\n  - Worst-case LED current feeds the Power sheet budget" (at 20.32 20.32 0)
+    (effects (font (size 1.524 1.524)) (justify left top))
+    (uuid 8bb2b2b1-59ee-4e06-8930-b09b3e7fb027)
+  )
+)

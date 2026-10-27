@@ -1,0 +1,23 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 70a01278-6c3d-40c7-9e99-664f65aac2a7)
+
+  (paper "A4")
+
+  (title_block
+    (title "Sensor Suite - MCU")
+    (date "2026-10-26")
+    (rev "1.0")
+    (company "RoboJackets RoboCup")
+    (comment 1 "Designers: Team Fulgora (names TBD)")
+    (comment 2 "RP2040 core: flash, crystal, USB data, SWD, boot/reset")
+  )
+
+  (lib_symbols
+  )
+
+  (text "Sheet: MCU\n\nPurpose: RP2040 core: flash, crystal, USB data, SWD, boot/reset\n\nPlanned contents:\n  - U: RP2040, decoupling per RP2040 hardware design guide\n  - U: W25Q16JVUXIQ 2 MB QSPI flash\n  - Y: ABM8-272-T3 12 MHz crystal + load caps\n  - USB D+/D- with 27R series resistors\n  - BOOTSEL and RESET, SWD test points\n  - I2C bus(es) and SPI0/SPI1 pins out to the other sheets" (at 20.32 20.32 0)
+    (effects (font (size 1.524 1.524)) (justify left top))
+    (uuid ee95848b-fff8-40a2-bb39-8d7c14256537)
+  )
+)

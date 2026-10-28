@@ -2805,10 +2805,6 @@
 		(uuid "f30104b2-9142-4489-8aca-1ca9863df08b")
 	)
 	(no_connect
-		(at 233.68 69.85)
-		(uuid "0e986be2-9573-4637-b0cd-98d336a14f45")
-	)
-	(no_connect
 		(at 233.68 128.27)
 		(uuid "1ac9642d-18e1-4279-a436-f10816eb27f3")
 	)
@@ -2843,10 +2839,6 @@
 	(no_connect
 		(at 233.68 123.19)
 		(uuid "94776ac9-8803-4c76-b55a-6d234610ebda")
-	)
-	(no_connect
-		(at 233.68 67.31)
-		(uuid "99d704da-d13e-4b73-b771-02a6653f009a")
 	)
 	(no_connect
 		(at 233.68 102.87)
@@ -3335,16 +3327,6 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 67.31) (xy 242.57 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4aefdf6d-07de-4fe3-90b1-155d72349399")
-	)
-	(wire
-		(pts
 			(xy 54.61 64.77) (xy 74.93 64.77)
 		)
 		(stroke
@@ -3482,6 +3464,16 @@
 			(type default)
 		)
 		(uuid "6468aa31-0f84-4383-a8ec-f7465cbcb6d9")
+	)
+	(wire
+		(pts
+			(xy 233.68 69.85) (xy 246.38 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68dff38f-852d-4606-96d0-5589b8bdf8eb")
 	)
 	(wire
 		(pts
@@ -3732,16 +3724,6 @@
 			(type default)
 		)
 		(uuid "93421e5e-689a-4737-ba94-40e068003ddf")
-	)
-	(wire
-		(pts
-			(xy 233.68 69.85) (xy 242.57 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "96400890-a798-400d-810b-7f2a21168759")
 	)
 	(wire
 		(pts
@@ -4263,6 +4245,16 @@
 		)
 		(uuid "fe831a16-9f06-4398-926d-39d18ebd68e1")
 	)
+	(wire
+		(pts
+			(xy 233.68 67.31) (xy 246.38 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ffb3471e-3235-4a39-8465-348835110c4b")
+	)
 	(label "~{QSPI_CS}"
 		(at 83.82 129.54 0)
 		(effects
@@ -4302,16 +4294,6 @@
 			(justify left bottom)
 		)
 		(uuid "0d5ce020-fad0-42c8-a569-b9e106362b5f")
-	)
-	(label "temp_int"
-		(at 236.22 69.85 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0e2955a6-a973-4e68-b597-e4c381d59bdd")
 	)
 	(label "ind_led2"
 		(at 237.49 85.09 0)
@@ -4412,16 +4394,6 @@
 			(justify left bottom)
 		)
 		(uuid "9173c463-488e-4d9a-b73b-b691790ce523")
-	)
-	(label "hall_int"
-		(at 236.22 67.31 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "95452649-824c-4355-b3db-b8c0a7e3aeb8")
 	)
 	(label "QSPI_SD1"
 		(at 83.82 137.16 0)
@@ -4583,6 +4555,28 @@
 			(justify right)
 		)
 		(uuid "887ce528-0c57-4078-8fa7-13c6a8f375b0")
+	)
+	(hierarchical_label "hall_int"
+		(shape input)
+		(at 246.38 67.31 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b774fc39-37fe-4f3b-b975-34e3ea89d731")
+	)
+	(hierarchical_label "temp_int"
+		(shape input)
+		(at 246.38 69.85 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cca16fd1-1ae2-41dc-bafc-37a2990c084b")
 	)
 	(hierarchical_label "USB{DM,DP}"
 		(shape input)

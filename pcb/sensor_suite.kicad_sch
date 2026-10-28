@@ -19,6 +19,16 @@
 		)
 		(uuid "225eb666-5d72-4e33-a7e5-d8814fee3bd5")
 	)
+	(wire
+		(pts
+			(xy 121.92 86.36) (xy 77.47 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e87bb6e-0271-4371-ba88-6cdbb21dee64")
+	)
 	(bus
 		(pts
 			(xy 121.92 97.79) (xy 107.95 97.79)
@@ -31,27 +41,7 @@
 	)
 	(bus
 		(pts
-			(xy 107.95 111.76) (xy 121.92 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4249b06e-9517-4dba-99f8-ef90b24f809c")
-	)
-	(bus
-		(pts
-			(xy 77.47 36.83) (xy 91.44 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "57176e94-9fff-4b5f-8004-64fa805bf241")
-	)
-	(bus
-		(pts
-			(xy 121.92 72.39) (xy 107.95 72.39)
+			(xy 121.92 69.85) (xy 107.95 69.85)
 		)
 		(stroke
 			(width 0)
@@ -61,7 +51,7 @@
 	)
 	(bus
 		(pts
-			(xy 121.92 85.09) (xy 107.95 85.09)
+			(xy 121.92 83.82) (xy 107.95 83.82)
 		)
 		(stroke
 			(width 0)
@@ -91,6 +81,16 @@
 	)
 	(bus
 		(pts
+			(xy 77.47 111.76) (xy 121.92 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d994755b-329c-4960-96f1-030b62c5d4a4")
+	)
+	(bus
+		(pts
 			(xy 121.92 46.99) (xy 107.95 46.99)
 		)
 		(stroke
@@ -99,9 +99,19 @@
 		)
 		(uuid "dcd5455d-f990-4cf3-9d8a-0bbe0524fe40")
 	)
+	(wire
+		(pts
+			(xy 121.92 72.39) (xy 77.47 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df957853-5322-4cc6-856d-43b774e63ad9")
+	)
 	(bus
 		(pts
-			(xy 121.92 59.69) (xy 107.95 59.69)
+			(xy 121.92 58.42) (xy 107.95 58.42)
 		)
 		(stroke
 			(width 0)
@@ -120,7 +130,7 @@
 		(uuid "f4d596c5-54e3-4302-a3fb-3b16eaa024e9")
 	)
 	(label "I2C{SDA,SCL}"
-		(at 119.38 72.39 180)
+		(at 119.38 69.85 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -139,16 +149,6 @@
 		)
 		(uuid "08d7868d-d59d-48f4-90da-b54642dfa63a")
 	)
-	(label "ind_led[0..2]"
-		(at 80.01 36.83 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "4cd1a855-4cc0-42d6-be2e-6fc65e804dbd")
-	)
 	(label "I2C{SDA,SCL}"
 		(at 119.38 34.29 180)
 		(effects
@@ -160,7 +160,7 @@
 		(uuid "562bffa9-8739-45a9-a472-c53003094786")
 	)
 	(label "I2C{SDA,SCL}"
-		(at 119.38 85.09 180)
+		(at 119.38 83.82 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -200,7 +200,7 @@
 		(uuid "b6d955d5-ce06-45e4-9d03-675d65211a26")
 	)
 	(label "I2C{SDA,SCL}"
-		(at 119.38 59.69 180)
+		(at 119.38 58.42 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -208,16 +208,6 @@
 			(justify right bottom)
 		)
 		(uuid "dffb8f63-a9d7-4d74-8268-dbce2f0ba5f5")
-	)
-	(label "ind_led[0..2]"
-		(at 107.95 111.76 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f14dede3-2004-4ee4-87d9-3e40b8d3db8e")
 	)
 	(label "USB{DM,DP}"
 		(at 30.48 36.83 0)
@@ -287,7 +277,7 @@
 	)
 	(sheet
 		(at 44.45 31.75)
-		(size 33.02 7.62)
+		(size 33.02 83.82)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -313,7 +303,7 @@
 			)
 		)
 		(property "Sheetfile" "mcu.kicad_sch"
-			(at 44.45 39.9546 0)
+			(at 44.45 116.1546 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -354,8 +344,28 @@
 			)
 		)
 		(pin "ind_led[0..2]" output
-			(at 77.47 36.83 0)
+			(at 77.47 111.76 0)
 			(uuid "6a4b2fc4-4261-4b4f-a5bb-40508b44765e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "hall_int" input
+			(at 77.47 72.39 0)
+			(uuid "5c117b14-806d-4be1-99d5-7503351955a1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "temp_int" input
+			(at 77.47 86.36 0)
+			(uuid "89e8d4cc-c0d1-4a61-bb8b-b2691dcee71d")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -428,8 +438,8 @@
 		)
 	)
 	(sheet
-		(at 121.92 69.85)
-		(size 16.51 5.08)
+		(at 121.92 67.31)
+		(size 16.51 7.62)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -444,7 +454,7 @@
 		)
 		(uuid "ac3adca3-c805-4f5b-864e-01bcaec77989")
 		(property "Sheetname" "Hall Effect Sensor"
-			(at 121.92 69.1384 0)
+			(at 121.92 66.5984 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -466,8 +476,18 @@
 			)
 		)
 		(pin "I2C{SDA,SCL}" input
-			(at 121.92 72.39 180)
+			(at 121.92 69.85 180)
 			(uuid "b0c31ee6-e364-4afa-8455-64faddc2b273")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "hall_int" output
+			(at 121.92 72.39 180)
+			(uuid "7441eb3c-cd43-4eb4-8b62-4b78560d7f01")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -484,7 +504,7 @@
 		)
 	)
 	(sheet
-		(at 121.92 57.15)
+		(at 121.92 55.88)
 		(size 16.51 5.08)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -500,7 +520,7 @@
 		)
 		(uuid "b2c0a7fe-fadc-4b67-9c8f-2e9ec056e7a3")
 		(property "Sheetname" "Color Sensor"
-			(at 121.92 56.4384 0)
+			(at 121.92 55.1684 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -511,7 +531,7 @@
 			)
 		)
 		(property "Sheetfile" "color_sensor.kicad_sch"
-			(at 121.92 62.8146 0)
+			(at 121.92 61.5446 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -522,7 +542,7 @@
 			)
 		)
 		(pin "I2C{SDA,SCL}" input
-			(at 121.92 59.69 180)
+			(at 121.92 58.42 180)
 			(uuid "42e994e5-348f-4190-869a-6977507fb7ce")
 			(effects
 				(font
@@ -652,8 +672,8 @@
 		)
 	)
 	(sheet
-		(at 121.92 82.55)
-		(size 16.51 5.08)
+		(at 121.92 81.28)
+		(size 16.51 7.62)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -668,7 +688,7 @@
 		)
 		(uuid "f6c96202-8fec-4bb3-a83c-c3a8f09f5498")
 		(property "Sheetname" "Temperature Sensor"
-			(at 121.92 81.8384 0)
+			(at 121.92 80.5684 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -679,7 +699,7 @@
 			)
 		)
 		(property "Sheetfile" "temp_sensor.kicad_sch"
-			(at 121.92 88.2146 0)
+			(at 121.92 89.4846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -690,8 +710,18 @@
 			)
 		)
 		(pin "I2C{SDA,SCL}" input
-			(at 121.92 85.09 180)
+			(at 121.92 83.82 180)
 			(uuid "e46a7b75-7b75-49f9-8928-39ed3d176b85")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "temp_int" output
+			(at 121.92 86.36 180)
+			(uuid "1235d3ba-4e29-47a5-8fce-37d552305a9c")
 			(effects
 				(font
 					(size 1.27 1.27)

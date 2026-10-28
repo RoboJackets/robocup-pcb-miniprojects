@@ -808,7 +808,7 @@
 	)
 	(rectangle
 		(start 110.49 73.66)
-		(end 187.96 129.54)
+		(end 195.58 129.54)
 		(stroke
 			(width 0)
 			(type default)
@@ -827,6 +827,32 @@
 			)
 		)
 		(uuid "9fe5d1c1-7f11-4e25-9e13-50c762a83618")
+	)
+	(text_box "Datasheet advises to ground TEST"
+		(exclude_from_sim no)
+		(at 151.13 132.08 0)
+		(size 36.83 3.9483)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "b3144358-6b97-4531-9ce9-4feee02d841a")
+	)
+	(junction
+		(at 175.26 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "12e49b61-318f-4bf9-a740-0222a1ee9ea6")
 	)
 	(junction
 		(at 133.35 88.9)
@@ -966,6 +992,16 @@
 	)
 	(wire
 		(pts
+			(xy 175.26 101.6) (xy 181.61 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c29478e3-63d0-4bf2-9c84-ba4947b376b9")
+	)
+	(wire
+		(pts
 			(xy 144.78 116.84) (xy 149.86 116.84)
 		)
 		(stroke
@@ -993,6 +1029,268 @@
 			(type default)
 		)
 		(uuid "f4448f51-568f-4bd9-bd5f-c33dc1f2f690")
+	)
+	(table
+		(column_count 2)
+		(border
+			(external yes)
+			(header yes)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+		)
+		(separators
+			(rows yes)
+			(cols yes)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+		)
+		(column_widths 21.59 36.83)
+		(row_heights 2.54 2.54 2.54 2.54 2.54 2.54 2.54)
+		(uuid "d958a9e6-1eb9-48cc-b723-ab2e032e83f2")
+		(cells
+			(table_cell "Device"
+				(exclude_from_sim no)
+				(at 109.22 49.53 0)
+				(size 21.59 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "81a405a4-a058-4a23-b204-2a03eed83b7d")
+			)
+			(table_cell "TMAG5273A2 (U5)"
+				(exclude_from_sim no)
+				(at 130.81 49.53 0)
+				(size 36.83 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "07bb65b0-bc75-4b35-a1cb-cec4b0911a43")
+			)
+			(table_cell "Function"
+				(exclude_from_sim no)
+				(at 109.22 52.07 0)
+				(size 21.59 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "eac62ae2-c10e-45c6-a8d1-0642ab3590f2")
+			)
+			(table_cell "Hall Effect & Temperature Sensor"
+				(exclude_from_sim no)
+				(at 130.81 52.07 0)
+				(size 36.83 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "67e1af0c-e1e0-416f-b5db-0a683da4f9db")
+			)
+			(table_cell "I2C Address (7-bit)"
+				(exclude_from_sim no)
+				(at 109.22 54.61 0)
+				(size 21.59 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "e5b505cf-4999-4f7b-b860-4ed61363fb13")
+			)
+			(table_cell "0110101 (0x35)"
+				(exclude_from_sim no)
+				(at 130.81 54.61 0)
+				(size 36.83 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "ddcbbea4-d018-41f0-90af-4eb15ebd7014")
+			)
+			(table_cell "Address Config"
+				(exclude_from_sim no)
+				(at 109.22 57.15 0)
+				(size 21.59 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "e0c084d7-2c85-465b-8653-a7f60dc3168d")
+			)
+			(table_cell "Register 0x0C "
+				(exclude_from_sim no)
+				(at 130.81 57.15 0)
+				(size 36.83 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "de8c316a-380d-4af3-9041-1a619148d119")
+			)
+			(table_cell "Voltage Range"
+				(exclude_from_sim no)
+				(at 109.22 59.69 0)
+				(size 21.59 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "20794047-db55-4cda-9ff7-e6b9a440279d")
+			)
+			(table_cell "1.7-3.6V"
+				(exclude_from_sim no)
+				(at 130.81 59.69 0)
+				(size 36.83 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "cb45d5aa-7441-4f2d-a346-f15d3805a4ee")
+			)
+			(table_cell "Pull-Ups"
+				(exclude_from_sim no)
+				(at 109.22 62.23 0)
+				(size 21.59 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "d02b9cce-352a-443c-be9e-9c7c0920acb7")
+			)
+			(table_cell "4.7k on INT and I2C"
+				(exclude_from_sim no)
+				(at 130.81 62.23 0)
+				(size 36.83 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "d0e21787-04df-41e1-be57-2ef28ce0dcf2")
+			)
+			(table_cell "Hall Int Pin"
+				(exclude_from_sim no)
+				(at 109.22 64.77 0)
+				(size 21.59 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "bc7f3875-c728-4f32-bd93-e091ea2567d1")
+			)
+			(table_cell "RP2040 GPIO 0 (Pin 2)"
+				(exclude_from_sim no)
+				(at 130.81 64.77 0)
+				(size 36.83 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "fe98dea8-b891-4543-8dc5-c98d58d41ffc")
+			)
+		)
 	)
 	(label "I2C.SDA"
 		(at 147.32 102.87 180)
@@ -1024,6 +1322,17 @@
 			(justify right)
 		)
 		(uuid "22483878-0182-4d90-b34c-8e9349b54d0c")
+	)
+	(hierarchical_label "hall_int"
+		(shape output)
+		(at 181.61 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e79d39c4-5553-42cb-8672-f4127cf4e53b")
 	)
 	(symbol
 		(lib_id "power:+3.3V")

@@ -1,0 +1,716 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "17df1232-b180-49eb-a49c-63e4861e42e5")
+	(paper "A4")
+	(title_block
+		(title "Sensor Suite")
+		(date "2026-10-27")
+	)
+	(lib_symbols)
+	(bus
+		(pts
+			(xy 121.92 34.29) (xy 107.95 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "225eb666-5d72-4e33-a7e5-d8814fee3bd5")
+	)
+	(bus
+		(pts
+			(xy 121.92 97.79) (xy 107.95 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38f44f3c-5bca-44c0-a468-30684bc6258c")
+	)
+	(bus
+		(pts
+			(xy 107.95 111.76) (xy 121.92 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4249b06e-9517-4dba-99f8-ef90b24f809c")
+	)
+	(bus
+		(pts
+			(xy 77.47 36.83) (xy 91.44 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57176e94-9fff-4b5f-8004-64fa805bf241")
+	)
+	(bus
+		(pts
+			(xy 121.92 72.39) (xy 107.95 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b569853-c650-48d2-b7d7-401f0a983e57")
+	)
+	(bus
+		(pts
+			(xy 121.92 85.09) (xy 107.95 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87a54a0f-f845-46b4-9688-47d909673575")
+	)
+	(bus
+		(pts
+			(xy 30.48 36.83) (xy 44.45 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b69aadea-81c9-4307-a8c9-6edc0fce6865")
+	)
+	(bus
+		(pts
+			(xy 30.48 34.29) (xy 44.45 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bca48a1b-6190-41e6-bbc3-ea49528f556b")
+	)
+	(bus
+		(pts
+			(xy 121.92 46.99) (xy 107.95 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dcd5455d-f990-4cf3-9d8a-0bbe0524fe40")
+	)
+	(bus
+		(pts
+			(xy 121.92 59.69) (xy 107.95 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea2a2688-cca7-494e-8405-fa076cfc9f5e")
+	)
+	(bus
+		(pts
+			(xy 77.47 34.29) (xy 91.44 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4d596c5-54e3-4302-a3fb-3b16eaa024e9")
+	)
+	(label "I2C{SDA,SCL}"
+		(at 119.38 72.39 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "035e0361-edca-4d92-b011-10e904f7d99c")
+	)
+	(label "I2C{SDA,SCL}"
+		(at 119.38 46.99 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "08d7868d-d59d-48f4-90da-b54642dfa63a")
+	)
+	(label "ind_led[0..2]"
+		(at 80.01 36.83 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4cd1a855-4cc0-42d6-be2e-6fc65e804dbd")
+	)
+	(label "I2C{SDA,SCL}"
+		(at 119.38 34.29 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "562bffa9-8739-45a9-a472-c53003094786")
+	)
+	(label "I2C{SDA,SCL}"
+		(at 119.38 85.09 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "692087f4-2a18-43f7-9bf6-c00b7ee6d52f")
+	)
+	(label "I2C{SDA,SCL}"
+		(at 119.38 97.79 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "81ae0f86-177a-4844-ad85-57db5713ad3e")
+	)
+	(label "I2C{SDA,SCL}"
+		(at 80.01 34.29 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "848134a6-b710-48cf-b26f-21746ac2ab94")
+	)
+	(label "SWD{CLK,DIO}"
+		(at 30.48 34.29 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b6d955d5-ce06-45e4-9d03-675d65211a26")
+	)
+	(label "I2C{SDA,SCL}"
+		(at 119.38 59.69 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "dffb8f63-a9d7-4d74-8268-dbce2f0ba5f5")
+	)
+	(label "ind_led[0..2]"
+		(at 107.95 111.76 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f14dede3-2004-4ee4-87d9-3e40b8d3db8e")
+	)
+	(label "USB{DM,DP}"
+		(at 30.48 36.83 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fec374b0-57df-4353-bf84-038d4d333dec")
+	)
+	(sheet
+		(at 121.92 109.22)
+		(size 16.51 5.08)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "1835e54f-da76-4c8d-a552-1667ead31f60")
+		(property "Sheetname" "Indicator LEDs"
+			(at 121.92 108.5084 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ind_leds.kicad_sch"
+			(at 121.92 114.8846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "ind_led[0..2]" input
+			(at 121.92 111.76 180)
+			(uuid "2a12d02d-42d4-4a7c-b919-764c63ede5c9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "Onboard_Project"
+				(path "/17df1232-b180-49eb-a49c-63e4861e42e5"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 44.45 31.75)
+		(size 33.02 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "2c1c6c5c-c24c-4790-9223-20079c637e1e")
+		(property "Sheetname" "MCU"
+			(at 44.45 31.0384 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "mcu.kicad_sch"
+			(at 44.45 39.9546 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "SWD{CLK,DIO}" input
+			(at 44.45 34.29 180)
+			(uuid "b7aa7038-c203-4583-be53-bd19e6d6ab91")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "USB{DM,DP}" input
+			(at 44.45 36.83 180)
+			(uuid "e9ea00bd-dd35-4aaf-b069-da2359d18fba")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "I2C{SDA,SCL}" output
+			(at 77.47 34.29 0)
+			(uuid "a040c470-59a6-4b6d-8c95-43ec4a4fe503")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "ind_led[0..2]" output
+			(at 77.47 36.83 0)
+			(uuid "6a4b2fc4-4261-4b4f-a5bb-40508b44765e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "Onboard_Project"
+				(path "/17df1232-b180-49eb-a49c-63e4861e42e5"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 121.92 31.75)
+		(size 16.51 5.08)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "964e9317-d437-4003-a22f-7472dfc9b944")
+		(property "Sheetname" "IMU"
+			(at 121.92 31.0384 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "imu.kicad_sch"
+			(at 121.92 37.4146 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "I2C{SDA,SCL}" input
+			(at 121.92 34.29 180)
+			(uuid "28b054d6-dec6-478b-80be-879cff9f2ddb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "Onboard_Project"
+				(path "/17df1232-b180-49eb-a49c-63e4861e42e5"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 121.92 69.85)
+		(size 16.51 5.08)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "ac3adca3-c805-4f5b-864e-01bcaec77989")
+		(property "Sheetname" "Hall Effect Sensor"
+			(at 121.92 69.1384 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "hall_effect_sensor.kicad_sch"
+			(at 121.92 75.5146 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "I2C{SDA,SCL}" input
+			(at 121.92 72.39 180)
+			(uuid "b0c31ee6-e364-4afa-8455-64faddc2b273")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "Onboard_Project"
+				(path "/17df1232-b180-49eb-a49c-63e4861e42e5"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 121.92 57.15)
+		(size 16.51 5.08)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "b2c0a7fe-fadc-4b67-9c8f-2e9ec056e7a3")
+		(property "Sheetname" "Color Sensor"
+			(at 121.92 56.4384 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "color_sensor.kicad_sch"
+			(at 121.92 62.8146 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "I2C{SDA,SCL}" input
+			(at 121.92 59.69 180)
+			(uuid "42e994e5-348f-4190-869a-6977507fb7ce")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "Onboard_Project"
+				(path "/17df1232-b180-49eb-a49c-63e4861e42e5"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 121.92 95.25)
+		(size 16.51 5.08)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "e7a9fb03-f871-444e-b288-ebe8cd051421")
+		(property "Sheetname" "GPIO Expander"
+			(at 121.92 94.5384 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "gpio_expander.kicad_sch"
+			(at 121.92 100.9146 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "I2C{SDA,SCL}" input
+			(at 121.92 97.79 180)
+			(uuid "7cac8fe6-8bea-4d42-85f6-12b300a77791")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "Onboard_Project"
+				(path "/17df1232-b180-49eb-a49c-63e4861e42e5"
+					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 121.92 44.45)
+		(size 16.51 5.08)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "eba18667-ac41-4ccb-9308-c2062bd66236")
+		(property "Sheetname" "LED Controller"
+			(at 121.92 43.7384 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_controller.kicad_sch"
+			(at 121.92 50.1146 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "I2C{SDA,SCL}" input
+			(at 121.92 46.99 180)
+			(uuid "6f4c3d97-5040-41c9-8972-ac0c16a4089a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "Onboard_Project"
+				(path "/17df1232-b180-49eb-a49c-63e4861e42e5"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 121.92 82.55)
+		(size 16.51 5.08)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "f6c96202-8fec-4bb3-a83c-c3a8f09f5498")
+		(property "Sheetname" "Temperature Sensor"
+			(at 121.92 81.8384 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "temp_sensor.kicad_sch"
+			(at 121.92 88.2146 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "I2C{SDA,SCL}" input
+			(at 121.92 85.09 180)
+			(uuid "e46a7b75-7b75-49f9-8928-39ed3d176b85")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "Onboard_Project"
+				(path "/17df1232-b180-49eb-a49c-63e4861e42e5"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

@@ -4,6 +4,10 @@
 	(generator_version "10.0")
 	(uuid "34b377e4-4f60-4b46-a001-b9d62a2b68d1")
 	(paper "A4")
+	(title_block
+		(title "Color Sensor")
+		(date "2026-10-27")
+	)
 	(lib_symbols
 		(symbol "VEML3328:VEML3328"
 			(pin_names
@@ -480,46 +484,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "10/27/26"
-		(exclude_from_sim no)
-		(at 213.36 193.294 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "136cefb2-38ba-45fa-aea9-9959287b2425")
-	)
-	(text "VEML3328 Schematic"
-		(exclude_from_sim no)
-		(at 197.866 189.992 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "43d0de6c-505b-4a4c-a9ff-4b6924533e2b")
-	)
-	(text "Topher Fontana"
-		(exclude_from_sim no)
-		(at 186.182 170.18 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "4f9fd1ab-75d4-41b4-afea-228528d4f1e6")
-	)
-	(text "Rev 1"
-		(exclude_from_sim no)
-		(at 272.542 193.294 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "f687b596-c8cb-4558-ae7c-d675ed8aae9b")
-	)
 	(bus_entry
 		(at 127 125.73)
 		(size 2.54 2.54)
@@ -740,6 +704,12 @@
 			(uuid "c5f2bebf-633b-4da4-abd2-3d153ea48bfe")
 		)
 		(instances
+			(project "Onboard_Project"
+				(path "/17df1232-b180-49eb-a49c-63e4861e42e5/b2c0a7fe-fadc-4b67-9c8f-2e9ec056e7a3"
+					(reference "#PWR059")
+					(unit 1)
+				)
+			)
 			(project "Onboadrd_Project"
 				(path "/4ac9cdc8-8624-4651-a962-fae1f7686a01"
 					(reference "#PWR059")
@@ -760,7 +730,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2de0be71-828b-4af0-9290-557ac400e078")
-		(property "Reference" "U3"
+		(property "Reference" "U4"
 			(at 128.27 86.36 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -828,6 +798,12 @@
 			(uuid "52741efb-7537-48de-a228-4698797a2beb")
 		)
 		(instances
+			(project "Onboard_Project"
+				(path "/17df1232-b180-49eb-a49c-63e4861e42e5/b2c0a7fe-fadc-4b67-9c8f-2e9ec056e7a3"
+					(reference "U4")
+					(unit 1)
+				)
+			)
 			(project "Onboadrd_Project"
 				(path "/4ac9cdc8-8624-4651-a962-fae1f7686a01"
 					(reference "U3")
@@ -907,17 +883,18 @@
 			(uuid "e71b8d2c-6b00-4ffa-ba50-5576a6369cfc")
 		)
 		(instances
+			(project "Onboard_Project"
+				(path "/17df1232-b180-49eb-a49c-63e4861e42e5/b2c0a7fe-fadc-4b67-9c8f-2e9ec056e7a3"
+					(reference "#PWR058")
+					(unit 1)
+				)
+			)
 			(project "Onboadrd_Project"
 				(path "/4ac9cdc8-8624-4651-a962-fae1f7686a01"
 					(reference "#PWR058")
 					(unit 1)
 				)
 			)
-		)
-	)
-	(sheet_instances
-		(path "/"
-			(page "4")
 		)
 	)
 )

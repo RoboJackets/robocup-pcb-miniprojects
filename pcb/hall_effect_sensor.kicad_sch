@@ -4,6 +4,10 @@
 	(generator_version "10.0")
 	(uuid "2f82c136-670b-48e5-bbb2-95c40d4f7cdb")
 	(paper "A4")
+	(title_block
+		(title "Hall Effect Sensor")
+		(date "2026-10-27")
+	)
 	(lib_symbols
 		(symbol "Device:C"
 			(pin_numbers
@@ -761,46 +765,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "10/27/26"
-		(exclude_from_sim no)
-		(at 212.598 193.294 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "52d9efad-42ef-4d2e-ad62-96bcf7e716d8")
-	)
-	(text "1"
-		(exclude_from_sim no)
-		(at 270.256 193.04 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "542c9208-4859-42dc-8259-bec82e87c49a")
-	)
-	(text "Hall Effect w/ I2C connection"
-		(exclude_from_sim no)
-		(at 201.676 189.992 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "9e1b50d0-ab28-409e-b7d4-fe4e291ef4f3")
-	)
-	(text "Topher Fontana"
-		(exclude_from_sim no)
-		(at 194.056 174.244 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-			)
-		)
-		(uuid "c8193467-8142-422d-8a86-c21897141fda")
-	)
 	(junction
 		(at 156.21 73.66)
 		(diameter 0)
@@ -1104,6 +1068,18 @@
 			(uuid "772db271-6514-423d-befa-072ab80b6607")
 		)
 		(instances
+			(project "Onboard_Project"
+				(path "/17df1232-b180-49eb-a49c-63e4861e42e5/ac3adca3-c805-4f5b-864e-01bcaec77989"
+					(reference "#PWR060")
+					(unit 1)
+				)
+			)
+			(project "hall"
+				(path "/2f82c136-670b-48e5-bbb2-95c40d4f7cdb"
+					(reference "#PWR060")
+					(unit 1)
+				)
+			)
 			(project "Onboadrd_Project"
 				(path "/b0bfccf7-bea7-4d4b-a08d-f08cc4250cda"
 					(reference "#PWR060")
@@ -1182,6 +1158,18 @@
 			(uuid "d6df493d-fbc5-41e7-98a0-80028d0b7bac")
 		)
 		(instances
+			(project "Onboard_Project"
+				(path "/17df1232-b180-49eb-a49c-63e4861e42e5/ac3adca3-c805-4f5b-864e-01bcaec77989"
+					(reference "#PWR062")
+					(unit 1)
+				)
+			)
+			(project "hall"
+				(path "/2f82c136-670b-48e5-bbb2-95c40d4f7cdb"
+					(reference "#PWR062")
+					(unit 1)
+				)
+			)
 			(project "Onboadrd_Project"
 				(path "/b0bfccf7-bea7-4d4b-a08d-f08cc4250cda"
 					(reference "#PWR062")
@@ -1260,6 +1248,18 @@
 			(uuid "f68a8631-05b1-463a-a494-fc225f9e6699")
 		)
 		(instances
+			(project "Onboard_Project"
+				(path "/17df1232-b180-49eb-a49c-63e4861e42e5/ac3adca3-c805-4f5b-864e-01bcaec77989"
+					(reference "#PWR058")
+					(unit 1)
+				)
+			)
+			(project "hall"
+				(path "/2f82c136-670b-48e5-bbb2-95c40d4f7cdb"
+					(reference "#PWR058")
+					(unit 1)
+				)
+			)
 			(project "Onboadrd_Project"
 				(path "/b0bfccf7-bea7-4d4b-a08d-f08cc4250cda"
 					(reference "#PWR058")
@@ -1279,7 +1279,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "71f5c3eb-ecda-4a4d-b3e4-8282286d9ac7")
-		(property "Reference" "C19"
+		(property "Reference" "C21"
 			(at 161.29 68.58 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1372,6 +1372,18 @@
 			(uuid "e7231682-fc6a-4419-91e8-f3b33a85430c")
 		)
 		(instances
+			(project "Onboard_Project"
+				(path "/17df1232-b180-49eb-a49c-63e4861e42e5/ac3adca3-c805-4f5b-864e-01bcaec77989"
+					(reference "C21")
+					(unit 1)
+				)
+			)
+			(project "hall"
+				(path "/2f82c136-670b-48e5-bbb2-95c40d4f7cdb"
+					(reference "C22")
+					(unit 1)
+				)
+			)
 			(project "Onboadrd_Project"
 				(path "/b0bfccf7-bea7-4d4b-a08d-f08cc4250cda"
 					(reference "C19")
@@ -1449,6 +1461,18 @@
 			(uuid "5a2f0d24-d741-4a25-97fc-a882a001a726")
 		)
 		(instances
+			(project "Onboard_Project"
+				(path "/17df1232-b180-49eb-a49c-63e4861e42e5/ac3adca3-c805-4f5b-864e-01bcaec77989"
+					(reference "#PWR061")
+					(unit 1)
+				)
+			)
+			(project "hall"
+				(path "/2f82c136-670b-48e5-bbb2-95c40d4f7cdb"
+					(reference "#PWR061")
+					(unit 1)
+				)
+			)
 			(project "Onboadrd_Project"
 				(path "/b0bfccf7-bea7-4d4b-a08d-f08cc4250cda"
 					(reference "#PWR061")
@@ -1527,6 +1551,18 @@
 			(uuid "aeea6402-ca65-430c-9b0e-9319835fd2ea")
 		)
 		(instances
+			(project "Onboard_Project"
+				(path "/17df1232-b180-49eb-a49c-63e4861e42e5/ac3adca3-c805-4f5b-864e-01bcaec77989"
+					(reference "#PWR059")
+					(unit 1)
+				)
+			)
+			(project "hall"
+				(path "/2f82c136-670b-48e5-bbb2-95c40d4f7cdb"
+					(reference "#PWR059")
+					(unit 1)
+				)
+			)
 			(project "Onboadrd_Project"
 				(path "/b0bfccf7-bea7-4d4b-a08d-f08cc4250cda"
 					(reference "#PWR059")
@@ -1547,7 +1583,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b588bfb3-7673-4eb4-bd65-40f2e065dc31")
-		(property "Reference" "R7"
+		(property "Reference" "R38"
 			(at 176.53 93.9799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1642,6 +1678,18 @@
 			(uuid "33f3b5d3-51bb-4a21-8d1e-1ddd9cfdb4a2")
 		)
 		(instances
+			(project "Onboard_Project"
+				(path "/17df1232-b180-49eb-a49c-63e4861e42e5/ac3adca3-c805-4f5b-864e-01bcaec77989"
+					(reference "R38")
+					(unit 1)
+				)
+			)
+			(project "hall"
+				(path "/2f82c136-670b-48e5-bbb2-95c40d4f7cdb"
+					(reference "R36")
+					(unit 1)
+				)
+			)
 			(project "Onboadrd_Project"
 				(path "/b0bfccf7-bea7-4d4b-a08d-f08cc4250cda"
 					(reference "R7")
@@ -1661,7 +1709,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b99cf21c-adf3-4b9e-82dc-f7a279455e9d")
-		(property "Reference" "U3"
+		(property "Reference" "U5"
 			(at 141.478 81.28 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1766,6 +1814,18 @@
 			(uuid "aa001a95-ea29-4730-b2c1-2efdeb2158ad")
 		)
 		(instances
+			(project "Onboard_Project"
+				(path "/17df1232-b180-49eb-a49c-63e4861e42e5/ac3adca3-c805-4f5b-864e-01bcaec77989"
+					(reference "U5")
+					(unit 1)
+				)
+			)
+			(project "hall"
+				(path "/2f82c136-670b-48e5-bbb2-95c40d4f7cdb"
+					(reference "U5")
+					(unit 1)
+				)
+			)
 			(project "Onboadrd_Project"
 				(path "/b0bfccf7-bea7-4d4b-a08d-f08cc4250cda"
 					(reference "U3")
@@ -1786,7 +1846,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dd820711-968e-4e63-ad54-b2d6121c9a54")
-		(property "Reference" "C18"
+		(property "Reference" "C22"
 			(at 161.2899 81.28 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1881,17 +1941,24 @@
 			(uuid "bea7d487-9e5c-41ed-b0de-9ee44539cd86")
 		)
 		(instances
+			(project "Onboard_Project"
+				(path "/17df1232-b180-49eb-a49c-63e4861e42e5/ac3adca3-c805-4f5b-864e-01bcaec77989"
+					(reference "C22")
+					(unit 1)
+				)
+			)
+			(project "hall"
+				(path "/2f82c136-670b-48e5-bbb2-95c40d4f7cdb"
+					(reference "C23")
+					(unit 1)
+				)
+			)
 			(project "Onboadrd_Project"
 				(path "/b0bfccf7-bea7-4d4b-a08d-f08cc4250cda"
 					(reference "C18")
 					(unit 1)
 				)
 			)
-		)
-	)
-	(sheet_instances
-		(path "/"
-			(page "4")
 		)
 	)
 )

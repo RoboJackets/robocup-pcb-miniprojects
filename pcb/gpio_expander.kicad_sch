@@ -5,7 +5,8 @@
 	(uuid "17df1232-b180-49eb-a49c-63e4861e42e5")
 	(paper "A4")
 	(title_block
-		(title "IMU Sensor")
+		(title "GPIO Expander")
+		(date "2026-10-27")
 	)
 	(lib_symbols
 		(symbol "Device:R"
@@ -1089,7 +1090,7 @@
 		(uuid "d64b2a15-e0ff-413c-8c3a-ec6f93ee75bf")
 	)
 	(hierarchical_label "I2C{SDA,SCL}"
-		(shape output)
+		(shape input)
 		(at 120.65 105.41 180)
 		(effects
 			(font
@@ -1169,8 +1170,8 @@
 			(uuid "3857520e-e488-4859-95c1-76d5dcf51da7")
 		)
 		(instances
-			(project "GPIO_Expander"
-				(path "/17df1232-b180-49eb-a49c-63e4861e42e5"
+			(project "Onboard_Project"
+				(path "/17df1232-b180-49eb-a49c-63e4861e42e5/e7a9fb03-f871-444e-b288-ebe8cd051421"
 					(reference "#PWR025")
 					(unit 1)
 				)
@@ -1189,7 +1190,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "27981281-28b1-45c0-a11d-d28d8411648a")
-		(property "Reference" "R9"
+		(property "Reference" "R40"
 			(at 148.59 87.6299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1284,9 +1285,9 @@
 			(uuid "dee51f39-7789-4123-9c08-8e4b60d479a9")
 		)
 		(instances
-			(project "GPIO_Expander"
-				(path "/17df1232-b180-49eb-a49c-63e4861e42e5"
-					(reference "R9")
+			(project "Onboard_Project"
+				(path "/17df1232-b180-49eb-a49c-63e4861e42e5/e7a9fb03-f871-444e-b288-ebe8cd051421"
+					(reference "R40")
 					(unit 1)
 				)
 			)
@@ -1362,8 +1363,8 @@
 			(uuid "1d997927-c82c-4c29-b00b-fdd99fa8f266")
 		)
 		(instances
-			(project "GPIO_Expander"
-				(path "/17df1232-b180-49eb-a49c-63e4861e42e5"
+			(project "Onboard_Project"
+				(path "/17df1232-b180-49eb-a49c-63e4861e42e5/e7a9fb03-f871-444e-b288-ebe8cd051421"
 					(reference "#PWR027")
 					(unit 1)
 				)
@@ -1440,8 +1441,8 @@
 			(uuid "8ac08c56-c718-455b-b91f-11d486644cbf")
 		)
 		(instances
-			(project "GPIO_Expander"
-				(path "/17df1232-b180-49eb-a49c-63e4861e42e5"
+			(project "Onboard_Project"
+				(path "/17df1232-b180-49eb-a49c-63e4861e42e5/e7a9fb03-f871-444e-b288-ebe8cd051421"
 					(reference "#PWR026")
 					(unit 1)
 				)
@@ -1460,7 +1461,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ceb72698-171a-48b8-baba-ed3626fb92d1")
-		(property "Reference" "U3"
+		(property "Reference" "U7"
 			(at 163.83 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -1563,9 +1564,9 @@
 			(uuid "263b782f-344f-4f63-8bc0-0e6d74d81a7f")
 		)
 		(instances
-			(project "GPIO_Expander"
-				(path "/17df1232-b180-49eb-a49c-63e4861e42e5"
-					(reference "U3")
+			(project "Onboard_Project"
+				(path "/17df1232-b180-49eb-a49c-63e4861e42e5/e7a9fb03-f871-444e-b288-ebe8cd051421"
+					(reference "U7")
 					(unit 1)
 				)
 			)
@@ -1641,18 +1642,12 @@
 			(uuid "c4324214-d1ec-4c28-9c1a-b2af8750b9a7")
 		)
 		(instances
-			(project "GPIO_Expander"
-				(path "/17df1232-b180-49eb-a49c-63e4861e42e5"
+			(project "Onboard_Project"
+				(path "/17df1232-b180-49eb-a49c-63e4861e42e5/e7a9fb03-f871-444e-b288-ebe8cd051421"
 					(reference "#PWR024")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(sheet_instances
-		(path "/"
-			(page "2")
-		)
-	)
-	(embedded_fonts no)
 )

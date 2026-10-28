@@ -18,8 +18,8 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at 20.32 10.16 0)
+			(property "Reference" "U4"
+				(at 0 17.018 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -29,7 +29,7 @@
 				)
 			)
 			(property "Value" "VEML3328"
-				(at 20.32 7.62 0)
+				(at 0 14.478 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -39,7 +39,7 @@
 				)
 			)
 			(property "Footprint" "SMD_L3328_VIS"
-				(at 0 0 0)
+				(at 0 -14.986 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -51,7 +51,7 @@
 				)
 			)
 			(property "Datasheet" "https://www.vishay.com/doc?84968"
-				(at 0 0 0)
+				(at 1.27 -18.288 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -67,6 +67,16 @@
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufaturer PIN" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -105,59 +115,22 @@
 					)
 				)
 			)
-			(symbol "VEML3328_0_1"
-				(polyline
-					(pts
-						(xy 7.62 5.08) (xy 7.62 -7.62)
-					)
+			(symbol "VEML3328_1_1"
+				(rectangle
+					(start -8.89 12.7)
+					(end 8.89 -12.7)
 					(stroke
-						(width 0.127)
+						(width 0)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 7.62 -7.62) (xy 33.02 -7.62)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 33.02 5.08) (xy 7.62 5.08)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 33.02 -7.62) (xy 33.02 5.08)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin unspecified line
-					(at 0 0 0)
-					(length 7.62)
-					(name "1"
+				(pin input line
+					(at -11.43 -10.16 0)
+					(length 2.54)
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -172,10 +145,10 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 0 -2.54 0)
-					(length 7.62)
-					(name "2"
+				(pin bidirectional line
+					(at -11.43 1.27 0)
+					(length 2.54)
+					(name "SDA"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -190,10 +163,10 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 40.64 -2.54 180)
-					(length 7.62)
-					(name "3"
+				(pin input line
+					(at -11.43 -1.27 0)
+					(length 2.54)
+					(name "SCL"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -208,10 +181,10 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 40.64 0 180)
-					(length 7.62)
-					(name "4"
+				(pin input line
+					(at -11.43 8.89 0)
+					(length 2.54)
+					(name "VDD"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -484,9 +457,31 @@
 			(embedded_fonts no)
 		)
 	)
+	(rectangle
+		(start 118.11 80.01)
+		(end 177.8 127)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "6583771c-59cd-478d-a076-477a7e54f50f")
+	)
+	(text "Color Sensor"
+		(exclude_from_sim no)
+		(at 124.206 77.978 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "39499b45-1adf-49c3-aa9e-63a6e15f4238")
+	)
 	(bus_entry
-		(at 127 125.73)
-		(size 2.54 2.54)
+		(at 140.97 101.6)
+		(size -2.54 2.54)
 		(stroke
 			(width 0)
 			(type default)
@@ -494,8 +489,8 @@
 		(uuid "cc912525-3860-40d5-b694-b77bf98bb9f7")
 	)
 	(bus_entry
-		(at 129.54 125.73)
-		(size 2.54 2.54)
+		(at 140.97 104.14)
+		(size -2.54 2.54)
 		(stroke
 			(width 0)
 			(type default)
@@ -504,57 +499,27 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 99.06) (xy 107.95 106.68)
+			(xy 146.05 93.98) (xy 149.86 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1f4e861f-3135-44b5-8910-114d711fa8a5")
+		(uuid "2c956ea5-8dc9-4c41-b3dd-cd1683284398")
 	)
 	(wire
 		(pts
-			(xy 101.6 96.52) (xy 107.95 96.52)
+			(xy 146.05 90.17) (xy 146.05 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2fc9a9e9-0796-4c51-8916-047b7b17a6e1")
-	)
-	(wire
-		(pts
-			(xy 148.59 96.52) (xy 156.21 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4e74ade6-8766-471d-a5ee-fa45201e71d6")
-	)
-	(wire
-		(pts
-			(xy 129.54 106.68) (xy 148.59 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6d0792d6-6e9e-4afa-8ccc-589827b193ad")
-	)
-	(wire
-		(pts
-			(xy 148.59 106.68) (xy 148.59 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7febb4f7-81ad-4fa6-b443-410ae19f7290")
+		(uuid "769f327d-764a-4a54-995e-b95d9f2c7d71")
 	)
 	(bus
 		(pts
-			(xy 132.08 128.27) (xy 132.08 130.81)
+			(xy 138.43 106.68) (xy 135.89 106.68)
 		)
 		(stroke
 			(width 0)
@@ -564,7 +529,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 106.68) (xy 127 125.73)
+			(xy 149.86 101.6) (xy 140.97 101.6)
 		)
 		(stroke
 			(width 0)
@@ -574,17 +539,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 106.68) (xy 107.95 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b5350919-065e-4644-8067-c27703c695cf")
-	)
-	(wire
-		(pts
-			(xy 129.54 125.73) (xy 129.54 106.68)
+			(xy 140.97 104.14) (xy 149.86 104.14)
 		)
 		(stroke
 			(width 0)
@@ -594,7 +549,7 @@
 	)
 	(bus
 		(pts
-			(xy 129.54 128.27) (xy 132.08 128.27)
+			(xy 138.43 104.14) (xy 138.43 106.68)
 		)
 		(stroke
 			(width 0)
@@ -602,8 +557,28 @@
 		)
 		(uuid "d2d3773c-a0bd-4c7c-9b46-7e3a47a6f48a")
 	)
+	(wire
+		(pts
+			(xy 149.86 113.03) (xy 146.05 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8960ae6-9662-4ec8-87e8-853137abf37e")
+	)
+	(wire
+		(pts
+			(xy 146.05 113.03) (xy 146.05 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8c9240d-c712-4d6f-9330-dfabcfeb4d58")
+	)
 	(label "I2C.SDA"
-		(at 127 118.11 270)
+		(at 148.59 101.6 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -613,7 +588,7 @@
 		(uuid "a947770a-4224-4d5e-b899-05416ae0b314")
 	)
 	(label "I2C.SCL"
-		(at 129.54 118.11 270)
+		(at 148.59 104.14 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -624,103 +599,18 @@
 	)
 	(hierarchical_label "I2C{SDA,SCL}"
 		(shape input)
-		(at 132.08 130.81 0)
+		(at 135.89 106.68 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "1e68f69f-70f8-4533-84e5-4d8302cb2cc3")
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 156.21 96.52 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "26d62f57-e0b1-4cde-bf0a-c56cd6db7118")
-		(property "Reference" "#PWR059"
-			(at 152.4 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 160.02 96.5199 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 156.21 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 156.21 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 156.21 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c5f2bebf-633b-4da4-abd2-3d153ea48bfe")
-		)
-		(instances
-			(project "sensor_suite"
-				(path "/17df1232-b180-49eb-a49c-63e4861e42e5/b2c0a7fe-fadc-4b67-9c8f-2e9ec056e7a3"
-					(reference "#PWR059")
-					(unit 1)
-				)
-			)
-			(project "Onboadrd_Project"
-				(path "/4ac9cdc8-8624-4651-a962-fae1f7686a01"
-					(reference "#PWR059")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "VEML3328:VEML3328")
-		(at 107.95 96.52 0)
+		(at 161.29 102.87 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -731,7 +621,7 @@
 		(fields_autoplaced yes)
 		(uuid "2de0be71-828b-4af0-9290-557ac400e078")
 		(property "Reference" "U4"
-			(at 128.27 86.36 0)
+			(at 161.29 85.852 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -741,7 +631,7 @@
 			)
 		)
 		(property "Value" "VEML3328"
-			(at 128.27 88.9 0)
+			(at 161.29 88.392 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -751,7 +641,7 @@
 			)
 		)
 		(property "Footprint" "SMD_L3328_VIS"
-			(at 107.95 96.52 0)
+			(at 161.29 117.856 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -763,7 +653,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/doc?84968"
-			(at 107.95 96.52 0)
+			(at 162.56 121.158 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -775,8 +665,18 @@
 			)
 		)
 		(property "Description" ""
-			(at 107.95 96.52 0)
+			(at 161.29 102.87 0)
 			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufaturer PIN" ""
+			(at 161.29 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -813,8 +713,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 101.6 96.52 270)
+		(lib_id "power:+3.3V")
+		(at 146.05 90.17 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -823,9 +723,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "66f60e29-156e-4d3d-b6dd-3925cb8d0ba6")
+		(uuid "81f06bb4-d192-405b-aa42-5a316025356c")
 		(property "Reference" "#PWR058"
-			(at 95.25 96.52 0)
+			(at 146.05 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -835,19 +735,18 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 97.79 96.5199 90)
+		(property "Value" "+3.3V"
+			(at 146.05 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 101.6 96.52 0)
+			(at 146.05 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -858,7 +757,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 101.6 96.52 0)
+			(at 146.05 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -868,8 +767,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 101.6 96.52 0)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 146.05 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -880,7 +779,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "e71b8d2c-6b00-4ffa-ba50-5576a6369cfc")
+			(uuid "f6d3a1d4-5487-40a7-8cf0-c3f9fd3de366")
 		)
 		(instances
 			(project "sensor_suite"
@@ -889,9 +788,81 @@
 					(unit 1)
 				)
 			)
-			(project "Onboadrd_Project"
-				(path "/4ac9cdc8-8624-4651-a962-fae1f7686a01"
-					(reference "#PWR058")
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 146.05 116.84 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eaac61ef-e031-4bbc-9433-119a3f9e2408")
+		(property "Reference" "#PWR029"
+			(at 146.05 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 146.05 121.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 146.05 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 146.05 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 146.05 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0519ff4b-e9af-442d-aa9e-d8a2f3f8c582")
+		)
+		(instances
+			(project "sensor_suite"
+				(path "/17df1232-b180-49eb-a49c-63e4861e42e5/b2c0a7fe-fadc-4b67-9c8f-2e9ec056e7a3"
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)

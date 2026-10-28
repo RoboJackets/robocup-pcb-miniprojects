@@ -4536,6 +4536,84 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
+		(at 254 55.88 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "02170450-6741-483c-994b-e956922d3175")
+		(property "Reference" "#PWR079"
+			(at 254 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 254 50.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 254 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 254 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 254 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8402c67a-c553-46cd-af6f-016519c083d1")
+		)
+		(instances
+			(project "sensor_suite"
+				(path "/17df1232-b180-49eb-a49c-63e4861e42e5/eba18667-ac41-4ccb-9308-c2062bd66236"
+					(reference "#PWR079")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
 		(at 195.58 55.88 0)
 		(unit 1)
 		(body_style 1)
@@ -4613,90 +4691,6 @@
 			(project "led_controller"
 				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "#PWR037")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 248.92 55.88 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "03c00d62-27eb-43c3-813b-5dcc9b88b60d")
-		(property "Reference" "#PWR043"
-			(at 248.92 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 248.92 50.8 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 248.92 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 248.92 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 248.92 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "36ed042d-d053-46fe-8d2c-975e43855344")
-		)
-		(instances
-			(project "sensor_suite"
-				(path "/17df1232-b180-49eb-a49c-63e4861e42e5/eba18667-ac41-4ccb-9308-c2062bd66236"
-					(reference "#PWR043")
-					(unit 1)
-				)
-			)
-			(project "led_controller"
-				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
-					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -5027,90 +5021,6 @@
 			(project "led_controller"
 				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "#PWR035")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 254 55.88 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "25feeb97-2657-47ff-b0bd-04a3850d41da")
-		(property "Reference" "#PWR044"
-			(at 254 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 254 50.8 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 254 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 254 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 254 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d6351f4b-a312-49b8-9f72-6794f5db2199")
-		)
-		(instances
-			(project "sensor_suite"
-				(path "/17df1232-b180-49eb-a49c-63e4861e42e5/eba18667-ac41-4ccb-9308-c2062bd66236"
-					(reference "#PWR044")
-					(unit 1)
-				)
-			)
-			(project "led_controller"
-				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
-					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -6798,8 +6708,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "82f1a4ef-b20e-4a48-b5e8-ca749eb2c5bb")
-		(property "Reference" "#PWR027"
+		(uuid "919c5c30-1d0f-4dc2-a2f5-8dd60eaaec3c")
+		(property "Reference" "#PWR075"
 			(at 44.45 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -6854,18 +6764,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "007dada4-92a0-48ea-8f4d-e43ff52087e1")
+			(uuid "dbcd31f6-f2e1-48e1-81c7-a1b072b3b676")
 		)
 		(instances
 			(project "sensor_suite"
 				(path "/17df1232-b180-49eb-a49c-63e4861e42e5/eba18667-ac41-4ccb-9308-c2062bd66236"
-					(reference "#PWR027")
-					(unit 1)
-				)
-			)
-			(project "led_controller"
-				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
-					(reference "#PWR027")
+					(reference "#PWR075")
 					(unit 1)
 				)
 			)
@@ -7992,6 +7896,84 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
+		(at 259.08 55.88 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "db87d6ae-40a9-4df5-8f80-08942b3dc228")
+		(property "Reference" "#PWR080"
+			(at 259.08 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 259.08 50.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 259.08 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 259.08 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 259.08 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7e6b8049-80da-48e7-a50e-9b3311cc7b91")
+		)
+		(instances
+			(project "sensor_suite"
+				(path "/17df1232-b180-49eb-a49c-63e4861e42e5/eba18667-ac41-4ccb-9308-c2062bd66236"
+					(reference "#PWR080")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
 		(at 48.26 57.15 0)
 		(unit 1)
 		(body_style 1)
@@ -8430,6 +8412,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 248.92 55.88 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f6314176-4626-4806-abd0-80db2648231b")
+		(property "Reference" "#PWR078"
+			(at 248.92 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 248.92 50.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 248.92 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 248.92 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 248.92 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "18f82ef7-58f9-475e-8d74-b886ceaac209")
+		)
+		(instances
+			(project "sensor_suite"
+				(path "/17df1232-b180-49eb-a49c-63e4861e42e5/eba18667-ac41-4ccb-9308-c2062bd66236"
+					(reference "#PWR078")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED_RGB")
 		(at 227.33 100.33 90)
 		(unit 1)
@@ -8533,90 +8593,6 @@
 			(project "led_controller"
 				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
 					(reference "D7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 259.08 55.88 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fc65be74-1d0b-43e0-960d-d42f679fec6a")
-		(property "Reference" "#PWR045"
-			(at 259.08 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 259.08 50.8 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 259.08 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 259.08 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 259.08 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "6af13155-0bee-41fc-8063-cdacf9324486")
-		)
-		(instances
-			(project "sensor_suite"
-				(path "/17df1232-b180-49eb-a49c-63e4861e42e5/eba18667-ac41-4ccb-9308-c2062bd66236"
-					(reference "#PWR045")
-					(unit 1)
-				)
-			)
-			(project "led_controller"
-				(path "/6de77ab7-1253-4a4d-8ff7-8587734ce6fc"
-					(reference "#PWR045")
 					(unit 1)
 				)
 			)

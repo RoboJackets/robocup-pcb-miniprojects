@@ -6,7 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Temperature Sensor")
-		(date "2026-10-27")
+		(date "2026-10-28")
+		(rev "2")
 	)
 	(lib_symbols
 		(symbol "Device:C"
@@ -1184,7 +1185,7 @@
 			)
 		)
 		(column_widths 21.59 30.48)
-		(row_heights 2.54 2.54 2.54 2.54 2.54 2.54 2.54)
+		(row_heights 2.54 2.54 2.54 2.54 2.54 2.54)
 		(uuid "eeb83e67-9b60-4af0-aceb-77ec3c42e1ba")
 		(cells
 			(table_cell "Device"
@@ -1391,40 +1392,6 @@
 				)
 				(uuid "d0e21787-04df-41e1-be57-2ef28ce0dcf2")
 			)
-			(table_cell "Temp Int Pin"
-				(exclude_from_sim no)
-				(at 109.22 148.59 0)
-				(size 21.59 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-				(uuid "bc7f3875-c728-4f32-bd93-e091ea2567d1")
-			)
-			(table_cell "RP2040 GPIO 1 (Pin 3)"
-				(exclude_from_sim no)
-				(at 130.81 148.59 0)
-				(size 30.48 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-				(uuid "fe98dea8-b891-4543-8dc5-c98d58d41ffc")
-			)
 		)
 	)
 	(label "I2C.SCL"
@@ -1446,17 +1413,6 @@
 			(justify right bottom)
 		)
 		(uuid "da26eda0-79c5-4f06-a0ec-1ddf50f6db32")
-	)
-	(hierarchical_label "temp_int"
-		(shape output)
-		(at 128.27 87.63 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "46603f2e-fa26-4a0a-9954-ebacd9e1bba6")
 	)
 	(hierarchical_label "I2C{SDA,SCL}"
 		(shape input)
@@ -1970,6 +1926,83 @@
 			(project "sensor_suite"
 				(path "/17df1232-b180-49eb-a49c-63e4861e42e5/f6c96202-8fec-4bb3-a83c-c3a8f09f5498"
 					(reference "#PWR065")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 128.27 87.63 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a16e0617-6735-4c7a-b932-779ea7dc5144")
+		(property "Reference" "#PWR074"
+			(at 128.27 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 128.27 91.186 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 128.27 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 128.27 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 128.27 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6f25d047-0416-4266-aa09-b7ed63153016")
+		)
+		(instances
+			(project "sensor_suite"
+				(path "/17df1232-b180-49eb-a49c-63e4861e42e5/f6c96202-8fec-4bb3-a83c-c3a8f09f5498"
+					(reference "#PWR074")
 					(unit 1)
 				)
 			)

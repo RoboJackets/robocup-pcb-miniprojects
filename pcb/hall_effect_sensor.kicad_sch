@@ -6,7 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Hall Effect Sensor")
-		(date "2026-10-27")
+		(date "2026-10-28")
+		(rev "2")
 	)
 	(lib_symbols
 		(symbol "Device:C"
@@ -849,12 +850,6 @@
 		(uuid "b3144358-6b97-4531-9ce9-4feee02d841a")
 	)
 	(junction
-		(at 175.26 101.6)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "12e49b61-318f-4bf9-a740-0222a1ee9ea6")
-	)
-	(junction
 		(at 133.35 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -992,16 +987,6 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 101.6) (xy 181.61 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c29478e3-63d0-4bf2-9c84-ba4947b376b9")
-	)
-	(wire
-		(pts
 			(xy 144.78 116.84) (xy 149.86 116.84)
 		)
 		(stroke
@@ -1049,7 +1034,7 @@
 			)
 		)
 		(column_widths 21.59 36.83)
-		(row_heights 2.54 2.54 2.54 2.54 2.54 2.54 2.54)
+		(row_heights 2.54 2.54 2.54 2.54 2.54 2.54)
 		(uuid "d958a9e6-1eb9-48cc-b723-ab2e032e83f2")
 		(cells
 			(table_cell "Device"
@@ -1256,40 +1241,6 @@
 				)
 				(uuid "d0e21787-04df-41e1-be57-2ef28ce0dcf2")
 			)
-			(table_cell "Hall Int Pin"
-				(exclude_from_sim no)
-				(at 109.22 64.77 0)
-				(size 21.59 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-				(uuid "bc7f3875-c728-4f32-bd93-e091ea2567d1")
-			)
-			(table_cell "RP2040 GPIO 0 (Pin 2)"
-				(exclude_from_sim no)
-				(at 130.81 64.77 0)
-				(size 36.83 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-				(uuid "fe98dea8-b891-4543-8dc5-c98d58d41ffc")
-			)
 		)
 	)
 	(label "I2C.SDA"
@@ -1322,17 +1273,6 @@
 			(justify right)
 		)
 		(uuid "22483878-0182-4d90-b34c-8e9349b54d0c")
-	)
-	(hierarchical_label "hall_int"
-		(shape output)
-		(at 181.61 101.6 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "e79d39c4-5553-42cb-8672-f4127cf4e53b")
 	)
 	(symbol
 		(lib_id "power:+3.3V")

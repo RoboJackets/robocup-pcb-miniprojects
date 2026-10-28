@@ -6,7 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "MCU")
-		(date "2026-10-27")
+		(date "2026-10-28")
+		(rev "2")
 	)
 	(lib_symbols
 		(symbol "Device:C"
@@ -2809,12 +2810,24 @@
 		(uuid "1ac9642d-18e1-4279-a436-f10816eb27f3")
 	)
 	(no_connect
+		(at 233.68 90.17)
+		(uuid "24d2fe62-b70a-44b2-a1e2-a8f0db457fc0")
+	)
+	(no_connect
+		(at 233.68 69.85)
+		(uuid "29b85331-40b4-4ae2-bbda-00eba6997d55")
+	)
+	(no_connect
 		(at 233.68 115.57)
 		(uuid "29cfed06-c4bf-47fa-b8f6-f5882ae6c2d6")
 	)
 	(no_connect
 		(at 233.68 74.93)
 		(uuid "47e6c8e5-de9c-48b2-8c6b-c4a5ef182b6f")
+	)
+	(no_connect
+		(at 233.68 95.25)
+		(uuid "55261e2c-17b3-49e5-bfe3-2cd79a6ecad9")
 	)
 	(no_connect
 		(at 233.68 110.49)
@@ -2841,6 +2854,14 @@
 		(uuid "94776ac9-8803-4c76-b55a-6d234610ebda")
 	)
 	(no_connect
+		(at 233.68 67.31)
+		(uuid "94f2be34-776d-4b7b-a66a-e344004d6729")
+	)
+	(no_connect
+		(at 233.68 87.63)
+		(uuid "a208266b-168b-4419-9a23-00849f729e2b")
+	)
+	(no_connect
 		(at 233.68 102.87)
 		(uuid "b19bc1e5-127a-437a-830d-5e54d8b2f828")
 	)
@@ -2859,6 +2880,10 @@
 	(no_connect
 		(at 233.68 72.39)
 		(uuid "e147d945-c09b-4765-a4d4-de693a877711")
+	)
+	(no_connect
+		(at 233.68 92.71)
+		(uuid "f43e1ad1-4e2b-4939-a880-76d8376b6f50")
 	)
 	(no_connect
 		(at 233.68 130.81)
@@ -3464,16 +3489,6 @@
 			(type default)
 		)
 		(uuid "6468aa31-0f84-4383-a8ec-f7465cbcb6d9")
-	)
-	(wire
-		(pts
-			(xy 233.68 69.85) (xy 246.38 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "68dff38f-852d-4606-96d0-5589b8bdf8eb")
 	)
 	(wire
 		(pts
@@ -4245,16 +4260,6 @@
 		)
 		(uuid "fe831a16-9f06-4398-926d-39d18ebd68e1")
 	)
-	(wire
-		(pts
-			(xy 233.68 67.31) (xy 246.38 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ffb3471e-3235-4a39-8465-348835110c4b")
-	)
 	(label "~{QSPI_CS}"
 		(at 83.82 129.54 0)
 		(effects
@@ -4555,28 +4560,6 @@
 			(justify right)
 		)
 		(uuid "887ce528-0c57-4078-8fa7-13c6a8f375b0")
-	)
-	(hierarchical_label "hall_int"
-		(shape input)
-		(at 246.38 67.31 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "b774fc39-37fe-4f3b-b975-34e3ea89d731")
-	)
-	(hierarchical_label "temp_int"
-		(shape input)
-		(at 246.38 69.85 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "cca16fd1-1ae2-41dc-bafc-37a2990c084b")
 	)
 	(hierarchical_label "USB{DM,DP}"
 		(shape input)

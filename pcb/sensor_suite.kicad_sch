@@ -6,7 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Sensor Suite")
-		(date "2026-10-27")
+		(date "2026-10-28")
+		(rev "2")
 	)
 	(lib_symbols)
 	(bus
@@ -18,16 +19,6 @@
 			(type default)
 		)
 		(uuid "225eb666-5d72-4e33-a7e5-d8814fee3bd5")
-	)
-	(wire
-		(pts
-			(xy 121.92 86.36) (xy 77.47 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2e87bb6e-0271-4371-ba88-6cdbb21dee64")
 	)
 	(bus
 		(pts
@@ -98,16 +89,6 @@
 			(type default)
 		)
 		(uuid "dcd5455d-f990-4cf3-9d8a-0bbe0524fe40")
-	)
-	(wire
-		(pts
-			(xy 121.92 72.39) (xy 77.47 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "df957853-5322-4cc6-856d-43b774e63ad9")
 	)
 	(bus
 		(pts
@@ -353,26 +334,6 @@
 				(justify right)
 			)
 		)
-		(pin "hall_int" input
-			(at 77.47 72.39 0)
-			(uuid "5c117b14-806d-4be1-99d5-7503351955a1")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "temp_int" input
-			(at 77.47 86.36 0)
-			(uuid "89e8d4cc-c0d1-4a61-bb8b-b2691dcee71d")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(instances
 			(project "sensor_suite"
 				(path "/17df1232-b180-49eb-a49c-63e4861e42e5"
@@ -439,7 +400,7 @@
 	)
 	(sheet
 		(at 121.92 67.31)
-		(size 16.51 7.62)
+		(size 16.51 5.08)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -465,7 +426,7 @@
 			)
 		)
 		(property "Sheetfile" "hall_effect_sensor.kicad_sch"
-			(at 121.92 75.5146 0)
+			(at 121.92 72.9746 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -478,16 +439,6 @@
 		(pin "I2C{SDA,SCL}" input
 			(at 121.92 69.85 180)
 			(uuid "b0c31ee6-e364-4afa-8455-64faddc2b273")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "hall_int" output
-			(at 121.92 72.39 180)
-			(uuid "7441eb3c-cd43-4eb4-8b62-4b78560d7f01")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -673,7 +624,7 @@
 	)
 	(sheet
 		(at 121.92 81.28)
-		(size 16.51 7.62)
+		(size 16.51 5.08)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -699,7 +650,7 @@
 			)
 		)
 		(property "Sheetfile" "temp_sensor.kicad_sch"
-			(at 121.92 89.4846 0)
+			(at 121.92 86.9446 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -712,16 +663,6 @@
 		(pin "I2C{SDA,SCL}" input
 			(at 121.92 83.82 180)
 			(uuid "e46a7b75-7b75-49f9-8928-39ed3d176b85")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "temp_int" output
-			(at 121.92 86.36 180)
-			(uuid "1235d3ba-4e29-47a5-8fce-37d552305a9c")
 			(effects
 				(font
 					(size 1.27 1.27)

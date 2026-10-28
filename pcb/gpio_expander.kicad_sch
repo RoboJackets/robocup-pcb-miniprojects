@@ -821,7 +821,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 80.01) (xy 146.05 85.09)
+			(xy 132.08 113.03) (xy 132.08 107.95)
 		)
 		(stroke
 			(width 0)
@@ -901,7 +901,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 92.71) (xy 146.05 107.95)
+			(xy 139.7 107.95) (xy 147.32 107.95)
 		)
 		(stroke
 			(width 0)
@@ -1021,16 +1021,6 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 107.95) (xy 147.32 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e79b4861-3939-46f0-9260-a87b35258ebb")
-	)
-	(wire
-		(pts
 			(xy 180.34 104.14) (xy 182.88 104.14)
 		)
 		(stroke
@@ -1048,6 +1038,234 @@
 			(type default)
 		)
 		(uuid "f5088974-6846-44a9-8e46-1115d5bb2984")
+	)
+	(table
+		(column_count 2)
+		(border
+			(external yes)
+			(header yes)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+		)
+		(separators
+			(rows yes)
+			(cols yes)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+		)
+		(column_widths 21.59 36.83)
+		(row_heights 2.54 2.54 2.54 2.54 2.54 2.54)
+		(uuid "23ac7f60-42c6-4994-87b1-7a130790d10b")
+		(cells
+			(table_cell "Device"
+				(exclude_from_sim no)
+				(at 36.83 57.15 0)
+				(size 21.59 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "81a405a4-a058-4a23-b204-2a03eed83b7d")
+			)
+			(table_cell "TCA9534PWR (U7)\n"
+				(exclude_from_sim no)
+				(at 58.42 57.15 0)
+				(size 36.83 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "07bb65b0-bc75-4b35-a1cb-cec4b0911a43")
+			)
+			(table_cell "Function"
+				(exclude_from_sim no)
+				(at 36.83 59.69 0)
+				(size 21.59 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "eac62ae2-c10e-45c6-a8d1-0642ab3590f2")
+			)
+			(table_cell "GPIO Expander"
+				(exclude_from_sim no)
+				(at 58.42 59.69 0)
+				(size 36.83 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "67e1af0c-e1e0-416f-b5db-0a683da4f9db")
+			)
+			(table_cell "I2C Address (7-bit)"
+				(exclude_from_sim no)
+				(at 36.83 62.23 0)
+				(size 21.59 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "e5b505cf-4999-4f7b-b860-4ed61363fb13")
+			)
+			(table_cell "0100000 (0x20)"
+				(exclude_from_sim no)
+				(at 58.42 62.23 0)
+				(size 36.83 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "ddcbbea4-d018-41f0-90af-4eb15ebd7014")
+			)
+			(table_cell "Address Config"
+				(exclude_from_sim no)
+				(at 36.83 64.77 0)
+				(size 21.59 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "e0c084d7-2c85-465b-8653-a7f60dc3168d")
+			)
+			(table_cell "A0-A2 on GND"
+				(exclude_from_sim no)
+				(at 58.42 64.77 0)
+				(size 36.83 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "de8c316a-380d-4af3-9041-1a619148d119")
+			)
+			(table_cell "Voltage Range"
+				(exclude_from_sim no)
+				(at 36.83 67.31 0)
+				(size 21.59 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "20794047-db55-4cda-9ff7-e6b9a440279d")
+			)
+			(table_cell "1.65-5.5V"
+				(exclude_from_sim no)
+				(at 58.42 67.31 0)
+				(size 36.83 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "cb45d5aa-7441-4f2d-a346-f15d3805a4ee")
+			)
+			(table_cell "Pull-Ups"
+				(exclude_from_sim no)
+				(at 36.83 69.85 0)
+				(size 21.59 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "d02b9cce-352a-443c-be9e-9c7c0920acb7")
+			)
+			(table_cell "4.7k on I2C, 2K on INT to VCC"
+				(exclude_from_sim no)
+				(at 58.42 69.85 0)
+				(size 36.83 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "d0e21787-04df-41e1-be57-2ef28ce0dcf2")
+			)
+		)
 	)
 	(label "I2C.SDA"
 		(at 130.81 97.79 180)
@@ -1160,7 +1378,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 146.05 88.9 0)
+		(at 135.89 107.95 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1168,10 +1386,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "27981281-28b1-45c0-a11d-d28d8411648a")
 		(property "Reference" "R40"
-			(at 148.59 87.6299 0)
+			(at 137.414 105.41 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1182,7 +1399,7 @@
 			)
 		)
 		(property "Value" "2k"
-			(at 148.59 90.1699 0)
+			(at 136.906 110.236 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1193,7 +1410,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
-			(at 144.272 88.9 90)
+			(at 135.89 109.728 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1204,7 +1421,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 146.05 88.9 0)
+			(at 135.89 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1215,7 +1432,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 146.05 88.9 0)
+			(at 135.89 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1226,7 +1443,7 @@
 			)
 		)
 		(property "Manufacturer P/N" ""
-			(at 146.05 88.9 0)
+			(at 135.89 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1237,7 +1454,7 @@
 			)
 		)
 		(property "Vendor" ""
-			(at 146.05 88.9 0)
+			(at 135.89 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1248,7 +1465,7 @@
 			)
 		)
 		(property "Vendor P/N" ""
-			(at 146.05 88.9 0)
+			(at 135.89 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1353,7 +1570,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 146.05 80.01 0)
+		(at 132.08 113.03 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1364,7 +1581,7 @@
 		(fields_autoplaced yes)
 		(uuid "cc0c9de6-cfb5-4c47-bdba-a69aa1baf2da")
 		(property "Reference" "#PWR026"
-			(at 146.05 83.82 0)
+			(at 132.08 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1375,17 +1592,18 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 146.05 74.93 0)
+			(at 134.62 114.2999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 146.05 80.01 0)
+			(at 132.08 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1396,7 +1614,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 146.05 80.01 0)
+			(at 132.08 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1407,7 +1625,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 146.05 80.01 0)
+			(at 132.08 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

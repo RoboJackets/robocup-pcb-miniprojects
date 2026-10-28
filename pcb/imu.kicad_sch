@@ -6,7 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "IMU Sensor")
-		(date "2026-10-27")
+		(date "2026-10-28")
+		(rev "2")
 	)
 	(lib_symbols
 		(symbol "Device:C"
@@ -965,6 +966,200 @@
 		)
 		(uuid "faa6625c-8a92-45a2-a84b-bf419af44a42")
 	)
+	(table
+		(column_count 2)
+		(border
+			(external yes)
+			(header yes)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+		)
+		(separators
+			(rows yes)
+			(cols yes)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+		)
+		(column_widths 21.59 30.48)
+		(row_heights 2.54 2.54 2.54 2.54 2.54)
+		(uuid "82c727da-d220-4bb7-8382-a683678165d4")
+		(cells
+			(table_cell "Device"
+				(exclude_from_sim no)
+				(at 190.5 97.79 0)
+				(size 21.59 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "81a405a4-a058-4a23-b204-2a03eed83b7d")
+			)
+			(table_cell "ICM-42605 (U8)"
+				(exclude_from_sim no)
+				(at 212.09 97.79 0)
+				(size 30.48 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "07bb65b0-bc75-4b35-a1cb-cec4b0911a43")
+			)
+			(table_cell "Function"
+				(exclude_from_sim no)
+				(at 190.5 100.33 0)
+				(size 21.59 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "eac62ae2-c10e-45c6-a8d1-0642ab3590f2")
+			)
+			(table_cell "Interial Measurement Unit\n"
+				(exclude_from_sim no)
+				(at 212.09 100.33 0)
+				(size 30.48 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "67e1af0c-e1e0-416f-b5db-0a683da4f9db")
+			)
+			(table_cell "I2C Address (7-bit)"
+				(exclude_from_sim no)
+				(at 190.5 102.87 0)
+				(size 21.59 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "e5b505cf-4999-4f7b-b860-4ed61363fb13")
+			)
+			(table_cell "1101000 (0x68)"
+				(exclude_from_sim no)
+				(at 212.09 102.87 0)
+				(size 30.48 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "ddcbbea4-d018-41f0-90af-4eb15ebd7014")
+			)
+			(table_cell "Address Config"
+				(exclude_from_sim no)
+				(at 190.5 105.41 0)
+				(size 21.59 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "e0c084d7-2c85-465b-8653-a7f60dc3168d")
+			)
+			(table_cell "AD0 on GND"
+				(exclude_from_sim no)
+				(at 212.09 105.41 0)
+				(size 30.48 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "de8c316a-380d-4af3-9041-1a619148d119")
+			)
+			(table_cell "Voltage Range"
+				(exclude_from_sim no)
+				(at 190.5 107.95 0)
+				(size 21.59 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "20794047-db55-4cda-9ff7-e6b9a440279d")
+			)
+			(table_cell "1.7-3.6V"
+				(exclude_from_sim no)
+				(at 212.09 107.95 0)
+				(size 30.48 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "cb45d5aa-7441-4f2d-a346-f15d3805a4ee")
+			)
+		)
+	)
 	(label "I2C.SCL"
 		(at 143.51 105.41 180)
 		(effects
@@ -1009,7 +1204,7 @@
 		(dnp no)
 		(uuid "11863dae-e5f1-48d8-965e-2d0fc5a1658e")
 		(property "Reference" "U8"
-			(at 161.29 78.486 0)
+			(at 161.544 103.124 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1020,7 +1215,7 @@
 			)
 		)
 		(property "Value" "ICM-42605"
-			(at 162.306 81.026 0)
+			(at 162.56 105.664 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1040,7 +1235,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://invensense.tdk.com/download-pdf/icm-42605-datasheet/"
 			(at 162.56 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -1051,7 +1246,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "IMU ACCEL/GYRO/TEMP I2C/SPI LGA"
 			(at 162.56 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -1064,6 +1259,40 @@
 		)
 		(property "Manufaturer PIN" ""
 			(at 162.56 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufactuer PN" "1428-1152-2-ND"
+			(at 162.56 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 162.56 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" "1428-1152-2-ND"
+			(at 162.56 106.68 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

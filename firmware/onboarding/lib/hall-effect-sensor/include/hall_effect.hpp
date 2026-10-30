@@ -131,28 +131,19 @@ enum HALL_EFFECT_STATUS {
     OSCILLATOR_ERROR 
 };
 
-enum HALL_EFFECT_DIRECTION {
-    X,Y,Z
-}; 
-
-enum TMAG_TYPE {
+enum class TMAG_TYPE {
     A1,
     A2
 };
 
-enum HALL_EFFECT_MEASUREMENT_TYPE {
-    XYZ,
-    X,
-    Y,
-    Z,
-    XY,
-    YZ
-};
-
-enum HALL_EFFECT_UNITS {
-    T_CELSIUS, T_FARENHEIT,
-    M_MICROTESLA, M_TESLA,
-};
+/**
+ * @brief Read type of sensor you want to use
+ * Temperature is kept seperate since it's not our main function
+ * XZ disabled since it costs 2 I2C reads instead of 1 for no good reason 
+ */
+enum class READ_TYPE {
+    X,Y,Z,XY,YZ,XYZ,DISABLE
+}; 
 
 /**
  * @brief Keep Track of Hall Effect Results 
@@ -160,57 +151,39 @@ enum HALL_EFFECT_UNITS {
  */
 class HALL_EFFECT_RESULTS {
 public:
-    double x, y, z; // Magnetic Fields (in microtesla)
-    double t; // Temperature (in celsius)
+    uint16_t x, y, z; // Magnetic Fields (in microtesla)
+    uint16_t t; // Temperature (in celsius)
 
     HALL_EFFECT_RESULTS(
-        double x,
-        double y,
-        double z,
-        double t
+        uint16_t x,
+        uint16_t y,
+        uint16_t z,
+        uint16_t t
     ); 
-    double* getResults(); 
 
     HALL_EFFECT_RESULTS(); 
 };
 
 /**
- * @brief Class for a TMAG5273 Hall Effect Sensor (configurable for A-D 1/2 Models)
+ * @brief Class for a TMAG5273 Hall Effect Sensor (configurable for A-D 1 OR 2 Models)
  * @author Topher Fontana
  * @date Fall 2026
  */
 class Hall_Effect {
 public:
-    /*
-    All [ MSB LSB ]
-    MagX - 2 Bytes 
-    MagY - 2 Bytes
-    MagZ - 2 Bytes
-    */
 
-    /**
-     * @brief Current XY range of the sensor 
-     * @note Standard range is +- of 40 mT (A1) or +- of 133 mT (A2)
-     */
-    uint8_t xy_range; 
-
-
-    /**
-     * @brief Current Z range of the sensor 
-     * @note Standard range is +- of 40 mT (A1) or +- of 133 mT (A2)
-     */
-    uint8_t z_range; 
+    READ_TYPE read_type; 
    
     /**
-     * @brief I2C address of the device 
-     * 
+     * @brief I2C address of the devices
      */
     const uint8_t _address;
 
-    /**
-     * @brief Is the temperature sensor enabled, will read it if used
-     */
-    bool temperatureSensorEnabled = false; 
+    void disableSensor(); 
+
+  
+    void enableTemperatureSensor();
+    void disableTemperatureSensor(); 
 
     HALL_EFFECT_RESULTS current_results; 
 
@@ -224,48 +197,96 @@ public:
      */
     bool init_hall_effect(); 
 
-    /**
-     * @brief Read magnitude of a given direction
-     * 
-     * @param direction Direction in X, Y, or Z axis
-     * @param high Data structure to store MSB in 
-     * @param low Data structure to store LSB in 
-     * @return true Read success
-     * @return false Read fail
-     */
-    bool read_magnitude(HALL_EFFECT_DIRECTION direction, uint8_t* high, uint8_t* low); 
-    
-    /**
-     * @brief Convert MSB and LSB from Hall Effect to actual field values (mT)
-     * 
-     * @param high MSB Data
-     * @param low LSB Data
-     * @param value Value to store result in
-     * @return true Read success
-     * @return false Read fail 
-     */
-    bool convert_magnitude_field(uint8_t* high, uint8_t* low, uint8_t* value);
+    void set_data(READ_TYPE readType);  
 
     /**
-     * @brief Actual value of magnetic field in mT at direction
-     * 
-     * @param direction 
+     * @brief Actual value of magnetic field in mT at X direction
+     *
      * @param value 
      * @return true 
      * @return false 
      */
-    bool get_field_in_direction(HALL_EFFECT_DIRECTION direction, uint8_t* value);
+    bool get_field_in_x_direction(uint16_t* value);
+    /**
+     * @brief Actual value of magnetic field in mT at Y direction
+     *
+     * @param value 
+     * @return true 
+     * @return false 
+     */
+ 
+    bool get_field_in_y_direction(uint16_t* value);
+    /**
+     * @brief Actual value of magnetic field in mT at Z direction
+     *
+     * @param value 
+     * @return true 
+     * @return false 
+     */
+    bool get_field_in_z_direction(uint16_t* value);
+    /**
+     * @brief Actual value of magnetic field in mT in XYZ directions
+     *
+     * @param value A pointer to store the values in (length = 3)
+     * @return true 
+     * @return false 
+     */
+    bool get_field_in_xyz_direction(uint16_t* value);
+    /**
+     * @brief Actual value of temperature in C 
+     *
+     * @param value A pointer to store the temperature in
+     * @return true 
+     * @return false 
+     */
+    bool get_temperature(uint16_t* value);
+    /**
+     * @brief Actual value of magnetic field in mT in XYZ directions and temperature in Celsuis
+     *
+     * @param value A pointer to store the values in (length = 4)
+     * @return true 
+     * @return false 
+     */
+    bool get_all_values(uint16_t* value);
+    /**
+     * @brief Main function, is required to be in main update loop if you want polling
+     */
+    void read_sensor_stream();
 
-    // Add angle & temperature stuff
+    void interruptOff();
+    void interruptOn(); 
+    /**
+     * @brief Increase the range of the sensor via a write 
+     */
+    void increaseRange();
 
+    /**
+     * @brief Enable interrupt mode (if set to false will continously poll)
+     */
+    bool interrupt = false;
+
+    HALL_EFFECT_RESULTS current_results; 
 private:
-    bool exit_sleep(); 
+  /**
+     * @brief Is the temperature sensor enabled, will read it if used
+     */
+    bool temperatureSensorEnabled = false; 
 
-    HALL_EFFECT_MEASUREMENT_TYPE measurementType; 
-    HALL_EFFECT_MEASUREMENT_TYPE prev_measurementType; 
+    bool exit_sleep(); 
     bool prev_temperatureSensorEnabled = false; 
 
-    bool read_measurement(); 
+    /**
+     * @brief Current XY range of the sensor 
+     * @note Standard range is +- of 40 mT (A1) or +- of 133 mT (A2)
+     */
+    uint8_t xy_range; 
+
+
+    /**
+     * @brief Current Z range of the sensor 
+     * @note Standard range is +- of 40 mT (A1) or +- of 133 mT (A2)
+     */
+    uint8_t z_range;
 
     /**
      * @brief Read from a given address
@@ -322,5 +343,13 @@ private:
      * @return True if the operation was successful
      */
     bool write_bits(uint8_t address, uint8_t (&data)[8]);
-};
+    /**
+     * @brief Convert MSB and LSB from Hall Effect to actual field values (mT)
+     * 
+     * @param high MSB Data
+     * @param low LSB Data
+     * @return The value 
+     */
+    uint16_t merge_msb_lsb(uint8_t high, uint8_t low);
+  };
 

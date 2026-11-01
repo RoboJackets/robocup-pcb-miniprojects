@@ -34,7 +34,12 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "pin_to_pin|3073400|1168400|3fab39be-6205-41f0-bcf2-08b91765a605|5a378287-b4bb-4b36-a0d1-e5190a2706d2|/9164435f-a95c-403a-a8b4-52de8af1bdc8/43d08942-0182-4d4a-9589-a975afa41050|/9164435f-a95c-403a-a8b4-52de8af1bdc8/43d08942-0182-4d4a-9589-a975afa41050|/9164435f-a95c-403a-a8b4-52de8af1bdc8/43d08942-0182-4d4a-9589-a975afa41050",
+        ""
+      ]
+    ],
     "meta": {
       "version": 0
     },
@@ -387,12 +392,42 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Vendor P/N",
+          "name": "Vendor P/N",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Vendor",
+          "name": "Vendor",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer P/N",
+          "name": "Manufacturer P/N",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -437,7 +472,7 @@
         "uuid": "9164435f-a95c-403a-a8b4-52de8af1bdc8"
       }
     ],
-    "used_designators": "#FLG1-2,#PWR1-79,C1-23,D1-8,J1-3,R1-23,RN1-2,SW1-3,U1-10,Y1",
+    "used_designators": "#FLG1-2,#PWR1-89,C1-25,D1-8,F1,J1-4,R1-23,RN1-2,SW1-3,U1-12,Y1",
     "variants": []
   },
   "sheets": [

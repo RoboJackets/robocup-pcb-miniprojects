@@ -1,12 +1,19 @@
 #pragma once
 
 #include "pico/types.h"
+#include "pico/mutex.h" 
 
-// In bus
-#define SPI0_BUS 0 
+#define R_RX 16
+#define R_TX 15
+#define R_CLK 14 
+#define R_SS 17
+#define S_TX 14
+#define S_RX 2
+#define S_CLK 0
+#define S_SS 0  
 
-// Out
-#define SPI1_BUS 1
+// Frequency in MHz
+#define FREQ 1
 
 // MagX (high) on byte 14 (119..112)
 // MagX (low) on byte 15 (127..120)
@@ -16,52 +23,22 @@
 // MagZ (l) on byte 19 (159..152)
 
 // Byte length of buffer that we have to read/write
-#define CLUB_BUF_LEN 0x38
+#define CLUB_BUF_LEN 56 
 
-class SPI {
-    size_t buf_length;
-    const uint8_t* out_buf; 
-    uint8_t* in_buf;
+/**
+ * @brief Output buffer directly modified in main by calling the sensor using the mutex
+ */
+uint8_t out_buf[CLUB_BUF_LEN];
+uint8_t in_buf[CLUB_BUF_LEN]; 
+/**
+ * @brief Data buffer for Hall Effect data
+ */
+uint8_t data_buf[6]; 
 
-    uint8_t RX, TX, CLK, SS;     
-    
-    SPI(uint8_t RX, uint8_t TX, uint8_t CLK, uint8_t SS, size_t buf_length); 
+mutex_t output_mutex; 
 
 
-    /**
-     * @brief Initalize the SPI protocol
-     * 
-     * @param RX Receiving pin (MISO)
-     * @param TX Transmitting pin (MOSI)
-     * @param CLK Clock pin
-     * @param SS Slave select pin
-     * @param prod Is code running in production (default to true)
-     * @return int; 0 for completion, 1 for failure 
-     */
-    int init(bool prod=true);
-    
-    /**
-     * @brief Test function **DO NOT USE IN PROD** 
-     * 
-     * @return * void 
-     */
-    void run_test();
-
-    /**
-     * @brief Set the interrupt on a specific pin with a flag
-     * 
-     * @param PIN A uint8_t pin number
-     * @param FLAG A uint32_t: 
-     * - @ref GPIO_IRQ_LEVEL_LOW -- Trigger when GPIO is logical 0 
-     * - @ref GPIO_IRQ_LEVEL_HIGH -- Trigger when GPIO is logical 1
-     * - @ref GPIO__IRQ_EDGE_FALL -- Trigger on falling edge
-     * - @ref GPIO_IRQ_EDGE_RISE -- Trigger on rising edge
-    */ 
-    void set_interrupt(uint8_t PIN, uint32_t FLAG); 
-
-    static void run(SPI self); 
-
-    void transmit();
-
-    void receive(); 
-};
+/**
+ * @brief Initalize the SPI protocol
+ * */
+void spi_init();

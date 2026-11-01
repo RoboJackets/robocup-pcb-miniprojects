@@ -259,13 +259,12 @@ public:
      * @brief Increase the range of the sensor via a write 
      */
     void increaseRange();
+    void decreaseRange(); 
 
     /**
      * @brief Enable interrupt mode (if set to false will continously poll)
      */
     bool interrupt = false;
-
-    HALL_EFFECT_RESULTS current_results; 
 private:
   /**
      * @brief Is the temperature sensor enabled, will read it if used

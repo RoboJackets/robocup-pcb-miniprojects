@@ -2,51 +2,59 @@
 #include "hardware/spi.h"
 #include "pico/stdlib.h"
 
-SPI::SPI(uint8_t RX, uint8_t TX, uint8_t CLK, uint8_t SS, size_t buf_length) : buf_length(buf_length) {
-    this->in_buf = new uint8_t[buf_length];
-    this->out_buf = new uint8_t[buf_length]; 
-    this->RX = RX;
-    this->TX = TX;
-    this->CLK = CLK;
-    this->SS = SS; 
+void receive() {
+    spi_read_blocking(spi0, 0, in_buf, CLUB_BUF_LEN); 
 }
 
-int SPI::init(bool prod) {
-    // Initalize SPI0 at 1 MHz
-    spi_init(spi_default, 1000*1000); 
+void copy_over() {
+    for (int i = 0; i < CLUB_BUF_LEN; i++) {
+        if (i < 14 || i > 19) {
+            out_buf[i] = in_buf[i]; 
+        }
+    } 
+    // Let's lock down output buffer and read from the data
+    mutex_enter_blocking(&output_mutex);
+    for (int i = 0; i < 6; i++) {
+        out_buf[i] = data_buf[i];
+    }
+    mutex_exit(&output_mutex);
+}
 
-    // Set pins to SPI
-    gpio_set_function(this->RX, GPIO_FUNC_SPI);
-    gpio_set_function(this->TX, GPIO_FUNC_SPI);
-    gpio_set_function(this->CLK, GPIO_FUNC_SPI);
-    gpio_set_function(this->SS, GPIO_FUNC_SPI);
+void transmit() {
+    spi_write_blocking(spi1, out_buf, CLUB_BUF_LEN); 
+}
 
-    if(prod){
-        // Interrupt on MISO pin read
-        set_interrupt(this->RX, GPIO_IRQ_EDGE_RISE);
+void spi_handle_interrupt(uint gpio, uint32_t events) {
+    if (gpio == R_SS && (events & GPIO_IRQ_EDGE_FALL)) {
+        receive(); 
+        copy_over(); 
+        transmit(); 
+    }
+}
 
+void spi_init() {
+    spi_init(spi1, 1000*1000*FREQ);
+    spi_set_format(spi1, 8, SPI_CPOL_1, SPI_CPHA_1, SPI_MSB_FIRST);
+    gpio_set_function(S_RX, GPIO_FUNC_SPI);
+    gpio_set_function(S_TX, GPIO_FUNC_SPI);
+    gpio_set_function(S_CLK, GPIO_FUNC_SPI);
+    gpio_set_function(S_SS, GPIO_FUNC_SPI);
+
+    spi_init(spi0, 1000*1000*FREQ);
+    spi_set_format(spi0, 8, SPI_CPOL_1, SPI_CPHA_1, SPI_MSB_FIRST);
+    gpio_set_function(R_RX, GPIO_FUNC_SPI);
+    gpio_set_function(R_TX, GPIO_FUNC_SPI);
+    gpio_set_function(R_CLK, GPIO_FUNC_SPI);
+    gpio_set_function(R_SS, GPIO_FUNC_SPI);
+
+    for (uint8_t i = 0; i < CLUB_BUF_LEN; i++) {
+        in_buf[i] = 0;
+        out_buf[i] = 0; 
     }
 
-    return 0; 
+    // Interrupt on R_SS pin pulled low 
+    // "GET FUCKING SET" 
+    // -- Matt Ryan
+    gpio_set_irq_enabled_with_callback(R_SS, GPIO_IRQ_EDGE_FALL, true, &spi_handle_interrupt); 
 }
 
-// Test just writes with poll 
-void SPI::run_test() {
-    spi_write_read_blocking(spi_default, this->out_buf, this->in_buf, this->buf_length);
-
-    sleep_ms(10*1000);
-}
-
-// Add interrupts
-void SPI::run(SPI self) {
-    // this->do_something();
-}
-
-void SPI::set_interrupt(uint8_t PIN, uint32_t FLAG) {
-    gpio_set_irq_enabled(PIN, FLAG, true);
-    // irq_set_exclusive_handler(IO_IRQ_BANK0, run); 
-}
-
-static void handler() {
-
-}

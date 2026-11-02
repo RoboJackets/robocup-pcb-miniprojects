@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "pico/stdlib.h"
-#include 
 #include "hardware/spi.h"
 #include "hardware/i2c.h"
 

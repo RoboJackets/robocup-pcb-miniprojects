@@ -1,4 +1,4 @@
-//LED Controller Driver for IS31FL3254
+// LED Controller Driver for IS31FL3254 using picosdk
 // DataSheet for Controller : https://www.lumissil.com/assets/pdf/core/IS31FL3254_DS.pdf
 // DataSheet for LEDS : https://downloads.cree-led.com/files/ds/h/HB-CLMVC-FKA.pdf
 
@@ -42,7 +42,7 @@ Software Shutdown Mode
 If enabled, works in Sofware Shutdown mode.
 If disabled, works in Normal mode.
 */
-enum SSDMode {
+enum class SSDMode {
     ENABLE = 0,
     DISABLE = 1
 };
@@ -52,7 +52,6 @@ High PWM Frequency Resolution
 
 If 8Bit, HFPS will decide the internal oscillator clock frequency and the PWM output PWM frequency.
 If 10Bit, the HFP is 32kHz, LFP is 127Hz, not matter how HFPS is set.
-
 
 Table 4 from IS31FL3254 DataSheet
 +-----+------+-----------+----------+-----------+
@@ -78,13 +77,15 @@ enum PMSResolution {
 If disabled, the working mode is controlled by PMS setting.
 If enabled, will enable 10+4-bit with 4-bit dithering mode.
 */
-enum B14Mode {
+enum class B14Mode {
     DISABLE = 0,
     ENABLE = 1
 };
 
 /*
 High Frequency PWM Frequency Selection
+
+Default to 32kHZ if 10-bit enabled
 */
 enum HFPS {
     F_32kHZ = 0,
@@ -102,6 +103,23 @@ enum RGBMode {
     M_24CH = 0,
     M_8RGB = 1
 };
+
+#pragma pack(push, 1)
+struct PowerControl {
+    SSDMode software_shutdown : 1;
+    PMSResolution resolution : 1;
+    B14Mode b14_enable : 1;
+    uint8_t : 1; // reserved
+    HFPS hfp_select : 2;
+    RGBMode channel_mode : 1;
+    uint8_t : 1; // reserved
+
+    PowerControl();
+    PowerControl(SSDMode, PMSResolution, B14Mode, HFPS, RGBMode);
+
+    uint8_t toByte();
+};
+#pragma pack(pop)
 
 /*
 High Frequency PWM(HFP) Duty Register - R/W
@@ -133,47 +151,47 @@ Table 5-2 --> 10+4-bit mode enabled
 
 *Only enable in 10+4-bit mode
 
-HFP Registers have two registers always in consecutive order, lower bits are always the -1 register
+HFP Registers have two registers always in consecutive order
+Here are the lower bit addresses, the higher bit addresses are always +1
 */
 
 //24 Channel Mode
 
-#define HFP1 0x02
-#define HFP2 0x04
-#define HFP3 0x06
-#define HFP4 0x08
-#define HFP5 0x0A
-#define HFP6 0x0C
-#define HFP7 0x1A
-#define HFP8 0x1C
-#define HFP9 0x1E
-#define HFP10 0x20
-#define HFP11 0x22
-#define HFP12 0x24
-#define HFP13 0x26
-#define HFP14 0x28
-#define HFP15 0x2A
-#define HFP16 0x32
-#define HFP17 0x34
-#define HFP18 0x36
-#define HFP19 0x38
-#define HFP20 0x3A
-#define HFP21 0x3C
-#define HFP22 0x44
-#define HFP23 0x46
-#define HFP24 0x48
+#define HFP1 0x01
+#define HFP2 0x03
+#define HFP3 0x05
+#define HFP4 0x07
+#define HFP5 0x09
+#define HFP6 0x0B
+#define HFP7 0x19
+#define HFP8 0x1B
+#define HFP9 0x1D
+#define HFP10 0x1F
+#define HFP11 0x21
+#define HFP12 0x23
+#define HFP13 0x25
+#define HFP14 0x27
+#define HFP15 0x29
+#define HFP16 0x31
+#define HFP17 0x33
+#define HFP18 0x35
+#define HFP19 0x37
+#define HFP20 0x39
+#define HFP21 0x3B
+#define HFP22 0x43
+#define HFP23 0x45
+#define HFP24 0x47
 
 //8 RGB Mode
 
-#define HFP_RGB1 0x02
-#define HFP_RGB2 0x04
-#define HFP_RGB3 0x0A
-#define HFP_RGB4 0x0C
-#define HFP_RGB5 0x0E
-#define HFP_RGB6 0x12
-#define HFP_RGB7 0x14
-#define HFP_RGB8 0x18
-
+#define HFP_RGB1 0x01
+#define HFP_RGB2 0x03
+#define HFP_RGB3 0x09
+#define HFP_RGB4 0x0B
+#define HFP_RGB5 0x0D
+#define HFP_RGB6 0x11
+#define HFP_RGB7 0x13
+#define HFP_RGB8 0x17
 
 /*
 FMS
@@ -192,7 +210,6 @@ enum FMSMode {
     DC_MODE = 2,
     CHANNEL_SHUTDOWN = 3
 };
-
 
 /*
 Low Frequency PWM(LFP) Duty Register -- R/W
@@ -254,6 +271,12 @@ In 24CH Mode, each color controls a third of the 24 channels
 #define GCCG 0x6F
 #define GCCB 0x70
 
+enum GCC {
+    RED,
+    GREEN,
+    BLUE
+};
+
 /*
 Phase Delay and Clock Phase Register - R/W
 
@@ -286,7 +309,7 @@ Phase Delay separates the 24 outputs as 5 groups:
 
 If enabled, groups 1, 3, 4, an 5 will have a 1/(6 x freq) time delay, while group 2 will have a 2/(6 x freq) time delay
 */
-enum PDE {
+enum class PDE {
     DISABLE = 0,
     ENABLE = 1,
 };
@@ -312,6 +335,23 @@ enum PSn {
     ENABLE = 1
 };
 
+#pragma pack(push, 1)
+struct PhaseDelay {
+    PSn phase_1 : 1;
+    PSn phase_2 : 1;
+    PSn phase_3 : 1;
+    PSn phase_4 : 1;
+    PSn phase_5 : 1;
+    PSn phase_6 : 1;
+    HLF high_freq : 1;
+    PDE enable : 1;
+
+    PhaseDelay();
+    PhaseDelay(PDE enable, HLF high_freq, PSn phase_1, PSn phase_2, PSn phase_3, PSn phase_4, PSn phase_5, PSn phase_6);
+
+    uint8_t toByte();
+};
+#pragma pack(pop)
 
 /*
 Spread Spectrum Register -- R/W
@@ -335,7 +375,7 @@ This register enables the spread spectrum function, adjusts the cycle time and r
     Enable
     Disable
 */
-enum SSY {
+enum class SSY {
     DISABLE = 0,
     ENABLE = 1
 };
@@ -346,7 +386,7 @@ enum SSY {
     Enable
     Disable
 */
-enum SSP {
+enum class SSP {
     DISABLE = 0,
     ENABLE = 1
 };
@@ -373,6 +413,20 @@ enum RNG {
     R_25 = 0b11,
 };
 
+#pragma pack(push, 1)
+struct SpreadSpectrum {
+    CLT cycle_time : 2;
+    RNG range : 2;
+    SSP spectrum_enable : 1;
+    SSY synch_enable : 1;
+    uint8_t : 2; //reserved
+
+    SpreadSpectrum();
+    SpreadSpectrum(SSY synch_enable, SSP spectrum_enable, RNG range, CLT cycle_time);
+    uint8_t toByte();
+};
+#pragma pack(pop)
+
 /*
 Reset Register - W
 
@@ -381,11 +435,129 @@ write of "0000 0000" to this register will reset all regsiters to their default 
 
 #define RESET_REG 0x7F
 
+enum LEDControllerError {
+    NO_ERROR,
+    I2C_ERROR,
+};
 
 class LEDController {
 public: 
-private:
-};
+    /**
+     * @brief Create a new instance of the LED Controller Driver.
+     * 
+     * Do not initialize the driver in this method, that should be completed in begin
+     * 
+     * @param address the address of the LED Ctonroller
+     */
+    LEDController(LEDControllerAddress address, i2c_inst_t* i2c);
 
+    /**
+     * @brief Actually initialize the LED Controller with the desired Power Control, Phase Delay, and Spread Spectrum configs
+     * 
+     * 
+     * @param power_control Power Control struct
+     * @param phase_delay Phase Delay struct
+     * @param spread_spectrum Spread Spectrum struct
+     * @returns The possible error from attempting to initialize the LED Controller
+     */
+    LEDControllerError begin(PowerControl power_control, PhaseDelay phase_delay, SpreadSpectrum spread_spectrum);
+
+    /**
+     * @brief Sets the Low Frequency PWM value of the desired LED channel
+     * 
+     * @param channel Desired LED channel
+     * @param value 0-255 steps
+     * @return true if operation is successful
+     */
+    bool setLFP(uint8_t channel, uint8_t value);
+
+    /**
+     * @brief Sets the High Frequency PWM value of the desired LED channel
+     * 
+     * 
+     * @param channel Desired LED channel
+     * @param value 0 - 255 (8-bit), 1024 (10-bit), or 16384 (14-bit)
+     * @return true if operation is successful
+     */
+    bool setHFP(uint8_t channel, uint16_t value);
+
+    /**
+     * @brief Sets the Frequency Mode of the desired LED channel
+     * 
+     * @param channel Desired LED channel
+     * @param fms The FMS mode 
+     * @return true if operation is successful
+     */
+    bool setFMS(uint8_t channel, FMSMode fms);
+
+    /**
+     * @brief Sets the global current of the red, green, or blue channels
+     * 
+     * @param channel Desired LED channel
+     * @param value current stepping 0-255
+     * @return true if operation is successful
+     */
+    bool setGCC(GCC channel, uint8_t value);
+
+
+    /**
+     * @brief updates the Low and High Frequency PWM channels
+     * 
+     * @return true if operation is successful
+     */
+    bool update();
+
+    /**
+     * @brief resets all registers to their default value
+     * 
+     * @return true if operation is successful
+     */
+    bool reset();
+
+private:
+    /**
+     * @brief Write a number of bytes starting at a given register address
+     * 
+     * @param reg The register address on the LED Controller to start writing to
+     * @param length The number of bytes to write
+     * @param data The data to write to the LED Controller
+     * @return True if the operation was successful
+     */
+    bool write_bytes(uint8_t reg, uint8_t length, uint8_t *data);
+
+     /**
+     * @brief write a byte to a given register address 
+     * 
+     * @param reg The register address on the LED Controller to write to
+     * @param data The byte data to write to the address
+     * @return True if the operation was successful
+     */
+    bool write_byte(uint8_t reg, uint8_t data);
+
+    /**
+     * @brief Read a number of bytes starting from a register address
+     * 
+     * @param reg The start address
+     * @param length The number of bytes to read
+     * @param data The buffer to store the output into
+     * @return True if the operation was successful
+     */
+    bool read_bytes(uint8_t reg, uint8_t length, uint8_t *data);
+
+    /**
+     * @brief Read from a given register
+     * 
+     * @param reg The address to read from
+     * @param data The output data 
+     * @return True if the operation was successful
+     */
+    bool read_byte(uint8_t reg, uint8_t *data);
+
+    uint8_t address_;
+    i2c_inst_t *i2c_;
+    PowerControl pcontrol_;
+    PhaseDelay pdelay_;
+    SpreadSpectrum ss_;
+};
 
 #endif // LED_CONTROLLER_HPP

@@ -12,6 +12,12 @@
 		(uuid "1574907f-3403-4b1e-bde9-41962d453f21")
 	)
 	(junction
+		(at 152.4 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4b313d82-519a-43b6-a316-edf2028b63cf")
+	)
+	(junction
 		(at 93.98 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -19,7 +25,17 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 59.69) (xy 163.83 59.69)
+			(xy 134.62 88.9) (xy 152.4 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0be4ea32-859c-4ab4-9cbd-ca362a4763b4")
+	)
+	(wire
+		(pts
+			(xy 138.43 59.69) (xy 152.4 59.69)
 		)
 		(stroke
 			(width 0)
@@ -149,6 +165,16 @@
 	)
 	(wire
 		(pts
+			(xy 152.4 59.69) (xy 152.4 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96e70582-5a54-4f18-8876-b96eb5562094")
+	)
+	(wire
+		(pts
 			(xy 138.43 50.8) (xy 163.83 50.8)
 		)
 		(stroke
@@ -156,6 +182,16 @@
 			(type default)
 		)
 		(uuid "ac17f133-1853-489c-a582-86770c07ab0c")
+	)
+	(wire
+		(pts
+			(xy 152.4 59.69) (xy 163.83 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b003bbdf-bc7a-43fe-9ca1-804780c58e4d")
 	)
 	(wire
 		(pts
@@ -176,6 +212,16 @@
 			(type default)
 		)
 		(uuid "e1bb4d11-e43d-47bc-8e37-f3005502f9dd")
+	)
+	(wire
+		(pts
+			(xy 134.62 104.14) (xy 134.62 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1d22b2f-0939-4e02-ab66-a1c8ff17b70d")
 	)
 	(wire
 		(pts
@@ -515,6 +561,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(pin "SPI_5V_OUT" output
+			(at 134.62 104.14 90)
+			(uuid "46213b73-a066-4a79-ba50-317bfc181053")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances

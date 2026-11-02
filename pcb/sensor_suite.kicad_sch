@@ -22,6 +22,16 @@
 	)
 	(bus
 		(pts
+			(xy 81.28 78.74) (xy 110.49 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c64bb4a-9ffc-4eca-ad43-df5d36394a09")
+	)
+	(bus
+		(pts
 			(xy 152.4 60.96) (xy 161.29 60.96)
 		)
 		(stroke
@@ -29,6 +39,16 @@
 			(type default)
 		)
 		(uuid "5d4d8cad-d4aa-4e4d-a862-d2bd1d9cd4dc")
+	)
+	(bus
+		(pts
+			(xy 80.01 116.84) (xy 110.49 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6de3d3f6-ba0d-465f-9364-2525e4d86eac")
 	)
 	(bus
 		(pts
@@ -100,6 +120,16 @@
 		)
 		(uuid "f9da08b3-bff9-45b1-b393-94c4b73d61ad")
 	)
+	(label "SPI1{MISO,MOSI,CSN,CLK}"
+		(at 81.28 78.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a5e4b34e-3af1-41be-af7d-5a5a4ee522a6")
+	)
 	(label "SWD{CLK,DIO}"
 		(at 96.52 92.71 0)
 		(effects
@@ -109,6 +139,16 @@
 			(justify left bottom)
 		)
 		(uuid "b6d955d5-ce06-45e4-9d03-675d65211a26")
+	)
+	(label "SPI0{MISO,MOSI,SCK,CSN}"
+		(at 80.01 116.84 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f4918196-7d22-4bd4-9ca0-db00a2a61fa4")
 	)
 	(label "USB{DM,DP}"
 		(at 96.52 100.33 0)
@@ -302,6 +342,26 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+		(pin "SPI0{MISO,MOSI,SCK,CSN}" bidirectional
+			(at 110.49 116.84 180)
+			(uuid "011a4626-c1c7-440e-820c-bfdf71103f51")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SPI1{MISO,MOSI,CSN,CLK}" bidirectional
+			(at 110.49 78.74 180)
+			(uuid "8391fef2-7656-4471-8d41-5b954a188f17")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances

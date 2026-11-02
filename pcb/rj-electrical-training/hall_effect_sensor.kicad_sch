@@ -776,12 +776,6 @@
 		(color 0 0 0 0)
 		(uuid "6dd6cb51-c697-4773-99df-a1ceb0645c91")
 	)
-	(junction
-		(at 105.41 91.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "adca882c-2154-4629-99e3-6929388629f0")
-	)
 	(no_connect
 		(at 74.93 81.28)
 		(uuid "187afbec-6346-491d-952a-31ef502f1835")
@@ -818,16 +812,6 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 100.33) (xy 105.41 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "832693ac-cc2f-4d4b-8309-e1796dbe16fc")
-	)
-	(wire
-		(pts
 			(xy 105.41 81.28) (xy 109.22 81.28)
 		)
 		(stroke
@@ -845,16 +829,6 @@
 			(type default)
 		)
 		(uuid "99235339-d2a7-4ed2-b57a-c97e2e85567a")
-	)
-	(wire
-		(pts
-			(xy 105.41 100.33) (xy 105.41 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ad75c0b7-4038-4003-b6a2-e770c68b7ca3")
 	)
 	(wire
 		(pts
@@ -1146,12 +1120,6 @@
 		)
 		(instances
 			(project "rj-electrical-training"
-				(path "/366e3f73-7ad9-490a-8375-a7c64a34f566"
-					(reference "U10")
-					(unit 1)
-				)
-			)
-			(project "rj-electrical-training"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/ec3be200-04e9-4a04-a35d-452876c564f7"
 					(reference "U11")
 					(unit 1)
@@ -1308,12 +1276,6 @@
 		)
 		(instances
 			(project "rj-electrical-training"
-				(path "/366e3f73-7ad9-490a-8375-a7c64a34f566"
-					(reference "#PWR071")
-					(unit 1)
-				)
-			)
-			(project "rj-electrical-training"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/ec3be200-04e9-4a04-a35d-452876c564f7"
 					(reference "#PWR071")
 					(unit 1)
@@ -1394,12 +1356,6 @@
 		)
 		(instances
 			(project "rj-electrical-training"
-				(path "/366e3f73-7ad9-490a-8375-a7c64a34f566"
-					(reference "C25")
-					(unit 1)
-				)
-			)
-			(project "rj-electrical-training"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/ec3be200-04e9-4a04-a35d-452876c564f7"
 					(reference "C22")
 					(unit 1)
@@ -1478,14 +1434,86 @@
 		)
 		(instances
 			(project "rj-electrical-training"
-				(path "/366e3f73-7ad9-490a-8375-a7c64a34f566"
+				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/ec3be200-04e9-4a04-a35d-452876c564f7"
 					(reference "#PWR072")
 					(unit 1)
 				)
 			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 74.93 100.33 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f3a04b2c-8369-4933-bf4f-c4c0f041bd41")
+		(property "Reference" "#PWR049"
+			(at 74.93 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 74.93 105.41 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 74.93 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 74.93 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 74.93 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "527f6980-f69b-464c-ad06-517d3b1eab4d")
+		)
+		(instances
 			(project "rj-electrical-training"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/ec3be200-04e9-4a04-a35d-452876c564f7"
-					(reference "#PWR072")
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)

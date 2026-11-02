@@ -958,18 +958,6 @@
 		(uuid "7274e76c-9887-4ca8-882d-8cea062404a6")
 	)
 	(junction
-		(at 147.32 96.52)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "852a2bc5-f0e6-473b-922b-19d4d0f92802")
-	)
-	(junction
-		(at 147.32 99.06)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b6d05489-1a36-4a84-a7f3-24270d462029")
-	)
-	(junction
 		(at 172.72 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1071,16 +1059,6 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 96.52) (xy 147.32 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2cdda1f4-14a1-4a0d-af91-47d828d3f473")
-	)
-	(wire
-		(pts
 			(xy 121.92 106.68) (xy 138.43 106.68)
 		)
 		(stroke
@@ -1098,6 +1076,16 @@
 			(type default)
 		)
 		(uuid "4223e82c-edce-4f71-b853-5a034a7b5af7")
+	)
+	(wire
+		(pts
+			(xy 147.32 87.63) (xy 147.32 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46f4ff17-037f-4353-9a5f-546292f0ad8e")
 	)
 	(wire
 		(pts
@@ -1148,6 +1136,16 @@
 			(type default)
 		)
 		(uuid "80fdd7e5-a26c-4d0c-a837-3241d7d30a31")
+	)
+	(wire
+		(pts
+			(xy 143.51 87.63) (xy 147.32 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9681dc70-3d01-4554-94fb-2a4470a60755")
 	)
 	(wire
 		(pts
@@ -1238,16 +1236,6 @@
 			(type default)
 		)
 		(uuid "cb8f6c51-8b32-4802-ba71-505944d31e67")
-	)
-	(wire
-		(pts
-			(xy 147.32 99.06) (xy 147.32 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d908c8a4-bbbe-41ae-bcd0-ccdd4c096c56")
 	)
 	(wire
 		(pts
@@ -1485,6 +1473,83 @@
 			(project "rj-electrical-training"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/442af184-f08e-4317-94cf-4c777866b188"
 					(reference "C20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 147.32 96.52 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1e5d8145-b840-4143-a587-b18ed0723e6d")
+		(property "Reference" "#PWR083"
+			(at 147.32 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 147.32 100.33 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 147.32 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 147.32 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 147.32 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8f7d784c-cf8f-4820-aaf1-5a278de4253c")
+		)
+		(instances
+			(project "rj-electrical-training"
+				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/442af184-f08e-4317-94cf-4c777866b188"
+					(reference "#PWR083")
 					(unit 1)
 				)
 			)
@@ -2186,6 +2251,83 @@
 			(project "rj-electrical-training"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/442af184-f08e-4317-94cf-4c777866b188"
 					(reference "#PWR052")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 143.51 87.63 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9257d235-884c-43f7-b9f0-a20cf960ef75")
+		(property "Reference" "#PWR078"
+			(at 143.51 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 143.51 91.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 143.51 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 143.51 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fde2d38d-a4f0-4ff5-aeab-520322150482")
+		)
+		(instances
+			(project "rj-electrical-training"
+				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/442af184-f08e-4317-94cf-4c777866b188"
+					(reference "#PWR078")
 					(unit 1)
 				)
 			)

@@ -5,36 +5,38 @@
 	(uuid "15bcf59e-e636-49cf-8f09-05363c180f71")
 	(paper "A4")
 	(lib_symbols
-		(symbol "2026-10-25_23-53-28:CLMVC-FKA-CL1D1L71BB7C3C3"
+		(symbol "CLMVC-FKA-CL1D1L71BB7C3C3:CLMVC-FKA-CL1D1L71BB7C3C3"
 			(pin_names
-				(offset 0.254)
+				(offset 1.016)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "LED"
-				(at 10.16 10.16 0)
+			(property "Reference" "D"
+				(at -8.255 12.7 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
-						(size 1.524 1.524)
+						(size 1.27 1.27)
 					)
+					(justify left bottom)
 				)
 			)
 			(property "Value" "CLMVC-FKA-CL1D1L71BB7C3C3"
-				(at 10.16 7.62 0)
+				(at -8.255 12.065 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
-						(size 1.524 1.524)
+						(size 1.27 1.27)
 					)
+					(justify left top)
 				)
 			)
-			(property "Footprint" "CLMVC-FKA-CL1D1L71BB7C3C3_CRE"
+			(property "Footprint" "CLMVC-FKA-CL1D1L71BB7C3C3:LED_CLMVC-FKA-CL1D1L71BB7C3C3"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -42,23 +44,11 @@
 				(effects
 					(font
 						(size 1.27 1.27)
-						(italic yes)
 					)
+					(justify bottom)
 				)
 			)
-			(property "Datasheet" "CLMVC-FKA-CL1D1L71BB7C3C3"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-				)
-			)
-			(property "Description" ""
+			(property "Datasheet" ""
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -69,17 +59,7 @@
 					)
 				)
 			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "CLMVC-FKA-CL1D1L71BB7C3C3"
+			(property "Description" "Red, Green, Blue (RGB) 622nm Red, 530nm Green, 470nm Blue LED Indication - Discrete 2V Red, 3V Green, 3V Blue 4-SMD, J-Lead"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -88,9 +68,10 @@
 					(font
 						(size 1.27 1.27)
 					)
+					(justify bottom)
 				)
 			)
-			(property "ki_fp_filters" "CLMVC-FKA-CL1D1L71BB7C3C3_CRE CLMVC-FKA-CL1D1L71BB7C3C3_CRE-M CLMVC-FKA-CL1D1L71BB7C3C3_CRE-L"
+			(property "DigiKey_Part_Number" "CLMVC-FKA-CL1D1L71BB7C3C3CT-ND"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -99,63 +80,124 @@
 					(font
 						(size 1.27 1.27)
 					)
+					(justify bottom)
 				)
 			)
-			(symbol "CLMVC-FKA-CL1D1L71BB7C3C3_0_1"
-				(polyline
-					(pts
-						(xy 7.62 5.08) (xy 7.62 -5.08)
+			(property "SnapEDA_Link" "https://www.snapeda.com/parts/CLMVC-FKA-CL1D1L71BB7C3C3/Cree/view-part/?ref=snap"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
+					(justify bottom)
 				)
-				(polyline
-					(pts
-						(xy 7.62 0) (xy 10.414 0)
+			)
+			(property "MAXIMUM_PACKAGE_HEIGHT" "1 mm"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
+					(justify bottom)
 				)
-				(polyline
-					(pts
-						(xy 7.62 -5.08) (xy 12.7 -5.08)
+			)
+			(property "Package" "SMD-4 Cree Inc."
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
+					(justify bottom)
 				)
-				(polyline
-					(pts
-						(xy 8.89 2.54) (xy 8.89 -2.54)
+			)
+			(property "Check_prices" "https://www.snapeda.com/parts/CLMVC-FKA-CL1D1L71BB7C3C3/Cree/view-part/?ref=eda"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
+					(justify bottom)
 				)
+			)
+			(property "STANDARD" "Manufacturer Recommendations"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "PARTREV" "14"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "MF" "Cree Inc."
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "MP" "CLMVC-FKA-CL1D1L71BB7C3C3"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "MANUFACTURER" "Cree Inc."
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(symbol "CLMVC-FKA-CL1D1L71BB7C3C3_0_0"
 				(polyline
 					(pts
-						(xy 8.89 2.54) (xy 10.414 2.54)
+						(xy -2.54 7.62) (xy -2.54 -7.62)
 					)
 					(stroke
-						(width 0.127)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -163,8 +205,20 @@
 					)
 				)
 				(circle
-					(center 8.89 0)
-					(radius 0.127)
+					(center -2.54 0)
+					(radius 0.2032)
+					(stroke
+						(width 0.4064)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 9.144) (xy 0 7.62)
+					)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -175,10 +229,10 @@
 				)
 				(polyline
 					(pts
-						(xy 8.89 -2.54) (xy 10.414 -2.54)
+						(xy 0 7.62) (xy -2.54 7.62)
 					)
 					(stroke
-						(width 0.127)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -187,10 +241,10 @@
 				)
 				(polyline
 					(pts
-						(xy 10.414 3.048) (xy 10.414 2.032)
+						(xy 0 7.62) (xy 0 6.096)
 					)
 					(stroke
-						(width 0.127)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -199,10 +253,10 @@
 				)
 				(polyline
 					(pts
-						(xy 10.414 3.048) (xy 11.43 2.54)
+						(xy 0 6.096) (xy 2.54 7.62)
 					)
 					(stroke
-						(width 0.127)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -211,10 +265,10 @@
 				)
 				(polyline
 					(pts
-						(xy 10.414 0.508) (xy 10.414 -0.508)
+						(xy 0 1.524) (xy 0 0)
 					)
 					(stroke
-						(width 0.127)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -223,10 +277,10 @@
 				)
 				(polyline
 					(pts
-						(xy 10.414 0.508) (xy 11.43 0)
+						(xy 0 0) (xy -2.54 0)
 					)
 					(stroke
-						(width 0.127)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -235,10 +289,10 @@
 				)
 				(polyline
 					(pts
-						(xy 10.414 -2.032) (xy 10.414 -3.048)
+						(xy 0 0) (xy 0 -1.524)
 					)
 					(stroke
-						(width 0.127)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -247,10 +301,10 @@
 				)
 				(polyline
 					(pts
-						(xy 10.414 -2.032) (xy 11.43 -2.54)
+						(xy 0 -1.524) (xy 2.54 0)
 					)
 					(stroke
-						(width 0.127)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -259,10 +313,10 @@
 				)
 				(polyline
 					(pts
-						(xy 10.668 3.302) (xy 11.176 3.81)
+						(xy 0 -6.096) (xy 0 -7.62)
 					)
 					(stroke
-						(width 0.127)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -271,10 +325,10 @@
 				)
 				(polyline
 					(pts
-						(xy 10.668 0.762) (xy 11.176 1.27)
+						(xy 0 -7.62) (xy -2.54 -7.62)
 					)
 					(stroke
-						(width 0.127)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -283,10 +337,10 @@
 				)
 				(polyline
 					(pts
-						(xy 10.668 -1.778) (xy 11.176 -1.27)
+						(xy 0 -7.62) (xy 0 -9.144)
 					)
 					(stroke
-						(width 0.127)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -295,10 +349,10 @@
 				)
 				(polyline
 					(pts
-						(xy 11.176 3.81) (xy 10.922 3.81)
+						(xy 0 -9.144) (xy 2.54 -7.62)
 					)
 					(stroke
-						(width 0.127)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -307,10 +361,46 @@
 				)
 				(polyline
 					(pts
-						(xy 11.176 3.81) (xy 11.176 3.556)
+						(xy 1.397 11.303) (xy 1.9685 10.795) (xy 2.3495 11.811) (xy 1.397 11.303)
 					)
 					(stroke
-						(width 0.127)
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.397 3.683) (xy 1.9685 3.175) (xy 2.3495 4.191) (xy 1.397 3.683)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.397 -3.937) (xy 1.9685 -4.445) (xy 2.3495 -3.429) (xy 1.397 -3.937)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.1844 11.6586) (xy 0.4064 9.6266)
+					)
+					(stroke
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -319,10 +409,10 @@
 				)
 				(polyline
 					(pts
-						(xy 11.176 1.27) (xy 10.922 1.27)
+						(xy 2.1844 4.0386) (xy 0.4064 2.0066)
 					)
 					(stroke
-						(width 0.127)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -331,10 +421,10 @@
 				)
 				(polyline
 					(pts
-						(xy 11.176 1.27) (xy 11.176 1.016)
+						(xy 2.1844 -3.5814) (xy 0.4064 -5.6134)
 					)
 					(stroke
-						(width 0.127)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -343,10 +433,10 @@
 				)
 				(polyline
 					(pts
-						(xy 11.176 -1.27) (xy 10.922 -1.27)
+						(xy 2.54 9.144) (xy 2.54 7.62)
 					)
 					(stroke
-						(width 0.127)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -355,10 +445,10 @@
 				)
 				(polyline
 					(pts
-						(xy 11.176 -1.27) (xy 11.176 -1.524)
+						(xy 2.54 7.62) (xy 0 9.144)
 					)
 					(stroke
-						(width 0.127)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -367,10 +457,10 @@
 				)
 				(polyline
 					(pts
-						(xy 11.43 3.302) (xy 11.938 3.81)
+						(xy 2.54 7.62) (xy 2.54 6.096)
 					)
 					(stroke
-						(width 0.127)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -379,10 +469,10 @@
 				)
 				(polyline
 					(pts
-						(xy 11.43 3.048) (xy 11.43 2.032)
+						(xy 2.54 1.524) (xy 2.54 0)
 					)
 					(stroke
-						(width 0.127)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -391,10 +481,10 @@
 				)
 				(polyline
 					(pts
-						(xy 11.43 2.54) (xy 10.414 2.032)
+						(xy 2.54 0) (xy 0 1.524)
 					)
 					(stroke
-						(width 0.127)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -403,10 +493,10 @@
 				)
 				(polyline
 					(pts
-						(xy 11.43 2.54) (xy 12.7 2.54)
+						(xy 2.54 0) (xy 2.54 -1.524)
 					)
 					(stroke
-						(width 0.127)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -415,10 +505,10 @@
 				)
 				(polyline
 					(pts
-						(xy 11.43 0.762) (xy 11.938 1.27)
+						(xy 2.54 -6.096) (xy 2.54 -7.62)
 					)
 					(stroke
-						(width 0.127)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -427,10 +517,10 @@
 				)
 				(polyline
 					(pts
-						(xy 11.43 0.508) (xy 11.43 -0.508)
+						(xy 2.54 -7.62) (xy 0 -6.096)
 					)
 					(stroke
-						(width 0.127)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -439,10 +529,10 @@
 				)
 				(polyline
 					(pts
-						(xy 11.43 0) (xy 10.414 -0.508)
+						(xy 2.54 -7.62) (xy 2.54 -9.144)
 					)
 					(stroke
-						(width 0.127)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -451,10 +541,46 @@
 				)
 				(polyline
 					(pts
-						(xy 11.43 0) (xy 12.7 0)
+						(xy 2.667 11.2395) (xy 3.2385 10.7315) (xy 3.6195 11.811) (xy 2.667 11.2395)
 					)
 					(stroke
-						(width 0.127)
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.667 3.6195) (xy 3.2385 3.1115) (xy 3.6195 4.191) (xy 2.667 3.6195)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.667 -4.0005) (xy 3.2385 -4.5085) (xy 3.6195 -3.429) (xy 2.667 -4.0005)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.429 11.557) (xy 1.651 9.525)
+					)
+					(stroke
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -463,10 +589,10 @@
 				)
 				(polyline
 					(pts
-						(xy 11.43 -1.778) (xy 11.938 -1.27)
+						(xy 3.429 3.937) (xy 1.651 1.905)
 					)
 					(stroke
-						(width 0.127)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -475,204 +601,111 @@
 				)
 				(polyline
 					(pts
-						(xy 11.43 -2.032) (xy 11.43 -3.048)
+						(xy 3.429 -3.683) (xy 1.651 -5.715)
 					)
 					(stroke
-						(width 0.127)
+						(width 0.254)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 11.43 -2.54) (xy 10.414 -3.048)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
+				(text "RED"
+					(at 3.048 9.144 0)
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+						(justify left bottom)
 					)
 				)
-				(polyline
-					(pts
-						(xy 11.43 -2.54) (xy 12.7 -2.54)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
+				(text "GREEN"
+					(at 3.048 1.524 0)
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+						(justify left bottom)
 					)
 				)
-				(polyline
-					(pts
-						(xy 11.684 3.81) (xy 11.938 3.81)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
+				(text "BLUE"
+					(at 3.048 -6.096 0)
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+						(justify left bottom)
 					)
 				)
-				(polyline
-					(pts
-						(xy 11.684 1.27) (xy 11.938 1.27)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 11.684 -1.27) (xy 11.938 -1.27)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 11.938 3.81) (xy 11.938 3.556)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 11.938 1.27) (xy 11.938 1.016)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 11.938 -1.27) (xy 11.938 -1.524)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 12.7 5.08) (xy 7.62 5.08)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 12.7 -5.08) (xy 12.7 5.08)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin unspecified line
-					(at 0 0 0)
-					(length 7.62)
-					(name "1"
+				(pin passive line
+					(at -7.62 0 0)
+					(length 5.08)
+					(name ""
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 					(number "1"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 				)
-				(pin unspecified line
-					(at 20.32 -2.54 180)
-					(length 7.62)
-					(name "2"
+				(pin passive line
+					(at 7.62 -7.62 180)
+					(length 5.08)
+					(name ""
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 					(number "2"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 				)
-				(pin unspecified line
-					(at 20.32 0 180)
-					(length 7.62)
-					(name "3"
+				(pin passive line
+					(at 7.62 0 180)
+					(length 5.08)
+					(name ""
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 					(number "3"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 				)
-				(pin unspecified line
-					(at 20.32 2.54 180)
-					(length 7.62)
-					(name "4"
+				(pin passive line
+					(at 7.62 7.62 180)
+					(length 5.08)
+					(name ""
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 					(number "4"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
@@ -1731,6 +1764,145 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:+3.3V"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+3.3V"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "+3.3V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3.3V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+3V3"
 			(power global)
 			(pin_numbers
@@ -2126,20 +2298,8 @@
 		)
 	)
 	(rectangle
-		(start 48.26 30.48)
-		(end 180.34 161.29)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "06f0d647-5579-4284-b937-c74c7b41e9fe")
-	)
-	(rectangle
-		(start 127 52.07)
-		(end 127 52.07)
+		(start 207.01 95.25)
+		(end 207.01 95.25)
 		(stroke
 			(width 0)
 			(type default)
@@ -2149,83 +2309,37 @@
 		)
 		(uuid "92c3961b-21c3-46e0-82b6-9852409b074c")
 	)
-	(text "LED Controller\n"
-		(exclude_from_sim no)
-		(at 62.738 139.446 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "5a3e1a89-a6dc-4913-8e1b-a031340c3bce")
-	)
 	(junction
-		(at 121.92 43.18)
+		(at 233.68 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "43c6db5c-c550-482e-afd2-c540d0ac1a78")
 	)
 	(junction
-		(at 121.92 50.8)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5f8433f9-cd20-4eb4-a828-cbd291c9e686")
-	)
-	(junction
-		(at 72.39 87.63)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "612f19e5-3520-47a6-96a6-d40ec92dd5ff")
-	)
-	(junction
-		(at 161.29 85.09)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "945e1b2d-1fea-46be-8720-6ec281c90325")
-	)
-	(junction
-		(at 114.3 35.56)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a6b90fae-ab2c-4dfd-93b4-7116cb592d50")
-	)
-	(junction
-		(at 114.3 149.86)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "caaad3b8-0459-4f8b-89e6-74f71eef31c7")
-	)
-	(junction
-		(at 134.62 43.18)
+		(at 246.38 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d205cea0-d3bf-4a64-8018-84eba348ab1c")
 	)
 	(junction
-		(at 134.62 50.8)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e64c7223-0a19-472e-ad46-4050b0b27f1c")
-	)
-	(junction
-		(at 81.28 41.91)
+		(at 217.17 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fc02894b-1e90-483f-9586-99d87a2482cf")
 	)
 	(wire
 		(pts
-			(xy 119.38 50.8) (xy 121.92 50.8)
+			(xy 99.06 41.91) (xy 99.06 38.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "012b7b5e-807a-43db-8273-f90d88715ff4")
+		(uuid "00c9d01f-3132-496e-bf1f-4e848fdf3c55")
 	)
 	(bus
 		(pts
-			(xy 81.28 44.45) (xy 81.28 41.91)
+			(xy 214.63 49.53) (xy 217.17 49.53)
 		)
 		(stroke
 			(width 0)
@@ -2235,37 +2349,17 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 57.15) (xy 133.35 57.15)
+			(xy 143.51 82.55) (xy 132.08 82.55)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0a9ee6a8-35bd-443c-b78f-e68a7af38ef8")
+		(uuid "0c6e5ef3-c93d-4a02-8332-faef37efef3d")
 	)
 	(wire
 		(pts
-			(xy 72.39 95.25) (xy 72.39 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0abb96ed-13d2-4e52-833b-5de998fd73dc")
-	)
-	(wire
-		(pts
-			(xy 114.3 35.56) (xy 114.3 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0c13b41c-3d76-452b-a235-3c0e305806e4")
-	)
-	(wire
-		(pts
-			(xy 114.3 35.56) (xy 118.11 35.56)
+			(xy 241.3 82.55) (xy 241.3 86.36)
 		)
 		(stroke
 			(width 0)
@@ -2275,17 +2369,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 138.43) (xy 114.3 149.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "174d7ece-4b12-407a-8a1d-8e091e0e6f5e")
-	)
-	(wire
-		(pts
-			(xy 119.38 57.15) (xy 119.38 50.8)
+			(xy 201.93 87.63) (xy 217.17 87.63)
 		)
 		(stroke
 			(width 0)
@@ -2295,147 +2379,127 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 129.54) (xy 109.22 115.57)
+			(xy 208.28 90.17) (xy 208.28 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "221edf2b-5709-4241-b40f-dfab2dc2510e")
+		(uuid "1dffa600-ffe5-494e-9c57-089d52227207")
 	)
 	(wire
 		(pts
-			(xy 63.5 87.63) (xy 72.39 87.63)
+			(xy 69.85 41.91) (xy 69.85 38.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "225e6aa6-4faf-4be4-9260-9e66d30010f1")
+		(uuid "232c8e13-9a79-43e3-be39-bf5e0d5b9fdb")
 	)
 	(wire
 		(pts
-			(xy 161.29 77.47) (xy 161.29 85.09)
+			(xy 35.56 72.39) (xy 35.56 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2a27fdca-cb6f-4707-b5cb-e517628a2e51")
+		(uuid "2bfc1abe-2e53-4388-84cc-80175ec1796b")
 	)
 	(wire
 		(pts
-			(xy 114.3 115.57) (xy 114.3 135.89)
+			(xy 62.23 38.1) (xy 62.23 41.91)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2b19c162-dac2-4128-a1dc-e653357003b5")
+		(uuid "2dedfaf6-6747-4d9f-8a3f-594ea3874160")
 	)
 	(wire
 		(pts
-			(xy 73.66 95.25) (xy 72.39 95.25)
+			(xy 208.28 91.44) (xy 210.82 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2d545797-7b25-498d-a1a4-fb98a2c4f282")
+		(uuid "4059d011-1c85-490c-9706-749d45a5844f")
 	)
 	(wire
 		(pts
-			(xy 154.94 77.47) (xy 161.29 77.47)
+			(xy 68.58 71.12) (xy 68.58 67.31)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "32496967-ffd5-4d09-b3dc-fba23cd7fc4d")
+		(uuid "414e226a-b930-4178-b32f-6c02835a2800")
 	)
 	(wire
 		(pts
-			(xy 121.92 43.18) (xy 116.84 43.18)
+			(xy 109.22 71.12) (xy 109.22 67.31)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "368e03f7-6937-4665-8c15-e4127dba5342")
+		(uuid "437a1dd8-5828-4fb0-8fad-90fdc1303487")
 	)
 	(wire
 		(pts
-			(xy 111.76 129.54) (xy 111.76 115.57)
+			(xy 77.47 41.91) (xy 77.47 38.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "42e68931-2c12-4717-9f03-4068334e26ee")
+		(uuid "5ead345d-0c79-47ac-b02c-15b06f63af50")
 	)
 	(wire
 		(pts
-			(xy 133.35 74.93) (xy 134.62 74.93)
+			(xy 101.6 71.12) (xy 101.6 67.31)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "43ba65c1-a649-42c6-af0b-bff45738c355")
+		(uuid "5fdbc658-d236-4ee0-8ab1-61d115d2d553")
 	)
 	(wire
 		(pts
-			(xy 116.84 129.54) (xy 116.84 115.57)
+			(xy 35.56 101.6) (xy 35.56 97.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4a6c31c8-c8c4-4458-a755-96acb9d1ee81")
+		(uuid "6dc91b18-2453-4149-aced-6979e3b41698")
 	)
 	(wire
 		(pts
-			(xy 114.3 149.86) (xy 119.38 149.86)
+			(xy 60.96 67.31) (xy 60.96 71.12)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4f5150a2-3c47-48d2-a297-275ff2e18412")
+		(uuid "6f53a00b-bcee-406d-8e92-dc51cfaba3fb")
 	)
 	(wire
 		(pts
-			(xy 115.57 138.43) (xy 114.3 138.43)
+			(xy 36.83 41.91) (xy 36.83 38.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "576ea4f7-718c-4826-869a-c150bc9ed8bd")
+		(uuid "74b86664-b7b2-4c6c-bc08-f9a4c6ddbe68")
 	)
 	(wire
 		(pts
-			(xy 121.92 57.15) (xy 121.92 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6e8c3217-138b-4341-8a5b-3b23ec399dee")
-	)
-	(wire
-		(pts
-			(xy 72.39 87.63) (xy 73.66 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6f432afe-2047-45b9-a2c5-cbc3a2c4916c")
-	)
-	(wire
-		(pts
-			(xy 68.58 39.37) (xy 78.74 39.37)
+			(xy 219.71 36.83) (xy 219.71 46.99)
 		)
 		(stroke
 			(width 0)
@@ -2445,27 +2509,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 35.56) (xy 114.3 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7d973727-83c2-4159-99d1-943e35ab1b86")
-	)
-	(wire
-		(pts
-			(xy 121.92 50.8) (xy 134.62 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "81b8d5c8-500c-4b56-a7fe-6b460828bdb9")
-	)
-	(wire
-		(pts
-			(xy 111.76 36.83) (xy 111.76 35.56)
+			(xy 222.25 80.01) (xy 223.52 80.01)
 		)
 		(stroke
 			(width 0)
@@ -2475,7 +2519,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 57.15) (xy 116.84 43.18)
+			(xy 201.93 85.09) (xy 231.14 85.09)
 		)
 		(stroke
 			(width 0)
@@ -2485,27 +2529,77 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 85.09) (xy 163.83 85.09)
+			(xy 201.93 82.55) (xy 241.3 82.55)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9bf14bc9-6170-44da-9cdf-91ab9d049272")
+		(uuid "89af5171-37fa-43af-ae66-da6959335aab")
 	)
 	(wire
 		(pts
-			(xy 73.66 80.01) (xy 72.39 80.01)
+			(xy 231.14 102.87) (xy 233.68 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9f0ddcff-9626-4025-95ed-dc450cd9d1d6")
+		(uuid "8df97792-86b8-44f7-b450-2264eb0d36bc")
+	)
+	(wire
+		(pts
+			(xy 43.18 72.39) (xy 43.18 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90da536f-2462-4004-b8b9-915bdcd2a82f")
+	)
+	(wire
+		(pts
+			(xy 76.2 71.12) (xy 76.2 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91f88e9e-a8e7-424b-a6ce-5ed8c767a37b")
+	)
+	(wire
+		(pts
+			(xy 93.98 67.31) (xy 93.98 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9799baa2-d365-4024-b9bb-d01963516f27")
+	)
+	(wire
+		(pts
+			(xy 44.45 41.91) (xy 44.45 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a15a304e-9d2a-4600-a657-2ce1b664a05a")
+	)
+	(wire
+		(pts
+			(xy 201.93 90.17) (xy 208.28 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aac4626f-d0a8-46bc-88ee-c4eb7ad7aea9")
 	)
 	(bus
 		(pts
-			(xy 78.74 39.37) (xy 81.28 39.37)
+			(xy 219.71 46.99) (xy 219.71 49.53)
 		)
 		(stroke
 			(width 0)
@@ -2515,7 +2609,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 43.18) (xy 134.62 43.18)
+			(xy 251.46 102.87) (xy 246.38 102.87)
 		)
 		(stroke
 			(width 0)
@@ -2525,7 +2619,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 44.45) (xy 106.68 57.15)
+			(xy 214.63 74.93) (xy 201.93 74.93)
 		)
 		(stroke
 			(width 0)
@@ -2535,27 +2629,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 115.57) (xy 93.98 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b09db6d9-fdf8-458e-80ec-a692cbbb94ce")
-	)
-	(wire
-		(pts
-			(xy 119.38 129.54) (xy 119.38 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b3313a86-6be6-4390-8ef3-e7befc4e1dc5")
-	)
-	(wire
-		(pts
-			(xy 109.22 44.45) (xy 109.22 57.15)
+			(xy 214.63 77.47) (xy 201.93 77.47)
 		)
 		(stroke
 			(width 0)
@@ -2565,97 +2639,77 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 129.54) (xy 106.68 115.57)
+			(xy 29.21 38.1) (xy 29.21 41.91)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b42e1287-3771-4442-95d3-166ae0f913ec")
+		(uuid "b6dd1926-9b86-4adb-8969-05e74763fa44")
 	)
 	(wire
 		(pts
-			(xy 154.94 92.71) (xy 161.29 92.71)
+			(xy 27.94 68.58) (xy 27.94 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bb37efb2-30c2-4746-aa59-86db6a358989")
+		(uuid "c0d9bce9-4767-41bc-aa4e-b1936e01f412")
 	)
 	(wire
 		(pts
-			(xy 154.94 85.09) (xy 161.29 85.09)
+			(xy 43.18 101.6) (xy 43.18 97.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bf95dcea-e2b3-4bdc-adee-79390d9d0355")
+		(uuid "c26e149d-e6f5-4ffc-96a4-aa25ae861957")
 	)
 	(wire
 		(pts
-			(xy 72.39 80.01) (xy 72.39 87.63)
+			(xy 106.68 41.91) (xy 106.68 38.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c7bb35f4-1949-415d-a2b0-2e60ad1459ed")
+		(uuid "cd8a6f2c-c0db-44b9-a130-0eda19089c52")
 	)
 	(wire
 		(pts
-			(xy 121.92 129.54) (xy 121.92 115.57)
+			(xy 78.74 100.33) (xy 78.74 96.52)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c88a41cd-2843-47f6-83d5-18d7f0326ae9")
+		(uuid "cdfc781e-cb19-49fd-b70a-4b4e7ab0ea94")
 	)
 	(wire
 		(pts
-			(xy 109.22 149.86) (xy 114.3 149.86)
+			(xy 231.14 85.09) (xy 231.14 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c94117c6-c8c1-47ad-8658-18846166d65a")
+		(uuid "d0c7b3f8-ba2b-4ee5-b2e0-ac7a3c94d523")
 	)
 	(wire
 		(pts
-			(xy 93.98 97.79) (xy 93.98 115.57)
+			(xy 71.12 100.33) (xy 71.12 96.52)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cfade318-d9e3-4aa6-b2e7-3e0d98142e73")
-	)
-	(wire
-		(pts
-			(xy 121.92 54.61) (xy 123.19 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d6e57135-daf6-48d0-8f48-d7a831026225")
-	)
-	(wire
-		(pts
-			(xy 133.35 57.15) (xy 133.35 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dfbfd11e-5c69-4a5a-8eee-f9575654cda6")
+		(uuid "df4e5b44-8023-4311-9819-154a20cc463c")
 	)
 	(bus
 		(pts
-			(xy 81.28 41.91) (xy 81.28 39.37)
+			(xy 217.17 49.53) (xy 219.71 49.53)
 		)
 		(stroke
 			(width 0)
@@ -2663,9 +2717,19 @@
 		)
 		(uuid "e24fbb1f-2343-4def-8f9e-ca97724359af")
 	)
+	(wire
+		(pts
+			(xy 91.44 38.1) (xy 91.44 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5acdfda-c190-4065-a54b-0b0d2fe23d0d")
+	)
 	(bus
 		(pts
-			(xy 78.74 41.91) (xy 81.28 41.91)
+			(xy 217.17 46.99) (xy 217.17 49.53)
 		)
 		(stroke
 			(width 0)
@@ -2675,7 +2739,17 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 44.45) (xy 111.76 57.15)
+			(xy 63.5 96.52) (xy 63.5 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb953141-726a-4ff1-8840-1c571364d993")
+	)
+	(wire
+		(pts
+			(xy 214.63 80.01) (xy 201.93 80.01)
 		)
 		(stroke
 			(width 0)
@@ -2685,7 +2759,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 44.45) (xy 104.14 57.15)
+			(xy 223.52 72.39) (xy 201.93 72.39)
 		)
 		(stroke
 			(width 0)
@@ -2695,17 +2769,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 85.09) (xy 161.29 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f207e49c-6c34-4bff-9741-b00017014d28")
-	)
-	(wire
-		(pts
-			(xy 134.62 43.18) (xy 121.92 43.18)
+			(xy 246.38 102.87) (xy 233.68 102.87)
 		)
 		(stroke
 			(width 0)
@@ -2715,7 +2779,17 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 41.91) (xy 78.74 41.91)
+			(xy 27.94 97.79) (xy 27.94 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7fe561a-f9c8-42b3-a46c-e82e43d5d408")
+	)
+	(wire
+		(pts
+			(xy 217.17 39.37) (xy 217.17 46.99)
 		)
 		(stroke
 			(width 0)
@@ -2723,8 +2797,208 @@
 		)
 		(uuid "fb0c6b30-edf2-4b35-a5d3-9a66f6691b22")
 	)
+	(label "G8"
+		(at 71.12 100.33 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "037cf87a-e06a-41ae-bb6b-47ad342ef0bd")
+	)
+	(label "G5"
+		(at 143.51 87.63 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0d0b6aa7-0c0a-4a0e-9831-5fef8e9615d9")
+	)
+	(label "G1"
+		(at 36.83 41.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0ef21753-6553-43f8-983d-1bc2e035df47")
+	)
+	(label "G2"
+		(at 69.85 41.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1d75e96d-825d-448b-8bf4-68b3438bf85d")
+	)
+	(label "G8"
+		(at 181.61 102.87 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1ecab53e-0c06-4a07-937e-d674ebe74b6f")
+	)
+	(label "B4"
+		(at 143.51 80.01 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1ee77a8b-30d8-471c-80b5-0843e2f6772e")
+	)
+	(label "R8"
+		(at 179.07 102.87 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1ef01229-5672-4555-ba1f-af64532c552f")
+	)
+	(label "B5"
+		(at 143.51 90.17 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "345a62a4-0992-485b-8eda-5da8635e10fe")
+	)
+	(label "G7"
+		(at 173.99 102.87 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "37ec0f72-f8cb-4411-8d4e-6c1d4267b7a8")
+	)
+	(label "R5"
+		(at 143.51 85.09 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3c9b9b0f-62e1-4a8b-b4f7-87de0f25e8e2")
+	)
+	(label "G4"
+		(at 143.51 77.47 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3ff69f21-2696-4667-8a1d-a9cc7d85b882")
+	)
+	(label "R4"
+		(at 143.51 74.93 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "432d3c72-890c-4d3f-8acd-e3f392f2f9ea")
+	)
+	(label "R6"
+		(at 109.22 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "467ede69-deff-456a-a60d-effdfa052a47")
+	)
+	(label "R1"
+		(at 44.45 41.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4ffb6c96-39f8-412f-b0d9-dc939387cb06")
+	)
+	(label "R7"
+		(at 171.45 102.87 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "52fd2eeb-ea97-4a76-b1a7-95ed88208074")
+	)
+	(label "B6"
+		(at 93.98 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "541500dc-f0bd-408f-abcb-5ac4c8e203dd")
+	)
+	(label "G1"
+		(at 179.07 62.23 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "546f5c03-3703-4847-937f-d47819e05a76")
+	)
+	(label "B5"
+		(at 60.96 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5b567319-d1f0-4e2c-bda2-496589d58829")
+	)
+	(label "R4"
+		(at 43.18 72.39 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6befb009-8ddf-4d99-8d2c-62e809aade39")
+	)
+	(label "R5"
+		(at 76.2 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6c7ff166-d557-49e8-91c6-f2f61108ebec")
+	)
 	(label "LED_I2C.SDA"
-		(at 109.22 44.45 270)
+		(at 214.63 77.47 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2734,7 +3008,7 @@
 		(uuid "6eaf9cca-f1f0-43bb-b88d-651ca0a60825")
 	)
 	(label "LED_I2C.SDA"
-		(at 71.12 41.91 270)
+		(at 217.17 39.37 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2743,8 +3017,98 @@
 		)
 		(uuid "766b53c7-2013-4d18-9f22-b18e3e098c6d")
 	)
+	(label "G7"
+		(at 35.56 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "76d0b9c5-4c07-45d0-878f-6c5afd3d1364")
+	)
+	(label "G4"
+		(at 35.56 72.39 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "77044f50-5805-4aaf-9f6a-6a6183dd788d")
+	)
+	(label "B4"
+		(at 27.94 72.39 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "792433ce-5018-40a2-9472-2509424236f5")
+	)
+	(label "R7"
+		(at 43.18 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "82b5eaf4-ad99-4e6b-a7d7-af5a79bd1064")
+	)
+	(label "B2"
+		(at 62.23 41.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8c72d7a0-b037-43b7-9c5f-8dd2ac9be67e")
+	)
+	(label "B2"
+		(at 168.91 62.23 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8df9799c-6da3-4f3e-bf0c-3755e80256cd")
+	)
+	(label "R2"
+		(at 173.99 62.23 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "976f688f-b37d-4aca-b8ee-4c9a68c03fc2")
+	)
+	(label "R3"
+		(at 166.37 62.23 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "98d4d945-33cd-412f-9f6b-a5d9a38be30f")
+	)
+	(label "B1"
+		(at 29.21 41.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9c8c5084-9d06-4624-a7ac-8777263d4237")
+	)
 	(label "LED_I2C.SCL"
-		(at 68.58 39.37 270)
+		(at 219.71 36.83 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2753,8 +3117,168 @@
 		)
 		(uuid "a0113aa7-4432-4883-b1bf-74056bef3451")
 	)
+	(label "B7"
+		(at 176.53 102.87 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a2c1dc70-b8c3-44c8-bec3-5bb4779958f9")
+	)
+	(label "B3"
+		(at 91.44 41.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a5a7675a-b708-47f7-81db-5372511594d1")
+	)
+	(label "R3"
+		(at 106.68 41.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "aa86c262-58eb-479c-99e1-03209e691ccf")
+	)
+	(label "G3"
+		(at 163.83 62.23 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "aaa6e78c-e43c-47a0-85b6-5e5cc59d275e")
+	)
+	(label "B1"
+		(at 176.53 62.23 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c28242e0-fd52-431c-b4a4-104b681d9162")
+	)
+	(label "G6"
+		(at 166.37 102.87 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c317302d-b491-47b6-b757-3c306b952078")
+	)
+	(label "R1"
+		(at 181.61 62.23 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c5628f96-644d-4743-871a-dcc86d2b7745")
+	)
+	(label "B3"
+		(at 143.51 72.39 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c85db97d-db7c-4c54-b150-caa99b4ad61c")
+	)
+	(label "G2"
+		(at 171.45 62.23 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c8ccb42c-6d50-4461-8ddd-d8131aa46b79")
+	)
+	(label "G3"
+		(at 99.06 41.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d41f955a-d7a3-433d-bf55-ad22ef50e23b")
+	)
+	(label "G6"
+		(at 101.6 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d479c7f6-fb1b-484f-85c8-c693a14194c2")
+	)
+	(label "B7"
+		(at 27.94 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d70226cb-056c-4904-a06d-59b464ba3bd8")
+	)
+	(label "R2"
+		(at 77.47 41.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d8b18812-2e2a-41ef-99f9-b4631f7e271d")
+	)
+	(label "B8"
+		(at 63.5 100.33 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "da09d58e-d7a6-4203-82a1-e774d2d9929c")
+	)
+	(label "G5"
+		(at 68.58 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "df2ade04-4fb1-4733-94c6-009c78a1252c")
+	)
+	(label "B8"
+		(at 201.93 92.71 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e7ea9754-3502-44a9-ad24-794b430fb377")
+	)
 	(label "LED_I2C.SCL"
-		(at 106.68 44.45 270)
+		(at 214.63 74.93 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2763,20 +3287,50 @@
 		)
 		(uuid "e8c99cc3-7aaf-4a95-b398-b2d81dcf0a22")
 	)
-	(hierarchical_label "LED_I2C{SDA,SCL}"
-		(shape input)
-		(at 81.28 44.45 0)
+	(label "R8"
+		(at 78.74 100.33 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify left bottom)
+		)
+		(uuid "ee87aaab-2520-4958-b230-9e4e84749bf0")
+	)
+	(label "R6"
+		(at 163.83 102.87 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f121b23c-4161-4878-b835-1db6125ac6a8")
+	)
+	(label "B6"
+		(at 168.91 102.87 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "fc730ebd-7eae-43b8-8591-8c3372d03f8b")
+	)
+	(hierarchical_label "LED_I2C{SDA,SCL}"
+		(shape input)
+		(at 214.63 49.53 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
 		)
 		(uuid "c2583ec2-e78c-4c4b-b9ee-5e3bff31992f")
 	)
 	(symbol
-		(lib_id "2026-10-25_23-53-28:CLMVC-FKA-CL1D1L71BB7C3C3")
-		(at 73.66 95.25 0)
+		(lib_id "power:+3.3V")
+		(at 35.56 53.34 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2784,53 +3338,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "016b6abe-8c38-48de-bb4b-6509b084db31")
-		(property "Reference" "LED4"
-			(at 83.82 85.09 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "CLMVC-FKA-CL1D1L71BB7C3C3"
-			(at 71.12 86.106 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "CLMVC-FKA-CL1D1L71BB7C3C3_CRE"
-			(at 73.66 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Datasheet" "CLMVC-FKA-CL1D1L71BB7C3C3"
-			(at 73.66 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 73.66 95.25 0)
+		(fields_autoplaced yes)
+		(uuid "00959138-9282-4f72-9537-2eda8b2a0f3b")
+		(property "Reference" "#PWR063"
+			(at 35.56 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2840,28 +3351,134 @@
 				)
 			)
 		)
-		(pin "3"
-			(uuid "105edd6b-ef11-4e3e-aad2-a59c480a6ccf")
+		(property "Value" "+3.3V"
+			(at 35.56 48.26 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
-		(pin "2"
-			(uuid "4f737401-6ef9-4049-aa63-d00422721967")
+		(property "Footprint" ""
+			(at 35.56 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
-		(pin "4"
-			(uuid "839b924b-11b9-47f7-bd7b-88d815d4a50b")
+		(property "Datasheet" ""
+			(at 35.56 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 35.56 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
 		(pin "1"
-			(uuid "28a2c318-71de-44cc-a99f-8ca0fb173d62")
+			(uuid "8479e56a-915a-4cc6-ab7b-1abadfd81fd4")
 		)
 		(instances
 			(project "rj-electrical-training"
-				(path "/0783e1ba-6681-4eed-b1f2-3bf58578e950"
-					(reference "LED11")
+				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/0632b31d-4233-423e-9952-6afbcd6e6916"
+					(reference "#PWR063")
 					(unit 1)
 				)
 			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 99.06 22.86 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "027a530b-54ab-476e-aec8-1677f59655e0")
+		(property "Reference" "#PWR062"
+			(at 99.06 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 99.06 17.78 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 99.06 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 99.06 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "91869154-f63a-490a-9877-4a1b9fc54fc9")
+		)
+		(instances
 			(project "rj-electrical-training"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/0632b31d-4233-423e-9952-6afbcd6e6916"
-					(reference "LED4")
+					(reference "#PWR062")
 					(unit 1)
 				)
 			)
@@ -2869,8 +3486,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 114.3 135.89 0)
-		(mirror y)
+		(at 233.68 110.49 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2878,9 +3494,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "2a37d455-f6b2-4e64-a4d7-9c15665220cd")
-		(property "Reference" "#PWR0101"
-			(at 114.3 142.24 0)
+		(uuid "0cdcad07-8003-4069-9197-a7495ad02a07")
+		(property "Reference" "#PWR0107"
+			(at 233.68 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2891,7 +3507,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 114.3 140.97 0)
+			(at 233.426 114.046 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2901,7 +3517,7 @@
 			)
 		)
 		(property "Footprint" "TCA9534PWR:SOP65P640X120-16N"
-			(at 114.3 135.89 0)
+			(at 233.68 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2912,7 +3528,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 114.3 135.89 0)
+			(at 233.68 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2923,7 +3539,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 114.3 135.89 0)
+			(at 233.68 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2934,18 +3550,642 @@
 			)
 		)
 		(pin "1"
-			(uuid "b6f0da76-590e-4600-9f1a-ecb633e9c1fd")
+			(uuid "2ba57580-8b29-4220-bded-7a56ab2f7807")
 		)
 		(instances
 			(project "rj-electrical-training"
-				(path "/0783e1ba-6681-4eed-b1f2-3bf58578e950"
-					(reference "#PWR0101")
+				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/0632b31d-4233-423e-9952-6afbcd6e6916"
+					(reference "#PWR0107")
 					(unit 1)
 				)
 			)
+		)
+	)
+	(symbol
+		(lib_id "CLMVC-FKA-CL1D1L71BB7C3C3:CLMVC-FKA-CL1D1L71BB7C3C3")
+		(at 68.58 59.69 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "13ccf69f-72d2-4676-aba8-468d18b5941a")
+		(property "Reference" "LED10"
+			(at 81.28 62.297 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "CLMVC-FKA-CL1D1L71BB7C3C3"
+			(at 82.55 62.2971 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "CLMVC-FKA-CL1D1L71BB7C3C3:LED_CLMVC-FKA-CL1D1L71BB7C3C3"
+			(at 68.58 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 68.58 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Red, Green, Blue (RGB) 622nm Red, 530nm Green, 470nm Blue LED Indication - Discrete 2V Red, 3V Green, 3V Blue 4-SMD, J-Lead"
+			(at 68.58 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "DigiKey_Part_Number" "CLMVC-FKA-CL1D1L71BB7C3C3CT-ND"
+			(at 68.58 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/CLMVC-FKA-CL1D1L71BB7C3C3/Cree/view-part/?ref=snap"
+			(at 68.58 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "1 mm"
+			(at 68.58 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Package" "SMD-4 Cree Inc."
+			(at 68.58 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/CLMVC-FKA-CL1D1L71BB7C3C3/Cree/view-part/?ref=eda"
+			(at 68.58 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 68.58 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "PARTREV" "14"
+			(at 68.58 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MF" "Cree Inc."
+			(at 68.58 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MP" "CLMVC-FKA-CL1D1L71BB7C3C3"
+			(at 68.58 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MANUFACTURER" "Cree Inc."
+			(at 68.58 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(pin "2"
+			(uuid "70c76e91-9862-4808-9202-3b075d88c396")
+		)
+		(pin "4"
+			(uuid "172ed541-5b0c-4b0e-bd7e-a77784ccea40")
+		)
+		(pin "1"
+			(uuid "12b39545-464e-4a5d-87a3-c94c217c4e8e")
+		)
+		(pin "3"
+			(uuid "c9b260c0-31c9-4a3e-b3c7-73bb64dd4804")
+		)
+		(instances
 			(project "rj-electrical-training"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/0632b31d-4233-423e-9952-6afbcd6e6916"
-					(reference "#PWR0101")
+					(reference "LED10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CLMVC-FKA-CL1D1L71BB7C3C3:CLMVC-FKA-CL1D1L71BB7C3C3")
+		(at 35.56 60.96 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "170d4a4b-8f0b-41c2-96a1-e32c262325a3")
+		(property "Reference" "LED9"
+			(at 48.26 63.567 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "CLMVC-FKA-CL1D1L71BB7C3C3"
+			(at 49.53 63.5671 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "CLMVC-FKA-CL1D1L71BB7C3C3:LED_CLMVC-FKA-CL1D1L71BB7C3C3"
+			(at 35.56 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 35.56 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Red, Green, Blue (RGB) 622nm Red, 530nm Green, 470nm Blue LED Indication - Discrete 2V Red, 3V Green, 3V Blue 4-SMD, J-Lead"
+			(at 35.56 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "DigiKey_Part_Number" "CLMVC-FKA-CL1D1L71BB7C3C3CT-ND"
+			(at 35.56 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/CLMVC-FKA-CL1D1L71BB7C3C3/Cree/view-part/?ref=snap"
+			(at 35.56 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "1 mm"
+			(at 35.56 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Package" "SMD-4 Cree Inc."
+			(at 35.56 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/CLMVC-FKA-CL1D1L71BB7C3C3/Cree/view-part/?ref=eda"
+			(at 35.56 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 35.56 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "PARTREV" "14"
+			(at 35.56 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MF" "Cree Inc."
+			(at 35.56 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MP" "CLMVC-FKA-CL1D1L71BB7C3C3"
+			(at 35.56 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MANUFACTURER" "Cree Inc."
+			(at 35.56 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(pin "2"
+			(uuid "bd735bc1-03e0-445f-852a-ae6303293a58")
+		)
+		(pin "4"
+			(uuid "b1830f41-aff5-43ee-aae3-19145239742d")
+		)
+		(pin "1"
+			(uuid "1a2c7282-81ec-48f7-a91a-104aec5c56ed")
+		)
+		(pin "3"
+			(uuid "38fb2ad9-fbe5-45a0-a0e0-d3d046078477")
+		)
+		(instances
+			(project "rj-electrical-training"
+				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/0632b31d-4233-423e-9952-6afbcd6e6916"
+					(reference "LED9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CLMVC-FKA-CL1D1L71BB7C3C3:CLMVC-FKA-CL1D1L71BB7C3C3")
+		(at 69.85 30.48 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1b68c53e-c22a-4ab4-94ea-091a2a906bcd")
+		(property "Reference" "LED2"
+			(at 82.55 33.087 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "CLMVC-FKA-CL1D1L71BB7C3C3"
+			(at 83.82 33.0871 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "CLMVC-FKA-CL1D1L71BB7C3C3:LED_CLMVC-FKA-CL1D1L71BB7C3C3"
+			(at 69.85 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 69.85 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Red, Green, Blue (RGB) 622nm Red, 530nm Green, 470nm Blue LED Indication - Discrete 2V Red, 3V Green, 3V Blue 4-SMD, J-Lead"
+			(at 69.85 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "DigiKey_Part_Number" "CLMVC-FKA-CL1D1L71BB7C3C3CT-ND"
+			(at 69.85 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/CLMVC-FKA-CL1D1L71BB7C3C3/Cree/view-part/?ref=snap"
+			(at 69.85 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "1 mm"
+			(at 69.85 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Package" "SMD-4 Cree Inc."
+			(at 69.85 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/CLMVC-FKA-CL1D1L71BB7C3C3/Cree/view-part/?ref=eda"
+			(at 69.85 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 69.85 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "PARTREV" "14"
+			(at 69.85 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MF" "Cree Inc."
+			(at 69.85 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MP" "CLMVC-FKA-CL1D1L71BB7C3C3"
+			(at 69.85 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MANUFACTURER" "Cree Inc."
+			(at 69.85 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(pin "2"
+			(uuid "3fc8f2fc-aabc-4326-824e-312c424e955e")
+		)
+		(pin "4"
+			(uuid "bc045011-1b82-475b-ab98-0595eb8aa538")
+		)
+		(pin "1"
+			(uuid "94ed1988-d571-4c36-939b-3fccf0b9d70b")
+		)
+		(pin "3"
+			(uuid "8bbb2988-a305-4a04-a830-d99f6ac89ae0")
+		)
+		(instances
+			(project "rj-electrical-training"
+				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/0632b31d-4233-423e-9952-6afbcd6e6916"
+					(reference "LED2")
 					(unit 1)
 				)
 			)
@@ -2953,7 +4193,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 121.92 46.99 0)
+		(at 233.68 106.68 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2964,7 +4204,7 @@
 		(fields_autoplaced yes)
 		(uuid "331af194-aa24-47f9-9ec4-2f9028c0896c")
 		(property "Reference" "C36"
-			(at 125.73 45.7199 0)
+			(at 237.49 105.4099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2975,7 +4215,7 @@
 			)
 		)
 		(property "Value" "0.1u"
-			(at 125.73 48.2599 0)
+			(at 237.49 107.9499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2986,7 +4226,7 @@
 			)
 		)
 		(property "Footprint" "TMAG5273C1QDBVR:SOT95P280X140-6N"
-			(at 122.8852 50.8 0)
+			(at 234.6452 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2997,7 +4237,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 121.92 46.99 0)
+			(at 233.68 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3008,7 +4248,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 121.92 46.99 0)
+			(at 233.68 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3026,12 +4266,6 @@
 		)
 		(instances
 			(project "rj-electrical-training"
-				(path "/0783e1ba-6681-4eed-b1f2-3bf58578e950"
-					(reference "C33")
-					(unit 1)
-				)
-			)
-			(project "rj-electrical-training"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/0632b31d-4233-423e-9952-6afbcd6e6916"
 					(reference "C36")
 					(unit 1)
@@ -3041,8 +4275,8 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 118.11 35.56 90)
-		(mirror x)
+		(at 241.3 86.36 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3052,7 +4286,7 @@
 		(dnp no)
 		(uuid "387cf50b-c285-45f4-b52f-0e420e100104")
 		(property "Reference" "#PWR0103"
-			(at 124.46 35.56 0)
+			(at 241.3 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3063,7 +4297,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 123.19 35.56 0)
+			(at 241.3 91.44 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3073,7 +4307,7 @@
 			)
 		)
 		(property "Footprint" "TCA9534PWR:SOP65P640X120-16N"
-			(at 118.11 35.56 0)
+			(at 241.3 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3084,7 +4318,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 118.11 35.56 0)
+			(at 241.3 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3095,7 +4329,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 118.11 35.56 0)
+			(at 241.3 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3110,12 +4344,6 @@
 		)
 		(instances
 			(project "rj-electrical-training"
-				(path "/0783e1ba-6681-4eed-b1f2-3bf58578e950"
-					(reference "#PWR0103")
-					(unit 1)
-				)
-			)
-			(project "rj-electrical-training"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/0632b31d-4233-423e-9952-6afbcd6e6916"
 					(reference "#PWR0103")
 					(unit 1)
@@ -3124,8 +4352,8 @@
 		)
 	)
 	(symbol
-		(lib_id "2026-10-25_23-53-28:CLMVC-FKA-CL1D1L71BB7C3C3")
-		(at 73.66 87.63 0)
+		(lib_id "CLMVC-FKA-CL1D1L71BB7C3C3:CLMVC-FKA-CL1D1L71BB7C3C3")
+		(at 36.83 30.48 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3133,53 +4361,21 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "39fc8618-8c86-4bfa-8a74-080d0b0c03a4")
-		(property "Reference" "LED2"
-			(at 67.564 81.28 0)
+		(fields_autoplaced yes)
+		(uuid "3941b721-1686-456a-a63d-0e3f649a2ea0")
+		(property "Reference" "LED1"
+			(at 49.53 33.087 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.524 1.524)
+					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "CLMVC-FKA-CL1D1L71BB7C3C3"
-			(at 69.088 100.584 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "CLMVC-FKA-CL1D1L71BB7C3C3_CRE"
-			(at 73.66 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Datasheet" "CLMVC-FKA-CL1D1L71BB7C3C3"
-			(at 73.66 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 73.66 87.63 0)
+			(at 50.8 33.0871 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3189,46 +4385,8 @@
 				)
 			)
 		)
-		(pin "3"
-			(uuid "67295762-871b-4048-92db-18ed68d2b62a")
-		)
-		(pin "2"
-			(uuid "28961908-1783-4718-ab72-a03e08383428")
-		)
-		(pin "4"
-			(uuid "5ecab651-2a15-4223-9dff-10f033e3f6f6")
-		)
-		(pin "1"
-			(uuid "25dd8108-e758-4fa1-aaaf-0ce37f26dc1f")
-		)
-		(instances
-			(project "rj-electrical-training"
-				(path "/0783e1ba-6681-4eed-b1f2-3bf58578e950"
-					(reference "LED10")
-					(unit 1)
-				)
-			)
-			(project "rj-electrical-training"
-				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/0632b31d-4233-423e-9952-6afbcd6e6916"
-					(reference "LED2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VDD")
-		(at 115.57 138.43 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "3a831a45-3a90-42a4-991b-339ce27b914b")
-		(property "Reference" "#PWR0102"
-			(at 111.76 138.43 0)
+		(property "Footprint" "CLMVC-FKA-CL1D1L71BB7C3C3:LED_CLMVC-FKA-CL1D1L71BB7C3C3"
+			(at 36.83 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3236,31 +4394,11 @@
 				(font
 					(size 1.27 1.27)
 				)
-			)
-		)
-		(property "Value" "3.3V"
-			(at 124.206 135.382 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "VEML3328:VEML3328"
-			(at 115.57 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
+				(justify bottom)
 			)
 		)
 		(property "Datasheet" ""
-			(at 115.57 138.43 0)
+			(at 36.83 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3270,8 +4408,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 115.57 138.43 0)
+		(property "Description" "Red, Green, Blue (RGB) 622nm Red, 530nm Green, 470nm Blue LED Indication - Discrete 2V Red, 3V Green, 3V Blue 4-SMD, J-Lead"
+			(at 36.83 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3279,29 +4417,153 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(justify bottom)
 			)
+		)
+		(property "DigiKey_Part_Number" "CLMVC-FKA-CL1D1L71BB7C3C3CT-ND"
+			(at 36.83 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/CLMVC-FKA-CL1D1L71BB7C3C3/Cree/view-part/?ref=snap"
+			(at 36.83 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "1 mm"
+			(at 36.83 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Package" "SMD-4 Cree Inc."
+			(at 36.83 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/CLMVC-FKA-CL1D1L71BB7C3C3/Cree/view-part/?ref=eda"
+			(at 36.83 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 36.83 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "PARTREV" "14"
+			(at 36.83 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MF" "Cree Inc."
+			(at 36.83 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MP" "CLMVC-FKA-CL1D1L71BB7C3C3"
+			(at 36.83 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MANUFACTURER" "Cree Inc."
+			(at 36.83 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(pin "2"
+			(uuid "62205c6f-b865-48b4-a993-a32b3bde19af")
+		)
+		(pin "4"
+			(uuid "af962213-ab4b-4b95-9bb5-1b10f4d34b65")
 		)
 		(pin "1"
-			(uuid "3253c1cf-9f1e-4234-a520-d562a62d0b4c")
+			(uuid "2d89bca9-b1cb-4bc6-a0a1-8536a4149792")
+		)
+		(pin "3"
+			(uuid "69cbff31-d74f-47d2-a275-b942eb470f7b")
 		)
 		(instances
 			(project "rj-electrical-training"
-				(path "/0783e1ba-6681-4eed-b1f2-3bf58578e950"
-					(reference "#PWR0102")
-					(unit 1)
-				)
-			)
-			(project "rj-electrical-training"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/0632b31d-4233-423e-9952-6afbcd6e6916"
-					(reference "#PWR0102")
+					(reference "LED1")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "2026-10-25_23-53-28:CLMVC-FKA-CL1D1L71BB7C3C3")
-		(at 109.22 149.86 90)
+		(lib_id "CLMVC-FKA-CL1D1L71BB7C3C3:CLMVC-FKA-CL1D1L71BB7C3C3")
+		(at 101.6 59.69 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3309,53 +4571,21 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "3c717933-c5be-4b53-acb0-8ce04a97cd38")
-		(property "Reference" "LED5"
-			(at 99.06 139.7 0)
+		(fields_autoplaced yes)
+		(uuid "3d315eab-d2ae-4c87-961c-c79d0bff72df")
+		(property "Reference" "LED11"
+			(at 114.3 62.297 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.524 1.524)
+					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "CLMVC-FKA-CL1D1L71BB7C3C3"
-			(at 90.17 134.62 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "CLMVC-FKA-CL1D1L71BB7C3C3_CRE"
-			(at 109.22 149.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Datasheet" "CLMVC-FKA-CL1D1L71BB7C3C3"
-			(at 109.22 149.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 109.22 149.86 0)
+			(at 115.57 62.2971 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3365,28 +4595,177 @@
 				)
 			)
 		)
-		(pin "3"
-			(uuid "67f56c06-10b7-4cb0-b0fb-42ea65c80f70")
+		(property "Footprint" "CLMVC-FKA-CL1D1L71BB7C3C3:LED_CLMVC-FKA-CL1D1L71BB7C3C3"
+			(at 101.6 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 101.6 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Red, Green, Blue (RGB) 622nm Red, 530nm Green, 470nm Blue LED Indication - Discrete 2V Red, 3V Green, 3V Blue 4-SMD, J-Lead"
+			(at 101.6 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "DigiKey_Part_Number" "CLMVC-FKA-CL1D1L71BB7C3C3CT-ND"
+			(at 101.6 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/CLMVC-FKA-CL1D1L71BB7C3C3/Cree/view-part/?ref=snap"
+			(at 101.6 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "1 mm"
+			(at 101.6 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Package" "SMD-4 Cree Inc."
+			(at 101.6 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/CLMVC-FKA-CL1D1L71BB7C3C3/Cree/view-part/?ref=eda"
+			(at 101.6 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 101.6 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "PARTREV" "14"
+			(at 101.6 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MF" "Cree Inc."
+			(at 101.6 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MP" "CLMVC-FKA-CL1D1L71BB7C3C3"
+			(at 101.6 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MANUFACTURER" "Cree Inc."
+			(at 101.6 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
 		)
 		(pin "2"
-			(uuid "6e5b3f5a-3f04-480c-aa17-7d8156775053")
+			(uuid "b45e6a9a-0c45-44cf-a973-1150d5b883cb")
 		)
 		(pin "4"
-			(uuid "95f7da29-f3ba-4f0a-b73b-d93072e94fd5")
+			(uuid "b0aff3ae-0a57-4723-97f3-11016403abc5")
 		)
 		(pin "1"
-			(uuid "f35163f1-7bd7-45a4-b9b2-e8868aa1f205")
+			(uuid "b25909c9-3912-498f-aa3d-e1fb8e1111b7")
+		)
+		(pin "3"
+			(uuid "6e234760-a751-4b73-92c1-a0b7cfdd3b71")
 		)
 		(instances
 			(project "rj-electrical-training"
-				(path "/0783e1ba-6681-4eed-b1f2-3bf58578e950"
-					(reference "LED12")
-					(unit 1)
-				)
-			)
-			(project "rj-electrical-training"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/0632b31d-4233-423e-9952-6afbcd6e6916"
-					(reference "LED5")
+					(reference "LED11")
 					(unit 1)
 				)
 			)
@@ -3394,7 +4773,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 134.62 46.99 0)
+		(at 246.38 106.68 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3405,7 +4784,7 @@
 		(fields_autoplaced yes)
 		(uuid "3fec8f0c-a0e5-429f-9448-7c6266c7ce97")
 		(property "Reference" "C37"
-			(at 138.43 45.7199 0)
+			(at 250.19 105.4099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3416,7 +4795,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 138.43 48.2599 0)
+			(at 250.19 107.9499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3427,7 +4806,7 @@
 			)
 		)
 		(property "Footprint" "TMAG5273C1QDBVR:SOT95P280X140-6N"
-			(at 135.5852 50.8 0)
+			(at 247.3452 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3438,7 +4817,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 134.62 46.99 0)
+			(at 246.38 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3449,7 +4828,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 134.62 46.99 0)
+			(at 246.38 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3467,12 +4846,6 @@
 		)
 		(instances
 			(project "rj-electrical-training"
-				(path "/0783e1ba-6681-4eed-b1f2-3bf58578e950"
-					(reference "C34")
-					(unit 1)
-				)
-			)
-			(project "rj-electrical-training"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/0632b31d-4233-423e-9952-6afbcd6e6916"
 					(reference "C37")
 					(unit 1)
@@ -3481,101 +4854,8 @@
 		)
 	)
 	(symbol
-		(lib_id "2026-10-25_23-53-28:CLMVC-FKA-CL1D1L71BB7C3C3")
-		(at 154.94 92.71 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "5048bc52-7b96-47b3-b4e6-85f55a11739f")
-		(property "Reference" "LED9"
-			(at 144.78 102.87 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "CLMVC-FKA-CL1D1L71BB7C3C3"
-			(at 144.78 100.33 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "CLMVC-FKA-CL1D1L71BB7C3C3_CRE"
-			(at 154.94 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Datasheet" "CLMVC-FKA-CL1D1L71BB7C3C3"
-			(at 154.94 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 154.94 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "76bda10e-b8bb-4e82-a024-67ff743a44d1")
-		)
-		(pin "2"
-			(uuid "4c587715-f25e-4387-adc5-2f349514078d")
-		)
-		(pin "4"
-			(uuid "50998a83-6ad3-4de4-93cc-0539e84baebf")
-		)
-		(pin "1"
-			(uuid "89b00295-35bd-4850-8667-2688704fb9db")
-		)
-		(instances
-			(project "rj-electrical-training"
-				(path "/0783e1ba-6681-4eed-b1f2-3bf58578e950"
-					(reference "LED16")
-					(unit 1)
-				)
-			)
-			(project "rj-electrical-training"
-				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/0632b31d-4233-423e-9952-6afbcd6e6916"
-					(reference "LED9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "2026-10-25_23-53-28:CLMVC-FKA-CL1D1L71BB7C3C3")
-		(at 119.38 149.86 90)
+		(lib_id "CLMVC-FKA-CL1D1L71BB7C3C3:CLMVC-FKA-CL1D1L71BB7C3C3")
+		(at 99.06 30.48 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3584,55 +4864,20 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "5c55cdff-3e28-438b-8197-976678ac4b50")
-		(property "Reference" "LED6"
-			(at 125.73 138.4299 90)
+		(uuid "4bc89ce9-46f8-497d-8ce2-4503716115c7")
+		(property "Reference" "LED3"
+			(at 111.76 33.087 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.524 1.524)
+					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Value" "CLMVC-FKA-CL1D1L71BB7C3C3"
-			(at 125.73 140.9699 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "CLMVC-FKA-CL1D1L71BB7C3C3_CRE"
-			(at 119.38 149.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Datasheet" "CLMVC-FKA-CL1D1L71BB7C3C3"
-			(at 119.38 149.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 119.38 149.86 0)
+			(at 113.03 33.0871 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3642,28 +4887,177 @@
 				)
 			)
 		)
-		(pin "3"
-			(uuid "d72ab4bd-f96f-4d54-8515-50d76afb64d3")
+		(property "Footprint" "CLMVC-FKA-CL1D1L71BB7C3C3:LED_CLMVC-FKA-CL1D1L71BB7C3C3"
+			(at 99.06 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Red, Green, Blue (RGB) 622nm Red, 530nm Green, 470nm Blue LED Indication - Discrete 2V Red, 3V Green, 3V Blue 4-SMD, J-Lead"
+			(at 99.06 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "DigiKey_Part_Number" "CLMVC-FKA-CL1D1L71BB7C3C3CT-ND"
+			(at 99.06 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/CLMVC-FKA-CL1D1L71BB7C3C3/Cree/view-part/?ref=snap"
+			(at 99.06 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "1 mm"
+			(at 99.06 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Package" "SMD-4 Cree Inc."
+			(at 99.06 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/CLMVC-FKA-CL1D1L71BB7C3C3/Cree/view-part/?ref=eda"
+			(at 99.06 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 99.06 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "PARTREV" "14"
+			(at 99.06 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MF" "Cree Inc."
+			(at 99.06 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MP" "CLMVC-FKA-CL1D1L71BB7C3C3"
+			(at 99.06 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MANUFACTURER" "Cree Inc."
+			(at 99.06 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
 		)
 		(pin "2"
-			(uuid "fcf07151-fa7c-4485-8cee-0a5dc33161e6")
+			(uuid "d4a16759-951f-4cc7-a84b-607d43ed2d1d")
 		)
 		(pin "4"
-			(uuid "64e8923f-f856-4b0e-87b1-1f034d4814f8")
+			(uuid "135960fe-6f40-4883-b99f-272731480cdc")
 		)
 		(pin "1"
-			(uuid "14d0c491-ba07-419c-9fcd-60b5f1167c13")
+			(uuid "4a0e6108-358b-48f5-93cc-96a3bcb08795")
+		)
+		(pin "3"
+			(uuid "e4149dca-a730-4901-9c08-d85ff14d01fa")
 		)
 		(instances
 			(project "rj-electrical-training"
-				(path "/0783e1ba-6681-4eed-b1f2-3bf58578e950"
-					(reference "LED13")
-					(unit 1)
-				)
-			)
-			(project "rj-electrical-training"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/0632b31d-4233-423e-9952-6afbcd6e6916"
-					(reference "LED6")
+					(reference "LED3")
 					(unit 1)
 				)
 			)
@@ -3671,7 +5065,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 139.7 43.18 270)
+		(at 251.46 102.87 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3679,10 +5073,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "609df917-fae0-4ecd-a921-b096a22f1729")
 		(property "Reference" "#PWR0106"
-			(at 135.89 43.18 0)
+			(at 251.46 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3693,7 +5086,7 @@
 			)
 		)
 		(property "Value" "3.3V"
-			(at 144.78 43.18 0)
+			(at 251.46 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3703,7 +5096,7 @@
 			)
 		)
 		(property "Footprint" "Package_DFN_QFN:Diodes_UDFN3810-9_TYPE_B"
-			(at 139.7 43.18 0)
+			(at 251.46 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3714,7 +5107,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 139.7 43.18 0)
+			(at 251.46 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3725,7 +5118,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 139.7 43.18 0)
+			(at 251.46 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3740,12 +5133,6 @@
 		)
 		(instances
 			(project "rj-electrical-training"
-				(path "/0783e1ba-6681-4eed-b1f2-3bf58578e950"
-					(reference "#PWR0106")
-					(unit 1)
-				)
-			)
-			(project "rj-electrical-training"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/0632b31d-4233-423e-9952-6afbcd6e6916"
 					(reference "#PWR0106")
 					(unit 1)
@@ -3755,8 +5142,8 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 104.14 44.45 0)
-		(mirror x)
+		(at 223.52 72.39 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3766,7 +5153,7 @@
 		(dnp no)
 		(uuid "68234f3c-5a3e-4acb-a1c5-6d4e89c54297")
 		(property "Reference" "#PWR0100"
-			(at 104.14 38.1 0)
+			(at 223.52 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3777,7 +5164,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 99.822 41.148 0)
+			(at 227.838 75.692 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3787,7 +5174,7 @@
 			)
 		)
 		(property "Footprint" "TCA9534PWR:SOP65P640X120-16N"
-			(at 104.14 44.45 0)
+			(at 223.52 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3798,7 +5185,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 104.14 44.45 0)
+			(at 223.52 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3809,7 +5196,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 104.14 44.45 0)
+			(at 223.52 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3824,12 +5211,6 @@
 		)
 		(instances
 			(project "rj-electrical-training"
-				(path "/0783e1ba-6681-4eed-b1f2-3bf58578e950"
-					(reference "#PWR0100")
-					(unit 1)
-				)
-			)
-			(project "rj-electrical-training"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/0632b31d-4233-423e-9952-6afbcd6e6916"
 					(reference "#PWR0100")
 					(unit 1)
@@ -3839,7 +5220,7 @@
 	)
 	(symbol
 		(lib_id "power:VDD")
-		(at 123.19 54.61 270)
+		(at 210.82 91.44 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3847,10 +5228,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "7eb3abee-1d5e-4998-af06-b6437dc7426a")
 		(property "Reference" "#PWR0104"
-			(at 119.38 54.61 0)
+			(at 210.82 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3861,7 +5241,7 @@
 			)
 		)
 		(property "Value" "3.3V"
-			(at 127 54.6099 90)
+			(at 209.804 92.964 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3872,7 +5252,7 @@
 			)
 		)
 		(property "Footprint" "Package_QFP:TQFP-44_10x10mm_P0.8mm"
-			(at 123.19 54.61 0)
+			(at 210.82 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3883,7 +5263,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 123.19 54.61 0)
+			(at 210.82 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3894,7 +5274,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 123.19 54.61 0)
+			(at 210.82 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3909,12 +5289,6 @@
 		)
 		(instances
 			(project "rj-electrical-training"
-				(path "/0783e1ba-6681-4eed-b1f2-3bf58578e950"
-					(reference "#PWR0104")
-					(unit 1)
-				)
-			)
-			(project "rj-electrical-training"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/0632b31d-4233-423e-9952-6afbcd6e6916"
 					(reference "#PWR0104")
 					(unit 1)
@@ -3923,8 +5297,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VDD")
-		(at 163.83 85.09 270)
+		(lib_id "power:+3.3V")
+		(at 69.85 22.86 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3933,9 +5307,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "7ff58619-16ff-48a3-8251-3e1f03d5b794")
-		(property "Reference" "#PWR0107"
-			(at 160.02 85.09 0)
+		(uuid "7f49ca9c-5ee2-4e9e-92d0-54b3be8b13ca")
+		(property "Reference" "#PWR061"
+			(at 69.85 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3945,19 +5319,18 @@
 				)
 			)
 		)
-		(property "Value" "3.3V"
-			(at 167.64 85.0899 90)
+		(property "Value" "+3.3V"
+			(at 69.85 17.78 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 163.83 85.09 0)
+			(at 69.85 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3968,7 +5341,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 163.83 85.09 0)
+			(at 69.85 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3978,8 +5351,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 163.83 85.09 0)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 69.85 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3990,26 +5363,20 @@
 			)
 		)
 		(pin "1"
-			(uuid "b8c191fb-c87c-4222-9aeb-ebe8e1a7d50f")
+			(uuid "1097f2cc-01ca-43a8-9243-631be4980243")
 		)
 		(instances
 			(project "rj-electrical-training"
-				(path "/0783e1ba-6681-4eed-b1f2-3bf58578e950"
-					(reference "#PWR0107")
-					(unit 1)
-				)
-			)
-			(project "rj-electrical-training"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/0632b31d-4233-423e-9952-6afbcd6e6916"
-					(reference "#PWR0107")
+					(reference "#PWR061")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 111.76 40.64 180)
+		(lib_id "power:+3.3V")
+		(at 35.56 82.55 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4018,31 +5385,30 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "910ce6d0-ff9c-49e8-a89f-900e360c5a16")
-		(property "Reference" "R18"
-			(at 109.22 41.9101 0)
+		(uuid "85de925e-a49d-424b-ac35-e61d87f5e321")
+		(property "Reference" "#PWR074"
+			(at 35.56 86.36 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "3.3K"
-			(at 109.22 39.3701 0)
+		(property "Value" "+3.3V"
+			(at 35.56 77.47 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "QFN40P400X400X80-33N-D"
-			(at 113.538 40.64 90)
+		(property "Footprint" ""
+			(at 35.56 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4053,7 +5419,86 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 111.76 40.64 0)
+			(at 35.56 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 35.56 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1e575186-c116-4142-b9e8-30585e8c4dcd")
+		)
+		(instances
+			(project "rj-electrical-training"
+				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/0632b31d-4233-423e-9952-6afbcd6e6916"
+					(reference "#PWR074")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 218.44 80.01 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "910ce6d0-ff9c-49e8-a89f-900e360c5a16")
+		(property "Reference" "R18"
+			(at 217.1699 77.47 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "3.3K"
+			(at 219.7099 77.47 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "QFN40P400X400X80-33N-D"
+			(at 218.44 81.788 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 218.44 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4064,7 +5509,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 111.76 40.64 0)
+			(at 218.44 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4082,12 +5527,6 @@
 		)
 		(instances
 			(project "rj-electrical-training"
-				(path "/0783e1ba-6681-4eed-b1f2-3bf58578e950"
-					(reference "R25")
-					(unit 1)
-				)
-			)
-			(project "rj-electrical-training"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/0632b31d-4233-423e-9952-6afbcd6e6916"
 					(reference "R18")
 					(unit 1)
@@ -4096,194 +5535,8 @@
 		)
 	)
 	(symbol
-		(lib_id "2026-10-25_23-53-28:CLMVC-FKA-CL1D1L71BB7C3C3")
-		(at 154.94 85.09 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "d5b028a5-5374-4be3-a303-ae247ee18b89")
-		(property "Reference" "LED8"
-			(at 144.78 95.25 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "CLMVC-FKA-CL1D1L71BB7C3C3"
-			(at 144.78 92.71 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "CLMVC-FKA-CL1D1L71BB7C3C3_CRE"
-			(at 154.94 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Datasheet" "CLMVC-FKA-CL1D1L71BB7C3C3"
-			(at 154.94 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 154.94 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "b405d41c-d31b-4e17-875e-0f8282a3756d")
-		)
-		(pin "2"
-			(uuid "2aee938d-116b-438e-8bb3-bfb1517bfda3")
-		)
-		(pin "4"
-			(uuid "f0834565-ec84-4ee7-a75a-365b0dce9b94")
-		)
-		(pin "1"
-			(uuid "a7aca88d-daa7-4658-aa3b-3dfefe45709b")
-		)
-		(instances
-			(project "rj-electrical-training"
-				(path "/0783e1ba-6681-4eed-b1f2-3bf58578e950"
-					(reference "LED15")
-					(unit 1)
-				)
-			)
-			(project "rj-electrical-training"
-				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/0632b31d-4233-423e-9952-6afbcd6e6916"
-					(reference "LED8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "2026-10-25_23-53-28:CLMVC-FKA-CL1D1L71BB7C3C3")
-		(at 154.94 77.47 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "de1318da-ddf5-414f-80e5-aed6a1fb6594")
-		(property "Reference" "LED7"
-			(at 144.78 87.63 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "CLMVC-FKA-CL1D1L71BB7C3C3"
-			(at 144.78 85.09 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "CLMVC-FKA-CL1D1L71BB7C3C3_CRE"
-			(at 154.94 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Datasheet" "CLMVC-FKA-CL1D1L71BB7C3C3"
-			(at 154.94 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 154.94 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "4c46964b-1125-436e-85fd-1f83b9dc9171")
-		)
-		(pin "2"
-			(uuid "075b4db5-8a8a-42b8-a824-521fef0c138b")
-		)
-		(pin "4"
-			(uuid "dc148fda-383f-43f4-bc06-fe877765b921")
-		)
-		(pin "1"
-			(uuid "34dff0dc-49f3-474b-a7a6-91ea807a4d22")
-		)
-		(instances
-			(project "rj-electrical-training"
-				(path "/0783e1ba-6681-4eed-b1f2-3bf58578e950"
-					(reference "LED14")
-					(unit 1)
-				)
-			)
-			(project "rj-electrical-training"
-				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/0632b31d-4233-423e-9952-6afbcd6e6916"
-					(reference "LED7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "2026-10-25_23-53-28:CLMVC-FKA-CL1D1L71BB7C3C3")
-		(at 73.66 80.01 0)
+		(lib_id "CLMVC-FKA-CL1D1L71BB7C3C3:CLMVC-FKA-CL1D1L71BB7C3C3")
+		(at 35.56 90.17 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4292,53 +5545,20 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "e18853d8-a39f-4156-9f4c-98f9ecbf0938")
-		(property "Reference" "LED1"
-			(at 83.82 69.85 0)
+		(uuid "99d78558-a309-46cd-83dc-34d1385e2b5f")
+		(property "Reference" "LED12"
+			(at 48.26 92.777 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.524 1.524)
+					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "CLMVC-FKA-CL1D1L71BB7C3C3"
-			(at 83.82 72.39 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "CLMVC-FKA-CL1D1L71BB7C3C3_CRE"
-			(at 73.66 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Datasheet" "CLMVC-FKA-CL1D1L71BB7C3C3"
-			(at 73.66 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 73.66 80.01 0)
+			(at 49.53 92.7771 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4348,28 +5568,177 @@
 				)
 			)
 		)
-		(pin "3"
-			(uuid "1fee1022-e443-41b5-a394-84ddbf33e1a5")
+		(property "Footprint" "CLMVC-FKA-CL1D1L71BB7C3C3:LED_CLMVC-FKA-CL1D1L71BB7C3C3"
+			(at 35.56 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 35.56 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Red, Green, Blue (RGB) 622nm Red, 530nm Green, 470nm Blue LED Indication - Discrete 2V Red, 3V Green, 3V Blue 4-SMD, J-Lead"
+			(at 35.56 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "DigiKey_Part_Number" "CLMVC-FKA-CL1D1L71BB7C3C3CT-ND"
+			(at 35.56 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/CLMVC-FKA-CL1D1L71BB7C3C3/Cree/view-part/?ref=snap"
+			(at 35.56 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "1 mm"
+			(at 35.56 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Package" "SMD-4 Cree Inc."
+			(at 35.56 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/CLMVC-FKA-CL1D1L71BB7C3C3/Cree/view-part/?ref=eda"
+			(at 35.56 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 35.56 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "PARTREV" "14"
+			(at 35.56 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MF" "Cree Inc."
+			(at 35.56 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MP" "CLMVC-FKA-CL1D1L71BB7C3C3"
+			(at 35.56 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MANUFACTURER" "Cree Inc."
+			(at 35.56 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
 		)
 		(pin "2"
-			(uuid "eff3c21d-8a8e-43bf-9992-300d1cf4c307")
+			(uuid "f1bdd354-20ec-4618-8f47-d4078c172959")
 		)
 		(pin "4"
-			(uuid "089e0209-6b44-466c-b007-15a82a5e2e77")
+			(uuid "42e6c1e0-77d4-4cb0-a770-e1b0e29a1246")
 		)
 		(pin "1"
-			(uuid "b0926718-b630-47a6-9c00-d683370d99d3")
+			(uuid "37181e23-e845-4ae7-a7e2-c605699b6cc2")
+		)
+		(pin "3"
+			(uuid "83a35846-d723-42ae-af13-5700501bf4a8")
 		)
 		(instances
 			(project "rj-electrical-training"
-				(path "/0783e1ba-6681-4eed-b1f2-3bf58578e950"
-					(reference "LED3")
-					(unit 1)
-				)
-			)
-			(project "rj-electrical-training"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/0632b31d-4233-423e-9952-6afbcd6e6916"
-					(reference "LED1")
+					(reference "LED12")
 					(unit 1)
 				)
 			)
@@ -4377,7 +5746,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 134.62 50.8 0)
+		(at 217.17 87.63 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4385,9 +5754,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "eeaa9377-f4b1-44a5-96f5-aee684645bf9")
-		(property "Reference" "#PWR0105"
-			(at 134.62 57.15 0)
+		(uuid "9b43f5f5-74c2-4202-9345-f38d3f4d621c")
+		(property "Reference" "#PWR0108"
+			(at 217.17 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4398,7 +5767,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 139.7 53.086 0)
+			(at 216.916 91.186 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4408,7 +5777,7 @@
 			)
 		)
 		(property "Footprint" "TCA9534PWR:SOP65P640X120-16N"
-			(at 134.62 50.8 0)
+			(at 217.17 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4419,7 +5788,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 134.62 50.8 0)
+			(at 217.17 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4430,7 +5799,529 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 134.62 50.8 0)
+			(at 217.17 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c07d75e1-373c-4294-bd14-9e9cb7f0a5d4")
+		)
+		(instances
+			(project "rj-electrical-training"
+				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/0632b31d-4233-423e-9952-6afbcd6e6916"
+					(reference "#PWR0108")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CLMVC-FKA-CL1D1L71BB7C3C3:CLMVC-FKA-CL1D1L71BB7C3C3")
+		(at 71.12 88.9 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9f5cae97-8aa8-4efb-b6c7-42ea25dc5dd7")
+		(property "Reference" "LED13"
+			(at 83.82 91.507 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "CLMVC-FKA-CL1D1L71BB7C3C3"
+			(at 85.09 91.5071 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "CLMVC-FKA-CL1D1L71BB7C3C3:LED_CLMVC-FKA-CL1D1L71BB7C3C3"
+			(at 71.12 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 71.12 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Red, Green, Blue (RGB) 622nm Red, 530nm Green, 470nm Blue LED Indication - Discrete 2V Red, 3V Green, 3V Blue 4-SMD, J-Lead"
+			(at 71.12 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "DigiKey_Part_Number" "CLMVC-FKA-CL1D1L71BB7C3C3CT-ND"
+			(at 71.12 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/CLMVC-FKA-CL1D1L71BB7C3C3/Cree/view-part/?ref=snap"
+			(at 71.12 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "1 mm"
+			(at 71.12 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Package" "SMD-4 Cree Inc."
+			(at 71.12 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/CLMVC-FKA-CL1D1L71BB7C3C3/Cree/view-part/?ref=eda"
+			(at 71.12 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 71.12 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "PARTREV" "14"
+			(at 71.12 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MF" "Cree Inc."
+			(at 71.12 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MP" "CLMVC-FKA-CL1D1L71BB7C3C3"
+			(at 71.12 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MANUFACTURER" "Cree Inc."
+			(at 71.12 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(pin "2"
+			(uuid "c46094d5-1a2d-412d-9c28-e143886cd9a2")
+		)
+		(pin "4"
+			(uuid "bb8dea21-60c3-4c89-bf5b-1ddd2bbdafc5")
+		)
+		(pin "1"
+			(uuid "7877a0e7-e0e4-471f-98b0-7d7f00ee59ba")
+		)
+		(pin "3"
+			(uuid "3cf69e1c-c23e-4d79-87db-689ef8526239")
+		)
+		(instances
+			(project "rj-electrical-training"
+				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/0632b31d-4233-423e-9952-6afbcd6e6916"
+					(reference "LED13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 71.12 81.28 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b445ccd4-dc1b-48d9-9619-57a467ec62bd")
+		(property "Reference" "#PWR075"
+			(at 71.12 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 71.12 76.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 71.12 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 71.12 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 71.12 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9929607a-f256-4c06-9ab0-2e8184a39112")
+		)
+		(instances
+			(project "rj-electrical-training"
+				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/0632b31d-4233-423e-9952-6afbcd6e6916"
+					(reference "#PWR075")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 132.08 82.55 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "df41aaef-1019-4aa7-a0eb-99a72baa019c")
+		(property "Reference" "#PWR076"
+			(at 132.08 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 134.62 83.8199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 132.08 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 132.08 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ec982368-d00d-4a1c-86d2-78c257443201")
+		)
+		(instances
+			(project "rj-electrical-training"
+				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/0632b31d-4233-423e-9952-6afbcd6e6916"
+					(reference "#PWR076")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 68.58 52.07 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e5fd6679-fa0a-44b7-9fd4-3d59bf76e902")
+		(property "Reference" "#PWR064"
+			(at 68.58 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 68.58 46.99 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 68.58 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 68.58 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 68.58 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8f155fec-3899-41d6-9ecb-57f5fd1dc31b")
+		)
+		(instances
+			(project "rj-electrical-training"
+				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/0632b31d-4233-423e-9952-6afbcd6e6916"
+					(reference "#PWR064")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 246.38 110.49 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "eeaa9377-f4b1-44a5-96f5-aee684645bf9")
+		(property "Reference" "#PWR0105"
+			(at 246.38 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 246.126 114.046 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TCA9534PWR:SOP65P640X120-16N"
+			(at 246.38 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 246.38 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 246.38 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4445,12 +6336,6 @@
 		)
 		(instances
 			(project "rj-electrical-training"
-				(path "/0783e1ba-6681-4eed-b1f2-3bf58578e950"
-					(reference "#PWR0105")
-					(unit 1)
-				)
-			)
-			(project "rj-electrical-training"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/0632b31d-4233-423e-9952-6afbcd6e6916"
 					(reference "#PWR0105")
 					(unit 1)
@@ -4459,8 +6344,86 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 101.6 52.07 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f46ac5f4-3b8f-41de-ba82-545ad01629f2")
+		(property "Reference" "#PWR073"
+			(at 101.6 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 101.6 46.99 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 101.6 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 101.6 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 101.6 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2fa17500-7499-4764-bf28-9121f6fce479")
+		)
+		(instances
+			(project "rj-electrical-training"
+				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/0632b31d-4233-423e-9952-6afbcd6e6916"
+					(reference "#PWR073")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "IS31FL3254-QFLS4-TR:IS31FL3254-QFLS4-TR")
-		(at 93.98 77.47 0)
+		(at 181.61 62.23 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4470,7 +6433,7 @@
 		(dnp no)
 		(uuid "fd7546dc-8cd3-44f7-b844-c1911075d5e6")
 		(property "Reference" "IC4"
-			(at 142.24 71.0498 0)
+			(at 188.0302 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4481,7 +6444,8 @@
 			)
 		)
 		(property "Value" "IS31FL3254-QFLS4-TR"
-			(at 84.582 61.722 0)
+			(at 197.358 52.832 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4491,7 +6455,7 @@
 			)
 		)
 		(property "Footprint" "QFN40P400X400X80-33N-D"
-			(at 130.81 159.69 0)
+			(at 99.39 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4503,7 +6467,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lumissil.com/assets/pdf/core/IS31FL3254_DS.pdf"
-			(at 130.81 259.69 0)
+			(at -0.61 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4515,7 +6479,7 @@
 			)
 		)
 		(property "Description" "24-CHANNEL LED DRIVER, QFN-32, 4mm4mm, T&R"
-			(at 93.98 77.47 0)
+			(at 181.61 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4526,7 +6490,7 @@
 			)
 		)
 		(property "Height" "0.8"
-			(at 130.81 459.69 0)
+			(at -200.61 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4538,7 +6502,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Lumissil Microsystems"
-			(at 130.81 559.69 0)
+			(at -300.61 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4550,7 +6514,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "IS31FL3254-QFLS4-TR"
-			(at 130.81 659.69 0)
+			(at -400.61 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4562,7 +6526,7 @@
 			)
 		)
 		(property "Mouser Part Number" ""
-			(at 130.81 759.69 0)
+			(at -500.61 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4574,7 +6538,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" ""
-			(at 130.81 859.69 0)
+			(at -600.61 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4586,7 +6550,7 @@
 			)
 		)
 		(property "Arrow Part Number" "IS31FL3254-QFLS4-TR"
-			(at 130.81 959.69 0)
+			(at -700.61 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4598,7 +6562,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/is31fl3254-qfls4-tr/lumissil-microsystems.html?utm_currency=USD&region=nac"
-			(at 130.81 1059.69 0)
+			(at -800.61 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4710,12 +6674,6 @@
 		)
 		(instances
 			(project "rj-electrical-training"
-				(path "/0783e1ba-6681-4eed-b1f2-3bf58578e950"
-					(reference "IC2")
-					(unit 1)
-				)
-			)
-			(project "rj-electrical-training"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/0632b31d-4233-423e-9952-6afbcd6e6916"
 					(reference "IC4")
 					(unit 1)
@@ -4724,8 +6682,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 63.5 87.63 90)
+		(lib_id "power:+3.3V")
+		(at 36.83 22.86 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4734,9 +6692,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "fe98d627-f2d5-4d1e-b555-9ca4cf89fab2")
-		(property "Reference" "#PWR099"
-			(at 67.31 87.63 0)
+		(uuid "ffecfa41-bdc0-4c60-a233-cf2689de7622")
+		(property "Reference" "#PWR060"
+			(at 36.83 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4746,19 +6704,18 @@
 				)
 			)
 		)
-		(property "Value" "3.3V"
-			(at 59.69 87.6299 90)
+		(property "Value" "+3.3V"
+			(at 36.83 17.78 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:Diodes_UDFN3810-9_TYPE_B"
-			(at 63.5 87.63 0)
+		(property "Footprint" ""
+			(at 36.83 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4769,7 +6726,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 63.5 87.63 0)
+			(at 36.83 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4779,8 +6736,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 63.5 87.63 0)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 36.83 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4791,18 +6748,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "ca79d5a9-4ffa-468e-9c8f-dc4557d4ccf0")
+			(uuid "b1476003-7a8e-4212-b88f-f3b5fea55018")
 		)
 		(instances
 			(project "rj-electrical-training"
-				(path "/0783e1ba-6681-4eed-b1f2-3bf58578e950"
-					(reference "#PWR099")
-					(unit 1)
-				)
-			)
-			(project "rj-electrical-training"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/0632b31d-4233-423e-9952-6afbcd6e6916"
-					(reference "#PWR099")
+					(reference "#PWR060")
 					(unit 1)
 				)
 			)

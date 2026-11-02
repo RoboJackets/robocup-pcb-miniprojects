@@ -744,28 +744,10 @@
 		(uuid "dffaefe6-ff7f-452b-97f2-5e5f5e832c7b")
 	)
 	(junction
-		(at 80.01 64.77)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2497fe66-b253-4103-954a-18c0a706a62e")
-	)
-	(junction
 		(at 76.2 59.69)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5d669407-5f8a-475e-be19-4e3f88311c61")
-	)
-	(junction
-		(at 80.01 67.31)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b99cf3c4-7ec7-4921-aed7-ae6aed83f639")
-	)
-	(junction
-		(at 48.26 67.31)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d075bcdf-baf4-4ae0-882c-9c909490b1b4")
 	)
 	(no_connect
 		(at 49.53 64.77)
@@ -803,17 +785,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 67.31) (xy 48.26 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "274a5f8d-1bb4-459f-918b-caa1cb642eee")
-	)
-	(wire
-		(pts
-			(xy 74.93 62.23) (xy 80.01 62.23)
+			(xy 74.93 62.23) (xy 83.82 62.23)
 		)
 		(stroke
 			(width 0)
@@ -823,7 +795,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 67.31) (xy 80.01 69.85)
+			(xy 77.47 67.31) (xy 77.47 69.85)
 		)
 		(stroke
 			(width 0)
@@ -853,16 +825,6 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 62.23) (xy 80.01 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5d599eee-e19e-4687-8e82-5543577bb8d4")
-	)
-	(wire
-		(pts
 			(xy 33.02 54.61) (xy 33.02 64.77)
 		)
 		(stroke
@@ -883,17 +845,17 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 64.77) (xy 48.26 64.77)
+			(xy 81.28 64.77) (xy 74.93 64.77)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7ed077e6-6257-43f3-a0fa-193f604e8e7b")
+		(uuid "8d248ecd-21d2-4888-b803-8310dd35e412")
 	)
 	(wire
 		(pts
-			(xy 74.93 67.31) (xy 80.01 67.31)
+			(xy 74.93 67.31) (xy 77.47 67.31)
 		)
 		(stroke
 			(width 0)
@@ -913,16 +875,6 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 64.77) (xy 80.01 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b1029579-1a3c-4a90-83e9-f23cbd0a2719")
-	)
-	(wire
-		(pts
 			(xy 45.72 68.58) (xy 45.72 67.31)
 		)
 		(stroke
@@ -933,33 +885,13 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 64.77) (xy 48.26 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d3648aa4-7c54-49f6-966c-68fd5f893262")
-	)
-	(wire
-		(pts
-			(xy 48.26 67.31) (xy 49.53 67.31)
+			(xy 45.72 67.31) (xy 49.53 67.31)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "ec264d9b-4f39-4305-b0c9-9da0a2e834a1")
-	)
-	(wire
-		(pts
-			(xy 74.93 64.77) (xy 80.01 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f0a4ed26-bca7-4a83-8455-5e1d4a4c2787")
 	)
 	(bus
 		(pts
@@ -1011,6 +943,84 @@
 			(justify left)
 		)
 		(uuid "dba9f59a-a22a-4568-b8c9-fd380a6af17d")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 83.82 62.23 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "20102d53-b481-4efc-9983-82f773926fe8")
+		(property "Reference" "#PWR0101"
+			(at 83.82 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 83.82 67.31 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TCA9534PWR:SOP65P640X120-16N"
+			(at 83.82 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 83.82 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "94a8cf10-966e-4ab7-8849-dcceb4e5cfd9")
+		)
+		(instances
+			(project "rj-electrical-training"
+				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/bd0d0ebd-78c1-4588-9d9a-8ef1cecd8ae1"
+					(reference "#PWR0101")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:VCC")
@@ -1083,14 +1093,86 @@
 		)
 		(instances
 			(project "rj-electrical-training"
-				(path "/54766ed6-70fd-4739-8d8b-fa1d21bd3099"
+				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/bd0d0ebd-78c1-4588-9d9a-8ef1cecd8ae1"
 					(reference "#PWR089")
 					(unit 1)
 				)
 			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 33.02 64.77 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "688ff93b-5848-41ad-b0dd-8fbdf0b7fb83")
+		(property "Reference" "#PWR097"
+			(at 33.02 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 33.02 69.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TCA9534PWR:SOP65P640X120-16N"
+			(at 33.02 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 33.02 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 33.02 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2d295dfe-0fbd-458f-bac2-e44865f664fe")
+		)
+		(instances
 			(project "rj-electrical-training"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/bd0d0ebd-78c1-4588-9d9a-8ef1cecd8ae1"
-					(reference "#PWR089")
+					(reference "#PWR097")
 					(unit 1)
 				)
 			)
@@ -1166,12 +1248,6 @@
 			(uuid "f13adbc0-58ba-4969-be31-126ae5968dfb")
 		)
 		(instances
-			(project "rj-electrical-training"
-				(path "/54766ed6-70fd-4739-8d8b-fa1d21bd3099"
-					(reference "#PWR088")
-					(unit 1)
-				)
-			)
 			(project "rj-electrical-training"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/bd0d0ebd-78c1-4588-9d9a-8ef1cecd8ae1"
 					(reference "#PWR088")
@@ -1254,12 +1330,6 @@
 			(uuid "1ba8190f-9fb8-4a83-abde-8f848b3ed882")
 		)
 		(instances
-			(project "rj-electrical-training"
-				(path "/54766ed6-70fd-4739-8d8b-fa1d21bd3099"
-					(reference "C29")
-					(unit 1)
-				)
-			)
 			(project "rj-electrical-training"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/bd0d0ebd-78c1-4588-9d9a-8ef1cecd8ae1"
 					(reference "C23")
@@ -1445,12 +1515,6 @@
 		)
 		(instances
 			(project "rj-electrical-training"
-				(path "/54766ed6-70fd-4739-8d8b-fa1d21bd3099"
-					(reference "IC3")
-					(unit 1)
-				)
-			)
-			(project "rj-electrical-training"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/bd0d0ebd-78c1-4588-9d9a-8ef1cecd8ae1"
 					(reference "IC1")
 					(unit 1)
@@ -1460,7 +1524,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 80.01 69.85 0)
+		(at 77.47 69.85 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1471,7 +1535,7 @@
 		(fields_autoplaced yes)
 		(uuid "96c2fbba-6f17-436e-b0a5-d0d6450c64af")
 		(property "Reference" "#PWR090"
-			(at 80.01 76.2 0)
+			(at 77.47 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1482,7 +1546,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 80.01 74.93 0)
+			(at 77.47 74.93 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1492,7 +1556,7 @@
 			)
 		)
 		(property "Footprint" "TCA9534PWR:SOP65P640X120-16N"
-			(at 80.01 69.85 0)
+			(at 77.47 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1503,7 +1567,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 80.01 69.85 0)
+			(at 77.47 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1514,7 +1578,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 80.01 69.85 0)
+			(at 77.47 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1529,14 +1593,86 @@
 		)
 		(instances
 			(project "rj-electrical-training"
-				(path "/54766ed6-70fd-4739-8d8b-fa1d21bd3099"
+				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/bd0d0ebd-78c1-4588-9d9a-8ef1cecd8ae1"
 					(reference "#PWR090")
 					(unit 1)
 				)
 			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 81.28 64.77 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b1c51fde-b391-46dc-ae46-238f69147a79")
+		(property "Reference" "#PWR0102"
+			(at 81.28 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 81.28 69.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TCA9534PWR:SOP65P640X120-16N"
+			(at 81.28 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 81.28 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c8079ca9-a08c-4f09-81ff-6824e5b5e8eb")
+		)
+		(instances
 			(project "rj-electrical-training"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/bd0d0ebd-78c1-4588-9d9a-8ef1cecd8ae1"
-					(reference "#PWR090")
+					(reference "#PWR0102")
 					(unit 1)
 				)
 			)
@@ -1545,23 +1681,21 @@
 	(group ""
 		(uuid "742fe79b-5497-485d-84f4-4cc2cd94af0e")
 		(members "09b354b1-a118-40ea-a107-8bc44a3b87f5" "0b8f1692-d383-47f4-a467-57eb0b5f078a"
-			"1584d468-8c6b-45e7-af95-737ed4b1929d" "2497fe66-b253-4103-954a-18c0a706a62e"
-			"274a5f8d-1bb4-459f-918b-caa1cb642eee" "2809d3a5-1abf-4df3-b1f7-97997bee0db5"
-			"316e3d10-f81c-4d56-9753-36047b86e49e" "340851ef-75c1-4089-a281-8de086f55ad6"
-			"343d4d4e-27ec-4915-a070-a4bea170ee80" "3adf53f8-ea6d-47eb-9088-7757bc3760b0"
-			"4172cd93-7308-4efe-aaac-cb581320aa57" "5d599eee-e19e-4687-8e82-5543577bb8d4"
+			"1584d468-8c6b-45e7-af95-737ed4b1929d" "20102d53-b481-4efc-9983-82f773926fe8"
+			"2809d3a5-1abf-4df3-b1f7-97997bee0db5" "316e3d10-f81c-4d56-9753-36047b86e49e"
+			"340851ef-75c1-4089-a281-8de086f55ad6" "343d4d4e-27ec-4915-a070-a4bea170ee80"
+			"3adf53f8-ea6d-47eb-9088-7757bc3760b0" "4172cd93-7308-4efe-aaac-cb581320aa57"
 			"5d669407-5f8a-475e-be19-4e3f88311c61" "5d85f430-5e06-4f12-89cc-112e2dcd5f90"
-			"6fbdad72-52fb-498c-b20f-555328c1bcc1" "7711b362-599b-45e3-87af-67374fd71bf8"
-			"7b09ff79-4f00-4342-9b5a-4f71a581b9ca" "7ed077e6-6257-43f3-a0fa-193f604e8e7b"
-			"8d5b3dad-cc54-41de-b310-21205ab22dbb" "918a21ef-8547-4475-85ce-12684f1fcb2d"
-			"96c2fbba-6f17-436e-b0a5-d0d6450c64af" "9ed8d604-5d74-4a51-98ee-5ee5f1ee7095"
-			"b057a5c7-3fae-4c72-a07b-87cd23c4faf6" "b1029579-1a3c-4a90-83e9-f23cbd0a2719"
-			"b99cf3c4-7ec7-4921-aed7-ae6aed83f639" "c242fa0e-f68b-47bb-a061-b25bf0382f2c"
-			"cd6d5c6c-236a-4cf7-9662-348b832efcbd" "d075bcdf-baf4-4ae0-882c-9c909490b1b4"
-			"d3648aa4-7c54-49f6-966c-68fd5f893262" "dba9f59a-a22a-4568-b8c9-fd380a6af17d"
+			"688ff93b-5848-41ad-b0dd-8fbdf0b7fb83" "6fbdad72-52fb-498c-b20f-555328c1bcc1"
+			"7711b362-599b-45e3-87af-67374fd71bf8" "7b09ff79-4f00-4342-9b5a-4f71a581b9ca"
+			"8d248ecd-21d2-4888-b803-8310dd35e412" "8d5b3dad-cc54-41de-b310-21205ab22dbb"
+			"918a21ef-8547-4475-85ce-12684f1fcb2d" "96c2fbba-6f17-436e-b0a5-d0d6450c64af"
+			"9ed8d604-5d74-4a51-98ee-5ee5f1ee7095" "b057a5c7-3fae-4c72-a07b-87cd23c4faf6"
+			"b1c51fde-b391-46dc-ae46-238f69147a79" "c242fa0e-f68b-47bb-a061-b25bf0382f2c"
+			"cd6d5c6c-236a-4cf7-9662-348b832efcbd" "dba9f59a-a22a-4568-b8c9-fd380a6af17d"
 			"dffaefe6-ff7f-452b-97f2-5e5f5e832c7b" "ec264d9b-4f39-4305-b0c9-9da0a2e834a1"
-			"f0a4ed26-bca7-4a83-8455-5e1d4a4c2787" "f39c6321-85f7-4b05-83c6-c4d4f3763e21"
-			"f952efc2-2b79-441d-9c74-f450b6bd0aea" "ff9e3388-7fc1-44ac-9877-17e2605c0b9e"
+			"f39c6321-85f7-4b05-83c6-c4d4f3763e21" "f952efc2-2b79-441d-9c74-f450b6bd0aea"
+			"ff9e3388-7fc1-44ac-9877-17e2605c0b9e"
 		)
 	)
 )

@@ -2391,12 +2391,6 @@
 		(uuid "2a18f17e-277c-458a-81de-7779a6682c6a")
 	)
 	(junction
-		(at 104.14 86.36)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "315dd68f-1530-4f6b-8877-d114f26574ff")
-	)
-	(junction
 		(at 171.45 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2457,12 +2451,6 @@
 		(uuid "7b0dbdbb-02e7-4a17-b07a-1991a7e4b708")
 	)
 	(junction
-		(at 107.95 102.87)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7d960779-2230-48ea-8407-944b6346a798")
-	)
-	(junction
 		(at 226.06 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2503,12 +2491,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e6cb3e0f-e3ae-4d3e-9108-61e89e49eb18")
-	)
-	(junction
-		(at 99.06 97.79)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ecdf367c-c022-44c3-8c97-62adef46affb")
 	)
 	(junction
 		(at 156.21 121.92)
@@ -2592,16 +2574,6 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 86.36) (xy 107.95 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0636134c-dabb-4584-9430-1b9657aeba1c")
-	)
-	(wire
-		(pts
 			(xy 148.59 107.95) (xy 144.78 107.95)
 		)
 		(stroke
@@ -2629,16 +2601,6 @@
 			(type default)
 		)
 		(uuid "0e2a24bd-b0aa-487e-850d-c6c4ed1b761d")
-	)
-	(wire
-		(pts
-			(xy 99.06 93.98) (xy 99.06 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1320bccd-4afb-4b82-80a8-35c169287e1d")
 	)
 	(wire
 		(pts
@@ -2692,16 +2654,6 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 83.82) (xy 104.14 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1c930c5a-fa4a-4498-a463-185d8a010206")
-	)
-	(wire
-		(pts
 			(xy 144.78 91.44) (xy 191.77 91.44)
 		)
 		(stroke
@@ -2739,26 +2691,6 @@
 			(type default)
 		)
 		(uuid "2ef08eb0-4514-4f69-a003-fa94c38be7c0")
-	)
-	(wire
-		(pts
-			(xy 90.17 102.87) (xy 107.95 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3066c635-f88a-4f62-bdfe-153a224fc100")
-	)
-	(wire
-		(pts
-			(xy 99.06 97.79) (xy 111.76 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "31ad7cd4-38fd-4962-9aa4-1eeaaf067295")
 	)
 	(wire
 		(pts
@@ -2982,16 +2914,6 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 93.98) (xy 107.95 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "83f091fa-76f3-4e8d-bbe8-c8c7bbc9e289")
-	)
-	(wire
-		(pts
 			(xy 151.13 48.26) (xy 156.21 48.26)
 		)
 		(stroke
@@ -3142,7 +3064,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 102.87) (xy 111.76 102.87)
+			(xy 90.17 102.87) (xy 111.76 102.87)
 		)
 		(stroke
 			(width 0)
@@ -3179,16 +3101,6 @@
 			(type default)
 		)
 		(uuid "b4fa93a7-9425-4bd2-8fed-d73267c4b379")
-	)
-	(wire
-		(pts
-			(xy 99.06 86.36) (xy 104.14 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b90c83a2-a68a-48d9-a98a-0c6143870c2b")
 	)
 	(wire
 		(pts
@@ -3252,7 +3164,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 97.79) (xy 99.06 97.79)
+			(xy 90.17 97.79) (xy 111.76 97.79)
 		)
 		(stroke
 			(width 0)
@@ -3622,132 +3534,6 @@
 			(project "sensor_suite"
 				(path "/17df1232-b180-49eb-a49c-63e4861e42e5/e7a9fb03-f871-444e-b288-ebe8cd051421"
 					(reference "#PWR025")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 107.95 90.17 0)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "12f4b8be-2bed-433d-80e2-9664ff839e40")
-		(property "Reference" "R34"
-			(at 105.41 88.8999 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "4.7k"
-			(at 105.41 91.4399 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 106.172 90.17 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
-			(at 107.95 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "10 kOhms ±1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Moisture Resistant Thick Film"
-			(at 107.95 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer P/N" "RC0402FR-0710KL"
-			(at 107.95 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor" "DigiKey"
-			(at 107.95 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor P/N" "311-10.0KLRCT-ND"
-			(at 107.95 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufaturer PIN" ""
-			(at 107.95 90.17 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "7f54b321-2447-4ccf-a6fe-cee33056588f")
-		)
-		(pin "2"
-			(uuid "67f40a9b-dfd2-4dfb-88e6-2d08029616cc")
-		)
-		(instances
-			(project "sensor_suite"
-				(path "/17df1232-b180-49eb-a49c-63e4861e42e5/e7a9fb03-f871-444e-b288-ebe8cd051421"
-					(reference "R34")
 					(unit 1)
 				)
 			)
@@ -4304,210 +4090,6 @@
 			(project "sensor_suite"
 				(path "/17df1232-b180-49eb-a49c-63e4861e42e5/e7a9fb03-f871-444e-b288-ebe8cd051421"
 					(reference "#PWR027")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 99.06 90.17 0)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7b132d57-5dc0-49fb-b071-e27f4c88bc29")
-		(property "Reference" "R35"
-			(at 96.52 88.8999 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "4.7k"
-			(at 96.52 91.4399 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 97.282 90.17 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
-			(at 99.06 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "10 kOhms ±1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Moisture Resistant Thick Film"
-			(at 99.06 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer P/N" "RC0402FR-0710KL"
-			(at 99.06 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor" "DigiKey"
-			(at 99.06 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor P/N" "311-10.0KLRCT-ND"
-			(at 99.06 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufaturer PIN" ""
-			(at 99.06 90.17 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "483092a6-7225-490f-a51c-14a8cb179a47")
-		)
-		(pin "2"
-			(uuid "d25f6c3b-83ea-4f30-86be-0503e4473d05")
-		)
-		(instances
-			(project "sensor_suite"
-				(path "/17df1232-b180-49eb-a49c-63e4861e42e5/e7a9fb03-f871-444e-b288-ebe8cd051421"
-					(reference "R35")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 104.14 83.82 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "854147f8-86d2-4e64-a815-696b1cd9621a")
-		(property "Reference" "#PWR085"
-			(at 104.14 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 104.14 78.74 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 104.14 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 104.14 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 104.14 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8aa91c95-67fc-4662-8fca-b50234de8f9d")
-		)
-		(instances
-			(project "sensor_suite"
-				(path "/17df1232-b180-49eb-a49c-63e4861e42e5/e7a9fb03-f871-444e-b288-ebe8cd051421"
-					(reference "#PWR085")
 					(unit 1)
 				)
 			)

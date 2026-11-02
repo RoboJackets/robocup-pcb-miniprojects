@@ -18,6 +18,8 @@ Additional design specifications can be found in the Hardware Reference Manual (
         - *Hint hint nudge nudge an option for board settings is to import from another board, and Robocup might have boards with similar design requirements [HERE](https://github.com/RoboJackets/robocup-pcb)*
     - Four layers max
         - Going below four is not recommended
+    - Size
+        - 80mm X 50mm
     - Must pass DRC
         - Will be checked with the Robocup standard DRC suite (if you followed the hint this likely will not be an issue)
     - Must consider signal integrity
@@ -68,6 +70,8 @@ Additional design specifications can be found in the Hardware Reference Manual (
             - 8 RGB LEDs
     - Each device must have have different I2C lines
         - However they can share I2C buses
+    - Do not use interrupt lines
+        - Leave safely disconnected per design requirements
 6. Interface
     - Must have at least two general purpose buttons
     - Must have at least three general purpose LEDs

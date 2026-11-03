@@ -1143,7 +1143,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "05248b61-b824-4fea-a510-6eb2accd13f3")
-		(property "Reference" "S7"
+		(property "Reference" "S4"
 			(at 107.95 72.39 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1163,7 +1163,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SKRPABE010:SW_SKRPABE010"
+		(property "Footprint" "rj_electrical_footprint:SW_SKRPABE010"
 			(at 107.95 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -1175,7 +1175,7 @@
 				(justify bottom)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/9037/product_catalog_ta_02_skrp_en.pdf"
 			(at 107.95 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -1306,6 +1306,61 @@
 				(justify bottom)
 			)
 		)
+		(property "Manufacturer P/N" "SKRPABE010"
+			(at 107.95 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "4809-SKRPABE010TR-ND"
+			(at 107.95 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "DigiKey"
+			(at 107.95 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PIN" ""
+			(at 107.95 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer PIN" ""
+			(at 107.95 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "70e7ec38-e5af-422a-a8b2-853ad2c83809")
 		)
@@ -1321,7 +1376,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/39dc40d2-dc6d-43b0-ab98-682a55b91119/ceb65d81-8188-43be-90cc-a2d37cbe8e4c"
-					(reference "S7")
+					(reference "S4")
 					(unit 1)
 				)
 			)
@@ -1653,7 +1708,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "405fa712-026c-4255-9112-1ac10584259a")
-		(property "Reference" "C23"
+		(property "Reference" "C28"
 			(at 135.89 119.3799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1708,6 +1763,61 @@
 				)
 			)
 		)
+		(property "Manufacturer P/N" ""
+			(at 132.08 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" ""
+			(at 132.08 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" ""
+			(at 132.08 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PIN" ""
+			(at 132.08 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer PIN" ""
+			(at 132.08 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "73ac486e-03f5-4da4-b9a0-cc1629decb1b")
 		)
@@ -1717,7 +1827,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/39dc40d2-dc6d-43b0-ab98-682a55b91119/ceb65d81-8188-43be-90cc-a2d37cbe8e4c"
-					(reference "C23")
+					(reference "C28")
 					(unit 1)
 				)
 			)
@@ -1734,7 +1844,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4b21f7fa-df51-48a4-ae63-28426fc51078")
-		(property "Reference" "R40"
+		(property "Reference" "R8"
 			(at 119.38 119.38 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1745,7 +1855,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "100n"
 			(at 119.38 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1789,6 +1899,61 @@
 				)
 			)
 		)
+		(property "Manufacturer P/N" ""
+			(at 118.11 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" ""
+			(at 118.11 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" ""
+			(at 118.11 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PIN" ""
+			(at 118.11 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer PIN" ""
+			(at 118.11 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "e5853c5d-84cc-4c5e-938b-03db6a024935")
 		)
@@ -1798,7 +1963,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/39dc40d2-dc6d-43b0-ab98-682a55b91119/ceb65d81-8188-43be-90cc-a2d37cbe8e4c"
-					(reference "R40")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -1815,7 +1980,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "53562695-b123-4b5e-95bd-b71488d88f68")
-		(property "Reference" "R39"
+		(property "Reference" "R7"
 			(at 119.38 86.36 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1826,7 +1991,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "100n"
 			(at 119.38 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1870,6 +2035,61 @@
 				)
 			)
 		)
+		(property "Manufacturer P/N" ""
+			(at 118.11 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" ""
+			(at 118.11 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" ""
+			(at 118.11 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PIN" ""
+			(at 118.11 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer PIN" ""
+			(at 118.11 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "935934bc-c3d1-479c-9bd6-b72193db8926")
 		)
@@ -1879,7 +2099,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/39dc40d2-dc6d-43b0-ab98-682a55b91119/ceb65d81-8188-43be-90cc-a2d37cbe8e4c"
-					(reference "R39")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -1897,7 +2117,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5c955da1-534a-4cf8-a448-a19581fc9da1")
-		(property "Reference" "S8"
+		(property "Reference" "S5"
 			(at 107.95 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1917,7 +2137,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SKRPABE010:SW_SKRPABE010"
+		(property "Footprint" "rj_electrical_footprint:SW_SKRPABE010"
 			(at 107.95 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -1929,7 +2149,7 @@
 				(justify bottom)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/9037/product_catalog_ta_02_skrp_en.pdf"
 			(at 107.95 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -2060,6 +2280,61 @@
 				(justify bottom)
 			)
 		)
+		(property "Manufacturer P/N" "SKRPABE010"
+			(at 107.95 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "4809-SKRPABE010TR-ND"
+			(at 107.95 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "DigiKey"
+			(at 107.95 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PIN" ""
+			(at 107.95 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer PIN" ""
+			(at 107.95 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "e3751100-26c3-4475-9bb7-93ffcf153dfb")
 		)
@@ -2075,7 +2350,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/39dc40d2-dc6d-43b0-ab98-682a55b91119/ceb65d81-8188-43be-90cc-a2d37cbe8e4c"
-					(reference "S8")
+					(reference "S5")
 					(unit 1)
 				)
 			)
@@ -2135,6 +2410,61 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 125.73 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" ""
+			(at 125.73 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" ""
+			(at 125.73 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" ""
+			(at 125.73 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PIN" ""
+			(at 125.73 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer PIN" ""
 			(at 125.73 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -2406,7 +2736,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f8e9a3cd-84db-4e86-ba04-eea5afb42a13")
-		(property "Reference" "C22"
+		(property "Reference" "C27"
 			(at 135.89 86.3599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2461,6 +2791,61 @@
 				)
 			)
 		)
+		(property "Manufacturer P/N" ""
+			(at 132.08 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" ""
+			(at 132.08 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" ""
+			(at 132.08 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PIN" ""
+			(at 132.08 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer PIN" ""
+			(at 132.08 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "b7d304de-30ce-47c0-8ba4-a298e79974b0")
 		)
@@ -2470,7 +2855,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/39dc40d2-dc6d-43b0-ab98-682a55b91119/ceb65d81-8188-43be-90cc-a2d37cbe8e4c"
-					(reference "C22")
+					(reference "C27")
 					(unit 1)
 				)
 			)

@@ -1215,6 +1215,16 @@
 	)
 	(wire
 		(pts
+			(xy 96.52 105.41) (xy 111.76 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b4d9db5-aedd-495b-84fe-38bf0861341f")
+	)
+	(wire
+		(pts
 			(xy 100.33 110.49) (xy 111.76 110.49)
 		)
 		(stroke
@@ -1395,6 +1405,16 @@
 	)
 	(wire
 		(pts
+			(xy 96.52 105.41) (xy 96.52 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac6170c9-a6e6-4452-ad2c-427a386afa68")
+	)
+	(wire
+		(pts
 			(xy 162.56 97.79) (xy 189.23 97.79)
 		)
 		(stroke
@@ -1402,16 +1422,6 @@
 			(type default)
 		)
 		(uuid "b21ad637-3fa0-4b32-baaa-2a22ac8b3458")
-	)
-	(wire
-		(pts
-			(xy 100.33 105.41) (xy 111.76 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bc913095-1f19-4993-9544-b6ee06890c5b")
 	)
 	(wire
 		(pts
@@ -1452,16 +1462,6 @@
 			(type default)
 		)
 		(uuid "f223f00d-5ce3-486c-8e1e-c193bafdc92c")
-	)
-	(label "VDDIO"
-		(at 100.33 105.41 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "ed93b942-f5e9-46c0-b764-b5c19358fa4e")
 	)
 	(hierarchical_label "I2C5{SDA,SCL}"
 		(shape input)
@@ -1822,7 +1822,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_01005_0402Metric"
 			(at 110.49 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -1845,6 +1845,61 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 110.49 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" ""
+			(at 110.49 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" ""
+			(at 110.49 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" ""
+			(at 110.49 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PIN" ""
+			(at 110.49 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer PIN" ""
 			(at 110.49 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -1881,7 +1936,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "59aa885b-9264-4c9a-8839-1a1b55cdd6e6")
-		(property "Reference" "C16"
+		(property "Reference" "C24"
 			(at 171.45 77.47 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1945,7 +2000,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/e81205e4-076b-4169-a4b5-c94b604287eb"
-					(reference "C16")
+					(reference "C24")
 					(unit 1)
 				)
 			)
@@ -2119,7 +2174,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8cffbe61-d67d-430e-9cdc-1be6871a8a0a")
-		(property "Reference" "MT1"
+		(property "Reference" "SENSOR4"
 			(at 137.16 87.63 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2139,7 +2194,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ICM-42605:XDCR_ICM-42605"
+		(property "Footprint" "rj_electrical_footprint:XDCR_ICM-42605"
 			(at 137.16 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -2317,7 +2372,7 @@
 				)
 			)
 		)
-		(property "Vendor PIN" "1428-1152-2-ND"
+		(property "Vendor PIN" ""
 			(at 137.16 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -2328,7 +2383,29 @@
 				)
 			)
 		)
-		(property "Manufacturer PIN" "ICM-42605"
+		(property "Manufacturer PIN" ""
+			(at 137.16 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" "1428-1152-2-ND"
+			(at 137.16 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "1428-1152-2-ND"
 			(at 137.16 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -2384,7 +2461,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/e81205e4-076b-4169-a4b5-c94b604287eb"
-					(reference "MT1")
+					(reference "SENSOR4")
 					(unit 1)
 				)
 			)
@@ -2402,7 +2479,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "901b0b5c-b86a-4b9d-a95b-6a82164b12e1")
-		(property "Reference" "C18"
+		(property "Reference" "C26"
 			(at 193.04 101.5999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2466,7 +2543,85 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/e81205e4-076b-4169-a4b5-c94b604287eb"
-					(reference "C18")
+					(reference "C26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 96.52 101.6 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "953c2fd7-b75a-48d9-8ca1-a41a2fc09242")
+		(property "Reference" "#PWR081"
+			(at 96.52 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 96.52 96.52 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 96.52 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 96.52 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 96.52 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4af48ae1-a3e4-405b-b647-ea811a6134ac")
+		)
+		(instances
+			(project "sensorsuite"
+				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/e81205e4-076b-4169-a4b5-c94b604287eb"
+					(reference "#PWR081")
 					(unit 1)
 				)
 			)
@@ -2483,7 +2638,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cd312218-7ff6-477d-b10a-ec106ae6f123")
-		(property "Reference" "C17"
+		(property "Reference" "C25"
 			(at 184.15 77.47 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2547,7 +2702,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/e81205e4-076b-4169-a4b5-c94b604287eb"
-					(reference "C17")
+					(reference "C25")
 					(unit 1)
 				)
 			)

@@ -64,6 +64,16 @@
 	)
 	(bus
 		(pts
+			(xy 55.88 36.83) (xy 77.47 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9eb022d1-1ccb-4d4f-9e00-63348d4e30ed")
+	)
+	(bus
+		(pts
 			(xy 129.54 48.26) (xy 151.13 48.26)
 		)
 		(stroke
@@ -71,16 +81,6 @@
 			(type default)
 		)
 		(uuid "d0b06d29-8724-4cc5-9063-28f655b536f2")
-	)
-	(label "I hate everything and everyone"
-		(at 40.64 52.07 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "df7fdda0-0f48-40e4-8b16-9e2a2e1670cb")
 	)
 	(sheet
 		(at 151.13 64.77)
@@ -262,7 +262,7 @@
 				(justify right)
 			)
 		)
-		(pin "I2C3{SDA,SCL}" input
+		(pin "I2C3{SDA,SCL}" output
 			(at 129.54 73.66 0)
 			(uuid "42b6a242-ba75-43d2-98ac-d26daa68bcbf")
 			(effects
@@ -272,7 +272,7 @@
 				(justify right)
 			)
 		)
-		(pin "I2C4{SDA,SCL,SDB}" input
+		(pin "I2C4{SDA,SCL,SDB}" output
 			(at 129.54 48.26 0)
 			(uuid "aff4375f-7dde-4489-ae11-743b4189bacd")
 			(effects
@@ -282,7 +282,7 @@
 				(justify right)
 			)
 		)
-		(pin "I2C5{SDA,SCL}" input
+		(pin "I2C5{SDA,SCL}" output
 			(at 129.54 25.4 0)
 			(uuid "bfd7985d-4200-41c1-9f7e-ae897391167c")
 			(effects
@@ -290,6 +290,16 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+		(pin "USB{DM,DP}" input
+			(at 77.47 36.83 180)
+			(uuid "a4f20097-a2b3-415c-949c-8351c7a593d4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -301,7 +311,7 @@
 		)
 	)
 	(sheet
-		(at 40.64 29.21)
+		(at 25.4 29.21)
 		(size 30.48 16.51)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -317,7 +327,7 @@
 		)
 		(uuid "418e3efe-090a-409a-b9d2-b74e6fce45e5")
 		(property "Sheetname" "Power"
-			(at 40.64 28.4984 0)
+			(at 25.4 28.4984 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -328,7 +338,7 @@
 			)
 		)
 		(property "Sheetfile" "Power.kicad_sch"
-			(at 40.64 46.3046 0)
+			(at 25.4 46.3046 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -336,6 +346,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "USB{DM,DP}" output
+			(at 55.88 36.83 0)
+			(uuid "83cdd872-5254-446f-becb-a042733bfbb1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances

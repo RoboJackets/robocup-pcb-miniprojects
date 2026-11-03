@@ -5,6 +5,129 @@
 	(uuid "e57c19e1-dc6b-48cb-b353-43ddff7c5056")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -491,621 +614,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Fulgora:YC158TJR-0710KL"
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "RN"
-				(at 12.7 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "YC158TJR-0710KL"
-				(at 12.7 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Datasheet" "/Users/yeah/Desktop/Robojackets/datasheet/PYU-YC_TC_GROUP_51_ROHS_L.pdf"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Description" "8 x 10k ohm bussed resistor network, 5%; common pins 5 and 10; signal pins 1,2,3,4,6,7,8,9; YC158T ten-terminal package."
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Resistance" "8 x 10k"
-				(at 12.7 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Tolerance" "5%"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "ki_keywords" "resistor network bussed pullup YC158T 10pin 8x10k"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "YC158TJR-0710KL_0_1"
-				(rectangle
-					(start -10.16 5.08)
-					(end 10.16 -5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(rectangle
-					(start -9.398 1.27)
-					(end -8.382 -2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -8.89 3.81) (xy -8.89 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -8.89 3.81) (xy 8.89 3.81)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -8.89 -2.54) (xy -8.89 -5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -6.858 1.27)
-					(end -5.842 -2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -6.35 3.81) (xy -6.35 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -6.35 -2.54) (xy -6.35 -5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -4.318 1.27)
-					(end -3.302 -2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.81 3.81) (xy -3.81 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.81 -2.54) (xy -3.81 -5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 5.08) (xy -2.54 3.81)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.778 1.27)
-					(end -0.762 -2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 3.81) (xy -1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -2.54) (xy -1.27 -5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 0.762 1.27)
-					(end 1.778 -2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 3.81) (xy 1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -2.54) (xy 1.27 -5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 5.08) (xy 2.54 3.81)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 3.302 1.27)
-					(end 4.318 -2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.81 3.81) (xy 3.81 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.81 -2.54) (xy 3.81 -5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 5.842 1.27)
-					(end 6.858 -2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 6.35 3.81) (xy 6.35 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 6.35 -2.54) (xy 6.35 -5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 8.382 1.27)
-					(end 9.398 -2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 8.89 3.81) (xy 8.89 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 8.89 -2.54) (xy 8.89 -5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "YC158TJR-0710KL_1_1"
-				(pin passive line
-					(at -8.89 -7.62 90)
-					(length 2.54)
-					(name "R1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -6.35 -7.62 90)
-					(length 2.54)
-					(name "R2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -3.81 -7.62 90)
-					(length 2.54)
-					(name "R3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -1.27 -7.62 90)
-					(length 2.54)
-					(name "R4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -2.54 7.62 270)
-					(length 2.54)
-					(name "COM"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 1.27 -7.62 90)
-					(length 2.54)
-					(name "R5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 -7.62 90)
-					(length 2.54)
-					(name "R6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 6.35 -7.62 90)
-					(length 2.54)
-					(name "R7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 8.89 -7.62 90)
-					(length 2.54)
-					(name "R8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 7.62 270)
-					(length 2.54)
-					(name "COM"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2332,6 +1840,621 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "local:YC158TJR-0710KL"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "RN"
+				(at 12.7 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "YC158TJR-0710KL"
+				(at 12.7 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Datasheet" "/Users/yeah/Desktop/Robojackets/datasheet/PYU-YC_TC_GROUP_51_ROHS_L.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Description" "8 x 10k ohm bussed resistor network, 5%; common pins 5 and 10; signal pins 1,2,3,4,6,7,8,9; YC158T ten-terminal package."
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Resistance" "8 x 10k"
+				(at 12.7 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Tolerance" "5%"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "ki_keywords" "resistor network bussed pullup YC158T 10pin 8x10k"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "YC158TJR-0710KL_0_1"
+				(rectangle
+					(start -10.16 5.08)
+					(end 10.16 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -9.398 1.27)
+					(end -8.382 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -8.89 3.81) (xy -8.89 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -8.89 3.81) (xy 8.89 3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -8.89 -2.54) (xy -8.89 -5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -6.858 1.27)
+					(end -5.842 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.35 3.81) (xy -6.35 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.35 -2.54) (xy -6.35 -5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -4.318 1.27)
+					(end -3.302 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 3.81) (xy -3.81 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 -2.54) (xy -3.81 -5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 5.08) (xy -2.54 3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.778 1.27)
+					(end -0.762 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 3.81) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -2.54) (xy -1.27 -5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 0.762 1.27)
+					(end 1.778 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 3.81) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 1.27 -5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 5.08) (xy 2.54 3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.302 1.27)
+					(end 4.318 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 3.81) (xy 3.81 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 -2.54) (xy 3.81 -5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 5.842 1.27)
+					(end 6.858 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.35 3.81) (xy 6.35 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.35 -2.54) (xy 6.35 -5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 8.382 1.27)
+					(end 9.398 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 8.89 3.81) (xy 8.89 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 8.89 -2.54) (xy 8.89 -5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "YC158TJR-0710KL_1_1"
+				(pin passive line
+					(at -8.89 -7.62 90)
+					(length 2.54)
+					(name "R1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -6.35 -7.62 90)
+					(length 2.54)
+					(name "R2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -3.81 -7.62 90)
+					(length 2.54)
+					(name "R3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -1.27 -7.62 90)
+					(length 2.54)
+					(name "R4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 7.62 270)
+					(length 2.54)
+					(name "COM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 1.27 -7.62 90)
+					(length 2.54)
+					(name "R5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 -7.62 90)
+					(length 2.54)
+					(name "R6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 6.35 -7.62 90)
+					(length 2.54)
+					(name "R7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 8.89 -7.62 90)
+					(length 2.54)
+					(name "R8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 7.62 270)
+					(length 2.54)
+					(name "COM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+3V3"
 			(power global)
 			(pin_numbers
@@ -2600,7 +2723,7 @@
 		(uuid "093a96f4-7b04-42ad-9958-a6efd539de6f")
 	)
 	(junction
-		(at 114.3 45.72)
+		(at 105.41 40.64)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1f6101d6-2e95-4bb1-bca9-1fee7f3dc8c0")
@@ -2648,6 +2771,12 @@
 		(uuid "ab48e787-825e-4be2-925e-29da5be9984b")
 	)
 	(junction
+		(at 39.37 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "aeef22bb-71c0-4437-b090-6e5b1e850aea")
+	)
+	(junction
 		(at 110.49 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2658,6 +2787,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c369a74e-1923-45d1-89db-7c5c45b178f3")
+	)
+	(junction
+		(at 39.37 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ebefa8ba-0688-482f-a6d0-bfec6c3c4736")
 	)
 	(junction
 		(at 110.49 96.52)
@@ -2741,7 +2876,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 87.63) (xy 57.15 87.63)
+			(xy 33.02 87.63) (xy 57.15 87.63)
 		)
 		(stroke
 			(width 0)
@@ -2751,7 +2886,17 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 90.17) (xy 57.15 90.17)
+			(xy 39.37 90.17) (xy 39.37 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1586247d-99b4-4e9d-a8d5-ff7f8ee83341")
+	)
+	(wire
+		(pts
+			(xy 33.02 90.17) (xy 57.15 90.17)
 		)
 		(stroke
 			(width 0)
@@ -2781,7 +2926,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 45.72) (xy 114.3 45.72)
+			(xy 102.87 40.64) (xy 105.41 40.64)
 		)
 		(stroke
 			(width 0)
@@ -2811,7 +2956,7 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 62.23) (xy 118.11 64.77)
+			(xy 109.22 57.15) (xy 109.22 59.69)
 		)
 		(stroke
 			(width 0)
@@ -2831,7 +2976,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 62.23) (xy 115.57 64.77)
+			(xy 106.68 57.15) (xy 106.68 59.69)
 		)
 		(stroke
 			(width 0)
@@ -2851,7 +2996,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 44.45) (xy 114.3 45.72)
+			(xy 105.41 39.37) (xy 105.41 40.64)
 		)
 		(stroke
 			(width 0)
@@ -2891,7 +3036,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 62.23) (xy 110.49 64.77)
+			(xy 101.6 57.15) (xy 101.6 59.69)
 		)
 		(stroke
 			(width 0)
@@ -2901,7 +3046,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 62.23) (xy 113.03 64.77)
+			(xy 104.14 57.15) (xy 104.14 59.69)
 		)
 		(stroke
 			(width 0)
@@ -2971,7 +3116,7 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 62.23) (xy 105.41 64.77)
+			(xy 96.52 57.15) (xy 96.52 59.69)
 		)
 		(stroke
 			(width 0)
@@ -3051,13 +3196,23 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 45.72) (xy 116.84 46.99)
+			(xy 107.95 40.64) (xy 107.95 41.91)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "7dd130e5-378d-436f-8247-59ff89894119")
+	)
+	(wire
+		(pts
+			(xy 39.37 82.55) (xy 39.37 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e540116-052c-44c1-bc8b-c582d6fd136a")
 	)
 	(wire
 		(pts
@@ -3141,7 +3296,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 45.72) (xy 116.84 45.72)
+			(xy 105.41 40.64) (xy 107.95 40.64)
 		)
 		(stroke
 			(width 0)
@@ -3181,7 +3336,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 62.23) (xy 107.95 64.77)
+			(xy 99.06 57.15) (xy 99.06 59.69)
 		)
 		(stroke
 			(width 0)
@@ -3341,7 +3496,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 62.23) (xy 120.65 64.77)
+			(xy 111.76 57.15) (xy 111.76 59.69)
 		)
 		(stroke
 			(width 0)
@@ -3391,7 +3546,7 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 64.77) (xy 123.19 62.23)
+			(xy 114.3 59.69) (xy 114.3 57.15)
 		)
 		(stroke
 			(width 0)
@@ -3451,7 +3606,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 46.99) (xy 111.76 45.72)
+			(xy 102.87 41.91) (xy 102.87 40.64)
 		)
 		(stroke
 			(width 0)
@@ -3460,7 +3615,7 @@
 		(uuid "fd73becd-4261-4f79-8f59-059f34a82d88")
 	)
 	(label "DIP0"
-		(at 105.41 64.77 270)
+		(at 96.52 59.69 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3480,7 +3635,7 @@
 		(uuid "193ce823-657b-4891-a71e-05742139cc41")
 	)
 	(label "DIP6"
-		(at 120.65 64.77 270)
+		(at 111.76 59.69 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3490,7 +3645,7 @@
 		(uuid "2c50d439-ad69-47c1-9f26-acaa01bc024d")
 	)
 	(label "DIP4"
-		(at 115.57 64.77 270)
+		(at 106.68 59.69 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3500,7 +3655,7 @@
 		(uuid "33ffbbb8-07aa-4586-bbc0-0b195d83f9bd")
 	)
 	(label "DIP7"
-		(at 123.19 64.77 270)
+		(at 114.3 59.69 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3520,7 +3675,7 @@
 		(uuid "4c2989c0-8d92-4607-8e4d-b0cf67235913")
 	)
 	(label "DIP1"
-		(at 107.95 64.77 270)
+		(at 99.06 59.69 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3560,7 +3715,7 @@
 		(uuid "7a97f0b1-5eb6-477c-8b63-2b31ed9d366a")
 	)
 	(label "DIP2"
-		(at 110.49 64.77 270)
+		(at 101.6 59.69 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3610,7 +3765,7 @@
 		(uuid "c50b0987-d5a8-4f50-ad4a-2a3b598a555a")
 	)
 	(label "DIP3"
-		(at 113.03 64.77 270)
+		(at 104.14 59.69 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3620,7 +3775,7 @@
 		(uuid "cc5d0ab5-3b44-4df8-9219-a377ab7cfd89")
 	)
 	(label "DIP5"
-		(at 118.11 64.77 270)
+		(at 109.22 59.69 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3696,7 +3851,7 @@
 	)
 	(hierarchical_label "TCA_SDA"
 		(shape bidirectional)
-		(at 54.61 90.17 180)
+		(at 33.02 90.17 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3707,7 +3862,7 @@
 	)
 	(hierarchical_label "TCA_SCL"
 		(shape bidirectional)
-		(at 54.61 87.63 180)
+		(at 33.02 87.63 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4330,8 +4485,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Fulgora:YC158TJR-0710KL")
-		(at 114.3 54.61 0)
+		(lib_id "local:YC158TJR-0710KL")
+		(at 105.41 49.53 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4342,7 +4497,7 @@
 		(fields_autoplaced yes)
 		(uuid "2c22d15e-f1f6-4596-85df-3305bc35e76c")
 		(property "Reference" "RN1"
-			(at 125.73 52.0699 0)
+			(at 116.84 46.9899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4353,7 +4508,7 @@
 			)
 		)
 		(property "Value" "YC158TJR-0710KL"
-			(at 125.73 54.6099 0)
+			(at 116.84 49.5299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4364,7 +4519,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 114.3 54.61 0)
+			(at 105.41 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4376,7 +4531,7 @@
 			)
 		)
 		(property "Datasheet" "/Users/yeah/Desktop/Robojackets/datasheet/PYU-YC_TC_GROUP_51_ROHS_L.pdf"
-			(at 114.3 54.61 0)
+			(at 105.41 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4388,7 +4543,7 @@
 			)
 		)
 		(property "Description" "8 x 10k ohm bussed resistor network, 5%; common pins 5 and 10; signal pins 1,2,3,4,6,7,8,9; YC158T ten-terminal package."
-			(at 114.3 54.61 0)
+			(at 105.41 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4400,7 +4555,7 @@
 			)
 		)
 		(property "Resistance" "8 x 10k"
-			(at 125.73 57.1499 0)
+			(at 116.84 52.0699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4411,7 +4566,7 @@
 			)
 		)
 		(property "Tolerance" "5%"
-			(at 114.3 54.61 0)
+			(at 105.41 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4956,7 +5111,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 114.3 44.45 0)
+		(at 105.41 39.37 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4967,7 +5122,7 @@
 		(fields_autoplaced yes)
 		(uuid "6471a04e-60f6-4ade-8a83-60026cc8fe97")
 		(property "Reference" "#PWR029"
-			(at 114.3 48.26 0)
+			(at 105.41 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4978,7 +5133,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 114.3 39.37 0)
+			(at 105.41 34.29 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4988,7 +5143,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 114.3 44.45 0)
+			(at 105.41 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4999,7 +5154,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 114.3 44.45 0)
+			(at 105.41 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5010,7 +5165,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 114.3 44.45 0)
+			(at 105.41 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5810,6 +5965,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 39.37 92.71 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c568f021-1265-4c6b-a995-26927a94bbd0")
+		(property "Reference" "TP13"
+			(at 41.91 94.7419 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TP_TCA_SDA"
+			(at 41.91 97.2819 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 34.29 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 34.29 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 39.37 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7b0d08be-971d-4353-9905-a30b4daafc48")
+		)
+		(instances
+			(project "miniproject-schemetic"
+				(path "/c69c990f-ad71-4002-b76f-9719c32ef612/695232a8-5702-407d-abeb-324ba68bffcf"
+					(reference "TP13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 156.21 43.18 0)
 		(unit 1)
@@ -5882,6 +6116,85 @@
 			(project "miniproject-schemetic"
 				(path "/c69c990f-ad71-4002-b76f-9719c32ef612/695232a8-5702-407d-abeb-324ba68bffcf"
 					(reference "#PWR030")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 39.37 82.55 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cb9a4d01-c987-44b8-9d67-c8b98331af89")
+		(property "Reference" "TP12"
+			(at 41.91 77.9779 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TP_TCA_SCL"
+			(at 41.91 80.5179 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 44.45 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 44.45 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 39.37 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7b0d08be-971d-4353-9905-a30b4daafc48")
+		)
+		(instances
+			(project "miniproject-schemetic"
+				(path "/c69c990f-ad71-4002-b76f-9719c32ef612/695232a8-5702-407d-abeb-324ba68bffcf"
+					(reference "TP12")
 					(unit 1)
 				)
 			)

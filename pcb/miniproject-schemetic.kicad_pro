@@ -28,7 +28,40 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "multiple_net_names|1562100|825500|9b14cd17-8af0-41af-9be4-3b78c8cec4c1|63d54cc4-8e65-41de-a6b3-03da618ea8eb|/c69c990f-ad71-4002-b76f-9719c32ef612/4eb9d403-58fa-463a-9a3f-8c2fefb8e16c|/c69c990f-ad71-4002-b76f-9719c32ef612/4eb9d403-58fa-463a-9a3f-8c2fefb8e16c|/c69c990f-ad71-4002-b76f-9719c32ef612/4eb9d403-58fa-463a-9a3f-8c2fefb8e16c",
+        "SYS_5V labels the post-ORing system rail. +5V is the intentional global net name for the same rail."
+      ],
+      [
+        "multiple_net_names|2057400|647700|9b14cd17-8af0-41af-9be4-3b78c8cec4c1|63d54cc4-8e65-41de-a6b3-03da618ea8eb|/c69c990f-ad71-4002-b76f-9719c32ef612/4eb9d403-58fa-463a-9a3f-8c2fefb8e16c|/c69c990f-ad71-4002-b76f-9719c32ef612/4eb9d403-58fa-463a-9a3f-8c2fefb8e16c|/c69c990f-ad71-4002-b76f-9719c32ef612/4eb9d403-58fa-463a-9a3f-8c2fefb8e16c",
+        "Both names intentionally refer to the same 5 V rail after the ideal-diode ORing circuit."
+      ],
+      [
+        "pin_to_pin|1447800|1079500|520f2841-ddb7-4a61-9a78-762ed37ecf76|005d4bd5-8490-4bce-8f95-0a117cf977c8|/c69c990f-ad71-4002-b76f-9719c32ef612/4eb9d403-58fa-463a-9a3f-8c2fefb8e16c|/c69c990f-ad71-4002-b76f-9719c32ef612/4eb9d403-58fa-463a-9a3f-8c2fefb8e16c|/c69c990f-ad71-4002-b76f-9719c32ef612/f05f2a35-d6c9-4acf-9d65-d87e0b836902",
+        "U10 pin 5 (ST) is unused and tied to GND as specified in the TI LM66100 datasheet, Section 5."
+      ],
+      [
+        "pin_to_pin|1447800|673100|529ee811-6d90-4f90-8aea-7d105b67b8cc|9c1ff0f3-0690-42ee-a597-739b6d17d94c|/c69c990f-ad71-4002-b76f-9719c32ef612/4eb9d403-58fa-463a-9a3f-8c2fefb8e16c|/c69c990f-ad71-4002-b76f-9719c32ef612/4eb9d403-58fa-463a-9a3f-8c2fefb8e16c|/c69c990f-ad71-4002-b76f-9719c32ef612/4eb9d403-58fa-463a-9a3f-8c2fefb8e16c",
+        "U9 and U10 VOUT pins intentionally share SYS_5V for ideal-diode ORing (TI LM66100 datasheet, Figure 17)."
+      ],
+      [
+        "pin_to_pin|1752600|1066800|93efa40f-ff9c-4510-ad5c-b98b53f22e5d|005d4bd5-8490-4bce-8f95-0a117cf977c8|/c69c990f-ad71-4002-b76f-9719c32ef612/0f45ba3b-dc34-40c4-9aaf-e4b91d90a5e9|/c69c990f-ad71-4002-b76f-9719c32ef612/0f45ba3b-dc34-40c4-9aaf-e4b91d90a5e9|/c69c990f-ad71-4002-b76f-9719c32ef612/f05f2a35-d6c9-4acf-9d65-d87e0b836902",
+        "U7 pin 1 is AP_AD0 in I2C mode and is tied to GND to select the 7-bit address 0x68."
+      ],
+      [
+        "pin_to_pin|1943100|495300|529ee811-6d90-4f90-8aea-7d105b67b8cc|9c1ff0f3-0690-42ee-a597-739b6d17d94c|/c69c990f-ad71-4002-b76f-9719c32ef612/4eb9d403-58fa-463a-9a3f-8c2fefb8e16c|/c69c990f-ad71-4002-b76f-9719c32ef612/4eb9d403-58fa-463a-9a3f-8c2fefb8e16c|/c69c990f-ad71-4002-b76f-9719c32ef612/4eb9d403-58fa-463a-9a3f-8c2fefb8e16c",
+        "U9 and U10 VOUT are intentionally connected to form the ideal-diode ORing output."
+      ],
+      [
+        "pin_to_pin|1943100|901700|520f2841-ddb7-4a61-9a78-762ed37ecf76|005d4bd5-8490-4bce-8f95-0a117cf977c8|/c69c990f-ad71-4002-b76f-9719c32ef612/4eb9d403-58fa-463a-9a3f-8c2fefb8e16c|/c69c990f-ad71-4002-b76f-9719c32ef612/4eb9d403-58fa-463a-9a3f-8c2fefb8e16c|/c69c990f-ad71-4002-b76f-9719c32ef612/f05f2a35-d6c9-4acf-9d65-d87e0b836902",
+        "U10 pin 5 (ST) is unused and tied to GND as specified in the LM66100 datasheet."
+      ],
+      [
+        "pin_to_pin|2006600|1016000|aefedf23-4d63-40ef-b9c9-7bae9342aa39|005d4bd5-8490-4bce-8f95-0a117cf977c8|/c69c990f-ad71-4002-b76f-9719c32ef612/0f45ba3b-dc34-40c4-9aaf-e4b91d90a5e9|/c69c990f-ad71-4002-b76f-9719c32ef612/0f45ba3b-dc34-40c4-9aaf-e4b91d90a5e9|/c69c990f-ad71-4002-b76f-9719c32ef612/f05f2a35-d6c9-4acf-9d65-d87e0b836902",
+        "U7 pin 9 is tied to GND because FSYNC is unused, per the ICM-42605 datasheet. Firmware must not configure this pin as an interrupt output."
+      ]
+    ],
     "meta": {
       "version": 0
     },
@@ -430,7 +463,7 @@
         "uuid": "c69c990f-ad71-4002-b76f-9719c32ef612"
       }
     ],
-    "used_designators": "#PWR1-52,C1-20,D1-3,J1-5,R1-20,RN1,SW1-6,U1-7,Y1",
+    "used_designators": "#FLG1,#PWR1-76,C1-26,D1-3,D9-10,J1-5,R1-26,RN1,SW1-6,TP1-23,U1-10,Y1",
     "variants": []
   },
   "sheets": [

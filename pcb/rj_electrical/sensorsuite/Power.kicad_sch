@@ -3674,6 +3674,16 @@
 		)
 		(uuid "43265946-8cfe-49e8-854a-4bbd51413455")
 	)
+	(text "TODO: Polyfuse needs footprint\n"
+		(exclude_from_sim no)
+		(at 62.738 64.262 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e93d60ee-c9a9-4740-9b6c-da88c27c0dfe")
+	)
 	(junction
 		(at 156.21 64.77)
 		(diameter 0)
@@ -4683,7 +4693,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "032541f7-483c-4747-8186-a7731107fb47")
-		(property "Reference" "SPIConnector_IN"
+		(property "Reference" "SPIConnector_IN1"
 			(at 107.95 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4814,7 +4824,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "SPIConnector_IN")
+					(reference "SPIConnector_IN1")
 					(unit 1)
 				)
 			)
@@ -5161,7 +5171,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "137c4fa7-b765-42d8-af1e-dc3ddafd934e")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR048"
 			(at 118.11 127 0)
 			(hide yes)
 			(show_name no)
@@ -5221,7 +5231,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "#PWR027")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -5239,7 +5249,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1baca7d8-9916-4b95-b32e-a7459768c287")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR054"
 			(at 226.06 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -5299,7 +5309,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "#PWR021")
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -5317,7 +5327,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1e02a0de-ede9-4b6d-8ee0-8a4ca0027765")
-		(property "Reference" "#PWR088"
+		(property "Reference" "#PWR045"
 			(at 73.66 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -5377,7 +5387,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "#PWR088")
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -5395,7 +5405,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2681cbf3-145d-4fea-916d-f5f5c8645646")
-		(property "Reference" "D9"
+		(property "Reference" "D12"
 			(at 64.77 99.0599 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5536,7 +5546,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "D9")
+					(reference "D12")
 					(unit 1)
 				)
 			)
@@ -5554,7 +5564,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "26a685fa-a28c-472a-a661-5358b68b5096")
-		(property "Reference" "#PWR086"
+		(property "Reference" "#PWR044"
 			(at 62.23 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -5614,7 +5624,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "#PWR086")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -5912,7 +5922,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2b251b9a-8ea2-4e56-a6c9-0aeb4d783f21")
-		(property "Reference" "C23"
+		(property "Reference" "C11"
 			(at 267.97 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6031,7 +6041,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "C23")
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -6049,7 +6059,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2fc26c90-0170-4ca4-90a3-05c190765796")
-		(property "Reference" "#PWR087"
+		(property "Reference" "#PWR047"
 			(at 97.79 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -6109,7 +6119,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "#PWR087")
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -6127,7 +6137,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "41e41995-be2b-4004-a859-22c77a76777f")
-		(property "Reference" "#PWR089"
+		(property "Reference" "#PWR050"
 			(at 138.43 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -6187,7 +6197,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "#PWR089")
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)
@@ -6205,7 +6215,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4bac8091-1944-436d-b780-f7ffe9a53ef5")
-		(property "Reference" "#FLG05"
+		(property "Reference" "#FLG03"
 			(at 52.07 73.025 0)
 			(hide yes)
 			(show_name no)
@@ -6265,7 +6275,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "#FLG05")
+					(reference "#FLG03")
 					(unit 1)
 				)
 			)
@@ -6283,7 +6293,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "513ca975-57f9-4558-88ad-603d0c8c8156")
-		(property "Reference" "D10"
+		(property "Reference" "D13"
 			(at 76.2 85.0899 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6424,7 +6434,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "D10")
+					(reference "D13")
 					(unit 1)
 				)
 			)
@@ -6519,7 +6529,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "61d57a3d-6339-4319-90d3-0c4769a1c54b")
-		(property "Reference" "R?"
+		(property "Reference" "R44"
 			(at 157.48 71.12 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6583,7 +6593,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "R?")
+					(reference "R44")
 					(unit 1)
 				)
 			)
@@ -6601,7 +6611,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "92aaf440-7ddc-4a6d-aae5-d594fe953a1f")
-		(property "Reference" "SPIConnector_OUT"
+		(property "Reference" "SPIConnector_OUT1"
 			(at 113.03 137.1599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6734,7 +6744,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "SPIConnector_OUT")
+					(reference "SPIConnector_OUT1")
 					(unit 1)
 				)
 			)
@@ -6752,7 +6762,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9506a2ad-ba29-4818-ba9b-b94ff51611c6")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR055"
 			(at 257.81 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -6812,7 +6822,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "#PWR024")
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -6830,7 +6840,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "98cd0cef-71fc-4cd9-9820-45b6ef8eef76")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR053"
 			(at 226.06 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -6891,7 +6901,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "#PWR020")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -6909,7 +6919,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9b9b8037-0c9b-473a-a252-15b41dc40cc3")
-		(property "Reference" "U3"
+		(property "Reference" "U1"
 			(at 94.3611 69.85 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7043,7 +7053,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "U3")
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -7061,7 +7071,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a37e596c-6ca4-46e8-a81d-d3f219c58ff2")
-		(property "Reference" "MicroUSB2"
+		(property "Reference" "MicroUSB1"
 			(at 44.45 67.31 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7341,7 +7351,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "MicroUSB2")
+					(reference "MicroUSB1")
 					(unit 1)
 				)
 			)
@@ -7359,7 +7369,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ae811484-6072-48a3-a938-500a415dc9d0")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR051"
 			(at 199.39 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -7419,7 +7429,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "#PWR025")
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -7437,7 +7447,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b0713b24-1934-4186-883d-5c5a21e1ee5c")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR057"
 			(at 265.43 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -7497,7 +7507,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "#PWR023")
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -7515,7 +7525,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b7e3798a-165b-4494-bdc3-5800d650c6e9")
-		(property "Reference" "#PWR085"
+		(property "Reference" "#PWR046"
 			(at 92.71 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -7575,7 +7585,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "#PWR085")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -7874,7 +7884,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c089fb27-ef4f-4806-9a47-ab7795a02124")
-		(property "Reference" "#FLG03"
+		(property "Reference" "#FLG05"
 			(at 144.78 113.665 0)
 			(hide yes)
 			(show_name no)
@@ -7934,7 +7944,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "#FLG03")
+					(reference "#FLG05")
 					(unit 1)
 				)
 			)
@@ -7952,7 +7962,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c98bb0f7-b655-42ba-8ad2-2fcf0e81d625")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR049"
 			(at 138.43 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -8012,7 +8022,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "#PWR018")
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -8031,7 +8041,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d357d6e4-c92f-4ae8-bc0c-bb397de02e8a")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR043"
 			(at 55.88 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -8091,7 +8101,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "#PWR019")
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -8109,7 +8119,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dab17a8a-8e53-49a8-af53-54b76352b0bf")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR056"
 			(at 265.43 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -8169,7 +8179,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "#PWR022")
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
@@ -8187,7 +8197,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dc0b7286-e63e-4497-bfad-2fa278dbe8f4")
-		(property "Reference" "D11"
+		(property "Reference" "D14"
 			(at 140.97 68.5799 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8328,7 +8338,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "D11")
+					(reference "D14")
 					(unit 1)
 				)
 			)
@@ -8427,7 +8437,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "eef5f97f-69b0-4393-ae88-3e65879546be")
-		(property "Reference" "C22"
+		(property "Reference" "C10"
 			(at 219.71 91.44 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8546,7 +8556,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "C22")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -8564,7 +8574,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f27dacad-9f9c-46b4-b881-53e197c820e2")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR052"
 			(at 199.39 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -8624,7 +8634,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "#PWR026")
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)

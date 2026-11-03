@@ -26,7 +26,8 @@ project(onboarding C CXX ASM)
 
 pico_sdk_init()
 
-# add_subdirectory(lib/hall-effect-sensor)
+add_subdirectory(lib/hall-effect-sensor)
+add_subdirectory(lib/color-sensor)
 
 add_executable(onboarding 
     src/main.cpp 
@@ -52,7 +53,8 @@ target_link_libraries(onboarding
     hardware_watchdog
     hardware_clocks
     pico_multicore
-    # hall_effect_driver
+    hall_effect_driver
+    color_sensor_driver
 )
 
 target_include_directories(onboarding PRIVATE

@@ -4,6 +4,13 @@
 	(generator_version "10.0")
 	(uuid "f9d1f543-cb9c-4fb5-a447-81b4dfd03327")
 	(paper "A4")
+	(title_block
+		(title "Hall Effect Sensor")
+		(date "2026-11-01")
+		(rev "1")
+		(company "RoboJackets")
+		(comment 1 "Isa Baig")
+	)
 	(lib_symbols
 		(symbol "Device:C"
 			(pin_numbers
@@ -780,6 +787,24 @@
 		(at 74.93 81.28)
 		(uuid "187afbec-6346-491d-952a-31ef502f1835")
 	)
+	(bus_entry
+		(at 107.95 83.82)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6621083f-4f97-4138-8020-8c02737f96c9")
+	)
+	(bus_entry
+		(at 107.95 81.28)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a68c98e-e5f1-4201-ba49-7779dae83ff6")
+	)
 	(wire
 		(pts
 			(xy 105.41 62.23) (xy 105.41 76.2)
@@ -800,6 +825,16 @@
 		)
 		(uuid "26574672-b7dc-46fb-a604-1f1c6f3754c1")
 	)
+	(bus
+		(pts
+			(xy 110.49 83.82) (xy 110.49 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3814fa1b-e878-4a55-b72a-d660d11e6029")
+	)
 	(wire
 		(pts
 			(xy 74.93 86.36) (xy 74.93 100.33)
@@ -810,25 +845,15 @@
 		)
 		(uuid "5dc86edf-cfe0-4150-8d9a-767e1f74a4af")
 	)
-	(wire
-		(pts
-			(xy 105.41 81.28) (xy 109.22 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "935f907a-574a-433c-9e51-f0c874758e77")
-	)
 	(bus
 		(pts
-			(xy 109.22 81.28) (xy 109.22 88.9)
+			(xy 110.49 88.9) (xy 111.76 88.9)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "99235339-d2a7-4ed2-b57a-c97e2e85567a")
+		(uuid "63196046-1c9b-48fc-bc00-a7ca1e613d19")
 	)
 	(wire
 		(pts
@@ -842,13 +867,13 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 83.82) (xy 109.22 83.82)
+			(xy 105.41 81.28) (xy 107.95 81.28)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b8dedda0-9ea1-4b62-baf1-2b12d13b14eb")
+		(uuid "b272d2f2-dd8f-4580-9d8d-37ff46404b7a")
 	)
 	(wire
 		(pts
@@ -862,6 +887,16 @@
 	)
 	(wire
 		(pts
+			(xy 105.41 83.82) (xy 107.95 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2078bcb-2d92-4cab-916c-ddad2d7cfeba")
+	)
+	(wire
+		(pts
 			(xy 82.55 62.23) (xy 67.31 62.23)
 		)
 		(stroke
@@ -871,7 +906,7 @@
 		(uuid "fc20395b-56b6-4d28-bb58-cf7bc98bfdc2")
 	)
 	(label "Hall_I2C.SDA"
-		(at 109.22 85.09 0)
+		(at 107.95 83.82 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -881,7 +916,7 @@
 		(uuid "7c2144c8-fa92-4f2e-8b2a-13b94fab0f31")
 	)
 	(label "Hall_I2C.SCL"
-		(at 109.22 82.55 0)
+		(at 106.68 81.28 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -892,7 +927,7 @@
 	)
 	(hierarchical_label "Hall_I2C{SDA,SCL}"
 		(shape input)
-		(at 109.22 88.9 0)
+		(at 111.76 88.9 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1315,7 +1350,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TMAG5273C1QDBVR:SOT95P280X140-6N"
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 82.55 63.1952 0)
 			(hide yes)
 			(show_name no)
@@ -1525,13 +1560,11 @@
 			"26574672-b7dc-46fb-a604-1f1c6f3754c1" "4535a8d8-29e9-4c03-8567-583c707d4685"
 			"5dc86edf-cfe0-4150-8d9a-767e1f74a4af" "6dd6cb51-c697-4773-99df-a1ceb0645c91"
 			"7754f68d-2049-4cbf-a836-478624f79081" "7c2144c8-fa92-4f2e-8b2a-13b94fab0f31"
-			"935f907a-574a-433c-9e51-f0c874758e77" "99235339-d2a7-4ed2-b57a-c97e2e85567a"
 			"a72c7a0a-6288-4ff5-ad87-5d1aeb3a2a5b" "af718315-61aa-4618-8e79-9268e012bd5c"
 			"b17f6066-617b-4aac-88d3-97d845309d8f" "b2254d96-21c9-41cc-a510-b6f5f52670d0"
-			"b8dedda0-9ea1-4b62-baf1-2b12d13b14eb" "c734dea9-0d50-4b9e-8b38-c86adebe5aa9"
-			"d84b2054-2d6e-4dc8-8c70-b3d92caf2d63" "e5665bd2-2eb0-4bc5-8452-d6dffd15d50f"
-			"ec881dd3-75e5-4056-acae-ba3eb87b1407" "f675ac6b-9eab-467c-acc3-3eb74fde94c6"
-			"fc20395b-56b6-4d28-bb58-cf7bc98bfdc2"
+			"c734dea9-0d50-4b9e-8b38-c86adebe5aa9" "d84b2054-2d6e-4dc8-8c70-b3d92caf2d63"
+			"e5665bd2-2eb0-4bc5-8452-d6dffd15d50f" "ec881dd3-75e5-4056-acae-ba3eb87b1407"
+			"f675ac6b-9eab-467c-acc3-3eb74fde94c6" "fc20395b-56b6-4d28-bb58-cf7bc98bfdc2"
 		)
 	)
 )

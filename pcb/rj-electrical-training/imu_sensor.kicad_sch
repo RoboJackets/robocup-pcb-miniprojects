@@ -4,6 +4,12 @@
 	(generator_version "10.0")
 	(uuid "9b80931d-ce37-44e8-a625-b6d109c4eabc")
 	(paper "A4")
+	(title_block
+		(title "IMU Sensor")
+		(date "2026-11-01")
+		(company "RoboJackets")
+		(comment 1 "Isa Baig")
+	)
 	(lib_symbols
 		(symbol "2026-10-25_17-16-49:ICM-42605"
 			(pin_names
@@ -1015,6 +1021,34 @@
 		(at 71.12 71.12)
 		(uuid "182f4e9c-578e-4283-94b0-0b1bf0499911")
 	)
+	(bus_entry
+		(at 186.69 66.04)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0dffd650-dc8c-4ab4-8558-d8e417cfe228")
+	)
+	(bus_entry
+		(at 186.69 63.5)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "670b5c13-bdde-41e2-96c1-7a4ca232d44b")
+	)
+	(bus
+		(pts
+			(xy 189.23 66.04) (xy 189.23 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00415cad-1a8c-449d-b2d9-3282266b31d0")
+	)
 	(wire
 		(pts
 			(xy 190.754 86.36) (xy 190.754 90.17)
@@ -1077,7 +1111,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 63.5) (xy 185.42 63.5)
+			(xy 167.64 63.5) (xy 186.69 63.5)
 		)
 		(stroke
 			(width 0)
@@ -1094,16 +1128,6 @@
 			(type default)
 		)
 		(uuid "4a47a4b1-9346-4846-95ed-7d10192b2b0d")
-	)
-	(bus
-		(pts
-			(xy 186.69 60.96) (xy 186.69 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "56b238ce-03f1-4f96-a708-ec5be97c32f3")
 	)
 	(wire
 		(pts
@@ -1165,6 +1189,16 @@
 		)
 		(uuid "9f9209f6-f053-4195-a964-873c9ca2a1c5")
 	)
+	(bus
+		(pts
+			(xy 189.23 68.58) (xy 191.77 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a17c92eb-5486-4ad6-ac0e-9aa3c13db786")
+	)
 	(wire
 		(pts
 			(xy 167.64 68.58) (xy 172.72 68.58)
@@ -1185,18 +1219,8 @@
 		)
 		(uuid "e275a47a-93c9-45a8-ab8a-0ee7f36f5872")
 	)
-	(wire
-		(pts
-			(xy 185.42 63.5) (xy 186.69 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f5733040-4502-489a-ab3c-8bb599a8c9a4")
-	)
 	(label "IMU_I2C.SDA"
-		(at 173.99 63.5 0)
+		(at 175.26 63.5 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1217,7 +1241,7 @@
 	)
 	(hierarchical_label "IMU_I2C{SDA,SCL}"
 		(shape input)
-		(at 186.69 60.96 0)
+		(at 191.77 68.58 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2404,8 +2428,9 @@
 	)
 	(group ""
 		(uuid "ce9ae13c-f34e-45d9-afb5-91a1b451763d")
-		(members "05ed263b-0d74-4053-9de4-9e8cc25f11d2" "067c1d8b-bdb9-469c-9cd7-d9db3e72a2f8"
-			"08e5e00a-6079-4251-a603-260f40984a68" "0f06ab45-f69d-48bd-bd36-1e5978a78e33"
+		(members "00415cad-1a8c-449d-b2d9-3282266b31d0" "05ed263b-0d74-4053-9de4-9e8cc25f11d2"
+			"067c1d8b-bdb9-469c-9cd7-d9db3e72a2f8" "08e5e00a-6079-4251-a603-260f40984a68"
+			"0dffd650-dc8c-4ab4-8558-d8e417cfe228" "0f06ab45-f69d-48bd-bd36-1e5978a78e33"
 			"182f4e9c-578e-4283-94b0-0b1bf0499911" "1a59c334-42a9-4de4-8f72-0450bd68431d"
 			"1b172bd2-776b-4820-9ad2-ae2f35ce71f4" "26700205-3945-40d6-a590-cc2a52bcb2d8"
 			"26ff9c56-9d34-457c-867f-9c255fbc1027" "30aa9f5d-cd87-446a-b245-1d4b1efb640b"
@@ -2413,17 +2438,17 @@
 			"445d52cb-b0a0-4358-bb9e-3c6b9e7ef7ee" "446f56c2-f40a-4ab7-92d7-92daa5ce7c14"
 			"488ec683-3a6f-42bb-be75-bf5101d65630" "4a47a4b1-9346-4846-95ed-7d10192b2b0d"
 			"542df69f-9145-4107-b0e5-dcdd3f8c0cef" "548010bc-679e-4284-986b-dd958d11e838"
-			"56b238ce-03f1-4f96-a708-ec5be97c32f3" "619ed665-dce2-4ae9-a9b6-5cdf8033bcd9"
+			"619ed665-dce2-4ae9-a9b6-5cdf8033bcd9" "670b5c13-bdde-41e2-96c1-7a4ca232d44b"
 			"67fb6dbe-2f7b-4f49-88e6-7078a27c907b" "6d8ae1a8-30e3-4316-99b5-ff450d80179e"
 			"76766ed7-51b9-4b2f-835f-ee127475256f" "7a858404-bce0-4320-a6aa-d9c867f4144b"
 			"8336123b-0bec-4c69-bc12-eb46f876d869" "8607d10f-e021-4a6b-9449-f16da00eea0f"
 			"8a064cd2-9ece-4114-80de-1a9dcba11df5" "92026625-df9b-40c8-9f91-d90015bdebe7"
 			"92156ef1-1eb5-4e74-b4a3-8c6a4231d45c" "9f9209f6-f053-4195-a964-873c9ca2a1c5"
-			"aa0c015a-52dd-4ca4-8bf2-115b2b5a02d6" "b16db499-7160-47e3-8231-1fa75844b1f1"
-			"b369e237-fee4-4218-ad6f-696bb4f7f61e" "bb1c7261-b8b0-4e74-85af-f7cf06413792"
-			"cc49c81f-75ba-46bc-aa27-c7d3452bb294" "df7c7b3c-a0e9-44f0-b529-5f3377725e45"
-			"e275a47a-93c9-45a8-ab8a-0ee7f36f5872" "e6897785-6973-48f2-a8ec-fa3e65fcae44"
-			"f39755a7-e00e-4c0c-b63b-98c8ece49884" "f5733040-4502-489a-ab3c-8bb599a8c9a4"
+			"a17c92eb-5486-4ad6-ac0e-9aa3c13db786" "aa0c015a-52dd-4ca4-8bf2-115b2b5a02d6"
+			"b16db499-7160-47e3-8231-1fa75844b1f1" "b369e237-fee4-4218-ad6f-696bb4f7f61e"
+			"bb1c7261-b8b0-4e74-85af-f7cf06413792" "cc49c81f-75ba-46bc-aa27-c7d3452bb294"
+			"df7c7b3c-a0e9-44f0-b529-5f3377725e45" "e275a47a-93c9-45a8-ab8a-0ee7f36f5872"
+			"e6897785-6973-48f2-a8ec-fa3e65fcae44" "f39755a7-e00e-4c0c-b63b-98c8ece49884"
 			"f755d24f-bc45-41e3-b27d-e1b0c8fbe1f1"
 		)
 	)

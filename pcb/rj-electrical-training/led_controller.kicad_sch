@@ -4,6 +4,13 @@
 	(generator_version "10.0")
 	(uuid "15bcf59e-e636-49cf-8f09-05363c180f71")
 	(paper "A4")
+	(title_block
+		(title "LED Controller")
+		(date "2026-11-01")
+		(rev "1")
+		(company "RoboJackets")
+		(comment 1 "Isa Baig")
+	)
 	(lib_symbols
 		(symbol "CLMVC-FKA-CL1D1L71BB7C3C3:CLMVC-FKA-CL1D1L71BB7C3C3"
 			(pin_names
@@ -2399,6 +2406,16 @@
 	)
 	(wire
 		(pts
+			(xy 229.87 76.2) (xy 229.87 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27dea964-b749-42fa-8814-43c39639bcb3")
+	)
+	(wire
+		(pts
 			(xy 35.56 72.39) (xy 35.56 68.58)
 		)
 		(stroke
@@ -2509,16 +2526,6 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 80.01) (xy 223.52 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8522867d-be18-47da-ad89-5db2e4d807fb")
-	)
-	(wire
-		(pts
 			(xy 201.93 85.09) (xy 231.14 85.09)
 		)
 		(stroke
@@ -2586,6 +2593,16 @@
 			(type default)
 		)
 		(uuid "a15a304e-9d2a-4600-a657-2ce1b664a05a")
+	)
+	(wire
+		(pts
+			(xy 229.87 80.01) (xy 222.25 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8e55f32-1e14-4134-a5b1-ed3c99e20951")
 	)
 	(wire
 		(pts
@@ -2676,6 +2693,16 @@
 			(type default)
 		)
 		(uuid "cd8a6f2c-c0db-44b9-a130-0eda19089c52")
+	)
+	(wire
+		(pts
+			(xy 232.41 76.2) (xy 229.87 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cdad4017-82a2-4045-890c-77b2705dfc63")
 	)
 	(wire
 		(pts
@@ -4225,7 +4252,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TMAG5273C1QDBVR:SOT95P280X140-6N"
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 234.6452 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -4805,7 +4832,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TMAG5273C1QDBVR:SOT95P280X140-6N"
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 247.3452 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -5486,7 +5513,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "QFN40P400X400X80-33N-D"
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 218.44 81.788 90)
 			(hide yes)
 			(show_name no)
@@ -6183,6 +6210,84 @@
 			(project "rj-electrical-training"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/0632b31d-4233-423e-9952-6afbcd6e6916"
 					(reference "#PWR076")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 232.41 76.2 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e2427aa1-5e89-449a-9cec-1d58a6082e49")
+		(property "Reference" "#PWR032"
+			(at 232.41 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 232.41 81.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 232.41 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 232.41 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 232.41 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a339d71f-767a-4c2b-83fc-ed77c75461ee")
+		)
+		(instances
+			(project "rj-electrical-training"
+				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/0632b31d-4233-423e-9952-6afbcd6e6916"
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)

@@ -3281,6 +3281,24 @@
 		(at 85.09 102.87)
 		(uuid "6debc85a-fb36-4e1a-9ccc-9ae59eeeaf91")
 	)
+	(bus_entry
+		(at 63.5 110.49)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c75c3a6-2e04-4d4d-8879-f295c15c6188")
+	)
+	(bus_entry
+		(at 63.5 107.95)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bee091ab-59fc-42d9-aa9f-bdda55c5bf6b")
+	)
 	(wire
 		(pts
 			(xy 198.12 118.11) (xy 210.82 118.11)
@@ -3321,6 +3339,16 @@
 		)
 		(uuid "0be6bc09-d9e9-4398-a55d-9f4a8e148156")
 	)
+	(bus
+		(pts
+			(xy 63.5 107.95) (xy 63.5 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e24aa3a-d052-411a-b1cd-a96fdeb29577")
+	)
 	(wire
 		(pts
 			(xy 185.42 80.01) (xy 201.93 80.01)
@@ -3350,6 +3378,16 @@
 			(type default)
 		)
 		(uuid "1558aea0-ddfb-4124-bbd5-519fe47f60a4")
+	)
+	(bus
+		(pts
+			(xy 63.5 110.49) (xy 62.23 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15ff2f07-f064-4c3a-81d5-2d8741fa8257")
 	)
 	(wire
 		(pts
@@ -4091,27 +4129,16 @@
 		)
 		(uuid "c38e7035-5c69-4f9b-8faa-d96bcc3bb914")
 	)
-	(hierarchical_label "GPIO 18"
+	(hierarchical_label "I2C2{SDA,SCL}"
 		(shape input)
-		(at 66.04 107.95 180)
+		(at 62.23 110.49 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "7d6e3542-2ce7-4bdb-9935-52d882f4cd25")
-	)
-	(hierarchical_label "GPIO 19"
-		(shape input)
-		(at 66.04 105.41 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "c1a54844-e272-4cf7-9e1b-9621ed9748e9")
+		(uuid "f43d78ed-7107-4e51-a01d-d5bd056afcb6")
 	)
 	(symbol
 		(lib_id "power:GND")

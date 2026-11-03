@@ -946,7 +946,7 @@
 	)
 	(text "OS pin is the overtemperature shutdown pin\nand can be interrupt/comparator. I think \nthis can be NC to the MCU based on the \ndatasheet."
 		(exclude_from_sim no)
-		(at 171.45 107.95 0)
+		(at 181.61 133.35 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1010,6 +1010,24 @@
 		(at 151.13 93.98)
 		(uuid "e82c8b3c-ce27-4233-93a4-67c566d266e0")
 	)
+	(bus_entry
+		(at 99.06 109.22)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eac6ca18-86c4-4213-af63-252f0e76d182")
+	)
+	(bus_entry
+		(at 101.6 123.19)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc697c8c-ad1a-4dc7-a865-23c01089a4db")
+	)
 	(wire
 		(pts
 			(xy 154.94 76.2) (xy 154.94 83.82)
@@ -1052,7 +1070,7 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 96.52) (xy 163.83 96.52)
+			(xy 154.94 96.52) (xy 157.48 96.52)
 		)
 		(stroke
 			(width 0)
@@ -1162,6 +1180,16 @@
 	)
 	(wire
 		(pts
+			(xy 157.48 123.19) (xy 101.6 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8bd8b0d4-968d-40e5-940c-a92dc408bae1")
+	)
+	(wire
+		(pts
 			(xy 101.6 106.68) (xy 115.57 106.68)
 		)
 		(stroke
@@ -1169,6 +1197,26 @@
 			(type default)
 		)
 		(uuid "8bfe5b6e-8a04-4e3e-b3ed-c9c6aafb3b74")
+	)
+	(wire
+		(pts
+			(xy 157.48 96.52) (xy 157.48 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0eaf43c-6b3d-4df7-abe5-10599008cff3")
+	)
+	(bus
+		(pts
+			(xy 99.06 109.22) (xy 99.06 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b861341e-a385-48cb-b3d2-47fd6f95587f")
 	)
 	(wire
 		(pts
@@ -1230,6 +1278,16 @@
 		)
 		(uuid "f4d36853-7399-4c11-9395-a8c097bbd272")
 	)
+	(bus
+		(pts
+			(xy 99.06 127) (xy 97.79 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb96df24-859f-41cc-82de-a4e490959dcc")
+	)
 	(wire
 		(pts
 			(xy 114.3 101.6) (xy 114.3 104.14)
@@ -1240,27 +1298,16 @@
 		)
 		(uuid "fca58d2e-18c9-46ab-84d9-8e485530e25e")
 	)
-	(hierarchical_label "GPIO 21"
+	(hierarchical_label "I2C1{SDA,SCL}"
 		(shape input)
-		(at 101.6 106.68 180)
+		(at 97.79 127 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "e7f49143-3084-44d1-84f5-0f5ab9bb0e9c")
-	)
-	(hierarchical_label "GPIO 20"
-		(shape input)
-		(at 163.83 96.52 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "f29960f0-e86d-4602-84bf-c02e059dea4a")
+		(uuid "e3542b81-f6ae-47f8-929c-3d8ac8f395de")
 	)
 	(symbol
 		(lib_id "Device:R_Small")

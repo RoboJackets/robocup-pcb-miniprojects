@@ -775,6 +775,26 @@
 		)
 		(uuid "05b0735c-7fe8-4029-8486-7446f09230ff")
 	)
+	(text "I2C0.SCL\n"
+		(exclude_from_sim no)
+		(at 118.11 118.11 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "5b68e10f-81a1-4709-9775-2d6093070108")
+	)
+	(text "I2C0.SDA\n"
+		(exclude_from_sim no)
+		(at 118.11 114.3 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "da29eb6d-e75b-446a-a738-3dd39ebe04db")
+	)
 	(junction
 		(at 123.19 113.03)
 		(diameter 0)
@@ -799,15 +819,33 @@
 		(color 0 0 0 0)
 		(uuid "e2367927-fa38-43d4-a15d-d455e99b6e43")
 	)
+	(bus_entry
+		(at 111.76 121.92)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07f15ab2-5759-4184-9b50-a310899db1ea")
+	)
+	(bus_entry
+		(at 111.76 118.11)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d224fbf-750a-4f12-853f-8359c1710833")
+	)
 	(wire
 		(pts
-			(xy 119.38 92.71) (xy 123.19 92.71)
+			(xy 114.3 119.38) (xy 146.05 119.38)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0bd58e93-a3c1-445f-80e5-7af06ef3f6f6")
+		(uuid "32567bf8-cf3f-4398-8848-5efa526cb872")
 	)
 	(wire
 		(pts
@@ -831,13 +869,13 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 96.52) (xy 119.38 92.71)
+			(xy 114.3 115.57) (xy 123.19 115.57)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4dc8be82-e029-4a9c-baa4-99273fc65d56")
+		(uuid "485d65b8-f7cd-41ad-8f45-6bada3392f03")
 	)
 	(wire
 		(pts
@@ -849,6 +887,36 @@
 		)
 		(uuid "5d12aa38-17fc-4cd0-b601-74c00f92e4fb")
 	)
+	(bus
+		(pts
+			(xy 109.22 121.92) (xy 111.76 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e082d59-1702-47c7-b96e-3fb11a32dd4d")
+	)
+	(wire
+		(pts
+			(xy 119.38 96.52) (xy 119.38 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75759582-ef67-4b1b-84da-b103149feac8")
+	)
+	(wire
+		(pts
+			(xy 146.05 105.41) (xy 146.05 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7932419e-cd8d-46cb-9562-54e239f35534")
+	)
 	(wire
 		(pts
 			(xy 123.19 113.03) (xy 152.4 113.03)
@@ -858,6 +926,16 @@
 			(type default)
 		)
 		(uuid "7c7653a1-10b3-40da-8131-8710333a7959")
+	)
+	(bus
+		(pts
+			(xy 111.76 118.11) (xy 111.76 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7fa7ce25-fa75-4007-bb95-defe4e380edc")
 	)
 	(wire
 		(pts
@@ -881,7 +959,7 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 105.41) (xy 123.19 124.46)
+			(xy 123.19 105.41) (xy 123.19 115.57)
 		)
 		(stroke
 			(width 0)
@@ -908,16 +986,6 @@
 			(type default)
 		)
 		(uuid "a95ecc65-39e4-476e-b4fd-4d1eda86054d")
-	)
-	(wire
-		(pts
-			(xy 146.05 105.41) (xy 146.05 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ad36d8bd-4a10-46a3-b261-d731aa4b9809")
 	)
 	(wire
 		(pts
@@ -961,6 +1029,16 @@
 	)
 	(wire
 		(pts
+			(xy 119.38 92.71) (xy 123.19 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec1ee47f-1f2d-49bf-9a60-7a77b16501e4")
+	)
+	(wire
+		(pts
 			(xy 147.32 92.71) (xy 147.32 77.47)
 		)
 		(stroke
@@ -979,27 +1057,16 @@
 		)
 		(uuid "fbeaf6e5-8f40-4390-b91c-9b6e354b75ae")
 	)
-	(hierarchical_label "GPIO 24"
+	(hierarchical_label "I2C0{SDA,SCL}"
 		(shape input)
-		(at 123.19 124.46 180)
+		(at 109.22 121.92 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "8ea908b4-fd00-4001-b48d-dd8428092029")
-	)
-	(hierarchical_label "GPIO 25"
-		(shape input)
-		(at 146.05 124.46 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "c5573683-7eae-4a40-9089-234d59b08d0e")
+		(uuid "12f9572b-3a44-4073-8cbb-a219df298199")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -1314,7 +1381,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "66eab8c2-7faf-457e-bded-f8bbc8269ded")
-		(property "Reference" "C1"
+		(property "Reference" "C?"
 			(at 156.21 82.55 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1378,7 +1445,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/0a05cb7e-a1dd-4199-ab32-74bc6044b370"
-					(reference "C1")
+					(reference "C?")
 					(unit 1)
 				)
 			)

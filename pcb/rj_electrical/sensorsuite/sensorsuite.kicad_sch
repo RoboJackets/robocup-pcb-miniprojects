@@ -12,8 +12,78 @@
 		(comment 1 "Allen Chiu")
 	)
 	(lib_symbols)
+	(bus
+		(pts
+			(xy 129.54 124.46) (xy 151.13 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "004d7a8a-5962-425e-9b02-3b0c874b5b2c")
+	)
+	(bus
+		(pts
+			(xy 129.54 149.86) (xy 151.13 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d644ac5-fb91-44ec-ba47-5c543b1a2fb2")
+	)
+	(bus
+		(pts
+			(xy 129.54 99.06) (xy 151.13 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4526a709-797b-4a2c-99d1-7356d4a6ed32")
+	)
+	(bus
+		(pts
+			(xy 129.54 73.66) (xy 151.13 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4cb7a82b-887a-42df-8476-64923788aa5d")
+	)
+	(bus
+		(pts
+			(xy 129.54 25.4) (xy 151.13 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93a5f7b7-774e-43fa-9476-c463912d420e")
+	)
+	(bus
+		(pts
+			(xy 129.54 48.26) (xy 151.13 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0b06d29-8724-4cc5-9063-28f655b536f2")
+	)
+	(label "I hate everything and everyone"
+		(at 40.64 52.07 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "df7fdda0-0f48-40e4-8b16-9e2a2e1670cb")
+	)
 	(sheet
-		(at 130.81 27.94)
+		(at 151.13 64.77)
 		(size 29.21 17.78)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -29,7 +99,7 @@
 		)
 		(uuid "02452c5e-8b51-483f-b628-74dc6a43ccad")
 		(property "Sheetname" "Hall Effect Sensor"
-			(at 130.81 27.2284 0)
+			(at 151.13 64.0584 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -40,7 +110,7 @@
 			)
 		)
 		(property "Sheetfile" "HallEffect.kicad_sch"
-			(at 130.81 46.3046 0)
+			(at 151.13 83.1346 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -48,6 +118,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "I2C3{SDA,SCL}" input
+			(at 151.13 73.66 180)
+			(uuid "e92be8e5-878c-413b-b282-329c28a7a76d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -59,8 +139,8 @@
 		)
 	)
 	(sheet
-		(at 96.52 27.94)
-		(size 27.94 17.78)
+		(at 151.13 140.97)
+		(size 30.48 17.78)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -75,7 +155,7 @@
 		)
 		(uuid "0a05cb7e-a1dd-4199-ab32-74bc6044b370")
 		(property "Sheetname" "Color Sensor"
-			(at 96.52 27.2284 0)
+			(at 151.13 140.2584 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -86,7 +166,7 @@
 			)
 		)
 		(property "Sheetfile" "colorsensor.kicad_sch"
-			(at 96.52 46.3046 0)
+			(at 151.13 159.3346 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -94,6 +174,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "I2C0{SDA,SCL}" input
+			(at 151.13 149.86 180)
+			(uuid "ff9ef35d-c821-47b1-84a5-55419ebb92f7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -105,8 +195,8 @@
 		)
 	)
 	(sheet
-		(at 234.95 57.15)
-		(size 31.75 57.15)
+		(at 77.47 17.78)
+		(size 52.07 148.59)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -121,7 +211,7 @@
 		)
 		(uuid "39dc40d2-dc6d-43b0-ab98-682a55b91119")
 		(property "Sheetname" "rp2040"
-			(at 234.95 56.4384 0)
+			(at 77.47 17.0684 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -132,7 +222,7 @@
 			)
 		)
 		(property "Sheetfile" "rp2040.kicad_sch"
-			(at 234.95 114.8846 0)
+			(at 77.47 166.9546 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -140,6 +230,66 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "I2C0{SDA,SCL}" output
+			(at 129.54 149.86 0)
+			(uuid "f765c0d1-b6f9-4142-8ed9-e47e917875a7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "I2C1{SDA,SCL}" output
+			(at 129.54 124.46 0)
+			(uuid "1cee5378-de2e-4e2c-afa7-cd55255c00a0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "I2C2{SDA,SCL}" output
+			(at 129.54 99.06 0)
+			(uuid "71f1281a-8a4c-4040-83b3-6cf7f255a2cd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "I2C3{SDA,SCL}" input
+			(at 129.54 73.66 0)
+			(uuid "42b6a242-ba75-43d2-98ac-d26daa68bcbf")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "I2C4{SDA,SCL,SDB}" input
+			(at 129.54 48.26 0)
+			(uuid "aff4375f-7dde-4489-ae11-743b4189bacd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "I2C5{SDA,SCL}" input
+			(at 129.54 25.4 0)
+			(uuid "bfd7985d-4200-41c1-9f7e-ae897391167c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -151,7 +301,7 @@
 		)
 	)
 	(sheet
-		(at 163.83 57.15)
+		(at 40.64 29.21)
 		(size 30.48 16.51)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -167,7 +317,7 @@
 		)
 		(uuid "418e3efe-090a-409a-b9d2-b74e6fce45e5")
 		(property "Sheetname" "Power"
-			(at 163.83 56.4384 0)
+			(at 40.64 28.4984 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -178,7 +328,7 @@
 			)
 		)
 		(property "Sheetfile" "Power.kicad_sch"
-			(at 163.83 74.2446 0)
+			(at 40.64 46.3046 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -197,7 +347,7 @@
 		)
 	)
 	(sheet
-		(at 199.39 27.94)
+		(at 151.13 90.17)
 		(size 30.48 17.78)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -213,7 +363,7 @@
 		)
 		(uuid "5358218b-62a7-4527-ab72-bcdb5c5a593c")
 		(property "Sheetname" "GPIO Expander"
-			(at 199.39 27.2284 0)
+			(at 151.13 89.4584 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -224,7 +374,7 @@
 			)
 		)
 		(property "Sheetfile" "GPIOExpander.kicad_sch"
-			(at 199.39 46.3046 0)
+			(at 151.13 108.5346 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -232,6 +382,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "I2C2{SDA,SCL}" input
+			(at 151.13 99.06 180)
+			(uuid "1e35def0-51e7-43b8-afd2-2dad6f4ad4b7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -243,7 +403,7 @@
 		)
 	)
 	(sheet
-		(at 233.68 27.94)
+		(at 151.13 39.37)
 		(size 30.48 17.78)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -259,7 +419,7 @@
 		)
 		(uuid "7294cdae-6cb2-4c9f-b5dd-e814df360be3")
 		(property "Sheetname" "LED Controller"
-			(at 233.68 27.2284 0)
+			(at 151.13 38.6584 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -270,7 +430,7 @@
 			)
 		)
 		(property "Sheetfile" "LEDController.kicad_sch"
-			(at 233.68 46.3046 0)
+			(at 151.13 57.7346 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -278,6 +438,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "I2C4{SDA,SCL,SDB}" input
+			(at 151.13 48.26 180)
+			(uuid "bd540cc1-93b2-466d-8f82-05a312fee493")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -289,7 +459,7 @@
 		)
 	)
 	(sheet
-		(at 163.83 27.94)
+		(at 151.13 115.57)
 		(size 30.48 17.78)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -305,7 +475,7 @@
 		)
 		(uuid "adcb0624-5822-4116-8da8-9f74cda9e7f3")
 		(property "Sheetname" "Temperature Sensor"
-			(at 163.83 27.2284 0)
+			(at 151.13 114.8584 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -316,7 +486,7 @@
 			)
 		)
 		(property "Sheetfile" "temperaturesensor.kicad_sch"
-			(at 163.83 46.3046 0)
+			(at 151.13 133.9346 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -324,6 +494,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "I2C1{SDA,SCL}" input
+			(at 151.13 124.46 180)
+			(uuid "88ba3f6c-b252-46a3-9782-b5e8b0fa68b9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -335,7 +515,7 @@
 		)
 	)
 	(sheet
-		(at 198.12 57.15)
+		(at 151.13 16.51)
 		(size 31.75 16.51)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -351,7 +531,7 @@
 		)
 		(uuid "e81205e4-076b-4169-a4b5-c94b604287eb")
 		(property "Sheetname" "IMU"
-			(at 198.12 56.4384 0)
+			(at 151.13 15.7984 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -362,7 +542,7 @@
 			)
 		)
 		(property "Sheetfile" "IMU.kicad_sch"
-			(at 198.12 74.2446 0)
+			(at 151.13 33.6046 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -370,6 +550,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "I2C5{SDA,SCL}" input
+			(at 151.13 25.4 180)
+			(uuid "c970b545-0c52-4133-b97b-6fcb80beb489")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances

@@ -793,24 +793,6 @@
 					)
 				)
 				(pin bidirectional line
-					(at 13.97 27.94 0)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
 					(at 13.97 15.24 0)
 					(length 2.54)
 					(name "SDA"
@@ -846,7 +828,27 @@
 						)
 					)
 				)
-				(pin bidirectional line
+			)
+			(symbol "VEML3328_1_0"
+				(pin input line
+					(at 13.97 27.94 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
 					(at 36.83 27.94 180)
 					(length 2.54)
 					(name "VDD"
@@ -890,26 +892,6 @@
 		)
 		(uuid "05b0735c-7fe8-4029-8486-7446f09230ff")
 	)
-	(text "I2C0.SCL\n"
-		(exclude_from_sim no)
-		(at 118.11 118.11 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "5b68e10f-81a1-4709-9775-2d6093070108")
-	)
-	(text "I2C0.SDA\n"
-		(exclude_from_sim no)
-		(at 118.11 114.3 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "da29eb6d-e75b-446a-a738-3dd39ebe04db")
-	)
 	(junction
 		(at 123.19 113.03)
 		(diameter 0)
@@ -920,7 +902,7 @@
 		(at 119.38 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "7b9196ee-63b5-4d20-b588-f76806f9c89b")
+		(uuid "8adc37d5-1a4b-4b0e-b522-3975a67ddeb8")
 	)
 	(junction
 		(at 161.29 102.87)
@@ -963,6 +945,16 @@
 			(type default)
 		)
 		(uuid "9d224fbf-750a-4f12-853f-8359c1710833")
+	)
+	(wire
+		(pts
+			(xy 119.38 92.71) (xy 119.38 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0668c609-4327-4d18-bb5f-73f56e20c4da")
 	)
 	(wire
 		(pts
@@ -1046,6 +1038,16 @@
 	)
 	(wire
 		(pts
+			(xy 119.38 95.25) (xy 119.38 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a724ffa-e46f-4339-84c3-0ed7e0ac4ff0")
+	)
+	(wire
+		(pts
 			(xy 123.19 113.03) (xy 152.4 113.03)
 		)
 		(stroke
@@ -1083,16 +1085,6 @@
 			(type default)
 		)
 		(uuid "9347bd06-7385-497d-a037-99d4f3303cfa")
-	)
-	(wire
-		(pts
-			(xy 119.38 95.25) (xy 119.38 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "973ef1e4-46ae-49b9-9b63-bcf20259660e")
 	)
 	(wire
 		(pts
@@ -1156,16 +1148,6 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 92.71) (xy 119.38 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e1a517ae-99a3-4a85-9b50-599aa5279472")
-	)
-	(wire
-		(pts
 			(xy 147.32 77.47) (xy 153.67 77.47)
 		)
 		(stroke
@@ -1204,6 +1186,26 @@
 		)
 		(uuid "fbeaf6e5-8f40-4390-b91c-9b6e354b75ae")
 	)
+	(label "I2C0.SDA"
+		(at 114.3 115.57 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "27491cc3-44dc-4c81-a474-c7b6a66aacd8")
+	)
+	(label "I2C0.SCL"
+		(at 114.3 119.38 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7dac6a97-e520-4f8b-bef8-5f3438fa0714")
+	)
 	(hierarchical_label "I2C0{SDA,SCL}"
 		(shape input)
 		(at 109.22 121.92 180)
@@ -1226,7 +1228,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "03111bea-de46-4617-a450-0bce550a9858")
-		(property "Reference" "#PWR054"
+		(property "Reference" "#PWR04"
 			(at 153.67 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -1286,151 +1288,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/0a05cb7e-a1dd-4199-ab32-74bc6044b370"
-					(reference "#PWR054")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "rj_elec:VEML3328")
-		(at 109.22 120.65 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "0bf1084b-b579-4f28-b437-7629eb6147e5")
-		(property "Reference" "SENSOR1"
-			(at 130.81 97.79 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "VEML3328"
-			(at 130.81 100.33 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Sensor:VEML3328"
-			(at 127.762 131.826 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/84968/veml3328.pdf"
-			(at 109.22 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Color Sensor (RGBCIR Color Sensor With I2C Interface)"
-			(at 126.238 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Vendor" "DigiKey"
-			(at 109.22 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor PIN" ""
-			(at 109.22 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer PIN" ""
-			(at 109.22 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor P/N" "751-VEML3328TR-ND"
-			(at 109.22 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer P/N" "VEML3328"
-			(at 109.22 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1ceaee86-71fc-4d11-9b52-d0de8cb023d4")
-		)
-		(pin "2"
-			(uuid "1e0afb6d-e957-41a3-a8c6-da6488b55345")
-		)
-		(pin "3"
-			(uuid "1b70dc5d-7d8f-455c-a2cb-db5b12b137a6")
-		)
-		(pin "4"
-			(uuid "6dab0cac-2645-4043-bcea-75aa1e47d47d")
-		)
-		(instances
-			(project "sensorsuite"
-				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/0a05cb7e-a1dd-4199-ab32-74bc6044b370"
-					(reference "SENSOR1")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -1448,7 +1306,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0faee59c-539e-4174-abc7-95917f263617")
-		(property "Reference" "#FLG01"
+		(property "Reference" "#FLG03"
 			(at 151.765 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -1509,87 +1367,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/0a05cb7e-a1dd-4199-ab32-74bc6044b370"
-					(reference "#FLG01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 119.38 95.25 90)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2ebdc675-d326-453b-893e-29f2413b6ab9")
-		(property "Reference" "#FLG02"
-			(at 117.475 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 115.57 95.2499 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 119.38 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 119.38 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 119.38 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "48dcc19c-d86a-47a3-b3c0-496b2d86f714")
-		)
-		(instances
-			(project "sensorsuite"
-				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/0a05cb7e-a1dd-4199-ab32-74bc6044b370"
-					(reference "#FLG02")
+					(reference "#FLG03")
 					(unit 1)
 				)
 			)
@@ -1687,7 +1465,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "66eab8c2-7faf-457e-bded-f8bbc8269ded")
-		(property "Reference" "C15"
+		(property "Reference" "C2"
 			(at 156.21 82.55 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1751,7 +1529,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/0a05cb7e-a1dd-4199-ab32-74bc6044b370"
-					(reference "C15")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -1839,6 +1617,149 @@
 		)
 	)
 	(symbol
+		(lib_id "rj_elec:VEML3328")
+		(at 109.22 120.65 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8f993c50-da41-492a-aa6f-246b3548e37c")
+		(property "Reference" "SENSOR2"
+			(at 134.62 85.09 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VEML3328"
+			(at 134.62 87.63 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "VEML3328:VEML3328"
+			(at 127.762 131.826 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/84968/veml3328.pdf"
+			(at 109.22 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Color Sensor"
+			(at 126.238 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Manufacturer P/N" "VEML3328"
+			(at 109.22 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "751-VEML3328TR-ND"
+			(at 109.22 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "DigiKey"
+			(at 109.22 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PIN" ""
+			(at 109.22 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer PIN" ""
+			(at 109.22 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ba6521ce-a1ac-49da-9f15-1fe5a6129f96")
+		)
+		(pin "3"
+			(uuid "9c8d4448-05ad-46dc-ad43-e1cf6535c5e5")
+		)
+		(pin "4"
+			(uuid "f7bd1b94-a2b5-43e6-9883-57eab4ffa188")
+		)
+		(pin "2"
+			(uuid "4b0b9d2d-7de4-4876-81db-fea9fd9baee9")
+		)
+		(instances
+			(project "sensorsuite"
+				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/0a05cb7e-a1dd-4199-ab32-74bc6044b370"
+					(reference "SENSOR2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 153.67 73.66 0)
 		(unit 1)
@@ -1850,7 +1771,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a768ed4e-bc82-4528-b756-2a575b3761bf")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR03"
 			(at 153.67 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -1910,7 +1831,86 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/0a05cb7e-a1dd-4199-ab32-74bc6044b370"
-					(reference "#PWR02")
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 119.38 95.25 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c6ab3d79-bd7a-4180-a662-b26a9e5ccbc1")
+		(property "Reference" "#FLG02"
+			(at 117.475 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 115.57 95.2499 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 119.38 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 119.38 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 119.38 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "12776054-deaf-4bd7-bfd8-d0e19edfc979")
+		)
+		(instances
+			(project "sensorsuite"
+				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/0a05cb7e-a1dd-4199-ab32-74bc6044b370"
+					(reference "#FLG02")
 					(unit 1)
 				)
 			)
@@ -1927,7 +1927,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e3657164-7321-46a6-90ab-8ca6fb13c2b9")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR02"
 			(at 119.38 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -1988,7 +1988,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/0a05cb7e-a1dd-4199-ab32-74bc6044b370"
-					(reference "#PWR01")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -2005,7 +2005,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e505cb5b-2d88-4255-8f4f-4e446c1995ca")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR05"
 			(at 161.29 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -2065,7 +2065,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/0a05cb7e-a1dd-4199-ab32-74bc6044b370"
-					(reference "#PWR03")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)

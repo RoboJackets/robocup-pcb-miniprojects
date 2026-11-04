@@ -1055,16 +1055,6 @@
 		)
 		(uuid "56a20d78-9cf7-4ae6-9995-9b4add64adcf")
 	)
-	(text "Do I need a hierarchical \nlabel for VDDIO on this \npin?"
-		(exclude_from_sim no)
-		(at 80.01 104.14 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "5c860551-73fa-4d70-b7dc-7416a3d3d172")
-	)
 	(junction
 		(at 102.87 88.9)
 		(diameter 0)
@@ -1116,7 +1106,7 @@
 		(uuid "e5f5463f-aef9-4dd4-9ab6-32bc617d3012")
 	)
 	(bus_entry
-		(at 100.33 107.95)
+		(at 80.01 107.95)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -1125,7 +1115,7 @@
 		(uuid "2b1e176e-e00e-4d08-8632-35bcf3c3f002")
 	)
 	(bus_entry
-		(at 100.33 110.49)
+		(at 80.01 110.49)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -1135,7 +1125,7 @@
 	)
 	(bus
 		(pts
-			(xy 97.79 110.49) (xy 97.79 114.3)
+			(xy 77.47 110.49) (xy 77.47 114.3)
 		)
 		(stroke
 			(width 0)
@@ -1205,7 +1195,7 @@
 	)
 	(bus
 		(pts
-			(xy 97.79 114.3) (xy 96.52 114.3)
+			(xy 77.47 114.3) (xy 76.2 114.3)
 		)
 		(stroke
 			(width 0)
@@ -1225,7 +1215,7 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 110.49) (xy 111.76 110.49)
+			(xy 80.01 110.49) (xy 111.76 110.49)
 		)
 		(stroke
 			(width 0)
@@ -1445,7 +1435,7 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 107.95) (xy 111.76 107.95)
+			(xy 80.01 107.95) (xy 111.76 107.95)
 		)
 		(stroke
 			(width 0)
@@ -1463,9 +1453,29 @@
 		)
 		(uuid "f223f00d-5ce3-486c-8e1e-c193bafdc92c")
 	)
+	(label "I2C5.SCL"
+		(at 80.01 107.95 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7cdfbb62-0933-42d5-84a2-d240fc1ea64d")
+	)
+	(label "I2C5.SDA"
+		(at 80.01 110.49 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b59899b3-1b28-4a9c-a1d7-b621e1d74006")
+	)
 	(hierarchical_label "I2C5{SDA,SCL}"
 		(shape input)
-		(at 96.52 114.3 180)
+		(at 76.2 114.3 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1486,7 +1496,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0a582841-2d01-4587-a4eb-8f7967bfa8a6")
-		(property "Reference" "#PWR051"
+		(property "Reference" "#PWR066"
 			(at 189.23 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -1546,7 +1556,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/e81205e4-076b-4169-a4b5-c94b604287eb"
-					(reference "#PWR051")
+					(reference "#PWR066")
 					(unit 1)
 				)
 			)
@@ -1563,7 +1573,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "186a7141-b1f7-4ee0-b8b6-68e089a6f2b8")
-		(property "Reference" "R12"
+		(property "Reference" "R46"
 			(at 104.14 96.52 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1627,7 +1637,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/e81205e4-076b-4169-a4b5-c94b604287eb"
-					(reference "R12")
+					(reference "R46")
 					(unit 1)
 				)
 			)
@@ -1645,7 +1655,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "201fe020-f6e7-4c26-a8eb-a9e489df035f")
-		(property "Reference" "#PWR050"
+		(property "Reference" "#PWR067"
 			(at 194.31 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -1705,7 +1715,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/e81205e4-076b-4169-a4b5-c94b604287eb"
-					(reference "#PWR050")
+					(reference "#PWR067")
 					(unit 1)
 				)
 			)
@@ -1723,7 +1733,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3fae1dec-00ea-4dd6-bdf3-4aadbb86c4ef")
-		(property "Reference" "#PWR049"
+		(property "Reference" "#PWR062"
 			(at 163.83 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -1783,7 +1793,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/e81205e4-076b-4169-a4b5-c94b604287eb"
-					(reference "#PWR049")
+					(reference "#PWR062")
 					(unit 1)
 				)
 			)
@@ -1800,7 +1810,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4d6e1598-0c31-4760-8a65-3f9f67af2e76")
-		(property "Reference" "R13"
+		(property "Reference" "R47"
 			(at 111.76 96.52 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1919,7 +1929,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/e81205e4-076b-4169-a4b5-c94b604287eb"
-					(reference "R13")
+					(reference "R47")
 					(unit 1)
 				)
 			)
@@ -1936,7 +1946,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "59aa885b-9264-4c9a-8839-1a1b55cdd6e6")
-		(property "Reference" "C24"
+		(property "Reference" "C13"
 			(at 171.45 77.47 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2000,7 +2010,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/e81205e4-076b-4169-a4b5-c94b604287eb"
-					(reference "C24")
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -2018,7 +2028,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6128edeb-a5a3-4c85-b8b3-63dde215c734")
-		(property "Reference" "#PWR055"
+		(property "Reference" "#PWR061"
 			(at 110.49 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -2078,7 +2088,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/e81205e4-076b-4169-a4b5-c94b604287eb"
-					(reference "#PWR055")
+					(reference "#PWR061")
 					(unit 1)
 				)
 			)
@@ -2096,7 +2106,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7e80da87-56f6-42e6-a038-f12f42a1f4b2")
-		(property "Reference" "#PWR053"
+		(property "Reference" "#PWR060"
 			(at 102.87 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -2156,7 +2166,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/e81205e4-076b-4169-a4b5-c94b604287eb"
-					(reference "#PWR053")
+					(reference "#PWR060")
 					(unit 1)
 				)
 			)
@@ -2174,7 +2184,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8cffbe61-d67d-430e-9cdc-1be6871a8a0a")
-		(property "Reference" "SENSOR4"
+		(property "Reference" "SENSOR5"
 			(at 137.16 87.63 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2461,7 +2471,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/e81205e4-076b-4169-a4b5-c94b604287eb"
-					(reference "SENSOR4")
+					(reference "SENSOR5")
 					(unit 1)
 				)
 			)
@@ -2479,7 +2489,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "901b0b5c-b86a-4b9d-a95b-6a82164b12e1")
-		(property "Reference" "C26"
+		(property "Reference" "C15"
 			(at 193.04 101.5999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2543,7 +2553,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/e81205e4-076b-4169-a4b5-c94b604287eb"
-					(reference "C26")
+					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -2561,7 +2571,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "953c2fd7-b75a-48d9-8ca1-a41a2fc09242")
-		(property "Reference" "#PWR081"
+		(property "Reference" "#PWR059"
 			(at 96.52 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -2621,7 +2631,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/e81205e4-076b-4169-a4b5-c94b604287eb"
-					(reference "#PWR081")
+					(reference "#PWR059")
 					(unit 1)
 				)
 			)
@@ -2638,7 +2648,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cd312218-7ff6-477d-b10a-ec106ae6f123")
-		(property "Reference" "C25"
+		(property "Reference" "C14"
 			(at 184.15 77.47 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2702,7 +2712,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/e81205e4-076b-4169-a4b5-c94b604287eb"
-					(reference "C25")
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -2720,7 +2730,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d9747d68-0d16-42d5-bde1-de15e4f1e4ec")
-		(property "Reference" "#PWR046"
+		(property "Reference" "#PWR063"
 			(at 168.91 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -2780,7 +2790,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/e81205e4-076b-4169-a4b5-c94b604287eb"
-					(reference "#PWR046")
+					(reference "#PWR063")
 					(unit 1)
 				)
 			)
@@ -2798,7 +2808,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d9a783c4-1471-4c1f-8663-24768e741477")
-		(property "Reference" "#PWR048"
+		(property "Reference" "#PWR065"
 			(at 187.96 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -2858,7 +2868,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/e81205e4-076b-4169-a4b5-c94b604287eb"
-					(reference "#PWR048")
+					(reference "#PWR065")
 					(unit 1)
 				)
 			)
@@ -2876,7 +2886,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "df0d09d2-ecb5-4c02-91d7-8c899d3668aa")
-		(property "Reference" "#PWR047"
+		(property "Reference" "#PWR064"
 			(at 181.61 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -2936,7 +2946,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/e81205e4-076b-4169-a4b5-c94b604287eb"
-					(reference "#PWR047")
+					(reference "#PWR064")
 					(unit 1)
 				)
 			)

@@ -2446,6 +2446,26 @@
 					)
 				)
 			)
+			(symbol "AP2112K-3.3TRG1_1_1"
+				(pin passive line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
 			(embedded_fonts no)
 		)
 		(symbol "rj_elec:LM66100DCKR"
@@ -3782,6 +3802,10 @@
 		(at 49.53 90.17)
 		(uuid "dab2831a-63d9-43e4-bbb2-b422806814b5")
 	)
+	(no_connect
+		(at 254 91.44)
+		(uuid "e53ce267-d182-46f0-8397-95478ba37bdf")
+	)
 	(bus_entry
 		(at 109.22 77.47)
 		(size 2.54 2.54)
@@ -4683,7 +4707,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "032541f7-483c-4747-8186-a7731107fb47")
-		(property "Reference" "SPIConnector_IN"
+		(property "Reference" "SPIConnector_IN2"
 			(at 107.95 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4814,7 +4838,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "SPIConnector_IN")
+					(reference "SPIConnector_IN2")
 					(unit 1)
 				)
 			)
@@ -4832,7 +4856,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "050e3a23-6643-422a-ab30-224c629a19d9")
-		(property "Reference" "#FLG06"
+		(property "Reference" "#FLG07"
 			(at 217.17 78.105 0)
 			(hide yes)
 			(show_name no)
@@ -4892,258 +4916,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "#FLG06")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "rj_elec:AP2112K-3.3TRG1")
-		(at 243.84 91.44 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0d9c57ac-bff3-4849-b8e9-34c542fa4c0e")
-		(property "Reference" "LDO1"
-			(at 243.84 78.74 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "AP2112K-3.3TRG1"
-			(at 243.84 81.28 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "rj_electrical_footprint:SOT95P285X140-5N"
-			(at 243.84 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP2112.pdf"
-			(at 243.84 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Voltage Regulators, LDO, 600mA CMOS LDO 50mA 3.3V 250mV | Diodes Inc AP2112K-3.3TRG1"
-			(at 243.84 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MF" "Diodes Inc."
-			(at 243.84 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Package" "SOT-753 Diodes Inc."
-			(at 243.84 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Price" "None"
-			(at 243.84 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/AP2112K-3.3TRG1/Diodes+Inc./view-part/?ref=eda"
-			(at 243.84 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "PARTREV" "2-2"
-			(at 243.84 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/AP2112K-3.3TRG1/Diodes+Inc./view-part/?ref=snap"
-			(at 243.84 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MP" "AP2112K-3.3TRG1"
-			(at 243.84 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 243.84 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MANUFACTURER" "Diodes Inc."
-			(at 243.84 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Manufacturer P/N" "AP2112K-3.3TRG1"
-			(at 243.84 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor P/N" "AP2112K-3.3TRG1DITR-ND"
-			(at 243.84 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor" "DigiKey"
-			(at 243.84 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor PIN" ""
-			(at 243.84 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer PIN" ""
-			(at 243.84 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8b34744d-a954-448b-8265-1b179dab1cf2")
-		)
-		(pin "2"
-			(uuid "36735796-6376-4fb2-ac97-4b9bac0d5f55")
-		)
-		(pin "5"
-			(uuid "8042eb5a-8fee-4438-9473-24033fb467f6")
-		)
-		(pin "3"
-			(uuid "9e7328ca-54f1-4216-8dc5-7c8170878d62")
-		)
-		(instances
-			(project "sensorsuite"
-				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "LDO1")
+					(reference "#FLG07")
 					(unit 1)
 				)
 			)
@@ -5161,7 +4934,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "137c4fa7-b765-42d8-af1e-dc3ddafd934e")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR049"
 			(at 118.11 127 0)
 			(hide yes)
 			(show_name no)
@@ -5221,7 +4994,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "#PWR027")
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -5239,7 +5012,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1baca7d8-9916-4b95-b32e-a7459768c287")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR055"
 			(at 226.06 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -5299,7 +5072,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "#PWR021")
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -5317,7 +5090,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1e02a0de-ede9-4b6d-8ee0-8a4ca0027765")
-		(property "Reference" "#PWR088"
+		(property "Reference" "#PWR046"
 			(at 73.66 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -5377,7 +5150,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "#PWR088")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -5395,7 +5168,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2681cbf3-145d-4fea-916d-f5f5c8645646")
-		(property "Reference" "D9"
+		(property "Reference" "D13"
 			(at 64.77 99.0599 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5536,7 +5309,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "D9")
+					(reference "D13")
 					(unit 1)
 				)
 			)
@@ -5554,7 +5327,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "26a685fa-a28c-472a-a661-5358b68b5096")
-		(property "Reference" "#PWR086"
+		(property "Reference" "#PWR045"
 			(at 62.23 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -5614,7 +5387,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "#PWR086")
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -5912,7 +5685,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2b251b9a-8ea2-4e56-a6c9-0aeb4d783f21")
-		(property "Reference" "C23"
+		(property "Reference" "C12"
 			(at 267.97 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6031,7 +5804,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "C23")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -6049,7 +5822,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2fc26c90-0170-4ca4-90a3-05c190765796")
-		(property "Reference" "#PWR087"
+		(property "Reference" "#PWR048"
 			(at 97.79 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -6109,7 +5882,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "#PWR087")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -6127,7 +5900,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "41e41995-be2b-4004-a859-22c77a76777f")
-		(property "Reference" "#PWR089"
+		(property "Reference" "#PWR051"
 			(at 138.43 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -6187,7 +5960,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "#PWR089")
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -6205,7 +5978,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4bac8091-1944-436d-b780-f7ffe9a53ef5")
-		(property "Reference" "#FLG05"
+		(property "Reference" "#FLG04"
 			(at 52.07 73.025 0)
 			(hide yes)
 			(show_name no)
@@ -6265,7 +6038,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "#FLG05")
+					(reference "#FLG04")
 					(unit 1)
 				)
 			)
@@ -6283,7 +6056,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "513ca975-57f9-4558-88ad-603d0c8c8156")
-		(property "Reference" "D10"
+		(property "Reference" "D14"
 			(at 76.2 85.0899 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6424,7 +6197,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "D10")
+					(reference "D14")
 					(unit 1)
 				)
 			)
@@ -6442,7 +6215,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "550f9f23-8319-4abd-ac27-2112b2805d11")
-		(property "Reference" "#FLG04"
+		(property "Reference" "#FLG05"
 			(at 73.66 73.025 0)
 			(hide yes)
 			(show_name no)
@@ -6502,7 +6275,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "#FLG04")
+					(reference "#FLG05")
 					(unit 1)
 				)
 			)
@@ -6519,7 +6292,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "61d57a3d-6339-4319-90d3-0c4769a1c54b")
-		(property "Reference" "R?"
+		(property "Reference" "R45"
 			(at 157.48 71.12 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6583,7 +6356,261 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "R?")
+					(reference "R45")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "rj_elec:AP2112K-3.3TRG1")
+		(at 243.84 91.44 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7e7e8b20-efb0-4391-82f8-0299b476e14f")
+		(property "Reference" "LDO1"
+			(at 243.84 78.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AP2112K-3.3TRG1"
+			(at 243.84 81.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "rj_electrical_footprint:SOT95P285X140-5N"
+			(at 243.84 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP2112.pdf"
+			(at 243.84 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Voltage Regulators, LDO, 600mA CMOS LDO 50mA 3.3V 250mV | Diodes Inc AP2112K-3.3TRG1"
+			(at 243.84 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MF" "Diodes Inc."
+			(at 243.84 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Package" "SOT-753 Diodes Inc."
+			(at 243.84 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Price" "None"
+			(at 243.84 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/AP2112K-3.3TRG1/Diodes+Inc./view-part/?ref=eda"
+			(at 243.84 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "PARTREV" "2-2"
+			(at 243.84 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/AP2112K-3.3TRG1/Diodes+Inc./view-part/?ref=snap"
+			(at 243.84 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MP" "AP2112K-3.3TRG1"
+			(at 243.84 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 243.84 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MANUFACTURER" "Diodes Inc."
+			(at 243.84 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Manufacturer P/N" "AP2112K-3.3TRG1"
+			(at 243.84 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "AP2112K-3.3TRG1DITR-ND"
+			(at 243.84 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "DigiKey"
+			(at 243.84 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PIN" ""
+			(at 243.84 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer PIN" ""
+			(at 243.84 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "19836dbe-7075-424f-a50f-504fa56d9cff")
+		)
+		(pin "2"
+			(uuid "02edcc66-b975-4ad5-b31b-d1fc713e77c5")
+		)
+		(pin "3"
+			(uuid "e344c78b-c544-4506-a0c5-27d322afe9f2")
+		)
+		(pin "5"
+			(uuid "38677a2c-1709-491f-816e-30cbd9193ca8")
+		)
+		(pin "4"
+			(uuid "64c0bc47-64db-430d-b7ed-f025ea616f59")
+		)
+		(instances
+			(project "sensorsuite"
+				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
+					(reference "LDO1")
 					(unit 1)
 				)
 			)
@@ -6601,7 +6628,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "92aaf440-7ddc-4a6d-aae5-d594fe953a1f")
-		(property "Reference" "SPIConnector_OUT"
+		(property "Reference" "SPIConnector_OUT2"
 			(at 113.03 137.1599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6734,7 +6761,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "SPIConnector_OUT")
+					(reference "SPIConnector_OUT2")
 					(unit 1)
 				)
 			)
@@ -6752,7 +6779,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9506a2ad-ba29-4818-ba9b-b94ff51611c6")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR056"
 			(at 257.81 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -6812,7 +6839,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "#PWR024")
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
@@ -6830,7 +6857,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "98cd0cef-71fc-4cd9-9820-45b6ef8eef76")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR054"
 			(at 226.06 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -6891,7 +6918,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "#PWR020")
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -6909,7 +6936,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9b9b8037-0c9b-473a-a252-15b41dc40cc3")
-		(property "Reference" "U3"
+		(property "Reference" "U2"
 			(at 94.3611 69.85 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7043,7 +7070,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "U3")
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -7359,7 +7386,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ae811484-6072-48a3-a938-500a415dc9d0")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR052"
 			(at 199.39 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -7419,7 +7446,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "#PWR025")
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -7437,7 +7464,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b0713b24-1934-4186-883d-5c5a21e1ee5c")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR058"
 			(at 265.43 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -7497,7 +7524,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "#PWR023")
+					(reference "#PWR058")
 					(unit 1)
 				)
 			)
@@ -7515,7 +7542,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b7e3798a-165b-4494-bdc3-5800d650c6e9")
-		(property "Reference" "#PWR085"
+		(property "Reference" "#PWR047"
 			(at 92.71 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -7575,7 +7602,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "#PWR085")
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -7874,7 +7901,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c089fb27-ef4f-4806-9a47-ab7795a02124")
-		(property "Reference" "#FLG03"
+		(property "Reference" "#FLG06"
 			(at 144.78 113.665 0)
 			(hide yes)
 			(show_name no)
@@ -7934,7 +7961,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "#FLG03")
+					(reference "#FLG06")
 					(unit 1)
 				)
 			)
@@ -7952,7 +7979,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c98bb0f7-b655-42ba-8ad2-2fcf0e81d625")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR050"
 			(at 138.43 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -8012,7 +8039,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "#PWR018")
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)
@@ -8031,7 +8058,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d357d6e4-c92f-4ae8-bc0c-bb397de02e8a")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR044"
 			(at 55.88 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -8091,7 +8118,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "#PWR019")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -8109,7 +8136,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dab17a8a-8e53-49a8-af53-54b76352b0bf")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR057"
 			(at 265.43 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -8169,7 +8196,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "#PWR022")
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -8187,7 +8214,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dc0b7286-e63e-4497-bfad-2fa278dbe8f4")
-		(property "Reference" "D11"
+		(property "Reference" "D15"
 			(at 140.97 68.5799 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8328,7 +8355,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "D11")
+					(reference "D15")
 					(unit 1)
 				)
 			)
@@ -8347,7 +8374,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e6539ded-6757-42bb-a81e-c578e48d2320")
-		(property "Reference" "F1"
+		(property "Reference" "F2"
 			(at 63.5 68.58 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8367,7 +8394,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Fuse:Fuse_0402_1005Metric"
 			(at 58.42 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -8401,6 +8428,61 @@
 				)
 			)
 		)
+		(property "Manufacturer P/N" ""
+			(at 63.5 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" ""
+			(at 63.5 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" ""
+			(at 63.5 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PIN" ""
+			(at 63.5 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer PIN" ""
+			(at 63.5 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "7a37491b-fabf-441d-85af-5875129c92ca")
 		)
@@ -8410,7 +8492,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "F1")
+					(reference "F2")
 					(unit 1)
 				)
 			)
@@ -8427,7 +8509,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "eef5f97f-69b0-4393-ae88-3e65879546be")
-		(property "Reference" "C22"
+		(property "Reference" "C11"
 			(at 219.71 91.44 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8546,7 +8628,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "C22")
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -8564,7 +8646,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f27dacad-9f9c-46b4-b881-53e197c820e2")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR053"
 			(at 199.39 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -8624,7 +8706,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "#PWR026")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)

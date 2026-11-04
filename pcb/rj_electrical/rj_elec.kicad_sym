@@ -1066,6 +1066,26 @@
 				)
 			)
 		)
+		(symbol "AP2112K-3.3TRG1_1_1"
+			(pin passive line
+				(at 10.16 0 180)
+				(length 2.54)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
 		(embedded_fonts no)
 	)
 	(symbol "CLMVC-FKA-CL1D1L71BB7C3C3"
@@ -5823,7 +5843,7 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 10.16 0 180)
 				(length 2.54)
 				(name ""
@@ -5841,7 +5861,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 0 0 0)
 				(length 2.54)
 				(name ""
@@ -7054,24 +7074,6 @@
 				)
 			)
 			(pin bidirectional line
-				(at 13.97 27.94 0)
-				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
 				(at 13.97 15.24 0)
 				(length 2.54)
 				(name "SDA"
@@ -7107,7 +7109,27 @@
 					)
 				)
 			)
-			(pin bidirectional line
+		)
+		(symbol "VEML3328_1_0"
+			(pin input line
+				(at 13.97 27.94 0)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin input line
 				(at 36.83 27.94 180)
 				(length 2.54)
 				(name "VDD"

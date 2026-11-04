@@ -113,45 +113,37 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "4x M3 mounting holes, 4 mm from board corners"
+	(rectangle
+		(start 21.59 166.37)
+		(end 77.47 189.23)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "384bc133-e28f-40a5-bd0b-cc02b8132435")
+	)
+	(text "Mounting Holes"
 		(exclude_from_sim no)
-		(at 43.18 189.23 0)
+		(at 35.56 165.1 0)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 2.54 2.54)
 			)
 		)
-		(uuid "0f762be4-57fc-4d02-94dc-822e33484259")
+		(uuid "0849f76b-c2e9-44f4-b2ee-c725a13c8508")
 	)
 	(text "4x M3 mounting holes, 4 mm from board corners"
 		(exclude_from_sim no)
-		(at 251.46 22.86 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "18e30b34-632a-44e4-9bd8-9a8aff67f3cf")
-	)
-	(text "4x M3 mounting holes, 4 mm from board corners"
-		(exclude_from_sim no)
-		(at 46.99 16.51 0)
+		(at 49.53 170.18 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
 		(uuid "24f5e79c-21d0-4170-b8b5-d3389259ffc4")
-	)
-	(text "4x M3 mounting holes, 4 mm from board corners"
-		(exclude_from_sim no)
-		(at 252.73 162.56 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "2e64d35f-f2f5-4d65-86fe-4eb05f6fce81")
 	)
 	(wire
 		(pts
@@ -175,7 +167,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 125.73) (xy 186.69 125.73)
+			(xy 231.14 124.46) (xy 242.57 124.46)
 		)
 		(stroke
 			(width 0)
@@ -245,7 +237,7 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 125.73) (xy 242.57 125.73)
+			(xy 119.38 175.26) (xy 128.27 175.26)
 		)
 		(stroke
 			(width 0)
@@ -255,7 +247,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 113.03) (xy 186.69 113.03)
+			(xy 231.14 111.76) (xy 242.57 111.76)
 		)
 		(stroke
 			(width 0)
@@ -275,7 +267,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 113.03) (xy 128.27 113.03)
+			(xy 175.26 111.76) (xy 186.69 111.76)
 		)
 		(stroke
 			(width 0)
@@ -285,7 +277,7 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 113.03) (xy 242.57 113.03)
+			(xy 119.38 162.56) (xy 128.27 162.56)
 		)
 		(stroke
 			(width 0)
@@ -375,7 +367,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 125.73) (xy 128.27 125.73)
+			(xy 175.26 124.46) (xy 186.69 124.46)
 		)
 		(stroke
 			(width 0)
@@ -424,7 +416,7 @@
 		(uuid "22bbadf3-6bf1-41f7-89f3-d501f27c1b76")
 	)
 	(label "SCL_LED"
-		(at 233.68 113.03 0)
+		(at 119.38 162.56 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -474,7 +466,7 @@
 		(uuid "549b9d8e-1a2d-4789-9563-71c81a088041")
 	)
 	(label "SDA_LED"
-		(at 233.68 125.73 0)
+		(at 119.38 175.26 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -484,7 +476,7 @@
 		(uuid "705c4a17-326c-438b-9753-ebaa2d48fe64")
 	)
 	(label "SCL_GPIO"
-		(at 175.26 113.03 0)
+		(at 231.14 111.76 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -524,7 +516,7 @@
 		(uuid "8cba285a-35ad-4d61-b41a-9bd80598dad8")
 	)
 	(label "SDA_GPIO"
-		(at 175.26 125.73 0)
+		(at 231.14 124.46 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -534,7 +526,7 @@
 		(uuid "8f104216-b0e7-4228-bfbc-ed26ef9a6d59")
 	)
 	(label "SDA_TEMP"
-		(at 116.84 125.73 0)
+		(at 175.26 124.46 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -614,7 +606,7 @@
 		(uuid "c0424f2b-3636-434b-8804-0ce2c751b0b5")
 	)
 	(label "SCL_TEMP"
-		(at 116.84 113.03 0)
+		(at 175.26 111.76 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -635,7 +627,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 278.13 17.78 180)
+		(at 48.26 175.26 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -646,7 +638,7 @@
 		(fields_autoplaced yes)
 		(uuid "a1704d4d-ade5-4533-a584-757db84db114")
 		(property "Reference" "H3"
-			(at 275.59 19.0501 0)
+			(at 50.8 173.9899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -657,7 +649,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 275.59 16.5101 0)
+			(at 50.8 176.5299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -668,7 +660,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-			(at 278.13 17.78 0)
+			(at 48.26 175.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -679,7 +671,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 278.13 17.78 0)
+			(at 48.26 175.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -690,7 +682,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 278.13 17.78 0)
+			(at 48.26 175.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -701,7 +693,7 @@
 			)
 		)
 		(property "Manufacturer P/N" ""
-			(at 278.13 17.78 0)
+			(at 48.26 175.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -712,7 +704,7 @@
 			)
 		)
 		(property "Vendor" ""
-			(at 278.13 17.78 0)
+			(at 48.26 175.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -723,7 +715,7 @@
 			)
 		)
 		(property "Vendor P/N" ""
-			(at 278.13 17.78 0)
+			(at 48.26 175.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -744,7 +736,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 20.32 21.59 0)
+		(at 26.67 182.88 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -755,7 +747,7 @@
 		(fields_autoplaced yes)
 		(uuid "d9ecd066-630b-44da-8295-4458d410e716")
 		(property "Reference" "H2"
-			(at 22.86 20.3199 0)
+			(at 29.21 181.6099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -766,7 +758,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 22.86 22.8599 0)
+			(at 29.21 184.1499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -777,7 +769,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-			(at 20.32 21.59 0)
+			(at 26.67 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -788,7 +780,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 20.32 21.59 0)
+			(at 26.67 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -799,7 +791,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 20.32 21.59 0)
+			(at 26.67 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -810,7 +802,7 @@
 			)
 		)
 		(property "Manufacturer P/N" ""
-			(at 20.32 21.59 0)
+			(at 26.67 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -821,7 +813,7 @@
 			)
 		)
 		(property "Vendor" ""
-			(at 20.32 21.59 0)
+			(at 26.67 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -832,7 +824,7 @@
 			)
 		)
 		(property "Vendor P/N" ""
-			(at 20.32 21.59 0)
+			(at 26.67 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -853,7 +845,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 279.4 157.48 180)
+		(at 48.26 182.88 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -864,7 +856,7 @@
 		(fields_autoplaced yes)
 		(uuid "dc3b1708-3ae0-4cb7-b382-8ba3f9f87ecb")
 		(property "Reference" "H4"
-			(at 276.86 158.7501 0)
+			(at 50.8 181.6099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -875,7 +867,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 276.86 156.2101 0)
+			(at 50.8 184.1499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -886,7 +878,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-			(at 279.4 157.48 0)
+			(at 48.26 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -897,7 +889,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 279.4 157.48 0)
+			(at 48.26 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -908,7 +900,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 279.4 157.48 0)
+			(at 48.26 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -919,7 +911,7 @@
 			)
 		)
 		(property "Manufacturer P/N" ""
-			(at 279.4 157.48 0)
+			(at 48.26 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -930,7 +922,7 @@
 			)
 		)
 		(property "Vendor" ""
-			(at 279.4 157.48 0)
+			(at 48.26 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -941,7 +933,7 @@
 			)
 		)
 		(property "Vendor P/N" ""
-			(at 279.4 157.48 0)
+			(at 48.26 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -962,7 +954,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 16.51 194.31 0)
+		(at 26.67 175.26 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -973,7 +965,7 @@
 		(fields_autoplaced yes)
 		(uuid "e4de7061-ef1f-4656-b4cf-a6f1fa7ccc89")
 		(property "Reference" "H1"
-			(at 19.05 193.0399 0)
+			(at 29.21 173.9899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -984,7 +976,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 19.05 195.5799 0)
+			(at 29.21 176.5299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -995,7 +987,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-			(at 16.51 194.31 0)
+			(at 26.67 175.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1006,7 +998,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 16.51 194.31 0)
+			(at 26.67 175.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1017,7 +1009,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 16.51 194.31 0)
+			(at 26.67 175.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1028,7 +1020,7 @@
 			)
 		)
 		(property "Manufacturer P/N" ""
-			(at 16.51 194.31 0)
+			(at 26.67 175.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1039,7 +1031,7 @@
 			)
 		)
 		(property "Vendor" ""
-			(at 16.51 194.31 0)
+			(at 26.67 175.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1050,7 +1042,7 @@
 			)
 		)
 		(property "Vendor P/N" ""
-			(at 16.51 194.31 0)
+			(at 26.67 175.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1302,7 +1294,7 @@
 		)
 	)
 	(sheet
-		(at 128.27 104.14)
+		(at 186.69 102.87)
 		(size 20.32 31.75)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1318,7 +1310,7 @@
 		)
 		(uuid "45e970dd-c6fb-432e-aa08-f4ffa126bc7f")
 		(property "Sheetname" "Temperature Sensor"
-			(at 128.27 102.7934 0)
+			(at 186.69 101.5234 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1329,7 +1321,7 @@
 			)
 		)
 		(property "Sheetfile" "TemperatureSensor.kicad_sch"
-			(at 128.27 136.4746 0)
+			(at 186.69 135.2046 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1340,7 +1332,7 @@
 			)
 		)
 		(pin "SCL_TEMP" input
-			(at 128.27 113.03 180)
+			(at 186.69 111.76 180)
 			(uuid "1cd79787-62e4-4e83-8543-1d61d6162e66")
 			(effects
 				(font
@@ -1350,7 +1342,7 @@
 			)
 		)
 		(pin "SDA_TEMP" bidirectional
-			(at 128.27 125.73 180)
+			(at 186.69 124.46 180)
 			(uuid "3bd33c6f-36f2-4435-8d50-03bc3f0d20a8")
 			(effects
 				(font
@@ -1434,8 +1426,8 @@
 		)
 	)
 	(sheet
-		(at 242.57 104.14)
-		(size 19.05 31.75)
+		(at 128.27 153.67)
+		(size 20.32 31.75)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1450,7 +1442,7 @@
 		)
 		(uuid "6098930e-ba2b-48aa-98f5-4f5b36d17eb6")
 		(property "Sheetname" "LED PWM Controller"
-			(at 242.57 102.7934 0)
+			(at 128.27 152.3234 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1461,7 +1453,7 @@
 			)
 		)
 		(property "Sheetfile" "LEDPWMController.kicad_sch"
-			(at 242.57 136.4746 0)
+			(at 128.27 186.0046 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1472,7 +1464,7 @@
 			)
 		)
 		(pin "SCL_LED" input
-			(at 242.57 113.03 180)
+			(at 128.27 162.56 180)
 			(uuid "76da6e47-8603-4f5e-89b9-7d6b6b024904")
 			(effects
 				(font
@@ -1482,7 +1474,7 @@
 			)
 		)
 		(pin "SDA_LED" bidirectional
-			(at 242.57 125.73 180)
+			(at 128.27 175.26 180)
 			(uuid "828b52e4-6083-46e1-8110-3a669dfe87a0")
 			(effects
 				(font
@@ -1500,7 +1492,7 @@
 		)
 	)
 	(sheet
-		(at 186.69 104.14)
+		(at 242.57 102.87)
 		(size 20.32 31.75)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1516,7 +1508,7 @@
 		)
 		(uuid "a9d86c99-2660-4638-8d34-eff3bee2226e")
 		(property "Sheetname" "GPIO expander"
-			(at 186.69 102.7934 0)
+			(at 242.57 101.5234 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1527,7 +1519,7 @@
 			)
 		)
 		(property "Sheetfile" "GPIOexpander.kicad_sch"
-			(at 186.69 136.4746 0)
+			(at 242.57 135.2046 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1538,7 +1530,7 @@
 			)
 		)
 		(pin "SCL_GPIO" input
-			(at 186.69 113.03 180)
+			(at 242.57 111.76 180)
 			(uuid "02adaee1-2a00-4e24-8fd6-3c04d35aa427")
 			(effects
 				(font
@@ -1548,7 +1540,7 @@
 			)
 		)
 		(pin "SDA_GPIO" bidirectional
-			(at 186.69 125.73 180)
+			(at 242.57 124.46 180)
 			(uuid "c2aaf54c-a6ee-45fb-952d-b74603f76707")
 			(effects
 				(font
@@ -1561,6 +1553,52 @@
 			(project "main_pcb_project"
 				(path "/9164435f-a95c-403a-a8b4-52de8af1bdc8"
 					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 128.27 102.87)
+		(size 20.32 31.75)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "c09978a7-6311-4050-8bab-facd16969a6c")
+		(property "Sheetname" "Power"
+			(at 128.27 101.5234 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 2.54 2.54)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Power.kicad_sch"
+			(at 128.27 135.2046 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "main_pcb_project"
+				(path "/9164435f-a95c-403a-a8b4-52de8af1bdc8"
+					(page "9")
 				)
 			)
 		)

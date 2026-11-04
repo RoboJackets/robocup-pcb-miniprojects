@@ -33,39 +33,45 @@ void cycleStates(bool forward) {
     current_sensor += (current_sensor == 5) ? -5 : ((forward) ? 1 : -1);
     switch(current_sensor) {
         case 0: {
-            gpio_put(LED_1, 0);
+            gpio_put(LED_1, 1);
             gpio_put(LED_2, 0);
             gpio_put(LED_2, 0);
             break;
         }
         case 1: {
-            gpio_put(LED_1, 1);
-            gpio_put(LED_2, 0);
+            gpio_put(LED_1, 0);
+            gpio_put(LED_2, 1);
             gpio_put(LED_2, 0);
             break;
         }
         case 2: {
-            gpio_put(LED_1, 0);
+            gpio_put(LED_1, 1);
             gpio_put(LED_2, 1);
             gpio_put(LED_2, 0);
             break;
         }
         case 3: {
-            gpio_put(LED_1, 1);
-            gpio_put(LED_2, 1);
-            gpio_put(LED_2, 0);
-            break;
-        }
-        case 4: {
             gpio_put(LED_1, 0);
             gpio_put(LED_2, 0);
             gpio_put(LED_2, 1);
             break;
         }
-        case 5: {
+        case 4: {
             gpio_put(LED_1, 1);
             gpio_put(LED_2, 0);
             gpio_put(LED_2, 1);
+            break;
+        }
+        case 5: {
+            gpio_put(LED_1, 0);
+            gpio_put(LED_2, 1);
+            gpio_put(LED_2, 1);
+            break;
+        }
+        default: {
+            gpio_put(LED_1, 0);
+            gpio_put(LED_2, 0);
+            gpio_put(LED_2, 0);
             break;
         }
     }
@@ -83,8 +89,11 @@ void init_buttons() {
     gpio_set_dir(BUTTON_2, 0);
     gpio_init(LED_1);
     gpio_init(LED_2);
+    gpio_init(LED_3);
     gpio_set_dir(LED_1, 1);
     gpio_set_dir(LED_2, 1);
+    gpio_set_dir(LED_3, 1); 
+
 }
 
 void interrupt_attach(uint gpio, uint32_t events) {

@@ -103,7 +103,8 @@ void Hall_Effect::set_data(READ_TYPE readType) {
 }
 
 /**
- * CONFIRM READ IS PROPER WITH THE DOCUMENTATION
+ * CHANGE READ TO ONLY READ SEPERATE ON 1 AXIS CALL
+ * OTHERWISE READ ALL & THROW OUT 
  */
 void Hall_Effect::read_sensor_stream() {
     if(!interrupt) {
@@ -116,9 +117,11 @@ void Hall_Effect::read_sensor_stream() {
                     this->current_results.x = merge_msb_lsb(buf[2], buf[3]);
                     break;
                 }
-                uint8_t buf[2];
-                this->read_bytes(X_MSB_RESULT, 2, buf); 
-                this->current_results.x = merge_msb_lsb(buf[0], buf[1]);
+                else {
+                    uint8_t buf[2];
+                    this->read_bytes(X_MSB_RESULT, 2, buf); 
+                    this->current_results.x = merge_msb_lsb(buf[0], buf[1]);
+                }
                 break;}
             case READ_TYPE::Y:{
                 if(this->temperatureSensorEnabled) {

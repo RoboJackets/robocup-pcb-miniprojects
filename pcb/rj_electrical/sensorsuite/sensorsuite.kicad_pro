@@ -140,9 +140,9 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.15,
-        "min_connection": 0.15,
-        "min_copper_edge_clearance": 0.25,
+        "min_clearance": 0.0,
+        "min_connection": 0.0,
+        "min_copper_edge_clearance": 0.5,
         "min_groove_width": 0.0,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
@@ -153,9 +153,9 @@
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.15,
-        "min_via_annular_width": 0.15,
-        "min_via_diameter": 0.6,
+        "min_track_width": 0.2,
+        "min_via_annular_width": 0.1,
+        "min_via_diameter": 0.5,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -172,6 +172,7 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
+          "td_enabled": false,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -183,6 +184,7 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
+          "td_enabled": false,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -194,6 +196,7 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
+          "td_enabled": false,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -517,8 +520,8 @@
     "meta": {
       "version": 5
     },
-    "net_colors": null,
-    "netclass_assignments": null,
+    "net_colors": {},
+    "netclass_assignments": {},
     "netclass_patterns": []
   },
   "pcbnew": {
@@ -673,7 +676,7 @@
         "uuid": "140be8a2-6ae2-411e-bd43-1d899b8ddd87"
       }
     ],
-    "used_designators": "SPIConnector_IN1,SENSOR1-4,MUXingDiode1-2,LEDCONTROLLER1,F1,EXPANDER1,#FLG1-6,J1,LDO1,SWDConnector1,U1-4,C1-28,RN1,D1-14,#PWR1-92,Y1,MT1,MicroUSB1-2,R1-52,PowerMUXDiode1-2,S1-8,SPIConnector_OUT1,SPIConnector1",
+    "used_designators": "#FLG1-6,#PWR1-92,C1-28,D1-14,EXPANDER1,F1,J1,LDO1,LEDCONTROLLER1,MT1,MUXingDiode1-2,MicroUSB1-2,PowerMUXDiode1-2,R1-53,RN1,S1-8,SENSOR1-4,SPIConnector1,SPIConnector_IN1,SPIConnector_OUT1,SWDConnector1,U1-4,Y1",
     "variants": []
   },
   "sheets": [
@@ -700,10 +703,6 @@
     [
       "7294cdae-6cb2-4c9f-b5dd-e814df360be3",
       "LED Controller"
-    ],
-    [
-      "ceb65d81-8188-43be-90cc-a2d37cbe8e4c",
-      "General Purpose Buttons"
     ],
     [
       "a23da12f-3850-4358-b890-d29edcdcc582",

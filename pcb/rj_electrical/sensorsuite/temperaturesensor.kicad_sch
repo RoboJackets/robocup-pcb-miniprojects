@@ -1298,6 +1298,26 @@
 		)
 		(uuid "fca58d2e-18c9-46ab-84d9-8e485530e25e")
 	)
+	(label "I2C1.SCL"
+		(at 101.6 106.68 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "11ae3551-4a03-4624-8668-d90b59a0aa5c")
+	)
+	(label "I2C1.SCL"
+		(at 157.48 110.49 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1852d3b6-5d6f-4d91-bb6a-1912430127c9")
+	)
 	(hierarchical_label "I2C1{SDA,SCL}"
 		(shape input)
 		(at 97.79 127 180)
@@ -1332,7 +1352,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "4.7k"
 			(at 107.95 93.9799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1604,7 +1624,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "4.7k"
 			(at 156.21 87.63 0)
 			(show_name no)
 			(do_not_autoplace no)

@@ -34,6 +34,16 @@
 	)
 	(bus
 		(pts
+			(xy 55.88 36.83) (xy 77.47 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d2eed56-9017-42cf-a01a-af3f1585c06b")
+	)
+	(bus
+		(pts
 			(xy 129.54 99.06) (xy 151.13 99.06)
 		)
 		(stroke
@@ -64,16 +74,6 @@
 	)
 	(bus
 		(pts
-			(xy 55.88 36.83) (xy 77.47 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9eb022d1-1ccb-4d4f-9e00-63348d4e30ed")
-	)
-	(bus
-		(pts
 			(xy 129.54 48.26) (xy 151.13 48.26)
 		)
 		(stroke
@@ -81,6 +81,26 @@
 			(type default)
 		)
 		(uuid "d0b06d29-8724-4cc5-9063-28f655b536f2")
+	)
+	(bus
+		(pts
+			(xy 55.88 41.91) (xy 77.47 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d210236d-7008-41eb-94d9-09407bce2c38")
+	)
+	(bus
+		(pts
+			(xy 55.88 31.75) (xy 77.47 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9115929-bdd8-485e-a767-4f4e7813de0e")
 	)
 	(sheet
 		(at 151.13 64.77)
@@ -293,8 +313,28 @@
 			)
 		)
 		(pin "USB{DM,DP}" input
-			(at 77.47 36.83 180)
+			(at 77.47 31.75 180)
 			(uuid "a4f20097-a2b3-415c-949c-8351c7a593d4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SPI0{CSN,MOSI,MISO,SCK}" input
+			(at 77.47 36.83 180)
+			(uuid "91fd85d5-b6f6-4a2f-9194-17c00de1ef5b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SPI1_OUT{CSN,MOSI,MISO,SCK}" output
+			(at 77.47 41.91 180)
+			(uuid "93deb397-de07-4b28-8ffc-b49a36178329")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -349,8 +389,28 @@
 			)
 		)
 		(pin "USB{DM,DP}" output
-			(at 55.88 36.83 0)
+			(at 55.88 31.75 0)
 			(uuid "83cdd872-5254-446f-becb-a042733bfbb1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SPI0{CSN,MOSI,MISO,SCK}" output
+			(at 55.88 36.83 0)
+			(uuid "f898013a-3697-4b7e-9dea-cbf769ecd51e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SPI1_OUT{CSN,MOSI,MISO,SCK}" input
+			(at 55.88 41.91 0)
+			(uuid "aa817581-e3f7-4275-bc0a-9f354dc2bbd3")
 			(effects
 				(font
 					(size 1.27 1.27)

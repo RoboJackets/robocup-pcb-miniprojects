@@ -900,8 +900,8 @@
 		)
 	)
 	(rectangle
-		(start 93.98 114.3)
-		(end 165.1 127)
+		(start 92.71 142.24)
+		(end 163.83 154.94)
 		(stroke
 			(width 0)
 			(type default)
@@ -912,8 +912,8 @@
 		(uuid "7b3bf591-42a9-4042-89ba-2df74e730c48")
 	)
 	(rectangle
-		(start 91.44 64.77)
-		(end 181.61 132.08)
+		(start 88.9 88.9)
+		(end 166.37 157.48)
 		(stroke
 			(width 0)
 			(type default)
@@ -925,7 +925,7 @@
 	)
 	(text "V_{F}(Typ)= 1.75 V\nR = 77.5 Ω\nV = (3.3 - 1.75)\nI = 20 mA\n77.5 Ω is an uncommon resistor, maybe change to something else\n"
 		(exclude_from_sim no)
-		(at 95.25 120.65 0)
+		(at 94.996 148.844 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -936,7 +936,7 @@
 	)
 	(text "3x General Purpose RED LEDs\n"
 		(exclude_from_sim no)
-		(at 111.76 63.5 0)
+		(at 110.744 93.726 0)
 		(effects
 			(font
 				(size 1.75 1.75)
@@ -944,29 +944,86 @@
 		)
 		(uuid "bcfc3b00-d322-4c2c-869a-54f87554a9dc")
 	)
+	(bus_entry
+		(at 140.97 105.41)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24102149-c839-44ee-8306-a323c7b2b561")
+	)
+	(bus_entry
+		(at 140.97 100.33)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c6fa4b6-cab6-40d8-8a50-a626a84b0887")
+	)
+	(bus_entry
+		(at 140.97 102.87)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f17bef46-6580-4110-88af-a8e900189ef2")
+	)
 	(wire
 		(pts
-			(xy 127 77.47) (xy 127 80.01)
+			(xy 107.95 130.81) (xy 110.49 130.81)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1f60f843-2aa0-4fe9-a853-7cafb037697a")
+		(uuid "17d0ad30-2af4-464b-89de-15e35617a526")
 	)
-	(wire
+	(bus
 		(pts
-			(xy 154.94 96.52) (xy 154.94 100.33)
+			(xy 143.51 102.87) (xy 143.51 97.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "58f776fd-18be-43ca-8c76-e407fb248b52")
+		(uuid "2fffa43b-706e-4b90-aa4f-5e108c2a6445")
 	)
 	(wire
 		(pts
-			(xy 99.06 97.79) (xy 99.06 100.33)
+			(xy 123.19 100.33) (xy 123.19 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b89d825-f45a-47ec-9b09-a64a1fd9feb6")
+	)
+	(wire
+		(pts
+			(xy 100.33 130.81) (xy 102.87 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46502a2d-1c58-4eaf-9a23-8ac12523c3ed")
+	)
+	(wire
+		(pts
+			(xy 137.16 100.33) (xy 140.97 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54fd132d-1012-4cb5-9b5a-b20d862cab04")
+	)
+	(wire
+		(pts
+			(xy 120.65 114.3) (xy 123.19 114.3)
 		)
 		(stroke
 			(width 0)
@@ -976,17 +1033,47 @@
 	)
 	(wire
 		(pts
-			(xy 127 86.36) (xy 127 85.09)
+			(xy 100.33 100.33) (xy 102.87 100.33)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "90020f92-8599-4d21-ae07-6261a4acbcf8")
+		(uuid "6d8d784b-3fb0-4cbd-a2ac-8ae782b48470")
 	)
 	(wire
 		(pts
-			(xy 99.06 85.09) (xy 99.06 87.63)
+			(xy 137.16 102.87) (xy 140.97 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a7b0a6e-0d3f-45a9-b8c0-f1d81b557291")
+	)
+	(wire
+		(pts
+			(xy 120.65 100.33) (xy 123.19 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7cdb02e9-ab85-4a1e-b974-90d394229676")
+	)
+	(wire
+		(pts
+			(xy 137.16 105.41) (xy 140.97 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8183a93a-4579-4bb8-a25a-7380a46785e2")
+	)
+	(wire
+		(pts
+			(xy 107.95 114.3) (xy 110.49 114.3)
 		)
 		(stroke
 			(width 0)
@@ -996,17 +1083,37 @@
 	)
 	(wire
 		(pts
-			(xy 127 96.52) (xy 127 100.33)
+			(xy 107.95 100.33) (xy 110.49 100.33)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c333f0cd-9297-41e6-95fa-5ee7503bf096")
+		(uuid "a3f460cd-24e5-40f5-b2ae-6cfb68dd71ee")
 	)
 	(wire
 		(pts
-			(xy 99.06 77.47) (xy 99.06 80.01)
+			(xy 123.19 130.81) (xy 123.19 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b30c821a-de55-42a7-8471-80971888ee3d")
+	)
+	(wire
+		(pts
+			(xy 123.19 114.3) (xy 123.19 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4734019-a814-488e-b8f4-e2285127c3da")
+	)
+	(wire
+		(pts
+			(xy 100.33 114.3) (xy 102.87 114.3)
 		)
 		(stroke
 			(width 0)
@@ -1016,57 +1123,236 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 83.82) (xy 154.94 86.36)
+			(xy 120.65 130.81) (xy 123.19 130.81)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d3a8cea2-a1ed-4d75-af56-a4bd73a7e416")
+		(uuid "cff46dab-d160-450a-b234-1fadfcd315d9")
 	)
-	(wire
+	(bus
 		(pts
-			(xy 154.94 77.47) (xy 154.94 78.74)
+			(xy 143.51 97.79) (xy 146.05 97.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d89f83ee-c04f-4fe9-b3b0-15816a184f24")
+		(uuid "d63b4147-4776-43f2-a784-11b2f24838f9")
 	)
-	(label "gp_led_3"
-		(at 154.94 77.47 90)
+	(label "gp_led3"
+		(at 100.33 130.81 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
-		(uuid "30ee27fc-7ce2-4267-ad17-2d082b531764")
+		(uuid "73cce9a4-35da-44b4-9037-6863548c0bde")
 	)
-	(label "gp_led_1"
-		(at 127 77.47 90)
+	(label "gp_led3"
+		(at 137.16 105.41 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
-		(uuid "cb3eddc2-dc86-4d96-991e-ae6fa0ba9702")
+		(uuid "9e13db41-2957-455a-808f-f88013d3c4af")
 	)
-	(label "gp_led_2"
-		(at 99.06 77.47 90)
+	(label "gp_led1"
+		(at 100.33 100.33 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
+		)
+		(uuid "a92dd5f7-9d39-44e4-9997-98be82d8cf4e")
+	)
+	(label "gp_led1"
+		(at 137.16 100.33 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c393cd89-6db0-4e62-9af3-106a0359cef5")
+	)
+	(label "gp_led2"
+		(at 100.33 114.3 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
 		)
 		(uuid "d1c82b6e-5d4b-4e03-8637-bd6424d35347")
 	)
+	(label "gp_led2"
+		(at 137.16 102.87 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d34933e0-2e57-4961-a0eb-6918b9ea07b5")
+	)
+	(hierarchical_label "gp_led{1,2,3}"
+		(shape output)
+		(at 146.05 97.79 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d58cb51c-abf2-4d74-83ba-c5b6d0d44264")
+	)
+	(symbol
+		(lib_id "rj_elec:SML-310LTT86")
+		(at 110.49 130.81 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "35ea1142-58a0-4f7e-b618-aced31bb3f44")
+		(property "Reference" "D11"
+			(at 114.046 134.874 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SML-310LTT86"
+			(at 91.694 137.668 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "rj_electrical_footprint:LED_SML-310_ROM"
+			(at 110.49 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://downloads.cree-led.com/files/ds/h/HB-CLMVC-FKA.pdf"
+			(at 110.49 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Description" "Red LED"
+			(at 110.49 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "DigiKey"
+			(at 110.49 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "CLMVC-FKA-CL1D1L71BB7C3C3TR-ND"
+			(at 110.49 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" "CLMVC-FKA-CL1D1L71BB7C3C3"
+			(at 110.49 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PIN" ""
+			(at 110.49 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer PIN" ""
+			(at 110.49 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "a06ffbf8-5fbf-4f10-91f3-53522e9c28dd")
+		)
+		(pin "1"
+			(uuid "5ce2fcad-5e44-4155-a689-83c45b33cd85")
+		)
+		(instances
+			(project "sensorsuite"
+				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/39dc40d2-dc6d-43b0-ab98-682a55b91119/a23da12f-3850-4358-b890-d29edcdcc582"
+					(reference "D11")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "power:GND")
-		(at 99.06 100.33 0)
+		(at 123.19 116.84 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1075,9 +1361,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "179fc267-3ec7-457f-9854-69378bd7f851")
+		(uuid "44d8208d-ecff-4b92-9491-309e9c9f976d")
 		(property "Reference" "#PWR040"
-			(at 99.06 106.68 0)
+			(at 123.19 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1088,7 +1374,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 99.06 105.41 0)
+			(at 123.19 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1098,7 +1384,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 99.06 100.33 0)
+			(at 123.19 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1109,7 +1395,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 99.06 100.33 0)
+			(at 123.19 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1120,7 +1406,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 99.06 100.33 0)
+			(at 123.19 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1131,7 +1417,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "9443825d-0c9d-46ae-ba24-1ca1f148ea4e")
+			(uuid "03157178-7db1-4eae-8799-b1d971105a29")
 		)
 		(instances
 			(project "sensorsuite"
@@ -1144,7 +1430,7 @@
 	)
 	(symbol
 		(lib_id "rj_elec:SML-310LTT86")
-		(at 154.94 86.36 270)
+		(at 110.49 114.3 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1152,231 +1438,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "28d1e8c4-a690-429f-80e4-9819cdffae24")
-		(property "Reference" "D11"
-			(at 161.29 91.4399 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SML-310LTT86"
-			(at 161.29 93.9799 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "rj_electrical_footprint:LED_SML-310_ROM"
-			(at 154.94 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Datasheet" "SML-310LTT86"
-			(at 154.94 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Description" "https://downloads.cree-led.com/files/ds/h/HB-CLMVC-FKA.pdf"
-			(at 154.94 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor" "DigiKey"
-			(at 154.94 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor P/N" "CLMVC-FKA-CL1D1L71BB7C3C3TR-ND"
-			(at 154.94 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer P/N" " CLMVC-FKA-CL1D1L71BB7C3C3"
-			(at 154.94 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor PIN" ""
-			(at 154.94 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer PIN" ""
-			(at 154.94 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a1eba438-8693-4da8-b05c-b85c7e6ae791")
-		)
-		(pin "2"
-			(uuid "65f179d7-9a9f-48e4-8bb3-2b271f453464")
-		)
-		(instances
-			(project "sensorsuite"
-				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/39dc40d2-dc6d-43b0-ab98-682a55b91119/a23da12f-3850-4358-b890-d29edcdcc582"
-					(reference "D11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 154.94 81.28 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3ebd5bb5-aa2a-4e62-9af1-017144b8b01d")
-		(property "Reference" "R43"
-			(at 157.48 80.0099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1k"
-			(at 157.48 82.5499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_01005_0402Metric"
-			(at 154.94 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 154.94 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 154.94 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "7f70378e-f977-49a7-8465-7737ceb95213")
-		)
-		(pin "1"
-			(uuid "b4231011-3472-4f0f-815e-a8d8d488b914")
-		)
-		(instances
-			(project "sensorsuite"
-				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/39dc40d2-dc6d-43b0-ab98-682a55b91119/a23da12f-3850-4358-b890-d29edcdcc582"
-					(reference "R43")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "rj_elec:SML-310LTT86")
-		(at 99.06 87.63 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "648b9336-3fc7-4f62-938f-4f3f5abb6788")
-		(property "Reference" "D9"
-			(at 105.41 92.7099 90)
+		(property "Reference" "D10"
+			(at 114.046 118.364 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1387,7 +1451,7 @@
 			)
 		)
 		(property "Value" "SML-310LTT86"
-			(at 105.41 95.2499 90)
+			(at 91.694 121.158 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1398,7 +1462,7 @@
 			)
 		)
 		(property "Footprint" "rj_electrical_footprint:LED_SML-310_ROM"
-			(at 99.06 87.63 0)
+			(at 110.49 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1410,7 +1474,7 @@
 			)
 		)
 		(property "Datasheet" "https://downloads.cree-led.com/files/ds/h/HB-CLMVC-FKA.pdf"
-			(at 99.06 87.63 0)
+			(at 110.49 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1422,7 +1486,7 @@
 			)
 		)
 		(property "Description" "Red LED"
-			(at 99.06 87.63 0)
+			(at 110.49 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1433,7 +1497,7 @@
 			)
 		)
 		(property "Vendor" "DigiKey"
-			(at 99.06 87.63 0)
+			(at 110.49 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1444,7 +1508,7 @@
 			)
 		)
 		(property "Vendor P/N" "CLMVC-FKA-CL1D1L71BB7C3C3TR-ND"
-			(at 99.06 87.63 0)
+			(at 110.49 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1455,7 +1519,7 @@
 			)
 		)
 		(property "Manufacturer P/N" "CLMVC-FKA-CL1D1L71BB7C3C3"
-			(at 99.06 87.63 0)
+			(at 110.49 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1466,7 +1530,7 @@
 			)
 		)
 		(property "Vendor PIN" ""
-			(at 99.06 87.63 0)
+			(at 110.49 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1477,7 +1541,7 @@
 			)
 		)
 		(property "Manufacturer PIN" ""
-			(at 99.06 87.63 0)
+			(at 110.49 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1496,7 +1560,7 @@
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/39dc40d2-dc6d-43b0-ab98-682a55b91119/a23da12f-3850-4358-b890-d29edcdcc582"
-					(reference "D9")
+					(reference "D10")
 					(unit 1)
 				)
 			)
@@ -1504,7 +1568,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 127 82.55 0)
+		(at 105.41 114.3 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1512,92 +1576,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "659facac-39d9-42cd-bff0-fc36042d3a0d")
-		(property "Reference" "R42"
-			(at 129.54 81.2799 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1k"
-			(at 129.54 83.8199 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_01005_0402Metric"
-			(at 127 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 127 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 127 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "bf1eac9f-e16d-4ad4-9150-6273176b8ac9")
-		)
-		(pin "1"
-			(uuid "1fad65a8-033e-4791-9403-79456b4a66ba")
-		)
-		(instances
-			(project "sensorsuite"
-				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/39dc40d2-dc6d-43b0-ab98-682a55b91119/a23da12f-3850-4358-b890-d29edcdcc582"
-					(reference "R42")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 99.06 82.55 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "6de3b56c-2d2a-4660-8f8b-715518bfff81")
 		(property "Reference" "R41"
-			(at 101.6 81.2799 0)
+			(at 106.68 118.872 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1608,7 +1589,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 101.6 83.8199 0)
+			(at 106.68 116.332 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1619,7 +1600,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_01005_0402Metric"
-			(at 99.06 82.55 0)
+			(at 105.41 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1630,7 +1611,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 99.06 82.55 0)
+			(at 105.41 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1641,7 +1622,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 99.06 82.55 0)
+			(at 105.41 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1667,86 +1648,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 127 100.33 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6f68bae6-c24b-4371-a033-992bcdacd96b")
-		(property "Reference" "#PWR041"
-			(at 127 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 127 105.41 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 127 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 127 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 127 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "574678bb-8744-41f0-a604-82d4d313e612")
-		)
-		(instances
-			(project "sensorsuite"
-				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/39dc40d2-dc6d-43b0-ab98-682a55b91119/a23da12f-3850-4358-b890-d29edcdcc582"
-					(reference "#PWR041")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "rj_elec:SML-310LTT86")
-		(at 127 86.36 270)
+		(at 110.49 100.33 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1754,10 +1657,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b6736f52-339d-4756-9416-d3ee5382fb58")
-		(property "Reference" "D10"
-			(at 133.35 91.4399 90)
+		(uuid "84b7d556-0fdf-44f2-9ca1-e11ab5185cf2")
+		(property "Reference" "D9"
+			(at 114.046 104.394 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1768,7 +1670,7 @@
 			)
 		)
 		(property "Value" "SML-310LTT86"
-			(at 133.35 93.9799 90)
+			(at 91.694 107.188 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1779,7 +1681,7 @@
 			)
 		)
 		(property "Footprint" "rj_electrical_footprint:LED_SML-310_ROM"
-			(at 127 86.36 0)
+			(at 110.49 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1791,7 +1693,7 @@
 			)
 		)
 		(property "Datasheet" "https://downloads.cree-led.com/files/ds/h/HB-CLMVC-FKA.pdf"
-			(at 127 86.36 0)
+			(at 110.49 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1803,7 +1705,7 @@
 			)
 		)
 		(property "Description" "Red LED"
-			(at 127 86.36 0)
+			(at 110.49 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1814,7 +1716,29 @@
 			)
 		)
 		(property "Vendor" "DigiKey"
-			(at 127 86.36 0)
+			(at 110.49 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "CLMVC-FKA-CL1D1L71BB7C3C3TR-ND"
+			(at 110.49 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" "CLMVC-FKA-CL1D1L71BB7C3C3"
+			(at 110.49 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1825,7 +1749,7 @@
 			)
 		)
 		(property "Vendor PIN" ""
-			(at 127 86.36 0)
+			(at 110.49 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1836,7 +1760,7 @@
 			)
 		)
 		(property "Manufacturer PIN" ""
-			(at 127 86.36 0)
+			(at 110.49 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1845,47 +1769,25 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(property "Vendor P/N" "4809-SKRPABE010TR-ND"
-			(at 127 86.36 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer P/N" "SKRPABE010"
-			(at 127 86.36 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "13aa053f-f5a2-47de-bce1-2157cb7d97f5")
 		)
 		(pin "2"
-			(uuid "09df0b06-ca52-43ef-8fae-760cf6aca2a1")
+			(uuid "21540bd7-aece-4b1d-b8e5-5324ae745e61")
+		)
+		(pin "1"
+			(uuid "b04ca875-c44d-46fa-b03b-10247f74efc9")
 		)
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/39dc40d2-dc6d-43b0-ab98-682a55b91119/a23da12f-3850-4358-b890-d29edcdcc582"
-					(reference "D10")
+					(reference "D9")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 154.94 100.33 0)
+		(lib_id "Device:R_Small")
+		(at 105.41 130.81 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1893,31 +1795,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f8d069fa-115a-4c34-b231-855b721d95e6")
-		(property "Reference" "#PWR042"
-			(at 154.94 106.68 0)
-			(hide yes)
+		(uuid "9bd93a5c-37cb-4302-bf30-2a533114e0d4")
+		(property "Reference" "R43"
+			(at 106.68 135.382 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1k"
+			(at 106.68 132.842 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "GND"
-			(at 154.94 105.41 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 154.94 100.33 0)
+		(property "Footprint" "Resistor_SMD:R_01005_0402Metric"
+			(at 105.41 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1928,7 +1830,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 154.94 100.33 0)
+			(at 105.41 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1938,8 +1840,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 154.94 100.33 0)
+		(property "Description" "Resistor, small symbol"
+			(at 105.41 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1950,12 +1852,252 @@
 			)
 		)
 		(pin "1"
-			(uuid "7c50e55c-791c-4777-bb56-da49fc45332f")
+			(uuid "9e520875-43fc-43f1-95a1-d653488fc666")
+		)
+		(pin "2"
+			(uuid "9243d438-a4a6-4439-9b6b-9f4945d60885")
 		)
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/39dc40d2-dc6d-43b0-ab98-682a55b91119/a23da12f-3850-4358-b890-d29edcdcc582"
-					(reference "#PWR042")
+					(reference "R43")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 105.41 100.33 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b243e3e0-af26-41c2-a31a-8c1c15c7deb1")
+		(property "Reference" "R42"
+			(at 106.68 104.902 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1k"
+			(at 106.68 102.362 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_01005_0402Metric"
+			(at 105.41 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 105.41 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 105.41 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0386d319-ab6d-4cd3-b6d5-28db4fce9bfb")
+		)
+		(pin "2"
+			(uuid "4702a636-ad3d-476d-8c5d-67c276fb9ed8")
+		)
+		(instances
+			(project "sensorsuite"
+				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/39dc40d2-dc6d-43b0-ab98-682a55b91119/a23da12f-3850-4358-b890-d29edcdcc582"
+					(reference "R42")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 123.19 133.35 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bac09a6f-fc99-42f8-b026-b2854ca19143")
+		(property "Reference" "#PWR044"
+			(at 123.19 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 123.19 138.43 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 123.19 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 123.19 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 123.19 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c740dc23-a6a6-45b3-af1f-cc81791dccbf")
+		)
+		(instances
+			(project "sensorsuite"
+				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/39dc40d2-dc6d-43b0-ab98-682a55b91119/a23da12f-3850-4358-b890-d29edcdcc582"
+					(reference "#PWR044")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 123.19 102.87 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d8248bef-3c6f-4803-83f8-046b4182bf78")
+		(property "Reference" "#PWR045"
+			(at 123.19 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 123.19 107.95 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 123.19 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 123.19 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 123.19 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "abbf88f2-e1e7-4ce3-9969-6b59815c8e54")
+		)
+		(instances
+			(project "sensorsuite"
+				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/39dc40d2-dc6d-43b0-ab98-682a55b91119/a23da12f-3850-4358-b890-d29edcdcc582"
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)

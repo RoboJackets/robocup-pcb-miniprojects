@@ -10,6 +10,7 @@
 		(rev "v1.0")
 		(company "Daisy-Chained Sensor Suite")
 		(comment 1 "Allen Chiu")
+		(comment 2 "Shadi Hasan")
 	)
 	(lib_symbols
 		(symbol "Device:C"
@@ -3509,12 +3510,6 @@
 		(uuid "1d78ad64-faff-4fd2-b252-cf1f5d406a32")
 	)
 	(junction
-		(at 68.58 142.24)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "30cbc6eb-bd16-44ee-a74c-4cd7462a5abc")
-	)
-	(junction
 		(at 138.43 64.77)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3527,12 +3522,6 @@
 		(uuid "5b9b0625-6c5a-4013-a626-aa135863af1a")
 	)
 	(junction
-		(at 132.08 115.57)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5ff1c50f-1b5a-4400-b268-61511cf89ffb")
-	)
-	(junction
 		(at 209.55 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3543,6 +3532,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "74719f6f-3378-448d-9322-a983eff9004a")
+	)
+	(junction
+		(at 119.38 115.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "76ef2eb0-561c-46aa-bd2d-96b9991cfe8b")
 	)
 	(junction
 		(at 166.37 106.68)
@@ -3579,6 +3574,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d62e850f-0681-4c42-bcff-2f079ee0d599")
+	)
+	(junction
+		(at 68.58 142.24)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dc92678b-b4ff-4d9f-a833-acd5e1411bf2")
 	)
 	(junction
 		(at 226.06 80.01)
@@ -3748,6 +3749,16 @@
 		)
 		(uuid "110dc0c4-4ab9-4c6a-97ed-30111e8a88dd")
 	)
+	(wire
+		(pts
+			(xy 119.38 115.57) (xy 151.13 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d585fb3-3fe8-45d9-b3d9-9188c8a05584")
+	)
 	(bus
 		(pts
 			(xy 111.76 80.01) (xy 111.76 82.55)
@@ -3887,6 +3898,16 @@
 			(type default)
 		)
 		(uuid "45b91811-e4b5-4099-a847-577f339d1afe")
+	)
+	(wire
+		(pts
+			(xy 68.58 142.24) (xy 99.06 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b166a06-05da-45cb-844f-2f4b6e0aa624")
 	)
 	(wire
 		(pts
@@ -4210,7 +4231,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 115.57) (xy 132.08 115.57)
+			(xy 78.74 115.57) (xy 119.38 115.57)
 		)
 		(stroke
 			(width 0)
@@ -4280,16 +4301,6 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 142.24) (xy 99.06 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c729d04f-99ab-469d-a096-3037df953938")
-	)
-	(wire
-		(pts
 			(xy 97.79 147.32) (xy 97.79 144.78)
 		)
 		(stroke
@@ -4317,16 +4328,6 @@
 			(type default)
 		)
 		(uuid "cca587f0-9df2-4066-a89d-4c35725f69cd")
-	)
-	(wire
-		(pts
-			(xy 132.08 115.57) (xy 151.13 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d4da135e-c2f4-4abb-82c6-09fa131bd45d")
 	)
 	(wire
 		(pts
@@ -4448,7 +4449,7 @@
 		)
 		(uuid "56de293f-d06c-4eb4-a771-0d1c808f2efb")
 	)
-	(label "SPI1_OUT.SCK"
+	(label "SPI1.SCK"
 		(at 93.98 139.7 180)
 		(effects
 			(font
@@ -4478,7 +4479,7 @@
 		)
 		(uuid "68c89dc6-4016-4836-8297-dfa0e5f08f11")
 	)
-	(label "SPI1_OUT.MOSI"
+	(label "SPI1.MOSI"
 		(at 93.98 134.62 180)
 		(effects
 			(font
@@ -4488,7 +4489,7 @@
 		)
 		(uuid "7ea392ec-0f35-4251-b48e-3f69dafb766a")
 	)
-	(label "SPI1_OUT.CSN"
+	(label "SPI1.CSN"
 		(at 93.98 132.08 180)
 		(effects
 			(font
@@ -4498,7 +4499,7 @@
 		)
 		(uuid "7faf40c3-0ed5-4a8c-97f3-639d27b46d4e")
 	)
-	(label "SPI1_OUT.MISO"
+	(label "SPI1.MISO"
 		(at 93.98 137.16 180)
 		(effects
 			(font
@@ -4507,16 +4508,6 @@
 			(justify right bottom)
 		)
 		(uuid "90d24725-f477-4903-a860-36f9a6b92b3e")
-	)
-	(label "5V_OUT"
-		(at 93.98 142.24 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "97c086db-f8db-489c-b0fd-9e97002b4b2c")
 	)
 	(label "USB.DP"
 		(at 100.33 80.01 0)
@@ -4570,7 +4561,7 @@
 		)
 		(uuid "97f53275-d976-4534-9067-bf7e2cbb2008")
 	)
-	(hierarchical_label "SPI1_OUT{CSN,MOSI,MISO,SCK}"
+	(hierarchical_label "SPI1{CSN,MOSI,MISO,SCK}"
 		(shape input)
 		(at 67.31 129.54 180)
 		(effects
@@ -5683,84 +5674,6 @@
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
 					(reference "#PWR047")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 68.58 142.24 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "41b39cd8-bcd4-45da-ad27-c83dbac25291")
-		(property "Reference" "#FLG01"
-			(at 68.58 144.145 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 68.58 147.32 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 68.58 142.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 68.58 142.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 68.58 142.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a33ff00a-fe47-4c35-bc5f-72c22791fecc")
-		)
-		(instances
-			(project "sensorsuite"
-				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
-					(reference "#FLG01")
 					(unit 1)
 				)
 			)
@@ -7355,7 +7268,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 132.08 115.57 0)
+		(at 119.38 115.57 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7366,7 +7279,7 @@
 		(fields_autoplaced yes)
 		(uuid "c089fb27-ef4f-4806-9a47-ab7795a02124")
 		(property "Reference" "#FLG05"
-			(at 132.08 113.665 0)
+			(at 119.38 113.665 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7377,7 +7290,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 132.08 110.49 0)
+			(at 119.38 110.49 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7387,7 +7300,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 132.08 115.57 0)
+			(at 119.38 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7398,7 +7311,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 132.08 115.57 0)
+			(at 119.38 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7409,7 +7322,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 132.08 115.57 0)
+			(at 119.38 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7661,6 +7574,84 @@
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
 					(reference "#PWR056")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 68.58 142.24 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e130caab-c93e-4a8f-9b62-89516133c955")
+		(property "Reference" "#FLG01"
+			(at 68.58 144.145 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 68.58 147.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 68.58 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 68.58 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 68.58 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "36efd1e6-b72a-40e3-b7cb-f99c0d8f337a")
+		)
+		(instances
+			(project "sensorsuite"
+				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)

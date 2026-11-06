@@ -10,11 +10,14 @@
 		(rev "v1.0")
 		(company "Daisy-Chained Sensor Suite")
 		(comment 1 "Allen Chiu")
+		(comment 2 "Shadi Hasan")
+		(comment 3 "Samuel Scott")
+		(comment 4 "Patrick Dong")
 	)
 	(lib_symbols)
 	(bus
 		(pts
-			(xy 129.54 124.46) (xy 151.13 124.46)
+			(xy 120.65 129.54) (xy 143.51 129.54)
 		)
 		(stroke
 			(width 0)
@@ -24,7 +27,7 @@
 	)
 	(bus
 		(pts
-			(xy 129.54 149.86) (xy 151.13 149.86)
+			(xy 120.65 154.94) (xy 143.51 154.94)
 		)
 		(stroke
 			(width 0)
@@ -34,7 +37,7 @@
 	)
 	(bus
 		(pts
-			(xy 55.88 36.83) (xy 77.47 36.83)
+			(xy 48.26 41.91) (xy 57.15 41.91)
 		)
 		(stroke
 			(width 0)
@@ -44,7 +47,7 @@
 	)
 	(bus
 		(pts
-			(xy 129.54 99.06) (xy 151.13 99.06)
+			(xy 120.65 104.14) (xy 143.51 104.14)
 		)
 		(stroke
 			(width 0)
@@ -54,7 +57,7 @@
 	)
 	(bus
 		(pts
-			(xy 129.54 73.66) (xy 151.13 73.66)
+			(xy 120.65 78.74) (xy 143.51 78.74)
 		)
 		(stroke
 			(width 0)
@@ -64,7 +67,7 @@
 	)
 	(bus
 		(pts
-			(xy 129.54 25.4) (xy 151.13 25.4)
+			(xy 120.65 30.48) (xy 143.51 30.48)
 		)
 		(stroke
 			(width 0)
@@ -74,7 +77,7 @@
 	)
 	(bus
 		(pts
-			(xy 129.54 48.26) (xy 151.13 48.26)
+			(xy 120.65 53.34) (xy 143.51 53.34)
 		)
 		(stroke
 			(width 0)
@@ -84,7 +87,7 @@
 	)
 	(bus
 		(pts
-			(xy 55.88 41.91) (xy 77.47 41.91)
+			(xy 48.26 45.72) (xy 57.15 45.72)
 		)
 		(stroke
 			(width 0)
@@ -94,7 +97,7 @@
 	)
 	(bus
 		(pts
-			(xy 55.88 31.75) (xy 77.47 31.75)
+			(xy 48.26 38.1) (xy 57.15 38.1)
 		)
 		(stroke
 			(width 0)
@@ -103,7 +106,7 @@
 		(uuid "d9115929-bdd8-485e-a767-4f4e7813de0e")
 	)
 	(sheet
-		(at 151.13 64.77)
+		(at 143.51 69.85)
 		(size 29.21 17.78)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -119,7 +122,7 @@
 		)
 		(uuid "02452c5e-8b51-483f-b628-74dc6a43ccad")
 		(property "Sheetname" "Hall Effect Sensor"
-			(at 151.13 64.0584 0)
+			(at 143.51 69.1384 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -130,7 +133,7 @@
 			)
 		)
 		(property "Sheetfile" "HallEffect.kicad_sch"
-			(at 151.13 83.1346 0)
+			(at 143.51 88.2146 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -141,7 +144,7 @@
 			)
 		)
 		(pin "I2C3{SDA,SCL}" input
-			(at 151.13 73.66 180)
+			(at 143.51 78.74 180)
 			(uuid "e92be8e5-878c-413b-b282-329c28a7a76d")
 			(effects
 				(font
@@ -159,7 +162,7 @@
 		)
 	)
 	(sheet
-		(at 151.13 140.97)
+		(at 143.51 146.05)
 		(size 30.48 17.78)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -175,7 +178,7 @@
 		)
 		(uuid "0a05cb7e-a1dd-4199-ab32-74bc6044b370")
 		(property "Sheetname" "Color Sensor"
-			(at 151.13 140.2584 0)
+			(at 143.51 145.3384 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -186,7 +189,7 @@
 			)
 		)
 		(property "Sheetfile" "colorsensor.kicad_sch"
-			(at 151.13 159.3346 0)
+			(at 143.51 164.4146 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -197,7 +200,7 @@
 			)
 		)
 		(pin "I2C0{SDA,SCL}" input
-			(at 151.13 149.86 180)
+			(at 143.51 154.94 180)
 			(uuid "ff9ef35d-c821-47b1-84a5-55419ebb92f7")
 			(effects
 				(font
@@ -215,8 +218,8 @@
 		)
 	)
 	(sheet
-		(at 77.47 17.78)
-		(size 52.07 148.59)
+		(at 57.15 22.86)
+		(size 63.5 135.89)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -231,7 +234,7 @@
 		)
 		(uuid "39dc40d2-dc6d-43b0-ab98-682a55b91119")
 		(property "Sheetname" "rp2040"
-			(at 77.47 17.0684 0)
+			(at 57.15 22.1484 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -242,7 +245,7 @@
 			)
 		)
 		(property "Sheetfile" "rp2040.kicad_sch"
-			(at 77.47 166.9546 0)
+			(at 57.15 159.3346 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -253,7 +256,7 @@
 			)
 		)
 		(pin "I2C0{SDA,SCL}" output
-			(at 129.54 149.86 0)
+			(at 120.65 154.94 0)
 			(uuid "f765c0d1-b6f9-4142-8ed9-e47e917875a7")
 			(effects
 				(font
@@ -263,7 +266,7 @@
 			)
 		)
 		(pin "I2C1{SDA,SCL}" output
-			(at 129.54 124.46 0)
+			(at 120.65 129.54 0)
 			(uuid "1cee5378-de2e-4e2c-afa7-cd55255c00a0")
 			(effects
 				(font
@@ -273,7 +276,7 @@
 			)
 		)
 		(pin "I2C2{SDA,SCL}" output
-			(at 129.54 99.06 0)
+			(at 120.65 104.14 0)
 			(uuid "71f1281a-8a4c-4040-83b3-6cf7f255a2cd")
 			(effects
 				(font
@@ -283,7 +286,7 @@
 			)
 		)
 		(pin "I2C3{SDA,SCL}" output
-			(at 129.54 73.66 0)
+			(at 120.65 78.74 0)
 			(uuid "42b6a242-ba75-43d2-98ac-d26daa68bcbf")
 			(effects
 				(font
@@ -293,7 +296,7 @@
 			)
 		)
 		(pin "I2C4{SDA,SCL,SDB}" output
-			(at 129.54 48.26 0)
+			(at 120.65 53.34 0)
 			(uuid "aff4375f-7dde-4489-ae11-743b4189bacd")
 			(effects
 				(font
@@ -303,7 +306,7 @@
 			)
 		)
 		(pin "I2C5{SDA,SCL}" output
-			(at 129.54 25.4 0)
+			(at 120.65 30.48 0)
 			(uuid "bfd7985d-4200-41c1-9f7e-ae897391167c")
 			(effects
 				(font
@@ -313,7 +316,7 @@
 			)
 		)
 		(pin "USB{DM,DP}" input
-			(at 77.47 31.75 180)
+			(at 57.15 38.1 180)
 			(uuid "a4f20097-a2b3-415c-949c-8351c7a593d4")
 			(effects
 				(font
@@ -323,7 +326,7 @@
 			)
 		)
 		(pin "SPI0{CSN,MOSI,MISO,SCK}" input
-			(at 77.47 36.83 180)
+			(at 57.15 41.91 180)
 			(uuid "91fd85d5-b6f6-4a2f-9194-17c00de1ef5b")
 			(effects
 				(font
@@ -332,8 +335,8 @@
 				(justify left)
 			)
 		)
-		(pin "SPI1_OUT{CSN,MOSI,MISO,SCK}" output
-			(at 77.47 41.91 180)
+		(pin "SPI1{CSN,MOSI,MISO,SCK}" output
+			(at 57.15 45.72 180)
 			(uuid "93deb397-de07-4b28-8ffc-b49a36178329")
 			(effects
 				(font
@@ -351,7 +354,7 @@
 		)
 	)
 	(sheet
-		(at 25.4 29.21)
+		(at 17.78 34.29)
 		(size 30.48 16.51)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -367,7 +370,7 @@
 		)
 		(uuid "418e3efe-090a-409a-b9d2-b74e6fce45e5")
 		(property "Sheetname" "Power"
-			(at 25.4 28.4984 0)
+			(at 17.78 33.5784 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -378,7 +381,7 @@
 			)
 		)
 		(property "Sheetfile" "Power.kicad_sch"
-			(at 25.4 46.3046 0)
+			(at 17.78 51.3846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -389,7 +392,7 @@
 			)
 		)
 		(pin "USB{DM,DP}" output
-			(at 55.88 31.75 0)
+			(at 48.26 38.1 0)
 			(uuid "83cdd872-5254-446f-becb-a042733bfbb1")
 			(effects
 				(font
@@ -399,7 +402,7 @@
 			)
 		)
 		(pin "SPI0{CSN,MOSI,MISO,SCK}" output
-			(at 55.88 36.83 0)
+			(at 48.26 41.91 0)
 			(uuid "f898013a-3697-4b7e-9dea-cbf769ecd51e")
 			(effects
 				(font
@@ -408,8 +411,8 @@
 				(justify right)
 			)
 		)
-		(pin "SPI1_OUT{CSN,MOSI,MISO,SCK}" input
-			(at 55.88 41.91 0)
+		(pin "SPI1{CSN,MOSI,MISO,SCK}" input
+			(at 48.26 45.72 0)
 			(uuid "aa817581-e3f7-4275-bc0a-9f354dc2bbd3")
 			(effects
 				(font
@@ -427,7 +430,7 @@
 		)
 	)
 	(sheet
-		(at 151.13 90.17)
+		(at 143.51 95.25)
 		(size 30.48 17.78)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -443,7 +446,7 @@
 		)
 		(uuid "5358218b-62a7-4527-ab72-bcdb5c5a593c")
 		(property "Sheetname" "GPIO Expander"
-			(at 151.13 89.4584 0)
+			(at 143.51 94.5384 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -454,7 +457,7 @@
 			)
 		)
 		(property "Sheetfile" "GPIOExpander.kicad_sch"
-			(at 151.13 108.5346 0)
+			(at 143.51 113.6146 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -465,7 +468,7 @@
 			)
 		)
 		(pin "I2C2{SDA,SCL}" input
-			(at 151.13 99.06 180)
+			(at 143.51 104.14 180)
 			(uuid "1e35def0-51e7-43b8-afd2-2dad6f4ad4b7")
 			(effects
 				(font
@@ -483,7 +486,7 @@
 		)
 	)
 	(sheet
-		(at 151.13 39.37)
+		(at 143.51 44.45)
 		(size 30.48 17.78)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -499,7 +502,7 @@
 		)
 		(uuid "7294cdae-6cb2-4c9f-b5dd-e814df360be3")
 		(property "Sheetname" "LED Controller"
-			(at 151.13 38.6584 0)
+			(at 143.51 43.7384 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -510,7 +513,7 @@
 			)
 		)
 		(property "Sheetfile" "LEDController.kicad_sch"
-			(at 151.13 57.7346 0)
+			(at 143.51 62.8146 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -521,7 +524,7 @@
 			)
 		)
 		(pin "I2C4{SDA,SCL,SDB}" input
-			(at 151.13 48.26 180)
+			(at 143.51 53.34 180)
 			(uuid "bd540cc1-93b2-466d-8f82-05a312fee493")
 			(effects
 				(font
@@ -539,7 +542,7 @@
 		)
 	)
 	(sheet
-		(at 151.13 115.57)
+		(at 143.51 120.65)
 		(size 30.48 17.78)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -555,7 +558,7 @@
 		)
 		(uuid "adcb0624-5822-4116-8da8-9f74cda9e7f3")
 		(property "Sheetname" "Temperature Sensor"
-			(at 151.13 114.8584 0)
+			(at 143.51 119.9384 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -566,7 +569,7 @@
 			)
 		)
 		(property "Sheetfile" "temperaturesensor.kicad_sch"
-			(at 151.13 133.9346 0)
+			(at 143.51 139.0146 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -577,7 +580,7 @@
 			)
 		)
 		(pin "I2C1{SDA,SCL}" input
-			(at 151.13 124.46 180)
+			(at 143.51 129.54 180)
 			(uuid "88ba3f6c-b252-46a3-9782-b5e8b0fa68b9")
 			(effects
 				(font
@@ -595,7 +598,7 @@
 		)
 	)
 	(sheet
-		(at 151.13 16.51)
+		(at 143.51 21.59)
 		(size 31.75 16.51)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -611,7 +614,7 @@
 		)
 		(uuid "e81205e4-076b-4169-a4b5-c94b604287eb")
 		(property "Sheetname" "IMU"
-			(at 151.13 15.7984 0)
+			(at 143.51 20.8784 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -622,7 +625,7 @@
 			)
 		)
 		(property "Sheetfile" "IMU.kicad_sch"
-			(at 151.13 33.6046 0)
+			(at 143.51 38.6846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -633,7 +636,7 @@
 			)
 		)
 		(pin "I2C5{SDA,SCL}" input
-			(at 151.13 25.4 180)
+			(at 143.51 30.48 180)
 			(uuid "c970b545-0c52-4133-b97b-6fcb80beb489")
 			(effects
 				(font

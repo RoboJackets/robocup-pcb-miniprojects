@@ -6,10 +6,11 @@
 	(paper "A4")
 	(title_block
 		(title "LED Controller with LEDs")
-		(date "2026-10-27")
-		(rev "v1.0")
+		(date "2026-11-06")
+		(rev "v1.1")
 		(company "Daisy-Chained Sensor Suite")
 		(comment 1 "Allen Chiu")
+		(comment 2 "Shadi Hasan")
 	)
 	(lib_symbols
 		(symbol "Device:C"
@@ -2059,9 +2060,9 @@
 		)
 		(uuid "68c4c7a0-146f-41d5-b41b-0196e1e9b17e")
 	)
-	(text "NOTE: these aren't common resistors? Maybe swap with something else?\n"
+	(text "NOTE: There are common resistors in the 5% range for these values\n260 -> 270 ohms\n60 -> 62 ohms\n"
 		(exclude_from_sim no)
-		(at 16.51 177.8 0)
+		(at 16.256 180.34 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3456,22 +3457,22 @@
 		(uuid "11de00cc-d051-4c24-b3fc-0817e8ec8e82")
 	)
 	(label "I2C4.SDB"
-		(at 44.4473 93.98 0)
+		(at 50.8 93.98 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "141b1009-6a51-48fa-bbde-7f86a3a85f5a")
 	)
 	(label "I2C4.SCL"
-		(at 44.45 83.82 0)
+		(at 50.8 83.82 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "14e97a2f-4c8c-471a-92fb-540e519cf5fa")
 	)
@@ -3656,12 +3657,12 @@
 		(uuid "6444b000-e855-4697-b2f3-313bab159777")
 	)
 	(label "I2C4.SDA"
-		(at 44.45 73.66 0)
+		(at 49.53 73.66 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "6a9ace1b-7698-4205-b570-f111e02471d6")
 	)
@@ -3958,7 +3959,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2k"
+		(property "Value" "4.7k"
 			(at 59.69 69.85 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4117,7 +4118,7 @@
 				)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "62"
 			(at 189.23 40.64 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4197,7 +4198,7 @@
 				)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "62"
 			(at 251.46 148.59 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4277,7 +4278,7 @@
 				)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "62"
 			(at 189.23 113.03 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4435,7 +4436,7 @@
 				)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "62"
 			(at 189.23 48.26 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4790,7 +4791,7 @@
 				)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "62"
 			(at 252.73 113.03 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5303,7 +5304,7 @@
 				)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "62"
 			(at 189.23 120.65 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5461,7 +5462,7 @@
 				)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "62"
 			(at 251.46 156.21 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5596,7 +5597,7 @@
 				)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "62"
 			(at 252.73 77.47 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6106,7 +6107,7 @@
 				)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "270"
 			(at 251.46 33.02 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6461,7 +6462,7 @@
 				)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "62"
 			(at 189.23 85.09 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6697,7 +6698,7 @@
 				)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "62"
 			(at 252.73 120.65 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6858,7 +6859,7 @@
 				)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "62"
 			(at 251.46 40.64 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6938,7 +6939,7 @@
 				)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "62"
 			(at 189.23 77.47 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7293,7 +7294,7 @@
 				)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "270"
 			(at 251.46 140.97 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7685,7 +7686,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2k"
+		(property "Value" "4.7k"
 			(at 52.07 69.85 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7844,7 +7845,7 @@
 				)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "270"
 			(at 252.73 105.41 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7979,7 +7980,7 @@
 				)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "62"
 			(at 252.73 85.09 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8059,7 +8060,7 @@
 				)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "270"
 			(at 189.23 140.97 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8720,7 +8721,7 @@
 				)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "270"
 			(at 189.23 33.02 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9130,7 +9131,7 @@
 				)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "62"
 			(at 251.46 48.26 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9210,7 +9211,7 @@
 				)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "270"
 			(at 252.73 69.85 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9449,7 +9450,7 @@
 				)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "270"
 			(at 189.23 69.85 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9529,7 +9530,7 @@
 				)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "62"
 			(at 189.23 156.21 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9884,7 +9885,7 @@
 				)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "270"
 			(at 189.23 105.41 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10100,7 +10101,7 @@
 				)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "62"
 			(at 189.23 148.59 90)
 			(show_name no)
 			(do_not_autoplace no)

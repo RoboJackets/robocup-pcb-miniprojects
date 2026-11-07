@@ -16,10 +16,20 @@ PowerControl::PowerControl(SSDMode ssd, PMSResolution pms, B14Mode b14, HFPS hfp
 
 uint8_t PowerControl::toByte() {
     uint8_t byte = 0;
+    
+    //Move ssd to bit 0
     byte |= (static_cast<uint8_t>(software_shutdown) & 0x01) << 0;
+
+    //Move resolution to bit 1
     byte |= (static_cast<uint8_t>(resolution) & 0x01) << 1;
+
+    //Move b14_enable to bit 2
     byte |= (static_cast<uint8_t>(b14_enable) & 0x01) << 2;
+
+    //Move hfp_select to bits 4-5
     byte |= (static_cast<uint8_t>(hfp_select) & 0x03) << 4;
+    
+    //Move channel_mode to bit 6
     byte |= (static_cast<uint8_t>(channel_mode) & 0x01) << 6;
     return byte;
 }
@@ -46,13 +56,29 @@ PhaseDelay::PhaseDelay(PDE enable, HLF high_freq, PSn phase_1, PSn phase_2, PSn 
 
 uint8_t PhaseDelay::toByte() {
     uint8_t byte = 0;
+
+    //Move phase_1 to bit 0
     byte |= (static_cast<uint8_t>(phase_1) & 0x01) << 0;
+
+    //Move phase_2 to bit 1
     byte |= (static_cast<uint8_t>(phase_2) & 0x01) << 1;
+
+    //Move phase_3 to bit 2    
     byte |= (static_cast<uint8_t>(phase_3) & 0x01) << 2;
+
+    //Move phase_4 to bit 3
     byte |= (static_cast<uint8_t>(phase_4) & 0x01) << 3;
+
+    //Move phase_5 to bit 4
     byte |= (static_cast<uint8_t>(phase_5) & 0x01) << 4;
+
+    //Move phase_6 to bit 5
     byte |= (static_cast<uint8_t>(phase_6) & 0x01) << 5;
+
+    //Move high_freq to bit 6
     byte |= (static_cast<uint8_t>(high_freq) & 0x01) << 6;
+
+    //Move phase delay enable to bit 7
     byte |= (static_cast<uint8_t>(enable) & 0x01) << 7;
     return byte;
 }
@@ -71,26 +97,43 @@ SpreadSpectrum::SpreadSpectrum(SSY synch_enable, SSP spectrum_enable, RNG range,
 
 uint8_t SpreadSpectrum::toByte() {
     uint8_t byte = 0;
+
+    //Move Cycle Time to bits 0-1
     byte |= (static_cast<uint8_t>(cycle_time) & 0x03) << 0;
+
+    //Move Range to bits 2-3
     byte |= (static_cast<uint8_t>(range) & 0x03) << 2;
+
+    //Move Spread Spectrum Enable to bit 4
     byte |= (static_cast<uint8_t>(spectrum_enable) & 0x01) << 4;
+
+    // Move Synch Enable to bit 5
     byte |= (static_cast<uint8_t>(synch_enable) & 0x01) << 5;
     return byte;
 }
 
-LEDController::LEDController(LEDControllerAddress address, i2c_inst_t* i2c): 
+LEDController::LEDController(i2c_inst_t* i2c, LEDControllerAddress address): 
     address_(address), i2c_(i2c) {}
 
-LEDControllerError LEDController::begin(PowerControl power_control, PhaseDelay phase_delay, SpreadSpectrum spread_spectrum) {
-    write_byte(CONTROL_REG, power_control.toByte());
+bool LEDController::setConfigs(PowerControl power_control, PhaseDelay phase_delay, SpreadSpectrum spread_spectrum) {
     
+    //Write the Power Control, Phase Delay, and Spread Spectrum configurations to their respective registers
+    //Set value after each so that if one fails, the others are not set and the internal state is not updated
+    if (!write_byte(CONTROL_REG, power_control.toByte())) return false;
     pcontrol_ = power_control;
+
+    if (!write_byte(PHASE_REG, phase_delay.toByte())) return false;
     pdelay_ = phase_delay;
+
+    if (!write_byte(SPREAD_SPECTRUM_REG, spread_spectrum.toByte())) return false;
     ss_ = spread_spectrum;
+
+    return true;
 }
 
 bool LEDController::setLFP(uint8_t channel, uint8_t value)
 {
+    //Write value to respective channel register
     switch (channel) {
         case 1:
             return write_byte(LFP1, value);
@@ -146,10 +189,267 @@ bool LEDController::setLFP(uint8_t channel, uint8_t value)
 
 bool LEDController::setHFP(uint8_t channel, uint16_t value)
 {
-    return false;
+    //Get the address of the channel register
+    uint8_t address = 0;
+
+    switch (pcontrol_.channel_mode) {
+        case RGBMode::M_24CH:
+            switch (channel) {
+                case 1:
+                    address = HFP1;
+                    break;
+                case 2:
+                    address = HFP2;
+                    break;
+                case 3:
+                    address = HFP3;
+                    break;
+                case 4:
+                    address = HFP4;
+                    break;
+                case 5:
+                    address = HFP5;
+                    break;
+                case 6:
+                    address = HFP6;
+                    break;
+                case 7:
+                    address = HFP7;
+                    break;
+                case 8:
+                    address = HFP8;
+                    break;
+                case 9:
+                    address = HFP9;
+                    break;
+                case 10:
+                    address = HFP10;
+                    break;
+                case 11:
+                    address = HFP11;
+                    break;
+                case 12:
+                    address = HFP12;
+                    break;
+                case 13:
+                    address = HFP13;
+                    break;
+                case 14:
+                    address = HFP14;
+                    break;
+                case 15:
+                    address = HFP15;
+                    break;
+                case 16:
+                    address = HFP16;
+                    break;
+                case 17:
+                    address = HFP17;
+                    break;
+                case 18:
+                    address = HFP18;
+                    break;
+                case 19:
+                    address = HFP19;
+                    break;
+                case 20:
+                    address = HFP20;
+                    break;
+                case 21:
+                    address = HFP21;
+                    break;
+                case 22:
+                    address = HFP22;
+                    break;
+                case 23:
+                    address = HFP23;
+                    break; 
+                case 24:
+                    address = HFP24; 
+            }
+            break;
+        case RGBMode::M_8RGB:
+            switch (channel) {
+                case 1:
+                    address = HFP_RGB1;
+                    break;
+                case 2:
+                    address = HFP_RGB2;
+                    break;
+                case 3:
+                    address = HFP_RGB3;
+                    break;
+                case 4:
+                    address = HFP_RGB4;
+                    break;
+                case 5:
+                    address = HFP_RGB5;
+                    break;
+                case 6:
+                    address = HFP_RGB6;
+                    break;
+                case 7:
+                    address = HFP_RGB7;
+                    break;
+                case 8:
+                    address = HFP_RGB8;
+            }
+            break;
+    }
+
+    //Retrieve the current byte to retain FMS mode and write value around it
+    uint8_t data[2];
+    if (!read_bytes(address, 2, data)) return false;
+
+    //Cut off value to the maximum possible value based on the resolution and B14 mode
+    data[0] = value & 0xFF;
+    data[1] = (data[1] & ~(
+        (pcontrol_.b14_enable == B14Mode::ENABLE)? 31 :
+        (pcontrol_.resolution == PMSResolution::R_10BIT)? 3 : 0)) 
+        | ((value >> 8) & 
+            (pcontrol_.b14_enable == B14Mode::ENABLE)? 31 :
+            (pcontrol_.resolution == PMSResolution::R_10BIT)? 3 : 0);
+
+    return write_bytes(address, 2, data);
 }
 
-bool LEDController::update() {
+bool LEDController::setFMS(uint8_t channel, FMSMode fms)
+{
+    //Get the address of the channel register
+    uint8_t address = 0;
+
+    switch (pcontrol_.channel_mode) {
+        case RGBMode::M_24CH:
+            switch (channel) {
+                case 1:
+                    address = HFP1;
+                    break;
+                case 2:
+                    address = HFP2;
+                    break;
+                case 3:
+                    address = HFP3;
+                    break;
+                case 4:
+                    address = HFP4;
+                    break;
+                case 5:
+                    address = HFP5;
+                    break;
+                case 6:
+                    address = HFP6;
+                    break;
+                case 7:
+                    address = HFP7;
+                    break;
+                case 8:
+                    address = HFP8;
+                    break;
+                case 9:
+                    address = HFP9;
+                    break;
+                case 10:
+                    address = HFP10;
+                    break;
+                case 11:
+                    address = HFP11;
+                    break;
+                case 12:
+                    address = HFP12;
+                    break;
+                case 13:
+                    address = HFP13;
+                    break;
+                case 14:
+                    address = HFP14;
+                    break;
+                case 15:
+                    address = HFP15;
+                    break;
+                case 16:
+                    address = HFP16;
+                    break;
+                case 17:
+                    address = HFP17;
+                    break;
+                case 18:
+                    address = HFP18;
+                    break;
+                case 19:
+                    address = HFP19;
+                    break;
+                case 20:
+                    address = HFP20;
+                    break;
+                case 21:
+                    address = HFP21;
+                    break;
+                case 22:
+                    address = HFP22;
+                    break;
+                case 23:
+                    address = HFP23;
+                    break; 
+                case 24:
+                    address = HFP24; 
+            }
+            break;
+        case RGBMode::M_8RGB:
+            switch (channel) {
+                case 1:
+                    address = HFP_RGB1;
+                    break;
+                case 2:
+                    address = HFP_RGB2;
+                    break;
+                case 3:
+                    address = HFP_RGB3;
+                    break;
+                case 4:
+                    address = HFP_RGB4;
+                    break;
+                case 5:
+                    address = HFP_RGB5;
+                    break;
+                case 6:
+                    address = HFP_RGB6;
+                    break;
+                case 7:
+                    address = HFP_RGB7;
+                    break;
+                case 8:
+                    address = HFP_RGB8;
+            }
+            break;
+    }
+
+    //Retrieve the current byte to retain the HFP value and write the FMS mode around it
+    uint8_t *data;
+    if (!read_bytes(address + 1, 1, data)) return false;
+
+    //FMS Mode bit placement is different based on B14 Mode
+    *data = (*data & ~(3 <<
+        (pcontrol_.b14_enable == B14Mode::ENABLE)? 6 : 2
+    )) | (static_cast<uint8_t>(fms) & 0x03);
+
+    return write_bytes(address + 1, 1, data);
+}
+
+bool LEDController::setGCC(GCC channel, uint8_t value)
+{
+    //Write value to respective channel register
+    switch (channel) {
+        case GCC::RED:
+            return write_byte(GCCR, value);
+        case GCC::GREEN:
+            return write_byte(GCCG, value);
+        case GCC::BLUE:
+            return write_byte(GCCB, value);
+    }
+}
+
+bool LEDController::update()
+{
     return write_byte(UPDATE_REG, 0);
 }
 
@@ -168,8 +468,8 @@ bool LEDController::write_bytes(uint8_t reg, uint8_t length, uint8_t *data) {
 
 bool LEDController::write_byte(uint8_t reg, uint8_t data) {
     uint8_t buf[2];
-    buf[0] = reg;  // First byte is the target register
-    buf[1] = data; // Second byte is the data to write
+    buf[0] = reg;
+    buf[1] = data;
     
     return (i2c_write_blocking(i2c_, address_, buf, 2, false) != PICO_ERROR_GENERIC);
 }

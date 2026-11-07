@@ -47,24 +47,26 @@ enum class SSDMode {
     DISABLE = 1
 };
 
-/*
-High PWM Frequency Resolution
-
-If 8Bit, HFPS will decide the internal oscillator clock frequency and the PWM output PWM frequency.
-If 10Bit, the HFP is 32kHz, LFP is 127Hz, not matter how HFPS is set.
-
-Table 4 from IS31FL3254 DataSheet
-+-----+------+-----------+----------+-----------+
-| PMS | HFPS | OSC (MHZ) | LFP (HZ) | HFP (kHZ) |
-+-----+------+-----------+----------+-----------+
-|  1  |  xx  |     32    |    127   |    32     |
-+-----+------+-----------+----------+-----------+
-|     |  00  |     8     |    127   |    32     |
-|     +------+-----------+----------+-----------+
-|  0  |  01  |     16    |    254   |    64     |
-|     +------+-----------+----------+-----------+
-|     |  1x  |     32    |    508   |    128    |
-+-----+------+-----------+----------+-----------+
+/** 
+ * High PWM Frequency Resolution
+ * 
+ * If 8Bit, HFPS will decide the internal oscillator clock frequency and the PWM output PWM frequency.
+ * 
+ * If 10Bit, the HFP is 32kHz, LFP is 127Hz, not matter how HFPS is set.
+ * 
+ * Table 4 from IS31FL3254 DataSheet
+ * 
+ * +-----+------+-----------+----------+-----------+
+ * | PMS | HFPS | OSC (MHZ) | LFP (HZ) | HFP (kHZ) |
+ * +-----+------+-----------+----------+-----------+
+ * |  1  |  xx  |     32    |    127   |    32     |
+ * +-----+------+-----------+----------+-----------+
+ * |     |  00  |     8     |    127   |    32     |
+ * |     +------+-----------+----------+-----------+
+ * |  0  |  01  |     16    |    254   |    64     |
+ * |     +------+-----------+----------+-----------+
+ * |     |  1x  |     32    |    508   |    128    |
+ * +-----+------+-----------+----------+-----------+
 */
 enum PMSResolution {
     R_8BIT = 0,
@@ -93,6 +95,7 @@ enum HFPS {
     F_128kHZ = 2
 };
 
+
 /*
 RGB Register Mode Select 
 
@@ -105,7 +108,36 @@ enum RGBMode {
 };
 
 #pragma pack(push, 1)
+/*
+    Power Control Configurations
+
+    Struct holds all the settings for the Power Control Register.
+*/
 struct PowerControl {
+
+    //Default constructor sets all the configs to default values
+    PowerControl();
+
+    /**
+     * Constructor with all the config parameters
+     * 
+     * @param ssd Software Shutdown Mode
+     * @param pms PWM Resolution
+     * @param b14 10+4-bit Mode
+     * @param hfps High Frequency PWM Frequency Selection
+     * @param rgb RGB Register Mode Select
+     */
+    PowerControl(SSDMode ssd, PMSResolution pms, B14Mode b14, HFPS hfps, RGBMode rgb);
+
+    private:
+
+    /**
+     * Converts all the configs into one byte to be written into the register
+     * 
+     * @return the byte
+     */
+    uint8_t toByte();
+
     SSDMode software_shutdown : 1;
     PMSResolution resolution : 1;
     B14Mode b14_enable : 1;
@@ -114,10 +146,7 @@ struct PowerControl {
     RGBMode channel_mode : 1;
     uint8_t : 1; // reserved
 
-    PowerControl();
-    PowerControl(SSDMode, PMSResolution, B14Mode, HFPS, RGBMode);
-
-    uint8_t toByte();
+    friend class LEDController;
 };
 #pragma pack(pop)
 
@@ -336,7 +365,37 @@ enum PSn {
 };
 
 #pragma pack(push, 1)
+/**
+ * Phase Delay and Clock Phase Configurations
+ * 
+ * Holds all the settings for the Phase Delay and Clock Phase Register
+ */
 struct PhaseDelay {
+    //Default constructor sets all the configs to default values
+    PhaseDelay();
+
+    /**
+     * Constructor with all the config parameters
+     * 
+     * @param enable Phase Delay Enable
+     * @param high_freq Group Phase Delay Select
+     * @param phase_1 Clock Phase Select for Group 1
+     * @param phase_2 Clock Phase Select for Group 2
+     * @param phase_3 Clock Phase Select for Group 3
+     * @param phase_4 Clock Phase Select for Group 4
+     * @param phase_5 Clock Phase Select for Group 5
+     * @param phase_6 Clock Phase Select for Group 6
+     */
+    PhaseDelay(PDE enable, HLF high_freq, PSn phase_1, PSn phase_2, PSn phase_3, PSn phase_4, PSn phase_5, PSn phase_6);
+
+    private:
+    /** 
+     * Converts the configurations into a single byte to be written into the register
+     * 
+     * @return the byte
+    */
+    uint8_t toByte();
+
     PSn phase_1 : 1;
     PSn phase_2 : 1;
     PSn phase_3 : 1;
@@ -346,10 +405,7 @@ struct PhaseDelay {
     HLF high_freq : 1;
     PDE enable : 1;
 
-    PhaseDelay();
-    PhaseDelay(PDE enable, HLF high_freq, PSn phase_1, PSn phase_2, PSn phase_3, PSn phase_4, PSn phase_5, PSn phase_6);
-
-    uint8_t toByte();
+    friend class LEDController;
 };
 #pragma pack(pop)
 
@@ -414,16 +470,41 @@ enum RNG {
 };
 
 #pragma pack(push, 1)
+/**
+ * Spread Spectrum Configurations
+ * 
+ * Struct to hold all the settings for the Spread Spectrum Register
+ */
 struct SpreadSpectrum {
+
+    //Default constructor sets all the configs to default values
+    SpreadSpectrum();
+
+    /**
+     * Constructor with all the config parameters
+     * 
+     * @param synch_enable Spread Spectrum Synch Enable
+     * @param spectrum_enable Spread Spectrum Enable
+     * @param range Spread Spectrum Range
+     * @param cycle_time Spread Spectrum Cycle Time
+     */
+    SpreadSpectrum(SSY synch_enable, SSP spectrum_enable, RNG range, CLT cycle_time);
+
+    private:
+    /** 
+     * Converts the configurations into a single byte to be written into the register
+     * 
+     * @return the byte
+    */
+    uint8_t toByte();
+
     CLT cycle_time : 2;
     RNG range : 2;
     SSP spectrum_enable : 1;
     SSY synch_enable : 1;
     uint8_t : 2; //reserved
 
-    SpreadSpectrum();
-    SpreadSpectrum(SSY synch_enable, SSP spectrum_enable, RNG range, CLT cycle_time);
-    uint8_t toByte();
+    friend class LEDController;
 };
 #pragma pack(pop)
 
@@ -435,38 +516,33 @@ write of "0000 0000" to this register will reset all regsiters to their default 
 
 #define RESET_REG 0x7F
 
-enum LEDControllerError {
-    NO_ERROR,
-    I2C_ERROR,
-};
-
 class LEDController {
 public: 
     /**
-     * @brief Create a new instance of the LED Controller Driver.
+     * @brief Create a new instance of the LED Controller Driver with default configs.
      * 
-     * Do not initialize the driver in this method, that should be completed in begin
-     * 
-     * @param address the address of the LED Ctonroller
+     * @param i2c the i2c bus being used
+     * @param address the address of the LED Controller
      */
-    LEDController(LEDControllerAddress address, i2c_inst_t* i2c);
+    LEDController(i2c_inst_t* i2c, LEDControllerAddress address);
 
     /**
-     * @brief Actually initialize the LED Controller with the desired Power Control, Phase Delay, and Spread Spectrum configs
-     * 
+     * @brief Configures the LED Controller with the desired Power Control, Phase Delay, and Spread Spectrum settings
      * 
      * @param power_control Power Control struct
      * @param phase_delay Phase Delay struct
      * @param spread_spectrum Spread Spectrum struct
-     * @returns The possible error from attempting to initialize the LED Controller
+     * 
+     * @returns true if operation is successful
      */
-    LEDControllerError begin(PowerControl power_control, PhaseDelay phase_delay, SpreadSpectrum spread_spectrum);
+    bool setConfigs(PowerControl power_control, PhaseDelay phase_delay, SpreadSpectrum spread_spectrum);
 
     /**
      * @brief Sets the Low Frequency PWM value of the desired LED channel
      * 
      * @param channel Desired LED channel
-     * @param value 0-255 steps
+     * @param value 0 to 255
+     * 
      * @return true if operation is successful
      */
     bool setLFP(uint8_t channel, uint8_t value);
@@ -474,9 +550,11 @@ public:
     /**
      * @brief Sets the High Frequency PWM value of the desired LED channel
      * 
+     * If value is beyond the resolution, will set to maximum possible value
      * 
-     * @param channel Desired LED channel
-     * @param value 0 - 255 (8-bit), 1024 (10-bit), or 16384 (14-bit)
+     * @param channel Desired LED channel, 1-24 for 24CH mode, 1-8 for 8RGB mode
+     * @param value 0 to 255 (8-bit), 1024 (10-bit), or 16384 (14-bit)
+     * 
      * @return true if operation is successful
      */
     bool setHFP(uint8_t channel, uint16_t value);
@@ -484,8 +562,9 @@ public:
     /**
      * @brief Sets the Frequency Mode of the desired LED channel
      * 
-     * @param channel Desired LED channel
+     * @param channel Desired LED channel, 1-24 for 24CH mode, 1-8 for 8RGB mode
      * @param fms The FMS mode 
+     * 
      * @return true if operation is successful
      */
     bool setFMS(uint8_t channel, FMSMode fms);

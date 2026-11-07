@@ -3520,6 +3520,12 @@
 		(uuid "1d78ad64-faff-4fd2-b252-cf1f5d406a32")
 	)
 	(junction
+		(at 118.11 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "24802aac-0483-48e4-a646-ee783e13a257")
+	)
+	(junction
 		(at 74.93 142.24)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4731,7 +4737,7 @@
 				)
 			)
 		)
-		(property "Description" "Voltage Regulators, LDO, 600mA CMOS LDO 50mA 3.3V 250mV | Diodes Inc AP2112K-3.3TRG1"
+		(property "Description" "IC REG LINEAR 3.3V 600MA SOT-25"
 			(at 243.84 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -6011,7 +6017,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "CAP SMD 0402 X5R 1UF 20% 6.3V"
 			(at 265.43 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -6547,6 +6553,85 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 118.11 118.11 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5d81358e-a5c6-4391-981e-c0fc947ed9a0")
+		(property "Reference" "#FLG07"
+			(at 120.015 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 121.92 118.1099 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 118.11 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 118.11 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a63729d3-4153-4efc-a385-ee0482ea3bd5")
+		)
+		(instances
+			(project "sensorsuite"
+				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/418e3efe-090a-409a-b9d2-b74e6fce45e5"
+					(reference "#FLG07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 156.21 72.39 0)
 		(unit 1)
@@ -6601,7 +6686,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, small symbol"
+		(property "Description" "RES 1K OHM 1% 1/10W 0402"
 			(at 156.21 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -7195,7 +7280,7 @@
 				(justify left)
 			)
 		)
-		(property "Description" "Very low capacitance ESD protection diode, 2 data-line, SOT-23-6"
+		(property "Description" "TVS DIODE 5.25VWM 17VC SOT23-6"
 			(at 92.71 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -9438,7 +9523,7 @@
 				)
 			)
 		)
-		(property "Description" "Resettable fuse, polymeric positive temperature coefficient"
+		(property "Description" "PTC RESET FUSE 8V 0.5A 1206"
 			(at 63.5 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -9816,7 +9901,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "CAP SMD 0402 X5R 1UF 20% 6.3V"
 			(at 226.06 92.71 0)
 			(hide yes)
 			(show_name no)

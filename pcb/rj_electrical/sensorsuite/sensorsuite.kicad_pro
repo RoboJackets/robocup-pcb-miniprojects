@@ -517,8 +517,8 @@
     "meta": {
       "version": 5
     },
-    "net_colors": {},
-    "netclass_assignments": {},
+    "net_colors": null,
+    "netclass_assignments": null,
     "netclass_patterns": []
   },
   "pcbnew": {
@@ -538,7 +538,7 @@
       "method": 0,
       "sort_order": 0
     },
-    "bom_export_filename": "${PROJECTNAME}.csv",
+    "bom_export_filename": "C:\\Users\\hasan\\Downloads\\sensorsuite.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -575,31 +575,31 @@
           "group_by": true,
           "label": "DNP",
           "name": "${DNP}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
           "label": "Exclude from BOM",
           "name": "${EXCLUDE_FROM_BOM}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
           "label": "Exclude from Board",
           "name": "${EXCLUDE_FROM_BOARD}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
           "label": "Exclude from Simulation",
           "name": "${EXCLUDE_FROM_SIM}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
           "label": "Exclude from Position Files",
           "name": "${EXCLUDE_FROM_POS_FILES}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
@@ -621,9 +621,15 @@
         },
         {
           "group_by": false,
+          "label": "Vendor P/N",
+          "name": "Vendor P/N",
+          "show": true
+        },
+        {
+          "group_by": false,
           "label": "Manufacturer P/N",
           "name": "Manufacturer P/N",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -719,13 +725,7 @@
           "group_by": false,
           "label": "Vendor",
           "name": "Vendor",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Vendor P/N",
-          "name": "Vendor P/N",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -743,7 +743,7 @@
           "group_by": false,
           "label": "Description",
           "name": "Description",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -793,7 +793,7 @@
       "include_excluded_from_bom": true,
       "name": "",
       "sort_asc": true,
-      "sort_field": "Reference"
+      "sort_field": "Description"
     },
     "bus_aliases": {},
     "connection_grid_size": 50.0,
@@ -847,7 +847,7 @@
         "uuid": "140be8a2-6ae2-411e-bd43-1d899b8ddd87"
       }
     ],
-    "used_designators": "#FLG1-6,#PWR1-97,C1-30,D1-11,EXPANDER1,F1,J1-2,LDO1,LEDCONTROLLER1,MUXingDiode1-2,MicroUSB1,R1-54,RN1,S1-5,SENSOR1-3,SENSOR5,SWDConnector1,U1-6,Y1",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [

@@ -517,8 +517,8 @@
     "meta": {
       "version": 5
     },
-    "net_colors": {},
-    "netclass_assignments": {},
+    "net_colors": null,
+    "netclass_assignments": null,
     "netclass_patterns": []
   },
   "pcbnew": {
@@ -581,25 +581,25 @@
           "group_by": true,
           "label": "Exclude from BOM",
           "name": "${EXCLUDE_FROM_BOM}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
           "label": "Exclude from Board",
           "name": "${EXCLUDE_FROM_BOARD}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
           "label": "Exclude from Simulation",
           "name": "${EXCLUDE_FROM_SIM}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
           "label": "Exclude from Position Files",
           "name": "${EXCLUDE_FROM_POS_FILES}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
@@ -623,7 +623,7 @@
           "group_by": false,
           "label": "Manufacturer P/N",
           "name": "Manufacturer P/N",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -719,13 +719,13 @@
           "group_by": false,
           "label": "Vendor",
           "name": "Vendor",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
           "label": "Vendor P/N",
           "name": "Vendor P/N",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -737,7 +737,7 @@
           "group_by": false,
           "label": "DigiKey_Part_Number",
           "name": "DigiKey_Part_Number",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -761,6 +761,30 @@
           "group_by": false,
           "label": "Availability",
           "name": "Availability",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "KLC_S3.3",
+          "name": "KLC_S3.3",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "KLC_S4.1",
+          "name": "KLC_S4.1",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "KLC_S4.2_DVDD",
+          "name": "KLC_S4.2_DVDD",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "KLC_S4.2_VREG_VOUT",
+          "name": "KLC_S4.2_VREG_VOUT",
           "show": false
         }
       ],
@@ -823,7 +847,7 @@
         "uuid": "140be8a2-6ae2-411e-bd43-1d899b8ddd87"
       }
     ],
-    "used_designators": "#FLG1,#PWR10-13,#PWR93-96,C4,C29,R5-6,R53-54,SENSOR5,U5-6",
+    "used_designators": "SPIConnector_OUT2,#PWR2,#PWR15,#PWR42,#PWR50,#PWR56,#PWR93,#FLG1-2,#FLG7-8,J1-3",
     "variants": []
   },
   "sheets": [

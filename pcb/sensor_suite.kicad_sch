@@ -47,7 +47,7 @@
 	)
 	(bus
 		(pts
-			(xy 80.01 116.84) (xy 110.49 116.84)
+			(xy 81.28 105.41) (xy 110.49 105.41)
 		)
 		(stroke
 			(width 0)
@@ -77,7 +77,7 @@
 	)
 	(bus
 		(pts
-			(xy 92.71 100.33) (xy 110.49 100.33)
+			(xy 81.28 100.33) (xy 110.49 100.33)
 		)
 		(stroke
 			(width 0)
@@ -87,7 +87,7 @@
 	)
 	(bus
 		(pts
-			(xy 92.71 92.71) (xy 110.49 92.71)
+			(xy 81.28 92.71) (xy 110.49 92.71)
 		)
 		(stroke
 			(width 0)
@@ -146,7 +146,7 @@
 		(uuid "b6d955d5-ce06-45e4-9d03-675d65211a26")
 	)
 	(label "SPI0{MISO,MOSI,SCK,CSN}"
-		(at 80.01 116.84 0)
+		(at 81.28 105.41 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -350,7 +350,7 @@
 			)
 		)
 		(pin "SPI0{MISO,MOSI,SCK,CSN}" bidirectional
-			(at 110.49 116.84 180)
+			(at 110.49 105.41 180)
 			(uuid "011a4626-c1c7-440e-820c-bfdf71103f51")
 			(effects
 				(font
@@ -378,8 +378,8 @@
 		)
 	)
 	(sheet
-		(at 74.93 90.17)
-		(size 17.78 12.7)
+		(at 53.34 88.9)
+		(size 27.94 21.59)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -394,7 +394,7 @@
 		)
 		(uuid "4b1d8d5b-f966-4aa8-a3eb-1d4656db461d")
 		(property "Sheetname" "Power"
-			(at 74.93 89.4584 0)
+			(at 53.34 88.1884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -405,7 +405,7 @@
 			)
 		)
 		(property "Sheetfile" "untitled.kicad_sch"
-			(at 74.93 103.4546 0)
+			(at 53.34 111.0746 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -416,7 +416,7 @@
 			)
 		)
 		(pin "SWD{CLK,DIO}" output
-			(at 92.71 92.71 0)
+			(at 81.28 92.71 0)
 			(uuid "044690e9-ff07-451c-b498-8e96980063d2")
 			(effects
 				(font
@@ -425,9 +425,19 @@
 				(justify right)
 			)
 		)
-		(pin "USB{DM,DP}" input
-			(at 92.71 100.33 0)
+		(pin "USB{DM,DP}" output
+			(at 81.28 100.33 0)
 			(uuid "281b8a8f-e000-4b61-9968-400f00b0985a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SPI0{MISO,MOSI,SCK,CSN}" bidirectional
+			(at 81.28 105.41 0)
+			(uuid "5d519169-c49e-4dac-bebb-38c5f1fa4c0f")
 			(effects
 				(font
 					(size 1.27 1.27)

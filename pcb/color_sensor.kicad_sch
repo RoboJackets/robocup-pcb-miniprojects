@@ -733,16 +733,6 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 91.44) (xy 125.73 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "da25f4c4-bc40-4966-88f6-86ffe923162f")
-	)
-	(wire
-		(pts
 			(xy 128.27 91.44) (xy 149.86 91.44)
 		)
 		(stroke
@@ -1092,7 +1082,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 125.73 95.25 0)
+		(at 128.27 95.25 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -1102,8 +1092,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7feeb0dd-1710-4381-8793-bf015d32a69e")
-		(property "Reference" "C24"
-			(at 118.11 93.98 0)
+		(property "Reference" "C21"
+			(at 120.65 93.98 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1114,7 +1104,7 @@
 			)
 		)
 		(property "Value" "0.1u"
-			(at 118.11 96.52 0)
+			(at 120.65 96.52 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1125,7 +1115,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 124.7648 99.06 0)
+			(at 127.3048 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1136,7 +1126,7 @@
 			)
 		)
 		(property "Datasheet" "https://calchip.com/wp-content/uploads/2025/05/GMC-Series-3.pdf"
-			(at 125.73 95.25 0)
+			(at 128.27 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1147,7 +1137,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 125.73 95.25 0)
+			(at 128.27 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1158,7 +1148,7 @@
 			)
 		)
 		(property "Manufactuer PN" "GMC04X7R104K16NT"
-			(at 125.73 95.25 0)
+			(at 128.27 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1169,7 +1159,7 @@
 			)
 		)
 		(property "Vendor" "Digikey"
-			(at 125.73 95.25 0)
+			(at 128.27 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1180,7 +1170,7 @@
 			)
 		)
 		(property "Vendor PN" "2571-GMC04X7R104K16NTTR-ND"
-			(at 125.73 95.25 0)
+			(at 128.27 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1199,7 +1189,7 @@
 		(instances
 			(project "sensor_suite"
 				(path "/17df1232-b180-49eb-a49c-63e4861e42e5/b2c0a7fe-fadc-4b67-9c8f-2e9ec056e7a3"
-					(reference "C24")
+					(reference "C21")
 					(unit 1)
 				)
 			)
@@ -1217,7 +1207,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "81f06bb4-d192-405b-aa42-5a316025356c")
-		(property "Reference" "#PWR058"
+		(property "Reference" "#PWR081"
 			(at 128.27 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -1277,7 +1267,7 @@
 		(instances
 			(project "sensor_suite"
 				(path "/17df1232-b180-49eb-a49c-63e4861e42e5/b2c0a7fe-fadc-4b67-9c8f-2e9ec056e7a3"
-					(reference "#PWR058")
+					(reference "#PWR081")
 					(unit 1)
 				)
 			)
@@ -1285,7 +1275,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 125.73 99.06 0)
+		(at 128.27 99.06 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1295,8 +1285,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ca0aa5e3-d44b-4220-90fb-c0fe3fc5a818")
-		(property "Reference" "#PWR076"
-			(at 125.73 105.41 0)
+		(property "Reference" "#PWR082"
+			(at 128.27 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1307,7 +1297,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 125.73 104.14 0)
+			(at 128.27 104.14 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1317,7 +1307,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 125.73 99.06 0)
+			(at 128.27 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1328,7 +1318,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 125.73 99.06 0)
+			(at 128.27 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1339,7 +1329,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 125.73 99.06 0)
+			(at 128.27 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1355,7 +1345,7 @@
 		(instances
 			(project "sensor_suite"
 				(path "/17df1232-b180-49eb-a49c-63e4861e42e5/b2c0a7fe-fadc-4b67-9c8f-2e9ec056e7a3"
-					(reference "#PWR076")
+					(reference "#PWR082")
 					(unit 1)
 				)
 			)
@@ -1373,7 +1363,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "eaac61ef-e031-4bbc-9433-119a3f9e2408")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR083"
 			(at 146.05 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -1433,7 +1423,7 @@
 		(instances
 			(project "sensor_suite"
 				(path "/17df1232-b180-49eb-a49c-63e4861e42e5/b2c0a7fe-fadc-4b67-9c8f-2e9ec056e7a3"
-					(reference "#PWR029")
+					(reference "#PWR083")
 					(unit 1)
 				)
 			)

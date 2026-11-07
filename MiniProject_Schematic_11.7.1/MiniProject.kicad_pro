@@ -257,7 +257,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": ""
+      "sch_revision": "v3.0"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -277,32 +277,7 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [
-      [
-        "lib_symbol_mismatch|1244600|647700|b540cd46-680e-4a4b-9879-be6b294a9733|00000000-0000-0000-0000-000000000000|||",
-        ""
-      ],
-      [
-        "lib_symbol_mismatch|1244600|952500|a62a2b97-6443-421a-ac30-51df9fe46e5b|00000000-0000-0000-0000-000000000000|||",
-        ""
-      ],
-      [
-        "pin_to_pin|1066800|457200|7658ac76-1c72-4020-96e7-f27e514191f6|74710ff1-a6f7-43c5-ac4f-1dc5009886b5|/0a447067-5c9c-45cc-965a-4decfa548377/5daf343b-c646-4b9b-a8a0-b64572977bf9|/0a447067-5c9c-45cc-965a-4decfa548377/5daf343b-c646-4b9b-a8a0-b64572977bf9|/0a447067-5c9c-45cc-965a-4decfa548377/f400d389-19dc-44e6-ad52-9c4ee0cda3cd",
-        ""
-      ],
-      [
-        "pin_to_pin|2019300|381000|7ee9acd6-fba7-4b66-9a76-c995864c4ad8|74710ff1-a6f7-43c5-ac4f-1dc5009886b5|/0a447067-5c9c-45cc-965a-4decfa548377/5daf343b-c646-4b9b-a8a0-b64572977bf9|/0a447067-5c9c-45cc-965a-4decfa548377/5daf343b-c646-4b9b-a8a0-b64572977bf9|/0a447067-5c9c-45cc-965a-4decfa548377/f400d389-19dc-44e6-ad52-9c4ee0cda3cd",
-        ""
-      ],
-      [
-        "pin_to_pin|2247900|381000|0f36fd13-314a-4bab-8b2e-2474e3be4580|bd166343-892f-4850-9db7-0c5d0edb4a82|/0a447067-5c9c-45cc-965a-4decfa548377/5daf343b-c646-4b9b-a8a0-b64572977bf9|/0a447067-5c9c-45cc-965a-4decfa548377/5daf343b-c646-4b9b-a8a0-b64572977bf9|/0a447067-5c9c-45cc-965a-4decfa548377/f400d389-19dc-44e6-ad52-9c4ee0cda3cd",
-        ""
-      ],
-      [
-        "pin_to_pin|558800|533400|5a7efd5a-e1ff-425c-bc02-dbe4e9c29011|74710ff1-a6f7-43c5-ac4f-1dc5009886b5|/0a447067-5c9c-45cc-965a-4decfa548377/5daf343b-c646-4b9b-a8a0-b64572977bf9|/0a447067-5c9c-45cc-965a-4decfa548377/5daf343b-c646-4b9b-a8a0-b64572977bf9|/0a447067-5c9c-45cc-965a-4decfa548377/f400d389-19dc-44e6-ad52-9c4ee0cda3cd",
-        ""
-      ]
-    ],
+    "erc_exclusions": [],
     "meta": {
       "version": 0
     },
@@ -496,7 +471,7 @@
       "isolated_pin_label": "warning",
       "label_dangling": "error",
       "label_multiple_wires": "warning",
-      "lib_symbol_issues": "ignore",
+      "lib_symbol_issues": "warning",
       "lib_symbol_mismatch": "warning",
       "missing_bidi_pin": "warning",
       "missing_input_pin": "warning",
@@ -508,7 +483,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "error",
+      "pin_to_pin": "warning",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
       "same_local_global_power": "warning",
@@ -554,6 +529,120 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "BUTTONS",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 5,
+        "schematic_color": "rgb(200, 0, 0)",
+        "track_width": 0.2,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "I2C",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgb(0, 90, 200)",
+        "track_width": 0.2,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "QSPI",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 4,
+        "schematic_color": "rgb(140, 90, 40)",
+        "track_width": 0.2,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "SPI_IN",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgb(0, 140, 150)",
+        "track_width": 0.2,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "SPI_OUT",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
+        "schematic_color": "rgb(215, 105, 0)",
+        "track_width": 0.2,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "USB",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 3,
+        "schematic_color": "rgb(150, 0, 170)",
+        "track_width": 0.2,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
       }
     ],
     "meta": {
@@ -561,7 +650,40 @@
     },
     "net_colors": {},
     "netclass_assignments": {},
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "I2C",
+        "pattern": "*/SDA_*"
+      },
+      {
+        "netclass": "I2C",
+        "pattern": "*/SCL_*"
+      },
+      {
+        "netclass": "SPI_IN",
+        "pattern": "*/SPI_IN_*"
+      },
+      {
+        "netclass": "SPI_OUT",
+        "pattern": "*/SPI_OUT_*"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "*USB_D*"
+      },
+      {
+        "netclass": "QSPI",
+        "pattern": "*/QSPI_*"
+      },
+      {
+        "netclass": "BUTTONS",
+        "pattern": "*/GPIO16"
+      },
+      {
+        "netclass": "BUTTONS",
+        "pattern": "*/GPIO17"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -689,13 +811,13 @@
           "group_by": false,
           "label": "MP",
           "name": "MP",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
           "label": "MPN",
           "name": "MPN",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -791,13 +913,13 @@
           "group_by": false,
           "label": "manufacturer",
           "name": "manufacturer",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
           "label": "manufacturer_pn",
           "name": "manufacturer_pn",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -918,6 +1040,72 @@
           "label": "AVAILABILITY",
           "name": "AVAILABILITY",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "HEIGHT",
+          "name": "HEIGHT",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MANUFACTURER_NAME",
+          "name": "MANUFACTURER_NAME",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Purchase-URL",
+          "name": "Purchase-URL",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MOUSER_PART_NUMBER",
+          "name": "MOUSER_PART_NUMBER",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MANUFACTURER_PART_NUMBER",
+          "name": "MANUFACTURER_PART_NUMBER",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "ARROW_PRICE-STOCK",
+          "name": "ARROW_PRICE-STOCK",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MOUSER-PURCHASE-URL",
+          "name": "MOUSER-PURCHASE-URL",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "ARROW_PART_NUMBER",
+          "name": "ARROW_PART_NUMBER",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MOUSER_PRICE-STOCK",
+          "name": "MOUSER_PRICE-STOCK",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "KLC_S4.2_DVDD",
+          "name": "KLC_S4.2_DVDD",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "KLC_S4.2_VREG_VOUT",
+          "name": "KLC_S4.2_VREG_VOUT",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -968,7 +1156,7 @@
         "uuid": "0a447067-5c9c-45cc-965a-4decfa548377"
       }
     ],
-    "used_designators": "#FLG1-7,#PWR1-107,C1-31,D1-42,F1-2,J1-9,MT1,R1-74,RN1-2,S1-7,U1-12,X1,Y1",
+    "used_designators": "#FLG1-7,#PWR1-107,#PWR110,C1-31,D1-42,F1-2,J1-9,MT1,R1-74,RN1-2,S1-7,TP1,TP6,TP13,U1-12,X1,Y1",
     "variants": []
   },
   "sheets": [

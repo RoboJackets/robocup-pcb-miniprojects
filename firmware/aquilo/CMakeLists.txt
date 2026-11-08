@@ -38,7 +38,8 @@ add_subdirectory(lib/TempSensor)
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(aquilo aquilo.c)
+# add_executable(aquilo aquilo.c)
+add_executable(aquilo src/main.cpp)
 
 pico_set_program_name(aquilo "aquilo")
 pico_set_program_version(aquilo "0.1")

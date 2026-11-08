@@ -2,10 +2,10 @@
 	(version 20260306)
 	(generator "eeschema")
 	(generator_version "10.0")
-	(uuid "e6f96814-e50b-44d0-8188-b183f04961de")
+	(uuid "f9d1f543-cb9c-4fb5-a447-81b4dfd03327")
 	(paper "A4")
 	(title_block
-		(title "Temperature Sensor")
+		(title "Hall Effect Sensor")
 		(date "2026-11-01")
 		(rev "1")
 		(company "RoboJackets")
@@ -167,48 +167,39 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "LM75ADP_118:LM75ADP,118"
+		(symbol "TMAG5273C1QDBVR:TMAG5273C1QDBVR"
+			(pin_names
+				(offset 1.016)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "IC"
-				(at 21.59 7.62 0)
+			(property "Reference" "U"
+				(at -10.16 10.922 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
+					(justify left bottom)
 				)
 			)
-			(property "Value" "LM75ADP,118"
-				(at 21.59 5.08 0)
+			(property "Value" "TMAG5273C1QDBVR"
+				(at -10.16 -12.7 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
+					(justify left bottom)
 				)
 			)
-			(property "Footprint" "SOP65P490X110-8N"
-				(at 21.59 -94.92 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Datasheet" "http://www.nxp.com/docs/en/data-sheet/LM75A.pdf"
-				(at 21.59 -194.92 0)
+			(property "Footprint" "TMAG5273C1QDBVR:SOT95P280X140-6N"
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -216,10 +207,10 @@
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
+					(justify bottom)
 				)
 			)
-			(property "Description" "Board Mount Temperature Sensors TEMP SENSOR DIGITAL"
+			(property "Datasheet" ""
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -230,8 +221,8 @@
 					)
 				)
 			)
-			(property "Height" "1.1"
-				(at 21.59 -394.92 0)
+			(property "Description" "Low-power linear 3D Hall-effect sensor with I²C interface"
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -239,11 +230,11 @@
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
+					(justify bottom)
 				)
 			)
-			(property "Manufacturer_Name" "NXP"
-				(at 21.59 -494.92 0)
+			(property "MF" "Texas Instruments"
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -251,11 +242,11 @@
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
+					(justify bottom)
 				)
 			)
-			(property "Manufacturer_Part_Number" "LM75ADP,118"
-				(at 21.59 -594.92 0)
+			(property "MAXIMUM_PACKAGE_HEIGHT" "1.40mm"
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -263,11 +254,11 @@
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
+					(justify bottom)
 				)
 			)
-			(property "Mouser Part Number" "771-LM75ADP-T"
-				(at 21.59 -694.92 0)
+			(property "Package" "None"
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -275,11 +266,11 @@
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
+					(justify bottom)
 				)
 			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/NXP-Semiconductors/LM75ADP118?qs=LOCUfHb8d9vvCdlTDgESAg%3D%3D"
-				(at 21.59 -794.92 0)
+			(property "Price" "None"
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -287,11 +278,11 @@
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
+					(justify bottom)
 				)
 			)
-			(property "Arrow Part Number" "LM75ADP,118"
-				(at 21.59 -894.92 0)
+			(property "Check_prices" "https://www.snapeda.com/parts/TMAG5273C1QDBVR/Texas+Instruments/view-part/?ref=eda"
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -299,11 +290,11 @@
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
+					(justify bottom)
 				)
 			)
-			(property "Arrow Price/Stock" "https://www.arrow.com/en/products/lm75adp118/nxp-semiconductors.html?utm_currency=USD&region=europe"
-				(at 21.59 -994.92 0)
+			(property "STANDARD" "IPC-7351B"
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -311,13 +302,73 @@
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
+					(justify bottom)
 				)
 			)
-			(symbol "LM75ADP,118_1_1"
+			(property "PARTREV" "B"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "SnapEDA_Link" "https://www.snapeda.com/parts/TMAG5273C1QDBVR/Texas+Instruments/view-part/?ref=snap"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "MP" "TMAG5273C1QDBVR"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Availability" "In Stock"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "MANUFACTURER" "Texas Instruments"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(symbol "TMAG5273C1QDBVR_0_0"
 				(rectangle
-					(start 5.08 2.54)
-					(end 20.32 -10.16)
+					(start -10.16 -10.16)
+					(end 10.16 10.16)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -326,10 +377,239 @@
 						(type background)
 					)
 				)
-				(pin passive line
-					(at 0 0 0)
+				(pin bidirectional clock
+					(at 15.24 2.54 180)
+					(length 5.08)
+					(name "SCL"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 15.24 -7.62 180)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -15.24 -2.54 0)
+					(length 5.08)
+					(name "TEST"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 15.24 7.62 180)
+					(length 5.08)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -15.24 2.54 0)
+					(length 5.08)
+					(name "~{INT}"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 0 180)
 					(length 5.08)
 					(name "SDA"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:+3V3"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+3V3"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3V3\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "+3V3_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3V3_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -337,132 +617,6 @@
 						)
 					)
 					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 0)
-					(length 5.08)
-					(name "SCL"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 0)
-					(length 5.08)
-					(name "OS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -7.62 0)
-					(length 5.08)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 25.4 -7.62 180)
-					(length 5.08)
-					(name "A2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 25.4 -5.08 180)
-					(length 5.08)
-					(name "A1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 25.4 -2.54 180)
-					(length 5.08)
-					(name "A0"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 25.4 0 180)
-					(length 5.08)
-					(name "VCC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -588,149 +742,10 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:VCC"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "VCC"
-				(at 0 3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"VCC\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "VCC_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "VCC_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 	)
 	(rectangle
-		(start 30.48 38.1)
-		(end 86.36 83.82)
+		(start 119.38 102.87)
+		(end 119.38 102.87)
 		(stroke
 			(width 0)
 			(type default)
@@ -738,222 +753,172 @@
 		(fill
 			(type none)
 		)
-		(uuid "5d85f430-5e06-4f12-89cc-112e2dcd5f90")
+		(uuid "7754f68d-2049-4cbf-a836-478624f79081")
 	)
-	(text "Temperature Sensor\n"
+	(rectangle
+		(start 62.23 52.07)
+		(end 233.68 165.1)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "d84b2054-2d6e-4dc8-8c70-b3d92caf2d63")
+	)
+	(text "Hall Effect Sensor\n"
 		(exclude_from_sim no)
-		(at 41.402 39.624 0)
+		(at 73.152 54.61 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "dffaefe6-ff7f-452b-97f2-5e5f5e832c7b")
+		(uuid "b2254d96-21c9-41cc-a510-b6f5f52670d0")
 	)
 	(junction
-		(at 76.2 59.69)
+		(at 160.02 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "5d669407-5f8a-475e-be19-4e3f88311c61")
+		(uuid "e19aa611-90d3-43a9-bc8b-a5a93621d58a")
 	)
 	(no_connect
-		(at 49.53 64.77)
-		(uuid "c242fa0e-f68b-47bb-a061-b25bf0382f2c")
+		(at 76.2 81.28)
+		(uuid "187afbec-6346-491d-952a-31ef502f1835")
+	)
+	(bus_entry
+		(at 127 83.82)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6621083f-4f97-4138-8020-8c02737f96c9")
+	)
+	(bus_entry
+		(at 127 81.28)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a68c98e-e5f1-4201-ba49-7779dae83ff6")
 	)
 	(wire
 		(pts
-			(xy 33.02 46.99) (xy 76.2 46.99)
+			(xy 106.68 83.82) (xy 127 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "09b354b1-a118-40ea-a107-8bc44a3b87f5")
+		(uuid "10e13d43-eda7-48d1-8574-7a1abd792f97")
 	)
 	(wire
 		(pts
-			(xy 35.56 62.23) (xy 49.53 62.23)
+			(xy 106.68 91.44) (xy 106.68 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0b8f1692-d383-47f4-a467-57eb0b5f078a")
-	)
-	(wire
-		(pts
-			(xy 80.01 53.34) (xy 80.01 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1584d468-8c6b-45e7-af95-737ed4b1929d")
-	)
-	(wire
-		(pts
-			(xy 74.93 62.23) (xy 83.82 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2809d3a5-1abf-4df3-b1f7-97997bee0db5")
-	)
-	(wire
-		(pts
-			(xy 77.47 67.31) (xy 77.47 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "316e3d10-f81c-4d56-9753-36047b86e49e")
-	)
-	(wire
-		(pts
-			(xy 35.56 59.69) (xy 49.53 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "343d4d4e-27ec-4915-a070-a4bea170ee80")
-	)
-	(wire
-		(pts
-			(xy 76.2 59.69) (xy 80.01 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4172cd93-7308-4efe-aaac-cb581320aa57")
-	)
-	(wire
-		(pts
-			(xy 33.02 54.61) (xy 33.02 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6fbdad72-52fb-498c-b20f-555328c1bcc1")
+		(uuid "26574672-b7dc-46fb-a604-1f1c6f3754c1")
 	)
 	(bus
 		(pts
-			(xy 35.56 43.18) (xy 43.18 43.18)
+			(xy 129.54 83.82) (xy 129.54 88.9)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7711b362-599b-45e3-87af-67374fd71bf8")
+		(uuid "3814fa1b-e878-4a55-b72a-d660d11e6029")
 	)
 	(wire
 		(pts
-			(xy 81.28 64.77) (xy 74.93 64.77)
+			(xy 160.02 76.2) (xy 160.02 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8d248ecd-21d2-4888-b803-8310dd35e412")
+		(uuid "572b63cb-7ded-4597-8a87-9a6386f91730")
 	)
 	(wire
 		(pts
-			(xy 74.93 67.31) (xy 77.47 67.31)
+			(xy 76.2 86.36) (xy 76.2 100.33)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9ed8d604-5d74-4a51-98ee-5ee5f1ee7095")
+		(uuid "5dc86edf-cfe0-4150-8d9a-767e1f74a4af")
 	)
 	(wire
 		(pts
-			(xy 76.2 46.99) (xy 76.2 59.69)
+			(xy 106.68 81.28) (xy 127 81.28)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b057a5c7-3fae-4c72-a07b-87cd23c4faf6")
+		(uuid "74f036d2-4a64-45e2-a8b8-e86fba50a704")
 	)
 	(wire
 		(pts
-			(xy 45.72 68.58) (xy 45.72 67.31)
+			(xy 160.02 63.5) (xy 160.02 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cd6d5c6c-236a-4cf7-9662-348b832efcbd")
+		(uuid "88323a8e-fd38-462b-91dd-0679a555aff4")
 	)
 	(wire
 		(pts
-			(xy 45.72 67.31) (xy 49.53 67.31)
+			(xy 106.68 76.2) (xy 160.02 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ec264d9b-4f39-4305-b0c9-9da0a2e834a1")
+		(uuid "e319e7a5-a851-43ae-9f85-8d3103a0f28b")
 	)
-	(bus
-		(pts
-			(xy 35.56 43.18) (xy 35.56 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f952efc2-2b79-441d-9c74-f450b6bd0aea")
-	)
-	(wire
-		(pts
-			(xy 74.93 59.69) (xy 76.2 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ff9e3388-7fc1-44ac-9877-17e2605c0b9e")
-	)
-	(label "Temp_I2C.SCL"
-		(at 35.56 62.23 0)
+	(label "Hall_I2C.SDA"
+		(at 125.73 83.82 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
-		(uuid "340851ef-75c1-4089-a281-8de086f55ad6")
+		(uuid "7c2144c8-fa92-4f2e-8b2a-13b94fab0f31")
 	)
-	(label "Temp_I2C.SDA"
-		(at 35.56 59.69 0)
+	(label "Hall_I2C.SCL"
+		(at 125.73 81.28 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
-		(uuid "f39c6321-85f7-4b05-83c6-c4d4f3763e21")
+		(uuid "b17f6066-617b-4aac-88d3-97d845309d8f")
 	)
-	(hierarchical_label "Temperature_I2C{SDA,SCL}"
+	(hierarchical_label "Hall_I2C{SDA,SCL}"
 		(shape input)
-		(at 43.18 43.18 0)
+		(at 129.54 88.9 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "dba9f59a-a22a-4568-b8c9-fd380a6af17d")
+		(uuid "f675ac6b-9eab-467c-acc3-3eb74fde94c6")
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 83.82 62.23 0)
+		(lib_id "TMAG5273C1QDBVR:TMAG5273C1QDBVR")
+		(at 91.44 83.82 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -962,9 +927,235 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "20102d53-b481-4efc-9983-82f773926fe8")
-		(property "Reference" "#PWR0101"
-			(at 83.82 68.58 0)
+		(uuid "4535a8d8-29e9-4c03-8567-583c707d4685")
+		(property "Reference" "U11"
+			(at 91.44 68.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TMAG5273C1QDBVR"
+			(at 91.44 71.12 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TMAG5273C1QDBVR:SOT95P280X140-6N"
+			(at 91.44 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Low-power linear 3D Hall-effect sensor with I²C interface"
+			(at 91.44 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MF" "Texas Instruments"
+			(at 91.44 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "1.40mm"
+			(at 91.44 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Package" "None"
+			(at 91.44 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Price" "None"
+			(at 91.44 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/TMAG5273C1QDBVR/Texas+Instruments/view-part/?ref=eda"
+			(at 91.44 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "STANDARD" "IPC-7351B"
+			(at 91.44 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "PARTREV" "B"
+			(at 91.44 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/TMAG5273C1QDBVR/Texas+Instruments/view-part/?ref=snap"
+			(at 91.44 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MP" "TMAG5273C1QDBVR"
+			(at 91.44 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 91.44 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MANUFACTURER" "Texas Instruments"
+			(at 91.44 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(pin "1"
+			(uuid "551e6d66-f8fb-4335-83c5-435224d9bdee")
+		)
+		(pin "2"
+			(uuid "898e383f-8189-42dc-bdf8-59d48dd83585")
+		)
+		(pin "3"
+			(uuid "7c3f6325-969b-4e60-8db9-03762404ea1d")
+		)
+		(pin "4"
+			(uuid "3f4c4c0b-5e05-404b-8b4e-ec69e8003faa")
+		)
+		(pin "5"
+			(uuid "36ceaa12-0fe5-480e-b696-7d5d3b282237")
+		)
+		(pin "6"
+			(uuid "4d109d85-f9d1-49a4-a8df-0b725477c40c")
+		)
+		(instances
+			(project "taris-miniproject"
+				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/ec3be200-04e9-4a04-a35d-452876c564f7"
+					(reference "U11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 160.02 83.82 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9c4bcafb-afe7-44a3-8cdc-d23b4348aad5")
+		(property "Reference" "#PWR048"
+			(at 160.02 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -975,7 +1166,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 83.82 67.31 0)
+			(at 160.02 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -984,8 +1175,8 @@
 				)
 			)
 		)
-		(property "Footprint" "TCA9534PWR:SOP65P640X120-16N"
-			(at 83.82 62.23 0)
+		(property "Footprint" ""
+			(at 160.02 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -996,7 +1187,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 83.82 62.23 0)
+			(at 160.02 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1007,7 +1198,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 83.82 62.23 0)
+			(at 160.02 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1018,90 +1209,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "94a8cf10-966e-4ab7-8849-dcceb4e5cfd9")
+			(uuid "4837a7df-b009-4ff9-b313-1b0e780dd23b")
 		)
 		(instances
-			(project "rj-electrical-training"
-				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/bd0d0ebd-78c1-4588-9d9a-8ef1cecd8ae1"
-					(reference "#PWR0101")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 80.01 53.34 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3adf53f8-ea6d-47eb-9088-7757bc3760b0")
-		(property "Reference" "#PWR089"
-			(at 80.01 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "3.3V"
-			(at 80.01 48.26 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "CLMVC-FKA-CL1D1L71BB7C3C3_CRE"
-			(at 80.01 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 80.01 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 80.01 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4faeed21-e46d-4a4c-b0b5-6a43b529aaa1")
-		)
-		(instances
-			(project "rj-electrical-training"
-				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/bd0d0ebd-78c1-4588-9d9a-8ef1cecd8ae1"
-					(reference "#PWR089")
+			(project "taris-miniproject"
+				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/ec3be200-04e9-4a04-a35d-452876c564f7"
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -1109,7 +1222,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 33.02 64.77 0)
+		(at 106.68 102.87 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1118,9 +1231,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "688ff93b-5848-41ad-b0dd-8fbdf0b7fb83")
-		(property "Reference" "#PWR097"
-			(at 33.02 71.12 0)
+		(uuid "a72c7a0a-6288-4ff5-ad87-5d1aeb3a2a5b")
+		(property "Reference" "#PWR071"
+			(at 106.68 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1131,7 +1244,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 33.02 69.85 0)
+			(at 106.68 107.95 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1141,7 +1254,7 @@
 			)
 		)
 		(property "Footprint" "TCA9534PWR:SOP65P640X120-16N"
-			(at 33.02 64.77 0)
+			(at 106.68 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1152,7 +1265,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 33.02 64.77 0)
+			(at 106.68 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1163,7 +1276,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 33.02 64.77 0)
+			(at 106.68 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1174,90 +1287,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "2d295dfe-0fbd-458f-bac2-e44865f664fe")
+			(uuid "9689cb30-b6f6-4b5c-9a4e-c8e0a3ac481d")
 		)
 		(instances
-			(project "rj-electrical-training"
-				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/bd0d0ebd-78c1-4588-9d9a-8ef1cecd8ae1"
-					(reference "#PWR097")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 45.72 68.58 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7b09ff79-4f00-4342-9b5a-4f71a581b9ca")
-		(property "Reference" "#PWR088"
-			(at 45.72 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 45.72 73.66 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "TCA9534PWR:SOP65P640X120-16N"
-			(at 45.72 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 45.72 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 45.72 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f13adbc0-58ba-4969-be31-126ae5968dfb")
-		)
-		(instances
-			(project "rj-electrical-training"
-				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/bd0d0ebd-78c1-4588-9d9a-8ef1cecd8ae1"
-					(reference "#PWR088")
+			(project "taris-miniproject"
+				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/ec3be200-04e9-4a04-a35d-452876c564f7"
+					(reference "#PWR071")
 					(unit 1)
 				)
 			)
@@ -1265,7 +1300,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 33.02 50.8 0)
+		(at 160.02 72.39 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1274,31 +1309,29 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "8d5b3dad-cc54-41de-b310-21205ab22dbb")
-		(property "Reference" "C23"
-			(at 36.83 49.5299 0)
+		(uuid "e5665bd2-2eb0-4bc5-8452-d6dffd15d50f")
+		(property "Reference" "C22"
+			(at 152.4 72.39 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 36.83 52.0699 0)
+		(property "Value" "100nF"
+			(at 154.94 72.39 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
-			(at 33.9852 54.61 0)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 160.9852 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1309,7 +1342,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 33.02 50.8 0)
+			(at 160.02 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1320,7 +1353,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 33.02 50.8 0)
+			(at 160.02 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1331,23 +1364,23 @@
 			)
 		)
 		(pin "2"
-			(uuid "f18efbf4-71d5-4b23-b369-c1cf6c697e13")
+			(uuid "42685d18-fb76-47f9-8c99-3385f9d91384")
 		)
 		(pin "1"
-			(uuid "1ba8190f-9fb8-4a83-abde-8f848b3ed882")
+			(uuid "610217f9-645d-4672-b56f-cdffabfad1ca")
 		)
 		(instances
-			(project "rj-electrical-training"
-				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/bd0d0ebd-78c1-4588-9d9a-8ef1cecd8ae1"
-					(reference "C23")
+			(project "taris-miniproject"
+				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/ec3be200-04e9-4a04-a35d-452876c564f7"
+					(reference "C22")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LM75ADP_118:LM75ADP,118")
-		(at 49.53 59.69 0)
+		(lib_id "power:+3V3")
+		(at 160.02 63.5 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1356,53 +1389,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "918a21ef-8547-4475-85ce-12684f1fcb2d")
-		(property "Reference" "IC1"
-			(at 62.23 52.07 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LM75ADP,118"
-			(at 62.23 54.61 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LIB_LM75ADP,118:SOP65P490X110-8N"
-			(at 71.12 154.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Datasheet" "http://www.nxp.com/docs/en/data-sheet/LM75A.pdf"
-			(at 71.12 254.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Description" "Board Mount Temperature Sensors TEMP SENSOR DIGITAL"
-			(at 49.53 59.69 0)
+		(uuid "ec881dd3-75e5-4056-acae-ba3eb87b1407")
+		(property "Reference" "#PWR072"
+			(at 160.02 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1412,138 +1401,8 @@
 				)
 			)
 		)
-		(property "Height" "1.1"
-			(at 71.12 454.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Name" "NXP"
-			(at 71.12 554.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Part_Number" "LM75ADP,118"
-			(at 71.12 654.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Part Number" "771-LM75ADP-T"
-			(at 71.12 754.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/NXP-Semiconductors/LM75ADP118?qs=LOCUfHb8d9vvCdlTDgESAg%3D%3D"
-			(at 71.12 854.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Arrow Part Number" "LM75ADP,118"
-			(at 71.12 954.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/lm75adp118/nxp-semiconductors.html?utm_currency=USD&region=europe"
-			(at 71.12 1054.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "2"
-			(uuid "269ec5ab-a988-4262-8ea4-07d970440e62")
-		)
-		(pin "3"
-			(uuid "3aaef4ca-6724-4b81-b2fc-083fa32308fd")
-		)
-		(pin "6"
-			(uuid "3cd3493b-d150-4fc1-bbba-fce81646d289")
-		)
-		(pin "7"
-			(uuid "5bb3c08e-3a88-4ea4-9a3c-b9adb5aed061")
-		)
-		(pin "8"
-			(uuid "4afbbf73-c24c-4887-bec2-aa40d94735d3")
-		)
-		(pin "5"
-			(uuid "9e9337b7-ea1b-43ec-8ba8-89ae3a80961f")
-		)
-		(pin "4"
-			(uuid "d20ba4b1-cecf-48fd-94c1-f4b170a09b65")
-		)
-		(pin "1"
-			(uuid "84c3dee1-87b6-47d5-b0b5-d03945005d41")
-		)
-		(instances
-			(project "rj-electrical-training"
-				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/bd0d0ebd-78c1-4588-9d9a-8ef1cecd8ae1"
-					(reference "IC1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 77.47 69.85 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "96c2fbba-6f17-436e-b0a5-d0d6450c64af")
-		(property "Reference" "#PWR090"
-			(at 77.47 76.2 0)
-			(hide yes)
+		(property "Value" "3.3V"
+			(at 160.02 58.42 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1552,18 +1411,8 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 77.47 74.93 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "TCA9534PWR:SOP65P640X120-16N"
-			(at 77.47 69.85 0)
+		(property "Footprint" "Package_DFN_QFN:Diodes_UDFN3810-9_TYPE_B"
+			(at 160.02 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1574,7 +1423,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 77.47 69.85 0)
+			(at 160.02 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1584,8 +1433,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 77.47 69.85 0)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 160.02 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1596,12 +1445,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "5b27991e-a8e0-463c-815c-7ebd84f6dd4f")
+			(uuid "4d4162a9-b690-4bbf-8e60-014e8760e418")
 		)
 		(instances
-			(project "rj-electrical-training"
-				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/bd0d0ebd-78c1-4588-9d9a-8ef1cecd8ae1"
-					(reference "#PWR090")
+			(project "taris-miniproject"
+				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/ec3be200-04e9-4a04-a35d-452876c564f7"
+					(reference "#PWR072")
 					(unit 1)
 				)
 			)
@@ -1609,7 +1458,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 81.28 64.77 0)
+		(at 76.2 100.33 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1618,9 +1467,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "b1c51fde-b391-46dc-ae46-238f69147a79")
-		(property "Reference" "#PWR0102"
-			(at 81.28 71.12 0)
+		(uuid "f3a04b2c-8369-4933-bf4f-c4c0f041bd41")
+		(property "Reference" "#PWR049"
+			(at 76.2 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1631,7 +1480,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 81.28 69.85 0)
+			(at 76.2 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1640,8 +1489,8 @@
 				)
 			)
 		)
-		(property "Footprint" "TCA9534PWR:SOP65P640X120-16N"
-			(at 81.28 64.77 0)
+		(property "Footprint" ""
+			(at 76.2 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1652,7 +1501,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 81.28 64.77 0)
+			(at 76.2 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1663,7 +1512,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 81.28 64.77 0)
+			(at 76.2 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1674,35 +1523,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "c8079ca9-a08c-4f09-81ff-6824e5b5e8eb")
+			(uuid "527f6980-f69b-464c-ad06-517d3b1eab4d")
 		)
 		(instances
-			(project "rj-electrical-training"
-				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/bd0d0ebd-78c1-4588-9d9a-8ef1cecd8ae1"
-					(reference "#PWR0102")
+			(project "taris-miniproject"
+				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/ec3be200-04e9-4a04-a35d-452876c564f7"
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
-		)
-	)
-	(group ""
-		(uuid "742fe79b-5497-485d-84f4-4cc2cd94af0e")
-		(members "09b354b1-a118-40ea-a107-8bc44a3b87f5" "0b8f1692-d383-47f4-a467-57eb0b5f078a"
-			"1584d468-8c6b-45e7-af95-737ed4b1929d" "20102d53-b481-4efc-9983-82f773926fe8"
-			"2809d3a5-1abf-4df3-b1f7-97997bee0db5" "316e3d10-f81c-4d56-9753-36047b86e49e"
-			"340851ef-75c1-4089-a281-8de086f55ad6" "343d4d4e-27ec-4915-a070-a4bea170ee80"
-			"3adf53f8-ea6d-47eb-9088-7757bc3760b0" "4172cd93-7308-4efe-aaac-cb581320aa57"
-			"5d669407-5f8a-475e-be19-4e3f88311c61" "5d85f430-5e06-4f12-89cc-112e2dcd5f90"
-			"688ff93b-5848-41ad-b0dd-8fbdf0b7fb83" "6fbdad72-52fb-498c-b20f-555328c1bcc1"
-			"7711b362-599b-45e3-87af-67374fd71bf8" "7b09ff79-4f00-4342-9b5a-4f71a581b9ca"
-			"8d248ecd-21d2-4888-b803-8310dd35e412" "8d5b3dad-cc54-41de-b310-21205ab22dbb"
-			"918a21ef-8547-4475-85ce-12684f1fcb2d" "96c2fbba-6f17-436e-b0a5-d0d6450c64af"
-			"9ed8d604-5d74-4a51-98ee-5ee5f1ee7095" "b057a5c7-3fae-4c72-a07b-87cd23c4faf6"
-			"b1c51fde-b391-46dc-ae46-238f69147a79" "c242fa0e-f68b-47bb-a061-b25bf0382f2c"
-			"cd6d5c6c-236a-4cf7-9662-348b832efcbd" "dba9f59a-a22a-4568-b8c9-fd380a6af17d"
-			"dffaefe6-ff7f-452b-97f2-5e5f5e832c7b" "ec264d9b-4f39-4305-b0c9-9da0a2e834a1"
-			"f39c6321-85f7-4b05-83c6-c4d4f3763e21" "f952efc2-2b79-441d-9c74-f450b6bd0aea"
-			"ff9e3388-7fc1-44ac-9877-17e2605c0b9e"
 		)
 	)
 )

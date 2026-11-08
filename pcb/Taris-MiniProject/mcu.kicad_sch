@@ -2889,145 +2889,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+5V"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "+5V"
-				(at 0 3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+5V\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "+5V_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+5V_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:GND"
 			(power global)
 			(pin_numbers
@@ -3143,7 +3004,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:VBUS"
+		(symbol "power:PWR_FLAG"
 			(power global)
 			(pin_numbers
 				(hide yes)
@@ -3157,8 +3018,8 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -3168,8 +3029,8 @@
 					)
 				)
 			)
-			(property "Value" "VBUS"
-				(at 0 3.556 0)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -3200,7 +3061,7 @@
 					)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(property "Description" "Special symbol for telling ERC where power comes from"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3211,7 +3072,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "global power"
+			(property "ki_keywords" "flag power"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3222,46 +3083,8 @@
 					)
 				)
 			)
-			(symbol "VBUS_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "VBUS_1_1"
-				(pin power_in line
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
 					(at 0 0 90)
 					(length 0)
 					(name ""
@@ -3277,6 +3100,20 @@
 								(size 1.27 1.27)
 							)
 						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 			)
@@ -4312,16 +4149,6 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 177.8) (xy 57.15 179.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "487a6934-b2ba-4ecb-8cb4-7cad89d6fd8f")
-	)
-	(wire
-		(pts
 			(xy 60.96 132.08) (xy 60.96 134.62)
 		)
 		(stroke
@@ -4602,6 +4429,16 @@
 	)
 	(wire
 		(pts
+			(xy 55.88 185.42) (xy 67.31 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "776dd7db-6269-435e-b3f8-a10d18acc90f")
+	)
+	(wire
+		(pts
 			(xy 153.67 115.57) (xy 156.21 115.57)
 		)
 		(stroke
@@ -4659,16 +4496,6 @@
 			(type default)
 		)
 		(uuid "7ebb4095-2913-4fdf-b056-38c2f8ea03ea")
-	)
-	(wire
-		(pts
-			(xy 62.23 175.26) (xy 62.23 185.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7f5d4951-bbaf-4403-bcb4-2e79c713854b")
 	)
 	(wire
 		(pts
@@ -4782,7 +4609,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 185.42) (xy 36.83 185.42)
+			(xy 34.29 185.42) (xy 36.83 185.42)
 		)
 		(stroke
 			(width 0)
@@ -4910,16 +4737,6 @@
 		)
 		(uuid "a5505c2b-69fe-47c2-8dce-5d9a5d7105e4")
 	)
-	(wire
-		(pts
-			(xy 62.23 185.42) (xy 67.31 185.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a7b6f9f5-efc6-4068-a67a-36a1835ffab6")
-	)
 	(bus
 		(pts
 			(xy 223.52 110.49) (xy 223.52 113.03)
@@ -4969,6 +4786,16 @@
 			(type default)
 		)
 		(uuid "aed7cc2c-3474-49f2-a500-181311454335")
+	)
+	(wire
+		(pts
+			(xy 153.67 110.49) (xy 156.21 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aff0704a-dc4b-447b-93a0-9699e60cb1ac")
 	)
 	(wire
 		(pts
@@ -5092,7 +4919,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 177.8) (xy 67.31 177.8)
+			(xy 52.07 179.07) (xy 67.31 179.07)
 		)
 		(stroke
 			(width 0)
@@ -5112,7 +4939,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 177.8) (xy 67.31 182.88)
+			(xy 67.31 179.07) (xy 67.31 182.88)
 		)
 		(stroke
 			(width 0)
@@ -5439,6 +5266,26 @@
 			(type default)
 		)
 		(uuid "f7f8fb5f-1ae7-4004-898d-00067cfce3fc")
+	)
+	(wire
+		(pts
+			(xy 55.88 173.99) (xy 55.88 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8e1cec6-ad0f-4286-9480-d24adfc83f2a")
+	)
+	(wire
+		(pts
+			(xy 34.29 173.99) (xy 34.29 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc891c48-86db-4a42-bd36-3952f66b5d72")
 	)
 	(bus
 		(pts
@@ -6086,16 +5933,16 @@
 		)
 		(uuid "5f671e18-1069-4ef8-a1d9-e9485d4bcbc8")
 	)
-	(hierarchical_label "SPI_Master_Power"
+	(hierarchical_label "SPI_SLAVE_LED"
 		(shape input)
-		(at 62.23 175.26 0)
+		(at 34.29 176.53 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "9f93eb97-847c-4042-a14b-ef423bf31782")
+		(uuid "8352cff8-1d33-4825-b7c8-8fc8b0b5123c")
 	)
 	(hierarchical_label "Hall_I2C{SDA,SCL}"
 		(shape output)
@@ -6108,16 +5955,27 @@
 		)
 		(uuid "b2b2e4e2-9ca7-4de9-8656-253c755932aa")
 	)
-	(hierarchical_label "slave_power_led"
-		(shape output)
-		(at 36.83 179.07 0)
+	(hierarchical_label "SLAVE_POWER"
+		(shape input)
+		(at 34.29 173.99 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "b647ec5b-05d8-4ed3-8426-ef10be9d1011")
+		(uuid "ccc591c1-925f-40a2-a7bb-70b472cacc26")
+	)
+	(hierarchical_label "SPI_MASTER_INPUT"
+		(shape output)
+		(at 55.88 176.53 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d63aca2d-e0fd-48a6-bf8e-cfb072552d97")
 	)
 	(hierarchical_label "GPIO_I2C{SDA,SCL}"
 		(shape output)
@@ -6200,9 +6058,87 @@
 			(uuid "c2e5961c-743a-4e39-b51e-72dedb2e0bd3")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 55.88 173.99 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "03c82f3c-8613-4b65-8d45-fda72cc17535")
+		(property "Reference" "#FLG01"
+			(at 55.88 172.085 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 55.88 168.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 55.88 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 55.88 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 55.88 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "057c14b7-02ad-49dd-9dba-379d1ca3f27d")
+		)
+		(instances
+			(project "taris-miniproject"
+				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
@@ -6315,7 +6251,7 @@
 			(uuid "8c97ba45-6994-471a-b2f3-3c08e45e6752")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "R12")
 					(unit 1)
@@ -6430,7 +6366,7 @@
 			(uuid "70f3b411-de4b-4748-9fd7-9742a2312d2e")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "C2")
 					(unit 1)
@@ -6512,7 +6448,7 @@
 			(uuid "bf86bbef-2f76-4bf0-89a1-a9f1d962da88")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "C6")
 					(unit 1)
@@ -6594,7 +6530,7 @@
 			(uuid "52ce4006-d6b2-41d0-a37e-09b492677af8")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "C7")
 					(unit 1)
@@ -6672,7 +6608,7 @@
 			(uuid "93ea9054-eb87-40d9-b660-24d3cb7eafc7")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "#PWR02")
 					(unit 1)
@@ -6787,7 +6723,7 @@
 			(uuid "54519132-fad5-4c62-ac3f-4b325f9ec919")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "D1")
 					(unit 1)
@@ -6865,7 +6801,7 @@
 			(uuid "b36a086a-886e-4f8f-8470-84557a6af4d4")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "#PWR05")
 					(unit 1)
@@ -6992,7 +6928,7 @@
 			(uuid "cc1d7a72-6bfa-4e34-890f-489d91ac2c5f")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "J4")
 					(unit 1)
@@ -7070,7 +7006,7 @@
 			(uuid "8a49cc9e-9529-4e02-8832-4adf2ae19897")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "#PWR014")
 					(unit 1)
@@ -7185,7 +7121,7 @@
 			(uuid "2b439886-3852-4fae-a714-0ea5118855a2")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "C1")
 					(unit 1)
@@ -7267,7 +7203,7 @@
 			(uuid "3946d75c-c72f-4651-a511-ab04665ded51")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "C11")
 					(unit 1)
@@ -7345,7 +7281,7 @@
 			(uuid "3cc287ec-d763-4c8d-aaa0-556d9ab3c93c")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "#PWR023")
 					(unit 1)
@@ -7458,7 +7394,7 @@
 			(uuid "6e1b8239-72ea-4ee9-92a7-684fc989b45f")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "SW1")
 					(unit 1)
@@ -7540,7 +7476,7 @@
 			(uuid "77122ffc-76ca-409f-ba2a-02be7aa5d763")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "C9")
 					(unit 1)
@@ -7618,7 +7554,7 @@
 			(uuid "f72208d4-7658-441e-8e00-0c09bb23309d")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "#PWR011")
 					(unit 1)
@@ -7730,7 +7666,7 @@
 			(uuid "80cc75c3-7281-4e2d-9644-ea331c576ce3")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "R3")
 					(unit 1)
@@ -7845,7 +7781,7 @@
 			(uuid "eab9dc55-3652-4996-94b4-11f2c396b54c")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "R2")
 					(unit 1)
@@ -7923,7 +7859,7 @@
 			(uuid "0d4beb0c-b090-4d57-a761-fdd80a66a9fb")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "#PWR01")
 					(unit 1)
@@ -8001,7 +7937,7 @@
 			(uuid "a2166a10-959d-40b0-8608-42ccccf2a74f")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "#PWR09")
 					(unit 1)
@@ -8114,7 +8050,7 @@
 			(uuid "c962033e-67dd-486e-8959-0d8dc3f34923")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "C13")
 					(unit 1)
@@ -8229,7 +8165,7 @@
 			(uuid "b9b47e6c-5af1-4f43-9354-e4e739ce433c")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "R11")
 					(unit 1)
@@ -8307,7 +8243,7 @@
 			(uuid "e6cc03e9-80c3-4bbb-8fb1-f62c17cfebea")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "#PWR06")
 					(unit 1)
@@ -8385,7 +8321,7 @@
 			(uuid "4f2dae98-25f6-4cf8-b393-7aad9b691519")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "#PWR019")
 					(unit 1)
@@ -8467,7 +8403,7 @@
 			(uuid "f2f0626a-c4dd-4e7b-8c4c-412f907b5448")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "C3")
 					(unit 1)
@@ -8579,7 +8515,7 @@
 			(uuid "b0ed9925-d537-4347-aefd-b6e5d039f25c")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "R5")
 					(unit 1)
@@ -8656,7 +8592,7 @@
 			(uuid "e086c3af-7dc1-41b3-b127-0a71a7f0a4db")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "#PWR022")
 					(unit 1)
@@ -8769,7 +8705,7 @@
 			(uuid "552e1f89-037a-4b58-8436-469e08cc7ca7")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "SW2")
 					(unit 1)
@@ -8847,7 +8783,7 @@
 			(uuid "beb38f6d-c846-4353-a6dd-eb75a4076ed9")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "#PWR025")
 					(unit 1)
@@ -8925,7 +8861,7 @@
 			(uuid "e5c1fbb3-1e72-4eea-890c-03aafab4209c")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "#PWR013")
 					(unit 1)
@@ -9003,7 +8939,7 @@
 			(uuid "1e2321fe-495a-4bd6-abaa-ba960e57d373")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "#PWR012")
 					(unit 1)
@@ -9085,7 +9021,7 @@
 			(uuid "db3811fc-5ae2-4398-b77d-9be647a4653b")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "C10")
 					(unit 1)
@@ -9167,7 +9103,7 @@
 			(uuid "fbe108d6-6887-4be0-8e9c-ce8c213bd7e2")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "C4")
 					(unit 1)
@@ -9279,7 +9215,7 @@
 			(uuid "e4b614f1-e60a-4e73-b550-c3a1357620dd")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "R1")
 					(unit 1)
@@ -9357,7 +9293,7 @@
 			(uuid "ef628440-538f-4623-9248-09bf5a918ca8")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "#PWR04")
 					(unit 1)
@@ -9367,7 +9303,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 57.15 179.07 0)
+		(at 52.07 179.07 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9377,7 +9313,7 @@
 		(dnp no)
 		(uuid "abdd2379-d019-4f3a-8fc2-8ab33732ac7d")
 		(property "Reference" "#PWR084"
-			(at 57.15 185.42 0)
+			(at 52.07 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9388,7 +9324,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 57.15 183.642 0)
+			(at 52.07 183.642 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9398,7 +9334,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 57.15 179.07 0)
+			(at 52.07 179.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9409,7 +9345,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 57.15 179.07 0)
+			(at 52.07 179.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9420,7 +9356,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 57.15 179.07 0)
+			(at 52.07 179.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9434,87 +9370,9 @@
 			(uuid "2834987a-f5b8-4277-97af-ad76b0bad4b3")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "#PWR084")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VBUS")
-		(at 62.23 175.26 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b3481c2e-72a2-4cfd-972e-21853e2492a4")
-		(property "Reference" "#PWR0111"
-			(at 62.23 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SPI_5Volts"
-			(at 62.23 170.18 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 62.23 175.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 62.23 175.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 62.23 175.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a8c8fa5e-dc55-463c-91ee-c81d8be573e1")
-		)
-		(instances
-			(project "rj-electrical-training"
-				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
-					(reference "#PWR0111")
 					(unit 1)
 				)
 			)
@@ -9590,7 +9448,7 @@
 			(uuid "a8d232b5-f3f6-454b-b6f6-ca0f81e5a327")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "#PWR017")
 					(unit 1)
@@ -9672,7 +9530,7 @@
 			(uuid "4a9dc098-0b6f-47b0-af45-c02757db11b4")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "C8")
 					(unit 1)
@@ -9750,7 +9608,7 @@
 			(uuid "97a6d120-b6b6-4e45-9f35-21986d98639b")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "#PWR016")
 					(unit 1)
@@ -9827,7 +9685,7 @@
 			(uuid "e1d5880d-f037-4d20-a525-68ac446d9254")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "#PWR082")
 					(unit 1)
@@ -9905,7 +9763,7 @@
 			(uuid "4a016a73-e9e7-4878-868d-89f0ac9f0f2c")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "#PWR03")
 					(unit 1)
@@ -9983,87 +9841,9 @@
 			(uuid "e665156e-f230-4999-b9f9-78f8bb9d3c04")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "#PWR018")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 31.75 185.42 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cd8522f1-5dce-4bf3-adae-1aa817939c59")
-		(property "Reference" "#PWR046"
-			(at 31.75 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 31.75 180.34 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 31.75 185.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 31.75 185.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 31.75 185.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2ce4cd17-e8fd-46ef-97bc-cfab4330d609")
-		)
-		(instances
-			(project "rj-electrical-training"
-				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
-					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -10139,7 +9919,7 @@
 			(uuid "fc9f9360-5b30-44cb-8df8-2633f14c7180")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "#PWR07")
 					(unit 1)
@@ -10251,7 +10031,7 @@
 			(uuid "de3b0786-099b-4aea-948f-7a7f9efefad2")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "C12")
 					(unit 1)
@@ -10378,7 +10158,7 @@
 			(uuid "075dbb4b-208c-413a-897e-92c259e292eb")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "J3")
 					(unit 1)
@@ -10460,7 +10240,7 @@
 			(uuid "082230f7-8208-4c1e-9dcd-071615d69ce2")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "C5")
 					(unit 1)
@@ -10729,7 +10509,7 @@
 			(uuid "d09a3038-c6bb-42bd-bc1e-2ac6aa88ae4b")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "U1")
 					(unit 1)
@@ -10830,7 +10610,7 @@
 			(uuid "062dcf9e-fd0d-4318-b473-e9f25c4b7819")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "U2")
 					(unit 1)
@@ -10908,7 +10688,7 @@
 			(uuid "c57a6251-0186-4733-ae9a-fc0ba548a792")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "#PWR015")
 					(unit 1)
@@ -10986,7 +10766,7 @@
 			(uuid "08ca2d43-f930-4256-a54c-7fc168fae04d")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "#PWR020")
 					(unit 1)
@@ -11128,7 +10908,7 @@
 			(uuid "1a4cc997-dc56-44d1-8393-272dd02d897c")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "Y1")
 					(unit 1)
@@ -11206,7 +10986,7 @@
 			(uuid "2ba97016-fd7e-4155-bd34-35676ada87ec")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "#PWR030")
 					(unit 1)
@@ -11283,7 +11063,7 @@
 			(uuid "77b1f1dd-3d15-4094-ae08-3dc88def2bbc")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "#PWR021")
 					(unit 1)
@@ -11365,7 +11145,7 @@
 			(uuid "89e80499-2578-4b8b-a80a-6d3c36cd50c9")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "C14")
 					(unit 1)
@@ -11480,7 +11260,7 @@
 			(uuid "5a07e8fa-0605-42a5-867c-8cc90796bfd4")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "D2")
 					(unit 1)
@@ -11595,7 +11375,7 @@
 			(uuid "0d521a31-1c3d-4b61-b760-b6df8dc56c59")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "R6")
 					(unit 1)
@@ -11707,7 +11487,7 @@
 			(uuid "10811a46-5505-4b7f-acbc-4c3ad59ef955")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "R4")
 					(unit 1)
@@ -11785,7 +11565,7 @@
 			(uuid "8e21c0cd-f096-4124-94b4-f2a8ed38f858")
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(reference "#PWR08")
 					(unit 1)
@@ -11842,7 +11622,7 @@
 			)
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(page "4")
 				)
@@ -11898,7 +11678,7 @@
 			)
 		)
 		(instances
-			(project "rj-electrical-training"
+			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/40603438-4a8c-4925-8651-f1524cacc770"
 					(page "3")
 				)

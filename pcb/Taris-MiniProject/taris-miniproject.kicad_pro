@@ -290,6 +290,10 @@
       [
         "pin_to_pin|1498600|965200|7232fb6d-1383-4d67-b88a-36aaa425f80c|1bea322c-b55a-4873-9d76-ff66fc52f2f0|/5fd6e245-9295-49fb-811c-6efb339b53e4/442af184-f08e-4317-94cf-4c777866b188|/5fd6e245-9295-49fb-811c-6efb339b53e4/442af184-f08e-4317-94cf-4c777866b188|/5fd6e245-9295-49fb-811c-6efb339b53e4/cf7c5916-2283-4ce4-b71b-a173c1dea30c",
         "Datasheet recommendation for unused pins."
+      ],
+      [
+        "pin_to_pin|2146300|1155700|a3cbba13-47ca-4c3b-9ac4-20d3103d38c9|7360b922-4d01-4422-9501-f5e99307e221|/5fd6e245-9295-49fb-811c-6efb339b53e4/cf7c5916-2283-4ce4-b71b-a173c1dea30c|/5fd6e245-9295-49fb-811c-6efb339b53e4/cf7c5916-2283-4ce4-b71b-a173c1dea30c|/5fd6e245-9295-49fb-811c-6efb339b53e4/cf7c5916-2283-4ce4-b71b-a173c1dea30c",
+        ""
       ]
     ],
     "meta": {
@@ -519,7 +523,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "rj-electrical-training.kicad_pro",
+    "filename": "taris-miniproject.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -611,25 +615,25 @@
           "group_by": true,
           "label": "Exclude from BOM",
           "name": "${EXCLUDE_FROM_BOM}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
           "label": "Exclude from Board",
           "name": "${EXCLUDE_FROM_BOARD}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
           "label": "Exclude from Simulation",
           "name": "${EXCLUDE_FROM_SIM}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
           "label": "Exclude from Position Files",
           "name": "${EXCLUDE_FROM_POS_FILES}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
@@ -647,7 +651,7 @@
           "group_by": false,
           "label": "Vendor P/N",
           "name": "Vendor P/N",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -659,7 +663,7 @@
           "group_by": false,
           "label": "Vendor",
           "name": "Vendor",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -671,6 +675,144 @@
           "group_by": false,
           "label": "Manufacturer P/N",
           "name": "Manufacturer P/N",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "MAXIMUM_PACKAGE_HEIGHT",
+          "name": "MAXIMUM_PACKAGE_HEIGHT",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MF",
+          "name": "MF",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MOUSER-PURCHASE-URL",
+          "name": "MOUSER-PURCHASE-URL",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MP",
+          "name": "MP",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MANUFACTURER",
+          "name": "MANUFACTURER",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer_Name",
+          "name": "Manufacturer_Name",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer_Part_Number",
+          "name": "Manufacturer_Part_Number",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Mouser Part Number",
+          "name": "Mouser Part Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser Price/Stock",
+          "name": "Mouser Price/Stock",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "PACKAGE",
+          "name": "PACKAGE",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "PARTREV",
+          "name": "PARTREV",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "PRICE",
+          "name": "PRICE",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Package",
+          "name": "Package",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Price",
+          "name": "Price",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "STANDARD",
+          "name": "STANDARD",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "SnapEDA_Link",
+          "name": "SnapEDA_Link",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "DigiKey_Part_Number",
+          "name": "DigiKey_Part_Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Availability",
+          "name": "Availability",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Arrow Price/Stock",
+          "name": "Arrow Price/Stock",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Check_prices",
+          "name": "Check_prices",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Arrow Part Number",
+          "name": "Arrow Part Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Height",
+          "name": "Height",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "AVAILABILITY",
+          "name": "AVAILABILITY",
           "show": false
         }
       ],
@@ -717,18 +859,18 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "rj-electrical-training.kicad_sch",
-        "name": "Root",
+        "filename": "taris-miniproject.kicad_sch",
+        "name": "taris-miniproject",
         "uuid": "5fd6e245-9295-49fb-811c-6efb339b53e4"
       }
     ],
-    "used_designators": "LED4,#PWR113",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
     [
       "5fd6e245-9295-49fb-811c-6efb339b53e4",
-      "Root"
+      "taris-miniproject"
     ],
     [
       "40603438-4a8c-4925-8651-f1524cacc770",

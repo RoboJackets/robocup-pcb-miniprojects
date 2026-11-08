@@ -8,8 +8,8 @@
 
 // ---- internal helpers (only used in this file) ----
 
-// Wait for one full packet from the previous board. Returns false if the
-// packet was incomplete (e.g. CS went high before 56 bytes) and should be dropped.
+// Wait for one full packet from the previous board.
+// (e.g. CS went high before 56 bytes)
 static bool spi_in_receive(uint8_t packet[PACKET_LEN]) {
     spi_read_blocking(spi0, 0, packet, PACKET_LEN); // 56 bytes from previous board
     return true; // got packet
@@ -36,14 +36,26 @@ static void spi_out_send(const uint8_t packet[PACKET_LEN]) {
 
 void core0_init(void) {
     // TODO: spi_init / spi_set_format / spi_set_slave / gpio_set_function for both ports
-    spi_init(spi0, SPI_BAUD_HZ); // turn on SPI0 (previous board) at 1 MHz
+
+    // SP0 (Slave)
+    spi_init(spi0, SPI_BAUD_HZ); // turn on spi0 (previous board) at 1 MHz
     spi_set_format(spi0, 8, SPI_CPOL_1, SPI_CPHA_1, SPI_MSB_FIRST); // Settings, Mode 3
     spi_set_slave(spi0, true); // slave
+
     gpio_set_function(PIN_SPI_IN_SCK, GPIO_FUNC_SPI); // clock
     gpio_set_function(PIN_SPI_IN_MOSI, GPIO_FUNC_SPI); // data come in
     gpio_set_function(PIN_SPI_IN_MISO, GPIO_FUNC_SPI); // data come out
     gpio_set_function(PIN_SPI_IN_CSN, GPIO_FUNC_SPI); // chip select
 
+    // SP1 (Master)
+    spi_init(spi1, SPI_BAUD_HZ); // turn on spi1 (previous board) at 1 MHz, (same baud rate)
+    spi_set_format(spi1, 8, SPI_CPOL_1, SPI_CPHA_1, SPI_MSB_FIRST); // Settings, Mode 3
+    spi_set_slave(spi1, false); // master
+
+    gpio_set_function(PIN_SPI_OUT_SCK, GPIO_FUNC_SPI); // clock
+    gpio_set_function(PIN_SPI_OUT_MOSI, GPIO_FUNC_SPI); // data come out
+    gpio_set_function(PIN_SPI_OUT_MISO, GPIO_FUNC_SPI); // data come in
+    gpio_set_function(PIN_SPI_OUT_CSN, GPIO_FUNC_SPI); // chip select
 
 }
 

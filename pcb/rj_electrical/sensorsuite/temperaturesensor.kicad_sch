@@ -6,10 +6,11 @@
 	(paper "A4")
 	(title_block
 		(title "Temperature Sensor")
-		(date "2026-10-27")
-		(rev "v1.0")
+		(date "2026-11-06")
+		(rev "v1.1")
 		(company "Daisy-Chained Sensor Suite")
 		(comment 1 "Allen Chiu")
+		(comment 2 "Shadi Hasan")
 	)
 	(lib_symbols
 		(symbol "Device:C"
@@ -167,13 +168,12 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:R_Small"
+		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
 			)
 			(pin_names
-				(offset 0.254)
-				(hide yes)
+				(offset 0)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -181,17 +181,17 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "R"
-				(at 0 0 90)
+				(at 2.032 0 90)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
-						(size 1.016 1.016)
+						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "R_Small"
-				(at 1.778 0 90)
+			(property "Value" "R"
+				(at 0 0 90)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -201,7 +201,7 @@
 				)
 			)
 			(property "Footprint" ""
-				(at 0 0 0)
+				(at -1.778 0 90)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -222,7 +222,7 @@
 					)
 				)
 			)
-			(property "Description" "Resistor, small symbol"
+			(property "Description" "Resistor"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -233,7 +233,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "R resistor"
+			(property "ki_keywords" "R res resistor"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -255,12 +255,12 @@
 					)
 				)
 			)
-			(symbol "R_Small_0_1"
+			(symbol "R_0_1"
 				(rectangle
-					(start -0.762 1.778)
-					(end 0.762 -1.778)
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
 					(stroke
-						(width 0.2032)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -268,10 +268,10 @@
 					)
 				)
 			)
-			(symbol "R_Small_1_1"
+			(symbol "R_1_1"
 				(pin passive line
-					(at 0 2.54 270)
-					(length 0.762)
+					(at 0 3.81 270)
+					(length 1.27)
 					(name ""
 						(effects
 							(font
@@ -288,8 +288,8 @@
 					)
 				)
 				(pin passive line
-					(at 0 -2.54 90)
-					(length 0.762)
+					(at 0 -3.81 90)
+					(length 1.27)
 					(name ""
 						(effects
 							(font
@@ -298,6 +298,367 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Sensor_Temperature:LM75B"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at -6.35 11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LM75B"
+				(at 0 11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at -2.794 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm75b.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Digital Temperature Sensor & Thermal Watchdog with LP on I2C and bus fault timeout, SOIC-8 and VSSOP-8"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Temperature sensor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm* VSSOP*3x3mm*P0.65mm*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "LM75B_0_1"
+				(rectangle
+					(start -7.62 5.08)
+					(end 7.62 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.556 3.175) (xy -3.556 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.556 3.175) (xy -2.921 3.175)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.556 2.54) (xy -2.921 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.556 1.905) (xy -2.921 1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.556 1.27) (xy -2.921 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.556 0.635) (xy -2.921 0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -3.556 0)
+					(end -2.286 -1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(arc
+					(start -3.556 3.175)
+					(mid -2.921 3.8073)
+					(end -2.286 3.175)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -2.921 -2.54)
+					(radius 1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.286 3.175) (xy -2.286 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LM75B_1_1"
+				(pin bidirectional line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(name "SDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "SCL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at 10.16 -2.54 180)
+					(length 2.54)
+					(name "O.S."
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -2.54 0)
+					(length 2.54)
+					(name "A2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "A1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 2.54 0)
+					(length 2.54)
+					(name "A0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "+Vs"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -562,379 +923,10 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "rj_elec:LM75ADP_118"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at -5.2832 12.4715 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Value" "LM75ADP_118"
-				(at -3.7913 -22.4425 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Footprint" "LM75ADP_118:SOP65P490X110-8N"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Temperature Sensor Digital, Local -55°C ~ 125°C 11 b 8-TSSOP"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "MF" "NXP USA"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "PACKAGE" "TSSOP-8"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "MPN" "LM75ADP,118"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "Price" "None"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "Package" "TSSOP-8 NXP Semiconductors"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "OC_FARNELL" "1826829"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "SnapEDA_Link" "https://www.snapeda.com/parts/LM75ADP,118/NXP+Semiconductors/view-part/?ref=snap"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "MP" "LM75ADP,118"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "SUPPLIER" "NXP Semiconductors"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "OC_NEWARK" "78R6248"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "Availability" "In Stock"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "Check_prices" "https://www.snapeda.com/parts/LM75ADP,118/NXP+Semiconductors/view-part/?ref=eda"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(symbol "LM75ADP_118_0_0"
-				(rectangle
-					(start -12.7 -17.78)
-					(end 12.7 10.16)
-					(stroke
-						(width 0.4064)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin bidirectional line
-					(at 17.78 2.54 180)
-					(length 5.08)
-					(name "SDA"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -17.78 -7.62 0)
-					(length 5.08)
-					(name "SCL"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 17.78 5.08 180)
-					(length 5.08)
-					(name "OS"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -17.78 -12.7 0)
-					(length 5.08)
-					(name "GND"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -17.78 -5.08 0)
-					(length 5.08)
-					(name "A2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -17.78 -2.54 0)
-					(length 5.08)
-					(name "A1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -17.78 0 0)
-					(length 5.08)
-					(name "A0"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -17.78 5.08 0)
-					(length 5.08)
-					(name "VCC"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 	)
 	(rectangle
-		(start 81.28 52.07)
-		(end 204.47 138.43)
+		(start 58.42 62.23)
+		(end 132.08 124.46)
 		(stroke
 			(width 0)
 			(type default)
@@ -944,19 +936,20 @@
 		)
 		(uuid "2c2fa5d4-43ed-495b-9b9a-5f05d3723e0a")
 	)
-	(text "OS pin is the overtemperature shutdown pin\nand can be interrupt/comparator. I think \nthis can be NC to the MCU based on the \ndatasheet."
+	(text "OS pin is the overtemperature shutdown pin\nand can be interrupt/comparator. I think \nthis can be NC to the MCU based on the \ndatasheet.\n\n\nThe symbol for LM75A is the same as the generic in KiCAD for \ntemperature sensor LM75B"
 		(exclude_from_sim no)
-		(at 181.61 133.35 0)
+		(at 133.604 70.866 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
+			(justify left)
 		)
 		(uuid "28aa529e-e8cb-444b-8823-611f8166fa04")
 	)
 	(text "Temperature Sensor (LM75ADP_118)"
 		(exclude_from_sim no)
-		(at 105.41 50.8 0)
+		(at 82.55 59.944 0)
 		(effects
 			(font
 				(size 1.75 1.75)
@@ -965,353 +958,343 @@
 		(uuid "a3b13c07-e232-4417-8d23-eca944a17cb9")
 	)
 	(junction
-		(at 163.83 76.2)
+		(at 64.77 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "4186f0ff-48f4-4bfc-bb03-2c16e71303ad")
+		(uuid "273945dc-491a-4dd0-8d91-8cac16a91fd5")
 	)
 	(junction
-		(at 114.3 101.6)
+		(at 91.44 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "4a7b0dd1-acae-4fb1-b460-675ed5ac186e")
+		(uuid "5313b686-70d7-438f-accf-d83145a1887e")
 	)
 	(junction
-		(at 154.94 96.52)
+		(at 64.77 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "6b6d25c1-f134-4347-861b-cd60c63631e9")
+		(uuid "53afab0f-ea43-43a2-ab59-7758b25e4171")
 	)
 	(junction
-		(at 154.94 76.2)
+		(at 64.77 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "79059e8e-fe97-4703-b25c-4be5a81e6a8d")
+		(uuid "81195c95-13b2-4bc1-9cae-f25535b50863")
 	)
 	(junction
-		(at 114.3 104.14)
+		(at 97.79 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "94f34c93-e0ff-4623-9c59-588e53d249eb")
+		(uuid "90292ca7-f451-4ec6-89f1-b53d6137a8e3")
 	)
 	(junction
-		(at 105.41 106.68)
+		(at 97.79 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "bbc54de8-2d04-4151-a9e1-21165eb33040")
+		(uuid "d3588d20-64dc-4440-8103-e51d3e83d616")
 	)
 	(junction
-		(at 114.3 111.76)
+		(at 115.57 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "ca507069-8ce8-46c7-873b-b5c603aaddef")
+		(uuid "e12ea713-23c1-403b-8f9d-d4ebbd9b6e1e")
 	)
 	(no_connect
-		(at 151.13 93.98)
-		(uuid "e82c8b3c-ce27-4233-93a4-67c566d266e0")
+		(at 87.63 104.14)
+		(uuid "382a824a-958e-495f-8569-b1e5761a8625")
 	)
 	(bus_entry
-		(at 99.06 109.22)
-		(size 2.54 -2.54)
+		(at 101.6 101.6)
+		(size 2.54 2.54)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "eac6ca18-86c4-4213-af63-252f0e76d182")
+		(uuid "50e0796b-f91c-45a8-8600-d68d89594ccd")
 	)
 	(bus_entry
-		(at 101.6 123.19)
-		(size -2.54 2.54)
+		(at 101.6 99.06)
+		(size 2.54 2.54)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fc697c8c-ad1a-4dc7-a865-23c01089a4db")
+		(uuid "5f4c0a56-1e19-4e80-b27b-3e319ec304ed")
 	)
 	(wire
 		(pts
-			(xy 154.94 76.2) (xy 154.94 83.82)
+			(xy 97.79 91.44) (xy 97.79 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "04cd08b6-f152-4625-8466-c2d615e6f0a6")
+		(uuid "02688088-da07-49fd-8e74-32b3298faf89")
 	)
 	(wire
 		(pts
-			(xy 105.41 95.25) (xy 105.41 106.68)
+			(xy 64.77 109.22) (xy 77.47 109.22)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "07ac3116-b1ac-4289-bec7-5e68264e0be8")
+		(uuid "02a98259-16b9-4a87-8018-7ace46cd1579")
 	)
 	(wire
 		(pts
-			(xy 114.3 101.6) (xy 115.57 101.6)
+			(xy 97.79 77.47) (xy 115.57 77.47)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "16c8fa83-585f-40a7-85a8-3b76b40b43f7")
+		(uuid "09b9b4bf-3ecf-4681-ac97-deaea377b004")
 	)
 	(wire
 		(pts
-			(xy 163.83 87.63) (xy 163.83 85.09)
+			(xy 64.77 109.22) (xy 64.77 115.57)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1c518cb8-4532-4838-b016-5f8d0c830dcf")
+		(uuid "1e49fba5-af79-40c4-a6fa-e11fcd9829e7")
 	)
 	(wire
 		(pts
-			(xy 154.94 96.52) (xy 157.48 96.52)
+			(xy 91.44 91.44) (xy 91.44 99.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "257081f4-be5a-44ba-b0ca-86d889bc0689")
+		(uuid "265ce274-5c81-4e28-b0e3-1108e7e05bea")
 	)
 	(wire
 		(pts
-			(xy 114.3 111.76) (xy 114.3 114.3)
+			(xy 87.63 101.6) (xy 97.79 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "35a63238-5999-47ae-a6b1-eb74a05e0034")
+		(uuid "297d8165-0e3a-4d05-9013-ec2951a50142")
 	)
 	(wire
 		(pts
-			(xy 114.3 104.14) (xy 115.57 104.14)
+			(xy 115.57 77.47) (xy 125.73 77.47)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "41b986cb-57d1-45ef-bc88-8905c670460e")
+		(uuid "29bfb77d-5ba3-46a9-afc0-e8b7f03e3843")
 	)
 	(wire
 		(pts
-			(xy 114.3 104.14) (xy 114.3 111.76)
+			(xy 64.77 101.6) (xy 64.77 104.14)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4c8d1324-265f-47b8-b3c3-4ac1bdd464ee")
+		(uuid "2bb843b2-45e6-4502-81ac-8a04a134411d")
 	)
 	(wire
 		(pts
-			(xy 114.3 93.98) (xy 115.57 93.98)
+			(xy 64.77 101.6) (xy 67.31 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5221c6fc-8912-46e6-8b78-55bc3cfb6e58")
+		(uuid "3a0cb70d-6439-4062-89d7-24b0edd189bf")
 	)
 	(wire
 		(pts
-			(xy 163.83 76.2) (xy 154.94 76.2)
+			(xy 91.44 77.47) (xy 91.44 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5bcc48d3-d093-4d86-b167-6722a24c61f7")
-	)
-	(wire
-		(pts
-			(xy 114.3 93.98) (xy 114.3 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6239faa5-3b9c-4ad5-b6bd-b7b665e9ad69")
-	)
-	(wire
-		(pts
-			(xy 105.41 76.2) (xy 105.41 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "77990bdf-ab7f-464f-9c97-394b29b6791e")
-	)
-	(wire
-		(pts
-			(xy 171.45 76.2) (xy 171.45 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7f5ec4c0-d034-404c-87b3-e85a62f34a43")
-	)
-	(wire
-		(pts
-			(xy 114.3 99.06) (xy 114.3 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "82b5fdba-0595-4681-b021-06bceea28ad7")
-	)
-	(wire
-		(pts
-			(xy 115.57 111.76) (xy 114.3 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "89c471e4-5580-493c-8c29-50f86163315b")
-	)
-	(wire
-		(pts
-			(xy 157.48 123.19) (xy 101.6 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8bd8b0d4-968d-40e5-940c-a92dc408bae1")
-	)
-	(wire
-		(pts
-			(xy 101.6 106.68) (xy 115.57 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8bfe5b6e-8a04-4e3e-b3ed-c9c6aafb3b74")
-	)
-	(wire
-		(pts
-			(xy 157.48 96.52) (xy 157.48 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a0eaf43c-6b3d-4df7-abe5-10599008cff3")
+		(uuid "3e2e07c4-54d2-49ce-a0f2-220ce4f65bc1")
 	)
 	(bus
 		(pts
-			(xy 99.06 109.22) (xy 99.06 127)
+			(xy 104.14 101.6) (xy 104.14 104.14)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b861341e-a385-48cb-b3d2-47fd6f95587f")
+		(uuid "57d5e814-da0d-42aa-858f-820a80ccee3f")
 	)
 	(wire
 		(pts
-			(xy 163.83 76.2) (xy 163.83 77.47)
+			(xy 91.44 77.47) (xy 97.79 77.47)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c163a047-21a4-4472-b759-077f9310fcc4")
+		(uuid "6469f81e-a7db-4deb-abe1-635ac8f589b8")
 	)
 	(wire
 		(pts
-			(xy 151.13 96.52) (xy 154.94 96.52)
+			(xy 64.77 104.14) (xy 64.77 109.22)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c6eb99aa-be36-4173-bd05-491c054ed216")
+		(uuid "8864f36d-d388-4c11-944d-b2f671f863a8")
 	)
 	(wire
 		(pts
-			(xy 154.94 88.9) (xy 154.94 96.52)
+			(xy 97.79 101.6) (xy 101.6 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d59ea640-ec3a-493a-bc49-0a2b471063bf")
+		(uuid "8dce5069-8e04-4885-ac69-fd2b0a63e40f")
 	)
 	(wire
 		(pts
-			(xy 105.41 76.2) (xy 154.94 76.2)
+			(xy 91.44 99.06) (xy 101.6 99.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "dad3868e-f92e-4906-8844-1f803b413c10")
+		(uuid "9809b03e-394b-4d6e-b695-d44fe3d4ee69")
 	)
 	(wire
 		(pts
-			(xy 163.83 76.2) (xy 171.45 76.2)
+			(xy 87.63 99.06) (xy 91.44 99.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f0af11ff-c9e9-4d2e-bb0d-56b0e8cd2359")
+		(uuid "b10c8539-1e0a-485a-9e56-df8bf878554c")
 	)
 	(wire
 		(pts
-			(xy 115.57 99.06) (xy 114.3 99.06)
+			(xy 115.57 85.09) (xy 115.57 87.63)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f4d36853-7399-4c11-9395-a8c097bbd272")
+		(uuid "c22d358a-8b01-44ea-9863-e12860c59b6f")
+	)
+	(wire
+		(pts
+			(xy 97.79 77.47) (xy 97.79 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4907466-35c8-44f6-9d4f-2e9e3afd8549")
+	)
+	(wire
+		(pts
+			(xy 77.47 88.9) (xy 77.47 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4ba7183-b5f1-419a-a5ea-33e55d68ef94")
+	)
+	(wire
+		(pts
+			(xy 125.73 71.12) (xy 125.73 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8f6f56a-44b9-49e0-87fa-ec9ff8c0e50e")
 	)
 	(bus
 		(pts
-			(xy 99.06 127) (xy 97.79 127)
+			(xy 104.14 104.14) (xy 105.41 104.14)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fb96df24-859f-41cc-82de-a4e490959dcc")
+		(uuid "e0014530-6431-439a-9a46-4a5f5ae94182")
 	)
 	(wire
 		(pts
-			(xy 114.3 101.6) (xy 114.3 104.14)
+			(xy 64.77 104.14) (xy 67.31 104.14)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fca58d2e-18c9-46ab-84d9-8e485530e25e")
+		(uuid "e6040490-8b1d-4fca-bce5-7d61f9ae1eae")
 	)
-	(hierarchical_label "I2C1{SDA,SCL}"
-		(shape input)
-		(at 97.79 127 180)
+	(wire
+		(pts
+			(xy 67.31 99.06) (xy 64.77 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5f80652-4cf9-4356-aa12-c0e242ce5a87")
+	)
+	(wire
+		(pts
+			(xy 64.77 99.06) (xy 64.77 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9bc962d-1995-408c-9a81-b0a7e4c457e2")
+	)
+	(label "I2C1.SCL"
+		(at 87.63 101.6 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left bottom)
 		)
-		(uuid "e3542b81-f6ae-47f8-929c-3d8ac8f395de")
+		(uuid "58ae0bec-1f69-4d09-b8ff-da4a46b0e578")
+	)
+	(label "I2C1.SDA"
+		(at 100.33 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8f5eb422-352c-44c6-89c5-fd9f7990ee2c")
+	)
+	(hierarchical_label "I2C1{SDA,SCL}"
+		(shape input)
+		(at 105.41 104.14 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8c8efd00-863a-4517-8549-333838ff1db1")
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 105.41 92.71 0)
+		(lib_id "Device:R")
+		(at 97.79 87.63 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1319,21 +1302,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "21aa732e-430d-4895-946b-a998ded757a6")
+		(uuid "0bb7e153-3eb2-4cd1-b82a-aeecb687ee99")
 		(property "Reference" "R6"
-			(at 107.95 91.4399 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 107.95 93.9799 0)
+			(at 99.822 86.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1343,8 +1314,19 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_01005_0402Metric"
-			(at 105.41 92.71 0)
+		(property "Value" "4.7k"
+			(at 99.568 88.9 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 96.012 87.63 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1354,8 +1336,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 105.41 92.71 0)
+		(property "Datasheet" "https://www.koaspeer.com/pdfs/RK73H.pdf"
+			(at 97.79 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1365,8 +1347,8 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, small symbol"
-			(at 105.41 92.71 0)
+		(property "Description" "RES 4.7K OHM 1% 1/10W 0402"
+			(at 97.79 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1376,11 +1358,286 @@
 				)
 			)
 		)
-		(pin "2"
-			(uuid "c070a0b7-797b-41e9-8e3e-3b0e115f3d20")
+		(property "Manufacturer P/N" "RK73H1ETTP4701F"
+			(at 97.79 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "DigiKey"
+			(at 97.79 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "2019-RK73H1ETTP4701FTR-ND"
+			(at 97.79 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Availability" ""
+			(at 97.79 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Check_prices" ""
+			(at 97.79 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey_Part_Number" ""
+			(at 97.79 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 97.79 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 97.79 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF" ""
+			(at 97.79 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MOUSER-PURCHASE-URL" ""
+			(at 97.79 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
+			(at 97.79 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 97.79 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OC_FARNELL" ""
+			(at 97.79 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OC_NEWARK" ""
+			(at 97.79 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
+			(at 97.79 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PURCHASE-URL" ""
+			(at 97.79 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 97.79 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 97.79 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "STANDARD" ""
+			(at 97.79 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SUPPLIER" ""
+			(at 97.79 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 97.79 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 97.79 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 97.79 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 97.79 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_VOUT" ""
+			(at 97.79 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
 		(pin "1"
-			(uuid "4b2f431f-7f3c-4f57-a919-bef146b51467")
+			(uuid "86262a2b-cc3f-46b2-882e-b74b568d206f")
+		)
+		(pin "2"
+			(uuid "08ba9859-d5f1-4cd6-8962-9d4702f86050")
 		)
 		(instances
 			(project "sensorsuite"
@@ -1393,7 +1650,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 163.83 81.28 0)
+		(at 115.57 81.28 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1401,9 +1658,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "2a19149d-67ff-475b-8e29-dd2359688ac8")
+		(fields_autoplaced yes)
+		(uuid "1a237db9-c686-45cc-b6ca-39e5755d67ab")
 		(property "Reference" "C4"
-			(at 166.37 80.01 0)
+			(at 119.38 80.0099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1414,7 +1672,7 @@
 			)
 		)
 		(property "Value" "0.1u"
-			(at 166.37 82.55 0)
+			(at 119.38 82.5499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1424,8 +1682,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_01005_0402Metric"
-			(at 164.7952 85.09 0)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 116.5352 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1435,8 +1693,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 163.83 81.28 0)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6482/3372_0402B104K160HI.pdf"
+			(at 115.57 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1446,8 +1704,8 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 163.83 81.28 0)
+		(property "Description" "CAP CER 0.1UF 16V X7R 0402"
+			(at 115.57 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1457,8 +1715,30 @@
 				)
 			)
 		)
-		(property "Vendor" ""
-			(at 163.83 81.28 0)
+		(property "Manufacturer P/N" "0402B104K160HI"
+			(at 115.57 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "DigiKey"
+			(at 115.57 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "3372-0402B104K160HITR-ND"
+			(at 115.57 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1469,7 +1749,7 @@
 			)
 		)
 		(property "Vendor PIN" ""
-			(at 163.83 81.28 0)
+			(at 115.57 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1480,7 +1760,7 @@
 			)
 		)
 		(property "Manufacturer PIN" ""
-			(at 163.83 81.28 0)
+			(at 115.57 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1490,11 +1770,253 @@
 				)
 			)
 		)
-		(pin "1"
-			(uuid "d4bae94c-2622-4c61-b927-5107220c1cae")
+		(property "Availability" ""
+			(at 115.57 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Check_prices" ""
+			(at 115.57 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey_Part_Number" ""
+			(at 115.57 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 115.57 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 115.57 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF" ""
+			(at 115.57 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MOUSER-PURCHASE-URL" ""
+			(at 115.57 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
+			(at 115.57 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 115.57 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OC_FARNELL" ""
+			(at 115.57 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OC_NEWARK" ""
+			(at 115.57 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
+			(at 115.57 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PURCHASE-URL" ""
+			(at 115.57 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 115.57 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 115.57 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "STANDARD" ""
+			(at 115.57 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SUPPLIER" ""
+			(at 115.57 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 115.57 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 115.57 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 115.57 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 115.57 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_VOUT" ""
+			(at 115.57 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
 		(pin "2"
-			(uuid "272705f7-0146-4cb6-b697-beac814257c0")
+			(uuid "208a4957-e3e8-43f1-8c49-9e39cef912ea")
+		)
+		(pin "1"
+			(uuid "9fe99c36-1457-4cef-86f5-4433018c35f9")
 		)
 		(instances
 			(project "sensorsuite"
@@ -1506,167 +2028,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 154.94 86.36 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "7795423d-daeb-4a01-8efd-aec9c729adbf")
-		(property "Reference" "R8"
-			(at 156.21 85.09 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 156.21 87.63 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_01005_0402Metric"
-			(at 154.94 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 154.94 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 154.94 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "40175e3f-6d10-4355-8ef7-4e326d658b78")
-		)
-		(pin "1"
-			(uuid "f4f8e575-4dc5-40b3-8bef-b748e5439f82")
-		)
-		(instances
-			(project "sensorsuite"
-				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/adcb0624-5822-4116-8da8-9f74cda9e7f3"
-					(reference "R8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 171.45 69.85 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "78132452-4e1d-4ee6-af3d-6369a4a530d0")
-		(property "Reference" "#PWR010"
-			(at 171.45 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 171.45 64.77 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 171.45 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 171.45 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 171.45 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "bd372b0b-9eef-40b9-b7bb-1928e15b6bd0")
-		)
-		(instances
-			(project "sensorsuite"
-				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/adcb0624-5822-4116-8da8-9f74cda9e7f3"
-					(reference "#PWR010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 163.83 87.63 0)
+		(at 115.57 87.63 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1675,9 +2038,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "7eecea9c-2a10-4ff8-9fa5-071f7fc1a86f")
-		(property "Reference" "#PWR011"
-			(at 163.83 93.98 0)
+		(uuid "1da7069e-ebc7-4d73-9199-865100631d5e")
+		(property "Reference" "#PWR013"
+			(at 115.57 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1688,7 +2051,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 163.83 92.71 0)
+			(at 115.57 92.71 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1698,7 +2061,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 163.83 87.63 0)
+			(at 115.57 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1709,7 +2072,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 163.83 87.63 0)
+			(at 115.57 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1720,7 +2083,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 163.83 87.63 0)
+			(at 115.57 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1731,7 +2094,441 @@
 			)
 		)
 		(pin "1"
-			(uuid "9b34e052-5a5b-4def-8624-7a68c3dbe6aa")
+			(uuid "f4c7cce4-197c-495b-ba8e-2c906e44bfa5")
+		)
+		(instances
+			(project "sensorsuite"
+				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/adcb0624-5822-4116-8da8-9f74cda9e7f3"
+					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 91.44 87.63 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2d3f705b-c429-43a7-8c6c-96573dd037d5")
+		(property "Reference" "R5"
+			(at 87.376 86.36 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 85.598 88.646 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 89.662 87.63 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.koaspeer.com/pdfs/RK73H.pdf"
+			(at 91.44 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES 4.7K OHM 1% 1/10W 0402"
+			(at 91.44 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" "RK73H1ETTP4701F"
+			(at 91.44 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "DigiKey"
+			(at 91.44 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "2019-RK73H1ETTP4701FTR-ND"
+			(at 91.44 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Availability" ""
+			(at 91.44 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Check_prices" ""
+			(at 91.44 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey_Part_Number" ""
+			(at 91.44 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 91.44 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 91.44 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF" ""
+			(at 91.44 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MOUSER-PURCHASE-URL" ""
+			(at 91.44 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
+			(at 91.44 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 91.44 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OC_FARNELL" ""
+			(at 91.44 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OC_NEWARK" ""
+			(at 91.44 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
+			(at 91.44 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PURCHASE-URL" ""
+			(at 91.44 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 91.44 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 91.44 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "STANDARD" ""
+			(at 91.44 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SUPPLIER" ""
+			(at 91.44 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 91.44 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 91.44 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 91.44 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 91.44 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_VOUT" ""
+			(at 91.44 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3ddc635c-978f-41a1-90d7-d8322e85a378")
+		)
+		(pin "2"
+			(uuid "be0584d9-56b1-4586-8bf3-e6ee5bfccce6")
+		)
+		(instances
+			(project "sensorsuite"
+				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/adcb0624-5822-4116-8da8-9f74cda9e7f3"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 64.77 115.57 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3b01d158-4f58-466d-a38f-2d132d0fb431")
+		(property "Reference" "#PWR011"
+			(at 64.77 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 64.77 120.65 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 64.77 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 64.77 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 64.77 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "83266ae0-87ee-49c4-a5ef-5779e5fd2420")
 		)
 		(instances
 			(project "sensorsuite"
@@ -1744,7 +2541,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 114.3 87.63 0)
+		(at 125.73 71.12 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1753,9 +2550,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "91ab4e22-03ac-4fff-ad33-ad8f88f0fb58")
-		(property "Reference" "#PWR09"
-			(at 114.3 91.44 0)
+		(uuid "9dc61d1f-6a57-40dd-b1b4-9aaef8231cf7")
+		(property "Reference" "#PWR014"
+			(at 125.73 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1766,7 +2563,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 114.3 82.55 0)
+			(at 125.73 66.04 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1776,7 +2573,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 114.3 87.63 0)
+			(at 125.73 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1787,7 +2584,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 114.3 87.63 0)
+			(at 125.73 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1798,7 +2595,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 114.3 87.63 0)
+			(at 125.73 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1809,20 +2606,20 @@
 			)
 		)
 		(pin "1"
-			(uuid "d585832f-8179-4599-a5ff-38856a6f2f90")
+			(uuid "845853b3-fb4a-45d8-b0af-9b8f7ca67872")
 		)
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/adcb0624-5822-4116-8da8-9f74cda9e7f3"
-					(reference "#PWR09")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "rj_elec:LM75ADP_118")
-		(at 133.35 99.06 0)
+		(lib_id "power:+3V3")
+		(at 77.47 88.9 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1831,41 +2628,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "a3ac38b3-96e5-4d7d-ab21-c3e006ead2f0")
-		(property "Reference" "S3"
-			(at 133.35 83.82 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LM75ADP_118"
-			(at 133.35 86.36 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LM75ADP_118:SOP65P490X110-8N"
-			(at 133.35 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Datasheet" "https://www.nxp.com/docs/en/data-sheet/LM75A.pdf"
-			(at 133.35 99.06 0)
+		(uuid "cb29345d-18a0-4e5e-8e62-4592f32e3e54")
+		(property "Reference" "#PWR012"
+			(at 77.47 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1875,275 +2640,8 @@
 				)
 			)
 		)
-		(property "Description" "Temperature Sensor Digital, Local -55°C ~ 125°C 11 b 8-TSSOP"
-			(at 133.35 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MF" "NXP USA"
-			(at 133.35 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "PACKAGE" "TSSOP-8"
-			(at 133.35 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MPN" "LM75ADP,118"
-			(at 133.35 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Price" "None"
-			(at 133.35 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Package" "TSSOP-8 NXP Semiconductors"
-			(at 133.35 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "OC_FARNELL" "1826829"
-			(at 133.35 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/LM75ADP,118/NXP+Semiconductors/view-part/?ref=snap"
-			(at 133.35 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MP" "LM75ADP,118"
-			(at 133.35 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "SUPPLIER" "NXP Semiconductors"
-			(at 133.35 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "OC_NEWARK" "78R6248"
-			(at 133.35 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 133.35 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/LM75ADP,118/NXP+Semiconductors/view-part/?ref=eda"
-			(at 133.35 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Vendor" "DigiKey"
-			(at 133.35 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor PIN" ""
-			(at 133.35 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer PIN" ""
-			(at 133.35 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor P/N" "568-4227-2-ND"
-			(at 133.35 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer P/N" "LM75ADP,118"
-			(at 133.35 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "4"
-			(uuid "a29a30a1-2d32-48ae-9f6e-83fa1d20c8ed")
-		)
-		(pin "1"
-			(uuid "8c1aeb28-78dd-4116-a199-e87bd6714a89")
-		)
-		(pin "5"
-			(uuid "6d7b08d6-fa86-43ec-a68b-4bf7e1e1ac9b")
-		)
-		(pin "3"
-			(uuid "d1aa9ec5-a0c2-4f94-80ff-8a99c8dbdde4")
-		)
-		(pin "6"
-			(uuid "68de25a2-df23-4289-aad7-48b3467da250")
-		)
-		(pin "8"
-			(uuid "b21995e9-aa1b-416a-a4b1-4272381067f8")
-		)
-		(pin "2"
-			(uuid "83e803e9-6318-4a76-9e96-446deefa3240")
-		)
-		(pin "7"
-			(uuid "eede0641-b003-4a9e-9be8-b85c0121b092")
-		)
-		(instances
-			(project "sensorsuite"
-				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/adcb0624-5822-4116-8da8-9f74cda9e7f3"
-					(reference "S3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 114.3 114.3 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f4ef2be2-0fae-496f-9138-ac4fc16143f5")
-		(property "Reference" "#PWR08"
-			(at 114.3 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 114.3 119.38 0)
+		(property "Value" "+3V3"
+			(at 77.47 83.82 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2153,7 +2651,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 114.3 114.3 0)
+			(at 77.47 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2164,7 +2662,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 114.3 114.3 0)
+			(at 77.47 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2174,8 +2672,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 114.3 114.3 0)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 77.47 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2186,12 +2684,409 @@
 			)
 		)
 		(pin "1"
-			(uuid "828258e7-0776-4ffd-8e84-1874b8edbd20")
+			(uuid "8a5ffe64-2f5b-4d59-916a-cdbec212cfc9")
 		)
 		(instances
 			(project "sensorsuite"
 				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/adcb0624-5822-4116-8da8-9f74cda9e7f3"
-					(reference "#PWR08")
+					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Sensor_Temperature:LM75B")
+		(at 77.47 101.6 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "db7265ed-769b-4e61-969d-85b979ef87c7")
+		(property "Reference" "U1"
+			(at 79.6133 91.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "LM75ADP,118"
+			(at 79.6133 93.98 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "rj_electrical_footprint:SOP65P490X110-8N"
+			(at 74.676 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm75b.pdf"
+			(at 77.47 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Digital Temperature Sensor & Thermal Watchdog with LP on I2C and bus fault timeout, SOIC-8 and VSSOP-8"
+			(at 77.47 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "DigiKey"
+			(at 77.47 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" "LM75ADP,118"
+			(at 77.47 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "568-4227-2-ND"
+			(at 77.47 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PIN" ""
+			(at 77.47 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer PIN" ""
+			(at 77.47 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Availability" ""
+			(at 77.47 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Check_prices" ""
+			(at 77.47 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey_Part_Number" ""
+			(at 77.47 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 77.47 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 77.47 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF" ""
+			(at 77.47 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MOUSER-PURCHASE-URL" ""
+			(at 77.47 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
+			(at 77.47 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 77.47 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OC_FARNELL" ""
+			(at 77.47 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OC_NEWARK" ""
+			(at 77.47 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
+			(at 77.47 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PURCHASE-URL" ""
+			(at 77.47 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 77.47 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 77.47 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "STANDARD" ""
+			(at 77.47 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SUPPLIER" ""
+			(at 77.47 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 77.47 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 77.47 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 77.47 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 77.47 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_VOUT" ""
+			(at 77.47 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "68804564-32f0-4a17-adeb-070045fbaa46")
+		)
+		(pin "3"
+			(uuid "301cb31a-a148-4e9e-9329-e1d2c0928520")
+		)
+		(pin "4"
+			(uuid "d97806d8-9b08-485a-b020-20baae5769b7")
+		)
+		(pin "1"
+			(uuid "243f1677-6f8a-4007-abbe-500dec5a159e")
+		)
+		(pin "7"
+			(uuid "e79a0425-21a6-4d3d-907c-22d230e51c05")
+		)
+		(pin "8"
+			(uuid "0a6f40bc-1090-496c-8a04-2a2f44774db9")
+		)
+		(pin "5"
+			(uuid "68f3d43b-2cc5-472c-b2af-d4f967ca9711")
+		)
+		(pin "6"
+			(uuid "8268a22e-1d56-4970-8d0a-345d36d92f41")
+		)
+		(instances
+			(project "sensorsuite"
+				(path "/140be8a2-6ae2-411e-bd43-1d899b8ddd87/adcb0624-5822-4116-8da8-9f74cda9e7f3"
+					(reference "U1")
 					(unit 1)
 				)
 			)

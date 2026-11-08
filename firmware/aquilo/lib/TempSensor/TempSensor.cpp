@@ -5,6 +5,9 @@
 TempSensor::TempSensor(i2c_inst_t *bus, uint8_t address)
     : bus_(bus), address_(address)
 {
+    // assumption: the gpio pins are configured so that i2c_inst_t* is
+    // correct this will need to be corrected when final board data
+    // reference is ready.
     i2c_init(bus_, 100 * 1000);
 }
 
@@ -14,6 +17,7 @@ bool TempSensor::readTemp(uint8_t reading[2])
     {
         return false;
     }
+
     // tell the sensor that we want to access the reading
     uint8_t reg = 0x00;
     if (i2c_write_blocking(bus_, address_, &reg, 1, true) != 1)

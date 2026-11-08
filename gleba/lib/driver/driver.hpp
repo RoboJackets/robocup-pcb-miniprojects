@@ -6,7 +6,6 @@
 //
 // Fixed interface used by core 1 (do not change without telling the team):
 //   imu_init(), imu_read()
-// Everything else below is a suggested full-feature API; Meghna can adjust it.
 
 #include <stdint.h>
 #include <stdbool.h>

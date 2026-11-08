@@ -5,7 +5,7 @@
 #include "pins.hpp"
 #include "shared.hpp"
 
-// ---- internal helpers (only used in this file; Erin can change these freely) ----
+// ---- internal helpers (only used in this file) ----
 
 // Wait for one full packet from the previous board. Returns false if the
 // packet was incomplete (e.g. CS went high before 56 bytes) and should be dropped.

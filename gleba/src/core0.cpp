@@ -12,7 +12,7 @@
 // (e.g. CS went high before 56 bytes)
 static bool spi_in_receive(uint8_t packet[PACKET_LEN]) {
     spi_read_blocking(spi0, 0, packet, PACKET_LEN); // 56 bytes from previous board
-    return true; // got packet
+    // continue
 }
 
 // Copy the latest IMU sample into bytes 0-11 and set our bit in byte 55.

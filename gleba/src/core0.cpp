@@ -38,7 +38,7 @@ void core0_init(void) {
     // TODO: spi_init / spi_set_format / spi_set_slave / gpio_set_function for both ports
 
     // SP0 (Slave)
-    spi_init(spi0, SPI_BAUD_HZ); // turn on spi0 (previous board) at 1 MHz
+    spi_init(spi0, SPI_BAUD_HZ); // turn on spi0 at 1 MHz
     spi_set_format(spi0, 8, SPI_CPOL_1, SPI_CPHA_1, SPI_MSB_FIRST); // Settings, Mode 3
     spi_set_slave(spi0, true); // slave
 
@@ -48,7 +48,7 @@ void core0_init(void) {
     gpio_set_function(PIN_SPI_IN_CSN, GPIO_FUNC_SPI); // chip select
 
     // SP1 (Master)
-    spi_init(spi1, SPI_BAUD_HZ); // turn on spi1 (previous board) at 1 MHz, (same baud rate)
+    spi_init(spi1, SPI_BAUD_HZ); // turn on spi1 at 1 MHz
     spi_set_format(spi1, 8, SPI_CPOL_1, SPI_CPHA_1, SPI_MSB_FIRST); // Settings, Mode 3
     spi_set_slave(spi1, false); // master
 

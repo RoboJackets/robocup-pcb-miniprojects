@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.8,
-          "height": 1.27,
-          "width": 1.27
+          "drill": 0.0,
+          "height": 0.875,
+          "width": 0.2
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -183,6 +183,7 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
+          "td_enabled": false,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -194,6 +195,7 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
+          "td_enabled": false,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -205,6 +207,7 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
+          "td_enabled": false,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -291,6 +294,14 @@
     "erc_exclusions": [
       [
         "lib_symbol_issues|1587500|1104900|861ddeb9-aa0c-4019-8c78-ff6713d3faa8|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "pin_to_pin|1485900|1320800|bdf1e1c2-670f-4fb2-84db-6c6b4819e9a5|2c0483b9-36ed-4493-b8d3-6cb8a09fff42|/9164435f-a95c-403a-a8b4-52de8af1bdc8/c09978a7-6311-4050-8bab-facd16969a6c|/9164435f-a95c-403a-a8b4-52de8af1bdc8/c09978a7-6311-4050-8bab-facd16969a6c|/9164435f-a95c-403a-a8b4-52de8af1bdc8/c09978a7-6311-4050-8bab-facd16969a6c",
+        ""
+      ],
+      [
+        "pin_to_pin|1689100|1079500|46e394a8-ffc1-47a6-b10e-c9a414fcdf51|8940a731-72ca-420f-82d0-558cd29abc97|/9164435f-a95c-403a-a8b4-52de8af1bdc8/40f63860-ff8a-4b16-8732-69b41262916d|/9164435f-a95c-403a-a8b4-52de8af1bdc8/40f63860-ff8a-4b16-8732-69b41262916d|/9164435f-a95c-403a-a8b4-52de8af1bdc8/c09978a7-6311-4050-8bab-facd16969a6c",
         ""
       ],
       [
@@ -577,8 +588,8 @@
     "meta": {
       "version": 5
     },
-    "net_colors": null,
-    "netclass_assignments": null,
+    "net_colors": {},
+    "netclass_assignments": {},
     "netclass_patterns": [
       {
         "netclass": "Power",
@@ -781,7 +792,7 @@
         "uuid": "9164435f-a95c-403a-a8b4-52de8af1bdc8"
       }
     ],
-    "used_designators": "J1-8,#FLG1-4,R1-28,#PWR1-125,D1-15,C1-37,F1-2,H1-4,RN1-2,SW1-6,TP1-27,U1-18,Y1-2",
+    "used_designators": "#FLG1-4,#PWR1-125,C1-37,D1-15,F1-2,H1-4,J1-8,R1-28,RN1-2,SW1-6,TP1-27,U1-18,Y1-2",
     "variants": []
   },
   "sheets": [

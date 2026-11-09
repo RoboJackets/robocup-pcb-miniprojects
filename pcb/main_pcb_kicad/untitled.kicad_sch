@@ -3806,7 +3806,7 @@
 		(uuid "cbf870cc-2c5b-4888-a7e3-d7eba9827a27")
 	)
 	(rectangle
-		(start 115.57 118.11)
+		(start 115.57 115.57)
 		(end 180.34 243.84)
 		(stroke
 			(width 0)
@@ -3881,7 +3881,7 @@
 	)
 	(text "Test Points"
 		(exclude_from_sim no)
-		(at 125.73 116.84 0)
+		(at 125.73 113.03 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -4072,16 +4072,16 @@
 		(uuid "2645294d-89c3-4ef9-9b0f-8255cadf2bef")
 	)
 	(no_connect
-		(at 335.28 215.9)
-		(uuid "83b19fc0-e0e8-4fc4-8e7c-e80b0f7dfcd3")
+		(at 335.28 144.78)
+		(uuid "5a0d7c24-60ff-49fe-920b-2b5125473713")
+	)
+	(no_connect
+		(at 335.28 147.32)
+		(uuid "d26869d7-cc57-44de-adb0-dfee85a93dcc")
 	)
 	(no_connect
 		(at 335.28 220.98)
 		(uuid "de4b7089-f9b4-485f-a516-3747fc0bdbbc")
-	)
-	(no_connect
-		(at 335.28 213.36)
-		(uuid "e41fb75c-43c2-4f24-b0ac-30274eb2dd77")
 	)
 	(no_connect
 		(at 335.28 208.28)
@@ -4449,16 +4449,6 @@
 	)
 	(wire
 		(pts
-			(xy 335.28 144.78) (xy 350.52 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "34ea5651-5950-4735-9d33-c7bebd537853")
-	)
-	(wire
-		(pts
 			(xy 26.67 30.48) (xy 26.67 34.29)
 		)
 		(stroke
@@ -4646,6 +4636,16 @@
 			(type default)
 		)
 		(uuid "5013ec93-40ca-404c-aea7-8cc44250c47b")
+	)
+	(wire
+		(pts
+			(xy 335.28 215.9) (xy 350.52 215.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "507ffcba-8a35-4fb9-acb8-89e1378894ac")
 	)
 	(wire
 		(pts
@@ -5599,6 +5599,16 @@
 	)
 	(wire
 		(pts
+			(xy 335.28 213.36) (xy 350.52 213.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dca0787a-41f7-4861-9a32-f59f76a1a9a4")
+	)
+	(wire
+		(pts
 			(xy 214.63 29.21) (xy 233.68 29.21)
 		)
 		(stroke
@@ -5779,16 +5789,6 @@
 	)
 	(wire
 		(pts
-			(xy 335.28 147.32) (xy 350.52 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f0c8645c-adac-4798-9eab-c4a31a252a18")
-	)
-	(wire
-		(pts
 			(xy 238.76 93.98) (xy 238.76 90.17)
 		)
 		(stroke
@@ -5887,16 +5887,6 @@
 		)
 		(uuid "ffd2edc2-5e37-4606-9dfb-7887a26ce0c6")
 	)
-	(label "VSYS"
-		(at 347.98 30.48 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "05a6e213-b28a-43bc-bf26-82f48d284eaa")
-	)
 	(label "GPIO22_LED"
 		(at 350.52 200.66 0)
 		(effects
@@ -5967,16 +5957,6 @@
 		)
 		(uuid "183b76d3-2700-4f5b-b736-81895ebc8aa5")
 	)
-	(label "USB_D-"
-		(at 251.46 163.83 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "226b0038-ed9c-4281-85a8-d17ebc49d77b")
-	)
 	(label "SCL_HALL"
 		(at 163.83 193.04 90)
 		(effects
@@ -5996,16 +5976,6 @@
 			(justify left bottom)
 		)
 		(uuid "28947fd6-bd15-4688-9f60-3cc1461ea7e2")
-	)
-	(label "VSPI_IN"
-		(at 294.64 45.72 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "28c63d6e-d0c1-41b6-ba0a-6760eac7afd1")
 	)
 	(label "QSPI_CS"
 		(at 284.48 177.8 180)
@@ -6037,16 +6007,6 @@
 		)
 		(uuid "2cea40f9-dd2e-433f-b3e8-5baca84a1a11")
 	)
-	(label "VSYS"
-		(at 151.13 127 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "39aa81de-d22f-46e8-9dc4-137e7f5bd440")
-	)
 	(label "SCL_IMU"
 		(at 139.7 193.04 90)
 		(effects
@@ -6076,16 +6036,6 @@
 			(justify left bottom)
 		)
 		(uuid "43becb53-555a-49e3-8e79-77f39e93b237")
-	)
-	(label "VSPI_IN"
-		(at 138.43 127 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "50e9ab45-30c9-4861-a01b-688c21042d75")
 	)
 	(label "SPI_OUT_MISO"
 		(at 347.98 43.18 180)
@@ -6246,16 +6196,6 @@
 			(justify left bottom)
 		)
 		(uuid "6c96a5ee-188d-4c2d-9b75-757c1d507019")
-	)
-	(label "USB_D+"
-		(at 251.46 172.72 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "7450e880-264a-4d0a-b279-64be4c1fcdc3")
 	)
 	(label "GPIO21_LED"
 		(at 40.64 30.48 90)
@@ -6587,7 +6527,151 @@
 		)
 		(uuid "fde1eb92-48fa-4225-8c4a-24e97b0ccfe8")
 	)
-	(hierarchical_label "SCL_GPIO"
+	(global_label "USB_D-"
+		(shape input)
+		(at 251.46 163.83 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "332aea78-d704-4414-9c34-042b562bce67")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 241.509 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "VSYS"
+		(shape input)
+		(at 151.13 127 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3de77d83-90b9-4bf3-8c17-8fea1b5c4a09")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 151.13 120.0728 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "VSPI_IN"
+		(shape input)
+		(at 294.64 45.72 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6fa5a2ef-c041-4abd-a5ec-c5dadb9e8212")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 304.0468 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "VSPI_IN"
+		(shape input)
+		(at 138.43 127 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "74a6da22-8d32-4d24-a0f9-0fa5e5891773")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 138.43 117.5932 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "USB_D+"
+		(shape input)
+		(at 251.46 172.72 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a4dcea7c-224d-419b-8acc-1f3982ac5adf")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 241.509 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "VSYS"
+		(shape input)
+		(at 347.98 30.48 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "fe3bfc03-cd4d-4099-a639-f80e80eec7b1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 341.0528 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(hierarchical_label "SCL_HALL"
 		(shape input)
 		(at 350.52 167.64 0)
 		(effects
@@ -6598,7 +6682,7 @@
 		)
 		(uuid "08841b96-a03e-4bf3-aad5-fb702b527c5f")
 	)
-	(hierarchical_label "SCL_LED"
+	(hierarchical_label "SCL_COLOR"
 		(shape input)
 		(at 350.52 172.72 0)
 		(effects
@@ -6609,7 +6693,7 @@
 		)
 		(uuid "1b7826ae-c0a0-452e-9717-d6dac4cdba51")
 	)
-	(hierarchical_label "SDA_HALL"
+	(hierarchical_label "SDA_LED"
 		(shape bidirectional)
 		(at 350.52 149.86 0)
 		(effects
@@ -6620,7 +6704,7 @@
 		)
 		(uuid "320becca-7dda-449a-8299-ff5e1292fd7d")
 	)
-	(hierarchical_label "SCL_HALL"
+	(hierarchical_label "SCL_LED"
 		(shape input)
 		(at 350.52 152.4 0)
 		(effects
@@ -6631,7 +6715,7 @@
 		)
 		(uuid "3e5f35d6-d476-4d94-8fdf-6dd3a06bae2f")
 	)
-	(hierarchical_label "SDA_GPIO"
+	(hierarchical_label "SDA_HALL"
 		(shape bidirectional)
 		(at 350.52 165.1 0)
 		(effects
@@ -6642,9 +6726,9 @@
 		)
 		(uuid "55b24c5e-e8cc-42b6-b844-d57559209e79")
 	)
-	(hierarchical_label "SDA_IMU"
+	(hierarchical_label "SDA_GPIO"
 		(shape bidirectional)
-		(at 350.52 144.78 0)
+		(at 350.52 213.36 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6653,7 +6737,7 @@
 		)
 		(uuid "96808b39-26cf-4674-be5e-13f5a7fb9ddf")
 	)
-	(hierarchical_label "SCL_COLOR"
+	(hierarchical_label "SCL_TEMP"
 		(shape input)
 		(at 350.52 157.48 0)
 		(effects
@@ -6664,9 +6748,9 @@
 		)
 		(uuid "981a5fd9-4327-4da1-aa43-dc6705864a6f")
 	)
-	(hierarchical_label "SCL_IMU"
+	(hierarchical_label "SCL_GPIO"
 		(shape input)
-		(at 350.52 147.32 0)
+		(at 350.52 215.9 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6675,7 +6759,7 @@
 		)
 		(uuid "a2bfd7b5-f167-40a1-9312-89ead3589503")
 	)
-	(hierarchical_label "SDA_LED"
+	(hierarchical_label "SDA_COLOR"
 		(shape bidirectional)
 		(at 350.52 170.18 0)
 		(effects
@@ -6686,7 +6770,7 @@
 		)
 		(uuid "af2990f6-169e-44ff-b615-9f5ac13dfbfe")
 	)
-	(hierarchical_label "SCL_TEMP"
+	(hierarchical_label "SCL_IMU"
 		(shape input)
 		(at 350.52 162.56 0)
 		(effects
@@ -6697,7 +6781,7 @@
 		)
 		(uuid "b97806c0-3fa9-42aa-96b0-c83da2e0b2bb")
 	)
-	(hierarchical_label "SDA_TEMP"
+	(hierarchical_label "SDA_IMU"
 		(shape bidirectional)
 		(at 350.52 160.02 0)
 		(effects
@@ -6708,7 +6792,7 @@
 		)
 		(uuid "c54b69a4-bf1a-4d83-97a9-3f3c72e4cc0c")
 	)
-	(hierarchical_label "SDA_COLOR"
+	(hierarchical_label "SDA_TEMP"
 		(shape bidirectional)
 		(at 350.52 154.94 0)
 		(effects

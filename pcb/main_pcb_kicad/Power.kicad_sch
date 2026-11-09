@@ -2519,55 +2519,125 @@
 		)
 		(uuid "f7f51554-fdd0-4748-9c22-848b96e9431f")
 	)
-	(label "USB_D+"
+	(global_label "VSPI_IN"
+		(shape input)
+		(at 100.33 132.08 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3ad4e505-e965-4fb3-b6e9-223b28fbc2a0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 90.269 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "USB_D+"
+		(shape input)
 		(at 115.57 58.42 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify left)
 		)
-		(uuid "8428b25c-039e-4cbd-9e83-df469da9909e")
+		(uuid "6645a1e9-e425-4aa2-b691-f3a1b679f147")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 125.521 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 	)
-	(label "VSYS"
+	(global_label "VSYS"
+		(shape input)
 		(at 154.94 53.34 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify right)
 		)
-		(uuid "961db736-9418-42be-b2e2-2c940b9f2911")
+		(uuid "b0164dbc-17e1-4856-956d-5b7964d708e6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 148.0128 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 	)
-	(label "USB_D-"
+	(global_label "USB_D-"
+		(shape input)
 		(at 115.57 60.96 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify left)
 		)
-		(uuid "a40fd50c-bb50-427c-8cab-66980e2d74d2")
-	)
-	(label "VSPI_IN"
-		(at 100.33 132.08 0)
-		(effects
-			(font
-				(size 1.27 1.27)
+		(uuid "bb1af804-e42e-4c12-bd07-57ac2c7e73b1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 125.521 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
-			(justify left bottom)
 		)
-		(uuid "be038962-feb8-424e-855a-6fab13ad871e")
 	)
-	(label "VSYS"
+	(global_label "VSYS"
+		(shape input)
 		(at 180.34 105.41 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify left)
 		)
-		(uuid "effac9b4-d40d-4979-a94a-f6319500a52e")
+		(uuid "c24356d6-5511-40db-a65a-d104a179666b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 187.2672 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Power_Management:LM66100DCK")
@@ -3801,7 +3871,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "footprints:X2SON2_DPL_TEX-L"
+		(property "Footprint" "Diode_SMD:D_0201_0603Metric"
 			(at 129.54 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -3938,7 +4008,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "footprints:DPY2_TEX"
+		(property "Footprint" "Diode_SMD:D_0402_1005Metric"
 			(at 111.76 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -4345,7 +4415,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "footprints:DPY2_TEX"
+		(property "Footprint" "Diode_SMD:D_0402_1005Metric"
 			(at 104.14 78.74 0)
 			(hide yes)
 			(show_name no)

@@ -12,126 +12,6 @@
 		(comment 1 "Isa Baig")
 	)
 	(lib_symbols)
-	(wire
-		(pts
-			(xy 74.93 191.77) (xy 168.91 191.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "031b8065-4180-41a2-82e5-43bf3f4b69ed")
-	)
-	(wire
-		(pts
-			(xy 275.59 88.9) (xy 275.59 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1ff69542-6509-4565-8696-13ccee235692")
-	)
-	(wire
-		(pts
-			(xy 232.41 147.32) (xy 251.46 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "538bc197-2ebd-450c-9d02-783d8a8a07bd")
-	)
-	(wire
-		(pts
-			(xy 275.59 102.87) (xy 232.41 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5b819e02-4d08-4a39-8fb0-35825ead1697")
-	)
-	(wire
-		(pts
-			(xy 50.8 100.33) (xy 48.26 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "77b3c7c4-6534-4842-b6e8-59783d195d5b")
-	)
-	(wire
-		(pts
-			(xy 265.43 88.9) (xy 275.59 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "77fcb8dd-48bf-4485-bd0c-1a069337e12d")
-	)
-	(wire
-		(pts
-			(xy 168.91 191.77) (xy 170.18 157.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "84217adf-8709-4889-811b-208a3153100d")
-	)
-	(wire
-		(pts
-			(xy 74.93 124.46) (xy 74.93 191.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "94edf294-e0b9-4705-b2f6-487d216329f3")
-	)
-	(wire
-		(pts
-			(xy 102.87 39.37) (xy 109.22 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ae170400-9316-4ef6-8c39-c30a216e35ed")
-	)
-	(wire
-		(pts
-			(xy 48.26 124.46) (xy 74.93 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d65f2de7-a2b5-46da-a5f7-87eea1ac3567")
-	)
-	(wire
-		(pts
-			(xy 232.41 102.87) (xy 232.41 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "de2b2c37-edfe-4163-91c9-9145514c7546")
-	)
-	(wire
-		(pts
-			(xy 170.18 157.48) (xy 251.46 157.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f0307055-158a-4f4e-9705-181ef7dd5c9c")
-	)
 	(label "Color_I2C{SDA,SCL}"
 		(at 147.32 100.33 0)
 		(effects
@@ -151,6 +31,26 @@
 			(justify right bottom)
 		)
 		(uuid "171cd37e-4ed1-4575-8ce7-6854062cc6ee")
+	)
+	(label "SPI_MASTER_INPUT"
+		(at 48.26 100.33 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "18250efd-18dd-4f68-86df-c08cce783274")
+	)
+	(label "usb_power_led"
+		(at 251.46 157.48 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "225c75ff-a264-4b35-b39b-f0125cfe1807")
 	)
 	(label "LED_I2C{SDA,SCL}"
 		(at 248.92 54.61 180)
@@ -202,6 +102,16 @@
 		)
 		(uuid "4f7bb321-7e3e-493c-aed0-092a91ae22ed")
 	)
+	(label "usb_power_led"
+		(at 48.26 124.46 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4fa0b8c1-2070-48c8-b265-fc148507d819")
+	)
 	(label "Temperature_I2C{SDA,SCL}"
 		(at 190.5 110.49 180)
 		(effects
@@ -212,16 +122,6 @@
 		)
 		(uuid "513095f0-0737-4b21-9b1f-adc466760fb8")
 	)
-	(label "SPI_M_INPUT"
-		(at 102.87 41.91 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "53b68c6b-c0bf-420a-b617-deb7bb8c26c2")
-	)
 	(label "Hall_I2C{SDA,SCL}"
 		(at 190.5 48.26 180)
 		(effects
@@ -231,6 +131,26 @@
 			(justify right bottom)
 		)
 		(uuid "5df7a6f8-3a02-461e-a485-dd0873599ae1")
+	)
+	(label "color_sensor_led"
+		(at 251.46 147.32 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "67e6005a-0eb4-40f5-8906-f03fb7cce934")
+	)
+	(label "color_sensor_led"
+		(at 265.43 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "87007b95-3624-4c96-bb1c-f7cc14f9eedd")
 	)
 	(label "GPIO_I2C{SDA,SCL}"
 		(at 147.32 48.26 0)
@@ -251,6 +171,16 @@
 			(justify right bottom)
 		)
 		(uuid "928d377c-2558-418c-92bd-ad70485bcf47")
+	)
+	(label "SPI_MASTER_INPUT"
+		(at 109.22 41.91 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "98b7711c-f077-4e2a-a41f-b1261685dd34")
 	)
 	(label "SWD{CLK,DIO}"
 		(at 109.22 99.06 180)
@@ -311,16 +241,6 @@
 			(justify right bottom)
 		)
 		(uuid "bdaf8ece-b5a5-4357-a256-d2811ffa6bfa")
-	)
-	(label "SPI_M_INPUT"
-		(at 50.8 100.33 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c1360486-9b0c-491d-a6d6-6513d4cdba8d")
 	)
 	(label "SWD{CLK,DIO}"
 		(at 48.26 107.95 0)

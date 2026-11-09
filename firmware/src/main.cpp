@@ -2,6 +2,7 @@
 #include "pico/stdlib.h"
 #include "hardware/spi.h"
 #include "hardware/i2c.h"
+#include "pico/multicore.h"
 #include "LEDController.hpp"
 
 // SPI Defines, need to check ports on RP2040
@@ -18,21 +19,7 @@
 
 LEDController led_controller = LEDController(I2C_PORT, LEDControllerAddress::AD_GND);
 
-int main()
-{
-    stdio_init_all();
-
-    // SPI initialisation at 1 MHz
-    spi_init(SPI_PORT, 1000*1000);
-    gpio_set_function(PIN_MISO, GPIO_FUNC_SPI);
-    gpio_set_function(PIN_CS,   GPIO_FUNC_SIO);
-    gpio_set_function(PIN_SCK,  GPIO_FUNC_SPI);
-    gpio_set_function(PIN_MOSI, GPIO_FUNC_SPI);
-    
-    // Chip select is active-low
-    gpio_set_dir(PIN_CS, GPIO_OUT);
-    gpio_put(PIN_CS, 1);
-
+void core1_entry() {
     // I2C Initialisation. Using it at 1MHz
     i2c_init(I2C_PORT, 1000*1000);
     
@@ -99,6 +86,25 @@ int main()
     led_controller.setLFP(24, 255);
 
     led_controller.update();
+}
+
+
+int main()
+{
+    stdio_init_all();
+    //multicore example, core 0 for spi, core 1 for i2c, at least that is the goal
+    multicore_launch_core1(core1_entry);
+
+    // SPI initialisation at 1 MHz
+    spi_init(SPI_PORT, 1000*1000);
+    gpio_set_function(PIN_MISO, GPIO_FUNC_SPI);
+    gpio_set_function(PIN_CS,   GPIO_FUNC_SIO);
+    gpio_set_function(PIN_SCK,  GPIO_FUNC_SPI);
+    gpio_set_function(PIN_MOSI, GPIO_FUNC_SPI);
+    
+    // Chip select is active-low
+    gpio_set_dir(PIN_CS, GPIO_OUT);
+    gpio_put(PIN_CS, 1);
 
     //placeholder while loop
     while (true) {

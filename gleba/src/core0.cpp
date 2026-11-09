@@ -9,10 +9,13 @@
 // ---- internal helpers (only used in this file) ----
 
 // Wait for one full packet from the previous board.
-// (e.g. CS went high before 56 bytes)
 static bool spi_in_receive(uint8_t packet[PACKET_LEN]) {
     spi_read_blocking(spi0, 0, packet, PACKET_LEN); // 56 bytes from previous board
-    // continue
+    // not done
+    if () {
+        return false;
+    }
+    return true;
 }
 
 // Copy the latest IMU sample into bytes 0-11 and set our bit in byte 55.

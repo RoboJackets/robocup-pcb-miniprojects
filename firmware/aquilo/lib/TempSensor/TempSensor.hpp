@@ -19,6 +19,9 @@ public:
    * Reads the temperature given by the temperature sensor
    *
    * @param reading: an array of 2 bytes to read to
+   * \ it follows the format [MSByte LSByte]
+   * \ MSByte contains the two's complement non-decimal portion of the reading
+   * \ LSByte contains the decimal portion of the reading (3 bits -> precision of 0.125)
    *
    * @return true if the read was successful, false otherwise
    */

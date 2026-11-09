@@ -27,16 +27,6 @@
 	)
 	(bus
 		(pts
-			(xy 81.28 78.74) (xy 110.49 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0c64bb4a-9ffc-4eca-ad43-df5d36394a09")
-	)
-	(bus
-		(pts
 			(xy 152.4 60.96) (xy 161.29 60.96)
 		)
 		(stroke
@@ -54,6 +44,16 @@
 			(type default)
 		)
 		(uuid "6de3d3f6-ba0d-465f-9364-2525e4d86eac")
+	)
+	(bus
+		(pts
+			(xy 81.28 81.28) (xy 110.49 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b1da598-1721-4bf1-8991-b254851ca3d7")
 	)
 	(bus
 		(pts
@@ -87,16 +87,6 @@
 	)
 	(bus
 		(pts
-			(xy 81.28 92.71) (xy 110.49 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bca48a1b-6190-41e6-bbc3-ea49528f556b")
-	)
-	(bus
-		(pts
 			(xy 152.4 138.43) (xy 161.29 138.43)
 		)
 		(stroke
@@ -104,6 +94,16 @@
 			(type default)
 		)
 		(uuid "d994755b-329c-4960-96f1-030b62c5d4a4")
+	)
+	(bus
+		(pts
+			(xy 81.28 90.17) (xy 110.49 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e68c8ac0-c1f7-4756-ba3d-5b10c8188de5")
 	)
 	(bus
 		(pts
@@ -126,7 +126,7 @@
 		(uuid "f9da08b3-bff9-45b1-b393-94c4b73d61ad")
 	)
 	(label "SPI1{MISO,MOSI,CSN,CLK}"
-		(at 81.28 78.74 0)
+		(at 81.28 81.28 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -136,7 +136,7 @@
 		(uuid "a5e4b34e-3af1-41be-af7d-5a5a4ee522a6")
 	)
 	(label "SWD{CLK,DIO}"
-		(at 96.52 92.71 0)
+		(at 96.52 90.17 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -260,7 +260,7 @@
 			)
 		)
 		(pin "SWD{CLK,DIO}" input
-			(at 110.49 92.71 180)
+			(at 110.49 90.17 180)
 			(uuid "b7aa7038-c203-4583-be53-bd19e6d6ab91")
 			(effects
 				(font
@@ -360,7 +360,7 @@
 			)
 		)
 		(pin "SPI1{MISO,MOSI,CSN,CLK}" bidirectional
-			(at 110.49 78.74 180)
+			(at 110.49 81.28 180)
 			(uuid "8391fef2-7656-4471-8d41-5b954a188f17")
 			(effects
 				(font
@@ -378,8 +378,8 @@
 		)
 	)
 	(sheet
-		(at 53.34 88.9)
-		(size 27.94 21.59)
+		(at 53.34 77.47)
+		(size 27.94 33.02)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -394,7 +394,7 @@
 		)
 		(uuid "4b1d8d5b-f966-4aa8-a3eb-1d4656db461d")
 		(property "Sheetname" "Power"
-			(at 53.34 88.1884 0)
+			(at 53.34 76.7584 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -416,7 +416,7 @@
 			)
 		)
 		(pin "SWD{CLK,DIO}" output
-			(at 81.28 92.71 0)
+			(at 81.28 90.17 0)
 			(uuid "044690e9-ff07-451c-b498-8e96980063d2")
 			(effects
 				(font

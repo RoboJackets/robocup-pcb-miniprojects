@@ -113,7 +113,6 @@
 		)
 		(capping no)
 		(filling no)
-		(zone_defaults)
 		(pcbplotparams
 			(layerselection 0x00000000_00000000_55555555_5755f5ff)
 			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
@@ -154,7 +153,7 @@
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "02a3c983-16d8-4507-bd06-c8435cebc94c")
-		(at 290.455 88.82 180)
+		(at 242.325 104.25 180)
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C37"
@@ -1903,7 +1902,7 @@
 			(drill 0.75)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/MCU/SPI_MASTER_INPUT")
+			(net "/SPI_MASTER_INPUT")
 			(pinfunction "Pin_2_2")
 			(pintype "passive")
 			(uuid "e77277ea-31f8-45ef-b947-a7c7d7c1ede9")
@@ -2466,7 +2465,7 @@
 	(footprint "CLMVC-FKA-CL1D1L71BB7C3C3:LED_CLMVC-FKA-CL1D1L71BB7C3C3"
 		(layer "F.Cu")
 		(uuid "21a27e7a-77d3-4d3e-9474-83c6d5efd8e8")
-		(at 281.76 69.28 180)
+		(at 242.25 92.45 180)
 		(property "Reference" "LED1"
 			(at 1.675 -2.135 0)
 			(layer "F.SilkS")
@@ -4700,7 +4699,7 @@
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "32dee90e-422c-4c03-883f-a37bb69140ee")
-		(at 290.455 90.57 180)
+		(at 242.325 106 180)
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C36"
@@ -5447,7 +5446,7 @@
 	(footprint "Resistor_SMD:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "36152a00-8574-479b-9ce3-1cb2210c2076")
-		(at 290.455 87.07 180)
+		(at 242.325 102.5 180)
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R18"
@@ -5945,7 +5944,7 @@
 	(footprint "CLMVC-FKA-CL1D1L71BB7C3C3:LED_CLMVC-FKA-CL1D1L71BB7C3C3"
 		(layer "F.Cu")
 		(uuid "415c9f4c-cdb5-4536-a387-c06b83c9bc32")
-		(at 281.76 58.63 180)
+		(at 241.75 84.45 180)
 		(property "Reference" "LED9"
 			(at 1.675 -2.135 0)
 			(layer "F.SilkS")
@@ -8218,7 +8217,7 @@
 	(footprint "CLMVC-FKA-CL1D1L71BB7C3C3:LED_CLMVC-FKA-CL1D1L71BB7C3C3"
 		(layer "F.Cu")
 		(uuid "44b1bde6-b51f-4f70-91d3-70a18ef0069c")
-		(at 281.76 65.73 180)
+		(at 242 89.5 180)
 		(property "Reference" "LED2"
 			(at 1.675 -2.135 0)
 			(layer "F.SilkS")
@@ -9142,7 +9141,7 @@
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(uuid "29fd0dcc-e385-4a13-8e7c-5f9b1bea5832")
+			(uuid "0fac3e75-9f6e-4fc2-82b0-e59bca06a0ab")
 			(effects
 				(font
 					(size 1 1)
@@ -9154,7 +9153,7 @@
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "7d724532-01b2-4816-8f4a-9da1d87697ea")
+			(uuid "6cf7cf7d-efe9-4519-8c8b-f3e29214d518")
 			(effects
 				(font
 					(size 1 1)
@@ -9166,7 +9165,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a7ced263-86b5-410e-aaed-649e5ec02aa0")
+			(uuid "1b48f8df-cf08-47d7-af89-b52973c86595")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9177,7 +9176,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "12634db7-9e92-435a-945e-bdd14dce8eb5")
+			(uuid "bfc86e5e-909e-43b2-b5c0-7ee4101d5a93")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10399,7 +10398,7 @@
 			(at 0 -0.889)
 			(size 0.3048 0.5334)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/IMU_I2C.SCL")
+			(net "/IMU_Sensor_I2C.SCL")
 			(pinfunction "AP_SCL/AP_SCLK_13")
 			(pintype "unspecified")
 			(uuid "9fff89cd-7d33-4ab8-991f-900a4e24f49d")
@@ -10408,7 +10407,7 @@
 			(at -0.499999 -0.889)
 			(size 0.3048 0.5334)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/IMU_I2C.SDA")
+			(net "/IMU_Sensor_I2C.SDA")
 			(pinfunction "AP_SDA/AP_SDIO/AP_SDI_14")
 			(pintype "unspecified")
 			(uuid "19aac3b1-10c1-4023-af80-e43cc6582e07")
@@ -10418,13 +10417,13 @@
 	(footprint "IS31FL3254-QFLS4-TR:QFN40P400X400X80-33N-D"
 		(layer "F.Cu")
 		(uuid "4b9121f9-26cd-4674-8514-ec0680fcde18")
-		(at 258.55 85.1 180)
+		(at 229.5 85.1 180)
 		(descr "QFN-32, Lead-free_2024-1")
 		(tags "Integrated Circuit")
 		(property "Reference" "IC4"
 			(at 0 0 0)
 			(layer "F.SilkS")
-			(uuid "b2971b68-f2ef-4494-a2d9-f1f56bb2a46e")
+			(uuid "9e9f2d3d-10fd-4710-b378-ff8b97f76ff0")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10436,7 +10435,7 @@
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "74a53ffb-7e2e-47e3-929b-550ca321799e")
+			(uuid "bb167f3b-e0bd-4c5f-a449-a8d0583b70d4")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10448,7 +10447,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "4e8e9f9a-c803-42d7-9a3c-86669d6aa047")
+			(uuid "f707cb14-9c42-4d79-a51b-77752a70ffce")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10459,7 +10458,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ae5df4dc-6c0f-4246-a35a-6c96496f82d0")
+			(uuid "225d6978-4a42-4c12-9ba6-e8ea693d41f7")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13140,7 +13139,7 @@
 	(footprint "CLMVC-FKA-CL1D1L71BB7C3C3:LED_CLMVC-FKA-CL1D1L71BB7C3C3"
 		(layer "F.Cu")
 		(uuid "70850644-e8f3-48a9-8dba-c5a846d966fe")
-		(at 281.76 62.18 180)
+		(at 241.75 86.95 180)
 		(property "Reference" "LED3"
 			(at 1.675 -2.135 0)
 			(layer "F.SilkS")
@@ -15376,7 +15375,7 @@
 			(size 1.025 0.35)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/MCU/SPI_MASTER_INPUT")
+			(net "/SPI_MASTER_INPUT")
 			(pinfunction "~{CE}_3")
 			(pintype "input")
 			(uuid "f25ee907-02a2-40f0-a0f3-eee91793cc05")
@@ -16863,7 +16862,7 @@
 			(at -2.212 -0.975 90)
 			(size 0.45 1.425)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/Temperature Sensor/Temp_I2C.SDA")
+			(net "/Temp_I2C.SDA")
 			(pinfunction "SDA_1")
 			(pintype "passive")
 			(uuid "91143ced-8b87-45dd-8db0-06752dfb3659")
@@ -16872,7 +16871,7 @@
 			(at -2.212 -0.325 90)
 			(size 0.45 1.425)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/Temperature Sensor/Temp_I2C.SCL")
+			(net "/Temp_I2C.SCL")
 			(pinfunction "SCL_2")
 			(pintype "passive")
 			(uuid "930d8d96-4d40-4b6b-9a69-cf71f65f3747")
@@ -16926,7 +16925,7 @@
 			(at 2.212 -0.975 90)
 			(size 0.45 1.425)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "3.3V")
+			(net "+3.3V")
 			(pinfunction "VCC_8")
 			(pintype "passive")
 			(uuid "f56eec8c-b06c-40ae-a5f5-654b67cc1fb3")
@@ -18086,7 +18085,7 @@
 	(footprint "CLMVC-FKA-CL1D1L71BB7C3C3:LED_CLMVC-FKA-CL1D1L71BB7C3C3"
 		(layer "F.Cu")
 		(uuid "a2e4ff17-aa0d-4232-9342-da9cf965ac1d")
-		(at 277.085 65.73 180)
+		(at 241.75 76.95 180)
 		(property "Reference" "LED12"
 			(at 1.675 -2.135 0)
 			(layer "F.SilkS")
@@ -19912,7 +19911,7 @@
 			(size 0.875 0.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/MCU/slace_sck")
+			(net "/MCU/slave_sck")
 			(pinfunction "GPIO10_13")
 			(pintype "bidirectional")
 			(uuid "048fcf36-45d8-4125-8ffc-61f7d1ee363d")
@@ -20092,7 +20091,7 @@
 			(size 0.875 0.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/MCU/Temp_I2C.SDA")
+			(net "/Temp_I2C.SDA")
 			(pinfunction "GPIO20_31")
 			(pintype "bidirectional")
 			(uuid "9513b68f-5e6d-4157-adcb-f3a91172985f")
@@ -20102,7 +20101,7 @@
 			(size 0.875 0.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/MCU/Temp_I2C.SCL")
+			(net "/Temp_I2C.SCL")
 			(pinfunction "GPIO21_32")
 			(pintype "bidirectional")
 			(uuid "607e1829-864a-4e26-8353-85c974654072")
@@ -20122,7 +20121,7 @@
 			(size 0.875 0.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/IMU_I2C.SDA")
+			(net "/IMU_Sensor_I2C.SDA")
 			(pinfunction "GPIO22_34")
 			(pintype "bidirectional")
 			(uuid "e56bc3ab-2f10-46ae-92a2-0a6abed89f58")
@@ -20132,7 +20131,7 @@
 			(size 0.875 0.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/IMU_I2C.SCL")
+			(net "/IMU_Sensor_I2C.SCL")
 			(pinfunction "GPIO23_35")
 			(pintype "bidirectional")
 			(uuid "311f64fb-3b34-45f1-9edf-62bfaa4580c6")
@@ -20142,9 +20141,9 @@
 			(size 0.875 0.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "unconnected-(U1-GPIO24-Pad36)")
+			(net "/IMU_I2C.SDA")
 			(pinfunction "GPIO24_36")
-			(pintype "bidirectional+no_connect")
+			(pintype "bidirectional")
 			(uuid "4639ac06-ae5b-4f88-bc8a-86096b876336")
 		)
 		(pad "37" smd roundrect
@@ -20152,9 +20151,9 @@
 			(size 0.875 0.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "unconnected-(U1-GPIO25-Pad37)")
+			(net "/IMU_I2C.SCL")
 			(pinfunction "GPIO25_37")
-			(pintype "bidirectional+no_connect")
+			(pintype "bidirectional")
 			(uuid "d621cef9-c69f-4406-bdb4-bce7a9294d25")
 		)
 		(pad "38" smd roundrect
@@ -21965,7 +21964,7 @@
 	(footprint "CLMVC-FKA-CL1D1L71BB7C3C3:LED_CLMVC-FKA-CL1D1L71BB7C3C3"
 		(layer "F.Cu")
 		(uuid "bd5a26e2-4bb6-4db9-bc6a-3dce07ad8504")
-		(at 281.76 55.08 180)
+		(at 241.75 81.95 180)
 		(property "Reference" "LED10"
 			(at 1.675 -2.135 0)
 			(layer "F.SilkS")
@@ -23850,7 +23849,7 @@
 	(footprint "CLMVC-FKA-CL1D1L71BB7C3C3:LED_CLMVC-FKA-CL1D1L71BB7C3C3"
 		(layer "F.Cu")
 		(uuid "d03d62d2-0669-43f8-92db-2f81e8424961")
-		(at 277.085 62.18 180)
+		(at 242 74 180)
 		(property "Reference" "LED13"
 			(at 1.675 -2.135 0)
 			(layer "F.SilkS")
@@ -25639,7 +25638,7 @@
 	(footprint "CLMVC-FKA-CL1D1L71BB7C3C3:LED_CLMVC-FKA-CL1D1L71BB7C3C3"
 		(layer "F.Cu")
 		(uuid "e5a3baa3-c9bb-4ea6-b018-8e56c95cf8d7")
-		(at 277.085 69.28 180)
+		(at 241.75 79.45 180)
 		(property "Reference" "LED11"
 			(at 1.675 -2.135 0)
 			(layer "F.SilkS")
@@ -27793,7 +27792,7 @@
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "3.3V")
+			(net "+3.3V")
 			(pintype "passive")
 			(uuid "330358f1-9089-48be-949b-1e481b2d8909")
 		)
@@ -28453,7 +28452,7 @@
 			(size 1.025 0.35)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/MCU/SPI_MASTER_INPUT")
+			(net "/SPI_MASTER_INPUT")
 			(pinfunction "VIN_1")
 			(pintype "power_in")
 			(uuid "253ff61b-0681-4ab0-90c8-e75126700123")

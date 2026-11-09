@@ -473,6 +473,145 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:+3.3V"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+3.3V"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "+3.3V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3.3V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power global)
 			(pin_numbers
@@ -569,145 +708,6 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "power:VCC"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "VCC"
-				(at 0 3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"VCC\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "VCC_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "VCC_1_1"
-				(pin power_in line
-					(at 0 0 90)
 					(length 0)
 					(name ""
 						(effects
@@ -950,7 +950,7 @@
 		)
 		(uuid "f39c6321-85f7-4b05-83c6-c4d4f3763e21")
 	)
-	(hierarchical_label "Temperature_I2C{SDA,SCL}"
+	(hierarchical_label "Temp_I2C{SDA,SCL}"
 		(shape input)
 		(at 80.01 77.47 180)
 		(effects
@@ -1034,84 +1034,6 @@
 			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/bd0d0ebd-78c1-4588-9d9a-8ef1cecd8ae1"
 					(reference "#PWR0101")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 167.64 27.94 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3adf53f8-ea6d-47eb-9088-7757bc3760b0")
-		(property "Reference" "#PWR089"
-			(at 167.64 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "3.3V"
-			(at 167.64 22.86 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "CLMVC-FKA-CL1D1L71BB7C3C3_CRE"
-			(at 167.64 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 167.64 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 167.64 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4faeed21-e46d-4a4c-b0b5-6a43b529aaa1")
-		)
-		(instances
-			(project "taris-miniproject"
-				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/bd0d0ebd-78c1-4588-9d9a-8ef1cecd8ae1"
-					(reference "#PWR089")
 					(unit 1)
 				)
 			)
@@ -1693,22 +1615,100 @@
 			)
 		)
 	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 167.64 27.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d80ab5f0-99f7-484e-8e0e-6528cce1c706")
+		(property "Reference" "#PWR055"
+			(at 167.64 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 167.64 22.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 167.64 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 167.64 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 167.64 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "721e107a-cd0d-4df3-bf4c-ebd265c9d000")
+		)
+		(instances
+			(project "taris-miniproject"
+				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/bd0d0ebd-78c1-4588-9d9a-8ef1cecd8ae1"
+					(reference "#PWR055")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(group ""
 		(uuid "742fe79b-5497-485d-84f4-4cc2cd94af0f")
 		(members "0897daae-3273-4e10-adf6-b17fea4105ae" "0b8f1692-d383-47f4-a467-57eb0b5f078a"
 			"1584d468-8c6b-45e7-af95-737ed4b1929d" "20102d53-b481-4efc-9983-82f773926fe8"
 			"2809d3a5-1abf-4df3-b1f7-97997bee0db5" "340851ef-75c1-4089-a281-8de086f55ad6"
-			"343d4d4e-27ec-4915-a070-a4bea170ee80" "3adf53f8-ea6d-47eb-9088-7757bc3760b0"
-			"466585cd-cb5b-4f0d-a5d7-51e5d0fe3e1b" "4cdf2a60-900e-491c-bc00-0713eb09bd50"
-			"588afdba-3981-42e4-85d1-0c7983df967a" "5d85f430-5e06-4f12-89cc-112e2dcd5f90"
-			"688ff93b-5848-41ad-b0dd-8fbdf0b7fb83" "6fbdad72-52fb-498c-b20f-555328c1bcc1"
-			"754cbb4b-dd85-4973-af70-9f5fc86dba5a" "7711b362-599b-45e3-87af-67374fd71bf8"
-			"7b09ff79-4f00-4342-9b5a-4f71a581b9ca" "8d248ecd-21d2-4888-b803-8310dd35e412"
-			"8d5b3dad-cc54-41de-b310-21205ab22dbb" "918a21ef-8547-4475-85ce-12684f1fcb2d"
-			"c05ac77e-17dd-470e-86b5-1bc775323155" "c242fa0e-f68b-47bb-a061-b25bf0382f2c"
-			"c6a27af2-c3da-4dc6-a6f2-a27fd7b4b3b9" "dba9f59a-a22a-4568-b8c9-fd380a6af17d"
-			"dffaefe6-ff7f-452b-97f2-5e5f5e832c7b" "ea366c45-4c6f-4ed9-8586-1298516e490e"
-			"f39c6321-85f7-4b05-83c6-c4d4f3763e21" "ff9e3388-7fc1-44ac-9877-17e2605c0b9e"
+			"343d4d4e-27ec-4915-a070-a4bea170ee80" "466585cd-cb5b-4f0d-a5d7-51e5d0fe3e1b"
+			"4cdf2a60-900e-491c-bc00-0713eb09bd50" "588afdba-3981-42e4-85d1-0c7983df967a"
+			"5d85f430-5e06-4f12-89cc-112e2dcd5f90" "688ff93b-5848-41ad-b0dd-8fbdf0b7fb83"
+			"6fbdad72-52fb-498c-b20f-555328c1bcc1" "754cbb4b-dd85-4973-af70-9f5fc86dba5a"
+			"7711b362-599b-45e3-87af-67374fd71bf8" "7b09ff79-4f00-4342-9b5a-4f71a581b9ca"
+			"8d248ecd-21d2-4888-b803-8310dd35e412" "8d5b3dad-cc54-41de-b310-21205ab22dbb"
+			"918a21ef-8547-4475-85ce-12684f1fcb2d" "c05ac77e-17dd-470e-86b5-1bc775323155"
+			"c242fa0e-f68b-47bb-a061-b25bf0382f2c" "c6a27af2-c3da-4dc6-a6f2-a27fd7b4b3b9"
+			"dba9f59a-a22a-4568-b8c9-fd380a6af17d" "dffaefe6-ff7f-452b-97f2-5e5f5e832c7b"
+			"ea366c45-4c6f-4ed9-8586-1298516e490e" "f39c6321-85f7-4b05-83c6-c4d4f3763e21"
+			"ff9e3388-7fc1-44ac-9877-17e2605c0b9e"
 		)
 	)
 )

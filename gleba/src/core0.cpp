@@ -28,7 +28,7 @@ static void packet_fill(uint8_t packet[PACKET_LEN]) {
 // Send the packet to the next board.
 static void spi_out_send(const uint8_t packet[PACKET_LEN]) {
     gpio_put(PIN_SPI_OUT_CSN, 0); // CS low
-    spi_write_blocking(spi1, packet, PACKET_LEN); // send 56 bytes
+    spi_write(spi1, packet, PACKET_LEN); // send 56 bytes
     gpio_put(PIN_SPI_OUT_CSN, 1); // CS high
 }
 

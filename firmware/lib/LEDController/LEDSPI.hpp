@@ -44,37 +44,35 @@
 // pins for master (receives packet)
 // <TODO> check pcb design for actual pin numbers
 #define SPI_MASTER spi0
-constexpr uint PIN_MISO_MASTER = 0
-constexpr uint PIN_CS_MASTER   = 1
-constexpr uint PIN_SCK_MASTER  = 2
-constexpr uint PIN_MOSI_MASTER = 3
+constexpr uint8_t PIN_MISO_MASTER = 0;
+constexpr uint8_t PIN_CS_MASTER   = 1;
+constexpr uint8_t PIN_SCK_MASTER  = 2;
+constexpr uint8_t PIN_MOSI_MASTER = 3;
 
 // pins for slave (transmits packet)
 #define SPI_SLAVE spi1
-constexpr uint PIN_MOSI_SLAVE = 8
-constexpr uint PIN_CS_SLAVE   = 9
-constexpr uint PIN_SCK_SLAVE  = 10
-constexpr uint PIN_MISO_SLAVE = 11 
+constexpr uint PIN_MOSI_SLAVE = 8;
+constexpr uint PIN_CS_SLAVE   = 9;
+constexpr uint PIN_SCK_SLAVE  = 10;
+constexpr uint PIN_MISO_SLAVE = 11;
 
-constexpr uin8_t PACKET_LENGTH = 56
+constexpr uin8_t PACKET_LENGTH = 56;
 
 enum Error {
-    NO_ERROR = 0,
-    GEN_ERROR = 1,
-    BAD_CHECKSUM = 2,
-    BAD_TRANSFER_LENGTH = 3,
-    NO_DMA_CHANNEL = 4,
+    NO_ERROR,
+    GEN_ERROR,
+    BAD_CHECKSUM,
+    BAD_TRANSFER_LENGTH,
+    NO_DMA_CHANNEL
 };
 
 
 class LEDSPI {
     public:
-        /** @brief Create a new instance of the SPI driver
+        /** @brief Create a new instance of the SPI driver.
          * 
          * @param packet Address of packet containing data for the chain.
          * @param p_mutex Address of shared mutex to guard the packet.
-         * 
-         * @return Returns success or error type.
          */
         LEDSPI(std::array<uint8_t, PACKET_LENGTH>& packet, std::mutex& p_mutex);
 

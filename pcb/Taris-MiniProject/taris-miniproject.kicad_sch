@@ -24,16 +24,6 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 100.33) (xy 72.39 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0bd6fbe9-f9ef-4eb4-80bb-3a8a3b8e7382")
-	)
-	(wire
-		(pts
 			(xy 275.59 88.9) (xy 275.59 102.87)
 		)
 		(stroke
@@ -41,16 +31,6 @@
 			(type default)
 		)
 		(uuid "1ff69542-6509-4565-8696-13ccee235692")
-	)
-	(wire
-		(pts
-			(xy 72.39 100.33) (xy 72.39 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "37a9aef8-c01b-45b7-8360-4b6c92f5b0c0")
 	)
 	(wire
 		(pts
@@ -74,6 +54,16 @@
 	)
 	(wire
 		(pts
+			(xy 50.8 100.33) (xy 48.26 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77b3c7c4-6534-4842-b6e8-59783d195d5b")
+	)
+	(wire
+		(pts
 			(xy 265.43 88.9) (xy 275.59 88.9)
 		)
 		(stroke
@@ -94,16 +84,6 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 44.45) (xy 109.22 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8ffdf7bc-1db4-4e13-8322-cebd27f0da97")
-	)
-	(wire
-		(pts
 			(xy 74.93 124.46) (xy 74.93 191.77)
 		)
 		(stroke
@@ -111,6 +91,16 @@
 			(type default)
 		)
 		(uuid "94edf294-e0b9-4705-b2f6-487d216329f3")
+	)
+	(wire
+		(pts
+			(xy 102.87 39.37) (xy 109.22 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae170400-9316-4ef6-8c39-c30a216e35ed")
 	)
 	(wire
 		(pts
@@ -222,6 +212,16 @@
 		)
 		(uuid "513095f0-0737-4b21-9b1f-adc466760fb8")
 	)
+	(label "SPI_M_INPUT"
+		(at 102.87 41.91 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "53b68c6b-c0bf-420a-b617-deb7bb8c26c2")
+	)
 	(label "Hall_I2C{SDA,SCL}"
 		(at 190.5 48.26 180)
 		(effects
@@ -261,6 +261,16 @@
 			(justify right bottom)
 		)
 		(uuid "a0ce64ca-ef1b-42f9-baeb-c7d6cc054005")
+	)
+	(label "I2C{SDA,SCL}"
+		(at 147.32 85.09 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a1ba149d-0334-40b7-ab74-e98e4f0a849b")
 	)
 	(label "Hall_I2C{SDA,SCL}"
 		(at 147.32 76.2 0)
@@ -302,6 +312,16 @@
 		)
 		(uuid "bdaf8ece-b5a5-4357-a256-d2811ffa6bfa")
 	)
+	(label "SPI_M_INPUT"
+		(at 50.8 100.33 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c1360486-9b0c-491d-a6d6-6513d4cdba8d")
+	)
 	(label "SWD{CLK,DIO}"
 		(at 48.26 107.95 0)
 		(effects
@@ -311,6 +331,16 @@
 			(justify left bottom)
 		)
 		(uuid "c60bf870-f121-42f4-bc4a-e1578fd600a6")
+	)
+	(label "I2C{SDA,SCL}"
+		(at 190.5 25.4 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "cfe604c9-7978-4872-89e4-c66da2579272")
 	)
 	(label "SLAVE_POWER"
 		(at 109.22 113.03 180)
@@ -331,16 +361,6 @@
 			(justify left bottom)
 		)
 		(uuid "e5f27116-ae0b-4e1f-a95b-6b8a6a8d1463")
-	)
-	(label "IMU_I2C{SDA,SCL}"
-		(at 190.5 25.4 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "e7684610-691d-4601-8b0d-9384ed64007f")
 	)
 	(label "SPI_SLAVE_LED"
 		(at 147.32 138.43 0)
@@ -516,7 +536,7 @@
 				(justify right)
 			)
 		)
-		(pin "Temperature_I2C{SDA,SCL}" output
+		(pin "Temperature_I2C{SDA,SCL}" input
 			(at 147.32 153.67 0)
 			(uuid "f8f8ac41-bc5a-4945-8299-a03dca4e7602")
 			(effects
@@ -526,7 +546,7 @@
 				(justify right)
 			)
 		)
-		(pin "SPI_SLAVE_LED" input
+		(pin "SPI_SLAVE_LED" output
 			(at 147.32 138.43 0)
 			(uuid "fefa1d38-ead6-49e2-bd21-92048f8c2760")
 			(effects
@@ -546,9 +566,19 @@
 				(justify left)
 			)
 		)
+		(pin "I2C{SDA,SCL}" input
+			(at 147.32 85.09 0)
+			(uuid "31d5d021-d541-4775-8782-33c839886389")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(pin "SPI_MASTER_INPUT" output
-			(at 109.22 44.45 180)
-			(uuid "4d3edeef-cb14-4362-bc11-40224ab4c101")
+			(at 109.22 41.91 180)
+			(uuid "0a0aca61-1aba-4026-8fed-6339c159cb29")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -892,7 +922,7 @@
 				(justify left top)
 			)
 		)
-		(pin "USB{DM,DP}" output
+		(pin "USB{DM,DP}" input
 			(at 48.26 95.25 0)
 			(uuid "aae7e8c8-c411-4b2a-8c9c-0038799cc996")
 			(effects
@@ -902,7 +932,7 @@
 				(justify right)
 			)
 		)
-		(pin "SWD{CLK,DIO}" output
+		(pin "SWD{CLK,DIO}" input
 			(at 48.26 107.95 0)
 			(uuid "2154c756-18a0-4bd2-86ce-55498306d6d9")
 			(effects
@@ -912,7 +942,7 @@
 				(justify right)
 			)
 		)
-		(pin "usb_power_led" input
+		(pin "usb_power_led" output
 			(at 48.26 124.46 0)
 			(uuid "a8200469-8376-4f01-8447-0ba2264ae76b")
 			(effects

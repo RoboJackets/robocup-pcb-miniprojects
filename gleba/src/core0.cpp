@@ -11,7 +11,7 @@
 // Wait for one full packet from the previous board.
 // (e.g. CS went high before 56 bytes)
 static bool spi_in_receive(uint8_t packet[PACKET_LEN]) {
-    spi_read_blocking(spi0, 0, packet, PACKET_LEN); // 56 bytes from previous board
+    spi_read(spi0, 0, packet, PACKET_LEN); // 56 bytes from previous board
     // continue
 }
 

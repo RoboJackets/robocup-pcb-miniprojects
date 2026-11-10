@@ -12,6 +12,16 @@
 		(comment 1 "Isa Baig")
 	)
 	(lib_symbols)
+	(label "IMU_Sensor_I2C{SDA,SCL}"
+		(at 147.32 119.38 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "07575863-fa3f-49e3-b1c8-a19d6a840bbe")
+	)
 	(label "Color_I2C{SDA,SCL}"
 		(at 147.32 100.33 0)
 		(effects
@@ -21,16 +31,6 @@
 			(justify left bottom)
 		)
 		(uuid "1386a80a-e519-48e3-94f0-508010bcd409")
-	)
-	(label "IMU_I2C{SDA,SCL}"
-		(at 190.5 78.74 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "171cd37e-4ed1-4575-8ce7-6854062cc6ee")
 	)
 	(label "SPI_MASTER_INPUT"
 		(at 48.26 100.33 0)
@@ -82,16 +82,6 @@
 		)
 		(uuid "3233c64e-8b60-42d8-8a0e-ed53fffc7105")
 	)
-	(label "IMU_I2C{SDA,SCL}"
-		(at 147.32 111.76 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "4ce608bf-a168-4225-87d9-8fe12da973a3")
-	)
 	(label "USB{DM,DP}"
 		(at 48.26 95.25 0)
 		(effects
@@ -111,16 +101,6 @@
 			(justify left bottom)
 		)
 		(uuid "4fa0b8c1-2070-48c8-b265-fc148507d819")
-	)
-	(label "Temperature_I2C{SDA,SCL}"
-		(at 190.5 110.49 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "513095f0-0737-4b21-9b1f-adc466760fb8")
 	)
 	(label "Hall_I2C{SDA,SCL}"
 		(at 190.5 48.26 180)
@@ -162,6 +142,26 @@
 		)
 		(uuid "8a0001b4-3d93-4d59-9552-037588928a07")
 	)
+	(label "IMU_I2C{SDA,SCL}"
+		(at 147.32 110.49 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8f4f3fc3-d851-4c88-ac89-f2b44e443f20")
+	)
+	(label "IMU_I2C{SDA,SCL}"
+		(at 190.5 22.86 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8fd8124f-1fb8-4c7a-9e7d-0048beb2ca8a")
+	)
 	(label "GPIO_I2C{SDA,SCL}"
 		(at 247.65 30.48 180)
 		(effects
@@ -182,6 +182,16 @@
 		)
 		(uuid "98b7711c-f077-4e2a-a41f-b1261685dd34")
 	)
+	(label "IMU_Sensor_I2C{SDA,SCL}"
+		(at 190.5 77.47 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9c518b48-1d55-4a2a-953f-351f2d8eca9b")
+	)
 	(label "SWD{CLK,DIO}"
 		(at 109.22 99.06 180)
 		(effects
@@ -191,16 +201,6 @@
 			(justify right bottom)
 		)
 		(uuid "a0ce64ca-ef1b-42f9-baeb-c7d6cc054005")
-	)
-	(label "I2C{SDA,SCL}"
-		(at 147.32 85.09 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a1ba149d-0334-40b7-ab74-e98e4f0a849b")
 	)
 	(label "Hall_I2C{SDA,SCL}"
 		(at 147.32 76.2 0)
@@ -212,7 +212,7 @@
 		)
 		(uuid "a720a4e6-59ab-44c4-8058-8752e032f4c4")
 	)
-	(label "Temperature_I2C{SDA,SCL}"
+	(label "Temp_I2C{SDA,SCL}"
 		(at 147.32 153.67 0)
 		(effects
 			(font
@@ -252,16 +252,6 @@
 		)
 		(uuid "c60bf870-f121-42f4-bc4a-e1578fd600a6")
 	)
-	(label "I2C{SDA,SCL}"
-		(at 190.5 25.4 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "cfe604c9-7978-4872-89e4-c66da2579272")
-	)
 	(label "SLAVE_POWER"
 		(at 109.22 113.03 180)
 		(effects
@@ -281,6 +271,16 @@
 			(justify left bottom)
 		)
 		(uuid "e5f27116-ae0b-4e1f-a95b-6b8a6a8d1463")
+	)
+	(label "Temp_I2C{SDA,SCL}"
+		(at 190.5 110.49 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ea80c69f-0b66-488c-aef0-fbee7c2bf3f6")
 	)
 	(label "SPI_SLAVE_LED"
 		(at 147.32 138.43 0)
@@ -436,16 +436,6 @@
 				(justify right)
 			)
 		)
-		(pin "IMU_I2C{SDA,SCL}" output
-			(at 147.32 111.76 0)
-			(uuid "4c415c79-5274-4ecb-8581-f2129e3f5f0e")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "LED_I2C{SDA,SCL}" output
 			(at 147.32 63.5 0)
 			(uuid "314deb2c-e8ed-42c2-a93f-192daeed3531")
@@ -456,7 +446,7 @@
 				(justify right)
 			)
 		)
-		(pin "Temperature_I2C{SDA,SCL}" input
+		(pin "Temp_I2C{SDA,SCL}" input
 			(at 147.32 153.67 0)
 			(uuid "f8f8ac41-bc5a-4945-8299-a03dca4e7602")
 			(effects
@@ -486,16 +476,6 @@
 				(justify left)
 			)
 		)
-		(pin "I2C{SDA,SCL}" input
-			(at 147.32 85.09 0)
-			(uuid "31d5d021-d541-4775-8782-33c839886389")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "SPI_MASTER_INPUT" output
 			(at 109.22 41.91 180)
 			(uuid "0a0aca61-1aba-4026-8fed-6339c159cb29")
@@ -504,6 +484,26 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(pin "IMU_I2C{SDA,SCL}" input
+			(at 147.32 110.49 0)
+			(uuid "bc0f2832-9229-41b0-9459-39a43dffc022")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "IMU_Sensor_I2C{SDA,SCL}" input
+			(at 147.32 119.38 0)
+			(uuid "069fac51-d85e-44a4-8930-353a40293c57")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -552,9 +552,9 @@
 				(justify left top)
 			)
 		)
-		(pin "I2C{SDA,SCL}" input
-			(at 190.5 25.4 180)
-			(uuid "f270da70-6941-4c50-94ff-f6c2f2dd309b")
+		(pin "IMU_I2C{SDA,SCL}" input
+			(at 190.5 22.86 180)
+			(uuid "b9baf435-6cd4-4947-a018-1f796d316d3d")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -664,9 +664,9 @@
 				(justify left top)
 			)
 		)
-		(pin "IMU_I2C{SDA,SCL}" input
-			(at 190.5 78.74 180)
-			(uuid "3cc9f48f-0cee-48f4-929b-485ed52f1860")
+		(pin "IMU_Sensor_I2C{SDA,SCL}" input
+			(at 190.5 77.47 180)
+			(uuid "107dc098-d7d4-4f28-8fdd-3d0c706c20a0")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -720,9 +720,9 @@
 				(justify left top)
 			)
 		)
-		(pin "Temperature_I2C{SDA,SCL}" input
+		(pin "Temp_I2C{SDA,SCL}" input
 			(at 190.5 110.49 180)
-			(uuid "3dbcf198-0801-47af-b08b-ed21c0b91c26")
+			(uuid "9feb54de-2ab7-4486-9ab9-d5a61724af66")
 			(effects
 				(font
 					(size 1.27 1.27)

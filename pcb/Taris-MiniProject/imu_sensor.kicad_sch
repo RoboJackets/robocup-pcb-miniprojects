@@ -1229,7 +1229,7 @@
 		)
 		(uuid "e275a47a-93c9-45a8-ab8a-0ee7f36f5872")
 	)
-	(label "IMU_I2C.SDA"
+	(label "IMU_Sensor_I2C.SDA"
 		(at 161.29 109.22 0)
 		(effects
 			(font
@@ -1239,7 +1239,7 @@
 		)
 		(uuid "4ecac12e-010a-4dd1-a20d-5f7a2a7aaa27")
 	)
-	(label "IMU_I2C.SDA"
+	(label "IMU_Sensor_I2C.SDA"
 		(at 229.87 64.77 0)
 		(effects
 			(font
@@ -1249,7 +1249,7 @@
 		)
 		(uuid "548010bc-679e-4284-986b-dd958d11e838")
 	)
-	(label "IMU_I2C.SCL"
+	(label "IMU_Sensor_I2C.SCL"
 		(at 161.29 111.76 0)
 		(effects
 			(font
@@ -1259,7 +1259,7 @@
 		)
 		(uuid "c61cab75-e810-41ac-9f9a-d6cb32dfcca7")
 	)
-	(label "IMU_I2C.SCL"
+	(label "IMU_Sensor_I2C.SCL"
 		(at 229.87 67.31 0)
 		(effects
 			(font
@@ -1269,7 +1269,7 @@
 		)
 		(uuid "e6897785-6973-48f2-a8ec-fa3e65fcae44")
 	)
-	(hierarchical_label "IMU_I2C{SDA,SCL}"
+	(hierarchical_label "IMU_Sensor_I2C{SDA,SCL}"
 		(shape input)
 		(at 177.8 114.3 0)
 		(effects
@@ -2107,84 +2107,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 99.06 82.55 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "92156ef1-1eb5-4e74-b4a3-8c6a4231d45c")
-		(property "Reference" "#PWR068"
-			(at 99.06 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 99.06 87.63 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LGA14_2P5X3X0P91_IVS"
-			(at 99.06 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 99.06 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 99.06 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9e95befa-41f3-4355-997c-7421895d1bc6")
-		)
-		(instances
-			(project "taris-miniproject"
-				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/b70cdb55-7020-4073-81c2-d4ea83fda560"
-					(reference "#PWR068")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 237.49 87.63 0)
 		(unit 1)
 		(body_style 1)
@@ -2430,9 +2352,8 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bb1c7261-b8b0-4e74-85af-f7cf06413792")
-		(property "Reference" "#PWR070"
+		(uuid "ceef0b40-ef28-4dc6-b9d2-f85f55766451")
+		(property "Reference" "#PWR090"
 			(at 130.81 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -2444,16 +2365,17 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 130.81 91.44 0)
+			(at 131.572 86.614 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "LGA14_2P5X3X0P91_IVS"
+		(property "Footprint" ""
 			(at 130.81 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -2487,12 +2409,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "63cfa070-3170-4c98-8882-00cc76890c5e")
+			(uuid "061633fb-7d52-414d-b2e0-2894f0155142")
 		)
 		(instances
 			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/b70cdb55-7020-4073-81c2-d4ea83fda560"
-					(reference "#PWR070")
+					(reference "#PWR090")
 					(unit 1)
 				)
 			)
@@ -2649,6 +2571,84 @@
 			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/b70cdb55-7020-4073-81c2-d4ea83fda560"
 					(reference "#PWR081")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 99.06 82.55 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ed82ef7f-57dc-493d-b0dd-12898bc52d5f")
+		(property "Reference" "#PWR099"
+			(at 99.06 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 99.822 82.804 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 99.06 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 99.06 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8b1a42ca-66dc-4611-a4c1-d33418edb324")
+		)
+		(instances
+			(project "taris-miniproject"
+				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/b70cdb55-7020-4073-81c2-d4ea83fda560"
+					(reference "#PWR099")
 					(unit 1)
 				)
 			)

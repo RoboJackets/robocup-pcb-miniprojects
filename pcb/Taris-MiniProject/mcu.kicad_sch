@@ -3907,6 +3907,16 @@
 		)
 		(uuid "246ecde6-6013-41f8-9e0e-2290b5e00bd2")
 	)
+	(bus
+		(pts
+			(xy 219.71 128.27) (xy 223.52 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "261c63fa-d401-4d12-b57d-5543f2e98484")
+	)
 	(wire
 		(pts
 			(xy 181.61 156.21) (xy 181.61 158.75)
@@ -4596,16 +4606,6 @@
 			(type default)
 		)
 		(uuid "870c3e10-7334-4c66-a316-39586065f8e3")
-	)
-	(bus
-		(pts
-			(xy 219.71 125.73) (xy 219.71 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "877b2c3e-2801-40d8-bc14-3391cd009586")
 	)
 	(wire
 		(pts
@@ -5317,6 +5317,16 @@
 		)
 		(uuid "f8e1cec6-ad0f-4286-9480-d24adfc83f2a")
 	)
+	(bus
+		(pts
+			(xy 219.71 125.73) (xy 219.71 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fac77565-8596-47b4-88c7-86a44fc03405")
+	)
 	(wire
 		(pts
 			(xy 34.29 173.99) (xy 34.29 185.42)
@@ -5637,7 +5647,7 @@
 		)
 		(uuid "754edf12-a6a4-4a11-8fcd-77dce9116476")
 	)
-	(label "slace_sck"
+	(label "slave_sck"
 		(at 212.09 97.79 0)
 		(effects
 			(font
@@ -5757,7 +5767,7 @@
 		)
 		(uuid "b6fdd2bd-fd1d-48aa-922d-5557eba3798c")
 	)
-	(label "I2C.SDA"
+	(label "IMU_I2C.SDA"
 		(at 207.01 133.35 0)
 		(effects
 			(font
@@ -5797,7 +5807,7 @@
 		)
 		(uuid "c81ecbf7-ccfe-4456-abd1-b77e21a7b81a")
 	)
-	(label "IMU_I2C.SDA"
+	(label "IMU_Sensor_I2C.SDA"
 		(at 207.01 128.27 0)
 		(effects
 			(font
@@ -5887,7 +5897,7 @@
 		)
 		(uuid "e93ee33e-faae-4684-b627-5cb91889cf92")
 	)
-	(label "IMU_I2C.SCL"
+	(label "IMU_Sensor_I2C.SCL"
 		(at 207.01 130.81 0)
 		(effects
 			(font
@@ -5917,7 +5927,7 @@
 		)
 		(uuid "fb2e3185-a828-4a36-b4a9-4899746b2e29")
 	)
-	(label "I2C.SCL"
+	(label "IMU_I2C.SCL"
 		(at 207.01 135.89 0)
 		(effects
 			(font
@@ -5960,8 +5970,8 @@
 		)
 		(uuid "2e103477-f4f2-41e7-8c14-4bbfc508c97a")
 	)
-	(hierarchical_label "IMU_I2C{SDA,SCL}"
-		(shape output)
+	(hierarchical_label "IMU_Sensor_I2C{SDA,SCL}"
+		(shape input)
 		(at 222.25 133.35 0)
 		(effects
 			(font
@@ -5971,7 +5981,7 @@
 		)
 		(uuid "2f7842fc-7347-44f3-acff-5a2f2b4a2403")
 	)
-	(hierarchical_label "I2C{SDA,SCL}"
+	(hierarchical_label "IMU_I2C{SDA,SCL}"
 		(shape input)
 		(at 222.25 138.43 0)
 		(effects
@@ -5982,9 +5992,9 @@
 		)
 		(uuid "35bdb57c-9a0b-49b2-ac27-9de7b51638be")
 	)
-	(hierarchical_label "Temperature_I2C{SDA,SCL}"
+	(hierarchical_label "Temp_I2C{SDA,SCL}"
 		(shape input)
-		(at 219.71 128.27 0)
+		(at 223.52 128.27 0)
 		(effects
 			(font
 				(size 1.27 1.27)

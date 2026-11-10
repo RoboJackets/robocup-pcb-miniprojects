@@ -2229,6 +2229,16 @@
 	)
 	(wire
 		(pts
+			(xy 133.35 82.55) (xy 143.51 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "076a1136-afb1-40eb-ae54-965fce80eddb")
+	)
+	(wire
+		(pts
 			(xy 201.93 90.17) (xy 222.25 90.17)
 		)
 		(stroke
@@ -2416,6 +2426,16 @@
 			(type default)
 		)
 		(uuid "a15a304e-9d2a-4600-a657-2ce1b664a05a")
+	)
+	(wire
+		(pts
+			(xy 201.93 82.55) (xy 231.14 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad3f98ae-e43a-4c41-bc2b-acfe39a9d0ba")
 	)
 	(wire
 		(pts
@@ -2626,16 +2646,6 @@
 			(justify left bottom)
 		)
 		(uuid "24f13fe6-7f2d-4edc-a0d1-5696e9e625df")
-	)
-	(label "GND_Connections"
-		(at 201.93 82.55 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "2cec99c6-e678-48ac-a2b4-34b3b2af4ec7")
 	)
 	(label "ISET_Connection"
 		(at 201.93 80.01 0)
@@ -2866,16 +2876,6 @@
 			(justify left bottom)
 		)
 		(uuid "8df9799c-6da3-4f3e-bf0c-3755e80256cd")
-	)
-	(label "GND_Connections"
-		(at 143.51 82.55 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "945fab46-9f5f-4a64-b06d-e99e12f65d78")
 	)
 	(label "R2"
 		(at 173.99 62.23 90)
@@ -5675,6 +5675,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 133.35 82.55 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6a9d196e-f350-48a5-ae61-ae7ee917720a")
+		(property "Reference" "#PWR037"
+			(at 133.35 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 133.35 87.63 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 133.35 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 133.35 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 133.35 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "30b385b7-c118-46d8-95f6-e29138ac517d")
+		)
+		(instances
+			(project "taris-miniproject"
+				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/0632b31d-4233-423e-9952-6afbcd6e6916"
+					(reference "#PWR037")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 69.85 22.86 0)
 		(unit 1)
@@ -5984,6 +6062,84 @@
 			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/0632b31d-4233-423e-9952-6afbcd6e6916"
 					(reference "R18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 231.14 82.55 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9516208d-c352-4c4a-851d-c93c3249295f")
+		(property "Reference" "#PWR046"
+			(at 231.14 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 231.14 87.63 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 231.14 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 231.14 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 231.14 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "131d7101-5006-4095-9175-79b893a4fbbf")
+		)
+		(instances
+			(project "taris-miniproject"
+				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/0632b31d-4233-423e-9952-6afbcd6e6916"
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)

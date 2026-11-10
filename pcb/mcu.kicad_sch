@@ -5133,6 +5133,16 @@
 		)
 		(uuid "fe6500cb-eac6-4563-9bb0-607d6f3a9aa9")
 	)
+	(label "SPI1.MOSI"
+		(at 220.98 166.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "005dcf72-b27b-44f2-8495-94c55d363159")
+	)
 	(label "~{QSPI_CS}"
 		(at 78.74 160.02 0)
 		(effects
@@ -5243,6 +5253,16 @@
 		)
 		(uuid "2b3ca1dc-434a-4c4e-89c8-3d8a212049c9")
 	)
+	(label "SPI1.SCK"
+		(at 220.98 171.45 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2bced7bf-16f5-48fc-889a-b1a9f27c754f")
+	)
 	(label "I2C_GPIO.SCL"
 		(at 370.84 94.7709 0)
 		(effects
@@ -5273,16 +5293,6 @@
 		)
 		(uuid "3be2418d-9c2c-4456-9ec2-1fed75246a40")
 	)
-	(label "SPI1.MOSI"
-		(at 220.98 168.91 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3c33b1d3-0dbe-4275-8f4b-9a2163c1b7df")
-	)
 	(label "QSPI_CLK"
 		(at 78.74 162.56 0)
 		(effects
@@ -5292,16 +5302,6 @@
 			(justify left bottom)
 		)
 		(uuid "3c7ad176-d44f-42a8-bb8c-717defcce660")
-	)
-	(label "SPI1.MISO"
-		(at 220.98 166.37 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3c8b6e42-162c-4cf8-8f25-7b1a2edb18a3")
 	)
 	(label "~{USB_BOOT}"
 		(at 69.85 95.25 0)
@@ -5413,16 +5413,6 @@
 		)
 		(uuid "6e8b542e-605e-4cb3-aba4-513a63be031d")
 	)
-	(label "SPI1.CSN"
-		(at 220.98 171.45 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "75bbf459-92cc-4c02-8138-f91d0fa1a42b")
-	)
 	(label "I2C_CS.SCL"
 		(at 308.61 77.47 0)
 		(effects
@@ -5453,7 +5443,7 @@
 		)
 		(uuid "8e41f3bf-bdab-4304-93b6-d7faafa31b3a")
 	)
-	(label "SPI1.SCK"
+	(label "SPI1.CSN"
 		(at 220.98 163.83 0)
 		(effects
 			(font
@@ -5461,7 +5451,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "8e654a5c-02a6-4ef2-992d-db73e89e9954")
+		(uuid "8eccb3de-877a-4eec-bd03-5464d4ffdf13")
 	)
 	(label "I2C_GPIO.SCL"
 		(at 246.38 143.51 0)
@@ -5532,6 +5522,16 @@
 			(justify right bottom)
 		)
 		(uuid "a0381636-38ae-4d41-82a2-8b8fe59c26a3")
+	)
+	(label "SPI1.MISO"
+		(at 220.98 168.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a614b833-0033-4d8b-9a1d-5e51f8c33810")
 	)
 	(label "I2C_HES.SCL"
 		(at 246.38 133.35 0)
@@ -5778,7 +5778,7 @@
 		)
 		(uuid "887ce528-0c57-4078-8fa7-13c6a8f375b0")
 	)
-	(hierarchical_label "SPI1{MISO,MOSI,CSN,CLK}"
+	(hierarchical_label "SPI1{MISO,MOSI,SCK,CSN}}"
 		(shape bidirectional)
 		(at 236.22 173.99 0)
 		(effects

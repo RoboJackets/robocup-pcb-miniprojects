@@ -69,7 +69,18 @@
           "thermal_relief_spoke_width": 0.5
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        },
+        {
+          "gap": 0.254,
+          "via_gap": 0.5,
+          "width": 0.254
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -140,8 +151,8 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.0,
-        "min_connection": 0.0,
+        "min_clearance": 0.1,
+        "min_connection": 0.1,
         "min_copper_edge_clearance": 0.5,
         "min_groove_width": 0.0,
         "min_hole_clearance": 0.25,
@@ -203,7 +214,17 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0,
+        0.15,
+        0.18,
+        0.2,
+        0.25,
+        0.3,
+        0.4,
+        0.5,
+        1.0
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -230,7 +251,20 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        },
+        {
+          "diameter": 0.25,
+          "drill": 0.15
+        },
+        {
+          "diameter": 0.45,
+          "drill": 0.3
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -526,7 +560,7 @@
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
         "tuning_profile": "",
-        "via_diameter": 0.6,
+        "via_diameter": 0.45,
         "via_drill": 0.3,
         "wire_width": 6
       }
@@ -801,7 +835,7 @@
         "uuid": "17df1232-b180-49eb-a49c-63e4861e42e5"
       }
     ],
-    "used_designators": "IC1,#FLG1-7,R1-44,#PWR1-115,D1-15,C1-26,S1,RN1,SW1-6,U1-12,Y1,Q1,J1-6",
+    "used_designators": "IC1,#FLG1-7,R1-44,#PWR1-127,D1-15,C1-28,S1,RN1,SW1-6,U1-12,Y1,Q1,J1-6,TP1-36",
     "variants": []
   },
   "sheets": [
@@ -844,6 +878,10 @@
     [
       "4b1d8d5b-f966-4aa8-a3eb-1d4656db461d",
       "Power"
+    ],
+    [
+      "0a296f87-c354-4381-8211-241cd2f2f5f9",
+      "General-Purpose Debug Buttons"
     ]
   ],
   "text_variables": {},

@@ -77,7 +77,7 @@
 	)
 	(bus
 		(pts
-			(xy 81.28 100.33) (xy 110.49 100.33)
+			(xy 81.28 96.52) (xy 110.49 96.52)
 		)
 		(stroke
 			(width 0)
@@ -125,7 +125,7 @@
 		)
 		(uuid "f9da08b3-bff9-45b1-b393-94c4b73d61ad")
 	)
-	(label "SPI1{MISO,MOSI,CSN,CLK}"
+	(label "SPI1{MISO,MOSI,SCK,CSN}"
 		(at 81.28 81.28 0)
 		(effects
 			(font
@@ -156,7 +156,7 @@
 		(uuid "f4918196-7d22-4bd4-9ca0-db00a2a61fa4")
 	)
 	(label "USB{DM,DP}"
-		(at 96.52 100.33 0)
+		(at 96.52 96.52 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -270,7 +270,7 @@
 			)
 		)
 		(pin "USB{DM,DP}" input
-			(at 110.49 100.33 180)
+			(at 110.49 96.52 180)
 			(uuid "e9ea00bd-dd35-4aaf-b069-da2359d18fba")
 			(effects
 				(font
@@ -359,7 +359,7 @@
 				(justify left)
 			)
 		)
-		(pin "SPI1{MISO,MOSI,CSN,CLK}" bidirectional
+		(pin "SPI1{MISO,MOSI,SCK,CSN}" bidirectional
 			(at 110.49 81.28 180)
 			(uuid "8391fef2-7656-4471-8d41-5b954a188f17")
 			(effects
@@ -426,7 +426,7 @@
 			)
 		)
 		(pin "USB{DM,DP}" output
-			(at 81.28 100.33 0)
+			(at 81.28 96.52 0)
 			(uuid "281b8a8f-e000-4b61-9968-400f00b0985a")
 			(effects
 				(font
@@ -438,6 +438,16 @@
 		(pin "SPI0{MISO,MOSI,SCK,CSN}" bidirectional
 			(at 81.28 105.41 0)
 			(uuid "5d519169-c49e-4dac-bebb-38c5f1fa4c0f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SPI1{MISO,MOSI,SCK,CSN}" bidirectional
+			(at 81.28 81.28 0)
+			(uuid "8ea4cddf-7eb4-42d0-a021-b66903097127")
 			(effects
 				(font
 					(size 1.27 1.27)

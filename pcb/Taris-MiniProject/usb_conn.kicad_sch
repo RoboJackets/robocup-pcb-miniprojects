@@ -9,7 +9,8 @@
 		(date "2026-10-18")
 		(rev "v1.0")
 		(company "RoboJackets Mini Project")
-		(comment 1 "Isa baig")
+		(comment 1 "Isa Baig")
+		(comment 2 "Hector Ovalle")
 	)
 	(lib_symbols
 		(symbol "Connector:Conn_01x04_Pin"
@@ -2240,7 +2241,7 @@
 	)
 	(rectangle
 		(start 160.02 104.14)
-		(end 250.19 161.29)
+		(end 281.94 161.29)
 		(stroke
 			(width 0)
 			(type default)
@@ -2260,6 +2261,17 @@
 			(justify left bottom)
 		)
 		(uuid "3ab1806e-e49e-4385-86a9-f7d515853803")
+	)
+	(text "Pull down resistor removed to avoid shorting the output. \nCapacitor kept so switching doesn't affect smoothness\n"
+		(exclude_from_sim no)
+		(at 226.06 140.97 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "43f61391-050f-4a41-859e-2a04693756c7")
 	)
 	(text "Micro USB\n"
 		(exclude_from_sim no)

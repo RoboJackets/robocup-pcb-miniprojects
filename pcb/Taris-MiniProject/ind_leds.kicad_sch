@@ -10,6 +10,7 @@
 		(rev "v1.0")
 		(company "RoboJackets Mini Project")
 		(comment 1 "Isa Baig")
+		(comment 2 "Hector Ovalle")
 	)
 	(lib_symbols
 		(symbol "Device:LED"
@@ -481,16 +482,16 @@
 		)
 		(uuid "6ab39924-81c5-4889-89e5-62555dbfac11")
 	)
-	(text "V_{F} (typ) = 2 V\nR = 1 kΩ\nV = (3.3 - 2)\nI = 1.3 mA\nThese will nbe somewhat bright"
+	(text "USB: 5 volts / 1 kOhm =  3.0 mA\nSPI_SLAVE_LED: 5 volts / 1 kOhm = 3.0 mA\nColor_Sensor_Power: 3.3 volts / 1 kOhm = 1.3 mA\n"
 		(exclude_from_sim no)
-		(at 194.31 139.7 0)
+		(at 135.89 143.51 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left top)
+			(justify left)
 		)
-		(uuid "66c33bf1-1fec-4479-ac42-6bd331ee4695")
+		(uuid "29850129-e019-4db9-83d2-8aa3f426f202")
 	)
 	(text "Indicator LEDs"
 		(exclude_from_sim no)

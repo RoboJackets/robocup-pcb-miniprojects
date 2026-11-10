@@ -10,6 +10,7 @@
 		(rev "1")
 		(company "RoboJackets")
 		(comment 1 "Isa Baig")
+		(comment 2 "Hector Ovalle")
 	)
 	(lib_symbols
 		(symbol "Device:C"
@@ -149,6 +150,146 @@
 				(pin passive line
 					(at 0 -3.81 90)
 					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
 					(name ""
 						(effects
 							(font
@@ -740,6 +881,16 @@
 		)
 		(uuid "5d85f430-5e06-4f12-89cc-112e2dcd5f90")
 	)
+	(text "IC1: LM75A temperature sensor\nI2C addr: 0x48 (A2:A0 = GND)\nBus: Temp_I2C (SDA/SCL) 3.3 volts SCL period = 2.5 us 1/2.5us = 400kHz\n"
+		(exclude_from_sim no)
+		(at 91.44 95.25 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "4e3468d5-5f2a-4b86-89de-63d455b6a865")
+	)
 	(text "Temperature Sensor\n"
 		(exclude_from_sim no)
 		(at 38.862 21.844 0)
@@ -852,6 +1003,16 @@
 	)
 	(wire
 		(pts
+			(xy 55.88 45.72) (xy 55.88 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "484eedfa-5a3e-4f33-86ba-0f8885dd97c5")
+	)
+	(wire
+		(pts
 			(xy 167.64 43.18) (xy 167.64 44.45)
 		)
 		(stroke
@@ -870,6 +1031,16 @@
 		)
 		(uuid "6fbdad72-52fb-498c-b20f-555328c1bcc1")
 	)
+	(wire
+		(pts
+			(xy 67.31 29.21) (xy 67.31 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71cbd6fb-e078-4dca-b9c0-d45c5d5444cd")
+	)
 	(bus
 		(pts
 			(xy 87.63 77.47) (xy 80.01 77.47)
@@ -879,6 +1050,16 @@
 			(type default)
 		)
 		(uuid "7711b362-599b-45e3-87af-67374fd71bf8")
+	)
+	(wire
+		(pts
+			(xy 67.31 44.45) (xy 67.31 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79077567-11f8-4758-9c0e-4ae76d1b392b")
 	)
 	(wire
 		(pts
@@ -899,6 +1080,16 @@
 			(type default)
 		)
 		(uuid "90da74ed-661a-4013-90c6-ab9f85d3ef05")
+	)
+	(wire
+		(pts
+			(xy 55.88 30.48) (xy 55.88 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ebbd819-95d8-459c-9324-e47ab59c13bc")
 	)
 	(wire
 		(pts
@@ -941,6 +1132,26 @@
 		(uuid "340851ef-75c1-4089-a281-8de086f55ad6")
 	)
 	(label "Temp_I2C.SDA"
+		(at 55.88 45.72 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "467c531d-4395-43c6-8fad-82c19afd291c")
+	)
+	(label "Temp_I2C.SCL"
+		(at 67.31 44.45 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "63e44c62-b6cf-4105-a258-572aa7764aea")
+	)
+	(label "Temp_I2C.SDA"
 		(at 90.17 43.18 0)
 		(effects
 			(font
@@ -960,6 +1171,163 @@
 			(justify right)
 		)
 		(uuid "dba9f59a-a22a-4568-b8c9-fd380a6af17d")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 55.88 38.1 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "082b586f-ba3a-4208-a0e2-602738aaa483")
+		(property "Reference" "R24"
+			(at 52.07 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 52.07 39.37 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 57.658 38.1 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
+			(at 55.88 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "4.7 kOhms ±1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Moisture Resistant Thick Film"
+			(at 55.88 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" "RC0402FR-134K7L"
+			(at 55.88 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "DigiKey"
+			(at 55.88 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "13-RC0402FR-134K7LCT-ND"
+			(at 55.88 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 55.88 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_VOUT" ""
+			(at 55.88 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 55.88 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 55.88 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "1b2f4868-5e4b-42fb-af0b-4f9d9cc1c56c")
+		)
+		(pin "1"
+			(uuid "d0e5affd-e433-4b45-afb2-ae318e463e5c")
+		)
+		(instances
+			(project "taris-miniproject"
+				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/bd0d0ebd-78c1-4588-9d9a-8ef1cecd8ae1"
+					(reference "R24")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -1034,6 +1402,163 @@
 			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/bd0d0ebd-78c1-4588-9d9a-8ef1cecd8ae1"
 					(reference "#PWR0101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 67.31 36.83 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "66b29841-b3db-4120-ba80-f93a2cff62b5")
+		(property "Reference" "R25"
+			(at 63.5 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 63.5 38.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 69.088 36.83 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
+			(at 67.31 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "4.7 kOhms ±1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Moisture Resistant Thick Film"
+			(at 67.31 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" "RC0402FR-134K7L"
+			(at 67.31 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "DigiKey"
+			(at 67.31 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "13-RC0402FR-134K7LCT-ND"
+			(at 67.31 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 67.31 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_VOUT" ""
+			(at 67.31 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 67.31 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 67.31 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "1b518755-3400-4970-a2a6-cf0ada3a884b")
+		)
+		(pin "1"
+			(uuid "dda19c71-4ff7-42ff-9317-ee3926b802ea")
+		)
+		(instances
+			(project "taris-miniproject"
+				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/bd0d0ebd-78c1-4588-9d9a-8ef1cecd8ae1"
+					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -1617,6 +2142,162 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
+		(at 55.88 30.48 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b23aee04-da4e-43b2-b069-a24abb756405")
+		(property "Reference" "#PWR070"
+			(at 55.88 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 55.88 25.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 55.88 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 55.88 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 55.88 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a2c272f7-f7b8-4f6b-a3b5-36a5f849cfb4")
+		)
+		(instances
+			(project "taris-miniproject"
+				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/bd0d0ebd-78c1-4588-9d9a-8ef1cecd8ae1"
+					(reference "#PWR070")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 67.31 29.21 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cd33f56d-6f0b-4032-ac1a-4ffaa3a3e8e2")
+		(property "Reference" "#PWR089"
+			(at 67.31 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 67.31 24.13 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 67.31 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 67.31 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 67.31 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b745a021-7577-4c7a-8c13-38b330ba4575")
+		)
+		(instances
+			(project "taris-miniproject"
+				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/bd0d0ebd-78c1-4588-9d9a-8ef1cecd8ae1"
+					(reference "#PWR089")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
 		(at 167.64 27.94 0)
 		(unit 1)
 		(body_style 1)
@@ -1699,10 +2380,12 @@
 			"1584d468-8c6b-45e7-af95-737ed4b1929d" "20102d53-b481-4efc-9983-82f773926fe8"
 			"2809d3a5-1abf-4df3-b1f7-97997bee0db5" "340851ef-75c1-4089-a281-8de086f55ad6"
 			"343d4d4e-27ec-4915-a070-a4bea170ee80" "466585cd-cb5b-4f0d-a5d7-51e5d0fe3e1b"
+			"467c531d-4395-43c6-8fad-82c19afd291c" "484eedfa-5a3e-4f33-86ba-0f8885dd97c5"
 			"4cdf2a60-900e-491c-bc00-0713eb09bd50" "588afdba-3981-42e4-85d1-0c7983df967a"
-			"5d85f430-5e06-4f12-89cc-112e2dcd5f90" "688ff93b-5848-41ad-b0dd-8fbdf0b7fb83"
-			"6fbdad72-52fb-498c-b20f-555328c1bcc1" "754cbb4b-dd85-4973-af70-9f5fc86dba5a"
-			"7711b362-599b-45e3-87af-67374fd71bf8" "7b09ff79-4f00-4342-9b5a-4f71a581b9ca"
+			"5d85f430-5e06-4f12-89cc-112e2dcd5f90" "63e44c62-b6cf-4105-a258-572aa7764aea"
+			"688ff93b-5848-41ad-b0dd-8fbdf0b7fb83" "6fbdad72-52fb-498c-b20f-555328c1bcc1"
+			"754cbb4b-dd85-4973-af70-9f5fc86dba5a" "7711b362-599b-45e3-87af-67374fd71bf8"
+			"79077567-11f8-4758-9c0e-4ae76d1b392b" "7b09ff79-4f00-4342-9b5a-4f71a581b9ca"
 			"8d248ecd-21d2-4888-b803-8310dd35e412" "8d5b3dad-cc54-41de-b310-21205ab22dbb"
 			"918a21ef-8547-4475-85ce-12684f1fcb2d" "c05ac77e-17dd-470e-86b5-1bc775323155"
 			"c242fa0e-f68b-47bb-a061-b25bf0382f2c" "c6a27af2-c3da-4dc6-a6f2-a27fd7b4b3b9"

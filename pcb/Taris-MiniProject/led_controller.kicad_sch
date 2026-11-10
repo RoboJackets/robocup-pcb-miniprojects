@@ -10,6 +10,7 @@
 		(rev "1")
 		(company "RoboJackets")
 		(comment 1 "Isa Baig")
+		(comment 2 "Hector Ovalle")
 	)
 	(lib_symbols
 		(symbol "CLMVC-FKA-CL1D1L71BB7C3C3:CLMVC-FKA-CL1D1L71BB7C3C3"
@@ -2177,6 +2178,28 @@
 		)
 		(uuid "92c3961b-21c3-46e0-82b6-9852409b074c")
 	)
+	(text "Firmware Note: Pins 1-24 = RGB in that order x8"
+		(exclude_from_sim no)
+		(at 153.67 113.03 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "72ca75ac-bfbf-4c9c-a5f4-1649060eb31b")
+	)
+	(text "IC4: IS31FL3254 24-ch (8x RGB) LED driver, I2C\nI2C addr (7-bit): 0x60 (AD=GND)  W=0xC0  R=0xC1\nBus: LED_I2C (SDA/SCL), 3.3V, <=1MHz"
+		(exclude_from_sim no)
+		(at 198.12 125.73 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a900b4fc-7fc2-4c50-a10e-06138298435b")
+	)
 	(text "Input terminal used to connect an external resistor. This regulates\nthe global output current. When RISET=3.3kΩ, IOUT=23mA."
 		(exclude_from_sim no)
 		(at 244.348 78.74 0)
@@ -2409,6 +2432,16 @@
 	)
 	(wire
 		(pts
+			(xy 35.56 121.92) (xy 35.56 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9659c523-1575-4e92-9a2f-cd42cd626dca")
+	)
+	(wire
+		(pts
 			(xy 93.98 67.31) (xy 93.98 71.12)
 		)
 		(stroke
@@ -2556,6 +2589,16 @@
 			(type default)
 		)
 		(uuid "f7fe561a-f9c8-42b3-a46c-e82e43d5d408")
+	)
+	(wire
+		(pts
+			(xy 46.99 120.65) (xy 46.99 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9270d30-5462-42cc-a94a-14b015fbcbe6")
 	)
 	(wire
 		(pts
@@ -2727,6 +2770,16 @@
 		)
 		(uuid "4ffb6c96-39f8-412f-b0d9-dc939387cb06")
 	)
+	(label "LED_I2C.SDA"
+		(at 46.99 132.08 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "50564341-fb2b-4303-bcd7-63650dc2763a")
+	)
 	(label "R7"
 		(at 171.45 102.87 270)
 		(effects
@@ -2766,6 +2819,16 @@
 			(justify left bottom)
 		)
 		(uuid "5b567319-d1f0-4e2c-bda2-496589d58829")
+	)
+	(label "LED_I2C.SCL"
+		(at 35.56 133.35 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6ba1bfe9-1672-400c-8b1c-287e078908bd")
 	)
 	(label "R4"
 		(at 43.18 72.39 0)
@@ -3396,6 +3459,163 @@
 			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/0632b31d-4233-423e-9952-6afbcd6e6916"
 					(reference "#PWR0107")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 46.99 128.27 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0e9c07f5-e464-4621-87a5-3ba590634ee7")
+		(property "Reference" "R35"
+			(at 43.18 127 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 43.18 129.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 48.768 128.27 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
+			(at 46.99 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "4.7 kOhms ±1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Moisture Resistant Thick Film"
+			(at 46.99 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" "RC0402FR-134K7L"
+			(at 46.99 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "DigiKey"
+			(at 46.99 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "13-RC0402FR-134K7LCT-ND"
+			(at 46.99 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 46.99 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_VOUT" ""
+			(at 46.99 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 46.99 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 46.99 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "8e1bd4de-61ea-4344-80eb-6268205cfa1b")
+		)
+		(pin "1"
+			(uuid "8e63c7ed-8657-42f6-8e3f-a62236ef82dc")
+		)
+		(instances
+			(project "taris-miniproject"
+				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/0632b31d-4233-423e-9952-6afbcd6e6916"
+					(reference "R35")
 					(unit 1)
 				)
 			)
@@ -5598,6 +5818,163 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 35.56 129.54 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "52906fae-31fa-49c2-897e-5dd4295054eb")
+		(property "Reference" "R34"
+			(at 31.75 128.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 31.75 130.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 37.338 129.54 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
+			(at 35.56 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "4.7 kOhms ±1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Moisture Resistant Thick Film"
+			(at 35.56 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" "RC0402FR-134K7L"
+			(at 35.56 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "DigiKey"
+			(at 35.56 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "13-RC0402FR-134K7LCT-ND"
+			(at 35.56 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 35.56 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_VOUT" ""
+			(at 35.56 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 35.56 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 35.56 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "aa3ef6cf-86eb-4d64-aaa7-be4cd625b516")
+		)
+		(pin "1"
+			(uuid "9e3a1462-37a2-4639-a461-2336cde5b730")
+		)
+		(instances
+			(project "taris-miniproject"
+				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/0632b31d-4233-423e-9952-6afbcd6e6916"
+					(reference "R34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 171.45 27.94 0)
 		(unit 1)
@@ -5747,6 +6124,84 @@
 			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/0632b31d-4233-423e-9952-6afbcd6e6916"
 					(reference "#PWR037")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 35.56 121.92 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6f5e362a-8124-491d-958d-31bd775c9b5c")
+		(property "Reference" "#PWR0112"
+			(at 35.56 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 35.56 116.84 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 35.56 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 35.56 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 35.56 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8fad21c6-8108-4f08-8d7f-52f79dd94438")
+		)
+		(instances
+			(project "taris-miniproject"
+				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/0632b31d-4233-423e-9952-6afbcd6e6916"
+					(reference "#PWR0112")
 					(unit 1)
 				)
 			)
@@ -6792,6 +7247,84 @@
 			(project "taris-miniproject"
 				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/0632b31d-4233-423e-9952-6afbcd6e6916"
 					(reference "#PWR075")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 46.99 120.65 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c880fc41-6357-4e8f-927e-703b6c3a439e")
+		(property "Reference" "#PWR0113"
+			(at 46.99 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 46.99 115.57 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 46.99 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 46.99 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 46.99 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1dad6267-9f03-4e7b-9b90-abef1ab326d8")
+		)
+		(instances
+			(project "taris-miniproject"
+				(path "/5fd6e245-9295-49fb-811c-6efb339b53e4/0632b31d-4233-423e-9952-6afbcd6e6916"
+					(reference "#PWR0113")
 					(unit 1)
 				)
 			)

@@ -2766,18 +2766,6 @@
 		)
 	)
 	(rectangle
-		(start 15.24 118.11)
-		(end 170.18 156.21)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "60703bdb-b930-4351-9146-457f7815fa73")
-	)
-	(rectangle
 		(start 15.24 15.24)
 		(end 236.22 113.03)
 		(stroke
@@ -2821,17 +2809,6 @@
 			(justify left)
 		)
 		(uuid "c346881a-4da3-4bb1-b615-1cf57b5cca11")
-	)
-	(text "Test Points"
-		(exclude_from_sim no)
-		(at 19.558 124.968 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-			)
-			(justify left bottom)
-		)
-		(uuid "d52474a8-2299-4b11-98c3-3fcdfc46411d")
 	)
 	(junction
 		(at 171.45 59.69)
@@ -3203,6 +3180,16 @@
 	)
 	(wire
 		(pts
+			(xy 46.99 77.47) (xy 59.69 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "412dfeee-c4f6-4b1a-9a22-f4a6cd8e978d")
+	)
+	(wire
+		(pts
 			(xy 46.99 67.31) (xy 62.23 67.31)
 		)
 		(stroke
@@ -3220,6 +3207,16 @@
 			(type default)
 		)
 		(uuid "46be58e2-b1b9-41de-a425-7691bde57a49")
+	)
+	(wire
+		(pts
+			(xy 46.99 62.23) (xy 59.69 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "471670bd-c52e-4e53-af07-d8c74243a1b1")
 	)
 	(wire
 		(pts
@@ -3641,6 +3638,26 @@
 		)
 		(uuid "37840ce1-ee13-4396-848d-e2075d333c77")
 	)
+	(label "USB_CONN_D+"
+		(at 48.26 67.31 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6dd1ac49-388d-4e3f-947b-c173dd94055d")
+	)
+	(label "USB_CONN_D-"
+		(at 48.26 64.77 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "724e23fb-143a-4f00-ad5a-f351dabd2708")
+	)
 	(hierarchical_label "SPI_5V_IN"
 		(shape input)
 		(at 105.41 35.56 180)
@@ -3699,46 +3716,6 @@
 			(justify left)
 		)
 		(uuid "d9330237-d38d-400d-b025-6aee2c944d3e")
-	)
-	(wire
-		(pts
-			(xy 46.99 62.23) (xy 59.69 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "471670bd-c52e-4e53-af07-d8c74243a1b1")
-	)
-	(wire
-		(pts
-			(xy 46.99 77.47) (xy 59.69 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "412dfeee-c4f6-4b1a-9a22-f4a6cd8e978d")
-	)
-	(label "USB_CONN_D-"
-		(at 48.26 64.77 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "724e23fb-143a-4f00-ad5a-f351dabd2708")
-	)
-	(label "USB_CONN_D+"
-		(at 48.26 67.31 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "6dd1ac49-388d-4e3f-947b-c173dd94055d")
 	)
 	(symbol
 		(lib_id "power:GND")

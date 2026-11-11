@@ -4659,6 +4659,16 @@
 	)
 	(wire
 		(pts
+			(xy 236.22 147.32) (xy 241.3 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2957c197-0381-427e-8460-2a418b9fc68e")
+	)
+	(wire
+		(pts
 			(xy 100.33 175.26) (xy 100.33 176.53)
 		)
 		(stroke
@@ -6137,16 +6147,6 @@
 		)
 		(uuid "ffe77bdc-2cbb-41bc-8917-238e47a3e13c")
 	)
-	(wire
-		(pts
-			(xy 236.22 147.32) (xy 241.3 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2957c197-0381-427e-8460-2a418b9fc68e")
-	)
 	(label "QSPI_SCLK"
 		(at 166.37 74.93 180)
 		(effects
@@ -6276,6 +6276,16 @@
 			(justify left bottom)
 		)
 		(uuid "4556d4b8-9955-4785-89ce-957b233a9750")
+	)
+	(label "USB_MCU_D+"
+		(at 153.67 64.77 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "46df148e-8aba-4ea5-b6eb-ab7c2cf66d3a")
 	)
 	(label "SPI_IN_CSN"
 		(at 186.69 156.21 0)
@@ -6592,6 +6602,16 @@
 			(justify left bottom)
 		)
 		(uuid "eda9f5bb-8359-46dd-b42c-be651029c3a3")
+	)
+	(label "USB_MCU_D-"
+		(at 153.67 62.23 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f0ca9c10-e8ad-4a64-b812-cddac8ce8f5a")
 	)
 	(label "QSPI_SS"
 		(at 166.37 72.39 180)
@@ -6948,26 +6968,6 @@
 			(justify left)
 		)
 		(uuid "edde809b-028c-4bd9-95f6-808fd50fef4d")
-	)
-	(label "USB_MCU_D-"
-		(at 153.67 62.23 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f0ca9c10-e8ad-4a64-b812-cddac8ce8f5a")
-	)
-	(label "USB_MCU_D+"
-		(at 153.67 64.77 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "46df148e-8aba-4ea5-b6eb-ab7c2cf66d3a")
 	)
 	(symbol
 		(lib_id "power:+1V1")
@@ -10518,83 +10518,6 @@
 			(project "MiniProject"
 				(path "/0a447067-5c9c-45cc-965a-4decfa548377/1c7d37f3-47a6-4ac8-94d9-5808a088ade4"
 					(reference "TP7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 236.22 147.32 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "9bd2050e-b0e3-48c1-8494-96ab92213d6a")
-		(property "Reference" "TP13"
-			(at 232.918 144.78 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+1V1"
-			(at 232.918 149.86 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 236.22 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 236.22 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Test point: +1V1"
-			(at 236.22 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "dec11476-8327-4c09-9556-e87dea348747")
-		)
-		(instances
-			(project "MiniProject"
-				(path "/0a447067-5c9c-45cc-965a-4decfa548377/1c7d37f3-47a6-4ac8-94d9-5808a088ade4"
-					(reference "TP13")
 					(unit 1)
 				)
 			)
@@ -15305,6 +15228,83 @@
 			(project "MiniProject"
 				(path "/0a447067-5c9c-45cc-965a-4decfa548377/1c7d37f3-47a6-4ac8-94d9-5808a088ade4"
 					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 236.22 147.32 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9bd2050e-b0e3-48c1-8494-96ab92213d6a")
+		(property "Reference" "TP13"
+			(at 232.918 144.78 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+1V1"
+			(at 232.918 149.86 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 236.22 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 236.22 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Test point: +1V1"
+			(at 236.22 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "dec11476-8327-4c09-9556-e87dea348747")
+		)
+		(instances
+			(project "MiniProject"
+				(path "/0a447067-5c9c-45cc-965a-4decfa548377/1c7d37f3-47a6-4ac8-94d9-5808a088ade4"
+					(reference "TP13")
 					(unit 1)
 				)
 			)

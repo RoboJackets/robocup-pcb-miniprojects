@@ -446,6 +446,8 @@ bool LEDController::setGCC(GCC channel, uint8_t value)
         case GCC::BLUE:
             return write_byte(GCCB, value);
     }
+
+    return false;
 }
 
 bool LEDController::update()

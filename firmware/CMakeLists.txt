@@ -34,6 +34,9 @@ project(firmware C CXX ASM)
 pico_sdk_init()
 
 add_subdirectory(lib/LEDController)
+add_subdirectory(lib/SPIBus)
+add_subdirectory(lib/dummy)
+
 
 # Add executable. Default name is the project name, version 0.1
 
@@ -60,6 +63,8 @@ target_link_libraries(firmware
         hardware_spi
         hardware_i2c
         LEDController
+        SPIBus
+        dummy
         )
 
 pico_add_extra_outputs(firmware)

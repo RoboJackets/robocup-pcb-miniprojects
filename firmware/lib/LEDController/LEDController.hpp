@@ -552,7 +552,7 @@ write of "0000 0000" to this register will reset all regsiters to their default 
  * Initialize the PowerControl, PhaseDelay, and SpreadSpectrum structs with the desired configurations
  * led_controller.setConfigs(power_control, phase_delay, spread_spectrum);
  * 
- * Set the Low Frequency PWM value of the desired LED channel
+ * Set the Low Frequency PWM value of the desired LED channel (this is the basic brightness control)
  * led_controller.setLFP(channel, value);
  * 
  * Refer to https://www.lumissil.com/assets/pdf/core/IS31FL3254_DS.pdf for more information on other features.

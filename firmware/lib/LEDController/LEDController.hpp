@@ -16,7 +16,7 @@ LED Controller I2C Addresses
  AD connected to SCL, A2:A1 = 01;
  AD connected to SDA, A2:A1 = 10; 
 */
-enum LEDControllerAddress {
+enum LEDControllerAddress : uint8_t {
     AD_GND = 0b01100000,
     AD_VCC = 0b01100110,
     AD_SCL = 0b01100010,
@@ -39,10 +39,11 @@ Power Control Register - R/W
 /*
 Software Shutdown Mode
 
-If enabled, works in Sofware Shutdown mode.
-If disabled, works in Normal mode.
+If enabled, the device will enter software shutdown mode with all current sources switched off, leading to LEDs being off.
+
+Registers remain accessible.
 */
-enum class SSDMode {
+enum class SSDMode : uint8_t {
     ENABLE = 0,
     DISABLE = 1
 };
@@ -53,6 +54,29 @@ enum class SSDMode {
  * If 8Bit, HFPS will decide the internal oscillator clock frequency and the PWM output PWM frequency.
  * 
  * If 10Bit, the HFP is 32kHz, LFP is 127Hz, not matter how HFPS is set.
+*/
+enum PMSResolution : uint8_t {
+    R_8BIT = 0,
+    R_10BIT = 1
+};
+
+/*
+10+4-bit Mode
+
+If disabled, the working mode is controlled by PMS setting.
+If enabled, will enable 10+4-bit with 4-bit dithering mode.
+*/
+enum class B14Mode : uint8_t {
+    DISABLE = 0,
+    ENABLE = 1
+};
+
+/**
+ * High Frequency PWM Frequency Selection
+ * 
+ * Defaults to 32kHZ if 10-bit enabled
+ * 
+ * HFPS also selects the Low Frequency PWM frequency and the OSC frequency.
  * 
  * Table 4 from IS31FL3254 DataSheet
  * 
@@ -68,28 +92,7 @@ enum class SSDMode {
  * |     |  1x  |     32    |    508   |    128    |
  * +-----+------+-----------+----------+-----------+
 */
-enum PMSResolution {
-    R_8BIT = 0,
-    R_10BIT = 1
-};
-
-/*
-10+4-bit Mode
-
-If disabled, the working mode is controlled by PMS setting.
-If enabled, will enable 10+4-bit with 4-bit dithering mode.
-*/
-enum class B14Mode {
-    DISABLE = 0,
-    ENABLE = 1
-};
-
-/*
-High Frequency PWM Frequency Selection
-
-Default to 32kHZ if 10-bit enabled
-*/
-enum HFPS {
+enum HFPS : uint8_t {
     F_32kHZ = 0,
     F_64kHZ = 1,
     F_128kHZ = 2
@@ -99,10 +102,10 @@ enum HFPS {
 /*
 RGB Register Mode Select 
 
-24CH --> each of the 24 channels are controlled by it’s own PWM register.
-8RGB --> pairs of 3 channels controlled by same PWM register for RGB combinations
+24CH --> each of the 24 channels are controlled by it’s own HFP PWM register.
+8RGB --> pairs of 3 channels controlled by same HFP PWM register for RGB combinations
 */
-enum RGBMode {
+enum RGBMode : uint8_t {
     M_24CH = 0,
     M_8RGB = 1
 };
@@ -226,6 +229,7 @@ Here are the lower bit addresses, the higher bit addresses are always +1
 FMS
 
 The FMS selects PWM Frequency Mode
+
 HFP_LFP --> HFP + LFP
 HFP_ONLY --> HFP only, LFP = 256
 DC_MODE --> no PWM, output always on
@@ -288,18 +292,16 @@ When SDB is high and SSDMode is disabled, a write of “0000 0000” to 6Dh is t
 */
 #define UPDATE_REG 0x6D
 
-/*
-Global Current Control Registers -- R/W
-
-Modulates all channels DC current in 256 steps.
-In 8RGB Mode, each color controls the respective color.
-In 24CH Mode, each color controls a third of the 24 channels 
-*/
-
 #define GCCR 0x6E
 #define GCCG 0x6F
 #define GCCB 0x70
 
+/*
+Global Current Control Registers -- R/W
+
+Modulates all channels DC current in 256 steps.
+Each color controls the current of the respective color channels. (Usually every third channel)
+*/
 enum GCC {
     RED,
     GREEN,
@@ -336,30 +338,51 @@ Phase Delay separates the 24 outputs as 5 groups:
  - Group 4: 16-->21
  - Group 5: 22-->24
 
-If enabled, groups 1, 3, 4, an 5 will have a 1/(6 x freq) time delay, while group 2 will have a 2/(6 x freq) time delay
+If enabled, these groups will operate PWM at different phases to reduce the voltage ripple of LED power supply.
+
+Specifically, after group 3 starts operating PWM, group 4 will start operating PWM after a 1/(6 x freq) period, and so on.
+
+Every group is delayed by 1/(6 x freq) period from the previous group, except for group 2 which is delayed by 2/(6 x freq) period from group 1.
 */
-enum class PDE {
+enum class PDE : uint8_t {
     DISABLE = 0,
     ENABLE = 1,
 };
 
 /*
-Group Phase Delay Select
+Frequency Group Phase Delay Select
 
-LFP --> 5 Group Phase Delay operate at low frequency PWM (LFP)
-HFP --> 5 Group Phase Delay operate at high frequency PWM (HFP) 
+Choose whether the phase delay scheme is applied to the high frequency PWM or low frequency PWM.
+
+It's recommended to apply the phase delay scheme to the low frequency PWM, since the high frequency PWM ripple isn't as effective as the low frequency PWM ripple.
+
+LFP --> Low Frequency PWM
+HFP --> High Frequency PWM
 */
-enum HLF {
+enum HLF : uint8_t {
     LFP = 0,
     HFP = 1,
 };
 
 /*
-//TODO: figure out what this shit does
+Clock Phase Select
 
-Clock Phase Select - Phase Delay and Clock Phase Register - D5:D0
+IS31FL3254 features a clock phase function.
+
+The 24 outputs are separated into 5 groups:
+ - Group 1: 1-->6
+ - Group 2: 7-->12
+ - Group 3: 13-->15
+ - Group 4: 16-->21
+ - Group 5: 22-->24
+
+If group [n]'s clock phase is enabled, the channels in that group will alternate between Clock Phase 1 and Clock Phase 2.
+Clock Phase 1's falling edge happens at the same time as Clock Phase 2's rising edge to reduce the voltage ripple of LED power supply.
+
+*NOTE: Revision B of the IS31FL3254 data sheet reduces the number of groups from 6 to 5, yet this is not explicitly stated in the 71h register map. Ignore the 6th group.
+
 */
-enum PSn {
+enum PSn : uint8_t {
     DISABLE = 0,
     ENABLE = 1
 };
@@ -426,12 +449,11 @@ This register enables the spread spectrum function, adjusts the cycle time and r
 #define SPREAD_SPECTRUM_REG 0x72
 
 /*
-    Spread Spectrum Synch
-    
-    Enable
-    Disable
+    Spread Spectrum Synchronization
+
+    If enabled, the spread spectrum function will be synchronized with the PWM cycle to prevent visible LED flickering
 */
-enum class SSY {
+enum class SSY : uint8_t {
     DISABLE = 0,
     ENABLE = 1
 };
@@ -439,31 +461,32 @@ enum class SSY {
 /*
     Spread Spectrum Enable
     
-    Enable
-    Disable
+    If enabled, the spread spectrum function will be enabled to reduce EMI.
 */
-enum class SSP {
+enum class SSP : uint8_t {
     DISABLE = 0,
     ENABLE = 1
 };
 
 /*
-Spread Spectrum Cycle Time
+    Spread Spectrum Cycle Time
+
+    Sets the modulation cycle time: 500ms, 125ms, 1.4ms, or 0.35ms
 */
-enum CLT {
+enum CLT : uint8_t {
     t_500ms = 0b00,
     t_125ms = 0b01,
-    t_1_4ms = 0b11,
+    t_1_4ms = 0b10,
     t_0_35ms = 0b11,
 };
 
 /*
-Spread Spectrum Range 
+    Spread Spectrum Range 
 
- +- n%
+    Selects the frequency modulation deviation range (±5%, ±13%, ±19%, or ±25%).
 */
-enum RNG {
-    R_5 = 0b00,
+enum RNG : uint8_t {
+    R_05 = 0b00,
     R_13 = 0b01,
     R_19 = 0b10,
     R_25 = 0b11,
@@ -516,6 +539,24 @@ write of "0000 0000" to this register will reset all regsiters to their default 
 
 #define RESET_REG 0x7F
 
+/**
+ * LED Controller Driver for IS31FL3254 using picosdk
+ * 
+ * This class provides an interface for controlling the IS31FL3254 LED controller.
+ * 
+ * Basic use:
+ * 
+ * Initialize the LEDController with the desired I2C bus and address
+ * LEDController led_controller(i2c, LEDControllerAddress::AD_GND);
+ * 
+ * Initialize the PowerControl, PhaseDelay, and SpreadSpectrum structs with the desired configurations
+ * led_controller.setConfigs(power_control, phase_delay, spread_spectrum);
+ * 
+ * Set the Low Frequency PWM value of the desired LED channel
+ * led_controller.setLFP(channel, value);
+ * 
+ * Refer to https://www.lumissil.com/assets/pdf/core/IS31FL3254_DS.pdf for more information on other features.
+ */
 class LEDController {
 public: 
     /**
@@ -540,7 +581,9 @@ public:
     /**
      * @brief Sets the Low Frequency PWM value of the desired LED channel
      * 
-     * @param channel Desired LED channel
+     * If value is beyond the resolution, will set to maximum possible value
+     * 
+     * @param channel Desired LED channel, 1-24
      * @param value 0 to 255
      * 
      * @return true if operation is successful
@@ -553,7 +596,7 @@ public:
      * If value is beyond the resolution, will set to maximum possible value
      * 
      * @param channel Desired LED channel, 1-24 for 24CH mode, 1-8 for 8RGB mode
-     * @param value 0 to 255 (8-bit), 1024 (10-bit), or 16384 (14-bit)
+     * @param value 0 to 255 (8-bit), 1024 (10-bit), or 16384 (10+4-bit)
      * 
      * @return true if operation is successful
      */
@@ -572,12 +615,13 @@ public:
     /**
      * @brief Sets the global current of the red, green, or blue channels
      * 
+     * The maximum current is set by the physical resistor, the GCC only modulates the current in 256 steps.
+     * 
      * @param channel Desired LED channel
      * @param value current stepping 0-255
      * @return true if operation is successful
      */
     bool setGCC(GCC channel, uint8_t value);
-
 
     /**
      * @brief updates the Low and High Frequency PWM channels
@@ -633,10 +677,10 @@ private:
     bool read_byte(uint8_t reg, uint8_t *data);
 
     uint8_t address_;
-    i2c_inst_t *i2c_;
     PowerControl pcontrol_;
     PhaseDelay pdelay_;
     SpreadSpectrum ss_;
+    i2c_inst_t *i2c_;
 };
 
 #endif // LED_CONTROLLER_HPP

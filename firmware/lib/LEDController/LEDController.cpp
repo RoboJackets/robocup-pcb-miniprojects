@@ -85,7 +85,7 @@ uint8_t PhaseDelay::toByte() {
 
 SpreadSpectrum::SpreadSpectrum(): 
     cycle_time(CLT::t_500ms), 
-    range(RNG::R_5), 
+    range(RNG::R_05), 
     spectrum_enable(SSP::DISABLE), 
     synch_enable(SSY::DISABLE) {}
 

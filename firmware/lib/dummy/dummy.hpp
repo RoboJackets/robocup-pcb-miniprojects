@@ -1,5 +1,6 @@
 // Dummy folder to hold filler functions to be replaced with real libs
-#pragma once
+#ifndef DUMMY
+#define DUMMY
 
 #include "pico/stdlib.h"
 #include "hardware/i2c.h"
@@ -130,3 +131,5 @@ int8_t init_led(i2c_inst_t* i2c_port, uint8_t addr);
  * @return Returns -1 on error, 0 on success
  */
 int8_t write_led(uint8_t (&buf)[24]);
+
+#endif //DUMMY

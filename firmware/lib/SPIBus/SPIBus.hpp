@@ -1,4 +1,5 @@
-#pragma once
+#ifndef SPIBUS
+#define SPIBUS
 
 #include "pico/stdlib.h" // includes GPIO, time, and stdio
 #include "pico/mutex.h"
@@ -207,3 +208,5 @@ class SPIBus {
         bool checksum_required_ = false;
         bool auto_read_nonblocking_ = true;
 };
+
+#endif //SPIBUS

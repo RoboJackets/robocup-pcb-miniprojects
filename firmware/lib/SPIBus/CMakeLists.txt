@@ -32,4 +32,5 @@ target_link_libraries(SPIBus INTERFACE
     pico_stdlib
     hardware_gpio
     hardware_spi
+    hardware_dma
 )

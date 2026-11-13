@@ -6,13 +6,22 @@
 #include "shared.hpp"
 #include <string.h> // memcpy
 
+
 // ---- internal helpers (only used in this file) ----
 
 // Wait for one full packet from the previous board.
 static bool spi_in_receive(uint8_t packet[PACKET_LEN]) {
-    spi_read_blocking(spi0, 0, packet, PACKET_LEN); // 56 bytes from previous board
-    // not done
-    if () {
+    while (!gpio_get(PIN_SPI_IN_CSN)) {
+        tight_loop_contents();
+    }
+
+    while (spi_is_readable(spi0)) {
+        (void) spi_get_hw(spi0)->dr;
+    }
+
+    spi_read_blocking(spi0, 0, packet, PACKET_LEN);
+
+    if (packet[PACKET_ID_BYTE] == 0) {
         return false;
     }
     return true;
@@ -58,8 +67,10 @@ void core0_init(void) {
     gpio_set_function(PIN_SPI_OUT_SCK, GPIO_FUNC_SPI); // clock
     gpio_set_function(PIN_SPI_OUT_MOSI, GPIO_FUNC_SPI); // data come out
     gpio_set_function(PIN_SPI_OUT_MISO, GPIO_FUNC_SPI); // data come in
-    gpio_set_function(PIN_SPI_OUT_CSN, GPIO_FUNC_SPI); // chip select
 
+    gpio_init(PIN_SPI_OUT_CSN);
+    gpio_set_dir(PIN_SPI_OUT_CSN, GPIO_OUT);
+    gpio_put(PIN_SPI_OUT_CSN, 1);
 }
 
 void core0_main(void) {

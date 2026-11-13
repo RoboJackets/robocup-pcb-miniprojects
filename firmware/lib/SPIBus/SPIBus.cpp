@@ -178,7 +178,8 @@ void SPIBus::handle_dma() {
     if (interrupts & (1u << bus_->dma_tx_)) {
         dma_channel_acknowledge_irq0(bus_->dma_tx_);
         
-        alarm_ = add_alarm_in_us(80, &handle_alarm, nullptr, false);
+        // waits for 80 us before pulling chip select high to give time for the actual transfer to finish.
+        bus_->alarm_ = add_alarm_in_us(80, &handle_alarm, this, false);
         dma_channel_configure(bus_->dma_tx_, &(bus_->config_tx_), &spi_get_hw(SPI_MASTER)->dr, bus_->packet_, PACKET_LENGTH, false);
 
         mutex_exit(&(bus_->p_mutex_));

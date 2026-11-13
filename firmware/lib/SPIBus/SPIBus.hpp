@@ -149,16 +149,18 @@ class SPIBus {
          * @param gpio The gpio pin that causes the interrupt.
          * @param events The level or edge of the signal that causes the interrupt.
          * 
-         * @note Must be void and have uint gpio and uint32_t events parameters to work with the Pico SDK.
-         * @note Must be static to be a class member function.
+         * @note Must match signature void (*gpio_irq_callback_t)(uint gpio, uint32_t event_mask)
+         *       to be passed to gpio_set_irq_enabled_with_callback() and handle GPIO interrupts as a GPIO callback.
+         * @note Must be static if a class member function to avoid an implicit "this" parameter.
          * @note Updating and writing should be handled in the main loop to prevent mutex deadlocks.
         */ 
         static void handle_cs_fall(uint gpio, uint32_t events);
 
         /** @brief Reinitializes a DMA channel when its transfer completes. 
          * 
-         * @note Must be void have no parameters to work with hardware.
-         * @note Must be static to be a class member function.
+         * @note Must match signature void (*irq_handler_t)(void) to be passed to irq_set_exclusive_handler() 
+         *       and handle interrupts as an exclusive irq handler.
+         * @note Must be static to be a class member function to avoid an implicit "this" parameter.
         */ 
         static void handle_dma();
 
@@ -167,8 +169,9 @@ class SPIBus {
          * @param id The alarm_id as returned when the alarm was added.
          * @param user_data The user data passed when the alarm was added.
          * 
-         * @note Must return int64_t and have alarm_id_t id and void *user_data parameters to work with the Pico SDK.
-         * @note Must be static to be a class member function.
+         * @note Must match signature int64_t (*alarm_callback_t)(alarm_id_t id, void *user_data)
+         *       to be passed into add_alarm_in_us() and handle alarms as an alarm callback.
+         * @note Must be static to be a class member function to avoid an implicit "this" parameter.
          */
         static int64_t handle_alarm(alarm_id_t id, void *user_data);
 

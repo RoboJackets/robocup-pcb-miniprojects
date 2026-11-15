@@ -12,10 +12,134 @@
 		(comment 1 "Designer: Jiayu Shi (Team Gleba)")
 		(comment 2 "RoboJackets RoboCup 2026 Onboarding - Daisy-Chained Sensor Suite")
 	)
-	(lib_symbols)
+	(lib_symbols
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "I2C Map:\nIMU ICM-42605: 0x68 (AP_AD0 = GND), GPIO0/GPIO1 (I2C0)\nTemp LM75ADP: 0x48 (A2 A1 A0 = 0 0 0), GPIO2/GPIO3 (I2C1)\nHall TMAG5273A2: 0x35 (factory default), GPIO4/GPIO5 (I2C0)\nGPIO expander TCA9534: 0x21 (A2 A1 A0 = 0 0 0), GPIO22/GPIO23 (I2C1)\nColour VEML3328: 0x10, GPIO24/GPIO25 (I2C0)\nLED driver IS31FL3254: 0x30 (AD = 0), GPIO26/GPIO27 (I2C1)"
+		(exclude_from_sim no)
+		(at 23.622 151.384 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 0 0 194 1)
+			)
+			(justify left top)
+		)
+		(uuid "a7a3f14d-64ea-4f70-8c77-17e8861d299a")
+	)
+	(text "Mounting holes: 4x M2(d=2.2 mm), 3.5 mm from board edge,\n73 x 43 mm hole pattern on the 80 x 50 mm board"
+		(exclude_from_sim no)
+		(at 24.13 180.848 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 0 0 194 1)
+			)
+			(justify left top)
+		)
+		(uuid "d16c18ff-d951-483c-b631-acfe9f873f4b")
+	)
 	(wire
 		(pts
-			(xy 74.93 58.42) (xy 100.33 58.42)
+			(xy 101.6 58.42) (xy 127 58.42)
 		)
 		(stroke
 			(width 0)
@@ -25,7 +149,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 48.26) (xy 100.33 48.26)
+			(xy 101.6 48.26) (xy 127 48.26)
 		)
 		(stroke
 			(width 0)
@@ -35,7 +159,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 60.96) (xy 100.33 60.96)
+			(xy 101.6 60.96) (xy 127 60.96)
 		)
 		(stroke
 			(width 0)
@@ -45,7 +169,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 48.26) (xy 163.83 48.26)
+			(xy 165.1 48.26) (xy 190.5 48.26)
 		)
 		(stroke
 			(width 0)
@@ -55,7 +179,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 68.58) (xy 100.33 68.58)
+			(xy 101.6 68.58) (xy 127 68.58)
 		)
 		(stroke
 			(width 0)
@@ -65,7 +189,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 116.84) (xy 91.44 72.39)
+			(xy 118.11 116.84) (xy 118.11 72.39)
 		)
 		(stroke
 			(width 0)
@@ -75,7 +199,7 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 116.84) (xy 91.44 116.84)
+			(xy 127 116.84) (xy 118.11 116.84)
 		)
 		(stroke
 			(width 0)
@@ -85,7 +209,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 78.74) (xy 128.27 104.14)
+			(xy 154.94 78.74) (xy 154.94 104.14)
 		)
 		(stroke
 			(width 0)
@@ -95,7 +219,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 76.2) (xy 100.33 76.2)
+			(xy 121.92 76.2) (xy 127 76.2)
 		)
 		(stroke
 			(width 0)
@@ -105,7 +229,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 72.39) (xy 100.33 72.39)
+			(xy 118.11 72.39) (xy 127 72.39)
 		)
 		(stroke
 			(width 0)
@@ -115,7 +239,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 55.88) (xy 100.33 55.88)
+			(xy 101.6 55.88) (xy 127 55.88)
 		)
 		(stroke
 			(width 0)
@@ -125,7 +249,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 57.15) (xy 163.83 57.15)
+			(xy 165.1 57.15) (xy 190.5 57.15)
 		)
 		(stroke
 			(width 0)
@@ -135,7 +259,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 50.8) (xy 163.83 50.8)
+			(xy 165.1 50.8) (xy 190.5 50.8)
 		)
 		(stroke
 			(width 0)
@@ -145,17 +269,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 45.72) (xy 100.33 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ad02c8ee-c222-4ce1-88e9-8625f826f015")
-	)
-	(wire
-		(pts
-			(xy 138.43 59.69) (xy 163.83 59.69)
+			(xy 165.1 59.69) (xy 190.5 59.69)
 		)
 		(stroke
 			(width 0)
@@ -165,7 +279,7 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 113.03) (xy 95.25 113.03)
+			(xy 127 113.03) (xy 121.92 113.03)
 		)
 		(stroke
 			(width 0)
@@ -175,7 +289,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 113.03) (xy 95.25 76.2)
+			(xy 121.92 113.03) (xy 121.92 76.2)
 		)
 		(stroke
 			(width 0)
@@ -185,7 +299,17 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 53.34) (xy 100.33 53.34)
+			(xy 101.6 45.72) (xy 127 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c90fbefd-9cf7-4749-99e8-ec81a72e64d7")
+	)
+	(wire
+		(pts
+			(xy 101.6 53.34) (xy 127 53.34)
 		)
 		(stroke
 			(width 0)
@@ -195,7 +319,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 50.8) (xy 100.33 50.8)
+			(xy 101.6 50.8) (xy 127 50.8)
 		)
 		(stroke
 			(width 0)
@@ -205,7 +329,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 63.5) (xy 100.33 63.5)
+			(xy 101.6 63.5) (xy 127 63.5)
 		)
 		(stroke
 			(width 0)
@@ -215,7 +339,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 66.04) (xy 100.33 66.04)
+			(xy 101.6 66.04) (xy 127 66.04)
 		)
 		(stroke
 			(width 0)
@@ -223,8 +347,304 @@
 		)
 		(uuid "fe96a046-517a-4796-b6d8-7028a037b880")
 	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 25.4 175.26 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "23ee17f2-5004-48b8-ae4b-12ad910523bf")
+		(property "Reference" "H1"
+			(at 25.4 170.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 25.4 172.085 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 25.4 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "N/A - 2.2 mm non-plated hole for an M2 screw (no purchased part)"
+			(at 25.4 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "M2 mounting hole, NPTH 2.2 mm"
+			(at 25.4 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "MiniProject"
+				(path "/0a447067-5c9c-45cc-965a-4decfa548377"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 50.8 175.26 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b60f6429-8dd8-408e-9355-3fe6971d52f6")
+		(property "Reference" "H3"
+			(at 50.8 170.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 50.8 172.085 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 50.8 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "N/A - 2.2 mm non-plated hole for an M2 screw (no purchased part)"
+			(at 50.8 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "M2 mounting hole, NPTH 2.2 mm"
+			(at 50.8 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "MiniProject"
+				(path "/0a447067-5c9c-45cc-965a-4decfa548377"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 38.1 175.26 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bc4abc5e-b133-499d-8b6c-6b8c6436db40")
+		(property "Reference" "H2"
+			(at 38.1 170.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 38.1 172.085 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 38.1 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "N/A - 2.2 mm non-plated hole for an M2 screw (no purchased part)"
+			(at 38.1 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "M2 mounting hole, NPTH 2.2 mm"
+			(at 38.1 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "MiniProject"
+				(path "/0a447067-5c9c-45cc-965a-4decfa548377"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 63.5 175.26 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f6eddbad-3a86-40c7-a794-b67bd9314bec")
+		(property "Reference" "H4"
+			(at 63.5 170.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 63.5 172.085 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 63.5 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "N/A - 2.2 mm non-plated hole for an M2 screw (no purchased part)"
+			(at 63.5 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "M2 mounting hole, NPTH 2.2 mm"
+			(at 63.5 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "MiniProject"
+				(path "/0a447067-5c9c-45cc-965a-4decfa548377"
+					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(sheet
-		(at 100.33 40.64)
+		(at 127 40.64)
 		(size 38.1 38.1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -240,7 +660,7 @@
 		)
 		(uuid "1c7d37f3-47a6-4ac8-94d9-5808a088ade4")
 		(property "Sheetname" "MCU Sheet"
-			(at 100.33 39.9284 0)
+			(at 127 39.9284 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -251,7 +671,7 @@
 			)
 		)
 		(property "Sheetfile" "MCU.kicad_sch"
-			(at 100.33 79.3246 0)
+			(at 127 79.3246 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -262,7 +682,7 @@
 			)
 		)
 		(pin "SDB_LEDDriver" bidirectional
-			(at 128.27 78.74 270)
+			(at 154.94 78.74 270)
 			(uuid "2dff8fd4-07f1-4f3b-9c73-76d9fd13e54a")
 			(effects
 				(font
@@ -272,7 +692,7 @@
 			)
 		)
 		(pin "SPI_5V_IN" input
-			(at 138.43 57.15 0)
+			(at 165.1 57.15 0)
 			(uuid "7e240e9f-ae0d-4df7-ae6a-80718c060def")
 			(effects
 				(font
@@ -282,7 +702,7 @@
 			)
 		)
 		(pin "SPI_5V_OUT" output
-			(at 138.43 59.69 0)
+			(at 165.1 59.69 0)
 			(uuid "ad7225f2-f00d-4499-aec6-102529908024")
 			(effects
 				(font
@@ -292,7 +712,7 @@
 			)
 		)
 		(pin "USB_D+" bidirectional
-			(at 138.43 48.26 0)
+			(at 165.1 48.26 0)
 			(uuid "25198230-16cd-4cf2-9614-a564c29ae2a8")
 			(effects
 				(font
@@ -302,7 +722,7 @@
 			)
 		)
 		(pin "USB_D-" bidirectional
-			(at 138.43 50.8 0)
+			(at 165.1 50.8 0)
 			(uuid "db8e9f9d-c63f-4b2f-8335-0ef54ba95b1a")
 			(effects
 				(font
@@ -312,7 +732,7 @@
 			)
 		)
 		(pin "SDA_IMU" bidirectional
-			(at 100.33 45.72 180)
+			(at 127 45.72 180)
 			(uuid "6c10d706-b38a-4fb9-b79e-41fcf9fdf0ea")
 			(effects
 				(font
@@ -322,7 +742,7 @@
 			)
 		)
 		(pin "SCL_IMU" bidirectional
-			(at 100.33 48.26 180)
+			(at 127 48.26 180)
 			(uuid "cd3e277b-6a18-46c3-b894-6e09bcde2b38")
 			(effects
 				(font
@@ -332,7 +752,7 @@
 			)
 		)
 		(pin "SDA_TEMP" bidirectional
-			(at 100.33 50.8 180)
+			(at 127 50.8 180)
 			(uuid "3c14b6b3-7602-45fa-bc51-135a17641777")
 			(effects
 				(font
@@ -342,7 +762,7 @@
 			)
 		)
 		(pin "SCL_TEMP" bidirectional
-			(at 100.33 53.34 180)
+			(at 127 53.34 180)
 			(uuid "758d4f64-12f9-4b02-8172-62c295cd5f29")
 			(effects
 				(font
@@ -352,7 +772,7 @@
 			)
 		)
 		(pin "SDA_HALL" bidirectional
-			(at 100.33 55.88 180)
+			(at 127 55.88 180)
 			(uuid "8a71df2d-6693-4071-9bac-1c238943032f")
 			(effects
 				(font
@@ -362,7 +782,7 @@
 			)
 		)
 		(pin "SCL_HALL" bidirectional
-			(at 100.33 58.42 180)
+			(at 127 58.42 180)
 			(uuid "d2189d45-dde4-4402-b134-55550f40049e")
 			(effects
 				(font
@@ -372,7 +792,7 @@
 			)
 		)
 		(pin "SDA_GPIO" bidirectional
-			(at 100.33 60.96 180)
+			(at 127 60.96 180)
 			(uuid "dcaf93f2-5fe5-4d0c-924a-d3ad4929ab20")
 			(effects
 				(font
@@ -382,7 +802,7 @@
 			)
 		)
 		(pin "SCL_GPIO" bidirectional
-			(at 100.33 63.5 180)
+			(at 127 63.5 180)
 			(uuid "2faebf31-e79b-4329-9658-fce952c4e12a")
 			(effects
 				(font
@@ -392,7 +812,7 @@
 			)
 		)
 		(pin "SDA_COLOR" bidirectional
-			(at 100.33 66.04 180)
+			(at 127 66.04 180)
 			(uuid "b15b59ce-2cd6-4d72-9040-1b8a40762393")
 			(effects
 				(font
@@ -402,7 +822,7 @@
 			)
 		)
 		(pin "SCL_COLOR" bidirectional
-			(at 100.33 68.58 180)
+			(at 127 68.58 180)
 			(uuid "c269295b-f9fd-47a1-8f2e-80deb4c56e3f")
 			(effects
 				(font
@@ -412,7 +832,7 @@
 			)
 		)
 		(pin "SDA_LED" bidirectional
-			(at 100.33 72.39 180)
+			(at 127 72.39 180)
 			(uuid "5519e044-5b1f-4b66-b896-c09346a5ed1a")
 			(effects
 				(font
@@ -422,7 +842,7 @@
 			)
 		)
 		(pin "SCL_LED" bidirectional
-			(at 100.33 76.2 180)
+			(at 127 76.2 180)
 			(uuid "2b0a71ad-e52a-4686-b911-1436812b7b0c")
 			(effects
 				(font
@@ -440,7 +860,7 @@
 		)
 	)
 	(sheet
-		(at 36.83 40.64)
+		(at 63.5 40.64)
 		(size 38.1 38.1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -456,7 +876,7 @@
 		)
 		(uuid "5daf343b-c646-4b9b-a8a0-b64572977bf9")
 		(property "Sheetname" "Sensors Sheet"
-			(at 36.83 39.9284 0)
+			(at 63.5 39.9284 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -467,7 +887,7 @@
 			)
 		)
 		(property "Sheetfile" "Sensors.kicad_sch"
-			(at 36.83 79.3246 0)
+			(at 63.5 79.3246 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -478,7 +898,7 @@
 			)
 		)
 		(pin "SDA_IMU" bidirectional
-			(at 74.93 45.72 0)
+			(at 101.6 45.72 0)
 			(uuid "4e9cf903-cc50-478d-bbeb-b8f27a2596bb")
 			(effects
 				(font
@@ -488,7 +908,7 @@
 			)
 		)
 		(pin "SCL_IMU" bidirectional
-			(at 74.93 48.26 0)
+			(at 101.6 48.26 0)
 			(uuid "099d0276-2e95-43d3-9633-86a2bfa446ed")
 			(effects
 				(font
@@ -498,7 +918,7 @@
 			)
 		)
 		(pin "SDA_TEMP" bidirectional
-			(at 74.93 50.8 0)
+			(at 101.6 50.8 0)
 			(uuid "0a36e9be-228e-4a09-9e37-2ee6d2bbc545")
 			(effects
 				(font
@@ -508,7 +928,7 @@
 			)
 		)
 		(pin "SCL_TEMP" bidirectional
-			(at 74.93 53.34 0)
+			(at 101.6 53.34 0)
 			(uuid "65f10af1-8e94-4487-a9c9-343e840f0091")
 			(effects
 				(font
@@ -518,7 +938,7 @@
 			)
 		)
 		(pin "SDA_HALL" bidirectional
-			(at 74.93 55.88 0)
+			(at 101.6 55.88 0)
 			(uuid "c2558518-0a0a-4ca7-a056-7a8842be331e")
 			(effects
 				(font
@@ -528,7 +948,7 @@
 			)
 		)
 		(pin "SCL_HALL" bidirectional
-			(at 74.93 58.42 0)
+			(at 101.6 58.42 0)
 			(uuid "a64a9579-0c8f-4a26-bec1-c4f2e4ec4b1f")
 			(effects
 				(font
@@ -538,7 +958,7 @@
 			)
 		)
 		(pin "SDA_GPIO" bidirectional
-			(at 74.93 60.96 0)
+			(at 101.6 60.96 0)
 			(uuid "c393d63f-66f0-47d1-b8f9-ddd0bb54168c")
 			(effects
 				(font
@@ -548,7 +968,7 @@
 			)
 		)
 		(pin "SCL_GPIO" bidirectional
-			(at 74.93 63.5 0)
+			(at 101.6 63.5 0)
 			(uuid "5c023fc4-3953-466f-bb4e-f5e28f28739b")
 			(effects
 				(font
@@ -558,7 +978,7 @@
 			)
 		)
 		(pin "SDA_COLOR" bidirectional
-			(at 74.93 66.04 0)
+			(at 101.6 66.04 0)
 			(uuid "aef72615-bd61-462e-84fd-bd18919f7b8f")
 			(effects
 				(font
@@ -568,7 +988,7 @@
 			)
 		)
 		(pin "SCL_COLOR" bidirectional
-			(at 74.93 68.58 0)
+			(at 101.6 68.58 0)
 			(uuid "2763b1c0-af45-4812-a805-c4397fda3efc")
 			(effects
 				(font
@@ -586,7 +1006,7 @@
 		)
 	)
 	(sheet
-		(at 100.33 104.14)
+		(at 127 104.14)
 		(size 38.1 38.1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -602,7 +1022,7 @@
 		)
 		(uuid "c7e9cdbb-6624-40fb-a7c1-efdd6c46248d")
 		(property "Sheetname" "LEDs and Driver"
-			(at 100.33 103.4284 0)
+			(at 127 103.4284 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -613,7 +1033,7 @@
 			)
 		)
 		(property "Sheetfile" "LEDs_Driver.kicad_sch"
-			(at 100.33 142.8246 0)
+			(at 127 142.8246 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -624,7 +1044,7 @@
 			)
 		)
 		(pin "SDB_LEDDriver" bidirectional
-			(at 128.27 104.14 90)
+			(at 154.94 104.14 90)
 			(uuid "3429b737-9405-4a6f-a1e0-4e262e4d5f6f")
 			(effects
 				(font
@@ -634,7 +1054,7 @@
 			)
 		)
 		(pin "SCL_LED" bidirectional
-			(at 100.33 113.03 180)
+			(at 127 113.03 180)
 			(uuid "06f0a01d-82bf-4742-9c08-020f9e60fe4f")
 			(effects
 				(font
@@ -644,7 +1064,7 @@
 			)
 		)
 		(pin "SDA_LED" bidirectional
-			(at 100.33 116.84 180)
+			(at 127 116.84 180)
 			(uuid "c87dc40c-19dd-49c4-927e-37c300e1e5b2")
 			(effects
 				(font
@@ -662,7 +1082,7 @@
 		)
 	)
 	(sheet
-		(at 163.83 40.64)
+		(at 190.5 40.64)
 		(size 38.1 38.1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -678,7 +1098,7 @@
 		)
 		(uuid "f400d389-19dc-44e6-ad52-9c4ee0cda3cd")
 		(property "Sheetname" "Power Sheet"
-			(at 163.83 39.9284 0)
+			(at 190.5 39.9284 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -689,7 +1109,7 @@
 			)
 		)
 		(property "Sheetfile" "Power.kicad_sch"
-			(at 163.83 79.3246 0)
+			(at 190.5 79.3246 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -700,7 +1120,7 @@
 			)
 		)
 		(pin "SPI_5V_IN" input
-			(at 163.83 57.15 180)
+			(at 190.5 57.15 180)
 			(uuid "6c8a1af4-0ac0-4338-b737-29bc16980fc2")
 			(effects
 				(font
@@ -710,7 +1130,7 @@
 			)
 		)
 		(pin "SPI_5V_OUT" output
-			(at 163.83 59.69 180)
+			(at 190.5 59.69 180)
 			(uuid "1548726a-8e3e-4363-9624-d3d346e06ad3")
 			(effects
 				(font
@@ -720,7 +1140,7 @@
 			)
 		)
 		(pin "USB_D+" bidirectional
-			(at 163.83 48.26 180)
+			(at 190.5 48.26 180)
 			(uuid "1a1532ac-c20f-4611-a86c-a916ac18c42f")
 			(effects
 				(font
@@ -730,7 +1150,7 @@
 			)
 		)
 		(pin "USB_D-" bidirectional
-			(at 163.83 50.8 180)
+			(at 190.5 50.8 180)
 			(uuid "e0d0d7d7-4ae5-477f-b507-1a8d0864c2dc")
 			(effects
 				(font

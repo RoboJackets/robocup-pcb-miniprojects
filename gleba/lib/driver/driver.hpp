@@ -1,58 +1,120 @@
-#pragma once
-// ICM-42605 6-axis IMU driver (I2C), Pico SDK only.
-// Reusable by any board: the caller sets up the I2C bus (pins + i2c_init)
-// and passes the controller in. No pins are hard-coded here.
-// Owner: Meghna
-//
-// Fixed interface used by core 1 (do not change without telling the team):
-//   imu_init(), imu_read()
+#include <cstdint>
+#include <hardware/i2c.h>
 
-#include <stdint.h>
-#include <stdbool.h>
-#include <stddef.h>
-#include "hardware/i2c.h"
 
-#define IMU_ADDR_AD0_LOW   0x68   // our board (AP_AD0 = GND)
-#define IMU_ADDR_AD0_HIGH  0x69
-#define IMU_DEFAULT_ADDR   IMU_ADDR_AD0_LOW
-#define IMU_WHO_AM_I_VALUE 0x42
+#define ACC_X_HI 0x1F
 
-// ---- Configuration values (check codes against the ICM-42605 datasheet) ----
-enum ImuAccelRange { IMU_ACCEL_16G, IMU_ACCEL_8G, IMU_ACCEL_4G, IMU_ACCEL_2G };
-enum ImuGyroRange  { IMU_GYRO_2000DPS, IMU_GYRO_1000DPS, IMU_GYRO_500DPS, IMU_GYRO_250DPS,
-                     IMU_GYRO_125DPS, IMU_GYRO_62_5DPS, IMU_GYRO_31_25DPS, IMU_GYRO_15_625DPS };
-enum ImuOdr        { IMU_ODR_8KHZ, IMU_ODR_4KHZ, IMU_ODR_2KHZ, IMU_ODR_1KHZ, IMU_ODR_500HZ,
-                     IMU_ODR_200HZ, IMU_ODR_100HZ, IMU_ODR_50HZ, IMU_ODR_25HZ, IMU_ODR_12_5HZ };
+#define ACC_X_LOW 0x20
 
-// ---- Core (used by core 1) ----
+#define ACC_Y_HI 0x21
 
-// Check WHO_AM_I, reset, turn accel + gyro on with default settings.
-// Returns false if the device does not answer or WHO_AM_I != 0x42.
-bool imu_init(i2c_inst_t *i2c, uint8_t addr);
+#define ACC_Y_LOW 0x22
 
-// Raw packet data: AccX, AccY, AccZ, GyroX, GyroY, GyroZ, each int16 high byte
-// first (matches packet bytes 0-11). Returns false on I2C error.
-bool imu_read(uint8_t out[12]);
+#define ACC_Z_HI 0x23
 
-// ---- Readings ----
-bool imu_read_accel(int16_t xyz[3]);          // raw counts
-bool imu_read_gyro(int16_t xyz[3]);           // raw counts
-bool imu_read_temp_c(float *celsius);
-float imu_accel_to_g(int16_t raw);            // uses the current range
-float imu_gyro_to_dps(int16_t raw);           // uses the current range
+#define ACC_Z_LOW 0x24
 
-// ---- Configuration ----
-bool imu_set_accel_config(ImuAccelRange range, ImuOdr odr);
-bool imu_set_gyro_config(ImuGyroRange range, ImuOdr odr);
-bool imu_soft_reset(void);
-bool imu_sleep(void);                         // accel + gyro off
-bool imu_wake(void);                          // accel + gyro on (low-noise mode)
+#define GYRO_X_HI 0x25
 
-// ---- FIFO ----
-bool imu_fifo_enable(bool enable);
-int  imu_fifo_count(void);                    // bytes waiting, or -1 on error
-int  imu_fifo_read(uint8_t *buf, size_t len); // bytes read, or -1 on error
+#define GYRO_X_LOW 0x26
 
-// ---- Low-level register access ----
-bool imu_read_regs(uint8_t reg, uint8_t *buf, size_t len);
-bool imu_write_reg(uint8_t reg, uint8_t value);
+#define GYRO_Y_HI 0x27
+
+#define GYRO_Y_LOW 0x28
+
+#define GYRO_Z_HI 0x29
+
+#define GYRO_Z_LOW 0x2A
+
+#define CONFIGURATION 0x52
+// check this one again
+#define GYRO_CONFIG 0x51
+
+#define WHO_AM_I 0x75
+
+struct accReading {
+    double x;
+    double y;
+    double z;
+};
+
+struct gyroReading {
+    double x;
+    double y;
+    double z;
+};
+
+enum LowPassFilter {
+    // default
+    CFG0 = 0,
+    // 4
+    CFG1 = 1,
+    // 5
+    CFG2 = 2,
+    // 8
+    CFG3 = 3,
+    // 10
+    CFG4 = 4,
+    // 16
+    CFG5 = 5,
+    // 20
+    CFG6 = 6,
+    // 40
+    CFG7 = 7,
+    // low latency option1
+    CFG14 = 14,
+    // low latency option2
+    CFG15 = 15
+};
+
+enum FullScaleSelect {
+    // 2000 dps
+    FS0 = 0b000, 
+    // 1000 dps
+    FS1 = 0b001, 
+    // 500 dps
+    FS2 = 0b010, 
+    // 250 dps
+    FS3 = 0b011,
+    // 125 dps 
+    FS4 = 0b100, 
+    // 62.5 dps
+    FS5 = 0b101, 
+    // 31.25 dps
+    FS6 = 0b110,
+    // 15.625 dps
+    FS7 = 0b111
+};
+
+enum ImuError {
+    // No error occurred
+    NO_ERROR = 0,
+    // The whoami value returned from the IMU was incorrect
+    INVALID_WHOAMI = 1,
+    // I2C Communication Failed (likely something is unplugged)
+    I2C_FAILED = 2,
+};
+
+
+class Imu {
+    public:
+
+    Imu(i2c_inst_t *i2c, uint8_t address)
+    // sets the imu with the right filter and scale_select
+    ImuError begin(LowPassFilter filter, FullScaleSelect scale_select);
+    // stores the reading in here
+    ImuError read_gyro(gyroReading *reading);
+    private:
+    bool exit_sleep();
+    bool read_byte(uint8_t address, uint8_t *data);
+    bool read_bytes(uint8_t address, uint8_t length, uint8_t *data);
+    bool write_byte(uint8_t address, uint8_t data);
+    bool write_bytes(uint8_t address, uint8_t length, uint8_t *data);
+    bool write_bit(uint8_t address, uint8_t bit, uint8_t data);
+
+    uint8_t address_;
+    LowPassFilter low_pass_;
+    FullScaleSelect scale_select_;
+
+};
+

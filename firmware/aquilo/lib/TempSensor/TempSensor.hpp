@@ -25,7 +25,7 @@ public:
    *
    * @return true if the read was successful, false otherwise
    */
-  bool readTemp(uint8_t reading[2]);
+  bool readTemp(uint8_t *reading);
 
 private:
   i2c_inst_t *bus_;

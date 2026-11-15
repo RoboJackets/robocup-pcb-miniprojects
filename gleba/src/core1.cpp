@@ -10,12 +10,36 @@
 
 // ---- internal helpers ----
 
+// NEW: device whose pins are connected to an I2C controller right now
+// (DEV_COUNT = none yet).
+static Device active = DEV_COUNT;
+
 // Route the right I2C controller (i2c0 or i2c1) to the pin pair of `dev`
 // and switch the other pairs on that controller back to plain GPIO.
 // Returns the controller to use with that device.
 static i2c_inst_t *i2c_bus_select(Device dev) {
-    // TODO: see the I2C Address Map in the HRM for pins + controller per device
-    return i2c0;
+    switch (dev)
+    {
+    case DEV_IMU:
+    case DEV_HALL:
+    case DEV_COLOR:
+        return i2c0;
+    case DEV_TEMP:
+    case DEV_GPIO:
+    case DEV_LED:
+        return i2c1;
+    }
+}
+
+static void device_init() {
+    i2c_init(i2c_bus_select(DEV_IMU), I2C_BAUD_HZ);
+}
+
+// NEW: read the packet section of `dev` into `out`. Returns true if `out`
+// holds fresh data.
+static bool read_device(Device dev, uint8_t out[MAX_SECTION_LEN]) {
+    // TODO
+    return false;
 }
 
 // Called by the repeating timer every IMU_SAMPLE_PERIOD_MS.
@@ -29,10 +53,8 @@ static bool sample_timer_cb(repeating_timer_t *t) {
 // ---- public ----
 
 void core1_main(void) {
-    // TODO: i2c_init(i2c0 / i2c1, I2C_BAUD_HZ)
-    // TODO: imu_init(i2c_bus_select(DEV_IMU), IMU_DEFAULT_ADDR)
     ui_init();
-
+    device_init();
     // The SDK's default alarm pool fires its interrupt on core 0, so core 1
     // creates its own pool here; its interrupt then runs on core 1 and can
     // wake core 1 from __wfi().
@@ -44,11 +66,11 @@ void core1_main(void) {
     while (true) {
         if (sample_due) {
             sample_due = false;
-            if (imu_read(sample)) {          // slow I2C read, outside the lock
-                shared_set_imu(sample);       // short copy, inside the lock
-            }
         }
         ui_update();
+        if (imu_read(sample)) {
+            shared_set_imu(sample);
+        }
         __wfi();   // sleep until the next interrupt (timer or button)
     }
 }

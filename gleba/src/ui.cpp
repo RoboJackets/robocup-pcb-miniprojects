@@ -5,10 +5,13 @@
 
 // ---- internal helpers ----
 
+// NEW: what each button looked like at the previous ui_update() call.
+static bool prev_btn1 = false;
+static bool prev_btn2 = false;
+
 // True once per press (debounced). Buttons are active-low.
 static bool button_pressed(uint pin) {
-    // TODO
-    return false;
+    return !gpio_get(pin);
 }
 
 // LEDs are active-low: on = drive 0.
@@ -19,14 +22,36 @@ static void led_write(uint pin, bool on) {
 // ---- public ----
 
 void ui_init(void) {
-    // TODO: gpio_init + direction for PIN_BUTTON_1/2 (in) and PIN_LED_D39/40/41 (out, off)
+    gpio_init(PIN_BUTTON_1);
+    gpio_init(PIN_BUTTON_2);
+    gpio_init(PIN_LED_D39);
+    gpio_init(PIN_LED_D40);
+    gpio_init(PIN_LED_D41);
+
+    gpio_set_dir(PIN_BUTTON_1, GPIO_IN);
+    gpio_set_dir(PIN_BUTTON_2, GPIO_IN);
+    gpio_set_dir(PIN_LED_D39, GPIO_OUT);
+    gpio_set_dir(PIN_LED_D40, GPIO_OUT);
+    gpio_set_dir(PIN_LED_D41, GPIO_OUT);
 }
 
 void ui_update(void) {
-    // TODO: button 1 -> next device, button 2 -> previous device (wrap around DEV_COUNT)
-    //       shared_set_selected(dev); ui_show_selection(dev);
+    if (button_pressed(PIN_BUTTON_1)) {
+        shared_set_selected(static_cast<Device>(static_cast<int>(shared_get_selected()) - 1));
+        // Change current i2c connection
+        ui_show_selection();
+    }
+
+    if (button_pressed(PIN_BUTTON_2)) {
+        shared_set_selected(static_cast<Device>(static_cast<int>(shared_get_selected()) + 1));
+        // Change current i2c connection
+        ui_show_selection();
+    }
 }
 
-void ui_show_selection(Device dev) {
-    // TODO: code = dev + 1; led_write(D39, bit0); led_write(D40, bit1); led_write(D41, bit2);
+void ui_show_selection(void) {
+    int num = static_cast<int>(shared_get_selected());
+    led_write(PIN_LED_D39, (bool)(num / 4));
+    led_write(PIN_LED_D40, (bool)((num % 4) / 2));
+    led_write(PIN_LED_D41, (bool)(num % 2));
 }

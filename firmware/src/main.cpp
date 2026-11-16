@@ -93,7 +93,7 @@ int main()
 {
     stdio_init_all();
     //multicore example, core 0 for spi, core 1 for i2c, at least that is the goal
-    multicore_launch_core1(core1_entry);
+    //multicore_launch_core1(core1_entry);
 
     // SPI initialisation at 1 MHz
     spi_init(SPI_PORT, 1000*1000);

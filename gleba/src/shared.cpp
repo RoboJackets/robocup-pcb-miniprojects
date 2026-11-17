@@ -29,24 +29,26 @@ void shared_get_imu(uint8_t data[IMU_DATA_LEN]) {
     mutex_exit(&lock);
 }
 
-// void shared_set_selected(Device dev) {
-//     mutex_enter_blocking(&lock);
-//     selected = dev;
-//     mutex_exit(&lock);
-// }
+#if 0
+void shared_set_selected(Device dev) {
+    mutex_enter_blocking(&lock);
+    selected = dev;
+    mutex_exit(&lock);
+}
 
-// Device shared_get_selected(void) {
-//     // If needs a mutex protection?
-//     return selected;
-// }
+Device shared_get_selected(void) {
+    // If needs a mutex protection?
+    return selected;
+}
 
-// // NEW
-// void shared_publish(Device dev, const uint8_t *data) {
-//     // TODO
-// }
+// NEW
+void shared_publish(Device dev, const uint8_t *data) {
+    // TODO
+}
 
-// // NEW
-// bool shared_get_sample(Sample *out) {
-//     // TODO
-//     return false;
-// }
+// NEW
+bool shared_get_sample(Sample *out) {
+    // TODO
+    return false;
+}
+#endif

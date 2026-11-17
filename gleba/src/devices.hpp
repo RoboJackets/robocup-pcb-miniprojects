@@ -1,3 +1,4 @@
+#if 0
 #pragma once
 // NEW: one table that describes the six I2C devices (controller, pins,
 // address, where the data goes in the SPI packet, board-ID bit).
@@ -32,3 +33,4 @@ struct DeviceInfo {
 
 // NEW: look up the row of one device.
 const DeviceInfo *device_info(Device dev);
+#endif

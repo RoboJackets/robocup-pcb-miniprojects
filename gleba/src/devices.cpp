@@ -1,3 +1,4 @@
+#if 0
 #include "devices.hpp"
 
 #include "pins.hpp"
@@ -11,3 +12,4 @@ const DeviceInfo *device_info(Device dev) {
     // TODO
     return nullptr;
 }
+#endif

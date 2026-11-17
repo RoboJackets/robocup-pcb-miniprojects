@@ -62,6 +62,7 @@ target_include_directories(firmware PRIVATE
 target_link_libraries(firmware 
         hardware_spi
         hardware_i2c
+        pico_multicore
         LEDController
         SPIBus
         dummy

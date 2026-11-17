@@ -459,6 +459,15 @@ bool LEDController::reset() {
     return write_byte(RESET_REG, 0);
 }
 
+bool LEDController::write_led(uint8_t (&buf)[24])
+{
+    for (int i = 0; i < 24; i++) {
+        if (!setLFP(i, buf[i])) return false;
+    }
+
+    return update();
+}
+
 bool LEDController::write_bytes(uint8_t reg, uint8_t length, uint8_t *data) {
     uint8_t buf[length + 1];
     buf[0] = reg;

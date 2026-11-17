@@ -102,8 +102,8 @@ enum HFPS : uint8_t {
 /*
 RGB Register Mode Select 
 
-24CH --> each of the 24 channels are controlled by it’s own HFP PWM register.
-8RGB --> pairs of 3 channels controlled by same HFP PWM register for RGB combinations
+24CH --> each of the 24 channels' HFP are controlled by it’s own HFP PWM register.
+8RGB --> pairs of 3 channels' HFP are controlled by same HFP PWM register for RGB combinations
 */
 enum RGBMode : uint8_t {
     M_24CH = 0,
@@ -302,7 +302,7 @@ Global Current Control Registers -- R/W
 Modulates all channels DC current in 256 steps.
 Each color controls the current of the respective color channels. (Usually every third channel)
 */
-enum GCC {
+enum GCC : uint8_t {
     RED,
     GREEN,
     BLUE
@@ -617,7 +617,7 @@ public:
      * 
      * The maximum current is set by the physical resistor, the GCC only modulates the current in 256 steps.
      * 
-     * @param channel Desired LED channel
+     * @param channel Desired LED channel -> RED, GREEN, or BLUE
      * @param value current stepping 0-255
      * @return true if operation is successful
      */
@@ -636,6 +636,17 @@ public:
      * @return true if operation is successful
      */
     bool reset();
+
+    /**
+     * @brief Write to the 24 LEDs with a buffer
+     * This is mainly for the Robocup Daisy Chain Sensor Suite, where the RP2040 recieves a data packet, which consists of 24 bytes of LED information
+     * Because this function requires only one byte per LED, it writes to the Low Frequency PWM, therefore FMS Mode must also be HFP + LFP
+     * 
+     * @param buf 24 Byte buffer to be written to the LEDs
+     * 
+     * @return true if operation is successful
+     */
+    bool write_led(uint8_t (&buf)[24]);
 
 private:
     /**

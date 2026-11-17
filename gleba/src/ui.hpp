@@ -10,7 +10,7 @@ void ui_init(void);
 
 // Check the buttons; if the selection changed, store it with
 // shared_set_selected() and update the LEDs.
-void ui_update(void);
+// void ui_update(void);
 
 // Show a device number on the 3 LEDs (DEV_IMU -> 1, ..., DEV_LED -> 6).
-void ui_show_selection(void);
+void ui_display(void);

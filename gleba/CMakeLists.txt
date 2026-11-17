@@ -37,6 +37,7 @@ pico_sdk_init()
 
 add_executable(gleba
       src/main.cpp
+      src/devices.cpp
       src/shared.cpp
       src/core0.cpp
       src/core1.cpp

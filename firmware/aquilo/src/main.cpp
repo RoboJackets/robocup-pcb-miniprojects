@@ -1,17 +1,18 @@
 #include "TempSensor.hpp"
 #include <cstdint>
 #include <hardware/gpio.h>
+#include <hardware/regs/i2c.h>
 #include <hardware/spi.h>
 #include <hardware/structs/io_bank0.h>
 #include <pico/stdlib.h>
 #include <pico/time.h>
 
 // TODO: define these later
-#define SPI_IN_MISO ((uint8_t)0)
+#define SPI_IN_RX ((uint8_t)0)
 #define SPI_IN_SS ((uint8_t)0)
 #define SPI_IN_SCLK ((uint8_t)0)
 
-#define SPI_OUT_MOSI ((uint8_t)0)
+#define SPI_OUT_TX ((uint8_t)0)
 #define SPI_OUT_SS ((uint8_t)0)
 #define SPI_OUT_SCLK ((uint8_t)0)
 
@@ -30,7 +31,7 @@ void SPI_setup()
     spi_set_format(spi1, 8, SPI_CPOL_1, SPI_CPHA_1, SPI_MSB_FIRST);
     
     // set spi in pins
-    gpio_set_function(SPI_IN_MISO, GPIO_FUNC_SPI);
+    gpio_set_function(SPI_IN_RX, GPIO_FUNC_SPI);
     gpio_set_function(SPI_IN_SS, GPIO_FUNC_SPI);
     gpio_set_function(SPI_IN_SCLK, GPIO_FUNC_SPI);
 
@@ -38,14 +39,19 @@ void SPI_setup()
     gpio_init(SPI_OUT_SS);
     gpio_put(SPI_OUT_SS, 1);    // init to not selecting slave
     gpio_set_dir(SPI_OUT_SS, GPIO_OUT);
-    gpio_set_function(SPI_OUT_MOSI, GPIO_FUNC_SPI);
+    gpio_set_function(SPI_OUT_TX, GPIO_FUNC_SPI);
     gpio_set_function(SPI_OUT_SCLK, GPIO_FUNC_SPI);
 }
 
 // TODO: I2C PIN SETUP
+#define I2C_SDA_TEMP 0
+#define I2C_SCL_TEMP 0
 void I2C_setup()
 {
-    
+    gpio_set_function(I2C_SDA_TEMP, GPIO_FUNC_I2C);
+    gpio_set_function(I2C_SCL_TEMP, GPIO_FUNC_I2C);
+    gpio_pull_up(I2C_SDA_TEMP);
+    gpio_pull_up(I2C_SCL_TEMP);
 }
 
 // TODO: need to add multiprocessing

@@ -6,6 +6,7 @@
 #include <hardware/structs/io_bank0.h>
 #include <pico/stdlib.h>
 #include <pico/time.h>
+#include <pico/thread_local.h>
 
 // TODO: define these later
 #define SPI_IN_RX ((uint8_t)0)
@@ -15,6 +16,7 @@
 #define SPI_OUT_TX ((uint8_t)0)
 #define SPI_OUT_SS ((uint8_t)0)
 #define SPI_OUT_SCLK ((uint8_t)0)
+
 
 void SPI_setup()
 {
@@ -58,6 +60,7 @@ void I2C_setup()
 int main()
 {
     // init
+    I2C_setup();
     SPI_setup();
     TempSensor temp_sensor(&i2c0_inst, 0x48);
 

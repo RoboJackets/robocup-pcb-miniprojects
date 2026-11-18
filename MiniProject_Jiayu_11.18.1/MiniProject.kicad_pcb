@@ -26370,7 +26370,7 @@
 	(footprint "local:RoboJackets_Logo_3x"
 		(layer "B.Cu")
 		(uuid "49f9b8bc-27d1-4a82-82c5-09807d2dc305")
-		(at 123.5 71 180)
+		(at 122.498106 75 180)
 		(descr "RoboJackets logo, F.SilkS, 3.0x scale of GRAPHIC_ROBOJACKET_LOGO from RoboJackets/robocup-pcb (boards/rev-2026/kicker-v3.4/piman-lib). Scaled so most strokes are >= 0.15 mm for silkscreen.")
 		(tags "logo RoboJackets graphic")
 		(property "Reference" "LOGO1"
@@ -27563,6 +27563,42 @@
 			)
 		)
 	)
+	(gr_text "SWDIO"
+		(at 163.215179 58.923571 90)
+		(layer "B.SilkS")
+		(uuid "70c4da98-cb71-4608-960a-18d383e8e95d")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(gr_text "GND"
+		(at 165.75518 58.216429 90)
+		(layer "B.SilkS")
+		(uuid "ac68931a-12c8-4a15-812f-8cc66dc8c7d8")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(gr_text "SWCLK"
+		(at 168.29518 59.052143 90)
+		(layer "B.SilkS")
+		(uuid "62eb0b22-2655-4c3b-8e1a-c865cb9cd90c")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
 	(gr_text "SPI IN"
 		(at 106.476191 65.07018 0)
 		(layer "B.SilkS")
@@ -27647,10 +27683,22 @@
 			(justify mirror)
 		)
 	)
-	(gr_text "I2C ADDRESSES\nIMU 0x68   TEMP 0x48\nHALL 0x35   GPIO 0x21\nCOLOR 0x10   LED 0x30"
-		(at 123 88.75 0)
+	(gr_text "USB flash:\nhold BOOT, tap RESET"
+		(at 122.25 91.5 0)
 		(layer "B.SilkS")
-		(uuid "9315e6fa-991f-4919-8051-187e8cd1c4f6")
+		(uuid "d9b296c5-017b-4d2f-8ae3-1159e04647c9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(gr_text "Team Gleba - Jiayu Shi\nRev v3.0   2026-11"
+		(at 122.5 58.55 0)
+		(layer "B.SilkS")
+		(uuid "480ed5d2-6b86-4c15-b1dd-feb58f10147a")
 		(effects
 			(font
 				(size 1 1)
@@ -27675,18 +27723,6 @@
 		(at 142.15 92.9 0)
 		(layer "B.SilkS")
 		(uuid "6c2484d4-3a9a-4896-9fd1-a92a0b4230c2")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-			(justify mirror)
-		)
-	)
-	(gr_text "SWD"
-		(at 144.072143 52.395181 0)
-		(layer "B.SilkS")
-		(uuid "c00e471b-b51b-4fa5-b926-a15f3863b4c1")
 		(effects
 			(font
 				(size 1 1)
@@ -27743,30 +27779,6 @@
 			(justify mirror)
 		)
 	)
-	(gr_text "USB flash:\nhold BOOT, tap RESET"
-		(at 151.5 76.5 0)
-		(layer "B.SilkS")
-		(uuid "d9b296c5-017b-4d2f-8ae3-1159e04647c9")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-			(justify mirror)
-		)
-	)
-	(gr_text "Team Gleba - Jiayu Shi\nRev v3.0   2026-11"
-		(at 152 63.6 0)
-		(layer "B.SilkS")
-		(uuid "480ed5d2-6b86-4c15-b1dd-feb58f10147a")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-			(justify mirror)
-		)
-	)
 	(gr_text "P2"
 		(at 152.31 92.9 0)
 		(layer "B.SilkS")
@@ -27783,6 +27795,18 @@
 		(at 154.85 92.9 0)
 		(layer "B.SilkS")
 		(uuid "3a9023a2-c55c-4821-a37d-5460316ae4fe")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(gr_text "I2C ADDRESSES\nIMU 0x68   TEMP 0x48\nHALL 0x35   GPIO 0x21\nCOLOR 0x10   LED 0x30"
+		(at 155.5 68.25 0)
+		(layer "B.SilkS")
+		(uuid "9315e6fa-991f-4919-8051-187e8cd1c4f6")
 		(effects
 			(font
 				(size 1 1)
@@ -27851,6 +27875,18 @@
 			(justify mirror)
 		)
 	)
+	(gr_text "SWD"
+		(at 171.332142 55.545181 0)
+		(layer "B.SilkS")
+		(uuid "c00e471b-b51b-4fa5-b926-a15f3863b4c1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
 	(gr_text "CS"
 		(at 171.439287 77.545181 0)
 		(layer "B.SilkS")
@@ -27887,44 +27923,8 @@
 			(justify mirror)
 		)
 	)
-	(gr_text "SWDIO"
-		(at 136.20518 55.744047 90)
-		(layer "B.SilkS")
-		(uuid "70c4da98-cb71-4608-960a-18d383e8e95d")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-			(justify mirror)
-		)
-	)
-	(gr_text "GND"
-		(at 138.745181 54.958332 90)
-		(layer "B.SilkS")
-		(uuid "ac68931a-12c8-4a15-812f-8cc66dc8c7d8")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-			(justify mirror)
-		)
-	)
-	(gr_text "SWCLK"
-		(at 141.285181 55.886905 90)
-		(layer "B.SilkS")
-		(uuid "62eb0b22-2655-4c3b-8e1a-c865cb9cd90c")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-			(justify mirror)
-		)
-	)
 	(gr_text "RoboCup PCB Mini Project"
-		(at 152 59.8 0)
+		(at 122.5 54.75 0)
 		(layer "B.SilkS")
 		(uuid "cbcab484-358b-47bf-9c77-06776a0ae50d")
 		(effects

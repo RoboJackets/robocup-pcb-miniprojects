@@ -11,10 +11,18 @@ void Hall_Effect::decreaseRange() {
     this->write_bit(SENSOR_CONFIG_2, 1, 0);
 }
 
-Hall_Effect::Hall_Effect(): Hall_Effect(HALL_EFFECT_ADDRESS, TMAG_TYPE::A2) {}
+Hall_Effect::Hall_Effect(): Hall_Effect(HALL_EFFECT_ADDRESS, TMAG_TYPE::A2, 0, 1, 2) {}
 
-Hall_Effect::Hall_Effect(uint8_t address, TMAG_TYPE type): _address(address) {
+Hall_Effect::Hall_Effect(uint8_t address, TMAG_TYPE type,  uint8_t i2c_number, uint8_t i2c_sda_pin, uint8_t i2c_scl_pin): _address(address) {
     uint8_t range = type == (TMAG_TYPE::A1) ? 40 : 133;
+    if(i2c_number == 0) {
+        i2c = i2c0;
+    }
+    else {
+        i2c = i2c1; 
+    }
+    i2c_sda = i2c_sda_pin;
+    i2c_scl = i2c_scl_pin; 
     this->xy_range = range; 
     this->z_range = range; 
 }   
@@ -201,8 +209,8 @@ bool Hall_Effect::read_byte(uint8_t address, uint8_t *data) {
 }
 bool Hall_Effect::read_bytes(uint8_t address, uint8_t length, uint8_t *data) {
     // Check read protocol 
-    i2c_write_blocking(I2C_PORT, _address, &address, 1, true);
-    i2c_read_blocking(I2C_PORT, _address, data, length, false);
+    i2c_write_blocking(i2c, _address, &address, 1, true);
+    i2c_read_blocking(i2c, _address, data, length, false);
     return true;
 }
 bool Hall_Effect::write_byte(uint8_t address, uint8_t data) {
@@ -216,7 +224,7 @@ bool Hall_Effect::write_bytes(uint8_t address, uint8_t length, uint8_t *data) {
         buf[i+1] = data[i];
     }
 
-    int result = i2c_write_blocking(I2C_PORT, _address, buf, length, false); 
+    int result = i2c_write_blocking(i2c, _address, buf, length, false); 
   
     return (result == length + 1); 
 }

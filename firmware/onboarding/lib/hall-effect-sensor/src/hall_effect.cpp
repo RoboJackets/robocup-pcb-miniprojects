@@ -353,14 +353,14 @@ bool Hall_Effect::read_sensor_stream() {
 }
 
 bool Hall_Effect::interruptOff() {
+    // Early exit
+    if (this->interrupt == false) return true;
+
     if (this->int_pin != 0xFF) {
         gpio_set_irq_enabled(this->int_pin, GPIO_IRQ_EDGE_FALL, false);
     }
 
     if (!this->write_byte(INT_CONFIG, 0x00)) {
-        if (int_pin != 0xFF) {
-            gpio_set_irq_enabled(int_pin, GPIO_IRQ_EDGE_FALL, true);
-        }
         return false;
     }
 
@@ -377,6 +377,7 @@ bool Hall_Effect::interruptOn(uint8_t pin) {
     if (pin == 0xFF && this->int_pin == 0xFF) {
         return false; 
     }
+
     this->int_pin = (pin == 0xFF) ? this->int_pin : pin;  
     
     gpio_init(this->int_pin);

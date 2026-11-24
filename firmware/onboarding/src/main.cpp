@@ -24,8 +24,12 @@ void core_1_main() {
 
 }
 
+/**
+ * @brief Core 0 loop -- Will be used for Hall Effect Sensor
+ * 
+ */
 void core_0_main() {
-
+  
 }
 
 int main() {

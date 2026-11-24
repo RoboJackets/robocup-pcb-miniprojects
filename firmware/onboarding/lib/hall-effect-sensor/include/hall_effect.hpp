@@ -8,7 +8,7 @@
  */
 
 /**
- * @brief 
+ * @brief Hall Effect Sensor I2C Address
  */
 #define HALL_EFFECT_ADDRESS 0x35
 

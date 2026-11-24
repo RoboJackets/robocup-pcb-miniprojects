@@ -14,6 +14,12 @@ This creates a `Hall_Effect` sensor object with the input parameters:
 - i2c_scl_pin: The SCL pin
 
 ## Usage
+In your main.cpp use it like so
+```c++
+if(!sensor.read_sensor_stream()); // ERROR 
+```
+To actually make I2C calls to the sensor
+
 ```c++
 uint16_t values[4];
 sensor.get_all_values(values); 

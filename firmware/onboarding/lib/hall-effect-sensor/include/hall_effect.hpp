@@ -1,7 +1,7 @@
 #pragma once
 
-#include "pico/types.h"
 #include "hardware/i2c.h"
+#include "pico/stdlib.h"
 
 /**
  * @brief Driver for TMAG5273 (A2 or A1)
@@ -28,7 +28,7 @@
  */
 
  /**
- * @brief The device config 1 register is in charge of device stuff
+ * @brief The device config 2 register is in charge of device stuff (thresholds)
  */
 #define DEVICE_CONFIG_2 0x01
 /**
@@ -99,9 +99,15 @@
 /**
 - | Bits | Field   | Values / Description                                      |
 - |------|---------|-----------------------------------------------------------|
-- | 7:1  | Config  | 0 = no threshold, -41C = 1, 170C = 34, 8 C/LSB res.    |
+- | 7:1  | Config  | 0 = no threshold, -41C = 0x1A, 170C = 0x#4, 8 C/LSB res.       |
 - | 0    | Channel | 0 = disabled, 1 = enabled                                 |
  */
+
+/**
+ * @brief Config register for interrupt configuration
+ */
+#define INT_CONFIG 0x08
+
 
 /**
  * @brief I2C address register
@@ -113,6 +119,20 @@
 - | 7:1  | Addy   | 35 = reset                           |
 - | 0    | Update | 0 = no, 1 = update with first 7 bits |
  */
+
+ /**
+  * @brief The device ID register is in charge of storing the device ID
+  */
+ #define DEVICE_ID 0x0D
+
+ /**
+  * @brief The manufacturer ID register is in charge of storing the manufacturer ID's LSB
+  */
+#define MANUFACTURER_ID_LSB 0x0E
+/**
+ * @brief The manufacturer ID register is in charge of storing the manufacturer ID's MSB
+ */
+#define MANUFACTURER_ID_MSB 0x0F
 
 /**
  * @brief Register storing MSB for temperature sensor
@@ -172,14 +192,6 @@
 - | 0    | VCC UV           | —                    |
  */
 
-enum HALL_EFFECT_STATUS {
-    GOOD,
-    UNDERVOLTAGE,
-    CRC_FAILURE, // Cyclical Redundancy Check (can be enabled)
-    INT_PIN_ERROR,
-    OSCILLATOR_ERROR 
-};
-
 enum class TMAG_TYPE {
     A1,
     A2
@@ -188,10 +200,9 @@ enum class TMAG_TYPE {
 /**
  * @brief Read type of sensor you want to use
  * Temperature is kept seperate since it's not our main function
- * XZ disabled since it costs 2 I2C reads instead of 1 for no good reason 
  */
-enum class READ_TYPE {
-    X,Y,Z,XY,YZ,XYZ,DISABLE
+enum class READ_TYPE: uint8_t {
+    X,Y,Z,XY,YZ,XYZ,DISABLE,ZX
 }; 
 
 /**
@@ -200,17 +211,17 @@ enum class READ_TYPE {
  */
 class HALL_EFFECT_RESULTS {
 public:
-    uint16_t x, y, z; // Magnetic Fields (in microtesla)
-    uint16_t t; // Temperature (in celsius)
+    int16_t x = 0, y = 0, z = 0; // Magnetic Fields (in millitesla) / SB
+    int16_t t = 0; // Temperature (in celsius) / SB
 
     HALL_EFFECT_RESULTS(
-        uint16_t x,
-        uint16_t y,
-        uint16_t z,
-        uint16_t t
-    ); 
+        int16_t x,
+        int16_t y,
+        int16_t z,
+        int16_t t
+    ) : x(x), y(y), z(z), t(t) {} 
 
-    HALL_EFFECT_RESULTS(); 
+    HALL_EFFECT_RESULTS() = default; 
 };
 
 /**
@@ -219,31 +230,29 @@ public:
  * @date Fall 2026
  */
 class Hall_Effect {
-public:
-    i2c_inst* i2c = i2c0; 
-    uint8_t i2c_sda;
-    uint8_t i2c_scl; 
-
-    READ_TYPE read_type; 
-   
-    /**
-     * @brief I2C address of the devices
-     */
-    const uint8_t _address;
-
+public:    
     /**
      * @brief Disable the sensor (put in sleep mode)
+     * @return true If the sensor was successfully disabled, false otherwise
      */
-    void disableSensor(); 
+    bool disableSensor(); 
+
+    /**
+     * @brief Enable the sensor (wake from sleep mode)
+     * @return true If the sensor was successfully enabled, false otherwise
+     */
+    bool enableSensor();
 
     /**
      * @brief Enable the temperature sensor
+     * @return true If the temperature sensor was successfully enabled, false otherwise
      */
-    void enableTemperatureSensor();
+    bool enableTemperatureSensor();
     /**
      * @brief Disable the temperature sensor
+     * @return true If the temperature sensor was successfully disabled, false otherwise
      */ 
-    void disableTemperatureSensor(); 
+    bool disableTemperatureSensor(); 
 
     /**
      * @brief The most updated results of the Hall Effect Sensor
@@ -258,8 +267,9 @@ public:
      * @param i2c_number Which i2c bus to use (0 or 1)
      * @param i2c_sda_pin Which SDA pin you are using
      * @param i2c_scl_pin Which SCL pin you are using
+     * @param int_pin The pin to use for the interrupt (if you want to use it, don't) 
      */
-    Hall_Effect(uint8_t address, TMAG_TYPE type, uint8_t i2c_number, uint8_t i2c_sda_pin, uint8_t i2c_scl_pin); 
+    Hall_Effect(uint8_t address, TMAG_TYPE type, uint8_t i2c_number, uint8_t i2c_sda_pin, uint8_t i2c_scl_pin, uint8_t int_pin = 0xFF); 
     /**
      * @brief Construct a new Hall_Effect object with default stuff if you're lazy (like me)
      */
@@ -268,16 +278,17 @@ public:
      * @brief Initalize Hall Effect sensor 
      * 
      * @return true Hall Effect properly setup
-     * @return false Hall Effect not properly setup
+     * @return false Hall Effect not properly setup, check wiring MFG ID not correct
      */
     bool init_hall_effect(); 
 
     /**
      * @brief Set the data object
      * 
-     * @param readType 
+     * @param readType The type of data to read from the sensor (X, Y, Z, XY, YZ, XYZ, DISABLE, ZX)
+     * @return true If the data was successfully set, false otherwise
      */
-    void set_data(READ_TYPE readType);  
+    bool set_data(READ_TYPE readType);  
 
     /**
      * @brief Actual value of magnetic field in mT at X direction
@@ -286,7 +297,7 @@ public:
      * @return true 
      * @return false 
      */
-    bool get_field_in_x_direction(uint16_t* value);
+    bool get_field_in_x_direction(float* value);
     /**
      * @brief Actual value of magnetic field in mT at Y direction
      *
@@ -294,7 +305,7 @@ public:
      * @return true 
      * @return false 
      */
-    bool get_field_in_y_direction(uint16_t* value);
+    bool get_field_in_y_direction(float* value);
     /**
      * @brief Actual value of magnetic field in mT at Z direction
      *
@@ -302,7 +313,7 @@ public:
      * @return true 
      * @return false 
      */
-    bool get_field_in_z_direction(uint16_t* value);
+    bool get_field_in_z_direction(float* value);
     /**
      * @brief Actual value of magnetic field in mT in XYZ directions
      *
@@ -310,15 +321,23 @@ public:
      * @return true 
      * @return false 
      */
-    bool get_field_in_xyz_direction(uint16_t* value);
+    bool get_field_in_xyz_direction(float* value);
     /**
-     * @brief Actual value of temperature in C 
+     * @brief Value of the temperature sensor in Celsuis / SB
      *
-     * @param value A pointer to store the temperature in
+     * @param value A int16_t pointer to store the temperature in
      * @return true 
      * @return false 
      */
-    bool get_temperature(uint16_t* value);
+    bool get_raw_temperature(int16_t* value);
+    /**
+     * @brief Actual value of the temperature sensor in Celsuis 
+     *
+     * @param value A float pointer to store the temperature in
+     * @return true 
+     * @return false 
+     */
+    bool get_temperature(float* value);
     /**
      * @brief Actual value of magnetic field in mT in XYZ directions and temperature in Celsuis
      *
@@ -326,29 +345,54 @@ public:
      * @return true 
      * @return false 
      */
-    bool get_all_values(uint16_t* value);
+    bool get_all_values(float* value);
     /**
      * @brief Main function, is required to be in main update loop if you want polling
+     * @return true If the read was successful, false otherwise
      */
-    void read_sensor_stream();
+    bool read_sensor_stream();
 
     /**
      * @brief Turn off interrupt mode (not acc used on sensor suite)
+     * @return true If the interrupt was successfully disabled, false otherwise
      */
-    void interruptOff();
+    bool interruptOff();
     /**
      * @brief Turn on interrupt mode (not acc used on sensor suite)
+     * @param pin The pin to use for the interrupt (if you want to use it, don't)
+     * @note If you don't provide a pin, it will use the one provided in the constructor
+     * @return true If the interrupt was successfully enabled, false otherwise
      */
-    void interruptOn(); 
+    bool interruptOn(uint8_t pin = 0xFF); 
     /**
      * @brief Increase the range of the sensor via a write 
+     * @return true If the range was successfully increased, false otherwise
+     * @note If the range is already at the maximum, it will not increase further (and return true)
      */
-    void increaseRange();
+    bool increaseRange();
     /**
      * @brief Decrease the range of the sensor via a write 
+     * @return true If the range was successfully decreased, false otherwise
+     * @note If the range is already at the minimum, it will not decrease further (and return true)
      */
-    void decreaseRange(); 
+    bool decreaseRange(); 
+    /**
+     * @brief Interrupt pending? 
+     */
+    bool isInterruptPending();
 private:
+    /**
+     * @brief I2C address of the devices
+     */
+    const uint8_t _address;
+
+    i2c_inst* i2c = i2c0; 
+    uint8_t i2c_sda;
+    uint8_t i2c_scl; 
+    uint8_t int_pin = 0xFF; 
+
+    READ_TYPE read_type = READ_TYPE::XYZ; 
+
     /**
      * @brief Enable interrupt mode (if set to false will continously poll)
      */
@@ -358,34 +402,28 @@ private:
      */
     bool temperatureSensorEnabled = false; 
 
-    /**
-     * @brief Exit sleep mode 
-     * 
-     * @return true Successful
-     * @return false Unsuccessful 
-     */
-    bool exit_sleep(); 
-    bool prev_temperatureSensorEnabled = false; 
+    volatile bool interrupt_pending = false;
+
+    static Hall_Effect* interrupt_instance;
+    static void gpio_irq_handler(uint gpio, uint32_t events);
 
     /**
      * @brief Current XY range of the sensor 
      * @note Standard range is +- of 40 mT (A1) or +- of 133 mT (A2)
      */
-    uint8_t xy_range; 
-
+    uint16_t xy_range; 
 
     /**
      * @brief Current Z range of the sensor 
      * @note Standard range is +- of 40 mT (A1) or +- of 133 mT (A2)
      */
-    uint8_t z_range;
+    uint16_t z_range;
 
     /**
      * @brief Read from a given address
      * 
      * @param address The address to read from
      * @param data The output data 
-     * @return True if the operation was successful
      */
     bool read_byte(uint8_t address, uint8_t *data);
 
@@ -395,7 +433,6 @@ private:
      * @param address The start address
      * @param length The number of bytes to read
      * @param data The buffer to store the output into
-     * @return True if the operation was successful
      */
     bool read_bytes(uint8_t address, uint8_t length, uint8_t *data);
 
@@ -404,7 +441,6 @@ private:
      * 
      * @param address The address on the IMU to write to
      * @param data The data to write to the address
-     * @return True if the operation was successful
      */
     bool write_byte(uint8_t address, uint8_t data);
 
@@ -414,7 +450,6 @@ private:
      * @param address The address on the IMU to start writing to
      * @param length The number of bytes to write
      * @param data The data to write to the IMU
-     * @return True if the operation was successful
      */
     bool write_bytes(uint8_t address, uint8_t length, uint8_t *data);
 
@@ -424,17 +459,9 @@ private:
      * @param address The address to write to
      * @param bit The bit number to write to
      * @param data The data to write into the bit
-     * @return True if the operation was successful
+     * @return true if successful, false otherwise
      */
     bool write_bit(uint8_t address, uint8_t bit, uint8_t data);
-    /**
-     * @brief Write to given bits of an address provided
-     * 
-     * @param address The address to write to
-     * @param data The data to write into the bits MUST BE 8 IN LENGTH (Use -1 to not write to something+)
-     * @return True if the operation was successful
-     */
-    bool write_bits(uint8_t address, uint8_t (&data)[8]);
     /**
      * @brief Convert MSB and LSB from Hall Effect to actual field values (mT)
      * 
@@ -442,5 +469,23 @@ private:
      * @param low LSB Data
      * @return The value 
      */
-    uint16_t merge_msb_lsb(uint8_t high, uint8_t low);
+    int16_t merge_msb_lsb(uint8_t high, uint8_t low);
+    /**
+     * @brief Converts the raw value from the sensor to mT based on the range of the sensor
+     * 
+     * @param value Raw value from the sensor
+     * @param range Range of the sensor
+     * @return float The value in mT
+     */
+    float convert_to_mT(int16_t value, uint16_t range);
+    /**
+     * @brief Writes to a field of an address provided
+     * 
+     * @param address Address to write to
+     * @param mask Mask to apply
+     * @param value Value to write
+     * @return true 
+     * @return false 
+     */
+    bool write_field(uint8_t address, uint8_t mask, uint8_t value);
   };

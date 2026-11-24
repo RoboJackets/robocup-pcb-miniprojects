@@ -6,10 +6,12 @@
 
 uint8_t output[CLUB_BUF_LEN]; 
 
+// SPI Core
 void core_1_setup() {
   spi_init(); 
 }
 
+// Hall Effect Core
 void core_0_setup() {
   
 }

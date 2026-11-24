@@ -93,7 +93,6 @@ void init_buttons() {
     gpio_set_dir(LED_1, 1);
     gpio_set_dir(LED_2, 1);
     gpio_set_dir(LED_3, 1); 
-
 }
 
 void interrupt_attach(uint gpio, uint32_t events) {

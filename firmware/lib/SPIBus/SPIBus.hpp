@@ -58,8 +58,6 @@ constexpr uint8_t PIN_CS_MASTER   = 13;
 constexpr uint8_t PIN_SCK_MASTER  = 14;
 constexpr uint8_t PIN_MOSI_MASTER = 15;
 
-constexpr size_t PACKET_LENGTH = 56;
-
 enum class SPIError {
     NO_ERROR,
     GEN_ERROR,
@@ -82,9 +80,11 @@ class SPIBus {
         /** @brief Creates a new instance of the SPI bus.
          * 
          * @param packet Pointer to the packet containing data for the chain.
+         * @param buffer Pointer to an array for intermediate read/write steps.
+         * @param transfer_length Length of each data transfer.
          * @param p_mutex Reference to a shared mutex to guard the packet, used by reading and writing functions.
          */
-        SPIBus(uint8_t packet[], mutex_t& p_mutex);
+        SPIBus(uint8_t* packet, uint8_t* buffer, uint8_t transfer_length, mutex_t& p_mutex);
 
         /** @brief Sets up pins and basic functionality.
          * 
@@ -192,10 +192,12 @@ class SPIBus {
         void set_auto_read_nonblocking(bool automatic);
 
         
-    private:
         uint8_t* packet_;
+        uint8_t* buffer_;
+        uint8_t transfer_length_;
         mutex_t& p_mutex_;
-        uint8_t buffer_[PACKET_LENGTH] = {};
+
+        uint8_t test = 0;
 
         int8_t dma_tx_ = -1;
         int8_t dma_rx_ = -1;

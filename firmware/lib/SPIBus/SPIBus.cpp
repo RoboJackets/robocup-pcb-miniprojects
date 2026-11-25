@@ -1,7 +1,7 @@
 #include "SPIBus.hpp"
 
-SPIBus::SPIBus(uint8_t packet[], mutex_t& p_mutex): 
-    packet_(packet), p_mutex_(p_mutex) {}
+SPIBus::SPIBus(uint8_t* packet, uint8_t* buffer, uint8_t transfer_length, mutex_t& p_mutex): 
+    packet_(packet), buffer_(buffer), transfer_length_(transfer_length), p_mutex_(p_mutex) {}
 
 SPIError SPIBus::init() {
     // initializes spi and sets to 1 MHz
@@ -56,8 +56,8 @@ SPIError SPIBus::init_dma() {
     channel_config_set_dreq(&config_rx_, spi_get_dreq(SPI_SLAVE, false));
     channel_config_set_dreq(&config_tx_, spi_get_dreq(SPI_MASTER, true));
 
-    dma_channel_configure(dma_rx_, &config_rx_, buffer_,  &spi_get_hw(SPI_SLAVE)->dr, PACKET_LENGTH, false);
-    dma_channel_configure(dma_tx_, &config_tx_, &spi_get_hw(SPI_MASTER)->dr, packet_, PACKET_LENGTH, false);
+    dma_channel_configure(dma_rx_, &config_rx_, buffer_,  &spi_get_hw(SPI_SLAVE)->dr, transfer_length_, false);
+    dma_channel_configure(dma_tx_, &config_tx_, &spi_get_hw(SPI_MASTER)->dr, packet_, transfer_length_, false);
 
     dma_channel_set_irq0_enabled(dma_rx_, true);
     dma_channel_set_irq0_enabled(dma_tx_, true);
@@ -76,7 +76,7 @@ SPIError SPIBus::reset_dma_rx(bool init) {
         (void)spi_get_hw(SPI_SLAVE)->dr;
     }
 
-    if (init) dma_channel_configure(dma_rx_, &config_rx_, buffer_,  &spi_get_hw(SPI_SLAVE)->dr, PACKET_LENGTH, false);
+    if (init) dma_channel_configure(dma_rx_, &config_rx_, buffer_,  &spi_get_hw(SPI_SLAVE)->dr, transfer_length_, false);
     
     return SPIError::NO_ERROR;
 }
@@ -105,7 +105,7 @@ SPIError SPIBus::reset_dma_tx(bool init) {
 }
 
 SPIError SPIBus::read_blocking() {
-    spi_read_blocking(SPI_SLAVE, 0, buffer_, PACKET_LENGTH);
+    spi_read_blocking(SPI_SLAVE, 0, buffer_, transfer_length_);
     new_data_ = true;
     return SPIError::NO_ERROR;
 }
@@ -114,16 +114,16 @@ SPIError SPIBus::update_packet() {
     SPIError error = SPIError::NO_ERROR;
 
     // makes sure previous device bits in checksum are high
-    if ((buffer_[PACKET_LENGTH - 1] & 0b00111111) != 0b00111111) {
+    if ((buffer_[transfer_length_ - 1] & 0b00111111) != 0b00111111) {
         error = SPIError::BAD_CHECKSUM;
         if (checksum_required_) return error;
     } 
 
     // updates checksum and writes the buffer to the main data store
-    buffer_[PACKET_LENGTH - 1] |= (1u << 6);
+    buffer_[transfer_length_ - 1] |= (1u << 6);
     mutex_enter_blocking(&p_mutex_);
 
-    for (int i = 0; i < PACKET_LENGTH; i++) {
+    for (int i = 0; i < transfer_length_; i++) {
         packet_[i] = buffer_[i];
     }
 
@@ -134,11 +134,11 @@ SPIError SPIBus::update_packet() {
 
 SPIError SPIBus::write_blocking() {
     mutex_enter_blocking(&p_mutex_);
-
     gpio_put(PIN_CS_MASTER, 0);
-    spi_write_blocking(SPI_MASTER, packet_, PACKET_LENGTH);
-    gpio_put(PIN_CS_MASTER, 1);
 
+    spi_write_blocking(SPI_MASTER, packet_, transfer_length_);
+
+    gpio_put(PIN_CS_MASTER, 1);
     mutex_exit(&p_mutex_);
 
     return SPIError::NO_ERROR;
@@ -180,7 +180,7 @@ void SPIBus::handle_dma() {
         
         // waits for 80 us before pulling chip select high to give time for the actual transfer to finish.
         bus_->alarm_ = add_alarm_in_us(80, &handle_alarm, bus_, false);
-        dma_channel_configure(bus_->dma_tx_, &(bus_->config_tx_), &spi_get_hw(SPI_MASTER)->dr, bus_->packet_, PACKET_LENGTH, false);
+        dma_channel_configure(bus_->dma_tx_, &(bus_->config_tx_), &spi_get_hw(SPI_MASTER)->dr, bus_->packet_, bus_->transfer_length_, false);
 
         mutex_exit(&(bus_->p_mutex_));
     }
